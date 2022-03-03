@@ -1,80 +1,80 @@
-Usage: cp [OPTION]... [-T] SOURCE DEST
-  or:  cp [OPTION]... SOURCE... DIRECTORY
-  or:  cp [OPTION]... -t DIRECTORY SOURCE...
-Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+[38;2;248;248;242mUsage: cp [OPTION]... [-T] SOURCE DEST[0m
+[38;2;248;248;242m  or:  cp [OPTION]... SOURCE... DIRECTORY[0m
+[38;2;248;248;242m  or:  cp [OPTION]... -t DIRECTORY SOURCE...[0m
+[38;2;248;248;242mCopy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.[0m
 
-Mandatory arguments to long options are mandatory for short options too.
-  -a, --archive                same as -dR --preserve=all
-      --attributes-only        don't copy the file data, just the attributes
-      --backup[=CONTROL]       make a backup of each existing destination file
-  -b                           like --backup but does not accept an argument
-      --copy-contents          copy contents of special files when recursive
-  -d                           same as --no-dereference --preserve=links
-  -f, --force                  if an existing destination file cannot be
-                                 opened, remove it and try again (this option
-                                 is ignored when the -n option is also used)
-  -i, --interactive            prompt before overwrite (overrides a previous -n
-                                  option)
-  -H                           follow command-line symbolic links in SOURCE
-  -l, --link                   hard link files instead of copying
-  -L, --dereference            always follow symbolic links in SOURCE
-  -n, --no-clobber             do not overwrite an existing file (overrides
-                                 a previous -i option)
-  -P, --no-dereference         never follow symbolic links in SOURCE
-  -p                           same as --preserve=mode,ownership,timestamps
-      --preserve[=ATTR_LIST]   preserve the specified attributes (default:
-                                 mode,ownership,timestamps), if possible
-                                 additional attributes: context, links, xattr,
-                                 all
-      --no-preserve=ATTR_LIST  don't preserve the specified attributes
-      --parents                use full source file name under DIRECTORY
-  -R, -r, --recursive          copy directories recursively
-      --reflink[=WHEN]         control clone/CoW copies. See below
-      --remove-destination     remove each existing destination file before
-                                 attempting to open it (contrast with --force)
-      --sparse=WHEN            control creation of sparse files. See below
-      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
-                                 argument
-  -s, --symbolic-link          make symbolic links instead of copying
-  -S, --suffix=SUFFIX          override the usual backup suffix
-  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
-  -T, --no-target-directory    treat DEST as a normal file
-  -u, --update                 copy only when the SOURCE file is newer
-                                 than the destination file or when the
-                                 destination file is missing
-  -v, --verbose                explain what is being done
-  -x, --one-file-system        stay on this file system
-  -Z                           set SELinux security context of destination
-                                 file to default type
-      --context[=CTX]          like -Z, or if CTX is specified then set the
-                                 SELinux or SMACK security context to CTX
-      --help     display this help and exit
-      --version  output version information and exit
+[38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-a[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--archive[0m[38;2;248;248;242m                same as -dR --preserve=all[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--attributes-only[0m[38;2;248;248;242m        don't copy the file data, just the attributes[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--backup[0m[38;2;248;248;242m[=CONTROL]       make a backup of each existing destination file[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-b[0m[38;2;248;248;242m                           like --backup but does not accept an argument[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--copy-contents[0m[38;2;248;248;242m          copy contents of special files when recursive[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-d[0m[38;2;248;248;242m                           same as --no-dereference --preserve=links[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-f[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--force[0m[38;2;248;248;242m                  if an existing destination file cannot be[0m
+[38;2;248;248;242m                                 opened, remove it and try again (this option[0m
+[38;2;248;248;242m                                 is ignored when the -n option is also used)[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-i[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--interactive[0m[38;2;248;248;242m            prompt before overwrite (overrides a previous -n[0m
+[38;2;248;248;242m                                  option)[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-H[0m[38;2;248;248;242m                           follow command-line symbolic links in SOURCE[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-l[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--link[0m[38;2;248;248;242m                   hard link files instead of copying[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-L[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--dereference[0m[38;2;248;248;242m            always follow symbolic links in SOURCE[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-n[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--no-clobber[0m[38;2;248;248;242m             do not overwrite an existing file (overrides[0m
+[38;2;248;248;242m                                 a previous -i option)[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-P[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--no-dereference[0m[38;2;248;248;242m         never follow symbolic links in SOURCE[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-p[0m[38;2;248;248;242m                           same as --preserve=mode,ownership,timestamps[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--preserve[0m[38;2;248;248;242m[=ATTR_LIST]   preserve the specified attributes (default:[0m
+[38;2;248;248;242m                                 mode,ownership,timestamps), if possible[0m
+[38;2;248;248;242m                                 additional attributes: context, links, xattr,[0m
+[38;2;248;248;242m                                 all[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--no-preserve[0m[38;2;248;248;242m=ATTR_LIST  don't preserve the specified attributes[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--parents[0m[38;2;248;248;242m                use full source file name under DIRECTORY[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-R[0m[38;2;248;248;242m, -r, --recursive          copy directories recursively[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--reflink[0m[38;2;248;248;242m[=WHEN]         control clone/CoW copies. See below[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--remove-destination[0m[38;2;248;248;242m     remove each existing destination file before[0m
+[38;2;248;248;242m                                 attempting to open it (contrast with --force)[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--sparse[0m[38;2;248;248;242m=WHEN            control creation of sparse files. See below[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--strip-trailing-slashes[0m[38;2;248;248;242m  remove any trailing slashes from each SOURCE[0m
+[38;2;248;248;242m                                 argument[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-s[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--symbolic-link[0m[38;2;248;248;242m          make symbolic links instead of copying[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-S[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--suffix[0m[38;2;248;248;242m=SUFFIX          override the usual backup suffix[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-t[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--target-directory[0m[38;2;248;248;242m=DIRECTORY  copy all SOURCE arguments into DIRECTORY[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-T[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--no-target-directory[0m[38;2;248;248;242m    treat DEST as a normal file[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-u[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--update[0m[38;2;248;248;242m                 copy only when the SOURCE file is newer[0m
+[38;2;248;248;242m                                 than the destination file or when the[0m
+[38;2;248;248;242m                                 destination file is missing[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-v[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--verbose[0m[38;2;248;248;242m                explain what is being done[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-x[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--one-file-system[0m[38;2;248;248;242m        stay on this file system[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-Z[0m[38;2;248;248;242m                           set SELinux security context of destination[0m
+[38;2;248;248;242m                                 file to default type[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--context[0m[38;2;248;248;242m[=CTX]          like -Z, or if CTX is specified then set the[0m
+[38;2;248;248;242m                                 SELinux or SMACK security context to CTX[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--help[0m[38;2;248;248;242m     display this help and exit[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--version[0m[38;2;248;248;242m  output version information and exit[0m
 
-By default, sparse SOURCE files are detected by a crude heuristic and the
-corresponding DEST file is made sparse as well.  That is the behavior
-selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
-file whenever the SOURCE file contains a long enough sequence of zero bytes.
-Use --sparse=never to inhibit creation of sparse files.
+[38;2;248;248;242mBy default, sparse SOURCE files are detected by a crude heuristic and the[0m
+[38;2;248;248;242mcorresponding DEST file is made sparse as well.  That is the behavior[0m
+[38;2;248;248;242mselected by --sparse=auto.  Specify --sparse=always to create a sparse DEST[0m
+[38;2;248;248;242mfile whenever the SOURCE file contains a long enough sequence of zero bytes.[0m
+[38;2;248;248;242mUse --sparse=never to inhibit creation of sparse files.[0m
 
-When --reflink[=always] is specified, perform a lightweight copy, where the
-data blocks are copied only when modified.  If this is not possible the copy
-fails, or if --reflink=auto is specified, fall back to a standard copy.
-Use --reflink=never to ensure a standard copy is performed.
+[38;2;248;248;242mWhen --reflink[=always] is specified, perform a lightweight copy, where the[0m
+[38;2;248;248;242mdata blocks are copied only when modified.  If this is not possible the copy[0m
+[38;2;248;248;242mfails, or if --reflink=auto is specified, fall back to a standard copy.[0m
+[38;2;248;248;242mUse --reflink=never to ensure a standard copy is performed.[0m
 
-The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
-The version control method may be selected via the --backup option or through
-the VERSION_CONTROL environment variable.  Here are the values:
+[38;2;248;248;242mThe backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.[0m
+[38;2;248;248;242mThe version control method may be selected via the --backup option or through[0m
+[38;2;248;248;242mthe VERSION_CONTROL environment variable.  Here are the values:[0m
 
-  none, off       never make backups (even if --backup is given)
-  numbered, t     make numbered backups
-  existing, nil   numbered if numbered backups exist, simple otherwise
-  simple, never   always make simple backups
+[38;2;248;248;242m  none, off       never make backups (even if --backup is given)[0m
+[38;2;248;248;242m  numbered, t     make numbered backups[0m
+[38;2;248;248;242m  existing, nil   numbered if numbered backups exist, simple otherwise[0m
+[38;2;248;248;242m  simple, never   always make simple backups[0m
 
-As a special case, cp makes a backup of SOURCE when the force and backup
-options are given and SOURCE and DEST are the same name for an existing,
-regular file.
+[38;2;248;248;242mAs a special case, cp makes a backup of SOURCE when the force and backup[0m
+[38;2;248;248;242moptions are given and SOURCE and DEST are the same name for an existing,[0m
+[38;2;248;248;242mregular file.[0m
 
-GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
-Full documentation at: <https://www.gnu.org/software/coreutils/cp>
-or available locally via: info '(coreutils) cp invocation'
+[38;2;248;248;242mGNU coreutils online help: <https://www.gnu.org/software/coreutils/>[0m
+[38;2;248;248;242mFull documentation at: <https://www.gnu.org/software/coreutils/cp>[0m
+[38;2;248;248;242mor available locally via: info '(coreutils) cp invocation'[0m

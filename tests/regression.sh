@@ -11,7 +11,7 @@ for source_path in source/*
 do
     filename=$(basename "$source_path")
     highlighted_path="highlighted/$filename"
-    bat --no-config -fpl help "$source_path" > "$highlighted_path"
+    bat --no-config -fpl cmd-help "$source_path" > "$highlighted_path"
 done
 
 # have git tell the effective difference between the version of the syntax
