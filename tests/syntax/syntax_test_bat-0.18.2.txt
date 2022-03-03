@@ -12,12 +12,12 @@ USAGE:
 OPTIONS:
     -A, --show-all
 #   ^^ option-def.help
-#     ^^^^^^^^^^^^ - option-def.help
+#     ^^ - option-def.help
+#       ^^^^^^^^^^ option-def.help
             Show non-printable characters like space, tab or newline. This option can also be used
             # <- - option-def.cmd-help
             to print binary files. Use '--tabs' to control the width of the tab-placeholders.
     -p, --plain
-#       ^^^^^^^ - option-def.help
             Only show plain style, no decorations. This is an alias for '--style=plain'. When '-p'
             is used twice ('-pp'), it also disables automatic paging (alias for '--style=plain
             --pager=never').

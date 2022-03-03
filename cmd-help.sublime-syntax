@@ -36,6 +36,13 @@ contexts:
   def-opt-short:
     - match: '-[:alpha:]\b'
       scope: option-def.help
+      set: def-opt-short-next
+    - include: else-pop
+    - include: eol-pop
+
+  def-opt-short-next:
+    - match: ', '
+      set: def-opt-long
     - include: else-pop
     - include: eol-pop
 
