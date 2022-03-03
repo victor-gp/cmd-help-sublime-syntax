@@ -7,6 +7,8 @@ A cat(1) clone with syntax highlighting and Git integration.
 
 USAGE:
     bat [OPTIONS] [FILE]...
+#^^^ - begin.cmd-help
+    # <- begin.cmd-help
     bat <SUBCOMMAND>
 
 OPTIONS:

@@ -7,4 +7,10 @@ scope: text.cmd-help
 
 contexts:
   main:
-    - meta_scope: text.cmd-help
+    - match: '^\s*(?=\S)'
+      push: line-begin
+
+  line-begin:
+    - meta_content_scope: begin.cmd-help
+    - match: \n
+      pop: true
