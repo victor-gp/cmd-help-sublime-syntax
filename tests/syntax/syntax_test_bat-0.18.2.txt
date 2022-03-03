@@ -1,19 +1,20 @@
 # SYNTAX TEST "../cmd-help.sublime-syntax"
 
 bat 0.18.2
-# <- text.cmd-help
+# <- - option-def.help
 A cat(1) clone with syntax highlighting and Git integration.
-# <- text.cmd-help
 
 USAGE:
     bat [OPTIONS] [FILE]...
-#^^^ - begin.cmd-help
-    # <- begin.cmd-help
+# ^^^^^^^^^^^^^^^^^^^^^^^^^ - option-def.help
     bat <SUBCOMMAND>
 
 OPTIONS:
     -A, --show-all
+#   ^^ option-def.help
+#     ^^^^^^^^^^^^ - option-def.help
             Show non-printable characters like space, tab or newline. This option can also be used
+            # <- - option-def.cmd-help
             to print binary files. Use '--tabs' to control the width of the tab-placeholders.
     -p, --plain
             Only show plain style, no decorations. This is an alias for '--style=plain'. When '-p'
@@ -70,6 +71,7 @@ OPTIONS:
         --paging <when>
             Specify when to use the pager. To disable the pager, use --paging=never' or its
             alias,'-P'. To disable the pager permanently, set BAT_PAGER to an empty string. To
+#                  ^^ option-def.help
             control which pager is used, see the '--pager' option. Possible values: *auto*, never,
             always.
         --pager <command>
@@ -80,6 +82,7 @@ OPTIONS:
             Map a glob pattern to an existing syntax name. The glob pattern is matched on the full
             path and the filename. For example, to highlight *.build files with the Python syntax,
             use -m '*.build:Python'. To highlight files named '.myignore' with the Git Ignore
+#               ^^ option-def.help
             syntax, use -m '.myignore:Git Ignore'. Note that the right-hand side is the *name* of
             the syntax, not a file extension.
         --theme <theme>

@@ -3,7 +3,7 @@
 name: Command Help
 file_extensions:
   - cmd-help # doesn't really exist, but useful for the shortname
-scope: text.cmd-help
+scope: text.help
 
 contexts:
   main:
@@ -11,6 +11,7 @@ contexts:
       push: line-begin
 
   line-begin:
-    - meta_content_scope: begin.cmd-help
+    - match: '-[:alpha:]\b'
+      scope: option-def.help
     - match: \n
       pop: true
