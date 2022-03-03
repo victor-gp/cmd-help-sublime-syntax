@@ -10,8 +10,26 @@ contexts:
     - match: '^\s*(?=\S)'
       push: line-begin
 
-  line-begin:
-    - match: '-[:alpha:]\b'
-      scope: option-def.help
+  ### BACKTRACK
+
+  else-pop:
+    - match: ''
+      pop: true
+
+  eol-pop:
     - match: \n
       pop: true
+
+  ### DEFINITIONS
+
+  line-begin:
+    - match: ''
+      set: [def-opt-short]
+    - include: else-pop
+    - include: eol-pop
+
+  def-opt-short:
+    - match: '-[:alpha:]\b'
+      scope: option-def.help
+    - include: else-pop
+    - include: eol-pop
