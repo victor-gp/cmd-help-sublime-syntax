@@ -17,9 +17,12 @@ OPTIONS:
             # <- - option-def.cmd-help
             to print binary files. Use '--tabs' to control the width of the tab-placeholders.
     -p, --plain
+#       ^^^^^^^ - option-def.help
             Only show plain style, no decorations. This is an alias for '--style=plain'. When '-p'
             is used twice ('-pp'), it also disables automatic paging (alias for '--style=plain
             --pager=never').
+#           ^^^^^^^ option-def.help
+            # fixme: this one's hard to avoid
     -l, --language <language>
             Explicitly set the language for syntax highlighting. The language can be specified as a
             name (like 'C++' or 'LaTeX') or possible file extension (like 'cpp', 'hpp' or 'md'). Use
@@ -31,6 +34,8 @@ OPTIONS:
               '--highlight-line :40' highlights lines 1 to 40
               '--highlight-line 40:' highlights lines 40 to the end of the file
         --file-name <name>...
+#       ^^^^^^^^^^^ option-def.help
+#                  ^^^^^^^^^^ - option-def.help
             Specify the name to display for a file. Useful when piping data to bat from STDIN when
             bat does not otherwise know the filename. Note that the provided file name is also used
             for syntax detection.
