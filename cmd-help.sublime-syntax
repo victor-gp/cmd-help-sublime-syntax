@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+name: Command Help
+file_extensions:
+  - cmd-help # doesn't really exist, but useful for the shortname
+scope: text.cmd-help
+
+contexts:
+  main:
+    - meta_scope: text.cmd-help
