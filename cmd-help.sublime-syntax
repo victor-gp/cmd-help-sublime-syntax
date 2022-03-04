@@ -25,17 +25,18 @@ contexts:
       set: [def-opt-short, def-opt-long]
     - include: else-pop
 
-  ### BACKTRACK
-
   else-pop:
     - match: ''
       pop: true
 
-  eol-pop:
-    - match: \n
-      pop: true
+  ### CONTENT
 
-  ### DEFINITIONS
+  heading:
+    - match: '{{word}}:?\n'
+      scope: markup.heading.help
+    - match: '(?i:usage):'
+      scope: markup.heading.help
+    - include: else-pop
 
   def-opt-short:
     - match: '-[:alpha:]\b'
@@ -51,13 +52,4 @@ contexts:
   def-opt-long:
     - match: '--{{kebab_word}}'
       scope: entity.name.cmd-option.help
-    - include: else-pop
-
-  ### SECTION HEADERS
-
-  heading:
-    - match: '{{word}}:?\n'
-      scope: markup.heading.help
-    - match: '(?i:usage):'
-      scope: markup.heading.help
     - include: else-pop
