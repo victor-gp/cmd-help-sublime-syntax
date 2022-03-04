@@ -13,7 +13,17 @@ variables:
 contexts:
   main:
     - match: ''
-      push: [section-header, line-begin]
+      push: [line-begin, line-indent]
+
+  line-begin:
+    - match: '^'
+      set: [heading]
+    - include: else-pop
+
+  line-indent:
+    - match: '^\s*(?=\S)'
+      set: [def-opt-short, def-opt-long]
+    - include: else-pop
 
   ### BACKTRACK
 
@@ -26,11 +36,6 @@ contexts:
       pop: true
 
   ### DEFINITIONS
-
-  line-begin:
-    - match: '^\s*(?=\S)'
-      set: [def-opt-short, def-opt-long]
-    - include: else-pop
 
   def-opt-short:
     - match: '-[:alpha:]\b'
@@ -50,9 +55,9 @@ contexts:
 
   ### SECTION HEADERS
 
-  section-header:
-    - match: '^{{word}}:?\n'
+  heading:
+    - match: '{{word}}:?\n'
       scope: markup.heading.help
-    - match: '^(?i:usage):'
+    - match: '(?i:usage):'
       scope: markup.heading.help
     - include: else-pop
