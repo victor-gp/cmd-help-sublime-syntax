@@ -1,6 +1,8 @@
 # SYNTAX TEST "../cmd-help.sublime-syntax"
 
 Usage: cp [OPTION]... [-T] SOURCE DEST
+#^^^^^ markup.heading.help
+#     ^^^^^^ - markup.heading.help
   or:  cp [OPTION]... SOURCE... DIRECTORY
   or:  cp [OPTION]... -t DIRECTORY SOURCE...
 Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.

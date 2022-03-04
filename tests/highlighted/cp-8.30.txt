@@ -1,4 +1,4 @@
-[38;2;248;248;242mUsage: cp [OPTION]... [-T] SOURCE DEST[0m
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m cp [OPTION]... [-T] SOURCE DEST[0m
 [38;2;248;248;242m  or:  cp [OPTION]... SOURCE... DIRECTORY[0m
 [38;2;248;248;242m  or:  cp [OPTION]... -t DIRECTORY SOURCE...[0m
 [38;2;248;248;242mCopy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.[0m
