@@ -45,7 +45,7 @@ Usage: ruby [switches] [--] [programfile] [arguments]
                   limit the maximum length of backtrace
 Dump List:
 #^^^^^^^^^ - markup.heading.help
-# nice
+# nice: either scope this or de-scope "Features:"
   insns           instruction sequences
   yydebug         yydebug of yacc parser generator
   parsetree       AST
