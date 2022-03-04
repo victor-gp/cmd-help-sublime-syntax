@@ -16,4 +16,4 @@ done
 
 # have git tell the effective difference between the version of the syntax
 # in staging/HEAD and the one in working dir, for all highlighted samples
-GIT_PAGER='LESS=R less' git diff --color=never -- highlighted/
+GIT_PAGER='LESS=R less' git diff -- highlighted/
