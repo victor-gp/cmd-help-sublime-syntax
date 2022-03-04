@@ -41,7 +41,7 @@
 [38;2;248;248;242m  parsetree       AST[0m
 [38;2;248;248;242m  parsetree_with_comment[0m
 [38;2;248;248;242m                  AST with comments[0m
-[38;2;248;248;242mFeatures:[0m
+[38;2;253;151;31mFeatures:[0m
 [38;2;248;248;242m  gems            rubygems (default: enabled)[0m
 [38;2;248;248;242m  did_you_mean    did_you_mean (default: enabled)[0m
 [38;2;248;248;242m  rubyopt         RUBYOPT environment variable (default: enabled)[0m

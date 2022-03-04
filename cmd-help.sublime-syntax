@@ -12,8 +12,8 @@ variables:
 
 contexts:
   main:
-    - match: '^\s*(?=\S)'
-      push: line-begin
+    - match: ''
+      push: [section-header, line-begin]
 
   ### BACKTRACK
 
@@ -28,7 +28,7 @@ contexts:
   ### DEFINITIONS
 
   line-begin:
-    - match: ''
+    - match: '^\s*(?=\S)'
       set: [def-opt-short, def-opt-long]
     - include: else-pop
     - include: eol-pop
@@ -51,3 +51,10 @@ contexts:
       scope: entity.name.cmd-option.help
     - include: else-pop
     - include: eol-pop
+
+  ### SECTION HEADERS
+
+  section-header:
+    - match: '^{{word}}:?\n'
+      scope: markup.heading.help
+    - include: else-pop

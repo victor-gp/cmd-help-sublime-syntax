@@ -1,15 +1,16 @@
 # SYNTAX TEST "../cmd-help.sublime-syntax"
 
 bat 0.18.2
-# <- - entity.name.cmd-option.help
 A cat(1) clone with syntax highlighting and Git integration.
 
 USAGE:
+# <- markup.heading.help
+#^^^^^ markup.heading.help
     bat [OPTIONS] [FILE]...
-# ^^^^^^^^^^^^^^^^^^^^^^^^^ - entity.name.cmd-option.help
     bat <SUBCOMMAND>
 
 OPTIONS:
+#^^^^^^^ markup.heading.help
     -A, --show-all
 #   ^^ entity.name.cmd-option.help
 #     ^^ - entity.name.cmd-option.help
