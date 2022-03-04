@@ -1,19 +1,19 @@
 # SYNTAX TEST "../cmd-help.sublime-syntax"
 
 bat 0.18.2
-# <- - entity.name.help
+# <- - entity.name.cmd-option.help
 A cat(1) clone with syntax highlighting and Git integration.
 
 USAGE:
     bat [OPTIONS] [FILE]...
-# ^^^^^^^^^^^^^^^^^^^^^^^^^ - entity.name.help
+# ^^^^^^^^^^^^^^^^^^^^^^^^^ - entity.name.cmd-option.help
     bat <SUBCOMMAND>
 
 OPTIONS:
     -A, --show-all
-#   ^^ entity.name.help
-#     ^^ - entity.name.help
-#       ^^^^^^^^^^ entity.name.help
+#   ^^ entity.name.cmd-option.help
+#     ^^ - entity.name.cmd-option.help
+#       ^^^^^^^^^^ entity.name.cmd-option.help
             Show non-printable characters like space, tab or newline. This option can also be used
             # <- - option-def.cmd-help
             to print binary files. Use '--tabs' to control the width of the tab-placeholders.
@@ -21,7 +21,7 @@ OPTIONS:
             Only show plain style, no decorations. This is an alias for '--style=plain'. When '-p'
             is used twice ('-pp'), it also disables automatic paging (alias for '--style=plain
             --pager=never').
-#           ^^^^^^^ entity.name.help
+#           ^^^^^^^ entity.name.cmd-option.help
             # fixme: this one's hard to avoid
     -l, --language <language>
             Explicitly set the language for syntax highlighting. The language can be specified as a
@@ -34,8 +34,8 @@ OPTIONS:
               '--highlight-line :40' highlights lines 1 to 40
               '--highlight-line 40:' highlights lines 40 to the end of the file
         --file-name <name>...
-#       ^^^^^^^^^^^ entity.name.help
-#                  ^^^^^^^^^^ - entity.name.help
+#       ^^^^^^^^^^^ entity.name.cmd-option.help
+#                  ^^^^^^^^^^ - entity.name.cmd-option.help
             Specify the name to display for a file. Useful when piping data to bat from STDIN when
             bat does not otherwise know the filename. Note that the provided file name is also used
             for syntax detection.
@@ -76,7 +76,7 @@ OPTIONS:
         --paging <when>
             Specify when to use the pager. To disable the pager, use --paging=never' or its
             alias,'-P'. To disable the pager permanently, set BAT_PAGER to an empty string. To
-#                  ^^ - entity.name.help
+#                  ^^ - entity.name.cmd-option.help
             control which pager is used, see the '--pager' option. Possible values: *auto*, never,
             always.
         --pager <command>
@@ -87,7 +87,7 @@ OPTIONS:
             Map a glob pattern to an existing syntax name. The glob pattern is matched on the full
             path and the filename. For example, to highlight *.build files with the Python syntax,
             use -m '*.build:Python'. To highlight files named '.myignore' with the Git Ignore
-#               ^^ - entity.name.help
+#               ^^ - entity.name.cmd-option.help
             syntax, use -m '.myignore:Git Ignore'. Note that the right-hand side is the *name* of
             the syntax, not a file extension.
         --theme <theme>

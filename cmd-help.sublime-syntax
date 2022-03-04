@@ -35,7 +35,7 @@ contexts:
 
   def-opt-short:
     - match: '-[:alpha:]\b'
-      scope: entity.name.help
+      scope: entity.name.cmd-option.help
       set: def-opt-short-next
     - include: else-pop
     - include: eol-pop
@@ -48,6 +48,6 @@ contexts:
 
   def-opt-long:
     - match: '--{{kebab_word}}'
-      scope: entity.name.help
+      scope: entity.name.cmd-option.help
     - include: else-pop
     - include: eol-pop

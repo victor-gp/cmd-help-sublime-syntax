@@ -31,8 +31,8 @@ Mandatory arguments to long options are mandatory for short options too.
       --no-preserve=ATTR_LIST  don't preserve the specified attributes
       --parents                use full source file name under DIRECTORY
   -R, -r, --recursive          copy directories recursively
-#     ^^ - entity.name.help
-#         ^^^^^^^^^^^ - entity.name.help
+#     ^^ - entity.name.cmd-option.help
+#         ^^^^^^^^^^^ - entity.name.cmd-option.help
       #fixme
       --reflink[=WHEN]         control clone/CoW copies. See below
       --remove-destination     remove each existing destination file before
