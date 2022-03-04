@@ -1,0 +1,29 @@
+[38;2;248;248;242mGNU bash, version 5.0.17(1)-release-(x86_64-pc-linux-gnu)[0m
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m	bash [GNU long option] [option] ...[0m
+[38;2;248;248;242m	bash [GNU long option] [option] script-file ...[0m
+[38;2;248;248;242mGNU long options:[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--debug[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--debugger[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--dump-po-strings[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--dump-strings[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--help[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--init-file[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--login[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--noediting[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--noprofile[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--norc[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--posix[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--pretty-print[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--rcfile[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--restricted[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--verbose[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m--version[0m
+[38;2;248;248;242mShell options:[0m
+[38;2;248;248;242m	-ilrsD or -c command or -O shopt_option		(invocation only)[0m
+[38;2;248;248;242m	-abefhkmnptuvxBCHP or -o option[0m
+[38;2;248;248;242mType `bash -c "help set"' for more information about shell options.[0m
+[38;2;248;248;242mType `bash -c help' for more information about shell builtin commands.[0m
+[38;2;248;248;242mUse the `bashbug' command to report bugs.[0m
+
+[38;2;248;248;242mbash home page: <http://www.gnu.org/software/bash>[0m
+[38;2;248;248;242mGeneral help using GNU software: <http://www.gnu.org/gethelp/>[0m

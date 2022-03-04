@@ -1,0 +1,52 @@
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m java [-options] class [args...][0m
+[38;2;248;248;242m           (to execute a class)[0m
+[38;2;248;248;242m   or  java [-options] -jar jarfile [args...][0m
+[38;2;248;248;242m           (to execute a jar file)[0m
+[38;2;248;248;242mwhere options include:[0m
+[38;2;248;248;242m    -d32	  use a 32-bit data model if available[0m
+[38;2;248;248;242m    -d64	  use a 64-bit data model if available[0m
+[38;2;248;248;242m    -server	  to select the "server" VM[0m
+[38;2;248;248;242m                  The default VM is server,[0m
+[38;2;248;248;242m                  because you are running on a server-class machine.[0m
+
+
+[38;2;248;248;242m    -cp <class search path of directories and zip/jar files>[0m
+[38;2;248;248;242m    -classpath <class search path of directories and zip/jar files>[0m
+[38;2;248;248;242m                  A : separated list of directories, JAR archives,[0m
+[38;2;248;248;242m                  and ZIP archives to search for class files.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m<name>=<value>[0m
+[38;2;248;248;242m                  set a system property[0m
+[38;2;248;248;242m    -verbose:[class|gc|jni][0m
+[38;2;248;248;242m                  enable verbose output[0m
+[38;2;248;248;242m    -version      print product version and exit[0m
+[38;2;248;248;242m    -version:<value>[0m
+[38;2;248;248;242m                  Warning: this feature is deprecated and will be removed[0m
+[38;2;248;248;242m                  in a future release.[0m
+[38;2;248;248;242m                  require the specified version to run[0m
+[38;2;248;248;242m    -showversion  print product version and continue[0m
+[38;2;248;248;242m    -jre-restrict-search | -no-jre-restrict-search[0m
+[38;2;248;248;242m                  Warning: this feature is deprecated and will be removed[0m
+[38;2;248;248;242m                  in a future release.[0m
+[38;2;248;248;242m                  include/exclude user private JREs in the version search[0m
+[38;2;248;248;242m    -? -help      print this help message[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m            print help on non-standard options[0m
+[38;2;248;248;242m    -ea[:<packagename>...|:<classname>][0m
+[38;2;248;248;242m    -enableassertions[:<packagename>...|:<classname>][0m
+[38;2;248;248;242m                  enable assertions with specified granularity[0m
+[38;2;248;248;242m    -da[:<packagename>...|:<classname>][0m
+[38;2;248;248;242m    -disableassertions[:<packagename>...|:<classname>][0m
+[38;2;248;248;242m                  disable assertions with specified granularity[0m
+[38;2;248;248;242m    -esa | -enablesystemassertions[0m
+[38;2;248;248;242m                  enable system assertions[0m
+[38;2;248;248;242m    -dsa | -disablesystemassertions[0m
+[38;2;248;248;242m                  disable system assertions[0m
+[38;2;248;248;242m    -agentlib:<libname>[=<options>][0m
+[38;2;248;248;242m                  load native agent library <libname>, e.g. -agentlib:hprof[0m
+[38;2;248;248;242m                  see also, -agentlib:jdwp=help and -agentlib:hprof=help[0m
+[38;2;248;248;242m    -agentpath:<pathname>[=<options>][0m
+[38;2;248;248;242m                  load native agent library by full pathname[0m
+[38;2;248;248;242m    -javaagent:<jarpath>[=<options>][0m
+[38;2;248;248;242m                  load Java programming language agent, see java.lang.instrument[0m
+[38;2;248;248;242m    -splash:<imagepath>[0m
+[38;2;248;248;242m                  show splash screen with specified image[0m
+[38;2;248;248;242mSee http://www.oracle.com/technetwork/java/javase/documentation/index.html for more details.[0m

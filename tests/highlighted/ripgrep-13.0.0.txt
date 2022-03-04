@@ -1,0 +1,1145 @@
+[38;2;248;248;242mripgrep 13.0.0[0m
+[38;2;248;248;242mAndrew Gallant <jamslam@gmail.com>[0m
+
+[38;2;248;248;242mripgrep (rg) recursively searches the current directory for a regex pattern.[0m
+[38;2;248;248;242mBy default, ripgrep will respect gitignore rules and automatically skip hidden[0m
+[38;2;248;248;242mfiles/directories and binary files.[0m
+
+[38;2;248;248;242mUse -h for short descriptions and --help for more details.[0m
+
+[38;2;248;248;242mProject home page: https://github.com/BurntSushi/ripgrep[0m
+
+
+[38;2;253;151;31mUSAGE:[0m
+[38;2;248;248;242m    rg [OPTIONS] PATTERN [PATH ...][0m
+[38;2;248;248;242m    rg [OPTIONS] -e PATTERN ... [PATH ...][0m
+[38;2;248;248;242m    rg [OPTIONS] -f PATTERNFILE ... [PATH ...][0m
+[38;2;248;248;242m    rg [OPTIONS] --files [PATH ...][0m
+[38;2;248;248;242m    rg [OPTIONS] --type-list[0m
+[38;2;248;248;242m    command | rg [OPTIONS] PATTERN[0m
+[38;2;248;248;242m    rg [OPTIONS] --help[0m
+[38;2;248;248;242m    rg [OPTIONS] --version[0m
+
+[38;2;253;151;31mARGS:[0m
+[38;2;248;248;242m    <PATTERN>    [0m
+[38;2;248;248;242m            A regular expression used for searching. To match a pattern beginning with a[0m
+[38;2;248;248;242m            dash, use the -e/--regexp flag.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            For example, to search for the literal '-foo', you can use this flag:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                rg -e -foo[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            You can also use the special '--' delimiter to indicate that no more flags[0m
+[38;2;248;248;242m            will be provided. Namely, the following is equivalent to the above:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                rg -- -foo[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    <PATH>...    [0m
+[38;2;248;248;242m            A file or directory to search. Directories are searched recursively. File paths[0m
+[38;2;248;248;242m            specified on the command line override glob and ignore rules.  [0m
+
+[38;2;253;151;31mOPTIONS:[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--after-context[0m[38;2;248;248;242m <NUM>                    [0m
+[38;2;248;248;242m            Show NUM lines after each match.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the --context and --passthru flags.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--auto-hybrid-regex[0m[38;2;248;248;242m                      [0m
+[38;2;248;248;242m            DEPRECATED. Use --engine instead.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When this flag is used, ripgrep will dynamically choose between supported regex[0m
+[38;2;248;248;242m            engines depending on the features used in a pattern. When ripgrep chooses a[0m
+[38;2;248;248;242m            regex engine, it applies that choice for every regex provided to ripgrep (e.g.,[0m
+[38;2;248;248;242m            via multiple -e/--regexp or -f/--file flags).[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            As an example of how this flag might behave, ripgrep will attempt to use[0m
+[38;2;248;248;242m            its default finite automata based regex engine whenever the pattern can be[0m
+[38;2;248;248;242m            successfully compiled with that regex engine. If PCRE2 is enabled and if the[0m
+[38;2;248;248;242m            pattern given could not be compiled with the default regex engine, then PCRE2[0m
+[38;2;248;248;242m            will be automatically used for searching. If PCRE2 isn't available, then this[0m
+[38;2;248;248;242m            flag has no effect because there is only one regex engine to choose from.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            In the future, ripgrep may adjust its heuristics for how it decides which[0m
+[38;2;248;248;242m            regex engine to use. In general, the heuristics will be limited to a static[0m
+[38;2;248;248;242m            analysis of the patterns, and not to any specific runtime behavior observed[0m
+[38;2;248;248;242m            while searching files.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The primary downside of using this flag is that it may not always be obvious[0m
+[38;2;248;248;242m            which regex engine ripgrep uses, and thus, the match semantics or performance[0m
+[38;2;248;248;242m            profile of ripgrep may subtly and unexpectedly change. However, in many cases,[0m
+[38;2;248;248;242m            all regex engines will agree on what constitutes a match and it can be nice[0m
+[38;2;248;248;242m            to transparently support more advanced regex features like look-around and[0m
+[38;2;248;248;242m            backreferences without explicitly needing to enable them.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-auto-hybrid-regex.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--before-context[0m[38;2;248;248;242m <NUM>                   [0m
+[38;2;248;248;242m            Show NUM lines before each match.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the --context and --passthru flags.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--binary[0m[38;2;248;248;242m                                 [0m
+[38;2;248;248;242m            Enabling this flag will cause ripgrep to search binary files. By default,[0m
+[38;2;248;248;242m            ripgrep attempts to automatically skip binary files in order to improve the[0m
+[38;2;248;248;242m            relevance of results and make the search faster.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Binary files are heuristically detected based on whether they contain a NUL[0m
+[38;2;248;248;242m            byte or not. By default (without this flag set), once a NUL byte is seen,[0m
+[38;2;248;248;242m            ripgrep will stop searching the file. Usually, NUL bytes occur in the beginning[0m
+[38;2;248;248;242m            of most binary files. If a NUL byte occurs after a match, then ripgrep will[0m
+[38;2;248;248;242m            still stop searching the rest of the file, but a warning will be printed.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            In contrast, when this flag is provided, ripgrep will continue searching a file[0m
+[38;2;248;248;242m            even if a NUL byte is found. In particular, if a NUL byte is found then ripgrep[0m
+[38;2;248;248;242m            will continue searching until either a match is found or the end of the file is[0m
+[38;2;248;248;242m            reached, whichever comes sooner. If a match is found, then ripgrep will stop[0m
+[38;2;248;248;242m            and print a warning saying that the search stopped prematurely.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If you want ripgrep to search a file without any special NUL byte handling at[0m
+[38;2;248;248;242m            all (and potentially print binary data to stdout), then you should use the[0m
+[38;2;248;248;242m            '-a/--text' flag.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The '--binary' flag is a flag for controlling ripgrep's automatic filtering[0m
+[38;2;248;248;242m            mechanism. As such, it does not need to be used when searching a file[0m
+[38;2;248;248;242m            explicitly or when searching stdin. That is, it is only applicable when[0m
+[38;2;248;248;242m            recursively searching a directory.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that when the '-u/--unrestricted' flag is provided for a third time, then[0m
+[38;2;248;248;242m            this flag is automatically enabled.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with '--no-binary'. It overrides the '-a/--text'[0m
+[38;2;248;248;242m            flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--block-buffered[0m[38;2;248;248;242m                         [0m
+[38;2;248;248;242m            When enabled, ripgrep will use block buffering. That is, whenever a matching[0m
+[38;2;248;248;242m            line is found, it will be written to an in-memory buffer and will not be[0m
+[38;2;248;248;242m            written to stdout until the buffer reaches a certain size. This is the default[0m
+[38;2;248;248;242m            when ripgrep's stdout is redirected to a pipeline or a file. When ripgrep's[0m
+[38;2;248;248;242m            stdout is connected to a terminal, line buffering will be used. Forcing block[0m
+[38;2;248;248;242m            buffering can be useful when dumping a large amount of contents to a terminal.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Forceful block buffering can be disabled with --no-block-buffered. Note that[0m
+[38;2;248;248;242m            using --no-block-buffered causes ripgrep to revert to its default behavior of[0m
+[38;2;248;248;242m            automatically detecting the buffering strategy. To force line buffering, use[0m
+[38;2;248;248;242m            the --line-buffered flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--byte-offset[0m
+[38;2;248;248;242m            Print the 0-based byte offset within the input file before each line of output.[0m
+[38;2;248;248;242m            If -o (--only-matching) is specified, print the offset of the matching part[0m
+[38;2;248;248;242m            itself.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If ripgrep does transcoding, then the byte offset is in terms of the the result[0m
+[38;2;248;248;242m            of transcoding and not the original data. This applies similarly to another[0m
+[38;2;248;248;242m            transformation on the source, such as decompression or a --pre filter. Note[0m
+[38;2;248;248;242m            that when the PCRE2 regex engine is used, then UTF-8 transcoding is done by[0m
+[38;2;248;248;242m            default.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--case-sensitive[0m[38;2;248;248;242m                         [0m
+[38;2;248;248;242m            Search case sensitively.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the -i/--ignore-case and -S/--smart-case flags.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m <WHEN>                           [0m
+[38;2;248;248;242m            This flag controls when to use colors. The default setting is 'auto', which[0m
+[38;2;248;248;242m            means ripgrep will try to guess when to use colors. For example, if ripgrep is[0m
+[38;2;248;248;242m            printing to a terminal, then it will use colors, but if it is redirected to a[0m
+[38;2;248;248;242m            file or a pipe, then it will suppress color output. ripgrep will suppress color[0m
+[38;2;248;248;242m            output in some other circumstances as well. For example, if the TERM[0m
+[38;2;248;248;242m            environment variable is not set or set to 'dumb', then ripgrep will not use[0m
+[38;2;248;248;242m            colors.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The possible values for this flag are:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                never    Colors will never be used.[0m
+[38;2;248;248;242m                auto     The default. ripgrep tries to be smart.[0m
+[38;2;248;248;242m                always   Colors will always be used regardless of where output is sent.[0m
+[38;2;248;248;242m                ansi     Like 'always', but emits ANSI escapes (even in a Windows console).[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When the --vimgrep flag is given to ripgrep, then the default value for the[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m flag changes to 'never'.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--colors[0m[38;2;248;248;242m <COLOR_SPEC>...                 [0m
+[38;2;248;248;242m            This flag specifies color settings for use in the output. This flag may be[0m
+[38;2;248;248;242m            provided multiple times. Settings are applied iteratively. Colors are limited[0m
+[38;2;248;248;242m            to one of eight choices: red, blue, green, cyan, magenta, yellow, white and[0m
+[38;2;248;248;242m            black. Styles are limited to nobold, bold, nointense, intense, nounderline[0m
+[38;2;248;248;242m            or underline.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The format of the flag is '{type}:{attribute}:{value}'. '{type}' should be[0m
+[38;2;248;248;242m            one of path, line, column or match. '{attribute}' can be fg, bg or style.[0m
+[38;2;248;248;242m            '{value}' is either a color (for fg and bg) or a text style. A special format,[0m
+[38;2;248;248;242m            '{type}:none', will clear all color settings for '{type}'.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            For example, the following command will change the match color to magenta and[0m
+[38;2;248;248;242m            the background color for line numbers to yellow:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                rg --colors 'match:fg:magenta' --colors 'line:bg:yellow' foo.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Extended colors can be used for '{value}' when the terminal supports ANSI color[0m
+[38;2;248;248;242m            sequences. These are specified as either 'x' (256-color) or 'x,x,x' (24-bit[0m
+[38;2;248;248;242m            truecolor) where x is a number between 0 and 255 inclusive. x may be given as[0m
+[38;2;248;248;242m            a normal decimal number or a hexadecimal number, which is prefixed by `0x`.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            For example, the following command will change the match background color to[0m
+[38;2;248;248;242m            that represented by the rgb value (0,128,255):[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                rg --colors 'match:bg:0,128,255'[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            or, equivalently,[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                rg --colors 'match:bg:0x0,0x80,0xFF'[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that the the intense and nointense style flags will have no effect when[0m
+[38;2;248;248;242m            used alongside these extended color codes.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--column[0m[38;2;248;248;242m                                 [0m
+[38;2;248;248;242m            Show column numbers (1-based). This only shows the column numbers for the first[0m
+[38;2;248;248;242m            match on each line. This does not try to account for Unicode. One byte is equal[0m
+[38;2;248;248;242m            to one column. This implies --line-number.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-column.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m <NUM>                          [0m
+[38;2;248;248;242m            Show NUM lines before and after each match. This is equivalent to providing[0m
+[38;2;248;248;242m            both the -B/--before-context and -A/--after-context flags with the same value.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides both the -B/--before-context and -A/--after-context flags,[0m
+[38;2;248;248;242m            in addition to the --passthru flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--context-separator[0m[38;2;248;248;242m <SEPARATOR>          [0m
+[38;2;248;248;242m            The string used to separate non-contiguous context lines in the output. This[0m
+[38;2;248;248;242m            is only used when one of the context flags is used (-A, -B or -C). Escape[0m
+[38;2;248;248;242m            sequences like \x7F or \t may be used. The default value is --.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When the context separator is set to an empty string, then a line break[0m
+[38;2;248;248;242m            is still inserted. To completely disable context separators, use the[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--no-context-separator[0m[38;2;248;248;242m flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--count[0m
+[38;2;248;248;242m            This flag suppresses normal output and shows the number of lines that match[0m
+[38;2;248;248;242m            the given patterns for each file searched. Each file containing a match has its[0m
+[38;2;248;248;242m            path and count printed on each line. Note that this reports the number of lines[0m
+[38;2;248;248;242m            that match and not the total number of matches, unless -U/--multiline is[0m
+[38;2;248;248;242m            enabled. In multiline mode, --count is equivalent to --count-matches.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If only one file is given to ripgrep, then only the count is printed if there[0m
+[38;2;248;248;242m            is a match. The --with-filename flag can be used to force printing the file[0m
+[38;2;248;248;242m            path in this case. If you need a count to be printed regardless of whether[0m
+[38;2;248;248;242m            there is a match, then use --include-zero.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the --count-matches flag. Note that when --count is combined[0m
+[38;2;248;248;242m            with --only-matching, then ripgrep behaves as if --count-matches was given.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--count-matches[0m
+[38;2;248;248;242m            This flag suppresses normal output and shows the number of individual[0m
+[38;2;248;248;242m            matches of the given patterns for each file searched. Each file[0m
+[38;2;248;248;242m            containing matches has its path and match count printed on each line.[0m
+[38;2;248;248;242m            Note that this reports the total number of individual matches and not[0m
+[38;2;248;248;242m            the number of lines that match.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If only one file is given to ripgrep, then only the count is printed if there[0m
+[38;2;248;248;242m            is a match. The --with-filename flag can be used to force printing the file[0m
+[38;2;248;248;242m            path in this case.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the --count flag. Note that when --count is combined with[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--only-matching[0m[38;2;248;248;242m, then ripgrep behaves as if --count-matches was given.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--crlf[0m[38;2;248;248;242m                                   [0m
+[38;2;248;248;242m            When enabled, ripgrep will treat CRLF ('\r\n') as a line terminator instead[0m
+[38;2;248;248;242m            of just '\n'.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Principally, this permits '$' in regex patterns to match just before CRLF[0m
+[38;2;248;248;242m            instead of just before LF. The underlying regex engine may not support this[0m
+[38;2;248;248;242m            natively, so ripgrep will translate all instances of '$' to '(?:\r??$)'. This[0m
+[38;2;248;248;242m            may produce slightly different than desired match offsets. It is intended as a[0m
+[38;2;248;248;242m            work-around until the regex engine supports this natively.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            CRLF support can be disabled with --no-crlf.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m                                  [0m
+[38;2;248;248;242m            Show debug messages. Please use this when filing a bug report.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The --debug flag is generally useful for figuring out why ripgrep skipped[0m
+[38;2;248;248;242m            searching a particular file. The debug messages should mention all files[0m
+[38;2;248;248;242m            skipped and why they were skipped.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            To get even more debug output, use the --trace flag, which implies --debug[0m
+[38;2;248;248;242m            along with additional trace data. With --trace, the output could be quite[0m
+[38;2;248;248;242m            large and is generally more useful for development.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--dfa-size-limit[0m[38;2;248;248;242m <NUM+SUFFIX?>           [0m
+[38;2;248;248;242m            The upper size limit of the regex DFA. The default limit is 10M. This should[0m
+[38;2;248;248;242m            only be changed on very large regex inputs where the (slower) fallback regex[0m
+[38;2;248;248;242m            engine may otherwise be used if the limit is reached.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The argument accepts the same size suffixes as allowed in with the[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--max-filesize[0m[38;2;248;248;242m flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m <ENCODING>                    [0m
+[38;2;248;248;242m            Specify the text encoding that ripgrep will use on all files searched. The[0m
+[38;2;248;248;242m            default value is 'auto', which will cause ripgrep to do a best effort automatic[0m
+[38;2;248;248;242m            detection of encoding on a per-file basis. Automatic detection in this case[0m
+[38;2;248;248;242m            only applies to files that begin with a UTF-8 or UTF-16 byte-order mark (BOM).[0m
+[38;2;248;248;242m            No other automatic detection is performed. One can also specify 'none' which[0m
+[38;2;248;248;242m            will then completely disable BOM sniffing and always result in searching the[0m
+[38;2;248;248;242m            raw bytes, including a BOM if it's present, regardless of its encoding.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Other supported values can be found in the list of labels here:[0m
+[38;2;248;248;242m            https://encoding.spec.whatwg.org/#concept-encoding-get[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            For more details on encoding and how ripgrep deals with it, see GUIDE.md.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-encoding.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--engine[0m[38;2;248;248;242m <ENGINE>[0m
+[38;2;248;248;242m            Specify which regular expression engine to use. When you choose a regex engine,[0m
+[38;2;248;248;242m            it applies that choice for every regex provided to ripgrep (e.g., via multiple[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m/--regexp or -f/--file flags).[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Accepted values are 'default', 'pcre2', or 'auto'.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The default value is 'default', which is the fastest and should be good for[0m
+[38;2;248;248;242m            most use cases. The 'pcre2' engine is generally useful when you want to use[0m
+[38;2;248;248;242m            features such as look-around or backreferences. 'auto' will dynamically choose[0m
+[38;2;248;248;242m            between supported regex engines depending on the features used in a pattern on[0m
+[38;2;248;248;242m            a best effort basis.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that the 'pcre2' engine is an optional ripgrep feature. If PCRE2 wasn't[0m
+[38;2;248;248;242m            included in your build of ripgrep, then using this flag will result in ripgrep[0m
+[38;2;248;248;242m            printing an error message and exiting.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides previous uses of --pcre2 and --auto-hybrid-regex flags.[0m
+[38;2;248;248;242m              [default: default][0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--field-context-separator[0m[38;2;248;248;242m <SEPARATOR>    [0m
+[38;2;248;248;242m            Set the field context separator, which is used to delimit file paths, line[0m
+[38;2;248;248;242m            numbers, columns and the context itself, when printing contextual lines. The[0m
+[38;2;248;248;242m            separator may be any number of bytes, including zero. Escape sequences like[0m
+[38;2;248;248;242m            \x7F or \t may be used. The default value is -.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--field-match-separator[0m[38;2;248;248;242m <SEPARATOR>      [0m
+[38;2;248;248;242m            Set the field match separator, which is used to delimit file paths, line[0m
+[38;2;248;248;242m            numbers, columns and the match itself. The separator may be any number of[0m
+[38;2;248;248;242m            bytes, including zero. Escape sequences like \x7F or \t may be used. The[0m
+[38;2;248;248;242m            default value is -.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m <PATTERNFILE>...                  [0m
+[38;2;248;248;242m            Search for patterns from the given file, with one pattern per line. When this[0m
+[38;2;248;248;242m            flag is used multiple times or in combination with the -e/--regexp flag,[0m
+[38;2;248;248;242m            then all patterns provided are searched. Empty pattern lines will match all[0m
+[38;2;248;248;242m            input lines, and the newline is not counted as part of the pattern.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            A line is printed if and only if it matches at least one of the patterns.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--files[0m[38;2;248;248;242m                                  [0m
+[38;2;248;248;242m            Print each file that would be searched without actually performing the search.[0m
+[38;2;248;248;242m            This is useful to determine whether a particular file is being searched or not.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--files-with-matches[0m[38;2;248;248;242m                     [0m
+[38;2;248;248;242m            Print the paths with at least one match and suppress match contents.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides --files-without-match.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--files-without-match[0m[38;2;248;248;242m                    [0m
+[38;2;248;248;242m            Print the paths that contain zero matches and suppress match contents. This[0m
+[38;2;248;248;242m            inverts/negates the --files-with-matches flag.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides --files-with-matches.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fixed-strings[0m[38;2;248;248;242m                          [0m
+[38;2;248;248;242m            Treat the pattern as a literal string instead of a regular expression. When[0m
+[38;2;248;248;242m            this flag is used, special regular expression meta characters such as .(){}*+[0m
+[38;2;248;248;242m            do not need to be escaped.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-fixed-strings.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--follow[0m[38;2;248;248;242m                                 [0m
+[38;2;248;248;242m            When this flag is enabled, ripgrep will follow symbolic links while traversing[0m
+[38;2;248;248;242m            directories. This is disabled by default. Note that ripgrep will check for[0m
+[38;2;248;248;242m            symbolic link loops and report errors if it finds one.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-follow.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--glob[0m[38;2;248;248;242m <GLOB>...                         [0m
+[38;2;248;248;242m            Include or exclude files and directories for searching that match the given[0m
+[38;2;248;248;242m            glob. This always overrides any other ignore logic. Multiple glob flags may be[0m
+[38;2;248;248;242m            used. Globbing rules match .gitignore globs. Precede a glob with a ! to exclude[0m
+[38;2;248;248;242m            it. If multiple globs match a file or directory, the glob given later in the[0m
+[38;2;248;248;242m            command line takes precedence.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            As an extension, globs support specifying alternatives: *-g ab{c,d}* is[0m
+[38;2;248;248;242m            equivalet to *-g abc -g abd*. Empty alternatives like *-g ab{,c}* are not[0m
+[38;2;248;248;242m            currently supported. Note that this syntax extension is also currently enabled[0m
+[38;2;248;248;242m            in gitignore files, even though this syntax isn't supported by git itself.[0m
+[38;2;248;248;242m            ripgrep may disable this syntax extension in gitignore files, but it will[0m
+[38;2;248;248;242m            always remain available via the -g/--glob flag.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When this flag is set, every file and directory is applied to it to test for[0m
+[38;2;248;248;242m            a match. So for example, if you only want to search in a particular directory[0m
+[38;2;248;248;242m            'foo', then *-g foo* is incorrect because 'foo/bar' does not match the glob[0m
+[38;2;248;248;242m            'foo'. Instead, you should use *-g 'foo/**'*.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--glob-case-insensitive[0m[38;2;248;248;242m                  [0m
+[38;2;248;248;242m            Process glob patterns given with the -g/--glob flag case insensitively. This[0m
+[38;2;248;248;242m            effectively treats --glob as --iglob.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --no-glob-case-insensitive flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m
+[38;2;248;248;242m            Prints help information. Use --help for more details.[0m
+
+[38;2;248;248;242m        [0m[38;2;166;226;46m--heading[0m[38;2;248;248;242m                                [0m
+[38;2;248;248;242m            This flag prints the file path above clusters of matches from each file instead[0m
+[38;2;248;248;242m            of printing the file path as a prefix for each matched line. This is the[0m
+[38;2;248;248;242m            default mode when printing to a terminal.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the --no-heading flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    -., --hidden                                 [0m
+[38;2;248;248;242m            Search hidden files and directories. By default, hidden files and directories[0m
+[38;2;248;248;242m            are skipped. Note that if a hidden file or a directory is whitelisted in an[0m
+[38;2;248;248;242m            ignore file, then it will be searched even if this flag isn't provided.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            A file or directory is considered hidden if its base name starts with a dot[0m
+[38;2;248;248;242m            character ('.'). On operating systems which support a `hidden` file attribute,[0m
+[38;2;248;248;242m            like Windows, files with this attribute are also considered hidden.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-hidden.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--iglob[0m[38;2;248;248;242m <GLOB>...                        [0m
+[38;2;248;248;242m            Include or exclude files and directories for searching that match the given[0m
+[38;2;248;248;242m            glob. This always overrides any other ignore logic. Multiple glob flags may be[0m
+[38;2;248;248;242m            used. Globbing rules match .gitignore globs. Precede a glob with a ! to exclude[0m
+[38;2;248;248;242m            it. Globs are matched case insensitively.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-case[0m[38;2;248;248;242m                            [0m
+[38;2;248;248;242m            When this flag is provided, the given patterns will be searched case[0m
+[38;2;248;248;242m            insensitively. The case insensitivity rules used by ripgrep conform to[0m
+[38;2;248;248;242m            Unicode's "simple" case folding rules.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag overrides -s/--case-sensitive and -S/--smart-case.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--ignore-file[0m[38;2;248;248;242m <PATH>...                  [0m
+[38;2;248;248;242m            Specifies a path to one or more .gitignore format rules files. These patterns[0m
+[38;2;248;248;242m            are applied after the patterns found in .gitignore and .ignore are applied[0m
+[38;2;248;248;242m            and are matched relative to the current working directory. Multiple additional[0m
+[38;2;248;248;242m            ignore files can be specified by using the --ignore-file flag several times.[0m
+[38;2;248;248;242m            When specifying multiple ignore files, earlier files have lower precedence[0m
+[38;2;248;248;242m            than later files.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If you are looking for a way to include or exclude files and directories[0m
+[38;2;248;248;242m            directly on the command line, then used -g instead.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--ignore-file-case-insensitive[0m[38;2;248;248;242m           [0m
+[38;2;248;248;242m            Process ignore files (.gitignore, .ignore, etc.) case insensitively. Note that[0m
+[38;2;248;248;242m            this comes with a performance penalty and is most useful on case insensitive[0m
+[38;2;248;248;242m            file systems (such as Windows).[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --no-ignore-file-case-insensitive flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--include-zero[0m[38;2;248;248;242m                           [0m
+[38;2;248;248;242m            When used with --count or --count-matches, print the number of matches for[0m
+[38;2;248;248;242m            each file even if there were zero matches. This is disabled by default but can[0m
+[38;2;248;248;242m            be enabled to make ripgrep behave more like grep.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--invert-match[0m[38;2;248;248;242m                           [0m
+[38;2;248;248;242m            Invert matching. Show lines that do not match the given patterns.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--json[0m[38;2;248;248;242m                                   [0m
+[38;2;248;248;242m            Enable printing results in a JSON Lines format.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When this flag is provided, ripgrep will emit a sequence of messages, each[0m
+[38;2;248;248;242m            encoded as a JSON object, where there are five different message types:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            **begin** - A message that indicates a file is being searched and contains at[0m
+[38;2;248;248;242m            least one match.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            **end** - A message the indicates a file is done being searched. This message[0m
+[38;2;248;248;242m            also include summary statistics about the search for a particular file.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            **match** - A message that indicates a match was found. This includes the text[0m
+[38;2;248;248;242m            and offsets of the match.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            **context** - A message that indicates a contextual line was found. This[0m
+[38;2;248;248;242m            includes the text of the line, along with any match information if the search[0m
+[38;2;248;248;242m            was inverted.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            **summary** - The final message emitted by ripgrep that contains summary[0m
+[38;2;248;248;242m            statistics about the search across all files.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Since file paths or the contents of files are not guaranteed to be valid UTF-8[0m
+[38;2;248;248;242m            and JSON itself must be representable by a Unicode encoding, ripgrep will emit[0m
+[38;2;248;248;242m            all data elements as objects with one of two keys: 'text' or 'bytes'. 'text' is[0m
+[38;2;248;248;242m            a normal JSON string when the data is valid UTF-8 while 'bytes' is the base64[0m
+[38;2;248;248;242m            encoded contents of the data.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The JSON Lines format is only supported for showing search results. It cannot[0m
+[38;2;248;248;242m            be used with other flags that emit other types of output, such as --files,[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--files-with-matches[0m[38;2;248;248;242m, --files-without-match, --count or --count-matches.[0m
+[38;2;248;248;242m            ripgrep will report an error if any of the aforementioned flags are used in[0m
+[38;2;248;248;242m            concert with --json.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Other flags that control aspects of the standard output such as[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--only-matching[0m[38;2;248;248;242m, --heading, --replace, --max-columns, etc., have no effect[0m
+[38;2;248;248;242m            when --json is set.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            A more complete description of the JSON format used can be found here:[0m
+[38;2;248;248;242m            https://docs.rs/grep-printer/*/grep_printer/struct.JSON.html[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The JSON Lines format can be disabled with --no-json.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--line-buffered[0m[38;2;248;248;242m                          [0m
+[38;2;248;248;242m            When enabled, ripgrep will use line buffering. That is, whenever a matching[0m
+[38;2;248;248;242m            line is found, it will be flushed to stdout immediately. This is the default[0m
+[38;2;248;248;242m            when ripgrep's stdout is connected to a terminal, but otherwise, ripgrep will[0m
+[38;2;248;248;242m            use block buffering, which is typically faster. This flag forces ripgrep to[0m
+[38;2;248;248;242m            use line buffering even if it would otherwise use block buffering. This is[0m
+[38;2;248;248;242m            typically useful in shell pipelines, e.g.,[0m
+[38;2;248;248;242m            'tail -f something.log | rg foo --line-buffered | rg bar'.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Forceful line buffering can be disabled with --no-line-buffered. Note that[0m
+[38;2;248;248;242m            using --no-line-buffered causes ripgrep to revert to its default behavior of[0m
+[38;2;248;248;242m            automatically detecting the buffering strategy. To force block buffering, use[0m
+[38;2;248;248;242m            the --block-buffered flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--line-number[0m[38;2;248;248;242m                            [0m
+[38;2;248;248;242m            Show line numbers (1-based). This is enabled by default when searching in a[0m
+[38;2;248;248;242m            terminal.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--line-regexp[0m[38;2;248;248;242m                            [0m
+[38;2;248;248;242m            Only show matches surrounded by line boundaries. This is equivalent to putting[0m
+[38;2;248;248;242m            ^...$ around all of the search patterns. In other words, this only prints lines[0m
+[38;2;248;248;242m            where the entire line participates in a match.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the --word-regexp flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-columns[0m[38;2;248;248;242m <NUM>                      [0m
+[38;2;248;248;242m            Don't print lines longer than this limit in bytes. Longer lines are omitted,[0m
+[38;2;248;248;242m            and only the number of matches in that line is printed.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When this flag is omitted or is set to 0, then it has no effect.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--max-columns-preview[0m[38;2;248;248;242m                    [0m
+[38;2;248;248;242m            When the '--max-columns' flag is used, ripgrep will by default completely[0m
+[38;2;248;248;242m            replace any line that is too long with a message indicating that a matching[0m
+[38;2;248;248;242m            line was removed. When this flag is combined with '--max-columns', a preview[0m
+[38;2;248;248;242m            of the line (corresponding to the limit size) is shown instead, where the part[0m
+[38;2;248;248;242m            of the line exceeding the limit is not shown.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If the '--max-columns' flag is not set, then this has no effect.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with '--no-max-columns-preview'.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-count[0m[38;2;248;248;242m <NUM>                        [0m
+[38;2;248;248;242m            Limit the number of matching lines per file searched to NUM.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--max-depth[0m[38;2;248;248;242m <NUM>                        [0m
+[38;2;248;248;242m            Limit the depth of directory traversal to NUM levels beyond the paths given. A[0m
+[38;2;248;248;242m            value of zero only searches the explicitly given paths themselves.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            For example, 'rg --max-depth 0 dir/' is a no-op because dir/ will not be[0m
+[38;2;248;248;242m            descended into. 'rg --max-depth 1 dir/' will search only the direct children of[0m
+[38;2;248;248;242m            'dir'.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--max-filesize[0m[38;2;248;248;242m <NUM+SUFFIX?>             [0m
+[38;2;248;248;242m            Ignore files larger than NUM in size. This does not apply to directories.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The input format accepts suffixes of K, M or G which correspond to kilobytes,[0m
+[38;2;248;248;242m            megabytes and gigabytes, respectively. If no suffix is provided the input is[0m
+[38;2;248;248;242m            treated as bytes.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Examples: --max-filesize 50K or --max-filesize 80M[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--mmap[0m[38;2;248;248;242m                                   [0m
+[38;2;248;248;242m            Search using memory maps when possible. This is enabled by default when ripgrep[0m
+[38;2;248;248;242m            thinks it will be faster.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Memory map searching doesn't currently support all options, so if an[0m
+[38;2;248;248;242m            incompatible option (e.g., --context) is given with --mmap, then memory maps[0m
+[38;2;248;248;242m            will not be used.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that ripgrep may abort unexpectedly when --mmap if it searches a file that[0m
+[38;2;248;248;242m            is simultaneously truncated.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag overrides --no-mmap.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--multiline[0m[38;2;248;248;242m                              [0m
+[38;2;248;248;242m            Enable matching across multiple lines.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When multiline mode is enabled, ripgrep will lift the restriction that a match[0m
+[38;2;248;248;242m            cannot include a line terminator. For example, when multiline mode is not[0m
+[38;2;248;248;242m            enabled (the default), then the regex '\p{any}' will match any Unicode[0m
+[38;2;248;248;242m            codepoint other than '\n'. Similarly, the regex '\n' is explicitly forbidden,[0m
+[38;2;248;248;242m            and if you try to use it, ripgrep will return an error. However, when multiline[0m
+[38;2;248;248;242m            mode is enabled, '\p{any}' will match any Unicode codepoint, including '\n',[0m
+[38;2;248;248;242m            and regexes like '\n' are permitted.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            An important caveat is that multiline mode does not change the match semantics[0m
+[38;2;248;248;242m            of '.'. Namely, in most regex matchers, a '.' will by default match any[0m
+[38;2;248;248;242m            character other than '\n', and this is true in ripgrep as well. In order to[0m
+[38;2;248;248;242m            make '.' match '\n', you must enable the "dot all" flag inside the regex.[0m
+[38;2;248;248;242m            For example, both '(?s).' and '(?s:.)' have the same semantics, where '.' will[0m
+[38;2;248;248;242m            match any character, including '\n'. Alternatively, the '--multiline-dotall'[0m
+[38;2;248;248;242m            flag may be passed to make the "dot all" behavior the default. This flag only[0m
+[38;2;248;248;242m            applies when multiline search is enabled.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            There is no limit on the number of the lines that a single match can span.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            **WARNING**: Because of how the underlying regex engine works, multiline[0m
+[38;2;248;248;242m            searches may be slower than normal line-oriented searches, and they may also[0m
+[38;2;248;248;242m            use more memory. In particular, when multiline mode is enabled, ripgrep[0m
+[38;2;248;248;242m            requires that each file it searches is laid out contiguously in memory[0m
+[38;2;248;248;242m            (either by reading it onto the heap or by memory-mapping it). Things that[0m
+[38;2;248;248;242m            cannot be memory-mapped (such as stdin) will be consumed until EOF before[0m
+[38;2;248;248;242m            searching can begin. In general, ripgrep will only do these things when[0m
+[38;2;248;248;242m            necessary. Specifically, if the --multiline flag is provided but the regex[0m
+[38;2;248;248;242m            does not contain patterns that would match '\n' characters, then ripgrep[0m
+[38;2;248;248;242m            will automatically avoid reading each file into memory before searching it.[0m
+[38;2;248;248;242m            Nevertheless, if you only care about matches spanning at most one line, then it[0m
+[38;2;248;248;242m            is always better to disable multiline mode.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-multiline.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--multiline-dotall[0m[38;2;248;248;242m                       [0m
+[38;2;248;248;242m            This flag enables "dot all" in your regex pattern, which causes '.' to match[0m
+[38;2;248;248;242m            newlines when multiline searching is enabled. This flag has no effect if[0m
+[38;2;248;248;242m            multiline searching isn't enabled with the --multiline flag.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Normally, a '.' will match any character except newlines. While this behavior[0m
+[38;2;248;248;242m            typically isn't relevant for line-oriented matching (since matches can span at[0m
+[38;2;248;248;242m            most one line), this can be useful when searching with the -U/--multiline flag.[0m
+[38;2;248;248;242m            By default, the multiline mode runs without this flag.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag is generally intended to be used in an alias or your ripgrep config[0m
+[38;2;248;248;242m            file if you prefer "dot all" semantics by default. Note that regardless of[0m
+[38;2;248;248;242m            whether this flag is used, "dot all" semantics can still be controlled via[0m
+[38;2;248;248;242m            inline flags in the regex pattern itself, e.g., '(?s:.)' always enables "dot[0m
+[38;2;248;248;242m            all" whereas '(?-s:.)' always disables "dot all".[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-multiline-dotall.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-config[0m[38;2;248;248;242m                              [0m
+[38;2;248;248;242m            Never read configuration files. When this flag is present, ripgrep will not[0m
+[38;2;248;248;242m            respect the RIPGREP_CONFIG_PATH environment variable.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If ripgrep ever grows a feature to automatically read configuration files in[0m
+[38;2;248;248;242m            pre-defined locations, then this flag will also disable that behavior as well.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-filename[0m[38;2;248;248;242m                            [0m
+[38;2;248;248;242m            Never print the file path with the matched lines. This is the default when[0m
+[38;2;248;248;242m            ripgrep is explicitly instructed to search one file or stdin.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag overrides --with-filename.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-heading[0m[38;2;248;248;242m                             [0m
+[38;2;248;248;242m            Don't group matches by each file. If --no-heading is provided in addition to[0m
+[38;2;248;248;242m            the -H/--with-filename flag, then file paths will be printed as a prefix for[0m
+[38;2;248;248;242m            every matched line. This is the default mode when not printing to a terminal.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the --heading flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-ignore[0m[38;2;248;248;242m                              [0m
+[38;2;248;248;242m            Don't respect ignore files (.gitignore, .ignore, etc.). This implies[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--no-ignore-dot[0m[38;2;248;248;242m, --no-ignore-exclude, --no-ignore-global, no-ignore-parent and[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--no-ignore-vcs[0m[38;2;248;248;242m.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This does *not* imply --no-ignore-files, since --ignore-file is specified[0m
+[38;2;248;248;242m            explicitly as a command line argument.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When given only once, the -u flag is identical in behavior to --no-ignore and[0m
+[38;2;248;248;242m            can be considered an alias. However, subsequent -u flags have additional[0m
+[38;2;248;248;242m            effects; see --unrestricted.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --ignore flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-ignore-dot[0m[38;2;248;248;242m                          [0m
+[38;2;248;248;242m            Don't respect .ignore files.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This does *not* affect whether ripgrep will ignore files and directories[0m
+[38;2;248;248;242m            whose names begin with a dot. For that, see the -./--hidden flag.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --ignore-dot flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-ignore-exclude[0m[38;2;248;248;242m                      [0m
+[38;2;248;248;242m            Don't respect ignore files that are manually configured for the repository[0m
+[38;2;248;248;242m            such as git's '.git/info/exclude'.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --ignore-exclude flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-ignore-files[0m[38;2;248;248;242m                        [0m
+[38;2;248;248;242m            When set, any --ignore-file flags, even ones that come after this flag, are[0m
+[38;2;248;248;242m            ignored.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --ignore-files flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-ignore-global[0m[38;2;248;248;242m                       [0m
+[38;2;248;248;242m            Don't respect ignore files that come from "global" sources such as git's[0m
+[38;2;248;248;242m            `core.excludesFile` configuration option (which defaults to[0m
+[38;2;248;248;242m            `$HOME/.config/git/ignore`).[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --ignore-global flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-ignore-messages[0m[38;2;248;248;242m                     [0m
+[38;2;248;248;242m            Suppresses all error messages related to parsing ignore files such as .ignore[0m
+[38;2;248;248;242m            or .gitignore.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --ignore-messages flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-ignore-parent[0m[38;2;248;248;242m                       [0m
+[38;2;248;248;242m            Don't respect ignore files (.gitignore, .ignore, etc.) in parent directories.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --ignore-parent flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-ignore-vcs[0m[38;2;248;248;242m                          [0m
+[38;2;248;248;242m            Don't respect version control ignore files (.gitignore, etc.). This implies[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--no-ignore-parent[0m[38;2;248;248;242m for VCS files. Note that .ignore files will continue to be[0m
+[38;2;248;248;242m            respected.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --ignore-vcs flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-line-number[0m[38;2;248;248;242m                         [0m
+[38;2;248;248;242m            Suppress line numbers. This is enabled by default when not searching in a[0m
+[38;2;248;248;242m            terminal.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-messages[0m[38;2;248;248;242m                            [0m
+[38;2;248;248;242m            Suppress all error messages related to opening and reading files. Error[0m
+[38;2;248;248;242m            messages related to the syntax of the pattern given are still shown.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with the --messages flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-mmap[0m[38;2;248;248;242m                                [0m
+[38;2;248;248;242m            Never use memory maps, even when they might be faster.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag overrides --mmap.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-[0m[38;2;248;248;242mpcre2-unicode                       [0m
+[38;2;248;248;242m            DEPRECATED. Use --no-unicode instead.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag is now an alias for --no-unicode. And --pcre2-unicode is an alias[0m
+[38;2;248;248;242m            for --unicode.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-require-git[0m[38;2;248;248;242m                         [0m
+[38;2;248;248;242m            By default, ripgrep will only respect global gitignore rules, .gitignore rules[0m
+[38;2;248;248;242m            and local exclude rules if ripgrep detects that you are searching inside a[0m
+[38;2;248;248;242m            git repository. This flag allows you to relax this restriction such that[0m
+[38;2;248;248;242m            ripgrep will respect all git related ignore rules regardless of whether you're[0m
+[38;2;248;248;242m            searching in a git repository or not.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --require-git.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-unicode[0m[38;2;248;248;242m                             [0m
+[38;2;248;248;242m            By default, ripgrep will enable "Unicode mode" in all of its regexes. This[0m
+[38;2;248;248;242m            has a number of consequences:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            * '.' will only match valid UTF-8 encoded scalar values.[0m
+[38;2;248;248;242m            * Classes like '\w', '\s', '\d' are all Unicode aware and much bigger[0m
+[38;2;248;248;242m              than their ASCII only versions.[0m
+[38;2;248;248;242m            * Case insensitive matching will use Unicode case folding.[0m
+[38;2;248;248;242m            * A large array of classes like '\p{Emoji}' are available.[0m
+[38;2;248;248;242m            * Word boundaries ('\b' and '\B') use the Unicode definition of a word[0m
+[38;2;248;248;242m              character.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            In some cases it can be desirable to turn these things off. The --no-unicode[0m
+[38;2;248;248;242m            flag will do exactly that.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            For PCRE2 specifically, Unicode mode represents a critical trade off in the[0m
+[38;2;248;248;242m            user experience of ripgrep. In particular, unlike the default regex engine,[0m
+[38;2;248;248;242m            PCRE2 does not support the ability to search possibly invalid UTF-8 with[0m
+[38;2;248;248;242m            Unicode features enabled. Instead, PCRE2 *requires* that everything it searches[0m
+[38;2;248;248;242m            when Unicode mode is enabled is valid UTF-8. (Or valid UTF-16/UTF-32, but for[0m
+[38;2;248;248;242m            the purposes of ripgrep, we only discuss UTF-8.) This means that if you have[0m
+[38;2;248;248;242m            PCRE2's Unicode mode enabled and you attempt to search invalid UTF-8, then[0m
+[38;2;248;248;242m            the search for that file will halt and print an error. For this reason, when[0m
+[38;2;248;248;242m            PCRE2's Unicode mode is enabled, ripgrep will automatically "fix" invalid[0m
+[38;2;248;248;242m            UTF-8 sequences by replacing them with the Unicode replacement codepoint. This[0m
+[38;2;248;248;242m            penalty does not occur when using the default regex engine.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If you would rather see the encoding errors surfaced by PCRE2 when Unicode mode[0m
+[38;2;248;248;242m            is enabled, then pass the --no-encoding flag to disable all transcoding.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The --no-unicode flag can be disabled with --unicode. Note that[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--no-[0m[38;2;248;248;242mpcre2-unicode and --pcre2-unicode are aliases for --no-unicode and[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--unicode[0m[38;2;248;248;242m, respectively.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    -0, --null                                   [0m
+[38;2;248;248;242m            Whenever a file path is printed, follow it with a NUL byte. This includes[0m
+[38;2;248;248;242m            printing file paths before matches, and when printing a list of matching files[0m
+[38;2;248;248;242m            such as with --count, --files-with-matches and --files. This option is useful[0m
+[38;2;248;248;242m            for use with xargs.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--null-data[0m[38;2;248;248;242m                              [0m
+[38;2;248;248;242m            Enabling this option causes ripgrep to use NUL as a line terminator instead of[0m
+[38;2;248;248;242m            the default of '\n'.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This is useful when searching large binary files that would otherwise have very[0m
+[38;2;248;248;242m            long lines if '\n' were used as the line terminator. In particular, ripgrep[0m
+[38;2;248;248;242m            requires that, at a minimum, each line must fit into memory. Using NUL instead[0m
+[38;2;248;248;242m            can be a useful stopgap to keep memory requirements low and avoid OOM (out of[0m
+[38;2;248;248;242m            memory) conditions.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This is also useful for processing NUL delimited data, such as that emitted[0m
+[38;2;248;248;242m            when using ripgrep's -0/--null flag or find's --print0 flag.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Using this flag implies -a/--text.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--one-file-system[0m
+[38;2;248;248;242m            When enabled, ripgrep will not cross file system boundaries relative to where[0m
+[38;2;248;248;242m            the search started from.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that this applies to each path argument given to ripgrep. For example, in[0m
+[38;2;248;248;242m            the command 'rg --one-file-system /foo/bar /quux/baz', ripgrep will search both[0m
+[38;2;248;248;242m            '/foo/bar' and '/quux/baz' even if they are on different file systems, but will[0m
+[38;2;248;248;242m            not cross a file system boundary when traversing each path's directory tree.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This is similar to find's '-xdev' or '-mount' flag.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-one-file-system.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--only-matching[0m[38;2;248;248;242m                          [0m
+[38;2;248;248;242m            Print only the matched (non-empty) parts of a matching line, with each such[0m
+[38;2;248;248;242m            part on a separate output line.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--passthru[0m[38;2;248;248;242m                               [0m
+[38;2;248;248;242m            Print both matching and non-matching lines.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Another way to achieve a similar effect is by modifying your pattern to match[0m
+[38;2;248;248;242m            the empty string. For example, if you are searching using 'rg foo' then using[0m
+[38;2;248;248;242m            'rg "^|foo"' instead will emit every line in every file searched, but only[0m
+[38;2;248;248;242m            occurrences of 'foo' will be highlighted. This flag enables the same behavior[0m
+[38;2;248;248;242m            without needing to modify the pattern.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the --context, --after-context and --before-context flags.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--path-separator[0m[38;2;248;248;242m <SEPARATOR>             [0m
+[38;2;248;248;242m            Set the path separator to use when printing file paths. This defaults to your[0m
+[38;2;248;248;242m            platform's path separator, which is / on Unix and \ on Windows. This flag is[0m
+[38;2;248;248;242m            intended for overriding the default when the environment demands it (e.g.,[0m
+[38;2;248;248;242m            cygwin). A path separator is limited to a single byte.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--[0m[38;2;248;248;242mpcre2                                  [0m
+[38;2;248;248;242m            When this flag is present, ripgrep will use the PCRE2 regex engine instead of[0m
+[38;2;248;248;242m            its default regex engine.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This is generally useful when you want to use features such as look-around[0m
+[38;2;248;248;242m            or backreferences.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that PCRE2 is an optional ripgrep feature. If PCRE2 wasn't included in[0m
+[38;2;248;248;242m            your build of ripgrep, then using this flag will result in ripgrep printing[0m
+[38;2;248;248;242m            an error message and exiting. PCRE2 may also have worse user experience in[0m
+[38;2;248;248;242m            some cases, since it has fewer introspection APIs than ripgrep's default regex[0m
+[38;2;248;248;242m            engine. For example, if you use a '\n' in a PCRE2 regex without the[0m
+[38;2;248;248;242m            '-U/--multiline' flag, then ripgrep will silently fail to match anything[0m
+[38;2;248;248;242m            instead of reporting an error immediately (like it does with the default[0m
+[38;2;248;248;242m            regex engine).[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Related flags: --no-pcre2-unicode[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-pcre2.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--[0m[38;2;248;248;242mpcre2-version                          [0m
+[38;2;248;248;242m            When this flag is present, ripgrep will print the version of PCRE2 in use,[0m
+[38;2;248;248;242m            along with other information, and then exit. If PCRE2 is not available, then[0m
+[38;2;248;248;242m            ripgrep will print an error message and exit with an error code.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--pre[0m[38;2;248;248;242m <COMMAND>                          [0m
+[38;2;248;248;242m            For each input FILE, search the standard output of COMMAND FILE rather than the[0m
+[38;2;248;248;242m            contents of FILE. This option expects the COMMAND program to either be an[0m
+[38;2;248;248;242m            absolute path or to be available in your PATH. Either an empty string COMMAND[0m
+[38;2;248;248;242m            or the '--no-pre' flag will disable this behavior.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                WARNING: When this flag is set, ripgrep will unconditionally spawn a[0m
+[38;2;248;248;242m                process for every file that is searched. Therefore, this can incur an[0m
+[38;2;248;248;242m                unnecessarily large performance penalty if you don't otherwise need the[0m
+[38;2;248;248;242m                flexibility offered by this flag. One possible mitigation to this is to use[0m
+[38;2;248;248;242m                the '--pre-glob' flag to limit which files a preprocessor is run with.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            A preprocessor is not run when ripgrep is searching stdin.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When searching over sets of files that may require one of several decoders[0m
+[38;2;248;248;242m            as preprocessors, COMMAND should be a wrapper program or script which first[0m
+[38;2;248;248;242m            classifies FILE based on magic numbers/content or based on the FILE name and[0m
+[38;2;248;248;242m            then dispatches to an appropriate preprocessor. Each COMMAND also has its[0m
+[38;2;248;248;242m            standard input connected to FILE for convenience.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            For example, a shell script for COMMAND might look like:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                case "$1" in[0m
+[38;2;248;248;242m                *.pdf)[0m
+[38;2;248;248;242m                    exec pdftotext "$1" -[0m
+[38;2;248;248;242m                    ;;[0m
+[38;2;248;248;242m                *)[0m
+[38;2;248;248;242m                    case $(file "$1") in[0m
+[38;2;248;248;242m                    *Zstandard*)[0m
+[38;2;248;248;242m                        exec pzstd -cdq[0m
+[38;2;248;248;242m                        ;;[0m
+[38;2;248;248;242m                    *)[0m
+[38;2;248;248;242m                        exec cat[0m
+[38;2;248;248;242m                        ;;[0m
+[38;2;248;248;242m                    esac[0m
+[38;2;248;248;242m                    ;;[0m
+[38;2;248;248;242m                esac[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The above script uses `pdftotext` to convert a PDF file to plain text. For[0m
+[38;2;248;248;242m            all other files, the script uses the `file` utility to sniff the type of the[0m
+[38;2;248;248;242m            file based on its contents. If it is a compressed file in the Zstandard format,[0m
+[38;2;248;248;242m            then `pzstd` is used to decompress the contents to stdout.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the -z/--search-zip flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--pre-glob[0m[38;2;248;248;242m <GLOB>...[0m
+[38;2;248;248;242m            This flag works in conjunction with the --pre flag. Namely, when one or more[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--pre-glob[0m[38;2;248;248;242m flags are given, then only files that match the given set of globs[0m
+[38;2;248;248;242m            will be handed to the command specified by the --pre flag. Any non-matching[0m
+[38;2;248;248;242m            files will be searched without using the preprocessor command.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag is useful when searching many files with the --pre flag. Namely,[0m
+[38;2;248;248;242m            it permits the ability to avoid process overhead for files that don't need[0m
+[38;2;248;248;242m            preprocessing. For example, given the following shell script, 'pre-pdftotext':[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                #!/bin/sh[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                pdftotext "$1" -[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            then it is possible to use '--pre pre-pdftotext --pre-glob '*.pdf'' to make[0m
+[38;2;248;248;242m            it so ripgrep only executes the 'pre-pdftotext' command on files with a '.pdf'[0m
+[38;2;248;248;242m            extension.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Multiple --pre-glob flags may be used. Globbing rules match .gitignore globs.[0m
+[38;2;248;248;242m            Precede a glob with a ! to exclude it.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag has no effect if the --pre flag is not used.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--pretty[0m[38;2;248;248;242m                                 [0m
+[38;2;248;248;242m            This is a convenience alias for '--color always --heading --line-number'. This[0m
+[38;2;248;248;242m            flag is useful when you still want pretty output even if you're piping ripgrep[0m
+[38;2;248;248;242m            to another program or file. For example: 'rg -p foo | less -R'.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m                                  [0m
+[38;2;248;248;242m            Do not print anything to stdout. If a match is found in a file, then ripgrep[0m
+[38;2;248;248;242m            will stop searching. This is useful when ripgrep is used only for its exit[0m
+[38;2;248;248;242m            code (which will be an error if no matches are found).[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When --files is used, then ripgrep will stop finding files after finding the[0m
+[38;2;248;248;242m            first file that matches all ignore rules.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--regex-size-limit[0m[38;2;248;248;242m <NUM+SUFFIX?>         [0m
+[38;2;248;248;242m            The upper size limit of the compiled regex. The default limit is 10M.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            The argument accepts the same size suffixes as allowed in the --max-filesize[0m
+[38;2;248;248;242m            flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--regexp[0m[38;2;248;248;242m <PATTERN>...                    [0m
+[38;2;248;248;242m            A pattern to search for. This option can be provided multiple times, where[0m
+[38;2;248;248;242m            all patterns given are searched. Lines matching at least one of the provided[0m
+[38;2;248;248;242m            patterns are printed. This flag can also be used when searching for patterns[0m
+[38;2;248;248;242m            that start with a dash.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            For example, to search for the literal '-foo', you can use this flag:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                rg -e -foo[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            You can also use the special '--' delimiter to indicate that no more flags[0m
+[38;2;248;248;242m            will be provided. Namely, the following is equivalent to the above:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                rg -- -foo[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--replace[0m[38;2;248;248;242m <REPLACEMENT_TEXT>             [0m
+[38;2;248;248;242m            Replace every match with the text given when printing results. Neither this[0m
+[38;2;248;248;242m            flag nor any other ripgrep flag will modify your files.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Capture group indices (e.g., $5) and names (e.g., $foo) are supported in the[0m
+[38;2;248;248;242m            replacement string. Capture group indices are numbered based on the position of[0m
+[38;2;248;248;242m            the opening parenthesis of the group, where the leftmost such group is $1. The[0m
+[38;2;248;248;242m            special $0 group corresponds to the entire match.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            In shells such as Bash and zsh, you should wrap the pattern in single quotes[0m
+[38;2;248;248;242m            instead of double quotes. Otherwise, capture group indices will be replaced by[0m
+[38;2;248;248;242m            expanded shell variables which will most likely be empty.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            To write a literal '$', use '$$'.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that the replacement by default replaces each match, and NOT the entire[0m
+[38;2;248;248;242m            line. To replace the entire line, you should match the entire line.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be used with the -o/--only-matching flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--search-zip[0m[38;2;248;248;242m                             [0m
+[38;2;248;248;242m            Search in compressed files. Currently gzip, bzip2, xz, LZ4, LZMA, Brotli and[0m
+[38;2;248;248;242m            Zstd files are supported. This option expects the decompression binaries to be[0m
+[38;2;248;248;242m            available in your PATH.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-search-zip.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--smart-case[0m[38;2;248;248;242m                             [0m
+[38;2;248;248;242m            Searches case insensitively if the pattern is all lowercase. Search case[0m
+[38;2;248;248;242m            sensitively otherwise.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            A pattern is considered all lowercase if both of the following rules hold:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            First, the pattern contains at least one literal character. For example, 'a\w'[0m
+[38;2;248;248;242m            contains a literal ('a') but just '\w' does not.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Second, of the literals in the pattern, none of them are considered to be[0m
+[38;2;248;248;242m            uppercase according to Unicode. For example, 'foo\pL' has no uppercase[0m
+[38;2;248;248;242m            literals but 'Foo\pL' does.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the -s/--case-sensitive and -i/--ignore-case flags.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--sort[0m[38;2;248;248;242m <SORTBY>[0m
+[38;2;248;248;242m            This flag enables sorting of results in ascending order. The possible values[0m
+[38;2;248;248;242m            for this flag are:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                none      (Default) Do not sort results. Fastest. Can be multi-threaded.[0m
+[38;2;248;248;242m                path      Sort by file path. Always single-threaded.[0m
+[38;2;248;248;242m                modified  Sort by the last modified time on a file. Always single-threaded.[0m
+[38;2;248;248;242m                accessed  Sort by the last accessed time on a file. Always single-threaded.[0m
+[38;2;248;248;242m                created   Sort by the creation time on a file. Always single-threaded.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If the chosen (manually or by-default) sorting criteria isn't available on your[0m
+[38;2;248;248;242m            system (for example, creation time is not available on ext4 file systems), then[0m
+[38;2;248;248;242m            ripgrep will attempt to detect this, print an error and exit without searching.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            To sort results in reverse or descending order, use the --sortr flag. Also,[0m
+[38;2;248;248;242m            this flag overrides --sortr.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that sorting results currently always forces ripgrep to abandon[0m
+[38;2;248;248;242m            parallelism and run in a single thread.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--sortr[0m[38;2;248;248;242m <SORTBY>[0m
+[38;2;248;248;242m            This flag enables sorting of results in descending order. The possible values[0m
+[38;2;248;248;242m            for this flag are:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                none      (Default) Do not sort results. Fastest. Can be multi-threaded.[0m
+[38;2;248;248;242m                path      Sort by file path. Always single-threaded.[0m
+[38;2;248;248;242m                modified  Sort by the last modified time on a file. Always single-threaded.[0m
+[38;2;248;248;242m                accessed  Sort by the last accessed time on a file. Always single-threaded.[0m
+[38;2;248;248;242m                created   Sort by the creation time on a file. Always single-threaded.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            If the chosen (manually or by-default) sorting criteria isn't available on your[0m
+[38;2;248;248;242m            system (for example, creation time is not available on ext4 file systems), then[0m
+[38;2;248;248;242m            ripgrep will attempt to detect this, print an error and exit without searching.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            To sort results in ascending order, use the --sort flag. Also, this flag[0m
+[38;2;248;248;242m            overrides --sort.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that sorting results currently always forces ripgrep to abandon[0m
+[38;2;248;248;242m            parallelism and run in a single thread.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--stats[0m[38;2;248;248;242m                                  [0m
+[38;2;248;248;242m            Print aggregate statistics about this ripgrep search. When this flag is[0m
+[38;2;248;248;242m            present, ripgrep will print the following stats to stdout at the end of the[0m
+[38;2;248;248;242m            search: number of matched lines, number of files with matches, number of files[0m
+[38;2;248;248;242m            searched, and the time taken for the entire search to complete.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This set of aggregate statistics may expand over time.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that this flag has no effect if --files, --files-with-matches or[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--files-without-match[0m[38;2;248;248;242m is passed.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-stats.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--text[0m[38;2;248;248;242m                                   [0m
+[38;2;248;248;242m            Search binary files as if they were text. When this flag is present, ripgrep's[0m
+[38;2;248;248;242m            binary file detection is disabled. This means that when a binary file is[0m
+[38;2;248;248;242m            searched, its contents may be printed if there is a match. This may cause[0m
+[38;2;248;248;242m            escape codes to be printed that alter the behavior of your terminal.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            When binary file detection is enabled it is imperfect. In general, it uses[0m
+[38;2;248;248;242m            a simple heuristic. If a NUL byte is seen during search, then the file is[0m
+[38;2;248;248;242m            considered binary and search stops (unless this flag is present).[0m
+[38;2;248;248;242m            Alternatively, if the '--binary' flag is used, then ripgrep will only quit[0m
+[38;2;248;248;242m            when it sees a NUL byte after it sees a match (or searches the entire file).[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with '--no-text'. It overrides the '--binary' flag.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--threads[0m[38;2;248;248;242m <NUM>                          [0m
+[38;2;248;248;242m            The approximate number of threads to use. A value of 0 (which is the default)[0m
+[38;2;248;248;242m            causes ripgrep to choose the thread count using heuristics.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--trim[0m[38;2;248;248;242m                                   [0m
+[38;2;248;248;242m            When set, all ASCII whitespace at the beginning of each line printed will be[0m
+[38;2;248;248;242m            trimmed.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag can be disabled with --no-trim.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type[0m[38;2;248;248;242m <TYPE>...                         [0m
+[38;2;248;248;242m            Only search files matching TYPE. Multiple type flags may be provided. Use the[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--type-list[0m[38;2;248;248;242m flag to list all available types.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag supports the special value 'all', which will behave as if --type[0m
+[38;2;248;248;242m            was provided for every file type supported by ripgrep (including any custom[0m
+[38;2;248;248;242m            file types). The end result is that '--type all' causes ripgrep to search in[0m
+[38;2;248;248;242m            "whitelist" mode, where it will only search files it recognizes via its type[0m
+[38;2;248;248;242m            definitions.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--type-add[0m[38;2;248;248;242m <TYPE_SPEC>...                [0m
+[38;2;248;248;242m            Add a new glob for a particular file type. Only one glob can be added at a[0m
+[38;2;248;248;242m            time. Multiple --type-add flags can be provided. Unless --type-clear is used,[0m
+[38;2;248;248;242m            globs are added to any existing globs defined inside of ripgrep.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that this MUST be passed to every invocation of ripgrep. Type settings are[0m
+[38;2;248;248;242m            NOT persisted. See CONFIGURATION FILES for a workaround.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Example:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                rg --type-add 'foo:*.foo' -tfoo PATTERN.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--type-add[0m[38;2;248;248;242m can also be used to include rules from other types with the special[0m
+[38;2;248;248;242m            include directive. The include directive permits specifying one or more other[0m
+[38;2;248;248;242m            type names (separated by a comma) that have been defined and its rules will[0m
+[38;2;248;248;242m            automatically be imported into the type specified. For example, to create a[0m
+[38;2;248;248;242m            type called src that matches C++, Python and Markdown files, one can use:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                [0m[38;2;166;226;46m--type-add[0m[38;2;248;248;242m 'src:include:cpp,py,md'[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Additional glob rules can still be added to the src type by using the[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--type-add[0m[38;2;248;248;242m flag again:[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m                [0m[38;2;166;226;46m--type-add[0m[38;2;248;248;242m 'src:include:cpp,py,md' --type-add 'src:*.foo'[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that type names must consist only of Unicode letters or numbers.[0m
+[38;2;248;248;242m            Punctuation characters are not allowed.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--type-clear[0m[38;2;248;248;242m <TYPE>...                   [0m
+[38;2;248;248;242m            Clear the file type globs previously defined for TYPE. This only clears the[0m
+[38;2;248;248;242m            default type definitions that are found inside of ripgrep.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            Note that this MUST be passed to every invocation of ripgrep. Type settings are[0m
+[38;2;248;248;242m            NOT persisted. See CONFIGURATION FILES for a workaround.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--type-list[0m[38;2;248;248;242m                              [0m
+[38;2;248;248;242m            Show all supported file types and their corresponding globs.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type-not[0m[38;2;248;248;242m <TYPE>...                     [0m
+[38;2;248;248;242m            Do not search files matching TYPE. Multiple type-not flags may be provided. Use[0m
+[38;2;248;248;242m            the --type-list flag to list all available types.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--unrestricted[0m[38;2;248;248;242m                           [0m
+[38;2;248;248;242m            Reduce the level of "smart" searching. A single -u won't respect .gitignore[0m
+[38;2;248;248;242m            (etc.) files (--no-ignore). Two -u flags will additionally search hidden files[0m
+[38;2;248;248;242m            and directories (-./--hidden). Three -u flags will additionally search binary[0m
+[38;2;248;248;242m            files (--binary).[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            'rg -uuu' is roughly equivalent to 'grep -r'.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                                [0m
+[38;2;248;248;242m            Prints version information[0m
+
+[38;2;248;248;242m        [0m[38;2;166;226;46m--vimgrep[0m[38;2;248;248;242m                                [0m
+[38;2;248;248;242m            Show results with every match on its own line, including line numbers and[0m
+[38;2;248;248;242m            column numbers. With this option, a line with more than one match will be[0m
+[38;2;248;248;242m            printed more than once.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--with-filename[0m[38;2;248;248;242m                          [0m
+[38;2;248;248;242m            Display the file path for matches. This is the default when more than one[0m
+[38;2;248;248;242m            file is searched. If --heading is enabled (the default when printing to a[0m
+[38;2;248;248;242m            terminal), the file path will be shown above clusters of matches from each[0m
+[38;2;248;248;242m            file; otherwise, the file name will be shown as a prefix for each matched line.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This flag overrides --no-filename.[0m
+[38;2;248;248;242m             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--word-regexp[0m[38;2;248;248;242m                            [0m
+[38;2;248;248;242m            Only show matches surrounded by word boundaries. This is roughly equivalent to[0m
+[38;2;248;248;242m            putting \b before and after all of the search patterns.[0m
+[38;2;248;248;242m            [0m
+[38;2;248;248;242m            This overrides the --line-regexp flag.[0m
+[38;2;248;248;242m             [0m

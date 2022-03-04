@@ -1,0 +1,100 @@
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m diff [OPTION]... FILES[0m
+[38;2;248;248;242mCompare FILES line by line.[0m
+
+[38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--normal[0m[38;2;248;248;242m                  output a normal diff (the default)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--brief[0m[38;2;248;248;242m                   report only when files differ[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--report-identical-files[0m[38;2;248;248;242m  report when two files are the same[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, -C NUM, --context[=NUM]   output NUM (default 3) lines of copied context[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, -U NUM, --unified[=NUM]   output NUM (default 3) lines of unified context[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ed[0m[38;2;248;248;242m                      output an ed script[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--rcs[0m[38;2;248;248;242m                     output an RCS format diff[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-y[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--side-by-side[0m[38;2;248;248;242m            output in two columns[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--width[0m[38;2;248;248;242m=NUM               output at most NUM (default 130) print columns[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--left-column[0m[38;2;248;248;242m             output only the left column of common lines[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--suppress-common-lines[0m[38;2;248;248;242m   do not output common lines[0m
+
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--show-c-function[0m[38;2;248;248;242m         show which C function each change is in[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--show-function-line[0m[38;2;248;248;242m=RE   show the most recent line matching RE[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m LABEL             use LABEL instead of file name and timestamp[0m
+[38;2;248;248;242m                                  (can be repeated)[0m
+
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--expand-tabs[0m[38;2;248;248;242m             expand tabs to spaces in output[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--initial-tab[0m[38;2;248;248;242m             make tabs line up by prepending a tab[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tabsize[0m[38;2;248;248;242m=NUM             tab stops every NUM (default 8) print columns[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--suppress-blank-empty[0m[38;2;248;248;242m    suppress space or tab before empty output lines[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--paginate[0m[38;2;248;248;242m                pass output through 'pr' to paginate it[0m
+
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recursive[0m[38;2;248;248;242m                 recursively compare any subdirectories found[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-dereference[0m[38;2;248;248;242m            don't follow symbolic links[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--new-file[0m[38;2;248;248;242m                  treat absent files as empty[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--unidirectional-new-file[0m[38;2;248;248;242m   treat absent first files as empty[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--ignore-file-name-case[0m[38;2;248;248;242m     ignore case when comparing file names[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-ignore-file-name-case[0m[38;2;248;248;242m  consider case when comparing file names[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exclude[0m[38;2;248;248;242m=PAT               exclude files that match PAT[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exclude-from[0m[38;2;248;248;242m=FILE         exclude files that match any pattern in FILE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--starting-file[0m[38;2;248;248;242m=FILE        start with FILE when comparing directories[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--from-file[0m[38;2;248;248;242m=FILE1           compare FILE1 to all operands;[0m
+[38;2;248;248;242m                                    FILE1 can be a directory[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--to-file[0m[38;2;248;248;242m=FILE2             compare all operands to FILE2;[0m
+[38;2;248;248;242m                                    FILE2 can be a directory[0m
+
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-case[0m[38;2;248;248;242m               ignore case differences in file contents[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-tab-expansion[0m[38;2;248;248;242m      ignore changes due to tab expansion[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-trailing-space[0m[38;2;248;248;242m     ignore white space at line end[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-space-change[0m[38;2;248;248;242m       ignore changes in the amount of white space[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-all-space[0m[38;2;248;248;242m          ignore all white space[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-blank-lines[0m[38;2;248;248;242m        ignore changes where lines are all blank[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-matching-lines[0m[38;2;248;248;242m=RE  ignore changes where all lines match RE[0m
+
+[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--text[0m[38;2;248;248;242m                      treat all files as text[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--strip-trailing-cr[0m[38;2;248;248;242m         strip trailing carriage return on input[0m
+
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ifdef[0m[38;2;248;248;242m=NAME                output merged file with '#ifdef NAME' diffs[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--GTYPE-group-format[0m[38;2;248;248;242m=GFMT   format GTYPE input groups with GFMT[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--line-format[0m[38;2;248;248;242m=LFMT          format all input lines with LFMT[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--LTYPE-line-format[0m[38;2;248;248;242m=LFMT    format LTYPE input lines with LFMT[0m
+[38;2;248;248;242m    These format options provide fine-grained control over the output[0m
+[38;2;248;248;242m      of diff, generalizing -D/--ifdef.[0m
+[38;2;248;248;242m    LTYPE is 'old', 'new', or 'unchanged'.  GTYPE is LTYPE or 'changed'.[0m
+[38;2;248;248;242m    GFMT (only) may contain:[0m
+[38;2;248;248;242m      %<  lines from FILE1[0m
+[38;2;248;248;242m      %>  lines from FILE2[0m
+[38;2;248;248;242m      %=  lines common to FILE1 and FILE2[0m
+[38;2;248;248;242m      %[-][WIDTH][.[PREC]]{doxX}LETTER  printf-style spec for LETTER[0m
+[38;2;248;248;242m        LETTERs are as follows for new group, lower case for old group:[0m
+[38;2;248;248;242m          F  first line number[0m
+[38;2;248;248;242m          L  last line number[0m
+[38;2;248;248;242m          N  number of lines = L-F+1[0m
+[38;2;248;248;242m          E  F-1[0m
+[38;2;248;248;242m          M  L+1[0m
+[38;2;248;248;242m      %(A=B?T:E)  if A equals B then T else E[0m
+[38;2;248;248;242m    LFMT (only) may contain:[0m
+[38;2;248;248;242m      %L  contents of line[0m
+[38;2;248;248;242m      %l  contents of line, excluding any trailing newline[0m
+[38;2;248;248;242m      %[-][WIDTH][.[PREC]]{doxX}n  printf-style spec for input line number[0m
+[38;2;248;248;242m    Both GFMT and LFMT may contain:[0m
+[38;2;248;248;242m      %%  %[0m
+[38;2;248;248;242m      %c'C'  the single character C[0m
+[38;2;248;248;242m      %c'\OOO'  the character with octal code OOO[0m
+[38;2;248;248;242m      C    the character C (other characters represent themselves)[0m
+
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--minimal[0m[38;2;248;248;242m            try hard to find a smaller set of changes[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--horizon-lines[0m[38;2;248;248;242m=NUM  keep NUM lines of the common prefix and suffix[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--speed-large-files[0m[38;2;248;248;242m  assume large files and many scattered small changes[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m[=WHEN]       colorize the output; WHEN can be 'never', 'always',[0m
+[38;2;248;248;242m                             or 'auto' (the default)[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--palette[0m[38;2;248;248;242m=PALETTE    the colors to use when --color is active; PALETTE is[0m
+[38;2;248;248;242m                             a colon-separated list of terminfo capabilities[0m
+
+[38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m               display this help and exit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m            output version information and exit[0m
+
+[38;2;248;248;242mFILES are 'FILE1 FILE2' or 'DIR1 DIR2' or 'DIR FILE' or 'FILE DIR'.[0m
+[38;2;248;248;242mIf --from-file or --to-file is given, there are no restrictions on FILE(s).[0m
+[38;2;248;248;242mIf a FILE is '-', read standard input.[0m
+[38;2;248;248;242mExit status is 0 if inputs are the same, 1 if different, 2 if trouble.[0m
+
+[38;2;248;248;242mReport bugs to: bug-diffutils@gnu.org[0m
+[38;2;248;248;242mGNU diffutils home page: <https://www.gnu.org/software/diffutils/>[0m
+[38;2;248;248;242mGeneral help using GNU software: <https://www.gnu.org/gethelp/>[0m

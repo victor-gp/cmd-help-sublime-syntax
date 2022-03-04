@@ -1,0 +1,33 @@
+[38;2;248;248;242mnpm <command>[0m
+
+[38;2;253;151;31mUsage:[0m
+
+[38;2;248;248;242mnpm install        install all the dependencies in your project[0m
+[38;2;248;248;242mnpm install <foo>  add the <foo> dependency to your project[0m
+[38;2;248;248;242mnpm test           run this project's tests[0m
+[38;2;248;248;242mnpm run <foo>      run the script named <foo>[0m
+[38;2;248;248;242mnpm <command> -h   quick help on <command>[0m
+[38;2;248;248;242mnpm -l             display usage info for all commands[0m
+[38;2;248;248;242mnpm help <term>    search for help on <term>[0m
+[38;2;248;248;242mnpm help npm       more involved overview[0m
+
+[38;2;248;248;242mAll commands:[0m
+
+[38;2;248;248;242m    access, adduser, audit, bin, bugs, cache, ci, completion,[0m
+[38;2;248;248;242m    config, dedupe, deprecate, diff, dist-tag, docs, doctor,[0m
+[38;2;248;248;242m    edit, exec, explain, explore, find-dupes, fund, get, help,[0m
+[38;2;248;248;242m    hook, init, install, install-ci-test, install-test, link,[0m
+[38;2;248;248;242m    ll, login, logout, ls, org, outdated, owner, pack, ping,[0m
+[38;2;248;248;242m    pkg, prefix, profile, prune, publish, rebuild, repo,[0m
+[38;2;248;248;242m    restart, root, run-script, search, set, set-script,[0m
+[38;2;248;248;242m    shrinkwrap, star, stars, start, stop, team, test, token,[0m
+[38;2;248;248;242m    uninstall, unpublish, unstar, update, version, view, whoami[0m
+
+[38;2;248;248;242mSpecify configs in the ini-formatted file:[0m
+[38;2;248;248;242m    /home/victor-gp/.npmrc[0m
+[38;2;248;248;242mor on the command line via: npm <command> --key=value[0m
+
+[38;2;248;248;242mMore configuration info: npm help config[0m
+[38;2;248;248;242mConfiguration fields: npm help 7 config[0m
+
+[38;2;248;248;242mnpm@8.1.2 /home/victor-gp/.nodenv/versions/16.13.1/lib/node_modules/npm[0m

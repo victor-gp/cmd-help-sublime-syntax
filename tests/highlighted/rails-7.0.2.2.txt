@@ -1,0 +1,66 @@
+[38;2;253;151;31mUsage:[0m
+[38;2;248;248;242m  rails new APP_PATH [options][0m
+
+[38;2;253;151;31mOptions:[0m
+[38;2;248;248;242m      [--skip-namespace], [--no-skip-namespace]              # Skip namespace (affects only isolated engines)[0m
+[38;2;248;248;242m      [--skip-collision-check], [--no-skip-collision-check]  # Skip collision check[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [--ruby=PATH]                                          # Path to the Ruby binary of your choice[0m
+[38;2;248;248;242m                                                             # Default: /home/victor-gp/.rbenv/versions/3.0.1/bin/ruby[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [--template=TEMPLATE]                                  # Path to some application template (can be a filesystem path or URL)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [--database=DATABASE]                                  # Preconfigure for selected database (options: mysql/postgresql/sqlite3/oracle/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)[0m
+[38;2;248;248;242m                                                             # Default: sqlite3[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m, [--skip-git], [--no-skip-git]                          # Skip .gitignore file[0m
+[38;2;248;248;242m      [--skip-keeps], [--no-skip-keeps]                      # Skip source control .keep files[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [--skip-action-mailer], [--no-skip-action-mailer]      # Skip Action Mailer files[0m
+[38;2;248;248;242m      [--skip-action-mailbox], [--no-skip-action-mailbox]    # Skip Action Mailbox gem[0m
+[38;2;248;248;242m      [--skip-action-text], [--no-skip-action-text]          # Skip Action Text gem[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m, [--skip-active-record], [--no-skip-active-record]      # Skip Active Record files[0m
+[38;2;248;248;242m      [--skip-active-job], [--no-skip-active-job]            # Skip Active Job[0m
+[38;2;248;248;242m      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [--skip-action-cable], [--no-skip-action-cable]        # Skip Action Cable files[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [--skip-asset-pipeline], [--no-skip-asset-pipeline]    # Indicates when to generate skip asset pipeline[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [--asset-pipeline=ASSET_PIPELINE]                      # Choose your asset pipeline [options: sprockets (default), propshaft][0m
+[38;2;248;248;242m                                                             # Default: sprockets[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-J[0m[38;2;248;248;242m, [--skip-javascript], [--no-skip-javascript]            # Skip JavaScript files[0m
+[38;2;248;248;242m      [--skip-hotwire], [--no-skip-hotwire]                  # Skip Hotwire integration[0m
+[38;2;248;248;242m      [--skip-jbuilder], [--no-skip-jbuilder]                # Skip jbuilder gem[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [--skip-test], [--no-skip-test]                        # Skip test files[0m
+[38;2;248;248;242m      [--skip-system-test], [--no-skip-system-test]          # Skip system test files[0m
+[38;2;248;248;242m      [--skip-bootsnap], [--no-skip-bootsnap]                # Skip bootsnap gem[0m
+[38;2;248;248;242m      [--dev], [--no-dev]                                    # Set up the application with Gemfile pointing to your Rails checkout[0m
+[38;2;248;248;242m      [--edge], [--no-edge]                                  # Set up the application with Gemfile pointing to Rails repository[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--master[0m[38;2;248;248;242m, [--main], [--no-main]                            # Set up the application with Gemfile pointing to Rails repository main branch[0m
+[38;2;248;248;242m      [--rc=RC]                                              # Path to file containing extra configuration options for rails command[0m
+[38;2;248;248;242m      [--no-rc], [--no-no-rc]                                # Skip loading of extra configuration options from .railsrc file[0m
+[38;2;248;248;242m      [--api], [--no-api]                                    # Preconfigure smaller stack for API only apps[0m
+[38;2;248;248;242m      [--minimal], [--no-minimal]                            # Preconfigure a minimal rails app[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m, [--javascript=JAVASCRIPT]                              # Choose JavaScript approach [options: importmap (default), webpack, esbuild, rollup][0m
+[38;2;248;248;242m                                                             # Default: importmap[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [--css=CSS]                                            # Choose CSS processor [options: tailwind, bootstrap, bulma, postcss, sass... check https://github.com/rails/cssbundling-rails][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [--skip-bundle], [--no-skip-bundle]                    # Don't run bundle install[0m
+
+[38;2;248;248;242mRuntime options:[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [--force]                    # Overwrite files that already exist[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [--pretend], [--no-pretend]  # Run but do not make any changes[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [--quiet], [--no-quiet]      # Suppress status output[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [--skip], [--no-skip]        # Skip files that already exist[0m
+
+[38;2;248;248;242mRails options:[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [--help], [--no-help]        # Show this help message and quit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [--version], [--no-version]  # Show Rails version number and quit[0m
+
+[38;2;253;151;31mDescription:[0m
+[38;2;248;248;242m    The 'rails new' command creates a new Rails application with a default[0m
+[38;2;248;248;242m    directory structure and configuration at the path you specify.[0m
+
+[38;2;248;248;242m    You can specify extra command-line arguments to be used every time[0m
+[38;2;248;248;242m    'rails new' runs in the .railsrc configuration file in your home directory,[0m
+[38;2;248;248;242m    or in $XDG_CONFIG_HOME/rails/railsrc if XDG_CONFIG_HOME is set.[0m
+
+[38;2;248;248;242m    Note that the arguments specified in the .railsrc file don't affect the[0m
+[38;2;248;248;242m    defaults values shown above in this help message.[0m
+
+[38;2;253;151;31mExample:[0m
+[38;2;248;248;242m    rails new ~/Code/Ruby/weblog[0m
+
+[38;2;248;248;242m    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.[0m

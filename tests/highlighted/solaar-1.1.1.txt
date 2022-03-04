@@ -1,0 +1,29 @@
+[38;2;253;151;31musage:[0m[38;2;248;248;242m solaar [-h] [-d] [-D PATH] [--restart-on-wake-up] [-w {show,hide,only}][0m
+[38;2;248;248;242m              [-b {regular,symbolic,solaar}] [--tray-icon-size TRAY_ICON_SIZE][0m
+[38;2;248;248;242m              [-V] [--help-actions][0m
+[38;2;248;248;242m              ...[0m
+
+[38;2;248;248;242mpositional arguments:[0m
+[38;2;248;248;242m  {show,probe,config,pair,unpair}[0m
+[38;2;248;248;242m                        optional actions to perform[0m
+
+[38;2;248;248;242moptional arguments:[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m            show this help message and exit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m           print logging messages, for debugging purposes (may be[0m
+[38;2;248;248;242m                        repeated for extra verbosity)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m PATH, --hidraw PATH[0m
+[38;2;248;248;242m                        unifying receiver to use; the first detected receiver[0m
+[38;2;248;248;242m                        if unspecified. Example: /dev/hidraw2[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--restart-on-wake-up[0m[38;2;248;248;242m  restart Solaar on sleep wake-up (experimental)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m {show,hide,only}, --window {show,hide,only}[0m
+[38;2;248;248;242m                        start with window showing / hidden / only (no tray[0m
+[38;2;248;248;242m                        icon)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m {regular,symbolic,solaar}, --battery-icons {regular,symbolic,solaar}[0m
+[38;2;248;248;242m                        prefer regular battery / symbolic battery / solaar[0m
+[38;2;248;248;242m                        icons[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--tray-icon-size[0m[38;2;248;248;242m TRAY_ICON_SIZE[0m
+[38;2;248;248;242m                        explicit size for tray icons[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m         show program's version number and exit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--help-actions[0m[38;2;248;248;242m        print help for the optional actions[0m
+
+[38;2;248;248;242mFor more information see https://pwr-solaar.github.io/Solaar[0m

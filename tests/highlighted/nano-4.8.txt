@@ -1,0 +1,57 @@
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m nano [OPTIONS] [[+LINE[,COLUMN]] FILE]...[0m
+
+[38;2;248;248;242mTo place the cursor on a specific line of a file, put the line number with[0m
+[38;2;248;248;242ma '+' before the filename.  The column number can be added after a comma.[0m
+[38;2;248;248;242mWhen a filename is '-', nano reads data from standard input.[0m
+
+[38;2;248;248;242m Option         Long option             Meaning[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m             --smarthome             Enable smart home key[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m             --backup                Save backups of existing files[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m <dir>       --backupdir=<dir>       Directory for saving unique backup files[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m             --boldtext              Use bold instead of reverse video text[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m             --tabstospaces          Convert typed tabs to spaces[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m             --multibuffer           Read a file into a new buffer by default[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m             --locking               Use (vim-style) lock files[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m             --historylog            Log & read search/replace string history[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m             --ignorercfiles         Don't look at nanorc files[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-J[0m[38;2;248;248;242m <number>    --guidestripe=<number>  Show a guiding bar at this column[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m             --rawsequences          Fix numeric keypad key confusion problem[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m             --nonewlines            Don't add an automatic newline[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m             --trimblanks            Trim tail spaces when hard-wrapping[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m             --noconvert             Don't convert files from DOS/Mac format[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m             --positionlog           Log & read location of cursor position[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-Q[0m[38;2;248;248;242m <regex>     --quotestr=<regex>      Regular expression to match quoting[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m             --restricted            Restrict access to the filesystem[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m <#cols>     --tabsize=<#cols>       Set width of a tab to #cols columns[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m             --quickblank            Wipe status bar upon next keystroke[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m             --version               Print version information and exit[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m             --wordbounds            Detect word boundaries more accurately[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m <str>       --wordchars=<str>       Which other characters are word parts[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-Y[0m[38;2;248;248;242m <name>      --syntax=<name>         Syntax definition to use for coloring[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m             --zap                   Let Bsp and Del erase a marked region[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m             --atblanks              When soft-wrapping, do it at whitespace[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m             --breaklonglines        Automatically hard-wrap overlong lines[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m             --constantshow          Constantly show cursor position[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m             --rebinddelete          Fix Backspace/Delete confusion problem[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m             --emptyline             Keep the line below the title bar empty[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m <file>      --rcfile=<file>         Use only this file for configuring nano[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m             --showcursor            Show cursor in file browser & help text[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m             --help                  Show this help text and exit[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m             --autoindent            Automatically indent new lines[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m             --jumpyscrolling        Scroll per half-screen, not per line[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m             --cutfromcursor         Cut from cursor to end of line[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m             --linenumbers           Show line numbers in front of the text[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m             --mouse                 Enable the use of the mouse[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m             --noread                Do not read the file (only write it)[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m <dir>       --operatingdir=<dir>    Set operating directory[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m             --preserve              Preserve XON (^Q) and XOFF (^S) keys[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m <#cols>     --fill=<#cols>          Set width for hard-wrap and justify[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m <prog>      --speller=<prog>        Enable alternate speller[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m             --tempfile              Auto save on exit, don't prompt[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m             --unix                  Save a file by default in Unix format[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m             --view                  View mode (read-only)[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m             --nowrap                Don't hard-wrap long lines [default][0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m             --nohelp                Don't show the two help lines[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-y[0m[38;2;248;248;242m             --afterends             Make Ctrl+Right stop at word ends[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m             --suspend               Enable suspension[0m
+[38;2;248;248;242m -$             --softwrap              Enable soft line wrapping[0m

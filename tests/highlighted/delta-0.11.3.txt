@@ -1,0 +1,537 @@
+[38;2;248;248;242m[32mdelta[0m 0.11.3[0m
+[38;2;248;248;242mA viewer for git and diff output[0m
+[38;2;248;248;242m[33m[0m
+[38;2;253;151;31mUSAGE:[0m[38;2;248;248;242m[0m[0m
+[38;2;248;248;242m    delta [FLAGS] [OPTIONS] [ARGS][0m
+
+[38;2;248;248;242m[33mFLAGS:[0m
+[38;2;248;248;242m[0m        [32m--light[0m                      Use default colors appropriate for a light terminal background. For more control,[0m
+[38;2;248;248;242m                                     see the style options and --syntax-theme[0m
+[38;2;248;248;242m        [32m--dark[0m                       Use default colors appropriate for a dark terminal background. For more control,[0m
+[38;2;248;248;242m                                     see the style options and --syntax-theme[0m
+[38;2;248;248;242m    [32m-n[0m, [32m--line-numbers[0m               Display line numbers next to the diff. See LINE NUMBERS section[0m
+[38;2;248;248;242m    [32m-s[0m, [32m--side-by-side[0m               Display a side-by-side diff view instead of the traditional view[0m
+[38;2;248;248;242m        [32m--diff-highlight[0m             Emulate diff-highlight (https://github.com/git/git/tree/master/contrib/diff-[0m
+[38;2;248;248;242m                                     highlight)[0m
+[38;2;248;248;242m        [32m--diff-so-fancy[0m              Emulate diff-so-fancy (https://github.com/so-fancy/diff-so-fancy)[0m
+[38;2;248;248;242m        [32m--navigate[0m                   Activate diff navigation: use n to jump forwards and N to jump backwards. To change[0m
+[38;2;248;248;242m                                     the file labels used see --file-modified-label, --file-removed-label, --file-added-[0m
+[38;2;248;248;242m                                     label, --file-renamed-label[0m
+[38;2;248;248;242m        [32m--relative-paths[0m             Output all file paths relative to the current directory so that they resolve[0m
+[38;2;248;248;242m                                     correctly when clicked on or used in shell commands[0m
+[38;2;248;248;242m        [32m--hyperlinks[0m                 Render commit hashes, file names, and line numbers as hyperlinks, according to the[0m
+[38;2;248;248;242m                                     hyperlink spec for terminal emulators:[0m
+[38;2;248;248;242m                                     https://gist.github.com/egmontkob/eb114294efbcd5adb1944c9f3cb5feda. By default,[0m
+[38;2;248;248;242m                                     file names and line numbers link to the local file using a file URL, whereas commit[0m
+[38;2;248;248;242m                                     hashes link to the commit in GitHub, if the remote repository is hosted by GitHub.[0m
+[38;2;248;248;242m                                     See --hyperlinks-file-link-format for full control over the file URLs emitted.[0m
+[38;2;248;248;242m                                     Hyperlinks are supported by several common terminal emulators. To make them work,[0m
+[38;2;248;248;242m                                     you must use less version >= 581 with the -R flag (or use -r with older less[0m
+[38;2;248;248;242m                                     versions, but this will break e.g. --navigate). If you use tmux, then you will also[0m
+[38;2;248;248;242m                                     need a patched fork of tmux (see https://github.com/dandavison/tmux)[0m
+[38;2;248;248;242m        [32m--keep-plus-minus-markers[0m    Prefix added/removed lines with a +/- character, exactly as git does. By default,[0m
+[38;2;248;248;242m                                     delta does not emit any prefix, so code can be copied directly from delta's output[0m
+[38;2;248;248;242m        [32m--show-config[0m                Display the active values for all Delta options. Style options are displayed with[0m
+[38;2;248;248;242m                                     foreground and background colors. This can be used to experiment with colors by[0m
+[38;2;248;248;242m                                     combining this option with other options such as --minus-style, --zero-style,[0m
+[38;2;248;248;242m                                     [0m[38;2;166;226;46m--plus-style[0m[38;2;248;248;242m, --light, --dark, etc[0m
+[38;2;248;248;242m        [32m--list-languages[0m             List supported languages and associated file extensions[0m
+[38;2;248;248;242m        [32m--list-syntax-themes[0m         List available syntax-highlighting color themes[0m
+[38;2;248;248;242m        [32m--show-syntax-themes[0m         Show all available syntax-highlighting themes, each with an example of highlighted[0m
+[38;2;248;248;242m                                     diff output. If diff output is supplied on standard input then this will be used[0m
+[38;2;248;248;242m                                     for the demo. For example: `git show | delta --show-syntax-themes`[0m
+[38;2;248;248;242m        [32m--show-themes[0m                Show available delta themes, each with an example of highlighted diff output. A[0m
+[38;2;248;248;242m                                     delta theme is a delta named feature (see --features) that sets either `light` or[0m
+[38;2;248;248;242m                                     `dark`. See https://github.com/dandavison/delta#custom-color-themes. If diff output[0m
+[38;2;248;248;242m                                     is supplied on standard input then this will be used for the demo. For example:[0m
+[38;2;248;248;242m                                     `git show | delta --show-themes`. By default shows dark or light themes only,[0m
+[38;2;248;248;242m                                     according to whether delta is in dark or light mode (as set by the user or inferred[0m
+[38;2;248;248;242m                                     from BAT_THEME). To control the themes shown, use --dark or --light, or both, on[0m
+[38;2;248;248;242m                                     the command line together with this option[0m
+[38;2;248;248;242m        [32m--show-colors[0m                Show available named colors. In addition to named colors, arbitrary colors can be[0m
+[38;2;248;248;242m                                     specified using RGB hex codes. See COLORS section[0m
+[38;2;248;248;242m        [32m--parse-ansi[0m                 Parse ANSI color escape sequences in input and display them as git style strings.[0m
+[38;2;248;248;242m                                     Example usage: git show --color=always | delta --parse-ansi This can be used to[0m
+[38;2;248;248;242m                                     help identify input style strings to use with map-styles[0m
+[38;2;248;248;242m        [32m--no-gitconfig[0m               Do not take any settings from git config. See GIT CONFIG section[0m
+[38;2;248;248;242m        [32m--raw[0m                        Do not alter the input in any way. This is mainly intended for testing delta[0m
+[38;2;248;248;242m        [32m--color-only[0m                 Do not alter the input structurally in any way, but color and highlight hunk lines[0m
+[38;2;248;248;242m                                     according to your delta configuration. This is mainly intended for other tools that[0m
+[38;2;248;248;242m                                     use delta[0m
+[38;2;248;248;242m        [32m--highlight-removed[0m          Deprecated: use --minus-style='syntax'[0m
+[38;2;248;248;242m    [32m-h[0m, [32m--help[0m                       Prints help information[0m
+[38;2;248;248;242m    [32m-V[0m, [32m--version[0m                    Prints version information[0m
+
+[38;2;248;248;242m[33mOPTIONS:[0m
+[38;2;248;248;242m[0m        [32m--features[0m [32m<features>[0m[0m
+[38;2;248;248;242m            Name of delta features to use (space-separated). A feature is a named collection of delta options in[0m
+[38;2;248;248;242m            ~/.gitconfig. See FEATURES section[0m
+[38;2;248;248;242m        [32m--syntax-theme[0m [32m<syntax-theme>[0m[0m
+[38;2;248;248;242m            The code syntax-highlighting theme to use. Use --show-syntax-themes to demo available themes. If the syntax-[0m
+[38;2;248;248;242m            highlighting theme is not set using this option, it will be taken from the BAT_THEME environment[0m
+[38;2;248;248;242m            variable, if that contains a valid theme name. --syntax-theme=none disables all syntax highlighting[0m
+[38;2;248;248;242m        [32m--minus-style[0m [32m<minus-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for removed lines. See STYLES section [default: [32mnormal[0m
+[38;2;248;248;242m            auto[0m][0m
+[38;2;248;248;242m        [32m--zero-style[0m [32m<zero-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for unchanged lines. See STYLES section [default: [32msyntax[0m
+[38;2;248;248;242m            normal[0m][0m
+[38;2;248;248;242m        [32m--plus-style[0m [32m<plus-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for added lines. See STYLES section [default: [32msyntax auto[0m][0m
+
+[38;2;248;248;242m        [32m--minus-emph-style[0m [32m<minus-emph-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for emphasized sections of removed lines. See STYLES section[0m
+[38;2;248;248;242m            [default: [32mnormal auto[0m][0m
+[38;2;248;248;242m        [32m--minus-non-emph-style[0m [32m<minus-non-emph-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for non-emphasized sections of removed lines that have an[0m
+[38;2;248;248;242m            emphasized section. See STYLES section [default: [32mminus-style[0m][0m
+[38;2;248;248;242m        [32m--plus-emph-style[0m [32m<plus-emph-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for emphasized sections of added lines. See STYLES section[0m
+[38;2;248;248;242m            [default: [32msyntax auto[0m][0m
+[38;2;248;248;242m        [32m--plus-non-emph-style[0m [32m<plus-non-emph-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for non-emphasized sections of added lines that have an[0m
+[38;2;248;248;242m            emphasized section. See STYLES section [default: [32mplus-style[0m][0m
+[38;2;248;248;242m        [32m--commit-style[0m [32m<commit-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the commit hash line. See STYLES section. The style 'omit'[0m
+[38;2;248;248;242m            can be used to remove the commit hash line from the output [default: [32mraw[0m][0m
+[38;2;248;248;242m        [32m--commit-decoration-style[0m [32m<commit-decoration-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the commit hash decoration. See STYLES section. The style[0m
+[38;2;248;248;242m            string should contain one of the special attributes 'box', 'ul' (underline), 'ol' (overline), or the[0m
+[38;2;248;248;242m            combination 'ul ol' [default: [32m[0m][0m
+[38;2;248;248;242m        [32m--commit-regex[0m [32m<commit-regex>[0m[0m
+[38;2;248;248;242m            The regular expression used to identify the commit line when parsing git output [default: [32m^commit [0m][0m
+
+[38;2;248;248;242m        [32m--file-style[0m [32m<file-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the file section. See STYLES section. The style 'omit' can be[0m
+[38;2;248;248;242m            used to remove the file section from the output [default: [32mblue[0m][0m
+[38;2;248;248;242m        [32m--file-decoration-style[0m [32m<file-decoration-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the file decoration. See STYLES section. The style string[0m
+[38;2;248;248;242m            should contain one of the special attributes 'box', 'ul' (underline), 'ol' (overline), or the combination[0m
+[38;2;248;248;242m            'ul ol' [default: [32mblue ul[0m][0m
+[38;2;248;248;242m        [32m--hyperlinks-commit-link-format[0m [32m<hyperlinks-commit-link-format>[0m[0m
+[38;2;248;248;242m            Format string for commit hyperlinks (requires --hyperlinks). The placeholder "{commit}" will be replaced by[0m
+[38;2;248;248;242m            the commit hash. For example: --hyperlinks-commit-link-format='https://mygitrepo/{commit}/'[0m
+[38;2;248;248;242m        [32m--hyperlinks-file-link-format[0m [32m<hyperlinks-file-link-format>[0m[0m
+[38;2;248;248;242m            Format string for file hyperlinks (requires --hyperlinks). The placeholders "{path}" and "{line}" will be[0m
+[38;2;248;248;242m            replaced by the absolute file path and the line number, respectively. The default value of this option[0m
+[38;2;248;248;242m            creates hyperlinks using standard file URLs; your operating system should open these in the application[0m
+[38;2;248;248;242m            registered for that file type. However, these do not make use of the line number. In order for the link to[0m
+[38;2;248;248;242m            open the file at the correct line number, you could use a custom URL format such as "file-[0m
+[38;2;248;248;242m            line://{path}:{line}" and register an application to handle the custom "file-line" URL scheme by[0m
+[38;2;248;248;242m            opening the file in your editor/IDE at the indicated line number. See https://github.com/dandavison/open-in-[0m
+[38;2;248;248;242m            editor for an example [default: [32mfile://{path}[0m][0m
+[38;2;248;248;242m        [32m--hunk-header-style[0m [32m<hunk-header-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the hunk-header. See STYLES section. Special attributes[0m
+[38;2;248;248;242m            'file' and 'line-number' can be used to include the file path, and number of first hunk line, in the hunk[0m
+[38;2;248;248;242m            header. The style 'omit' can be used to remove the hunk header section from the output [default: [32mline-[0m
+[38;2;248;248;242m            number syntax[0m][0m
+[38;2;248;248;242m        [32m--hunk-header-file-style[0m [32m<hunk-header-file-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the file path part of the hunk-header. See STYLES section.[0m
+[38;2;248;248;242m            The file path will only be displayed if hunk-header-style contains the 'file' special attribute [default:[0m
+[38;2;248;248;242m            [32mblue[0m][0m
+[38;2;248;248;242m        [32m--hunk-header-line-number-style[0m [32m<hunk-header-line-number-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the line number part of the hunk-header. See STYLES section.[0m
+[38;2;248;248;242m            The line number will only be displayed if hunk-header-style contains the 'line-number' special attribute[0m
+[38;2;248;248;242m            [default: [32mblue[0m][0m
+[38;2;248;248;242m        [32m--hunk-header-decoration-style[0m [32m<hunk-header-decoration-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the hunk-header decoration. See STYLES section. The style[0m
+[38;2;248;248;242m            string should contain one of the special attributes 'box', 'ul' (underline), 'ol' (overline), or the[0m
+[38;2;248;248;242m            combination 'ul ol' [default: [32mblue box[0m][0m
+[38;2;248;248;242m        [32m--merge-conflict-begin-symbol[0m [32m<merge-conflict-begin-symbol>[0m[0m
+[38;2;248;248;242m            A string that is repeated to form the line marking the beginning of a merge conflict region [default:[0m
+[38;2;248;248;242m            [32m▼[0m][0m
+[38;2;248;248;242m        [32m--merge-conflict-end-symbol[0m [32m<merge-conflict-end-symbol>[0m[0m
+[38;2;248;248;242m            A string that is repeated to form the line marking the end of a merge conflict region [default: [32m▲[0m][0m
+
+[38;2;248;248;242m        [32m--merge-conflict-ours-diff-header-style[0m [32m<merge-conflict-ours-diff-header-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the header above the diff between the ancestral commit and[0m
+[38;2;248;248;242m            'our' branch. See STYLES section [default: [32mnormal[0m][0m
+[38;2;248;248;242m        [32m--merge-conflict-ours-diff-header-decoration-style[0m [32m<merge-conflict-ours-diff-header-decoration-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the decoration of the header above the diff between the[0m
+[38;2;248;248;242m            ancestral commit and 'our' branch.  See STYLES section. The style string should contain one of the special[0m
+[38;2;248;248;242m            attributes 'box', 'ul' (underline), 'ol' (overline), or the combination 'ul ol' [default: [32mbox[0m][0m
+[38;2;248;248;242m        [32m--merge-conflict-theirs-diff-header-style[0m [32m<merge-conflict-theirs-diff-header-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the header above the diff between the ancestral commit and[0m
+[38;2;248;248;242m            'their' branch. See STYLES section [default: [32mnormal[0m][0m
+[38;2;248;248;242m        [32m--merge-conflict-theirs-diff-header-decoration-style[0m [32m<merge-conflict-theirs-diff-header-decoration-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the decoration of the header above the diff between the[0m
+[38;2;248;248;242m            ancestral commit and 'their' branch.  See STYLES section. The style string should contain one of the special[0m
+[38;2;248;248;242m            attributes 'box', 'ul' (underline), 'ol' (overline), or the combination 'ul ol' [default: [32mbox[0m][0m
+[38;2;248;248;242m        [32m--map-styles[0m [32m<map-styles>[0m[0m
+[38;2;248;248;242m            A string specifying a mapping styles encountered in raw input to desired output styles. An example is --map-[0m
+[38;2;248;248;242m            styles='bold purple => red "#eeeeee", bold cyan => syntax "#eeeeee"'[0m
+[38;2;248;248;242m        [32m--blame-format[0m [32m<blame-format>[0m[0m
+[38;2;248;248;242m            Format string for git blame commit metadata. Available placeholders are "{timestamp}", "{author}", and[0m
+[38;2;248;248;242m            "{commit}" [default: [32m{timestamp:<15} {author:<15.14} {commit:<8} │ [0m][0m
+[38;2;248;248;242m        [32m--blame-palette[0m [32m<blame-palette>[0m[0m
+[38;2;248;248;242m            Background colors used for git blame lines (space-separated string). Lines added by the same commit are[0m
+[38;2;248;248;242m            painted with the same color; colors are recycled as needed[0m
+[38;2;248;248;242m        [32m--blame-timestamp-format[0m [32m<blame-timestamp-format>[0m[0m
+[38;2;248;248;242m            Format of `git blame` timestamp in raw git output received by delta [default: [32m%Y-%m-%d %H:%M:%S %z[0m][0m
+
+[38;2;248;248;242m        [32m--grep-match-line-style[0m [32m<grep-match-line-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for matching lines of code in grep output. See STYLES section.[0m
+[38;2;248;248;242m            Defaults to plus-style[0m
+[38;2;248;248;242m        [32m--grep-match-word-style[0m [32m<grep-match-word-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the specific matching substrings within a matching line of[0m
+[38;2;248;248;242m            code in grep output. See STYLES section. Defaults to plus-style[0m
+[38;2;248;248;242m        [32m--grep-context-line-style[0m [32m<grep-context-line-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for non-matching lines of code in grep output. See STYLES[0m
+[38;2;248;248;242m            section. Defaults to zero-style[0m
+[38;2;248;248;242m        [32m--grep-file-style[0m [32m<grep-file-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for file paths in grep output. See STYLES section. Defaults to[0m
+[38;2;248;248;242m            hunk-header-file-path-style[0m
+[38;2;248;248;242m        [32m--grep-line-number-style[0m [32m<grep-line-number-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for line numbers in grep output. See STYLES section. Defaults to[0m
+[38;2;248;248;242m            hunk-header-line-number-style[0m
+[38;2;248;248;242m        [32m--grep-separator-symbol[0m [32m<grep-separator-symbol>[0m[0m
+[38;2;248;248;242m            Symbol used in grep output to separate file path (and line number) from the line of file contents. Defaults[0m
+[38;2;248;248;242m            to ":" for both match and context lines, since many terminal emulators recognize constructs like[0m
+[38;2;248;248;242m            "/path/to/file:7:". However, standard grep output uses "-" for context lines: set this option to "keep" to[0m
+[38;2;248;248;242m            keep the original separator symbols [default: [32m:[0m][0m
+[38;2;248;248;242m        [32m--default-language[0m [32m<default-language>[0m[0m
+[38;2;248;248;242m            Default language used for syntax highlighting when this cannot be inferred from a filename. It will[0m
+[38;2;248;248;242m            typically make sense to set this in per-repository git config (.git/config)[0m
+[38;2;248;248;242m        [32m--inline-hint-style[0m [32m<inline-hint-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for content added by delta to the original diff such as special[0m
+[38;2;248;248;242m            characters to highlight tabs, and the symbols used to indicate wrapped lines. See STYLES section [default:[0m
+[38;2;248;248;242m            [32mblue[0m][0m
+[38;2;248;248;242m        [32m--word-diff-regex[0m [32m<tokenization-regex>[0m[0m
+[38;2;248;248;242m            The regular expression used to decide what a word is for the within-line highlight algorithm. For less fine-[0m
+[38;2;248;248;242m            grained matching than the default try --word-diff-regex="\S+" --max-line-distance=1.0 (this is more[0m
+[38;2;248;248;242m            similar to `git --word-diff`) [default: [32m\w+[0m][0m
+[38;2;248;248;242m        [32m--max-line-distance[0m [32m<max-line-distance>[0m[0m
+[38;2;248;248;242m            The maximum distance between two lines for them to be inferred to be homologous. Homologous line pairs are[0m
+[38;2;248;248;242m            highlighted according to the deletion and insertion operations transforming one into the other [default:[0m
+[38;2;248;248;242m            [32m0.6[0m][0m
+[38;2;248;248;242m        [32m--line-numbers-minus-style[0m [32m<line-numbers-minus-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for line numbers in the old (minus) version of the file. See[0m
+[38;2;248;248;242m            STYLES and LINE NUMBERS sections [default: [32mauto[0m][0m
+[38;2;248;248;242m        [32m--line-numbers-zero-style[0m [32m<line-numbers-zero-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for line numbers in unchanged (zero) lines. See STYLES and LINE[0m
+[38;2;248;248;242m            NUMBERS sections [default: [32mauto[0m][0m
+[38;2;248;248;242m        [32m--line-numbers-plus-style[0m [32m<line-numbers-plus-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for line numbers in the new (plus) version of the file. See[0m
+[38;2;248;248;242m            STYLES and LINE NUMBERS sections [default: [32mauto[0m][0m
+[38;2;248;248;242m        [32m--line-numbers-left-format[0m [32m<line-numbers-left-format>[0m[0m
+[38;2;248;248;242m            Format string for the left column of line numbers. A typical value would be "{nm:^4}⋮" which means to[0m
+[38;2;248;248;242m            display the line numbers of the minus file (old version), center-aligned, padded to a width of 4 characters,[0m
+[38;2;248;248;242m            followed by a dividing character. See the LINE NUMBERS section [default: [32m{nm:^4}⋮[0m][0m
+[38;2;248;248;242m        [32m--line-numbers-right-format[0m [32m<line-numbers-right-format>[0m[0m
+[38;2;248;248;242m            Format string for the right column of line numbers. A typical value would be "{np:^4}│ " which means to[0m
+[38;2;248;248;242m            display the line numbers of the plus file (new version), center-aligned, padded to a width of 4 characters,[0m
+[38;2;248;248;242m            followed by a dividing character, and a space. See the LINE NUMBERS section [default: [32m{np:^4}│[0m][0m
+[38;2;248;248;242m        [32m--line-numbers-left-style[0m [32m<line-numbers-left-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the left column of line numbers. See STYLES and LINE NUMBERS[0m
+[38;2;248;248;242m            sections [default: [32mauto[0m][0m
+[38;2;248;248;242m        [32m--line-numbers-right-style[0m [32m<line-numbers-right-style>[0m[0m
+[38;2;248;248;242m            Style (foreground, background, attributes) for the right column of line numbers. See STYLES and LINE NUMBERS[0m
+[38;2;248;248;242m            sections [default: [32mauto[0m][0m
+[38;2;248;248;242m        [32m--wrap-max-lines[0m [32m<wrap-max-lines>[0m[0m
+[38;2;248;248;242m            How often a line should be wrapped if it does not fit. Zero means to never wrap. Any content which does not[0m
+[38;2;248;248;242m            fit will be truncated. A value of "unlimited" means a line will be wrapped as many times as required[0m
+[38;2;248;248;242m            [default: [32m2[0m][0m
+[38;2;248;248;242m        [32m--wrap-left-symbol[0m [32m<wrap-left-symbol>[0m[0m
+[38;2;248;248;242m            Symbol added to the end of a line indicating that the content has been wrapped onto the next line and[0m
+[38;2;248;248;242m            continues left-aligned [default: [32m↵[0m][0m
+[38;2;248;248;242m        [32m--wrap-right-symbol[0m [32m<wrap-right-symbol>[0m[0m
+[38;2;248;248;242m            Symbol added to the end of a line indicating that the content has been wrapped onto the next line and[0m
+[38;2;248;248;242m            continues right-aligned [default: [32m↴[0m][0m
+[38;2;248;248;242m        [32m--wrap-right-percent[0m [32m<wrap-right-percent>[0m[0m
+[38;2;248;248;242m            Threshold for right-aligning wrapped content. If the length of the remaining wrapped content, as a[0m
+[38;2;248;248;242m            percentage of width, is less than this quantity it will be right-aligned. Otherwise it will be left-aligned[0m
+[38;2;248;248;242m            [default: [32m37.0[0m][0m
+[38;2;248;248;242m        [32m--wrap-right-prefix-symbol[0m [32m<wrap-right-prefix-symbol>[0m[0m
+[38;2;248;248;242m            Symbol displayed in front of right-aligned wrapped content [default: [32m…[0m][0m
+
+[38;2;248;248;242m        [32m--navigate-regex[0m [32m<navigate-regex>[0m[0m
+[38;2;248;248;242m            A regexp to use in the less pager when navigating (auto-generated when unspecified)[0m
+
+[38;2;248;248;242m        [32m--file-modified-label[0m [32m<file-modified-label>[0m[0m
+[38;2;248;248;242m            Text to display in front of a modified file path [default: [32m[0m][0m
+
+[38;2;248;248;242m        [32m--file-removed-label[0m [32m<file-removed-label>[0m[0m
+[38;2;248;248;242m            Text to display in front of a removed file path [default: [32mremoved:[0m][0m
+
+[38;2;248;248;242m        [32m--file-added-label[0m [32m<file-added-label>[0m[0m
+[38;2;248;248;242m            Text to display in front of a added file path [default: [32madded:[0m][0m
+
+[38;2;248;248;242m        [32m--file-copied-label[0m [32m<file-copied-label>[0m[0m
+[38;2;248;248;242m            Text to display in front of a copied file path [default: [32mcopied:[0m][0m
+
+[38;2;248;248;242m        [32m--file-renamed-label[0m [32m<file-renamed-label>[0m[0m
+[38;2;248;248;242m            Text to display in front of a renamed file path [default: [32mrenamed:[0m][0m
+
+[38;2;248;248;242m        [32m--right-arrow[0m [32m<right-arrow>[0m[0m
+[38;2;248;248;242m            Text to display with a changed value such as a diff heading, a rename, or a chmod [default: [32m⟶  [0m][0m
+
+[38;2;248;248;242m        [32m--hunk-label[0m [32m<hunk-label>[0m[0m
+[38;2;248;248;242m            Text to display in front of a hunk header [default: [32m[0m][0m
+
+[38;2;248;248;242m        [32m--max-line-length[0m [32m<max-line-length>[0m[0m
+[38;2;248;248;242m            Truncate lines longer than this. To prevent any truncation, set to zero. Note that delta will be slow on[0m
+[38;2;248;248;242m            very long lines (e.g. minified .js) if truncation is disabled. When wrapping lines it is automatically set[0m
+[38;2;248;248;242m            to fit at least all visible characters [default: [32m512[0m][0m
+[38;2;248;248;242m        [32m--line-fill-method[0m [32m<line-fill-method>[0m[0m
+[38;2;248;248;242m            How to extend the background color to the end of the line in side-by-side mode. Can be ansi (default) or[0m
+[38;2;248;248;242m            spaces (default if output is not to a terminal). Has no effect if --width=variable is given[0m
+[38;2;248;248;242m    [32m-w[0m, [32m--width[0m [32m<width>[0m[0m
+[38;2;248;248;242m            The width of underline/overline decorations. Examples: "72" (exactly 72 characters), "-2" (auto-detected[0m
+[38;2;248;248;242m            terminal width minus 2). An expression such as "74-2" is also valid (equivalent to 72 but may be useful if[0m
+[38;2;248;248;242m            the caller has a variable holding the value "74"). Use --width=variable to extend decorations and background[0m
+[38;2;248;248;242m            colors to the end of the text only. Otherwise background colors extend to the full terminal width[0m
+[38;2;248;248;242m        [32m--diff-stat-align-width[0m [32m<diff-stat-align-width>[0m[0m
+[38;2;248;248;242m            Width allocated for file paths in a diff stat section. If a relativized file path exceeds this width then[0m
+[38;2;248;248;242m            the diff stat will be misaligned [default: [32m48[0m][0m
+[38;2;248;248;242m        [32m--tabs[0m [32m<tab-width>[0m[0m
+[38;2;248;248;242m            The number of spaces to replace tab characters with. Use --tabs=0 to pass tab characters through directly,[0m
+[38;2;248;248;242m            but note that in that case delta will calculate line widths assuming tabs occupy one character's width on[0m
+[38;2;248;248;242m            the screen: if your terminal renders tabs as more than than one character wide then delta's output will look[0m
+[38;2;248;248;242m            incorrect [default: [32m4[0m][0m
+[38;2;248;248;242m        [32m--true-color[0m [32m<true-color>[0m[0m
+[38;2;248;248;242m            Whether to emit 24-bit ("true color") RGB color codes. Options are auto, always, and never. "auto" means[0m
+[38;2;248;248;242m            that delta will emit 24-bit color codes if the environment variable COLORTERM has the value "truecolor" or[0m
+[38;2;248;248;242m            "24bit". If your terminal application (the application you use to enter commands at a shell prompt) supports[0m
+[38;2;248;248;242m            24 bit colors, then it probably already sets this environment variable, in which case you don't need to do[0m
+[38;2;248;248;242m            anything [default: [32mauto[0m][0m
+[38;2;248;248;242m        [32m--24-bit-color[0m [32m<24-bit-color>[0m[0m
+[38;2;248;248;242m            Deprecated: use --true-color[0m
+
+[38;2;248;248;242m        [32m--inspect-raw-lines[0m [32m<inspect-raw-lines>[0m[0m
+[38;2;248;248;242m            Whether to examine ANSI color escape sequences in raw lines received from Git and handle lines colored in[0m
+[38;2;248;248;242m            certain ways specially. This is on by default: it is how Delta supports Git's --color-moved feature. Set[0m
+[38;2;248;248;242m            this to "false" to disable this behavior [default: [32mtrue[0m][0m
+[38;2;248;248;242m        [32m--pager[0m [32m<pager>[0m[0m
+[38;2;248;248;242m            Which pager to use. The default pager is `less`. You can also change pager by setting the environment[0m
+[38;2;248;248;242m            variables DELTA_PAGER, BAT_PAGER, or PAGER (and that is their order of priority). This option overrides all[0m
+[38;2;248;248;242m            environment variables above[0m
+[38;2;248;248;242m        [32m--paging[0m [32m<paging-mode>[0m[0m
+[38;2;248;248;242m            Whether to use a pager when displaying output. Options are: auto, always, and never [default: [32mauto[0m][0m
+
+[38;2;248;248;242m        [32m--minus-empty-line-marker-style[0m [32m<minus-empty-line-marker-style>[0m[0m
+[38;2;248;248;242m            Style for removed empty line marker (used only if --minus-style has no background color) [default:[0m
+[38;2;248;248;242m            [32mnormal auto[0m][0m
+[38;2;248;248;242m        [32m--plus-empty-line-marker-style[0m [32m<plus-empty-line-marker-style>[0m[0m
+[38;2;248;248;242m            Style for added empty line marker (used only if --plus-style has no background color) [default: [32mnormal[0m
+[38;2;248;248;242m            auto[0m][0m
+[38;2;248;248;242m        [32m--whitespace-error-style[0m [32m<whitespace-error-style>[0m[0m
+[38;2;248;248;242m            Style for whitespace errors. Defaults to color.diff.whitespace if that is set in git config, or else[0m
+[38;2;248;248;242m            'magenta reverse' [default: [32mauto auto[0m][0m
+[38;2;248;248;242m        [32m--line-buffer-size[0m [32m<line-buffer-size>[0m[0m
+[38;2;248;248;242m            Size of internal line buffer. Delta compares the added and removed versions of nearby lines in order to[0m
+[38;2;248;248;242m            detect and highlight changes at the level of individual words/tokens. Therefore, nearby lines must be[0m
+[38;2;248;248;242m            buffered internally before they are painted and emitted. Increasing this value might improve highlighting of[0m
+[38;2;248;248;242m            some large diff hunks. However, setting this to a high value will adversely affect delta's performance when[0m
+[38;2;248;248;242m            entire files are added/removed [default: [32m32[0m][0m
+[38;2;248;248;242m        [32m--minus-color[0m [32m<deprecated-minus-background-color>[0m[0m
+[38;2;248;248;242m            Deprecated: use --minus-style='normal my_background_color'[0m
+
+[38;2;248;248;242m        [32m--minus-emph-color[0m [32m<deprecated-minus-emph-background-color>[0m[0m
+[38;2;248;248;242m            Deprecated: use --minus-emph-style='normal my_background_color'[0m
+
+[38;2;248;248;242m        [32m--plus-color[0m [32m<deprecated-plus-background-color>[0m[0m
+[38;2;248;248;242m            Deprecated: Use --plus-style='syntax my_background_color' to change the background color while retaining[0m
+[38;2;248;248;242m            syntax-highlighting[0m
+[38;2;248;248;242m        [32m--plus-emph-color[0m [32m<deprecated-plus-emph-background-color>[0m[0m
+[38;2;248;248;242m            Deprecated: Use --plus-emph-style='syntax my_background_color' to change the background color while[0m
+[38;2;248;248;242m            retaining syntax-highlighting[0m
+[38;2;248;248;242m        [32m--commit-color[0m [32m<deprecated-commit-color>[0m[0m
+[38;2;248;248;242m            Deprecated: use --commit-style='my_foreground_color' --commit-decoration-style='my_foreground_color'[0m
+
+[38;2;248;248;242m        [32m--file-color[0m [32m<deprecated-file-color>[0m[0m
+[38;2;248;248;242m            Deprecated: use --file-style='my_foreground_color' --file-decoration-style='my_foreground_color'[0m
+
+[38;2;248;248;242m        [32m--hunk-style[0m [32m<deprecated-hunk-style>[0m[0m
+[38;2;248;248;242m            Deprecated: synonym of --hunk-header-decoration-style[0m
+
+[38;2;248;248;242m        [32m--hunk-color[0m [32m<deprecated-hunk-color>[0m[0m
+[38;2;248;248;242m            Deprecated: use --hunk-header-style='my_foreground_color' --hunk-header-decoration-[0m
+[38;2;248;248;242m            style='my_foreground_color'[0m
+[38;2;248;248;242m        [32m--theme[0m [32m<deprecated-theme>[0m[0m
+[38;2;248;248;242m            Deprecated: use --syntax-theme[0m
+
+
+[38;2;248;248;242m[33mARGS:[0m
+[38;2;248;248;242m[0m    [32m<minus-file>[0m    First file to be compared when delta is being used in diff mode: `delta file_1 file_2` is[0m
+[38;2;248;248;242m                    equivalent to `diff -u file_1 file_2 | delta`[0m
+[38;2;248;248;242m    [32m<plus-file>[0m     Second file to be compared when delta is being used in diff mode[0m
+
+[38;2;248;248;242mGIT CONFIG[0m
+[38;2;248;248;242m----------[0m
+
+[38;2;248;248;242mBy default, delta takes settings from a section named "delta" in git config files, if one is[0m
+[38;2;248;248;242mpresent. The git config file to use for delta options will usually be ~/.gitconfig, but delta[0m
+[38;2;248;248;242mfollows the rules given in https://git-scm.com/docs/git-config#FILES. Most delta options can be[0m
+[38;2;248;248;242mgiven in a git config file, using the usual option names but without the initial '--'. An example[0m
+[38;2;253;151;31mis[0m
+
+[38;2;248;248;242m[delta][0m
+[38;2;248;248;242m    line-numbers = true[0m
+[38;2;248;248;242m    zero-style = dim syntax[0m
+
+[38;2;253;151;31mFEATURES[0m
+[38;2;248;248;242m--------[0m
+[38;2;248;248;242mA feature is a named collection of delta options in git config. An example is:[0m
+
+[38;2;248;248;242m[delta "my-delta-feature"][0m
+[38;2;248;248;242m    syntax-theme = Dracula[0m
+[38;2;248;248;242m    plus-style = bold syntax "#002800"[0m
+
+[38;2;248;248;242mTo activate those options, you would use:[0m
+
+[38;2;248;248;242mdelta --features my-delta-feature[0m
+
+[38;2;248;248;242mA feature name may not contain whitespace. You can activate multiple features:[0m
+
+[38;2;248;248;242m[delta][0m
+[38;2;248;248;242m    features = my-highlight-styles-colors-feature my-line-number-styles-feature[0m
+
+[38;2;248;248;242mIf more than one feature sets the same option, the last one wins.[0m
+
+[38;2;253;151;31mSTYLES[0m
+[38;2;248;248;242m------[0m
+
+[38;2;248;248;242mAll options that have a name like --*-style work the same way. It is very similar to how[0m
+[38;2;248;248;242mcolors/styles are specified in a gitconfig file:[0m
+[38;2;248;248;242mhttps://git-scm.com/docs/git-config#Documentation/git-config.txt-color[0m
+
+[38;2;248;248;242mHere is an example:[0m
+
+[38;2;166;226;46m--minus-style[0m[38;2;248;248;242m 'red bold ul "#ffeeee"'[0m
+
+[38;2;248;248;242mThat means: For removed lines, set the foreground (text) color to 'red', make it bold and[0m
+[38;2;248;248;242m            underlined, and set the background color to '#ffeeee'.[0m
+
+[38;2;248;248;242mSee the COLORS section below for how to specify a color. In addition to real colors, there are 4[0m
+[38;2;248;248;242mspecial color names: 'auto', 'normal', 'raw', and 'syntax'.[0m
+
+[38;2;248;248;242mHere is an example of using special color names together with a single attribute:[0m
+
+[38;2;166;226;46m--minus-style[0m[38;2;248;248;242m 'syntax bold auto'[0m
+
+[38;2;248;248;242mThat means: For removed lines, syntax-highlight the text, and make it bold, and do whatever delta[0m
+[38;2;248;248;242m            normally does for the background.[0m
+
+[38;2;248;248;242mThe available attributes are: 'blink', 'bold', 'dim', 'hidden', 'italic', 'reverse', 'strike',[0m
+[38;2;248;248;242mand 'ul' (or 'underline').[0m
+
+[38;2;248;248;242mThe attribute 'omit' is supported by commit-style, file-style, and hunk-header-style, meaning to[0m
+[38;2;248;248;242mremove the element entirely from the output.[0m
+
+[38;2;248;248;242mA complete description of the style string syntax follows:[0m
+
+[38;2;248;248;242m- If the input that delta is receiving already has colors, and you want delta to output those[0m
+[38;2;248;248;242m  colors unchanged, then use the special style string 'raw'. Otherwise, delta will strip any colors[0m
+[38;2;248;248;242m  from its input.[0m
+
+[38;2;248;248;242m- A style string consists of 0, 1, or 2 colors, together with an arbitrary number of style[0m
+[38;2;248;248;242m  attributes, all separated by spaces.[0m
+
+[38;2;248;248;242m- The first color is the foreground (text) color. The second color is the background color.[0m
+[38;2;248;248;242m  Attributes can go in any position.[0m
+
+[38;2;248;248;242m- This means that in order to specify a background color you must also specify a foreground (text)[0m
+[38;2;248;248;242m  color.[0m
+
+[38;2;248;248;242m- If you want delta to choose one of the colors automatically, then use the special color 'auto'.[0m
+[38;2;248;248;242m  This can be used for both foreground and background.[0m
+
+[38;2;248;248;242m- If you want the foreground/background color to be your terminal's foreground/background color,[0m
+[38;2;248;248;242m  then use the special color 'normal'.[0m
+
+[38;2;248;248;242m- If you want the foreground text to be syntax-highlighted according to its language, then use the[0m
+[38;2;248;248;242m  special foreground color 'syntax'. This can only be used for the foreground (text).[0m
+
+[38;2;248;248;242m- The minimal style specification is the empty string ''. This means: do not apply any colors or[0m
+[38;2;248;248;242m  styling to the element in question.[0m
+
+[38;2;253;151;31mCOLORS[0m
+[38;2;248;248;242m------[0m
+
+[38;2;248;248;242mThere are four ways to specify a color (this section applies to foreground and background colors[0m
+[38;2;248;248;242mwithin a style string):[0m
+
+[38;2;248;248;242m1. CSS color name[0m
+
+[38;2;248;248;242m   Any of the 140 color names used in CSS: https://www.w3schools.com/colors/colors_groups.asp[0m
+
+[38;2;248;248;242m2. RGB hex code[0m
+
+[38;2;248;248;242m   An example of using an RGB hex code is:[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--file-style[0m[38;2;248;248;242m="#0e7c0e"[0m
+
+[38;2;248;248;242m3. ANSI color name[0m
+
+[38;2;248;248;242m   There are 8 ANSI color names:[0m
+[38;2;248;248;242m   black, red, green, yellow, blue, magenta, cyan, white.[0m
+
+[38;2;248;248;242m   In addition, all of them have a bright form:[0m
+[38;2;248;248;242m   brightblack, brightred, brightgreen, brightyellow, brightblue, brightmagenta, brightcyan, brightwhite.[0m
+
+[38;2;248;248;242m   An example of using an ANSI color name is:[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--file-style[0m[38;2;248;248;242m="green"[0m
+
+[38;2;248;248;242m   Unlike RGB hex codes, ANSI color names are just names: you can choose the exact color that each[0m
+[38;2;248;248;242m   name corresponds to in the settings of your terminal application (the application you use to[0m
+[38;2;248;248;242m   enter commands at a shell prompt). This means that if you use ANSI color names, and you change[0m
+[38;2;248;248;242m   the color theme used by your terminal, then delta's colors will respond automatically, without[0m
+[38;2;248;248;242m   needing to change the delta command line.[0m
+
+[38;2;248;248;242m   "purple" is accepted as a synonym for "magenta". Color names and codes are case-insensitive.[0m
+
+[38;2;248;248;242m4. ANSI color number[0m
+
+[38;2;248;248;242m   An example of using an ANSI color number is:[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--file-style[0m[38;2;248;248;242m=28[0m
+
+[38;2;248;248;242m   There are 256 ANSI color numbers: 0-255. The first 16 are the same as the colors described in[0m
+[38;2;248;248;242m   the "ANSI color name" section above. See https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit.[0m
+[38;2;248;248;242m   Specifying colors like this is useful if your terminal only supports 256 colors (i.e. doesn't[0m
+[38;2;248;248;242m   support 24-bit color).[0m
+
+
+[38;2;248;248;242mLINE NUMBERS[0m
+[38;2;248;248;242m------------[0m
+
+[38;2;248;248;242mTo display line numbers, use --line-numbers.[0m
+
+[38;2;248;248;242mLine numbers are displayed in two columns. Here's what it looks like by default:[0m
+
+[38;2;248;248;242m 1  ⋮ 1  │ unchanged line[0m
+[38;2;248;248;242m 2  ⋮    │ removed line[0m
+[38;2;248;248;242m    ⋮ 2  │ added line[0m
+
+[38;2;248;248;242mIn that output, the line numbers for the old (minus) version of the file appear in the left column,[0m
+[38;2;248;248;242mand the line numbers for the new (plus) version of the file appear in the right column. In an[0m
+[38;2;248;248;242munchanged (zero) line, both columns contain a line number.[0m
+
+[38;2;248;248;242mThe following options allow the line number display to be customized:[0m
+
+[38;2;166;226;46m--line-numbers-left-format[0m[38;2;248;248;242m:  Change the contents of the left column[0m
+[38;2;166;226;46m--line-numbers-right-format[0m[38;2;248;248;242m: Change the contents of the right column[0m
+[38;2;166;226;46m--line-numbers-left-style[0m[38;2;248;248;242m:   Change the style applied to the left column[0m
+[38;2;166;226;46m--line-numbers-right-style[0m[38;2;248;248;242m:  Change the style applied to the right column[0m
+[38;2;166;226;46m--line-numbers-minus-style[0m[38;2;248;248;242m:  Change the style applied to line numbers in minus lines[0m
+[38;2;166;226;46m--line-numbers-zero-style[0m[38;2;248;248;242m:   Change the style applied to line numbers in unchanged lines[0m
+[38;2;166;226;46m--line-numbers-plus-style[0m[38;2;248;248;242m:   Change the style applied to line numbers in plus lines[0m
+
+[38;2;248;248;242mOptions --line-numbers-left-format and --line-numbers-right-format allow you to change the contents[0m
+[38;2;248;248;242mof the line number columns. Their values are arbitrary format strings, which are allowed to contain[0m
+[38;2;248;248;242mthe placeholders {nm} for the line number associated with the old version of the file and {np} for[0m
+[38;2;248;248;242mthe line number associated with the new version of the file. The placeholders support a subset of[0m
+[38;2;248;248;242mthe string formatting syntax documented here: https://doc.rust-lang.org/std/fmt/#formatting-parameters.[0m
+[38;2;248;248;242mSpecifically, you can use the alignment and width syntax.[0m
+
+[38;2;248;248;242mFor example, the default value of --line-numbers-left-format is '{nm:^4}⋮'. This means that the[0m
+[38;2;248;248;242mleft column should display the minus line number (nm), center-aligned, padded with spaces to a[0m
+[38;2;248;248;242mwidth of 4 characters, followed by a unicode dividing-line character (⋮).[0m
+
+[38;2;248;248;242mSimilarly, the default value of --line-numbers-right-format is '{np:^4}│'. This means that the[0m
+[38;2;248;248;242mright column should display the plus line number (np), center-aligned, padded with spaces to a[0m
+[38;2;248;248;242mwidth of 4 characters, followed by a unicode dividing-line character (│).[0m
+
+[38;2;248;248;242mUse '<' for left-align, '^' for center-align, and '>' for right-align.[0m
+
+
+[38;2;248;248;242mIf something isn't working correctly, or you have a feature request, please open an issue at[0m
+[38;2;248;248;242mhttps://github.com/dandavison/delta/issues.[0m

@@ -1,0 +1,29 @@
+usage: solaar [-h] [-d] [-D PATH] [--restart-on-wake-up] [-w {show,hide,only}]
+              [-b {regular,symbolic,solaar}] [--tray-icon-size TRAY_ICON_SIZE]
+              [-V] [--help-actions]
+              ...
+
+positional arguments:
+  {show,probe,config,pair,unpair}
+                        optional actions to perform
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d, --debug           print logging messages, for debugging purposes (may be
+                        repeated for extra verbosity)
+  -D PATH, --hidraw PATH
+                        unifying receiver to use; the first detected receiver
+                        if unspecified. Example: /dev/hidraw2
+  --restart-on-wake-up  restart Solaar on sleep wake-up (experimental)
+  -w {show,hide,only}, --window {show,hide,only}
+                        start with window showing / hidden / only (no tray
+                        icon)
+  -b {regular,symbolic,solaar}, --battery-icons {regular,symbolic,solaar}
+                        prefer regular battery / symbolic battery / solaar
+                        icons
+  --tray-icon-size TRAY_ICON_SIZE
+                        explicit size for tray icons
+  -V, --version         show program's version number and exit
+  --help-actions        print help for the optional actions
+
+For more information see https://pwr-solaar.github.io/Solaar

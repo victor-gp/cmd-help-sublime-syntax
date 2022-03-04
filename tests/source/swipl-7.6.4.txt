@@ -1,0 +1,28 @@
+swipl: Usage:
+    1) swipl --help     Display this message (also -h)
+    2) swipl --version  Display version information (also -v)
+    3) swipl --arch     Display architecture
+    4) swipl --dump-runtime-variables[=format]
+                     Dump link info in sh(1) format
+    5) swipl [options] prolog-file ... [-- arg ...]
+    6) swipl [options] [-o output] -c prolog-file ...
+    7) swipl [options] [-o output] -b bootfile -c prolog-file ...
+
+Options:
+    -x state         Start from state (must be first)
+    -[LGT]size[KMG]  Specify {Local,Global,Trail} limits
+    -t toplevel      Toplevel goal
+    -g goal          Initialisation goal
+    -f file          User initialisation file
+    -F file          System initialisation file
+    -l file          Script source file
+    -s file          Script source file
+    -p alias=path    Define file search path 'alias'
+    [+/-]tty         Allow tty control
+    -O               Optimised compilation
+    --nosignals      Do not modify any signal handling
+    --nodebug        Omit generation of debug info
+    --quiet          Quiet operation (also -q)
+    --traditional    Disable extensions of version 7
+    --home=DIR       Use DIR as SWI-Prolog home
+    --pldoc[=port]   Start PlDoc server [at port]

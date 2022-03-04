@@ -1,0 +1,34 @@
+[38;2;253;151;31mUsage:[0m
+
+[38;2;248;248;242m    tldr [options] <command>...[0m
+[38;2;248;248;242m    tldr [options][0m
+
+[38;2;253;151;31mOptions:[0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m --help           Show this screen[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m --version        Show version information[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m --list           List all commands in the cache[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m --render <file>  Render a specific markdown file[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m --os <type>      Override the operating system [linux, osx, sunos, windows][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m --update         Update the local cache[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m --clear-cache    Clear the local cache[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m --pager          Use a pager to page output[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m --markdown       Display the raw markdown instead of rendering it[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m --quiet          Suppress informational messages[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--config-path[0m[38;2;248;248;242m       Show config file path[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--seed-config[0m[38;2;248;248;242m       Create a basic config[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m <when>      Control when to use color [always, auto, never] [default: auto][0m
+
+[38;2;253;151;31mExamples:[0m
+
+[38;2;248;248;242m    $ tldr tar[0m
+[38;2;248;248;242m    $ tldr --list[0m
+
+[38;2;248;248;242mTo control the cache:[0m
+
+[38;2;248;248;242m    $ tldr --update[0m
+[38;2;248;248;242m    $ tldr --clear-cache[0m
+
+[38;2;248;248;242mTo render a local file (for testing):[0m
+
+[38;2;248;248;242m    $ tldr --render /path/to/file.md[0m

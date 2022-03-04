@@ -1,0 +1,50 @@
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m ln [OPTION]... [-T] TARGET LINK_NAME[0m
+[38;2;248;248;242m  or:  ln [OPTION]... TARGET[0m
+[38;2;248;248;242m  or:  ln [OPTION]... TARGET... DIRECTORY[0m
+[38;2;248;248;242m  or:  ln [OPTION]... -t DIRECTORY TARGET...[0m
+[38;2;248;248;242mIn the 1st form, create a link to TARGET with the name LINK_NAME.[0m
+[38;2;248;248;242mIn the 2nd form, create a link to TARGET in the current directory.[0m
+[38;2;248;248;242mIn the 3rd and 4th forms, create links to each TARGET in DIRECTORY.[0m
+[38;2;248;248;242mCreate hard links by default, symbolic links with --symbolic.[0m
+[38;2;248;248;242mBy default, each destination (name of new link) should not already exist.[0m
+[38;2;248;248;242mWhen creating hard links, each TARGET must exist.  Symbolic links[0m
+[38;2;248;248;242mcan hold arbitrary text; if later resolved, a relative link is[0m
+[38;2;248;248;242minterpreted in relation to its parent directory.[0m
+
+[38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--backup[0m[38;2;248;248;242m[=CONTROL]      make a backup of each existing destination file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m                          like --backup but does not accept an argument[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, -F, --directory         allow the superuser to attempt to hard link[0m
+[38;2;248;248;242m                                directories (note: will probably fail due to[0m
+[38;2;248;248;242m                                system restrictions, even for the superuser)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--force[0m[38;2;248;248;242m                 remove existing destination files[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--interactive[0m[38;2;248;248;242m           prompt whether to remove destinations[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--logical[0m[38;2;248;248;242m               dereference TARGETs that are symbolic links[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-dereference[0m[38;2;248;248;242m        treat LINK_NAME as a normal file if[0m
+[38;2;248;248;242m                                it is a symbolic link to a directory[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--physical[0m[38;2;248;248;242m              make hard links directly to symbolic links[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--relative[0m[38;2;248;248;242m              create symbolic links relative to link location[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--symbolic[0m[38;2;248;248;242m              make symbolic links instead of hard links[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--suffix[0m[38;2;248;248;242m=SUFFIX         override the usual backup suffix[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--target-directory[0m[38;2;248;248;242m=DIRECTORY  specify the DIRECTORY in which to create[0m
+[38;2;248;248;242m                                the links[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-target-directory[0m[38;2;248;248;242m   treat LINK_NAME as a normal file always[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m               print name of each linked file[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m     display this help and exit[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m
+
+[38;2;248;248;242mThe backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.[0m
+[38;2;248;248;242mThe version control method may be selected via the --backup option or through[0m
+[38;2;248;248;242mthe VERSION_CONTROL environment variable.  Here are the values:[0m
+
+[38;2;248;248;242m  none, off       never make backups (even if --backup is given)[0m
+[38;2;248;248;242m  numbered, t     make numbered backups[0m
+[38;2;248;248;242m  existing, nil   numbered if numbered backups exist, simple otherwise[0m
+[38;2;248;248;242m  simple, never   always make simple backups[0m
+
+[38;2;248;248;242mUsing -s ignores -L and -P.  Otherwise, the last option specified controls[0m
+[38;2;248;248;242mbehavior when a TARGET is a symbolic link, defaulting to -P.[0m
+
+[38;2;248;248;242mGNU coreutils online help: <https://www.gnu.org/software/coreutils/>[0m
+[38;2;248;248;242mFull documentation at: <https://www.gnu.org/software/coreutils/ln>[0m
+[38;2;248;248;242mor available locally via: info '(coreutils) ln invocation'[0m

@@ -1,0 +1,19 @@
+[38;2;248;248;242mnpm exec[0m
+
+[38;2;248;248;242mRun a command from a local or remote npm package[0m
+
+[38;2;253;151;31mUsage:[0m
+[38;2;248;248;242mnpm exec -- <pkg>[@<version>] [args...][0m
+[38;2;248;248;242mnpm exec --package=<pkg>[@<version>] -- <cmd> [args...][0m
+[38;2;248;248;242mnpm exec -c '<cmd> [args...]'[0m
+[38;2;248;248;242mnpm exec --package=foo -c '<cmd> [args...]'[0m
+
+[38;2;253;151;31mOptions:[0m
+[38;2;248;248;242m[--package <pkg>[@<version>] [--package <pkg>[@<version>] ...]][0m
+[38;2;248;248;242m[-c|--call <call>][0m
+[38;2;248;248;242m[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]][0m
+[38;2;248;248;242m[-ws|--workspaces] [--include-workspace-root][0m
+
+[38;2;248;248;242malias: x[0m
+
+[38;2;248;248;242mRun "npm help exec" for more info[0m

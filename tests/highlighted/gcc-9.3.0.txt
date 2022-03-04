@@ -1,0 +1,61 @@
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m gcc [options] file...[0m
+[38;2;253;151;31mOptions:[0m
+[38;2;248;248;242m  -pass-exit-codes         Exit with highest error code from a phase.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                   Display this information.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--target-help[0m[38;2;248;248;242m            Display target specific command line options.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m={common|optimizers|params|target|warnings|[^]{joined|separate|undocumented}}[,...].[0m
+[38;2;248;248;242m                           Display specific types of command line options.[0m
+[38;2;248;248;242m  (Use '-v --help' to display command line options of sub-processes).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                Display compiler version information.[0m
+[38;2;248;248;242m  -dumpspecs               Display all of the built in spec strings.[0m
+[38;2;248;248;242m  -dumpversion             Display the version of the compiler.[0m
+[38;2;248;248;242m  -dumpmachine             Display the compiler's target processor.[0m
+[38;2;248;248;242m  -print-search-dirs       Display the directories in the compiler's search path.[0m
+[38;2;248;248;242m  -print-libgcc-file-name  Display the name of the compiler's companion library.[0m
+[38;2;248;248;242m  -print-file-name=<lib>   Display the full path to library <lib>.[0m
+[38;2;248;248;242m  -print-prog-name=<prog>  Display the full path to compiler component <prog>.[0m
+[38;2;248;248;242m  -print-multiarch         Display the target's normalized GNU triplet, used as[0m
+[38;2;248;248;242m                           a component in the library path.[0m
+[38;2;248;248;242m  -print-multi-directory   Display the root directory for versions of libgcc.[0m
+[38;2;248;248;242m  -print-multi-lib         Display the mapping between command line options and[0m
+[38;2;248;248;242m                           multiple library search directories.[0m
+[38;2;248;248;242m  -print-multi-os-directory Display the relative path to OS libraries.[0m
+[38;2;248;248;242m  -print-sysroot           Display the target libraries directory.[0m
+[38;2;248;248;242m  -print-sysroot-headers-suffix Display the sysroot suffix used to find headers.[0m
+[38;2;248;248;242m  -Wa,<options>            Pass comma-separated <options> on to the assembler.[0m
+[38;2;248;248;242m  -Wp,<options>            Pass comma-separated <options> on to the preprocessor.[0m
+[38;2;248;248;242m  -Wl,<options>            Pass comma-separated <options> on to the linker.[0m
+[38;2;248;248;242m  -Xassembler <arg>        Pass <arg> on to the assembler.[0m
+[38;2;248;248;242m  -Xpreprocessor <arg>     Pass <arg> on to the preprocessor.[0m
+[38;2;248;248;242m  -Xlinker <arg>           Pass <arg> on to the linker.[0m
+[38;2;248;248;242m  -save-temps              Do not delete intermediate files.[0m
+[38;2;248;248;242m  -save-temps=<arg>        Do not delete intermediate files.[0m
+[38;2;248;248;242m  -no-canonical-prefixes   Do not canonicalize paths when building relative[0m
+[38;2;248;248;242m                           prefixes to other gcc components.[0m
+[38;2;248;248;242m  -pipe                    Use pipes rather than intermediate files.[0m
+[38;2;248;248;242m  -time                    Time the execution of each subprocess.[0m
+[38;2;248;248;242m  -specs=<file>            Override built-in specs with the contents of <file>.[0m
+[38;2;248;248;242m  -std=<standard>          Assume that the input sources are for <standard>.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--sysroot[0m[38;2;248;248;242m=<directory>    Use <directory> as the root directory for headers[0m
+[38;2;248;248;242m                           and libraries.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m <directory>           Add <directory> to the compiler's search paths.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m                       Display the programs invoked by the compiler.[0m
+[38;2;248;248;242m  -###                     Like -v but options quoted and commands not executed.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m                       Preprocess only; do not compile, assemble or link.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m                       Compile only; do not assemble or link.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m                       Compile and assemble, but do not link.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m <file>                Place the output into <file>.[0m
+[38;2;248;248;242m  -pie                     Create a dynamically linked position independent[0m
+[38;2;248;248;242m                           executable.[0m
+[38;2;248;248;242m  -shared                  Create a shared library.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m <language>            Specify the language of the following input files.[0m
+[38;2;248;248;242m                           Permissible languages include: c c++ assembler none[0m
+[38;2;248;248;242m                           'none' means revert to the default behavior of[0m
+[38;2;248;248;242m                           guessing the language based on the file's extension.[0m
+
+[38;2;248;248;242mOptions starting with -g, -f, -m, -O, -W, or --param are automatically[0m
+[38;2;248;248;242m passed on to the various sub-processes invoked by gcc.  In order to pass[0m
+[38;2;248;248;242m other options on to these processes the -W<letter> options must be used.[0m
+
+[38;2;248;248;242mFor bug reporting instructions, please see:[0m
+[38;2;248;248;242m<file:///usr/share/doc/gcc-9/README.Bugs>.[0m

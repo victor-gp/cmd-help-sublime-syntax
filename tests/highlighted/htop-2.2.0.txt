@@ -1,0 +1,16 @@
+[38;2;248;248;242mhtop 2.2.0 - (C) 2004-2019 Hisham Muhammad[0m
+[38;2;248;248;242mReleased under the GNU GPL.[0m
+
+[38;2;166;226;46m-C[0m[38;2;248;248;242m --no-color               Use a monochrome color scheme[0m
+[38;2;166;226;46m-d[0m[38;2;248;248;242m --delay=DELAY            Set the delay between updates, in tenths of seconds[0m
+[38;2;166;226;46m-h[0m[38;2;248;248;242m --help                   Print this help screen[0m
+[38;2;166;226;46m-s[0m[38;2;248;248;242m --sort-key=COLUMN        Sort by COLUMN (try --sort-key=help for a list)[0m
+[38;2;166;226;46m-t[0m[38;2;248;248;242m --tree                   Show the tree view by default[0m
+[38;2;166;226;46m-u[0m[38;2;248;248;242m --user=USERNAME          Show only processes of a given user[0m
+[38;2;166;226;46m-p[0m[38;2;248;248;242m --pid=PID,[,PID,PID...]  Show only the given PIDs[0m
+[38;2;166;226;46m-v[0m[38;2;248;248;242m --version                Print version info[0m
+
+[38;2;248;248;242mLong options may be passed with a single dash.[0m
+
+[38;2;248;248;242mPress F1 inside htop for online help.[0m
+[38;2;248;248;242mSee 'man htop' for more information.[0m

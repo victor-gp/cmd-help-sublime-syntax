@@ -1,0 +1,17 @@
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m rbenv <command> [<args>][0m
+
+[38;2;248;248;242mSome useful rbenv commands are:[0m
+[38;2;248;248;242m   commands    List all available rbenv commands[0m
+[38;2;248;248;242m   local       Set or show the local application-specific Ruby version[0m
+[38;2;248;248;242m   global      Set or show the global Ruby version[0m
+[38;2;248;248;242m   shell       Set or show the shell-specific Ruby version[0m
+[38;2;248;248;242m   install     Install a Ruby version using ruby-build[0m
+[38;2;248;248;242m   uninstall   Uninstall a specific Ruby version[0m
+[38;2;248;248;242m   rehash      Rehash rbenv shims (run this after installing executables)[0m
+[38;2;248;248;242m   version     Show the current Ruby version and its origin[0m
+[38;2;248;248;242m   versions    List installed Ruby versions[0m
+[38;2;248;248;242m   which       Display the full path to an executable[0m
+[38;2;248;248;242m   whence      List all Ruby versions that contain the given executable[0m
+
+[38;2;248;248;242mSee `rbenv help <command>' for information on a specific command.[0m
+[38;2;248;248;242mFor full documentation, see: https://github.com/rbenv/rbenv#readme[0m

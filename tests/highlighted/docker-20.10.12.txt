@@ -1,0 +1,85 @@
+
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m  docker [OPTIONS] COMMAND[0m
+
+[38;2;248;248;242mA self-sufficient runtime for containers[0m
+
+[38;2;253;151;31mOptions:[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m string      Location of client config files (default "/home/victor-gp/.docker")[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set with "docker context use")[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m              Enable debug mode[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--host[0m[38;2;248;248;242m list          Daemon socket(s) to connect to[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--log-level[0m[38;2;248;248;242m string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tls[0m[38;2;248;248;242m                Use TLS; implied by --tlsverify[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tlscacert[0m[38;2;248;248;242m string   Trust certs signed only by this CA (default "/home/victor-gp/.docker/ca.pem")[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tlscert[0m[38;2;248;248;242m string     Path to TLS certificate file (default "/home/victor-gp/.docker/cert.pem")[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tlskey[0m[38;2;248;248;242m string      Path to TLS key file (default "/home/victor-gp/.docker/key.pem")[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tlsverify[0m[38;2;248;248;242m          Use TLS and verify the remote[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m            Print version information and quit[0m
+
+[38;2;248;248;242mManagement Commands:[0m
+[38;2;248;248;242m  app*        Docker App (Docker Inc., v0.9.1-beta3)[0m
+[38;2;248;248;242m  builder     Manage builds[0m
+[38;2;248;248;242m  buildx*     Docker Buildx (Docker Inc., v0.7.1-docker)[0m
+[38;2;248;248;242m  compose*    Docker Compose (Docker Inc., v2.2.3)[0m
+[38;2;248;248;242m  config      Manage Docker configs[0m
+[38;2;248;248;242m  container   Manage containers[0m
+[38;2;248;248;242m  context     Manage contexts[0m
+[38;2;248;248;242m  image       Manage images[0m
+[38;2;248;248;242m  manifest    Manage Docker image manifests and manifest lists[0m
+[38;2;248;248;242m  network     Manage networks[0m
+[38;2;248;248;242m  node        Manage Swarm nodes[0m
+[38;2;248;248;242m  plugin      Manage plugins[0m
+[38;2;248;248;242m  scan*       Docker Scan (Docker Inc., v0.12.0)[0m
+[38;2;248;248;242m  secret      Manage Docker secrets[0m
+[38;2;248;248;242m  service     Manage services[0m
+[38;2;248;248;242m  stack       Manage Docker stacks[0m
+[38;2;248;248;242m  swarm       Manage Swarm[0m
+[38;2;248;248;242m  system      Manage Docker[0m
+[38;2;248;248;242m  trust       Manage trust on Docker images[0m
+[38;2;248;248;242m  volume      Manage volumes[0m
+
+[38;2;253;151;31mCommands:[0m
+[38;2;248;248;242m  attach      Attach local standard input, output, and error streams to a running container[0m
+[38;2;248;248;242m  build       Build an image from a Dockerfile[0m
+[38;2;248;248;242m  commit      Create a new image from a container's changes[0m
+[38;2;248;248;242m  cp          Copy files/folders between a container and the local filesystem[0m
+[38;2;248;248;242m  create      Create a new container[0m
+[38;2;248;248;242m  diff        Inspect changes to files or directories on a container's filesystem[0m
+[38;2;248;248;242m  events      Get real time events from the server[0m
+[38;2;248;248;242m  exec        Run a command in a running container[0m
+[38;2;248;248;242m  export      Export a container's filesystem as a tar archive[0m
+[38;2;248;248;242m  history     Show the history of an image[0m
+[38;2;248;248;242m  images      List images[0m
+[38;2;248;248;242m  import      Import the contents from a tarball to create a filesystem image[0m
+[38;2;248;248;242m  info        Display system-wide information[0m
+[38;2;248;248;242m  inspect     Return low-level information on Docker objects[0m
+[38;2;248;248;242m  kill        Kill one or more running containers[0m
+[38;2;248;248;242m  load        Load an image from a tar archive or STDIN[0m
+[38;2;248;248;242m  login       Log in to a Docker registry[0m
+[38;2;248;248;242m  logout      Log out from a Docker registry[0m
+[38;2;248;248;242m  logs        Fetch the logs of a container[0m
+[38;2;248;248;242m  pause       Pause all processes within one or more containers[0m
+[38;2;248;248;242m  port        List port mappings or a specific mapping for the container[0m
+[38;2;248;248;242m  ps          List containers[0m
+[38;2;248;248;242m  pull        Pull an image or a repository from a registry[0m
+[38;2;248;248;242m  push        Push an image or a repository to a registry[0m
+[38;2;248;248;242m  rename      Rename a container[0m
+[38;2;248;248;242m  restart     Restart one or more containers[0m
+[38;2;248;248;242m  rm          Remove one or more containers[0m
+[38;2;248;248;242m  rmi         Remove one or more images[0m
+[38;2;248;248;242m  run         Run a command in a new container[0m
+[38;2;248;248;242m  save        Save one or more images to a tar archive (streamed to STDOUT by default)[0m
+[38;2;248;248;242m  search      Search the Docker Hub for images[0m
+[38;2;248;248;242m  start       Start one or more stopped containers[0m
+[38;2;248;248;242m  stats       Display a live stream of container(s) resource usage statistics[0m
+[38;2;248;248;242m  stop        Stop one or more running containers[0m
+[38;2;248;248;242m  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE[0m
+[38;2;248;248;242m  top         Display the running processes of a container[0m
+[38;2;248;248;242m  unpause     Unpause all processes within one or more containers[0m
+[38;2;248;248;242m  update      Update configuration of one or more containers[0m
+[38;2;248;248;242m  version     Show the Docker version information[0m
+[38;2;248;248;242m  wait        Block until one or more containers stop, then print their exit codes[0m
+
+[38;2;248;248;242mRun 'docker COMMAND --help' for more information on a command.[0m
+
+[38;2;248;248;242m[1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m[0m
