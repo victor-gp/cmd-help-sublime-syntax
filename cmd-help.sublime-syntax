@@ -31,26 +31,22 @@ contexts:
     - match: '^\s*(?=\S)'
       set: [def-opt-short, def-opt-long]
     - include: else-pop
-    - include: eol-pop
 
   def-opt-short:
     - match: '-[:alpha:]\b'
       scope: entity.name.cmd-option.help
       set: def-opt-short-next
     - include: else-pop
-    - include: eol-pop
 
   def-opt-short-next:
     - match: ', '
       set: def-opt-long
     - include: else-pop
-    - include: eol-pop
 
   def-opt-long:
     - match: '--{{kebab_word}}'
       scope: entity.name.cmd-option.help
     - include: else-pop
-    - include: eol-pop
 
   ### SECTION HEADERS
 
