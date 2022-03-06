@@ -23,6 +23,7 @@ GNU long options:
 	--version
 Shell options:
 	-ilrsD or -c command or -O shopt_option		(invocation only)
+#			  ^^ - entity.name.cmd-option.help
 #nice: handle or-separated defs
 	-abefhkmnptuvxBCHP or -o option
 Type `bash -c "help set"' for more information about shell options.

@@ -9,7 +9,7 @@ Usage: man [OPTION...] [SECTION] PAGE...
 
  Main modes of operation:
 #^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
-#nice: handle indented section headings
+#todo: handle indented section headings => last priority element in line-indent context
   -f, --whatis               equivalent to whatis
   -k, --apropos              equivalent to apropos
   -K, --global-apropos       search for text in all pages
@@ -69,6 +69,8 @@ g - grap, r - refer, v - vgrind
   -Z, --ditroff              use groff and force it to produce ditroff
 
   -?, --help                 give this help list
+ #^^ - entity.name.cmd-option.help
+ #todo: handle this
       --usage                give a short usage message
   -V, --version              print program version
 

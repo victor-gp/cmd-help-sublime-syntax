@@ -7,7 +7,7 @@ usage: solaar [-h] [-d] [-D PATH] [--restart-on-wake-up] [-w {show,hide,only}]
 
 positional arguments:
 #^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
-#nice allow sections beginning in lowercase?
+#nice: allow sections beginning in lowercase? hardly
   {show,probe,config,pair,unpair}
                         optional actions to perform
 

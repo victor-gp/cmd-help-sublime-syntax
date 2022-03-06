@@ -23,7 +23,7 @@ OPTIONS:
             is used twice ('-pp'), it also disables automatic paging (alias for '--style=plain
             --pager=never').
 #           ^^^^^^^ entity.name.cmd-option.help
-            # nice: this one's hard to avoid
+#todo: limit line-indent to <= 8 chars
     -l, --language <language>
             Explicitly set the language for syntax highlighting. The language can be specified as a
             name (like 'C++' or 'LaTeX') or possible file extension (like 'cpp', 'hpp' or 'md'). Use
@@ -147,6 +147,6 @@ ARGS:
 
 SUBCOMMANDS:
     cache    Modify the syntax-definition and theme cache
-#nice: handle subcommands
+#nice: handle subcommand defs
 
 Note: `bat -h` prints a short and concise overview while `bat --help` gives all details.
