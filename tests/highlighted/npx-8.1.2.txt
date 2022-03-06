@@ -1,6 +1,6 @@
 [38;2;248;248;242mnpm exec[0m
 
-[38;2;253;151;31mRun a command from a local or remote npm package[0m
+[38;2;248;248;242mRun a command from a local or remote npm package[0m
 
 [38;2;253;151;31mUsage:[0m
 [38;2;248;248;242mnpm exec -- <pkg>[@<version>] [args...][0m

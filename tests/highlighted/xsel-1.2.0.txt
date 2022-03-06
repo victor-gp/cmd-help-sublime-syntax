@@ -1,14 +1,14 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m xsel [options][0m
 [38;2;248;248;242mManipulate the X selection.[0m
 
-[38;2;253;151;31mBy default the current selection is output and not modified if both[0m
+[38;2;248;248;242mBy default the current selection is output and not modified if both[0m
 [38;2;248;248;242mstandard input and standard output are terminals (ttys).  Otherwise,[0m
 [38;2;248;248;242mthe current selection is output if standard output is not a terminal[0m
 [38;2;248;248;242m(tty), and the selection is set from standard input if standard input[0m
 [38;2;248;248;242mis not a terminal (tty). If any input or output options are given then[0m
 [38;2;248;248;242mthe program behaves only in the requested mode.[0m
 
-[38;2;253;151;31mIf both input and output is required then the previous selection is[0m
+[38;2;248;248;242mIf both input and output is required then the previous selection is[0m
 [38;2;248;248;242moutput before being replaced by the contents of standard input.[0m
 
 [38;2;253;151;31mInput options[0m

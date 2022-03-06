@@ -21,7 +21,7 @@ contexts:
 
   line-begin:
     - match: '^'
-      set: [heading]
+      set: [heading-pre]
     - include: else-pop
 
   line-indent:
@@ -35,14 +35,19 @@ contexts:
 
   ### CONTENT
 
+  heading-pre:
+    - match: '(?i:usage):'
+      scope: markup.heading.help
+    - match: '^(?=.{1,40}\n)'
+      set: heading
+    - include: else-pop
+
   heading:
     - match: '{{capitalized_word}}( {{lowercase_word}})*:?\n'
       scope: markup.heading.help
     - match: '{{capitalized_word}}( {{capitalized_word}})*:?\n'
       scope: markup.heading.help
     - match: '{{allcaps_word}}( {{allcaps_word}})*:?\n'
-      scope: markup.heading.help
-    - match: '(?i:usage):'
       scope: markup.heading.help
     - include: else-pop
 

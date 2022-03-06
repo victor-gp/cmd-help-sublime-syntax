@@ -75,14 +75,14 @@
 [38;2;248;248;242m  v1-register       Register this package with the compiler.[0m
 [38;2;248;248;242m  v1-reconfigure    Reconfigure the package if necessary.[0m
 
-[38;2;253;151;31mFor more information about a command use:[0m
+[38;2;248;248;242mFor more information about a command use:[0m
 [38;2;248;248;242m   cabal COMMAND --help[0m
 [38;2;248;248;242mor cabal help COMMAND[0m
 
 [38;2;248;248;242mTo install Cabal packages from hackage use:[0m
 [38;2;248;248;242m  cabal install foo [--dry-run][0m
 
-[38;2;253;151;31mOccasionally you need to update the list of available packages:[0m
+[38;2;248;248;242mOccasionally you need to update the list of available packages:[0m
 [38;2;248;248;242m  cabal update[0m
 
 [38;2;253;151;31mGlobal flags:[0m
@@ -104,5 +104,5 @@
 [38;2;248;248;242m [0m[38;2;166;226;46m--disable-nix[0m[38;2;248;248;242m                  Disable Nix integration: run commands through[0m
 [38;2;248;248;242m                                nix-shell if a 'shell.nix' file exists[0m
 
-[38;2;253;151;31mYou can edit the cabal configuration file to set defaults:[0m
+[38;2;248;248;242mYou can edit the cabal configuration file to set defaults:[0m
 [38;2;248;248;242m  /home/victor-gp/.cabal/config[0m

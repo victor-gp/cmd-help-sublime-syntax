@@ -405,7 +405,7 @@
 [38;2;248;248;242mSee the COLORS section below for how to specify a color. In addition to real colors, there are 4[0m
 [38;2;248;248;242mspecial color names: 'auto', 'normal', 'raw', and 'syntax'.[0m
 
-[38;2;253;151;31mHere is an example of using special color names together with a single attribute:[0m
+[38;2;248;248;242mHere is an example of using special color names together with a single attribute:[0m
 
 [38;2;166;226;46m--minus-style[0m[38;2;248;248;242m 'syntax bold auto'[0m
 
@@ -418,7 +418,7 @@
 [38;2;248;248;242mThe attribute 'omit' is supported by commit-style, file-style, and hunk-header-style, meaning to[0m
 [38;2;248;248;242mremove the element entirely from the output.[0m
 
-[38;2;253;151;31mA complete description of the style string syntax follows:[0m
+[38;2;248;248;242mA complete description of the style string syntax follows:[0m
 
 [38;2;248;248;242m- If the input that delta is receiving already has colors, and you want delta to output those[0m
 [38;2;248;248;242m  colors unchanged, then use the special style string 'raw'. Otherwise, delta will strip any colors[0m
@@ -505,7 +505,7 @@
 [38;2;248;248;242mand the line numbers for the new (plus) version of the file appear in the right column. In an[0m
 [38;2;248;248;242munchanged (zero) line, both columns contain a line number.[0m
 
-[38;2;253;151;31mThe following options allow the line number display to be customized:[0m
+[38;2;248;248;242mThe following options allow the line number display to be customized:[0m
 
 [38;2;166;226;46m--line-numbers-left-format[0m[38;2;248;248;242m:  Change the contents of the left column[0m
 [38;2;166;226;46m--line-numbers-right-format[0m[38;2;248;248;242m: Change the contents of the right column[0m
