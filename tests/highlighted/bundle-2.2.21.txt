@@ -17,10 +17,10 @@
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-color[0m
 [38;2;248;248;242m              Print all output without color[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--retry[0m[38;2;248;248;242m, -r[0m
+[38;2;248;248;242m       [0m[38;2;166;226;46m--retry[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-r[0m
 [38;2;248;248;242m              Specify the number of times you wish to attempt network commands[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m, -V[0m
+[38;2;248;248;242m       [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-V[0m
 [38;2;248;248;242m              Print out additional logging information[0m
 
 [38;2;248;248;242mBUNDLE COMMANDS[0m

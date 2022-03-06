@@ -44,7 +44,7 @@ contexts:
       set: def-option-next
     - match: '--{{kebab_word}}'
       scope: entity.name.cmd-option.help
-      # set: def-option-next
+      set: def-option-next
     - include: else-pop
 
   def-option-next:

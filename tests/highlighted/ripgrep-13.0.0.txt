@@ -474,12 +474,12 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            The JSON Lines format is only supported for showing search results. It cannot[0m
 [38;2;248;248;242m            be used with other flags that emit other types of output, such as --files,[0m
-[38;2;248;248;242m            [0m[38;2;166;226;46m--files-with-matches[0m[38;2;248;248;242m, --files-without-match, --count or --count-matches.[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--files-with-matches[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--files-without-match[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--count[0m[38;2;248;248;242m or --count-matches.[0m
 [38;2;248;248;242m            ripgrep will report an error if any of the aforementioned flags are used in[0m
 [38;2;248;248;242m            concert with --json.[0m
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            Other flags that control aspects of the standard output such as[0m
-[38;2;248;248;242m            [0m[38;2;166;226;46m--only-matching[0m[38;2;248;248;242m, --heading, --replace, --max-columns, etc., have no effect[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--only-matching[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--heading[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--replace[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-columns[0m[38;2;248;248;242m, etc., have no effect[0m
 [38;2;248;248;242m            when --json is set.[0m
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            A more complete description of the JSON format used can be found here:[0m
@@ -639,7 +639,7 @@
 [38;2;248;248;242m             [0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--no-ignore[0m[38;2;248;248;242m                              [0m
 [38;2;248;248;242m            Don't respect ignore files (.gitignore, .ignore, etc.). This implies[0m
-[38;2;248;248;242m            [0m[38;2;166;226;46m--no-ignore-dot[0m[38;2;248;248;242m, --no-ignore-exclude, --no-ignore-global, no-ignore-parent and[0m
+[38;2;248;248;242m            [0m[38;2;166;226;46m--no-ignore-dot[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-ignore-exclude[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-ignore-global[0m[38;2;248;248;242m, no-ignore-parent and[0m
 [38;2;248;248;242m            [0m[38;2;166;226;46m--no-ignore-vcs[0m[38;2;248;248;242m.[0m
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This does *not* imply --no-ignore-files, since --ignore-file is specified[0m

@@ -31,7 +31,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-filename[0m[38;2;248;248;242m         suppress the file name prefix on output[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m=LABEL         use LABEL as the standard input file name prefix[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--only-matching[0m[38;2;248;248;242m       show only nonempty parts of lines that match[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m, --silent     suppress all normal output[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--silent[0m[38;2;248;248;242m     suppress all normal output[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--binary-files[0m[38;2;248;248;242m=TYPE   assume that binary files are TYPE;[0m
 [38;2;248;248;242m                            TYPE is 'binary', 'text', or 'without-match'[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--text[0m[38;2;248;248;242m                equivalent to --binary-files=text[0m

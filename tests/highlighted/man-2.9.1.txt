@@ -10,9 +10,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--apropos[0m[38;2;248;248;242m              equivalent to apropos[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--global-apropos[0m[38;2;248;248;242m       search for text in all pages[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--local-file[0m[38;2;248;248;242m           interpret PAGE argument(s) as local filename(s)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--where[0m[38;2;248;248;242m, --path, --location[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--where[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--path[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--location[0m
 [38;2;248;248;242m                             print physical location of man page(s)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--where-cat[0m[38;2;248;248;242m, --location-cat[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--where-cat[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--location-cat[0m
 [38;2;248;248;242m                             print physical location of cat file(s)[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--catman[0m[38;2;248;248;242m               used by catman to reformat out of date cat pages[0m
@@ -48,7 +48,7 @@
 
 [38;2;248;248;242m  -7, --ascii                display ASCII translation of certain latin1 chars[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m=ENCODING    use selected output encoding[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--no-hyphenation[0m[38;2;248;248;242m, --nh turn off hyphenation[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-hyphenation[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--nh[0m[38;2;248;248;242m turn off hyphenation[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-justification[0m[38;2;248;248;242m,                              --nj   turn off justification[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--preprocessor[0m[38;2;248;248;242m=STRING  STRING indicates which preprocessors to run:[0m
 [38;2;248;248;242m                             e - [n]eqn, p - pic, t - tbl,[0m
