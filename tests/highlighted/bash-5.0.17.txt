@@ -1,7 +1,7 @@
 [38;2;248;248;242mGNU bash, version 5.0.17(1)-release-(x86_64-pc-linux-gnu)[0m
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m	bash [GNU long option] [option] ...[0m
 [38;2;248;248;242m	bash [GNU long option] [option] script-file ...[0m
-[38;2;248;248;242mGNU long options:[0m
+[38;2;253;151;31mGNU long options:[0m
 [38;2;248;248;242m	[0m[38;2;166;226;46m--debug[0m
 [38;2;248;248;242m	[0m[38;2;166;226;46m--debugger[0m
 [38;2;248;248;242m	[0m[38;2;166;226;46m--dump-po-strings[0m

@@ -10,9 +10,14 @@ variables:
   word: '[:alpha:]*\b'
   kebab_word: '{{word}}(-{{word}})*'
 
-  allcaps_word: '[:upper:]+\b'
-  capitalized_word: '[:upper:]([:lower:])*\b'
-  lowercase_word: '[:lower:]+\b'
+### section name variables
+  # lowercase, uppercase or dash char (for compound words)
+  alpha_dash: '[[:lower:][:upper:]-]'
+  # all kinds of words, including those within 1/2 parentheses
+  any_word: '\(?{{alpha_dash}}+\)?'
+  # words starting with uppercase
+  leading_word: '[:upper:]({{alpha_dash}})*\b'
+
 
 contexts:
   main:
@@ -38,17 +43,16 @@ contexts:
   pre-heading:
     - match: '(?i:usage):(?=.+\n)'
       scope: markup.heading.inline-usage.help
+    # only consider lines <= 40 chars long
     - match: '^(?=.{1,40}\n)'
       set: heading
     - include: else-pop
 
   heading:
-    - match: '{{capitalized_word}}( {{lowercase_word}})*:?\n'
+    - match: '{{leading_word}}( {{any_word}})*:?\n'
       scope: markup.heading.help
-    - match: '{{capitalized_word}}( {{capitalized_word}})*:?\n'
-      scope: markup.heading.help
-    - match: '{{allcaps_word}}( {{allcaps_word}})*:?\n'
-      scope: markup.heading.help
+    # - match: '{{any_word}}( {{any_word}})*:\n'
+    #   scope: markup.heading.help
     - include: else-pop
 
   def-option:

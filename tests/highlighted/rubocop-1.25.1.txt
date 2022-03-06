@@ -80,7 +80,7 @@
 [38;2;248;248;242m                                     Only output offense messages at[0m
 [38;2;248;248;242m                                     the specified --fail-level or above[0m
 
-[38;2;248;248;242mAuto-correction:[0m
+[38;2;253;151;31mAuto-correction:[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--auto-correct[0m[38;2;248;248;242m               Auto-correct offenses (only when it's safe).[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--safe-auto-correct[0m[38;2;248;248;242m          (same, deprecated)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--auto-correct-all[0m[38;2;248;248;242m           Auto-correct offenses (safe and unsafe)[0m

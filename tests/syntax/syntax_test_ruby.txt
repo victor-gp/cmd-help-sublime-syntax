@@ -61,8 +61,7 @@ Warning categories:
   deprecated      deprecated features
   experimental    experimental features
 JIT options (experimental):
-#^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
-# nice: allow section names with parentheses
+#^^^^^^^^^^^^^^^^^^^^^^^^^^ markup.heading.help
   --jit-warnings  Enable printing JIT warnings
   --jit-debug     Enable JIT debugging (very slow), or add cflags if specified
   --jit-wait      Wait until JIT compilation finishes every time (for testing)

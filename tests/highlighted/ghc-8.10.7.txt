@@ -42,7 +42,7 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m		stop after generating assembler (.s output)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m		stop after generating object files (.o output)[0m
 
-[38;2;248;248;242mOther commonly-used options are:[0m
+[38;2;253;151;31mOther commonly-used options are:[0m
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m[n]	    Control verbosity (n is 0--5, normal verbosity level is 1,[0m
 [38;2;248;248;242m	              [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m alone is equivalent to -v3)[0m

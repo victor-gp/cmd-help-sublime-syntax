@@ -51,7 +51,7 @@
 [38;2;253;151;31mWarning categories:[0m
 [38;2;248;248;242m  deprecated      deprecated features[0m
 [38;2;248;248;242m  experimental    experimental features[0m
-[38;2;248;248;242mJIT options (experimental):[0m
+[38;2;253;151;31mJIT options (experimental):[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-warnings[0m[38;2;248;248;242m  Enable printing JIT warnings[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-debug[0m[38;2;248;248;242m     Enable JIT debugging (very slow), or add cflags if specified[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-wait[0m[38;2;248;248;242m      Wait until JIT compilation finishes every time (for testing)[0m

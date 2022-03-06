@@ -1,7 +1,7 @@
 
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m  docker build [OPTIONS] PATH | URL | -[0m
 
-[38;2;248;248;242mBuild an image from a Dockerfile[0m
+[38;2;253;151;31mBuild an image from a Dockerfile[0m
 
 [38;2;253;151;31mOptions:[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--add-host[0m[38;2;248;248;242m list           Add a custom host-to-IP mapping (host:ip)[0m

@@ -4,8 +4,7 @@ GNU bash, version 5.0.17(1)-release-(x86_64-pc-linux-gnu)
 Usage:	bash [GNU long option] [option] ...
 	bash [GNU long option] [option] script-file ...
 GNU long options:
-#^^^^^^^^^^^^^^^^ - markup.heading.help
-#fixme: section headings doesn't pick this up because it combines allcaps and lowercase words.
+#^^^^^^^^^^^^^^^^ markup.heading.help
 	--debug
 	--debugger
 	--dump-po-strings

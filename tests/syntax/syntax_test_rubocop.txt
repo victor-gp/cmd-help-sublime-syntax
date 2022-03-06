@@ -83,8 +83,7 @@ Output Options:
                                      the specified --fail-level or above
 
 Auto-correction:
-#^^^^^^^^^^^^^^^ - markup.heading.help
-#nice: allow dash-connected words in section names
+#^^^^^^^^^^^^^^^ markup.heading.help
     -a, --auto-correct               Auto-correct offenses (only when it's safe).
         --safe-auto-correct          (same, deprecated)
     -A, --auto-correct-all           Auto-correct offenses (safe and unsafe)

@@ -29,6 +29,6 @@
 [38;2;248;248;242m    $ tldr --update[0m
 [38;2;248;248;242m    $ tldr --clear-cache[0m
 
-[38;2;248;248;242mTo render a local file (for testing):[0m
+[38;2;253;151;31mTo render a local file (for testing):[0m
 
 [38;2;248;248;242m    $ tldr --render /path/to/file.md[0m
