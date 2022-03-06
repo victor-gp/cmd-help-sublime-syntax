@@ -10,6 +10,10 @@ variables:
   word: '[:alpha:]*\b'
   kebab_word: '{{word}}(-{{word}})*'
 
+  allcaps_word: '[:upper:]+\b'
+  capitalized_word: '[:upper:]([:lower:])*\b'
+  lowercase_word: '[:lower:]+\b'
+
 contexts:
   main:
     - match: ''
@@ -32,7 +36,11 @@ contexts:
   ### CONTENT
 
   heading:
-    - match: '{{word}}:?\n'
+    - match: '{{capitalized_word}}( {{lowercase_word}})*:?\n'
+      scope: markup.heading.help
+    - match: '{{capitalized_word}}( {{capitalized_word}})*:?\n'
+      scope: markup.heading.help
+    - match: '{{allcaps_word}}( {{allcaps_word}})*:?\n'
       scope: markup.heading.help
     - match: '(?i:usage):'
       scope: markup.heading.help

@@ -3,7 +3,7 @@
 [38;2;248;248;242m    ghc [command-line-options-and-input-files][0m
 
 [38;2;248;248;242mTo compile and link a complete Haskell program, run the compiler like[0m
-[38;2;253;151;31mso:[0m
+[38;2;248;248;242mso:[0m
 
 [38;2;248;248;242m    ghc Main[0m
 
@@ -14,7 +14,7 @@
 
 [38;2;248;248;242mAlternatively, ghc can be used to compile files individually.  Each[0m
 [38;2;248;248;242minput file is guided through (some of the) possible phases of a[0m
-[38;2;253;151;31mcompilation:[0m
+[38;2;248;248;242mcompilation:[0m
 
 [38;2;248;248;242m    - unlit:	extract code from a "literate program"[0m
 [38;2;248;248;242m    - hscpp:	run code through the C pre-processor (if -cpp flag given)[0m
@@ -34,7 +34,7 @@
 [38;2;248;248;242m    - other	passed directly to the linker	 ld[0m
 
 [38;2;248;248;242mThe phase at which to STOP processing is determined by a command-line[0m
-[38;2;253;151;31moption:[0m
+[38;2;248;248;242moption:[0m
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m		stop after generating preprocessed, de-litted Haskell[0m
 [38;2;248;248;242m		     (used in conjunction with -cpp)[0m

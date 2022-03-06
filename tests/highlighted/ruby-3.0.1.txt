@@ -35,7 +35,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m          show this message, -h for short message[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--backtrace-limit[0m[38;2;248;248;242m=num[0m
 [38;2;248;248;242m                  limit the maximum length of backtrace[0m
-[38;2;248;248;242mDump List:[0m
+[38;2;253;151;31mDump List:[0m
 [38;2;248;248;242m  insns           instruction sequences[0m
 [38;2;248;248;242m  yydebug         yydebug of yacc parser generator[0m
 [38;2;248;248;242m  parsetree       AST[0m
@@ -48,7 +48,7 @@
 [38;2;248;248;242m  frozen-string-literal[0m
 [38;2;248;248;242m                  freeze all string literals (default: disabled)[0m
 [38;2;248;248;242m  jit             JIT compiler (default: disabled)[0m
-[38;2;248;248;242mWarning categories:[0m
+[38;2;253;151;31mWarning categories:[0m
 [38;2;248;248;242m  deprecated      deprecated features[0m
 [38;2;248;248;242m  experimental    experimental features[0m
 [38;2;248;248;242mJIT options (experimental):[0m

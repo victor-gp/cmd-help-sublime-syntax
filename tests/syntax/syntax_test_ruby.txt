@@ -44,8 +44,7 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   --backtrace-limit=num
                   limit the maximum length of backtrace
 Dump List:
-#^^^^^^^^^ - markup.heading.help
-# nice: either scope this or de-scope "Features:"
+#^^^^^^^^^ markup.heading.help
   insns           instruction sequences
   yydebug         yydebug of yacc parser generator
   parsetree       AST
@@ -62,6 +61,8 @@ Warning categories:
   deprecated      deprecated features
   experimental    experimental features
 JIT options (experimental):
+#^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
+# nice: allow section names with parentheses
   --jit-warnings  Enable printing JIT warnings
   --jit-debug     Enable JIT debugging (very slow), or add cflags if specified
   --jit-wait      Wait until JIT compilation finishes every time (for testing)
