@@ -14,7 +14,7 @@
 [38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--backup[0m[38;2;248;248;242m[=CONTROL]      make a backup of each existing destination file[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m                          like --backup but does not accept an argument[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, -F, --directory         allow the superuser to attempt to hard link[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--directory[0m[38;2;248;248;242m         allow the superuser to attempt to hard link[0m
 [38;2;248;248;242m                                directories (note: will probably fail due to[0m
 [38;2;248;248;242m                                system restrictions, even for the superuser)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--force[0m[38;2;248;248;242m                 remove existing destination files[0m

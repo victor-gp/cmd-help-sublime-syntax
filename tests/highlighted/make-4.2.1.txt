@@ -1,6 +1,6 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m make [options] [target] ...[0m
 [38;2;253;151;31mOptions:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, -m                      Ignored for compatibility.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m                      Ignored for compatibility.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--always-make[0m[38;2;248;248;242m           Unconditionally make all targets.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m DIRECTORY, --directory=DIRECTORY[0m
 [38;2;248;248;242m                              Change to DIRECTORY before doing anything.[0m

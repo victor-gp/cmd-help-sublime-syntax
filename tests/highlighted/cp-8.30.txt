@@ -28,7 +28,7 @@
 [38;2;248;248;242m                                 all[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-preserve[0m[38;2;248;248;242m=ATTR_LIST  don't preserve the specified attributes[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--parents[0m[38;2;248;248;242m                use full source file name under DIRECTORY[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, -r, --recursive          copy directories recursively[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recursive[0m[38;2;248;248;242m          copy directories recursively[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--reflink[0m[38;2;248;248;242m[=WHEN]         control clone/CoW copies. See below[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--remove-destination[0m[38;2;248;248;242m     remove each existing destination file before[0m
 [38;2;248;248;242m                                 attempting to open it (contrast with --force)[0m

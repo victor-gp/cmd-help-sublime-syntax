@@ -23,7 +23,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--systems[0m[38;2;248;248;242m=SYSTEM       use manual pages from other systems[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--manpath[0m[38;2;248;248;242m=PATH         set search path for manual pages to PATH[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, -s, --sections=LIST    use colon separated section list[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--sections[0m[38;2;248;248;242m=LIST    use colon separated section list[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--extension[0m[38;2;248;248;242m=EXTENSION  limit search to extension type EXTENSION[0m
 

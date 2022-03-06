@@ -22,7 +22,7 @@ contexts:
 
   line-indent:
     - match: '^\s*(?=\S)'
-      set: [def-opt-short, def-opt-long]
+      set: [def-option]
     - include: else-pop
 
   else-pop:
@@ -38,18 +38,16 @@ contexts:
       scope: markup.heading.help
     - include: else-pop
 
-  def-opt-short:
+  def-option:
     - match: '-[:alpha:]\b'
       scope: entity.name.cmd-option.help
-      set: def-opt-short-next
-    - include: else-pop
-
-  def-opt-short-next:
-    - match: ', '
-      set: def-opt-long
-    - include: else-pop
-
-  def-opt-long:
+      set: def-option-next
     - match: '--{{kebab_word}}'
       scope: entity.name.cmd-option.help
+      # set: def-option-next
+    - include: else-pop
+
+  def-option-next:
+    - match: ', '
+      set: def-option
     - include: else-pop
