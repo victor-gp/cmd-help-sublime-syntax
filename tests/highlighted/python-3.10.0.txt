@@ -64,7 +64,7 @@
 [38;2;248;248;242m-      : program read from stdin (default; interactive mode if a tty)[0m
 [38;2;248;248;242marg ...: arguments passed to program in sys.argv[1:][0m
 
-[38;2;248;248;242mOther environment variables:[0m
+[38;2;253;151;31mOther environment variables:[0m
 [38;2;248;248;242mPYTHONSTARTUP: file executed on interactive startup (no default)[0m
 [38;2;248;248;242mPYTHONPATH   : ':'-separated list of directories prefixed to the[0m
 [38;2;248;248;242m               default module search path.  The result is sys.path.[0m

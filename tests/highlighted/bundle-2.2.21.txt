@@ -23,10 +23,10 @@
 [38;2;248;248;242m       [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-V[0m
 [38;2;248;248;242m              Print out additional logging information[0m
 
-[38;2;248;248;242mBUNDLE COMMANDS[0m
+[38;2;253;151;31mBUNDLE COMMANDS[0m
 [38;2;248;248;242m       We divide bundle subcommands into primary commands and utilities:[0m
 
-[38;2;248;248;242mPRIMARY COMMANDS[0m
+[38;2;253;151;31mPRIMARY COMMANDS[0m
 [38;2;248;248;242m       bundle install(1) bundle-install.1.html[0m
 [38;2;248;248;242m              Install the gems specified by the Gemfile or Gemfile.lock[0m
 

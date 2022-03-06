@@ -3,7 +3,7 @@
 [38;2;248;248;242mExample: grep -i 'hello world' menu.h main.c[0m
 [38;2;248;248;242mPATTERNS can contain multiple patterns separated by newlines.[0m
 
-[38;2;248;248;242mPattern selection and interpretation:[0m
+[38;2;253;151;31mPattern selection and interpretation:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--extended-regexp[0m[38;2;248;248;242m     PATTERNS are extended regular expressions[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fixed-strings[0m[38;2;248;248;242m       PATTERNS are strings[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--basic-regexp[0m[38;2;248;248;242m        PATTERNS are basic regular expressions[0m
@@ -22,7 +22,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m             display version information and exit[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                display this help text and exit[0m
 
-[38;2;248;248;242mOutput control:[0m
+[38;2;253;151;31mOutput control:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-count[0m[38;2;248;248;242m=NUM       stop after NUM selected lines[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--byte-offset[0m[38;2;248;248;242m         print the byte offset with output lines[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--line-number[0m[38;2;248;248;242m         print line number with output lines[0m
@@ -52,7 +52,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--initial-tab[0m[38;2;248;248;242m         make tabs line up (if needed)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--null[0m[38;2;248;248;242m                print 0 byte after FILE name[0m
 
-[38;2;248;248;242mContext control:[0m
+[38;2;253;151;31mContext control:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--before-context[0m[38;2;248;248;242m=NUM  print NUM lines of leading context[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--after-context[0m[38;2;248;248;242m=NUM   print NUM lines of trailing context[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m=NUM         print NUM lines of output context[0m

@@ -16,7 +16,7 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--tlsverify[0m[38;2;248;248;242m          Use TLS and verify the remote[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m            Print version information and quit[0m
 
-[38;2;248;248;242mManagement Commands:[0m
+[38;2;253;151;31mManagement Commands:[0m
 [38;2;248;248;242m  app*        Docker App (Docker Inc., v0.9.1-beta3)[0m
 [38;2;248;248;242m  builder     Manage builds[0m
 [38;2;248;248;242m  buildx*     Docker Buildx (Docker Inc., v0.7.1-docker)[0m

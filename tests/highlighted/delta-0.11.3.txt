@@ -1,5 +1,5 @@
 [38;2;248;248;242m[32mdelta[0m 0.11.3[0m
-[38;2;248;248;242mA viewer for git and diff output[0m
+[38;2;253;151;31mA viewer for git and diff output[0m
 [38;2;248;248;242m[33m[0m
 [38;2;253;151;31mUSAGE:[0m[38;2;248;248;242m[0m[0m
 [38;2;248;248;242m    delta [FLAGS] [OPTIONS] [ARGS][0m
@@ -356,14 +356,14 @@
 [38;2;248;248;242m                    equivalent to `diff -u file_1 file_2 | delta`[0m
 [38;2;248;248;242m    [32m<plus-file>[0m     Second file to be compared when delta is being used in diff mode[0m
 
-[38;2;248;248;242mGIT CONFIG[0m
+[38;2;253;151;31mGIT CONFIG[0m
 [38;2;248;248;242m----------[0m
 
 [38;2;248;248;242mBy default, delta takes settings from a section named "delta" in git config files, if one is[0m
 [38;2;248;248;242mpresent. The git config file to use for delta options will usually be ~/.gitconfig, but delta[0m
 [38;2;248;248;242mfollows the rules given in https://git-scm.com/docs/git-config#FILES. Most delta options can be[0m
 [38;2;248;248;242mgiven in a git config file, using the usual option names but without the initial '--'. An example[0m
-[38;2;253;151;31mis[0m
+[38;2;248;248;242mis[0m
 
 [38;2;248;248;242m[delta][0m
 [38;2;248;248;242m    line-numbers = true[0m
@@ -395,7 +395,7 @@
 [38;2;248;248;242mcolors/styles are specified in a gitconfig file:[0m
 [38;2;248;248;242mhttps://git-scm.com/docs/git-config#Documentation/git-config.txt-color[0m
 
-[38;2;248;248;242mHere is an example:[0m
+[38;2;253;151;31mHere is an example:[0m
 
 [38;2;166;226;46m--minus-style[0m[38;2;248;248;242m 'red bold ul "#ffeeee"'[0m
 
@@ -405,7 +405,7 @@
 [38;2;248;248;242mSee the COLORS section below for how to specify a color. In addition to real colors, there are 4[0m
 [38;2;248;248;242mspecial color names: 'auto', 'normal', 'raw', and 'syntax'.[0m
 
-[38;2;248;248;242mHere is an example of using special color names together with a single attribute:[0m
+[38;2;253;151;31mHere is an example of using special color names together with a single attribute:[0m
 
 [38;2;166;226;46m--minus-style[0m[38;2;248;248;242m 'syntax bold auto'[0m
 
@@ -418,7 +418,7 @@
 [38;2;248;248;242mThe attribute 'omit' is supported by commit-style, file-style, and hunk-header-style, meaning to[0m
 [38;2;248;248;242mremove the element entirely from the output.[0m
 
-[38;2;248;248;242mA complete description of the style string syntax follows:[0m
+[38;2;253;151;31mA complete description of the style string syntax follows:[0m
 
 [38;2;248;248;242m- If the input that delta is receiving already has colors, and you want delta to output those[0m
 [38;2;248;248;242m  colors unchanged, then use the special style string 'raw'. Otherwise, delta will strip any colors[0m
@@ -490,7 +490,7 @@
 [38;2;248;248;242m   support 24-bit color).[0m
 
 
-[38;2;248;248;242mLINE NUMBERS[0m
+[38;2;253;151;31mLINE NUMBERS[0m
 [38;2;248;248;242m------------[0m
 
 [38;2;248;248;242mTo display line numbers, use --line-numbers.[0m
@@ -505,7 +505,7 @@
 [38;2;248;248;242mand the line numbers for the new (plus) version of the file appear in the right column. In an[0m
 [38;2;248;248;242munchanged (zero) line, both columns contain a line number.[0m
 
-[38;2;248;248;242mThe following options allow the line number display to be customized:[0m
+[38;2;253;151;31mThe following options allow the line number display to be customized:[0m
 
 [38;2;166;226;46m--line-numbers-left-format[0m[38;2;248;248;242m:  Change the contents of the left column[0m
 [38;2;166;226;46m--line-numbers-right-format[0m[38;2;248;248;242m: Change the contents of the right column[0m

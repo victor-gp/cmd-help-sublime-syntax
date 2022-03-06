@@ -361,7 +361,7 @@
 [38;2;248;248;242m       single commit. In fact, the command refuses to run when given pathnames (but see -i[0m
 [38;2;248;248;242m       option).[0m
 
-[38;2;248;248;242mCOMMIT INFORMATION[0m
+[38;2;253;151;31mCOMMIT INFORMATION[0m
 [38;2;248;248;242m       Author and committer information is taken from the following environment variables, if[0m
 [38;2;248;248;242m       set:[0m
 
@@ -393,7 +393,7 @@
 [38;2;248;248;242m       The typical usage is to set just the user.name and user.email variables; the other options[0m
 [38;2;248;248;242m       are provided for more complex use cases.[0m
 
-[38;2;248;248;242mDATE FORMATS[0m
+[38;2;253;151;31mDATE FORMATS[0m
 [38;2;248;248;242m       The GIT_AUTHOR_DATE, GIT_COMMITTER_DATE environment variables and the --date option[0m
 [38;2;248;248;242m       support the following date formats:[0m
 
@@ -477,7 +477,7 @@
 [38;2;248;248;242m       made to force UTF-8 at the commit object level, because re-coding to UTF-8 is not[0m
 [38;2;248;248;242m       necessarily a reversible operation.[0m
 
-[38;2;248;248;242mENVIRONMENT AND CONFIGURATION VARIABLES[0m
+[38;2;253;151;31mENVIRONMENT AND CONFIGURATION VARIABLES[0m
 [38;2;248;248;242m       The editor used to edit the commit log message will be chosen from the GIT_EDITOR[0m
 [38;2;248;248;242m       environment variable, the core.editor configuration variable, the VISUAL environment[0m
 [38;2;248;248;242m       variable, or the EDITOR environment variable (in that order). See git-var(1) for details.[0m
@@ -493,7 +493,7 @@
 [38;2;248;248;242m           user (e.g., in an editor session) will be available in this file, but will be[0m
 [38;2;248;248;242m           overwritten by the next invocation of git commit.[0m
 
-[38;2;248;248;242mSEE ALSO[0m
+[38;2;253;151;31mSEE ALSO[0m
 [38;2;248;248;242m       git-add(1), git-rm(1), git-mv(1), git-merge(1), git-commit-tree(1)[0m
 
 [38;2;253;151;31mGIT[0m

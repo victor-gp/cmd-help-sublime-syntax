@@ -1,6 +1,6 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m rubocop [options] [file1, file2, ...][0m
 
-[38;2;248;248;242mBasic Options:[0m
+[38;2;253;151;31mBasic Options:[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--lint[0m[38;2;248;248;242m                       Run only lint cops.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fix-layout[0m[38;2;248;248;242m                 Run only layout cops, with auto-correct on.[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--safe[0m[38;2;248;248;242m                       Run only safe cops.[0m
@@ -41,7 +41,7 @@
 [38;2;248;248;242m                                     parameter AllCops: CacheRootDirectory and[0m
 [38;2;248;248;242m                                     the $RUBOCOP_CACHE_ROOT environment variable.[0m
 
-[38;2;248;248;242mOutput Options:[0m
+[38;2;253;151;31mOutput Options:[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--format[0m[38;2;248;248;242m FORMATTER           Choose an output formatter. This option[0m
 [38;2;248;248;242m                                     can be specified multiple times to enable[0m
 [38;2;248;248;242m                                     multiple formatters at the same time.[0m
@@ -88,7 +88,7 @@
 [38;2;248;248;242m                                     offenses that do not support autocorrect[0m
 [38;2;248;248;242m                                     with `rubocop:todo` comments.[0m
 
-[38;2;248;248;242mConfig Generation:[0m
+[38;2;253;151;31mConfig Generation:[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--auto-gen-config[0m[38;2;248;248;242m            Generate a configuration file acting as a[0m
 [38;2;248;248;242m                                     TODO list.[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--regenerate-todo[0m[38;2;248;248;242m            Regenerate the TODO configuration file using[0m
@@ -107,7 +107,7 @@
 [38;2;248;248;242m        --[no-]auto-gen-timestamp    Include the date and time when the --auto-gen-config[0m
 [38;2;248;248;242m                                     was run in the file it generates. Default is true.[0m
 
-[38;2;248;248;242mAdditional Modes:[0m
+[38;2;253;151;31mAdditional Modes:[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--list-target-files[0m[38;2;248;248;242m          List all files RuboCop will inspect.[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--show-cops[0m[38;2;248;248;242m [COP1,COP2,...]  Shows the given cops, or all cops by[0m
 [38;2;248;248;242m                                     default, and their configurations for the[0m
@@ -116,7 +116,7 @@
 [38;2;248;248;242m                                     Display url to documentation for the given[0m
 [38;2;248;248;242m                                     cops, or base url by default.[0m
 
-[38;2;248;248;242mGeneral Options:[0m
+[38;2;253;151;31mGeneral Options:[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--init[0m[38;2;248;248;242m                       Generate a .rubocop.yml file in the current directory.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m FILE                Specify configuration file.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m                      Display debug info.[0m

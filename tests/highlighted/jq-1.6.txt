@@ -22,7 +22,7 @@
 [38;2;248;248;242m		"foo": 0[0m
 [38;2;248;248;242m	}[0m
 
-[38;2;248;248;242mSome of the options include:[0m
+[38;2;253;151;31mSome of the options include:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m               compact instead of pretty-printed output;[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m               use `null` as the single input value;[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m               set the exit status code based on the output;[0m

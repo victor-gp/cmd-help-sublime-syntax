@@ -67,7 +67,7 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--usage[0m[38;2;248;248;242m                give a short usage message[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m              print program version[0m
 
-[38;2;248;248;242mMandatory or optional arguments to long options are also mandatory or optional[0m
+[38;2;253;151;31mMandatory or optional arguments to long options are also mandatory or optional[0m
 [38;2;248;248;242mfor any corresponding short options.[0m
 
 [38;2;248;248;242mReport bugs to cjwatson@debian.org.[0m

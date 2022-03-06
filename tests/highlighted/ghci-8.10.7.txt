@@ -3,7 +3,7 @@
 [38;2;248;248;242m    ghci [command-line-options-and-input-files][0m
 
 [38;2;248;248;242mThe kinds of input files that can be given on the command-line[0m
-[38;2;253;151;31minclude:[0m
+[38;2;248;248;242minclude:[0m
 
 [38;2;248;248;242m  - Haskell source files (.hs or .lhs suffix)[0m
 [38;2;248;248;242m  - Object files (.o suffix, or .obj on Windows)[0m
