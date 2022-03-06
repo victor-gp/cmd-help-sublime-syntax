@@ -21,7 +21,7 @@ contexts:
 
   line-begin:
     - match: '^'
-      set: [heading-pre]
+      set: [pre-heading]
     - include: else-pop
 
   line-indent:
@@ -35,9 +35,9 @@ contexts:
 
   ### CONTENT
 
-  heading-pre:
-    - match: '(?i:usage):'
-      scope: markup.heading.help
+  pre-heading:
+    - match: '(?i:usage):(?=.+\n)'
+      scope: markup.heading.inline-usage.help
     - match: '^(?=.{1,40}\n)'
       set: heading
     - include: else-pop
