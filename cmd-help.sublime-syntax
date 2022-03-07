@@ -30,7 +30,7 @@ contexts:
     - include: else-pop
 
   line-indent:
-    - match: '^\s*(?=\S)'
+    - match: '^\s*'
       set: [def-option]
     - include: else-pop
 
