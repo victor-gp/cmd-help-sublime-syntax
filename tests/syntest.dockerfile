@@ -12,3 +12,5 @@ COPY --from=build /usr/src/syntect/target/release/examples/syntest \
     /usr/local/bin/syntest
 ENTRYPOINT [ "syntest" ]
 CMD [ "/tests/syntax", "/tests/syntax/under-test" ]
+
+# don't run this manually, use unit.py
