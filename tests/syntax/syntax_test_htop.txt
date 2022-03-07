@@ -1,4 +1,4 @@
-# SYNTAX TEST "../cmd-help.sublime-syntax"
+# SYNTAX TEST "cmd-help.sublime-syntax"
 
 htop 2.2.0 - (C) 2004-2019 Hisham Muhammad
 Released under the GNU GPL.

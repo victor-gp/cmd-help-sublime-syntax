@@ -1,4 +1,4 @@
-# SYNTAX TEST "../cmd-help.sublime-syntax"
+# SYNTAX TEST "cmd-help.sublime-syntax"
 
 GNU bash, version 5.0.17(1)-release-(x86_64-pc-linux-gnu)
 Usage:	bash [GNU long option] [option] ...

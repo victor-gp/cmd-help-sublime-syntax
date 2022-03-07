@@ -1,4 +1,4 @@
-# SYNTAX TEST "../cmd-help.sublime-syntax"
+# SYNTAX TEST "cmd-help.sublime-syntax"
 
 Usage: ruby [switches] [--] [programfile] [arguments]
   -0[octal]       specify record separator (\0, if no argument)

@@ -1,4 +1,4 @@
-# SYNTAX TEST "../cmd-help.sublime-syntax"
+# SYNTAX TEST "cmd-help.sublime-syntax"
 
 [32mdelta[0m 0.11.3
 # <- text.help

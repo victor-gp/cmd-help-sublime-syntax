@@ -1,4 +1,4 @@
-# SYNTAX TEST "../cmd-help.sublime-syntax"
+# SYNTAX TEST "cmd-help.sublime-syntax"
 
 VIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 01 2022 09:16:32)
 

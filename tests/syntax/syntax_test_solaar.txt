@@ -1,4 +1,4 @@
-# SYNTAX TEST "../cmd-help.sublime-syntax"
+# SYNTAX TEST "cmd-help.sublime-syntax"
 
 usage: solaar [-h] [-d] [-D PATH] [--restart-on-wake-up] [-w {show,hide,only}]
               [-b {regular,symbolic,solaar}] [--tray-icon-size TRAY_ICON_SIZE]

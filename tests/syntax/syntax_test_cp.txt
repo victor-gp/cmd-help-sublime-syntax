@@ -1,4 +1,4 @@
-# SYNTAX TEST "../cmd-help.sublime-syntax"
+# SYNTAX TEST "cmd-help.sublime-syntax"
 
 Usage: cp [OPTION]... [-T] SOURCE DEST
 #^^^^^ markup.heading.inline-usage.help

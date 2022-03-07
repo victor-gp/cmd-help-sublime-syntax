@@ -1,4 +1,4 @@
-# SYNTAX TEST "../cmd-help.sublime-syntax"
+# SYNTAX TEST "cmd-help.sublime-syntax"
 
 bat 0.18.2
 A cat(1) clone with syntax highlighting and Git integration.

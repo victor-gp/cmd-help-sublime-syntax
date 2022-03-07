@@ -1,4 +1,4 @@
-# SYNTAX TEST "../cmd-help.sublime-syntax"
+# SYNTAX TEST "cmd-help.sublime-syntax"
 
 Usage: curl [options...] <url>
      --abstract-unix-socket <path> Connect via abstract Unix domain socket
