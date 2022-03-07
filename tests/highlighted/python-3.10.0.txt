@@ -30,19 +30,19 @@
 [38;2;166;226;46m-x[0m[38;2;248;248;242m     : skip first line of source, allowing use of non-Unix forms of #!cmd[0m
 [38;2;166;226;46m-X[0m[38;2;248;248;242m opt : set implementation-specific option. The following options are available:[0m
 
-[38;2;248;248;242m         [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m faulthandler: enable faulthandler[0m
-[38;2;248;248;242m         [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m showrefcount: output the total reference count and number of used[0m
+[38;2;248;248;242m         -X faulthandler: enable faulthandler[0m
+[38;2;248;248;242m         -X showrefcount: output the total reference count and number of used[0m
 [38;2;248;248;242m             memory blocks when the program finishes or after each statement in the[0m
 [38;2;248;248;242m             interactive interpreter. This only works on debug builds[0m
-[38;2;248;248;242m         [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m tracemalloc: start tracing Python memory allocations using the[0m
+[38;2;248;248;242m         -X tracemalloc: start tracing Python memory allocations using the[0m
 [38;2;248;248;242m             tracemalloc module. By default, only the most recent frame is stored in a[0m
 [38;2;248;248;242m             traceback of a trace. Use -X tracemalloc=NFRAME to start tracing with a[0m
 [38;2;248;248;242m             traceback limit of NFRAME frames[0m
-[38;2;248;248;242m         [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m importtime: show how long each import takes. It shows module name,[0m
+[38;2;248;248;242m         -X importtime: show how long each import takes. It shows module name,[0m
 [38;2;248;248;242m             cumulative time (including nested imports) and self time (excluding[0m
 [38;2;248;248;242m             nested imports). Note that its output may be broken in multi-threaded[0m
 [38;2;248;248;242m             application. Typical usage is python3 -X importtime -c 'import asyncio'[0m
-[38;2;248;248;242m         [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m dev: enable CPython's "development mode", introducing additional runtime[0m
+[38;2;248;248;242m         -X dev: enable CPython's "development mode", introducing additional runtime[0m
 [38;2;248;248;242m             checks which are too expensive to be enabled by default. Effect of the[0m
 [38;2;248;248;242m             developer mode:[0m
 [38;2;248;248;242m                * Add default warning filter, as -W default[0m
@@ -51,12 +51,12 @@
 [38;2;248;248;242m                * Enable asyncio debug mode[0m
 [38;2;248;248;242m                * Set the dev_mode attribute of sys.flags to True[0m
 [38;2;248;248;242m                * io.IOBase destructor logs close() exceptions[0m
-[38;2;248;248;242m         [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m utf8: enable UTF-8 mode for operating system interfaces, overriding the default[0m
+[38;2;248;248;242m         -X utf8: enable UTF-8 mode for operating system interfaces, overriding the default[0m
 [38;2;248;248;242m             locale-aware mode. -X utf8=0 explicitly disables UTF-8 mode (even when it would[0m
 [38;2;248;248;242m             otherwise activate automatically)[0m
-[38;2;248;248;242m         [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m pycache_prefix=PATH: enable writing .pyc files to a parallel tree rooted at the[0m
+[38;2;248;248;242m         -X pycache_prefix=PATH: enable writing .pyc files to a parallel tree rooted at the[0m
 [38;2;248;248;242m             given directory instead of to the code tree[0m
-[38;2;248;248;242m         [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m warn_default_encoding: enable opt-in EncodingWarning for 'encoding=None'[0m
+[38;2;248;248;242m         -X warn_default_encoding: enable opt-in EncodingWarning for 'encoding=None'[0m
 
 [38;2;166;226;46m--check-hash-based-pycs[0m[38;2;248;248;242m always|default|never:[0m
 [38;2;248;248;242m    control how Python invalidates hash-based .pyc files[0m

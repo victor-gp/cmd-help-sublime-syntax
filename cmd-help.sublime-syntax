@@ -26,11 +26,11 @@ contexts:
 
   line-begin:
     - match: '^'
-      set: [pre-heading]
+      set: [pre-heading, def-option]
     - include: else-pop
 
   line-indent:
-    - match: '^\s*'
+    - match: '^\s{1,8}'
       set: [def-option]
     - include: else-pop
 

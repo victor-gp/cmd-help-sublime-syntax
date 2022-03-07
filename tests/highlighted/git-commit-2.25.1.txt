@@ -96,7 +96,7 @@
 [38;2;248;248;242m       [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--null[0m
 [38;2;248;248;242m           When showing short or porcelain status output, print the filename verbatim and[0m
 [38;2;248;248;242m           terminate the entries with NUL, instead of LF. If no format is given, implies the[0m
-[38;2;248;248;242m           [0m[38;2;166;226;46m--porcelain[0m[38;2;248;248;242m output format. Without the -z option, filenames with "unusual" characters[0m
+[38;2;248;248;242m           --porcelain output format. Without the -z option, filenames with "unusual" characters[0m
 [38;2;248;248;242m           are quoted as explained for the configuration variable core.quotePath (see git-[0m
 [38;2;248;248;242m           config(1)).[0m
 
@@ -108,7 +108,7 @@
 [38;2;248;248;242m           Override the commit author. Specify an explicit author using the standard A U Thor[0m
 [38;2;248;248;242m           <author@example.com> format. Otherwise <author> is assumed to be a pattern and is used[0m
 [38;2;248;248;242m           to search for an existing commit by that author (i.e. rev-list --all -i[0m
-[38;2;248;248;242m           [0m[38;2;166;226;46m--author[0m[38;2;248;248;242m=<author>); the commit author is then copied from the first such commit found.[0m
+[38;2;248;248;242m           --author=<author>); the commit author is then copied from the first such commit found.[0m
 
 [38;2;248;248;242m       [0m[38;2;166;226;46m--date[0m[38;2;248;248;242m=<date>[0m
 [38;2;248;248;242m           Override the author date used in the commit.[0m
@@ -175,12 +175,12 @@
 
 [38;2;248;248;242m       [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--edit[0m
 [38;2;248;248;242m           The message taken from file with -F, command line with -m, and from commit object with[0m
-[38;2;248;248;242m           [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m are usually used as the commit log message unmodified. This option lets you further[0m
+[38;2;248;248;242m           -C are usually used as the commit log message unmodified. This option lets you further[0m
 [38;2;248;248;242m           edit the message taken from these sources.[0m
 
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-edit[0m
 [38;2;248;248;242m           Use the selected commit message without launching an editor. For example, git commit[0m
-[38;2;248;248;242m           [0m[38;2;166;226;46m--amend[0m[38;2;248;248;242m --no-edit amends a commit without changing its commit message.[0m
+[38;2;248;248;242m           --amend --no-edit amends a commit without changing its commit message.[0m
 
 [38;2;248;248;242m       [0m[38;2;166;226;46m--amend[0m
 [38;2;248;248;242m           Replace the tip of the current branch by creating a new commit. The recorded tree is[0m

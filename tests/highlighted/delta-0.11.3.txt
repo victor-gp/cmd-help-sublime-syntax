@@ -34,7 +34,7 @@
 [38;2;248;248;242m        [32m--show-config[0m                Display the active values for all Delta options. Style options are displayed with[0m
 [38;2;248;248;242m                                     foreground and background colors. This can be used to experiment with colors by[0m
 [38;2;248;248;242m                                     combining this option with other options such as --minus-style, --zero-style,[0m
-[38;2;248;248;242m                                     [0m[38;2;166;226;46m--plus-style[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--light[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--dark[0m[38;2;248;248;242m, etc[0m
+[38;2;248;248;242m                                     --plus-style, --light, --dark, etc[0m
 [38;2;248;248;242m        [32m--list-languages[0m             List supported languages and associated file extensions[0m
 [38;2;248;248;242m        [32m--list-syntax-themes[0m         List available syntax-highlighting color themes[0m
 [38;2;248;248;242m        [32m--show-syntax-themes[0m         Show all available syntax-highlighting themes, each with an example of highlighted[0m

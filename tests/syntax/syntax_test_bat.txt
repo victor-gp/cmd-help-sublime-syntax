@@ -22,8 +22,7 @@ OPTIONS:
             Only show plain style, no decorations. This is an alias for '--style=plain'. When '-p'
             is used twice ('-pp'), it also disables automatic paging (alias for '--style=plain
             --pager=never').
-#           ^^^^^^^ entity.name.cmd-option.help
-#todo: limit line-indent to <= 8 chars
+#           ^^^^^^^ - entity.name.cmd-option.help
     -l, --language <language>
             Explicitly set the language for syntax highlighting. The language can be specified as a
             name (like 'C++' or 'LaTeX') or possible file extension (like 'cpp', 'hpp' or 'md'). Use

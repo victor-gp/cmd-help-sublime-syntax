@@ -203,21 +203,21 @@
 [38;2;248;248;242m                  Don't display tildes after end of file.[0m
 [38;2;248;248;242m  -# [_N]  ....  --shift=[_N][0m
 [38;2;248;248;242m                  Horizontal scroll amount (0 = one half screen width)[0m
-[38;2;248;248;242m                [0m[38;2;166;226;46m--follow-name[0m
+[38;2;248;248;242m                --follow-name[0m
 [38;2;248;248;242m                  The F command changes files if the input file is renamed.[0m
-[38;2;248;248;242m                [0m[38;2;166;226;46m--mouse[0m
+[38;2;248;248;242m                --mouse[0m
 [38;2;248;248;242m                  Enable mouse input.[0m
-[38;2;248;248;242m                [0m[38;2;166;226;46m--no-keypad[0m
+[38;2;248;248;242m                --no-keypad[0m
 [38;2;248;248;242m                  Don't send termcap keypad init/deinit strings.[0m
-[38;2;248;248;242m                [0m[38;2;166;226;46m--no-histdups[0m
+[38;2;248;248;242m                --no-histdups[0m
 [38;2;248;248;242m                  Remove duplicates from command history.[0m
-[38;2;248;248;242m                [0m[38;2;166;226;46m--rscroll[0m[38;2;248;248;242m=C[0m
+[38;2;248;248;242m                --rscroll=C[0m
 [38;2;248;248;242m                  Set the character used to mark truncated lines.[0m
-[38;2;248;248;242m                [0m[38;2;166;226;46m--save-marks[0m
+[38;2;248;248;242m                --save-marks[0m
 [38;2;248;248;242m                  Retain marks across invocations of less.[0m
-[38;2;248;248;242m                [0m[38;2;166;226;46m--use-backslash[0m
+[38;2;248;248;242m                --use-backslash[0m
 [38;2;248;248;242m                  Subsequent options use backslash as escape char.[0m
-[38;2;248;248;242m                [0m[38;2;166;226;46m--wheel-lines[0m[38;2;248;248;242m=N[0m
+[38;2;248;248;242m                --wheel-lines=N[0m
 [38;2;248;248;242m                  Each click of the mouse wheel moves N lines.[0m
 
 

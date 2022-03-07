@@ -12,7 +12,7 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--plain[0m[38;2;248;248;242m                          [0m
 [38;2;248;248;242m            Only show plain style, no decorations. This is an alias for '--style=plain'. When '-p'[0m
 [38;2;248;248;242m            is used twice ('-pp'), it also disables automatic paging (alias for '--style=plain[0m
-[38;2;248;248;242m            [0m[38;2;166;226;46m--pager[0m[38;2;248;248;242m=never').[0m
+[38;2;248;248;242m            --pager=never').[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--language[0m[38;2;248;248;242m <language>            [0m
 [38;2;248;248;242m            Explicitly set the language for syntax highlighting. The language can be specified as a[0m
 [38;2;248;248;242m            name (like 'C++' or 'LaTeX') or possible file extension (like 'cpp', 'hpp' or 'md'). Use[0m
@@ -29,7 +29,7 @@
 [38;2;248;248;242m            for syntax detection.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--diff[0m[38;2;248;248;242m                           [0m
 [38;2;248;248;242m            Only show lines that have been added/removed/modified with respect to the Git index. Use[0m
-[38;2;248;248;242m            [0m[38;2;166;226;46m--diff-context[0m[38;2;248;248;242m=N to control how much context you want to see.[0m
+[38;2;248;248;242m            --diff-context=N to control how much context you want to see.[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--diff-context[0m[38;2;248;248;242m <N>               [0m
 [38;2;248;248;242m            Include N lines of context around added/removed/modified lines when using '--diff'.[0m
 
