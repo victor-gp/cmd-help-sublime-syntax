@@ -14,7 +14,7 @@
 [38;2;166;226;46m-m[0m[38;2;248;248;242m mod : run library module as a script (terminates option list)[0m
 [38;2;166;226;46m-O[0m[38;2;248;248;242m     : remove assert and __debug__-dependent statements; add .opt-1 before[0m
 [38;2;248;248;242m         .pyc extension; also PYTHONOPTIMIZE=x[0m
-[38;2;248;248;242m-OO    : do -O changes and also discard docstrings; add .opt-2 before[0m
+[38;2;166;226;46m-OO[0m[38;2;248;248;242m    : do -O changes and also discard docstrings; add .opt-2 before[0m
 [38;2;248;248;242m         .pyc extension[0m
 [38;2;166;226;46m-q[0m[38;2;248;248;242m     : don't print version and copyright messages on interactive startup[0m
 [38;2;166;226;46m-s[0m[38;2;248;248;242m     : don't add user site directory to sys.path; also PYTHONNOUSERSITE[0m

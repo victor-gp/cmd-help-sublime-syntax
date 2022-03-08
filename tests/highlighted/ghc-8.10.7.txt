@@ -49,7 +49,7 @@
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m		    An `optimising' package of compiler flags, for faster code[0m
 
-[38;2;248;248;242m    -prof	    Compile for cost-centre profiling[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-prof[0m[38;2;248;248;242m	    Compile for cost-centre profiling[0m
 [38;2;248;248;242m		     (add -fprof-auto for automagic cost-centres on all[0m
 [38;2;248;248;242m		      top-level functions)[0m
 

@@ -13,8 +13,7 @@ Options:
   -dumpversion             Display the version of the compiler.
   -dumpmachine             Display the compiler's target processor.
   -print-search-dirs       Display the directories in the compiler's search path.
-# ^^^^^^^^^^^^^^^^^^ - entity.name.cmd-option.help
-#todo: handle single-dash long options with multiple words
+# ^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.help
   -print-libgcc-file-name  Display the name of the compiler's companion library.
   -print-file-name=<lib>   Display the full path to library <lib>.
   -print-prog-name=<prog>  Display the full path to compiler component <prog>.
@@ -27,8 +26,8 @@ Options:
   -print-sysroot           Display the target libraries directory.
   -print-sysroot-headers-suffix Display the sysroot suffix used to find headers.
   -Wa,<options>            Pass comma-separated <options> on to the assembler.
-# ^^^^ - entity.name.cmd-option.help
-#nice: handle comma separated options
+#    ^ - entity.name.cmd-option.help
+#nice: handle option arguments coming after a comma
   -Wp,<options>            Pass comma-separated <options> on to the preprocessor.
   -Wl,<options>            Pass comma-separated <options> on to the linker.
   -Xassembler <arg>        Pass <arg> on to the assembler.

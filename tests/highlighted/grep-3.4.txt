@@ -56,7 +56,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--before-context[0m[38;2;248;248;242m=NUM  print NUM lines of leading context[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--after-context[0m[38;2;248;248;242m=NUM   print NUM lines of trailing context[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m=NUM         print NUM lines of output context[0m
-[38;2;248;248;242m  -NUM                      same as --context=NUM[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-NUM[0m[38;2;248;248;242m                      same as --context=NUM[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m[=WHEN],[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--colour[0m[38;2;248;248;242m[=WHEN]       use markers to highlight the matching strings;[0m
 [38;2;248;248;242m                            WHEN is 'always', 'never', or 'auto'[0m

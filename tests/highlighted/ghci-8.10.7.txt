@@ -16,7 +16,7 @@
 
 [38;2;248;248;242m    -H32m	    Increase GHC's default heap size to 32m[0m
 
-[38;2;248;248;242m    -cpp            Enable CPP processing of source files[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-cpp[0m[38;2;248;248;242m            Enable CPP processing of source files[0m
 
 [38;2;248;248;242mFull details can be found in the User's Guide, an online copy of which[0m
 [38;2;248;248;242mcan be found here:[0m

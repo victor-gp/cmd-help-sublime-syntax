@@ -7,8 +7,7 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   -a              autosplit mode with -n or -p (splits $_ into $F)
   -c              check syntax only
   -Cdirectory     cd to directory before executing your script
-# ^^^^^^^^^^^ - entity.name.cmd-option.help
-  #fixme
+# ^^^^^^^^^^^ entity.name.cmd-option.help
   -d, --debug     set debugging flags (set $DEBUG to true)
   -e 'command'    one line of script. Several -e's allowed. Omit [programfile]
   -Eex[:in], --encoding=ex[:in]
@@ -20,8 +19,7 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   -n              assume 'while gets(); ... end' loop around your script
   -p              assume loop like -n but print line also like sed
   -rlibrary       require the library before executing your script
-# ^^^^^^^^^ - entity.name.cmd-option.help
-  #fixme
+# ^^^^^^^^^ entity.name.cmd-option.help
   -s              enable some switch parsing for switches after script name
   -S              look for the script using PATH environment variable
   -v              print the version number, then turn on verbose mode
