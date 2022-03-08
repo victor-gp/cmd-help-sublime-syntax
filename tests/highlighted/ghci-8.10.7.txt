@@ -14,7 +14,7 @@
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m<dir>         Search for imported modules in the directory <dir>.[0m
 
-[38;2;248;248;242m    -H32m	    Increase GHC's default heap size to 32m[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-H32m[0m[38;2;248;248;242m	    Increase GHC's default heap size to 32m[0m
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-cpp[0m[38;2;248;248;242m            Enable CPP processing of source files[0m
 

@@ -56,7 +56,7 @@ contexts:
     - include: else-pop
 
   def-option:
-    - match: '-[[:alpha:]-]+\b'
+    - match: '-[[:alnum:]-]+\b'
       scope: entity.name.cmd-option.help
       set: def-option-next
     - include: else-pop

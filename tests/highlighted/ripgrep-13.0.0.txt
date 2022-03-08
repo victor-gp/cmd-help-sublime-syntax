@@ -711,7 +711,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag overrides --mmap.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--no-[0m[38;2;248;248;242mpcre2-unicode                       [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--no-pcre2-unicode[0m[38;2;248;248;242m                       [0m
 [38;2;248;248;242m            DEPRECATED. Use --no-unicode instead.[0m
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag is now an alias for --no-unicode. And --pcre2-unicode is an alias[0m
@@ -760,7 +760,7 @@
 [38;2;248;248;242m            --no-pcre2-unicode and --pcre2-unicode are aliases for --no-unicode and[0m
 [38;2;248;248;242m            --unicode, respectively.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    -0, --null                                   [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--null[0m[38;2;248;248;242m                                   [0m
 [38;2;248;248;242m            Whenever a file path is printed, follow it with a NUL byte. This includes[0m
 [38;2;248;248;242m            printing file paths before matches, and when printing a list of matching files[0m
 [38;2;248;248;242m            such as with --count, --files-with-matches and --files. This option is useful[0m
@@ -815,7 +815,7 @@
 [38;2;248;248;242m            intended for overriding the default when the environment demands it (e.g.,[0m
 [38;2;248;248;242m            cygwin). A path separator is limited to a single byte.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--[0m[38;2;248;248;242mpcre2                                  [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--pcre2[0m[38;2;248;248;242m                                  [0m
 [38;2;248;248;242m            When this flag is present, ripgrep will use the PCRE2 regex engine instead of[0m
 [38;2;248;248;242m            its default regex engine.[0m
 [38;2;248;248;242m            [0m
@@ -835,7 +835,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-pcre2.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--[0m[38;2;248;248;242mpcre2-version                          [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--pcre2-version[0m[38;2;248;248;242m                          [0m
 [38;2;248;248;242m            When this flag is present, ripgrep will print the version of PCRE2 in use,[0m
 [38;2;248;248;242m            along with other information, and then exit. If PCRE2 is not available, then[0m
 [38;2;248;248;242m            ripgrep will print an error message and exit with an error code.[0m

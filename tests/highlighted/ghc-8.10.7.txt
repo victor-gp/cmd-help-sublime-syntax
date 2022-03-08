@@ -53,7 +53,7 @@
 [38;2;248;248;242m		     (add -fprof-auto for automagic cost-centres on all[0m
 [38;2;248;248;242m		      top-level functions)[0m
 
-[38;2;248;248;242m    -H14m	    Increase compiler's heap size (might make compilation[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-H14m[0m[38;2;248;248;242m	    Increase compiler's heap size (might make compilation[0m
 [38;2;248;248;242m		    faster, especially on large source files).[0m
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m              Output Makefile rules recording the[0m

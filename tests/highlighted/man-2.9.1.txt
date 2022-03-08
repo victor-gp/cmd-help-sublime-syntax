@@ -46,7 +46,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--pager[0m[38;2;248;248;242m=PAGER          use program PAGER to display output[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--prompt[0m[38;2;248;248;242m=STRING        provide the `less' pager with a prompt[0m
 
-[38;2;248;248;242m  -7, --ascii                display ASCII translation of certain latin1 chars[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-7[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ascii[0m[38;2;248;248;242m                display ASCII translation of certain latin1 chars[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m=ENCODING    use selected output encoding[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-hyphenation[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--nh[0m[38;2;248;248;242m turn off hyphenation[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-justification[0m[38;2;248;248;242m,                              --nj   turn off justification[0m

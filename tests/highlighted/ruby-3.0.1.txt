@@ -1,5 +1,5 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m ruby [switches] [--] [programfile] [arguments][0m
-[38;2;248;248;242m  -0[octal]       specify record separator (\0, if no argument)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m[octal]       specify record separator (\0, if no argument)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m              autosplit mode with -n or -p (splits $_ into $F)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m              check syntax only[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Cdirectory[0m[38;2;248;248;242m     cd to directory before executing your script[0m
