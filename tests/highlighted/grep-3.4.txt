@@ -8,8 +8,8 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fixed-strings[0m[38;2;248;248;242m       PATTERNS are strings[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--basic-regexp[0m[38;2;248;248;242m        PATTERNS are basic regular expressions[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--perl-regexp[0m[38;2;248;248;242m         PATTERNS are Perl regular expressions[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--regexp[0m[38;2;248;248;242m=PATTERNS     use PATTERNS for matching[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m=FILE           take PATTERNS from FILE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--regexp[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPATTERNS[0m[38;2;248;248;242m     use PATTERNS for matching[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m           take PATTERNS from FILE[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-case[0m[38;2;248;248;242m         ignore case distinctions in patterns and data[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-ignore-case[0m[38;2;248;248;242m      do not ignore case distinctions (default)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--word-regexp[0m[38;2;248;248;242m         match only whole words[0m
@@ -23,29 +23,29 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                display this help text and exit[0m
 
 [38;2;253;151;31mOutput control:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-count[0m[38;2;248;248;242m=NUM       stop after NUM selected lines[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-count[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m       stop after NUM selected lines[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--byte-offset[0m[38;2;248;248;242m         print the byte offset with output lines[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--line-number[0m[38;2;248;248;242m         print line number with output lines[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--line-buffered[0m[38;2;248;248;242m       flush output on every line[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--with-filename[0m[38;2;248;248;242m       print file name with output lines[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-filename[0m[38;2;248;248;242m         suppress the file name prefix on output[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m=LABEL         use LABEL as the standard input file name prefix[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLABEL[0m[38;2;248;248;242m         use LABEL as the standard input file name prefix[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--only-matching[0m[38;2;248;248;242m       show only nonempty parts of lines that match[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--silent[0m[38;2;248;248;242m     suppress all normal output[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--binary-files[0m[38;2;248;248;242m=TYPE   assume that binary files are TYPE;[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--binary-files[0m[38;2;248;248;242m=[0m[38;2;253;151;31mTYPE[0m[38;2;248;248;242m   assume that binary files are TYPE;[0m
 [38;2;248;248;242m                            TYPE is 'binary', 'text', or 'without-match'[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--text[0m[38;2;248;248;242m                equivalent to --binary-files=text[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m                        equivalent to --binary-files=without-match[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--directories[0m[38;2;248;248;242m=ACTION  how to handle directories;[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--directories[0m[38;2;248;248;242m=[0m[38;2;253;151;31mACTION[0m[38;2;248;248;242m  how to handle directories;[0m
 [38;2;248;248;242m                            ACTION is 'read', 'recurse', or 'skip'[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--devices[0m[38;2;248;248;242m=ACTION      how to handle devices, FIFOs and sockets;[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--devices[0m[38;2;248;248;242m=[0m[38;2;253;151;31mACTION[0m[38;2;248;248;242m      how to handle devices, FIFOs and sockets;[0m
 [38;2;248;248;242m                            ACTION is 'read' or 'skip'[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recursive[0m[38;2;248;248;242m           like --directories=recurse[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--dereference-recursive[0m[38;2;248;248;242m  likewise, but follow all symlinks[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--include[0m[38;2;248;248;242m=GLOB        search only files that match GLOB (a file pattern)[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--exclude[0m[38;2;248;248;242m=GLOB        skip files that match GLOB[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--exclude-from[0m[38;2;248;248;242m=FILE   skip files that match any file pattern from FILE[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--exclude-dir[0m[38;2;248;248;242m=GLOB    skip directories that match GLOB[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--include[0m[38;2;248;248;242m=[0m[38;2;253;151;31mGLOB[0m[38;2;248;248;242m        search only files that match GLOB (a file pattern)[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--exclude[0m[38;2;248;248;242m=[0m[38;2;253;151;31mGLOB[0m[38;2;248;248;242m        skip files that match GLOB[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--exclude-from[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m   skip files that match any file pattern from FILE[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--exclude-dir[0m[38;2;248;248;242m=[0m[38;2;253;151;31mGLOB[0m[38;2;248;248;242m    skip directories that match GLOB[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--files-without-match[0m[38;2;248;248;242m  print only names of FILEs with no selected lines[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--files-with-matches[0m[38;2;248;248;242m  print only names of FILEs with selected lines[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--count[0m[38;2;248;248;242m               print only a count of selected lines per FILE[0m
@@ -53,9 +53,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--null[0m[38;2;248;248;242m                print 0 byte after FILE name[0m
 
 [38;2;253;151;31mContext control:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--before-context[0m[38;2;248;248;242m=NUM  print NUM lines of leading context[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--after-context[0m[38;2;248;248;242m=NUM   print NUM lines of trailing context[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m=NUM         print NUM lines of output context[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--before-context[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m  print NUM lines of leading context[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--after-context[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m   print NUM lines of trailing context[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m         print NUM lines of output context[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-NUM[0m[38;2;248;248;242m                      same as --context=NUM[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m[=WHEN],[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--colour[0m[38;2;248;248;242m[=WHEN]       use markers to highlight the matching strings;[0m

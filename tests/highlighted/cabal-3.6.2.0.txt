@@ -89,13 +89,13 @@
 [38;2;248;248;242m [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                     Show this help text[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                  Print version information[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m--numeric-version[0m[38;2;248;248;242m              Print just the version number[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m--config-file[0m[38;2;248;248;242m=FILE             Set an alternate location for the config file[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m--default-user-config[0m[38;2;248;248;242m=FILE     Set a location for a cabal.config file for[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m--config-file[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m             Set an alternate location for the config file[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m--default-user-config[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m     Set a location for a cabal.config file for[0m
 [38;2;248;248;242m                                projects without their own cabal.config freeze[0m
 [38;2;248;248;242m                                file.[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m--ignore-expiry[0m[38;2;248;248;242m                Ignore expiry dates on signed metadata (use[0m
 [38;2;248;248;242m                                only in exceptional circumstances)[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m--http-transport[0m[38;2;248;248;242m=HttpTransport[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m--http-transport[0m[38;2;248;248;242m=[0m[38;2;253;151;31mHttpTransport[0m
 [38;2;248;248;242m                                Set a transport for http(s) requests. Accepts[0m
 [38;2;248;248;242m                                'curl', 'wget', 'powershell', and[0m
 [38;2;248;248;242m                                'plain-http'. (default: 'curl')[0m

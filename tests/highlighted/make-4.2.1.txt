@@ -8,7 +8,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m[=FLAGS]             Print various types of debugging information.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--environment-overrides[0m
 [38;2;248;248;242m                              Environment variables override makefiles.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--eval[0m[38;2;248;248;242m=STRING               Evaluate STRING as a makefile statement.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--eval[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTRING[0m[38;2;248;248;242m               Evaluate STRING as a makefile statement.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m FILE, --file=FILE, --makefile=FILE[0m
 [38;2;248;248;242m                              Read FILE as a makefile.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                  Print this message and exit.[0m

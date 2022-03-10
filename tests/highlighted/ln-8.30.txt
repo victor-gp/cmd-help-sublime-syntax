@@ -25,8 +25,8 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--physical[0m[38;2;248;248;242m              make hard links directly to symbolic links[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--relative[0m[38;2;248;248;242m              create symbolic links relative to link location[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--symbolic[0m[38;2;248;248;242m              make symbolic links instead of hard links[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--suffix[0m[38;2;248;248;242m=SUFFIX         override the usual backup suffix[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--target-directory[0m[38;2;248;248;242m=DIRECTORY  specify the DIRECTORY in which to create[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--suffix[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSUFFIX[0m[38;2;248;248;242m         override the usual backup suffix[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--target-directory[0m[38;2;248;248;242m=[0m[38;2;253;151;31mDIRECTORY[0m[38;2;248;248;242m  specify the DIRECTORY in which to create[0m
 [38;2;248;248;242m                                the links[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-target-directory[0m[38;2;248;248;242m   treat LINK_NAME as a normal file always[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m               print name of each linked file[0m

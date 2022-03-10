@@ -9,9 +9,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-debug-inc[0m[38;2;248;248;242m | --debug-inc[0m
 [38;2;248;248;242m                      enable extra debugging for the incremental debugger[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-colors[0m[38;2;248;248;242m         disable ANSI color codes[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m=auto|always|true|false|never[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m=[0m[38;2;253;151;31mauto[0m[38;2;248;248;242m|always|true|false|never[0m
 [38;2;248;248;242m                      enable or disable ANSI color codes      (sbt 1.3 and above)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--supershell[0m[38;2;248;248;242m=auto|always|true|false|never[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--supershell[0m[38;2;248;248;242m=[0m[38;2;253;151;31mauto[0m[38;2;248;248;242m|always|true|false|never[0m
 [38;2;248;248;242m                      enable or disable supershell            (sbt 1.3 and above)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--traces[0m[38;2;248;248;242m            generate Trace Event report on shutdown (sbt 1.3 and above)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--timings[0m[38;2;248;248;242m           display task timings report on shutdown[0m
@@ -40,7 +40,7 @@
 [38;2;248;248;242m  .sbtopts            if this file exists in the current directory, its contents[0m
 [38;2;248;248;242m                      are prepended to the runner args[0m
 [38;2;248;248;242m  /etc/sbt/sbtopts    if this file exists, it is prepended to the runner args[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Dkey[0m[38;2;248;248;242m=val           pass -Dkey=val directly to the java runtime[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Dkey[0m[38;2;248;248;242m=[0m[38;2;253;151;31mval[0m[38;2;248;248;242m           pass -Dkey=val directly to the java runtime[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-J-X[0m[38;2;248;248;242m                pass option -X directly to the java runtime[0m
 [38;2;248;248;242m                      (-J is stripped)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-S-X[0m[38;2;248;248;242m                add -X to sbt's scalacOptions (-S is stripped)[0m
