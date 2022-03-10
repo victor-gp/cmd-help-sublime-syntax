@@ -394,7 +394,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides the --no-heading flag.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    -., --hidden                                 [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-.[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--hidden[0m[38;2;248;248;242m                                 [0m
 [38;2;248;248;242m            Search hidden files and directories. By default, hidden files and directories[0m
 [38;2;248;248;242m            are skipped. Note that if a hidden file or a directory is whitelisted in an[0m
 [38;2;248;248;242m            ignore file, then it will be searched even if this flag isn't provided.[0m

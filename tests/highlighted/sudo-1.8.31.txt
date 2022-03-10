@@ -34,4 +34,4 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--user[0m[38;2;248;248;242m=user               run command (or edit file) as specified user name or ID[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                 display version information and exit[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--validate[0m[38;2;248;248;242m                update user's timestamp without running a command[0m
-[38;2;248;248;242m  --                            stop processing command line arguments[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--[0m[38;2;248;248;242m                            stop processing command line arguments[0m

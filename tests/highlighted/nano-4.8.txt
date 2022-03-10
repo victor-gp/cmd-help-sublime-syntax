@@ -54,4 +54,4 @@
 [38;2;248;248;242m [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m             --nohelp                Don't show the two help lines[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-y[0m[38;2;248;248;242m             --afterends             Make Ctrl+Right stop at word ends[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m             --suspend               Enable suspension[0m
-[38;2;248;248;242m -$             --softwrap              Enable soft line wrapping[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-$[0m[38;2;248;248;242m             --softwrap              Enable soft line wrapping[0m

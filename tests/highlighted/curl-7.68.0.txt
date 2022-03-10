@@ -67,9 +67,9 @@
 [38;2;248;248;242m [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--header[0m[38;2;248;248;242m <header/@file> Pass custom header(s) to server[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m          This help text[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--hostpubmd5[0m[38;2;248;248;242m <md5> Acceptable MD5 hash of the host public key[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--http0[0m[38;2;248;248;242m.9       Allow HTTP 0.9 responses[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--http1[0m[38;2;248;248;242m.0       Use HTTP 1.0[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--http1[0m[38;2;248;248;242m.1       Use HTTP 1.1[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--http0.9[0m[38;2;248;248;242m       Allow HTTP 0.9 responses[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--http1.0[0m[38;2;248;248;242m       Use HTTP 1.0[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--http1.1[0m[38;2;248;248;242m       Use HTTP 1.1[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--http2[0m[38;2;248;248;242m         Use HTTP 2[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--http2-prior-knowledge[0m[38;2;248;248;242m Use HTTP 2 without HTTP/1.1 Upgrade[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--http3[0m[38;2;248;248;242m         Use HTTP v3[0m
@@ -103,7 +103,7 @@
 [38;2;248;248;242m [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--netrc[0m[38;2;248;248;242m         Must read .netrc for user name and password[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--netrc-file[0m[38;2;248;248;242m <filename> Specify FILE for netrc[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--netrc-optional[0m[38;2;248;248;242m Use either .netrc or URL[0m
-[38;2;248;248;242m -:, --next          Make next URL use its separate set of options[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-:[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--next[0m[38;2;248;248;242m          Make next URL use its separate set of options[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--no-alpn[0m[38;2;248;248;242m       Disable the ALPN TLS extension[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-buffer[0m[38;2;248;248;242m     Disable buffering of the output stream[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--no-keepalive[0m[38;2;248;248;242m  Disable TCP keepalive on the connection[0m
@@ -125,7 +125,7 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--post302[0m[38;2;248;248;242m       Do not switch to GET after following a 302[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--post303[0m[38;2;248;248;242m       Do not switch to GET after following a 303[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--preproxy[0m[38;2;248;248;242m [protocol://]host[:port] Use this proxy first[0m
-[38;2;248;248;242m -#, --progress-bar  Display transfer progress as a bar[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-#[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--progress-bar[0m[38;2;248;248;242m  Display transfer progress as a bar[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proto[0m[38;2;248;248;242m <protocols> Enable/disable PROTOCOLS[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proto-default[0m[38;2;248;248;242m <protocol> Use PROTOCOL for any URL missing a scheme[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proto-redir[0m[38;2;248;248;242m <protocols> Enable/disable PROTOCOLS on redirect[0m
@@ -155,7 +155,7 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlsuser[0m[38;2;248;248;242m <name> TLS username for HTTPS proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlsv1[0m[38;2;248;248;242m   Use TLSv1 for HTTPS proxy[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--proxy-user[0m[38;2;248;248;242m <user:password> Proxy user and password[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--proxy1[0m[38;2;248;248;242m.0 <host[:port]> Use HTTP/1.0 proxy on given port[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--proxy1.0[0m[38;2;248;248;242m <host[:port]> Use HTTP/1.0 proxy on given port[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--proxytunnel[0m[38;2;248;248;242m   Operate through an HTTP proxy tunnel (using CONNECT)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--pubkey[0m[38;2;248;248;242m <key>  SSH Public key file name[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-Q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quote[0m[38;2;248;248;242m         Send command(s) to server before transfer[0m
@@ -210,10 +210,10 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tlspassword[0m[38;2;248;248;242m   TLS password[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tlsuser[0m[38;2;248;248;242m <name> TLS user name[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-1[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--tlsv1[0m[38;2;248;248;242m         Use TLSv1.0 or greater[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1[0m[38;2;248;248;242m.0       Use TLSv1.0 or greater[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1[0m[38;2;248;248;242m.1       Use TLSv1.1 or greater[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1[0m[38;2;248;248;242m.2       Use TLSv1.2 or greater[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1[0m[38;2;248;248;242m.3       Use TLSv1.3 or greater[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1.0[0m[38;2;248;248;242m       Use TLSv1.0 or greater[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1.1[0m[38;2;248;248;242m       Use TLSv1.1 or greater[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1.2[0m[38;2;248;248;242m       Use TLSv1.2 or greater[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1.3[0m[38;2;248;248;242m       Use TLSv1.3 or greater[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tr-encoding[0m[38;2;248;248;242m   Request compressed transfer encoding[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--trace[0m[38;2;248;248;242m <file>  Write a debug trace to FILE[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--trace-ascii[0m[38;2;248;248;242m <file> Like --trace, but without hex output[0m

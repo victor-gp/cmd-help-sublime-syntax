@@ -6,7 +6,7 @@
 [38;2;248;248;242m   or: vim [arguments] -q [errorfile]  edit file with first error[0m
 
 [38;2;253;151;31mArguments:[0m
-[38;2;248;248;242m   --			Only file names after this[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--[0m[38;2;248;248;242m			Only file names after this[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m			Vi mode (like "vi")[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m			Ex mode (like "ex")[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m			Improved Ex mode[0m

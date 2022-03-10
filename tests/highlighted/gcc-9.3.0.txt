@@ -40,7 +40,7 @@
 [38;2;248;248;242m                           and libraries.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m <directory>           Add <directory> to the compiler's search paths.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m                       Display the programs invoked by the compiler.[0m
-[38;2;248;248;242m  -###                     Like -v but options quoted and commands not executed.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-###[0m[38;2;248;248;242m                     Like -v but options quoted and commands not executed.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m                       Preprocess only; do not compile, assemble or link.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m                       Compile only; do not assemble or link.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m                       Compile and assemble, but do not link.[0m

@@ -22,7 +22,7 @@
 [38;2;248;248;242m                  set warning level; 0=silence, 1=medium, 2=verbose[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m[directory]   strip off text before #!ruby line and perhaps cd to directory[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit[0m[38;2;248;248;242m           enable JIT with default options (experimental)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jit[0m[38;2;248;248;242m-[option]  enable JIT with an option (experimental)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-[0m[38;2;248;248;242m[option]  enable JIT with an option (experimental)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--copyright[0m[38;2;248;248;242m     print the copyright[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--dump[0m[38;2;248;248;242m={insns|parsetree|...}[,...][0m
 [38;2;248;248;242m                  dump debug information. see below for available dump list[0m
