@@ -38,9 +38,7 @@ OPTIONS:
               '--highlight-line 40:' highlights lines 40 to the end of the file
         --file-name <name>...
 #       ^^^^^^^^^^^ entity.name.cmd-option.help
-#                   ^^^^^^ variable.parameter.option-argument.help
-#                         ^^^ - variable.parameter.option-argument.help
-#todo: handle ellipses in arguments
+#                   ^^^^^^^^^ variable.parameter.option-argument.help
             Specify the name to display for a file. Useful when piping data to bat from STDIN when
             bat does not otherwise know the filename. Note that the provided file name is also used
             for syntax detection.

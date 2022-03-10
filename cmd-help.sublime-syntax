@@ -20,6 +20,9 @@ variables:
   # marks seen in option names: . ? : # $ --
   option_name: '[^{{option_stop}}]+'
 
+### command/option argument variables:
+  ellipsis: '\.\.\.'
+
 
 contexts:
   main:
@@ -80,6 +83,12 @@ contexts:
 
   option-argument:
     - match: '<.*?>'
+      scope: variable.parameter.option-argument.help
+      set: option-argument-post
+    - include: else-pop
+
+  option-argument-post:
+    - match: '({{ellipsis}})?'
       scope: variable.parameter.option-argument.help
       pop: true
     - include: else-pop

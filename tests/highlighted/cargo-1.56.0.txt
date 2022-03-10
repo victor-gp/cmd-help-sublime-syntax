@@ -13,8 +13,8 @@
 [38;2;248;248;242m        [0m[38;2;166;226;46m--frozen[0m[38;2;248;248;242m                   Require Cargo.lock and cache are up to date[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--locked[0m[38;2;248;248;242m                   Require Cargo.lock is up to date[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--offline[0m[38;2;248;248;242m                  Run without accessing the network[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m [0m[38;2;253;151;31m<KEY=VALUE>[0m[38;2;248;248;242m...    Override a configuration value (unstable)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m [0m[38;2;253;151;31m<FLAG>[0m[38;2;248;248;242m...                   Unstable (nightly-only) flags to Cargo, see 'cargo -Z help' for details[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m [0m[38;2;253;151;31m<KEY=VALUE>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m    Override a configuration value (unstable)[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m [0m[38;2;253;151;31m<FLAG>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                   Unstable (nightly-only) flags to Cargo, see 'cargo -Z help' for details[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                     Prints help information[0m
 
 [38;2;248;248;242mSome common cargo commands are (see all commands with --list):[0m

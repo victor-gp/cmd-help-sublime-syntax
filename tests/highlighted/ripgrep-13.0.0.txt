@@ -158,7 +158,7 @@
 [38;2;248;248;242m            When the --vimgrep flag is given to ripgrep, then the default value for the[0m
 [38;2;248;248;242m            --color flag changes to 'never'.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--colors[0m[38;2;248;248;242m [0m[38;2;253;151;31m<COLOR_SPEC>[0m[38;2;248;248;242m...                 [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--colors[0m[38;2;248;248;242m [0m[38;2;253;151;31m<COLOR_SPEC>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                 [0m
 [38;2;248;248;242m            This flag specifies color settings for use in the output. This flag may be[0m
 [38;2;248;248;242m            provided multiple times. Settings are applied iteratively. Colors are limited[0m
 [38;2;248;248;242m            to one of eight choices: red, blue, green, cyan, magenta, yellow, white and[0m
@@ -322,7 +322,7 @@
 [38;2;248;248;242m            bytes, including zero. Escape sequences like \x7F or \t may be used. The[0m
 [38;2;248;248;242m            default value is -.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<PATTERNFILE>[0m[38;2;248;248;242m...                  [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<PATTERNFILE>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                  [0m
 [38;2;248;248;242m            Search for patterns from the given file, with one pattern per line. When this[0m
 [38;2;248;248;242m            flag is used multiple times or in combination with the -e/--regexp flag,[0m
 [38;2;248;248;242m            then all patterns provided are searched. Empty pattern lines will match all[0m
@@ -359,7 +359,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-follow.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--glob[0m[38;2;248;248;242m [0m[38;2;253;151;31m<GLOB>[0m[38;2;248;248;242m...                         [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--glob[0m[38;2;248;248;242m [0m[38;2;253;151;31m<GLOB>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                         [0m
 [38;2;248;248;242m            Include or exclude files and directories for searching that match the given[0m
 [38;2;248;248;242m            glob. This always overrides any other ignore logic. Multiple glob flags may be[0m
 [38;2;248;248;242m            used. Globbing rules match .gitignore globs. Precede a glob with a ! to exclude[0m
@@ -405,7 +405,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-hidden.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--iglob[0m[38;2;248;248;242m [0m[38;2;253;151;31m<GLOB>[0m[38;2;248;248;242m...                        [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--iglob[0m[38;2;248;248;242m [0m[38;2;253;151;31m<GLOB>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                        [0m
 [38;2;248;248;242m            Include or exclude files and directories for searching that match the given[0m
 [38;2;248;248;242m            glob. This always overrides any other ignore logic. Multiple glob flags may be[0m
 [38;2;248;248;242m            used. Globbing rules match .gitignore globs. Precede a glob with a ! to exclude[0m
@@ -418,7 +418,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag overrides -s/--case-sensitive and -S/--smart-case.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--ignore-file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<PATH>[0m[38;2;248;248;242m...                  [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--ignore-file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<PATH>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                  [0m
 [38;2;248;248;242m            Specifies a path to one or more .gitignore format rules files. These patterns[0m
 [38;2;248;248;242m            are applied after the patterns found in .gitignore and .ignore are applied[0m
 [38;2;248;248;242m            and are matched relative to the current working directory. Multiple additional[0m
@@ -885,7 +885,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides the -z/--search-zip flag.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--pre-glob[0m[38;2;248;248;242m [0m[38;2;253;151;31m<GLOB>[0m[38;2;248;248;242m...[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--pre-glob[0m[38;2;248;248;242m [0m[38;2;253;151;31m<GLOB>[0m[38;2;253;151;31m...[0m
 [38;2;248;248;242m            This flag works in conjunction with the --pre flag. Namely, when one or more[0m
 [38;2;248;248;242m            --pre-glob flags are given, then only files that match the given set of globs[0m
 [38;2;248;248;242m            will be handed to the command specified by the --pre flag. Any non-matching[0m
@@ -927,7 +927,7 @@
 [38;2;248;248;242m            The argument accepts the same size suffixes as allowed in the --max-filesize[0m
 [38;2;248;248;242m            flag.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--regexp[0m[38;2;248;248;242m [0m[38;2;253;151;31m<PATTERN>[0m[38;2;248;248;242m...                    [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--regexp[0m[38;2;248;248;242m [0m[38;2;253;151;31m<PATTERN>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                    [0m
 [38;2;248;248;242m            A pattern to search for. This option can be provided multiple times, where[0m
 [38;2;248;248;242m            all patterns given are searched. Lines matching at least one of the provided[0m
 [38;2;248;248;242m            patterns are printed. This flag can also be used when searching for patterns[0m
@@ -1061,7 +1061,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-trim.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE>[0m[38;2;248;248;242m...                         [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                         [0m
 [38;2;248;248;242m            Only search files matching TYPE. Multiple type flags may be provided. Use the[0m
 [38;2;248;248;242m            --type-list flag to list all available types.[0m
 [38;2;248;248;242m            [0m
@@ -1071,7 +1071,7 @@
 [38;2;248;248;242m            "whitelist" mode, where it will only search files it recognizes via its type[0m
 [38;2;248;248;242m            definitions.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--type-add[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE_SPEC>[0m[38;2;248;248;242m...                [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--type-add[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE_SPEC>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                [0m
 [38;2;248;248;242m            Add a new glob for a particular file type. Only one glob can be added at a[0m
 [38;2;248;248;242m            time. Multiple --type-add flags can be provided. Unless --type-clear is used,[0m
 [38;2;248;248;242m            globs are added to any existing globs defined inside of ripgrep.[0m
@@ -1099,7 +1099,7 @@
 [38;2;248;248;242m            Note that type names must consist only of Unicode letters or numbers.[0m
 [38;2;248;248;242m            Punctuation characters are not allowed.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--type-clear[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE>[0m[38;2;248;248;242m...                   [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--type-clear[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                   [0m
 [38;2;248;248;242m            Clear the file type globs previously defined for TYPE. This only clears the[0m
 [38;2;248;248;242m            default type definitions that are found inside of ripgrep.[0m
 [38;2;248;248;242m            [0m
@@ -1109,7 +1109,7 @@
 [38;2;248;248;242m        [0m[38;2;166;226;46m--type-list[0m[38;2;248;248;242m                              [0m
 [38;2;248;248;242m            Show all supported file types and their corresponding globs.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type-not[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE>[0m[38;2;248;248;242m...                     [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type-not[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                     [0m
 [38;2;248;248;242m            Do not search files matching TYPE. Multiple type-not flags may be provided. Use[0m
 [38;2;248;248;242m            the --type-list flag to list all available types.[0m
 [38;2;248;248;242m             [0m
