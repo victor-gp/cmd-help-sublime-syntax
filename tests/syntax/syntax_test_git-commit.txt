@@ -1,6 +1,7 @@
 # SYNTAX TEST "cmd-help.sublime-syntax"
 
 GIT-COMMIT(1)                               Git Manual                              GIT-COMMIT(1)
+# <- text.help
 #todo: if first_line looks like a man page, embed man.sublime-syntax
 
 NAME
