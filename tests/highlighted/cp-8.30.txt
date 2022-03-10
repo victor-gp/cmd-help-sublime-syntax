@@ -26,18 +26,18 @@
 [38;2;248;248;242m                                 mode,ownership,timestamps), if possible[0m
 [38;2;248;248;242m                                 additional attributes: context, links, xattr,[0m
 [38;2;248;248;242m                                 all[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--no-preserve[0m[38;2;248;248;242m=ATTR_LIST  don't preserve the specified attributes[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-preserve[0m[38;2;248;248;242m=[0m[38;2;253;151;31mATTR_LIST[0m[38;2;248;248;242m  don't preserve the specified attributes[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--parents[0m[38;2;248;248;242m                use full source file name under DIRECTORY[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recursive[0m[38;2;248;248;242m          copy directories recursively[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--reflink[0m[38;2;248;248;242m[=WHEN]         control clone/CoW copies. See below[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--remove-destination[0m[38;2;248;248;242m     remove each existing destination file before[0m
 [38;2;248;248;242m                                 attempting to open it (contrast with --force)[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--sparse[0m[38;2;248;248;242m=WHEN            control creation of sparse files. See below[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--sparse[0m[38;2;248;248;242m=[0m[38;2;253;151;31mWHEN[0m[38;2;248;248;242m            control creation of sparse files. See below[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--strip-trailing-slashes[0m[38;2;248;248;242m  remove any trailing slashes from each SOURCE[0m
 [38;2;248;248;242m                                 argument[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--symbolic-link[0m[38;2;248;248;242m          make symbolic links instead of copying[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--suffix[0m[38;2;248;248;242m=SUFFIX          override the usual backup suffix[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--target-directory[0m[38;2;248;248;242m=DIRECTORY  copy all SOURCE arguments into DIRECTORY[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--suffix[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSUFFIX[0m[38;2;248;248;242m          override the usual backup suffix[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--target-directory[0m[38;2;248;248;242m=[0m[38;2;253;151;31mDIRECTORY[0m[38;2;248;248;242m  copy all SOURCE arguments into DIRECTORY[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-target-directory[0m[38;2;248;248;242m    treat DEST as a normal file[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--update[0m[38;2;248;248;242m                 copy only when the SOURCE file is newer[0m
 [38;2;248;248;242m                                 than the destination file or when the[0m

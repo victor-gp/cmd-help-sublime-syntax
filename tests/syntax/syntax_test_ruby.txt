@@ -42,15 +42,14 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   --enable={gems|rubyopt|...}[,...], --disable={gems|rubyopt|...}[,...]
                   enable or disable features. see below for available features
   --external-encoding=encoding, --internal-encoding=encoding
-#                    ^^^^^^^^^ - variable.parameter.option-argument.help
+#                     ^^^^^^^^ variable.parameter.option-argument.help
 #                                                  ^^^^^^^^^ - variable.parameter.option-argument.help
                   specify the default external or internal character encoding
   --verbose       turn on verbose mode and disable script from stdin
   --version       print the version number, then exit
   --help          show this message, -h for short message
   --backtrace-limit=num
-#                  ^^^^  - variable.parameter.option-argument.help
-#todo: handle option arguments preceded by =
+#                   ^^^  variable.parameter.option-argument.help
                   limit the maximum length of backtrace
 Dump List:
 #^^^^^^^^^ markup.heading.help

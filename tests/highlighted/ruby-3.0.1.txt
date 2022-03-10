@@ -28,12 +28,12 @@
 [38;2;248;248;242m                  dump debug information. see below for available dump list[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--enable[0m[38;2;248;248;242m={gems|rubyopt|...}[,...], --disable={gems|rubyopt|...}[,...][0m
 [38;2;248;248;242m                  enable or disable features. see below for available features[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--external-encoding[0m[38;2;248;248;242m=encoding, --internal-encoding=encoding[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--external-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m[38;2;248;248;242m, --internal-encoding=encoding[0m
 [38;2;248;248;242m                  specify the default external or internal character encoding[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m       turn on verbose mode and disable script from stdin[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m       print the version number, then exit[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m          show this message, -h for short message[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--backtrace-limit[0m[38;2;248;248;242m=num[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--backtrace-limit[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m
 [38;2;248;248;242m                  limit the maximum length of backtrace[0m
 [38;2;253;151;31mDump List:[0m
 [38;2;248;248;242m  insns           instruction sequences[0m
@@ -57,9 +57,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-wait[0m[38;2;248;248;242m      Wait until JIT compilation finishes every time (for testing)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-save-temps[0m
 [38;2;248;248;242m                  Save JIT temporary files in $TMP or /tmp (for testing)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-verbose[0m[38;2;248;248;242m=num[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-verbose[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m
 [38;2;248;248;242m                  Print JIT logs of level num or less to stderr (default: 0)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-max-cache[0m[38;2;248;248;242m=num[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-max-cache[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m
 [38;2;248;248;242m                  Max number of methods to be JIT-ed in a cache (default: 100)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-min-calls[0m[38;2;248;248;242m=num[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-min-calls[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m
 [38;2;248;248;242m                  Number of calls to trigger JIT (for testing, default: 10000)[0m
