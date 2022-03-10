@@ -74,11 +74,12 @@ contexts:
     - include: else-pop
 
   def-option-post-space:
-    - match: '<'
-      set: option-argument-angle
+    - match: ''
+      set: [option-argument]
     - include: else-pop
 
-  option-argument-angle:
-    - meta_scope: variable.parameter.option-argument.help
-    - match: '>'
+  option-argument:
+    - match: '<.*?>'
+      scope: variable.parameter.option-argument.help
       pop: true
+    - include: else-pop
