@@ -42,7 +42,8 @@ Usage: ruby [switches] [--] [programfile] [arguments]
                   enable or disable features. see below for available features
   --external-encoding=encoding, --internal-encoding=encoding
 #                     ^^^^^^^^ variable.parameter.option-argument.help
-#                                                  ^^^^^^^^^ - variable.parameter.option-argument.help
+#                               ^^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.help
+#                                                   ^^^^^^^^ variable.parameter.option-argument.help
                   specify the default external or internal character encoding
   --verbose       turn on verbose mode and disable script from stdin
   --version       print the version number, then exit

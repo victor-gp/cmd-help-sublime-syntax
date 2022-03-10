@@ -108,5 +108,8 @@ contexts:
   option-argument-post:
     - match: '({{ellipsis}})?'
       scope: variable.parameter.option-argument.help
-      pop: true
+    # - match: ''
+    #   set: def-option-post
+    - match: ', '
+      set: def-option
     - include: else-pop

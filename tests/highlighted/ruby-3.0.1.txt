@@ -28,7 +28,7 @@
 [38;2;248;248;242m                  dump debug information. see below for available dump list[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--enable[0m[38;2;248;248;242m={gems|rubyopt|...}[,...], --disable={gems|rubyopt|...}[,...][0m
 [38;2;248;248;242m                  enable or disable features. see below for available features[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--external-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m[38;2;248;248;242m, --internal-encoding=encoding[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--external-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--internal-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m
 [38;2;248;248;242m                  specify the default external or internal character encoding[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m       turn on verbose mode and disable script from stdin[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m       print the version number, then exit[0m
