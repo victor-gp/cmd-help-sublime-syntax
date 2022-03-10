@@ -16,9 +16,9 @@ variables:
   leading_word: '[:upper:]({{alpha_dash}})*\b'
 
 ### command option variables:
-  option_IFS: '[ \t\n,=\[<]'
+  option_stop: '[ \t\n,=\[<]'
   # marks seen in option names: . ? : # $ --
-  option_name: '[^{{option_IFS}}]+'
+  option_name: '[^{{option_stop}}]+'
 
 
 contexts:
