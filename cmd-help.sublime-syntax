@@ -102,7 +102,7 @@ contexts:
   square-brackets-after-option:
     - meta_content_scope: variable.parameter.option-argument.help
     - match: '(?=])'
-      scope: text.help
+      #fixme: should consume (no lookahead), this forces else-pop on option-argument-post
       set: option-argument-post
 
   option-argument-post:

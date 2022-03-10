@@ -16,6 +16,8 @@ Options:
 # ^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.help
   -print-libgcc-file-name  Display the name of the compiler's companion library.
   -print-file-name=<lib>   Display the full path to library <lib>.
+#                  ^^^^^ - variable.parameter.option-argument.help
+#todo: handle these
   -print-prog-name=<prog>  Display the full path to compiler component <prog>.
   -print-multiarch         Display the target's normalized GNU triplet, used as
                            a component in the library path.
