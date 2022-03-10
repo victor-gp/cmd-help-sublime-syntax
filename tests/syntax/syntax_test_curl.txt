@@ -3,6 +3,8 @@
 Usage: curl [options...] <url>
      --abstract-unix-socket <path> Connect via abstract Unix domain socket
      --alt-svc <file name> Enable alt-svc with this cache file
+#              ^^^^^^^^^^^ - option-argument.help
+#nice: handle spaces within arguments
      --anyauth       Pick any authentication method
  -a, --append        Append to target file when uploading
      --basic         Use HTTP Basic Authentication
