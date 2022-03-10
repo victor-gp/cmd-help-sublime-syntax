@@ -357,7 +357,7 @@
 [38;2;248;248;242m    [32m<plus-file>[0m     Second file to be compared when delta is being used in diff mode[0m
 
 [38;2;253;151;31mGIT CONFIG[0m
-[38;2;166;226;46m----------[0m
+[38;2;248;248;242m----------[0m
 
 [38;2;248;248;242mBy default, delta takes settings from a section named "delta" in git config files, if one is[0m
 [38;2;248;248;242mpresent. The git config file to use for delta options will usually be ~/.gitconfig, but delta[0m
@@ -370,7 +370,7 @@
 [38;2;248;248;242m    zero-style = dim syntax[0m
 
 [38;2;253;151;31mFEATURES[0m
-[38;2;166;226;46m--------[0m
+[38;2;248;248;242m--------[0m
 [38;2;248;248;242mA feature is a named collection of delta options in git config. An example is:[0m
 
 [38;2;248;248;242m[delta "my-delta-feature"][0m
@@ -389,7 +389,7 @@
 [38;2;248;248;242mIf more than one feature sets the same option, the last one wins.[0m
 
 [38;2;253;151;31mSTYLES[0m
-[38;2;166;226;46m------[0m
+[38;2;248;248;242m------[0m
 
 [38;2;248;248;242mAll options that have a name like --*-style work the same way. It is very similar to how[0m
 [38;2;248;248;242mcolors/styles are specified in a gitconfig file:[0m
@@ -446,7 +446,7 @@
 [38;2;248;248;242m  styling to the element in question.[0m
 
 [38;2;253;151;31mCOLORS[0m
-[38;2;166;226;46m------[0m
+[38;2;248;248;242m------[0m
 
 [38;2;248;248;242mThere are four ways to specify a color (this section applies to foreground and background colors[0m
 [38;2;248;248;242mwithin a style string):[0m
@@ -491,7 +491,7 @@
 
 
 [38;2;253;151;31mLINE NUMBERS[0m
-[38;2;166;226;46m------------[0m
+[38;2;248;248;242m------------[0m
 
 [38;2;248;248;242mTo display line numbers, use --line-numbers.[0m
 

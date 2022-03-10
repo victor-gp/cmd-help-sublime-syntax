@@ -81,5 +81,4 @@ If you *really* want to see every option, then you can pass
 '--show-options' to the compiler.
 
 ------------------------------------------------------------------------
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.help
-#fixme: don't scope these as option
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^ - entity.name.cmd-option.help

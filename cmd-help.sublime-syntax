@@ -58,6 +58,9 @@ contexts:
     - include: else-pop
 
   def-option:
+    - match: '^----'
+      # definitely not an option
+      pop: true
     - match: '-{{option_name}}'
       scope: entity.name.cmd-option.help
       set: def-option-next
