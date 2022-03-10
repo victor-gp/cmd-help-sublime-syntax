@@ -17,7 +17,7 @@ parser = argparse.ArgumentParser(
     description='Run syntax tests in tests/syntax/.'
 )
 parser.add_argument(
-    'path', type=str, nargs='?',
+    'test_path', type=str, nargs='?',
     help='path to a particular syntax test in tests/syntax/, \
           relative from the root directory of the project'
 )
@@ -29,7 +29,7 @@ script_args = parser.parse_args()
 ### environment
 
 source_path = Path(__file__).resolve()
-source_dir = source_path.parent # test/
+source_dir = source_path.parent # tests/
 chdir(source_dir)
 
 ret = subprocess.call(
@@ -53,17 +53,18 @@ subprocess.call(
 
 default_tests_path = '/tests/syntax'
 default_syntaxes_path = '/tests/syntax/under-test'
+default_args = f"{default_tests_path} {default_syntaxes_path}"
 
 args = ""
-if script_args.path:
-    args = f"{script_args.path} {default_syntaxes_path}"
+if script_args.test_path:
+    args = f"{script_args.test_path} {default_syntaxes_path}"
 if script_args.debug:
     if not args:
-        args = f"{default_tests_path} {default_syntaxes_path}"
+        args = default_args
     args += " --debug"
 if script_args.summary:
     if not args:
-        args = f"{default_tests_path} {default_syntaxes_path}"
+        args = default_args
     args += " --summary"
 
 ### run
