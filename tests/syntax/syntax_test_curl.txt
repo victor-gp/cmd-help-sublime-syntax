@@ -217,9 +217,7 @@ Usage: curl [options...] <url>
      --tlsuser <name> TLS user name
  -1, --tlsv1         Use TLSv1.0 or greater
      --tlsv1.0       Use TLSv1.0 or greater
-#    ^^^^^^^ entity.name.cmd-option.help
-#           ^^ - entity.name.cmd-option.help
-#nice: handle dots in options
+#    ^^^^^^^^^ entity.name.cmd-option.help
      --tlsv1.1       Use TLSv1.1 or greater
      --tlsv1.2       Use TLSv1.2 or greater
      --tlsv1.3       Use TLSv1.3 or greater

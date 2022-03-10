@@ -39,5 +39,5 @@ Usage:  irb.rb [options] [programfile] [arguments]
   -v, --version	    Print the version of irb
   -h, --help        Print help
   --                Separate options of irb from the list of command-line args
-# ^^ - entity.name.cmd-option.help
-# handle this? but like what, an option?
+# ^^ entity.name.cmd-option.help
+#nice: should we scope this as something not an option?

@@ -9,8 +9,7 @@ Usage: vim [arguments] [file ..]       edit specified file(s)
 
 Arguments:
    --			Only file names after this
-#  ^^ - entity.name.cmd-option.help
-#todo: handle this pattern
+#  ^^ entity.name.cmd-option.help
    -v			Vi mode (like "vi")
    -e			Ex mode (like "ex")
    -E			Improved Ex mode

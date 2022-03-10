@@ -46,8 +46,7 @@ Options:
   -B <directory>           Add <directory> to the compiler's search paths.
   -v                       Display the programs invoked by the compiler.
   -###                     Like -v but options quoted and commands not executed.
-# ^^^^ - entity.name.cmd-option.help
-#nice: handle this
+# ^^^^ entity.name.cmd-option.help
   -E                       Preprocess only; do not compile, assemble or link.
   -S                       Compile only; do not assemble or link.
   -c                       Compile and assemble, but do not link.

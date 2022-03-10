@@ -57,5 +57,4 @@ When a filename is '-', nano reads data from standard input.
  -y             --afterends             Make Ctrl+Right stop at word ends
  -z             --suspend               Enable suspension
  -$             --softwrap              Enable soft line wrapping
-#^^ - entity.name.cmd-option.help
-#nice: handle this
+#^^ entity.name.cmd-option.help

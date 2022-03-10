@@ -5,18 +5,20 @@ file_extensions:
   - cmd-help # doesn't really exist, but useful for the shortname
 scope: text.help
 
-variables:
-  # todo: make this [:alpha:][:alnum:]* ?
-  word: '[:alpha:]*\b'
-  kebab_word: '{{word}}(-{{word}})*'
 
-### section name variables
+variables:
+### section name variables:
   # lowercase, uppercase or dash char (for compound words)
   alpha_dash: '[[:lower:][:upper:]-]'
   # all kinds of words, including those within 1/2 parentheses
   any_word: '\(?{{alpha_dash}}+\)?'
   # words starting with uppercase
   leading_word: '[:upper:]({{alpha_dash}})*\b'
+
+### command option variables:
+  option_IFS: '[ \t\n,=\[<]'
+  # marks seen in option names: . ? : # $ --
+  option_name: '[^{{option_IFS}}]+'
 
 
 contexts:
@@ -56,7 +58,7 @@ contexts:
     - include: else-pop
 
   def-option:
-    - match: '-[[:alnum:]-]+\b'
+    - match: '-{{option_name}}'
       scope: entity.name.cmd-option.help
       set: def-option-next
     - include: else-pop
