@@ -63,10 +63,22 @@ contexts:
       pop: true
     - match: '-{{option_name}}'
       scope: entity.name.cmd-option.help
-      set: def-option-next
+      set: def-option-post
     - include: else-pop
 
-  def-option-next:
+  def-option-post:
     - match: ', '
       set: def-option
+    - match: ' '
+      set: def-option-post-space
     - include: else-pop
+
+  def-option-post-space:
+    - match: '<'
+      set: option-argument-angle
+    - include: else-pop
+
+  option-argument-angle:
+    - meta_scope: variable.parameter.option-argument.help
+    - match: '>'
+      pop: true
