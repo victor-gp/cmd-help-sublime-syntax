@@ -77,6 +77,8 @@ contexts:
     - match: '='
       set: equals-after-option
       # alt: match directly in option-argument and colorize '=' too?
+    - match: '\[=|\['
+      set: square-brackets-after-option
     - include: else-pop
 
   space-after-option:
@@ -90,6 +92,12 @@ contexts:
       scope: variable.parameter.option-argument.help
       set: option-argument-post
     - include: else-pop
+
+  square-brackets-after-option:
+    - meta_content_scope: variable.parameter.option-argument.help
+    - match: '(?=])'
+      scope: text.help
+      set: option-argument-post
 
   option-argument-post:
     - match: '({{ellipsis}})?'

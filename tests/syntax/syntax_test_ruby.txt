@@ -3,8 +3,7 @@
 Usage: ruby [switches] [--] [programfile] [arguments]
   -0[octal]       specify record separator (\0, if no argument)
 # ^^ entity.name.cmd-option.help
-#   ^^^^^^^ - variable.parameter.option-argument.help
-#nice: handle this as option argument/variable
+#    ^^^^^ variable.parameter.option-argument.help
   -a              autosplit mode with -n or -p (splits $_ into $F)
   -c              check syntax only
   -Cdirectory     cd to directory before executing your script
@@ -12,7 +11,7 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   -d, --debug     set debugging flags (set $DEBUG to true)
   -e 'command'    one line of script. Several -e's allowed. Omit [programfile]
   -Eex[:in], --encoding=ex[:in]
-#     ^^^^^ - variable.parameter.option-argument.help
+#      ^^^ variable.parameter.option-argument.help
 #                      ^^^^^^^^ - variable.parameter.option-argument.help
                   specify the default external and internal character encodings
   -Fpattern       split() pattern for autosplit (-a)
@@ -28,12 +27,12 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   -v              print the version number, then turn on verbose mode
   -w              turn warnings on for your script
   -W[level=2|:category]
-#   ^^^^^^^^^^^^^^^^^^^ - variable.parameter.option-argument.help
+#    ^^^^^^^^^^^^^^^^^ variable.parameter.option-argument.help
                   set warning level; 0=silence, 1=medium, 2=verbose
   -x[directory]   strip off text before #!ruby line and perhaps cd to directory
   --jit           enable JIT with default options (experimental)
   --jit-[option]  enable JIT with an option (experimental)
-#       ^^^^^^^^ - variable.parameter.option-argument.help
+#        ^^^^^^ variable.parameter.option-argument.help
   --copyright     print the copyright
   --dump={insns|parsetree|...}[,...]
 #        ^^^^^^^^^^^^^^^^^^^^^^^^^^^ - variable.parameter.option-argument.help

@@ -1,14 +1,14 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m ruby [switches] [--] [programfile] [arguments][0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m[octal]       specify record separator (\0, if no argument)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m[[0m[38;2;253;151;31moctal[0m[38;2;248;248;242m]       specify record separator (\0, if no argument)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m              autosplit mode with -n or -p (splits $_ into $F)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m              check syntax only[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Cdirectory[0m[38;2;248;248;242m     cd to directory before executing your script[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m     set debugging flags (set $DEBUG to true)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m 'command'    one line of script. Several -e's allowed. Omit [programfile][0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Eex[0m[38;2;248;248;242m[:in], --encoding=ex[:in][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Eex[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:in[0m[38;2;248;248;242m], --encoding=ex[:in][0m
 [38;2;248;248;242m                  specify the default external and internal character encodings[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Fpattern[0m[38;2;248;248;242m       split() pattern for autosplit (-a)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m[extension]   edit ARGV files in place (make backup if extension supplied)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m[[0m[38;2;253;151;31mextension[0m[38;2;248;248;242m]   edit ARGV files in place (make backup if extension supplied)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Idirectory[0m[38;2;248;248;242m     specify $LOAD_PATH directory (may be used more than once)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m              enable line ending processing[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m              assume 'while gets(); ... end' loop around your script[0m
@@ -18,11 +18,11 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m              look for the script using PATH environment variable[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m              print the version number, then turn on verbose mode[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m              turn warnings on for your script[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m[level=2|:category][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m[[0m[38;2;253;151;31mlevel=2|:category[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  set warning level; 0=silence, 1=medium, 2=verbose[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m[directory]   strip off text before #!ruby line and perhaps cd to directory[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m[[0m[38;2;253;151;31mdirectory[0m[38;2;248;248;242m]   strip off text before #!ruby line and perhaps cd to directory[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit[0m[38;2;248;248;242m           enable JIT with default options (experimental)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-[0m[38;2;248;248;242m[option]  enable JIT with an option (experimental)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-[0m[38;2;248;248;242m[[0m[38;2;253;151;31moption[0m[38;2;248;248;242m]  enable JIT with an option (experimental)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--copyright[0m[38;2;248;248;242m     print the copyright[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--dump[0m[38;2;248;248;242m={insns|parsetree|...}[,...][0m
 [38;2;248;248;242m                  dump debug information. see below for available dump list[0m

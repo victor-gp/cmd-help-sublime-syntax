@@ -11,8 +11,7 @@ Mandatory arguments to long options are mandatory for short options too.
   -a, --archive                same as -dR --preserve=all
       --attributes-only        don't copy the file data, just the attributes
       --backup[=CONTROL]       make a backup of each existing destination file
-#             ^^^^^^^^^^ - variable.parameter.option-argument.help
-#todo: handle optional option arguments like this one
+#               ^^^^^^^ variable.parameter.option-argument.help
   -b                           like --backup but does not accept an argument
       --copy-contents          copy contents of special files when recursive
   -d                           same as --no-dereference --preserve=links

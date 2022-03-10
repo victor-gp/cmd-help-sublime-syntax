@@ -82,7 +82,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--minimal[0m[38;2;248;248;242m            try hard to find a smaller set of changes[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--horizon-lines[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m  keep NUM lines of the common prefix and suffix[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--speed-large-files[0m[38;2;248;248;242m  assume large files and many scattered small changes[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m[=WHEN]       colorize the output; WHEN can be 'never', 'always',[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mWHEN[0m[38;2;248;248;242m]       colorize the output; WHEN can be 'never', 'always',[0m
 [38;2;248;248;242m                             or 'auto' (the default)[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--palette[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPALETTE[0m[38;2;248;248;242m    the colors to use when --color is active; PALETTE is[0m
 [38;2;248;248;242m                             a colon-separated list of terminfo capabilities[0m
