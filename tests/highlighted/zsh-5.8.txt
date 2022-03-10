@@ -5,7 +5,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  show zsh version number, then exit[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m         end option processing, like --[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m         take first argument as a command to execute[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m OPTION  set an option by name (see below)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m [0m[38;2;253;151;31mOPTION[0m[38;2;248;248;242m  set an option by name (see below)[0m
 
 [38;2;248;248;242mNormal options are named.  An option may be turned on by[0m
 [38;2;248;248;242m`-o OPTION', `--OPTION', `+o no_OPTION' or `+-no-OPTION'.  An[0m

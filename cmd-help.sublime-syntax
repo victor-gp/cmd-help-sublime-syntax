@@ -23,7 +23,7 @@ variables:
 ### command/option argument variables:
   ellipsis: '\.\.\.'
   argument_name: '[:alpha:][[:alnum:]_]*'
-  allcaps_argument_name: '[:upper:][[:upper:][:num:]_]*'
+  allcaps_argument_name: '[:upper:][[:upper:][:digit:]_]*'
 
 
 contexts:
@@ -83,6 +83,9 @@ contexts:
 
   space-after-option:
     - match: '<.*?>'
+      scope: variable.parameter.option-argument.help
+      set: option-argument-post
+    - match: '{{allcaps_argument_name}}\b'
       scope: variable.parameter.option-argument.help
       set: option-argument-post
     - include: else-pop

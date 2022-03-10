@@ -19,6 +19,7 @@ Mandatory arguments to long options are mandatory for short options too.
   -p, --show-c-function         show which C function each change is in
   -F, --show-function-line=RE   show the most recent line matching RE
       --label LABEL             use LABEL instead of file name and timestamp
+#             ^^^^^ variable.parameter.option-argument.help
                                   (can be repeated)
 
   -t, --expand-tabs             expand tabs to spaces in output
