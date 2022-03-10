@@ -131,8 +131,7 @@ Usage: curl [options...] <url>
      --post303       Do not switch to GET after following a 303
      --preproxy [protocol://]host[:port] Use this proxy first
  -#, --progress-bar  Display transfer progress as a bar
-#^^ - entity.name.option
-# nice: handle this
+#^^ entity.name.cmd-option.help
      --proto <protocols> Enable/disable PROTOCOLS
      --proto-default <protocol> Use PROTOCOL for any URL missing a scheme
      --proto-redir <protocols> Enable/disable PROTOCOLS on redirect
