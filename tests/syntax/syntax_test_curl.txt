@@ -15,6 +15,7 @@ Usage: curl [options...] <url>
      --ciphers <list of ciphers> SSL ciphers to use
      --compressed    Request compressed response
      --compressed-ssh Enable SSH compression
+#                     ^^^^^^ - variable.parameter.option-argument.help
  -K, --config <file> Read config from a file
      --connect-timeout <seconds> Maximum time allowed for connection
      --connect-to <HOST1:PORT1:HOST2:PORT2> Connect to host

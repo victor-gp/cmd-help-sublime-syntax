@@ -88,6 +88,9 @@ contexts:
     - match: '{{allcaps_argument_name}}\b'
       scope: variable.parameter.option-argument.help
       set: option-argument-post
+    - match: '{{argument_name}}(?=  )'
+      scope: variable.parameter.option-argument.help
+      set: option-argument-post
     - include: else-pop
 
   equals-after-option:

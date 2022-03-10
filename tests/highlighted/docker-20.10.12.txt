@@ -4,15 +4,15 @@
 [38;2;253;151;31mA self-sufficient runtime for containers[0m
 
 [38;2;253;151;31mOptions:[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m string      Location of client config files (default "/home/victor-gp/.docker")[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set with "docker context use")[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m      Location of client config files (default "/home/victor-gp/.docker")[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set with "docker context use")[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m              Enable debug mode[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--host[0m[38;2;248;248;242m list          Daemon socket(s) to connect to[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--log-level[0m[38;2;248;248;242m string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--host[0m[38;2;248;248;242m [0m[38;2;253;151;31mlist[0m[38;2;248;248;242m          Daemon socket(s) to connect to[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--log-level[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--tls[0m[38;2;248;248;242m                Use TLS; implied by --tlsverify[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--tlscacert[0m[38;2;248;248;242m string   Trust certs signed only by this CA (default "/home/victor-gp/.docker/ca.pem")[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--tlscert[0m[38;2;248;248;242m string     Path to TLS certificate file (default "/home/victor-gp/.docker/cert.pem")[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--tlskey[0m[38;2;248;248;242m string      Path to TLS key file (default "/home/victor-gp/.docker/key.pem")[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tlscacert[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m   Trust certs signed only by this CA (default "/home/victor-gp/.docker/ca.pem")[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tlscert[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m     Path to TLS certificate file (default "/home/victor-gp/.docker/cert.pem")[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tlskey[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m      Path to TLS key file (default "/home/victor-gp/.docker/key.pem")[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--tlsverify[0m[38;2;248;248;242m          Use TLS and verify the remote[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m            Print version information and quit[0m
 

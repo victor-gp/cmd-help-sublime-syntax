@@ -9,14 +9,14 @@
 [38;2;248;248;242m    7) swipl [options] [-o output] -b bootfile -c prolog-file ...[0m
 
 [38;2;253;151;31mOptions:[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m state         Start from state (must be first)[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m [0m[38;2;253;151;31mstate[0m[38;2;248;248;242m         Start from state (must be first)[0m
 [38;2;248;248;242m    -[LGT]size[KMG]  Specify {Local,Global,Trail} limits[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m toplevel      Toplevel goal[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m goal          Initialisation goal[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m file          User initialisation file[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m file          System initialisation file[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m file          Script source file[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m file          Script source file[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;253;151;31mtoplevel[0m[38;2;248;248;242m      Toplevel goal[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m [0m[38;2;253;151;31mgoal[0m[38;2;248;248;242m          Initialisation goal[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m [0m[38;2;253;151;31mfile[0m[38;2;248;248;242m          User initialisation file[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m [0m[38;2;253;151;31mfile[0m[38;2;248;248;242m          System initialisation file[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m [0m[38;2;253;151;31mfile[0m[38;2;248;248;242m          Script source file[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m [0m[38;2;253;151;31mfile[0m[38;2;248;248;242m          Script source file[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m alias=path    Define file search path 'alias'[0m
 [38;2;248;248;242m    [+/-]tty         Allow tty control[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m               Optimised compilation[0m
