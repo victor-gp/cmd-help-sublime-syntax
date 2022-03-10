@@ -72,7 +72,6 @@ if script_args.summary:
 completed_process = subprocess.run(
     f"docker run --rm {volume} {image_tag} {args}",
     shell=True,
-    check=True,
     capture_output=True,
     text=True,
 )
