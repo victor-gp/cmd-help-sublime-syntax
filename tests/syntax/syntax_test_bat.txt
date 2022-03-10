@@ -24,14 +24,14 @@ OPTIONS:
             --pager=never').
 #           ^^^^^^^ - entity.name.cmd-option.help
     -l, --language <language>
-#                 ^ - entity.name.cmd-option.help - option-argument.help
-#                  ^^^^^^^^^^ - option-argument.help
+#                 ^ - entity.name.cmd-option.help - variable.parameter.option-argument.help
+#                  ^^^^^^^^^^ - variable.parameter.option-argument.help
 #todo: scope option arguments
             Explicitly set the language for syntax highlighting. The language can be specified as a
             name (like 'C++' or 'LaTeX') or possible file extension (like 'cpp', 'hpp' or 'md'). Use
             '--list-languages' to show all supported language names and file extensions.
     -H, --highlight-line <N:M>...
-#                        ^^^^^ - option-argument.help
+#                        ^^^^^ - variable.parameter.option-argument.help
 #nice: detect this as option argument
             Highlight the specified line ranges with a different background color For example:
               '--highlight-line 40' highlights line 40
@@ -40,7 +40,7 @@ OPTIONS:
               '--highlight-line 40:' highlights lines 40 to the end of the file
         --file-name <name>...
 #       ^^^^^^^^^^^ entity.name.cmd-option.help
-#                   ^^^^^^^^^ - option-argument.help
+#                   ^^^^^^^^^ - variable.parameter.option-argument.help
 #todo: handle ellipses in arguments
             Specify the name to display for a file. Useful when piping data to bat from STDIN when
             bat does not otherwise know the filename. Note that the provided file name is also used
