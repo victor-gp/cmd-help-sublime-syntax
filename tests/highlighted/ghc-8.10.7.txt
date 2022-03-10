@@ -44,7 +44,7 @@
 
 [38;2;253;151;31mOther commonly-used options are:[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m[n]	    Control verbosity (n is 0--5, normal verbosity level is 1,[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m[[0m[38;2;253;151;31mn[0m[38;2;248;248;242m]	    Control verbosity (n is 0--5, normal verbosity level is 1,[0m
 [38;2;248;248;242m	              -v alone is equivalent to -v3)[0m
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m		    An `optimising' package of compiler flags, for faster code[0m

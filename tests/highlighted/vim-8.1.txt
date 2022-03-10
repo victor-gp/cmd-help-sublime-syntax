@@ -21,7 +21,7 @@
 [38;2;248;248;242m   [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m			Lisp mode[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m			Compatible with Vi: 'compatible'[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m			Not fully Vi compatible: 'nocompatible'[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m[N][fname]		Be verbose [level N] [log messages to fname][0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m[[0m[38;2;253;151;31mN[0m[38;2;248;248;242m][fname]		Be verbose [level N] [log messages to fname][0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m			Debugging mode[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m			No swap file, use memory only[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m			List swap files and exit[0m
@@ -34,9 +34,9 @@
 [38;2;248;248;242m   [0m[38;2;166;226;46m--ttyfail[0m[38;2;248;248;242m		Exit if input or output is not a terminal[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m [0m[38;2;253;151;31m<vimrc>[0m[38;2;248;248;242m		Use <vimrc> instead of any .vimrc[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--noplugin[0m[38;2;248;248;242m		Don't load plugin scripts[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m[N]		Open N tab pages (default: one for each file)[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m[N]		Open N windows (default: one for each file)[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m[N]		Like -o but split vertically[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m[[0m[38;2;253;151;31mN[0m[38;2;248;248;242m]		Open N tab pages (default: one for each file)[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m[[0m[38;2;253;151;31mN[0m[38;2;248;248;242m]		Open N windows (default: one for each file)[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m[[0m[38;2;253;151;31mN[0m[38;2;248;248;242m]		Like -o but split vertically[0m
 [38;2;248;248;242m   +			Start at end of file[0m
 [38;2;248;248;242m   +<lnum>		Start at line <lnum>[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--cmd[0m[38;2;248;248;242m [0m[38;2;253;151;31m<command>[0m[38;2;248;248;242m	Execute <command> before loading any vimrc file[0m

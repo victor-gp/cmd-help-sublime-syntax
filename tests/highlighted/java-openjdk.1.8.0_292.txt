@@ -16,7 +16,7 @@
 [38;2;248;248;242m                  and ZIP archives to search for class files.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m<name>=<value>[0m
 [38;2;248;248;242m                  set a system property[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-verbose:[0m[38;2;248;248;242m[class|gc|jni][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-verbose:[0m[38;2;248;248;242m[[0m[38;2;253;151;31mclass|gc|jni[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  enable verbose output[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-version[0m[38;2;248;248;242m      print product version and exit[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-version:[0m[38;2;248;248;242m<value>[0m
@@ -30,11 +30,11 @@
 [38;2;248;248;242m                  include/exclude user private JREs in the version search[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-?[0m[38;2;248;248;242m -help      print this help message[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m            print help on non-standard options[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-ea[0m[38;2;248;248;242m[:<packagename>...|:<classname>][0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-enableassertions[0m[38;2;248;248;242m[:<packagename>...|:<classname>][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-ea[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:<packagename>...|:<classname>[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-enableassertions[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:<packagename>...|:<classname>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  enable assertions with specified granularity[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-da[0m[38;2;248;248;242m[:<packagename>...|:<classname>][0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-disableassertions[0m[38;2;248;248;242m[:<packagename>...|:<classname>][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-da[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:<packagename>...|:<classname>[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-disableassertions[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:<packagename>...|:<classname>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  disable assertions with specified granularity[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-esa[0m[38;2;248;248;242m | -enablesystemassertions[0m
 [38;2;248;248;242m                  enable system assertions[0m

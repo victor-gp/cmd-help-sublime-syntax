@@ -7,7 +7,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m     print a message for each created directory[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m                   set SELinux security context of each created directory[0m
 [38;2;248;248;242m                         to the default type[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m[=CTX]  like -Z, or if CTX is specified then set the SELinux[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mCTX[0m[38;2;248;248;242m]  like -Z, or if CTX is specified then set the SELinux[0m
 [38;2;248;248;242m                         or SMACK security context to CTX[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m     display this help and exit[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m

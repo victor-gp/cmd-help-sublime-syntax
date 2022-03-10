@@ -25,4 +25,4 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m          Quiet operation (also -q)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--traditional[0m[38;2;248;248;242m    Disable extensions of version 7[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--home[0m[38;2;248;248;242m=[0m[38;2;253;151;31mDIR[0m[38;2;248;248;242m       Use DIR as SWI-Prolog home[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--pldoc[0m[38;2;248;248;242m[=port]   Start PlDoc server [at port][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--pldoc[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mport[0m[38;2;248;248;242m]   Start PlDoc server [at port][0m

@@ -5,7 +5,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m DIRECTORY, --directory=DIRECTORY[0m
 [38;2;248;248;242m                              Change to DIRECTORY before doing anything.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m                          Print lots of debugging information.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m[=FLAGS]             Print various types of debugging information.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mFLAGS[0m[38;2;248;248;242m]             Print various types of debugging information.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--environment-overrides[0m
 [38;2;248;248;242m                              Environment variables override makefiles.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--eval[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTRING[0m[38;2;248;248;242m               Evaluate STRING as a makefile statement.[0m
@@ -24,7 +24,7 @@
 [38;2;248;248;242m                              Don't actually run any recipe; just print them.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m FILE, --old-file=FILE, --assume-old=FILE[0m
 [38;2;248;248;242m                              Consider FILE to be very old and don't remake it.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m[TYPE], --output-sync[=TYPE][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m[[0m[38;2;253;151;31mTYPE[0m[38;2;248;248;242m], --output-sync[=TYPE][0m
 [38;2;248;248;242m                              Synchronize output of parallel jobs by TYPE.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--print-data-base[0m[38;2;248;248;242m       Print make's internal database.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--question[0m[38;2;248;248;242m              Run no recipe; exit status says if up to date.[0m
