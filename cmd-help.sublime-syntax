@@ -45,8 +45,6 @@ contexts:
     - match: ''
       pop: true
 
-  ### CONTENT
-
   pre-heading:
     - match: '(?i:usage):(?=.+\n)'
       scope: markup.heading.inline-usage.help
@@ -75,25 +73,20 @@ contexts:
     - match: ', '
       set: def-option
     - match: ' '
-      set: def-option-post-space
+      set: space-after-option
     - match: '='
-      set: def-option-post-equals
+      set: equals-after-option
       # alt: match directly in option-argument and colorize '=' too?
     - include: else-pop
 
-  def-option-post-space:
-    - match: ''
-      set: [option-argument]
-    - include: else-pop
-
-  def-option-post-equals:
-    - match: '{{argument_name}}'
+  space-after-option:
+    - match: '<.*?>'
       scope: variable.parameter.option-argument.help
       set: option-argument-post
     - include: else-pop
 
-  option-argument:
-    - match: '<.*?>'
+  equals-after-option:
+    - match: '{{argument_name}}'
       scope: variable.parameter.option-argument.help
       set: option-argument-post
     - include: else-pop
