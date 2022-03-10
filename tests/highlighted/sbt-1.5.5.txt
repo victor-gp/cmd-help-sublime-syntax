@@ -22,7 +22,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--mem[0m[38;2;248;248;242m    <integer>  set memory options (default: 1024)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-share[0m[38;2;248;248;242m          use all local caches; no sharing[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-global[0m[38;2;248;248;242m         uses global caches, but does not use global ~/.sbt directory.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jvm-debug[0m[38;2;248;248;242m <port>  Turn on JVM debugging, open at the given port.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jvm-debug[0m[38;2;248;248;242m [0m[38;2;253;151;31m<port>[0m[38;2;248;248;242m  Turn on JVM debugging, open at the given port.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--batch[0m[38;2;248;248;242m             disable interactive mode[0m
 
 [38;2;248;248;242m  # sbt version (default: from project/build.properties if present, else latest release)[0m
@@ -30,7 +30,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--sbt-jar[0m[38;2;248;248;242m      <path>      use the specified jar as the sbt launcher[0m
 
 [38;2;248;248;242m  # java version (default: java from PATH, currently openjdk version "1.8.0_292")[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--java-home[0m[38;2;248;248;242m <path>         alternate JAVA_HOME[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--java-home[0m[38;2;248;248;242m [0m[38;2;253;151;31m<path>[0m[38;2;248;248;242m         alternate JAVA_HOME[0m
 
 [38;2;248;248;242m  # jvm options and output control[0m
 [38;2;248;248;242m  JAVA_OPTS           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m

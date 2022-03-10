@@ -29,25 +29,25 @@
 [38;2;248;248;242m   [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m			Same as -r[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m			Start in Arabic mode[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m			Start in Hebrew mode[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m <terminal>	Set terminal type to <terminal>[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m [0m[38;2;253;151;31m<terminal>[0m[38;2;248;248;242m	Set terminal type to <terminal>[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--not-a-term[0m[38;2;248;248;242m		Skip warning for input/output not being a terminal[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--ttyfail[0m[38;2;248;248;242m		Exit if input or output is not a terminal[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m <vimrc>		Use <vimrc> instead of any .vimrc[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m [0m[38;2;253;151;31m<vimrc>[0m[38;2;248;248;242m		Use <vimrc> instead of any .vimrc[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--noplugin[0m[38;2;248;248;242m		Don't load plugin scripts[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m[N]		Open N tab pages (default: one for each file)[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m[N]		Open N windows (default: one for each file)[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m[N]		Like -o but split vertically[0m
 [38;2;248;248;242m   +			Start at end of file[0m
 [38;2;248;248;242m   +<lnum>		Start at line <lnum>[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m--cmd[0m[38;2;248;248;242m <command>	Execute <command> before loading any vimrc file[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m <command>		Execute <command> after loading the first file[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m <session>		Source file <session> after loading the first file[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m <scriptin>	Read Normal mode commands from file <scriptin>[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m <scriptout>	Append all typed commands to file <scriptout>[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m <scriptout>	Write all typed commands to file <scriptout>[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--cmd[0m[38;2;248;248;242m [0m[38;2;253;151;31m<command>[0m[38;2;248;248;242m	Execute <command> before loading any vimrc file[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m [0m[38;2;253;151;31m<command>[0m[38;2;248;248;242m		Execute <command> after loading the first file[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m [0m[38;2;253;151;31m<session>[0m[38;2;248;248;242m		Source file <session> after loading the first file[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m [0m[38;2;253;151;31m<scriptin>[0m[38;2;248;248;242m	Read Normal mode commands from file <scriptin>[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m [0m[38;2;253;151;31m<scriptout>[0m[38;2;248;248;242m	Append all typed commands to file <scriptout>[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m [0m[38;2;253;151;31m<scriptout>[0m[38;2;248;248;242m	Write all typed commands to file <scriptout>[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m			Edit encrypted files[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m--startuptime[0m[38;2;248;248;242m <file>	Write startup timing messages to <file>[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m <viminfo>		Use <viminfo> instead of .viminfo[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--startuptime[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m	Write startup timing messages to <file>[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m [0m[38;2;253;151;31m<viminfo>[0m[38;2;248;248;242m		Use <viminfo> instead of .viminfo[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--clean[0m[38;2;248;248;242m		'nocompatible', Vim defaults, no plugins, no viminfo[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m  or  --help	Print Help (this message) and exit[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m		Print version information and exit[0m

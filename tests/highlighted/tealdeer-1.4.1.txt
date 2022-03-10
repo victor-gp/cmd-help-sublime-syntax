@@ -17,7 +17,7 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m --quiet          Suppress informational messages[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--config-path[0m[38;2;248;248;242m       Show config file path[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--seed-config[0m[38;2;248;248;242m       Create a basic config[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m <when>      Control when to use color [always, auto, never] [default: auto][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m [0m[38;2;253;151;31m<when>[0m[38;2;248;248;242m      Control when to use color [always, auto, never] [default: auto][0m
 
 [38;2;253;151;31mExamples:[0m
 

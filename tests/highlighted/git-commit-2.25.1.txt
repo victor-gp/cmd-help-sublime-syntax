@@ -55,11 +55,11 @@
 [38;2;248;248;242m           Use the interactive patch selection interface to chose which changes to commit. See[0m
 [38;2;248;248;242m           git-add(1) for details.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m <commit>, --reuse-message=<commit>[0m
+[38;2;248;248;242m       [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m [0m[38;2;253;151;31m<commit>[0m[38;2;248;248;242m, --reuse-message=<commit>[0m
 [38;2;248;248;242m           Take an existing commit object, and reuse the log message and the authorship[0m
 [38;2;248;248;242m           information (including the timestamp) when creating the commit.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m <commit>, --reedit-message=<commit>[0m
+[38;2;248;248;242m       [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m [0m[38;2;253;151;31m<commit>[0m[38;2;248;248;242m, --reedit-message=<commit>[0m
 [38;2;248;248;242m           Like -C, but with -c the editor is invoked, so that the user can further edit the[0m
 [38;2;248;248;242m           commit message.[0m
 
@@ -100,7 +100,7 @@
 [38;2;248;248;242m           are quoted as explained for the configuration variable core.quotePath (see git-[0m
 [38;2;248;248;242m           config(1)).[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m <file>, --file=<file>[0m
+[38;2;248;248;242m       [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m, --file=<file>[0m
 [38;2;248;248;242m           Take the commit message from the given file. Use - to read the message from the[0m
 [38;2;248;248;242m           standard input.[0m
 
@@ -113,13 +113,13 @@
 [38;2;248;248;242m       [0m[38;2;166;226;46m--date[0m[38;2;248;248;242m=<date>[0m
 [38;2;248;248;242m           Override the author date used in the commit.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m <msg>, --message=<msg>[0m
+[38;2;248;248;242m       [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m [0m[38;2;253;151;31m<msg>[0m[38;2;248;248;242m, --message=<msg>[0m
 [38;2;248;248;242m           Use the given <msg> as the commit message. If multiple -m options are given, their[0m
 [38;2;248;248;242m           values are concatenated as separate paragraphs.[0m
 
 [38;2;248;248;242m           The -m option is mutually exclusive with -c, -C, and -F.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m <file>, --template=<file>[0m
+[38;2;248;248;242m       [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m, --template=<file>[0m
 [38;2;248;248;242m           When editing the commit message, start the editor with the contents in the given file.[0m
 [38;2;248;248;242m           The commit.template configuration variable is often used to give this option[0m
 [38;2;248;248;242m           implicitly to the command. This mechanism can be used by projects that want to guide[0m

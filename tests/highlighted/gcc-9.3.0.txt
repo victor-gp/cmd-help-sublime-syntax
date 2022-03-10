@@ -25,9 +25,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Wa[0m[38;2;248;248;242m,<options>            Pass comma-separated <options> on to the assembler.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Wp[0m[38;2;248;248;242m,<options>            Pass comma-separated <options> on to the preprocessor.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Wl[0m[38;2;248;248;242m,<options>            Pass comma-separated <options> on to the linker.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Xassembler[0m[38;2;248;248;242m <arg>        Pass <arg> on to the assembler.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Xpreprocessor[0m[38;2;248;248;242m <arg>     Pass <arg> on to the preprocessor.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Xlinker[0m[38;2;248;248;242m <arg>           Pass <arg> on to the linker.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Xassembler[0m[38;2;248;248;242m [0m[38;2;253;151;31m<arg>[0m[38;2;248;248;242m        Pass <arg> on to the assembler.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Xpreprocessor[0m[38;2;248;248;242m [0m[38;2;253;151;31m<arg>[0m[38;2;248;248;242m     Pass <arg> on to the preprocessor.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Xlinker[0m[38;2;248;248;242m [0m[38;2;253;151;31m<arg>[0m[38;2;248;248;242m           Pass <arg> on to the linker.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-save-temps[0m[38;2;248;248;242m              Do not delete intermediate files.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-save-temps[0m[38;2;248;248;242m=<arg>        Do not delete intermediate files.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-no-canonical-prefixes[0m[38;2;248;248;242m   Do not canonicalize paths when building relative[0m
@@ -38,17 +38,17 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-std[0m[38;2;248;248;242m=<standard>          Assume that the input sources are for <standard>.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--sysroot[0m[38;2;248;248;242m=<directory>    Use <directory> as the root directory for headers[0m
 [38;2;248;248;242m                           and libraries.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m <directory>           Add <directory> to the compiler's search paths.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m [0m[38;2;253;151;31m<directory>[0m[38;2;248;248;242m           Add <directory> to the compiler's search paths.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m                       Display the programs invoked by the compiler.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-###[0m[38;2;248;248;242m                     Like -v but options quoted and commands not executed.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m                       Preprocess only; do not compile, assemble or link.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m                       Compile only; do not assemble or link.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m                       Compile and assemble, but do not link.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m <file>                Place the output into <file>.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m                Place the output into <file>.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-pie[0m[38;2;248;248;242m                     Create a dynamically linked position independent[0m
 [38;2;248;248;242m                           executable.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-shared[0m[38;2;248;248;242m                  Create a shared library.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m <language>            Specify the language of the following input files.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m [0m[38;2;253;151;31m<language>[0m[38;2;248;248;242m            Specify the language of the following input files.[0m
 [38;2;248;248;242m                           Permissible languages include: c c++ assembler none[0m
 [38;2;248;248;242m                           'none' means revert to the default behavior of[0m
 [38;2;248;248;242m                           guessing the language based on the file's extension.[0m

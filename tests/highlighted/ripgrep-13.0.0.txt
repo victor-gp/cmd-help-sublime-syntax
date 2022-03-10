@@ -39,7 +39,7 @@
 [38;2;248;248;242m            specified on the command line override glob and ignore rules.  [0m
 
 [38;2;253;151;31mOPTIONS:[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--after-context[0m[38;2;248;248;242m <NUM>                    [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--after-context[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM>[0m[38;2;248;248;242m                    [0m
 [38;2;248;248;242m            Show NUM lines after each match.[0m
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides the --context and --passthru flags.[0m
@@ -73,7 +73,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-auto-hybrid-regex.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--before-context[0m[38;2;248;248;242m <NUM>                   [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--before-context[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM>[0m[38;2;248;248;242m                   [0m
 [38;2;248;248;242m            Show NUM lines before each match.[0m
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides the --context and --passthru flags.[0m
@@ -139,7 +139,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides the -i/--ignore-case and -S/--smart-case flags.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m <WHEN>                           [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m [0m[38;2;253;151;31m<WHEN>[0m[38;2;248;248;242m                           [0m
 [38;2;248;248;242m            This flag controls when to use colors. The default setting is 'auto', which[0m
 [38;2;248;248;242m            means ripgrep will try to guess when to use colors. For example, if ripgrep is[0m
 [38;2;248;248;242m            printing to a terminal, then it will use colors, but if it is redirected to a[0m
@@ -158,7 +158,7 @@
 [38;2;248;248;242m            When the --vimgrep flag is given to ripgrep, then the default value for the[0m
 [38;2;248;248;242m            --color flag changes to 'never'.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--colors[0m[38;2;248;248;242m <COLOR_SPEC>...                 [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--colors[0m[38;2;248;248;242m [0m[38;2;253;151;31m<COLOR_SPEC>[0m[38;2;248;248;242m...                 [0m
 [38;2;248;248;242m            This flag specifies color settings for use in the output. This flag may be[0m
 [38;2;248;248;242m            provided multiple times. Settings are applied iteratively. Colors are limited[0m
 [38;2;248;248;242m            to one of eight choices: red, blue, green, cyan, magenta, yellow, white and[0m
@@ -199,14 +199,14 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-column.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m <NUM>                          [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM>[0m[38;2;248;248;242m                          [0m
 [38;2;248;248;242m            Show NUM lines before and after each match. This is equivalent to providing[0m
 [38;2;248;248;242m            both the -B/--before-context and -A/--after-context flags with the same value.[0m
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides both the -B/--before-context and -A/--after-context flags,[0m
 [38;2;248;248;242m            in addition to the --passthru flag.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--context-separator[0m[38;2;248;248;242m <SEPARATOR>          [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--context-separator[0m[38;2;248;248;242m [0m[38;2;253;151;31m<SEPARATOR>[0m[38;2;248;248;242m          [0m
 [38;2;248;248;242m            The string used to separate non-contiguous context lines in the output. This[0m
 [38;2;248;248;242m            is only used when one of the context flags is used (-A, -B or -C). Escape[0m
 [38;2;248;248;242m            sequences like \x7F or \t may be used. The default value is --.[0m
@@ -267,7 +267,7 @@
 [38;2;248;248;242m            along with additional trace data. With --trace, the output could be quite[0m
 [38;2;248;248;242m            large and is generally more useful for development.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--dfa-size-limit[0m[38;2;248;248;242m <NUM+SUFFIX?>           [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--dfa-size-limit[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM+SUFFIX?>[0m[38;2;248;248;242m           [0m
 [38;2;248;248;242m            The upper size limit of the regex DFA. The default limit is 10M. This should[0m
 [38;2;248;248;242m            only be changed on very large regex inputs where the (slower) fallback regex[0m
 [38;2;248;248;242m            engine may otherwise be used if the limit is reached.[0m
@@ -275,7 +275,7 @@
 [38;2;248;248;242m            The argument accepts the same size suffixes as allowed in with the[0m
 [38;2;248;248;242m            --max-filesize flag.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m <ENCODING>                    [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m [0m[38;2;253;151;31m<ENCODING>[0m[38;2;248;248;242m                    [0m
 [38;2;248;248;242m            Specify the text encoding that ripgrep will use on all files searched. The[0m
 [38;2;248;248;242m            default value is 'auto', which will cause ripgrep to do a best effort automatic[0m
 [38;2;248;248;242m            detection of encoding on a per-file basis. Automatic detection in this case[0m
@@ -291,7 +291,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-encoding.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--engine[0m[38;2;248;248;242m <ENGINE>[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--engine[0m[38;2;248;248;242m [0m[38;2;253;151;31m<ENGINE>[0m
 [38;2;248;248;242m            Specify which regular expression engine to use. When you choose a regex engine,[0m
 [38;2;248;248;242m            it applies that choice for every regex provided to ripgrep (e.g., via multiple[0m
 [38;2;248;248;242m            -e/--regexp or -f/--file flags).[0m
@@ -310,19 +310,19 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides previous uses of --pcre2 and --auto-hybrid-regex flags.[0m
 [38;2;248;248;242m              [default: default][0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--field-context-separator[0m[38;2;248;248;242m <SEPARATOR>    [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--field-context-separator[0m[38;2;248;248;242m [0m[38;2;253;151;31m<SEPARATOR>[0m[38;2;248;248;242m    [0m
 [38;2;248;248;242m            Set the field context separator, which is used to delimit file paths, line[0m
 [38;2;248;248;242m            numbers, columns and the context itself, when printing contextual lines. The[0m
 [38;2;248;248;242m            separator may be any number of bytes, including zero. Escape sequences like[0m
 [38;2;248;248;242m            \x7F or \t may be used. The default value is -.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--field-match-separator[0m[38;2;248;248;242m <SEPARATOR>      [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--field-match-separator[0m[38;2;248;248;242m [0m[38;2;253;151;31m<SEPARATOR>[0m[38;2;248;248;242m      [0m
 [38;2;248;248;242m            Set the field match separator, which is used to delimit file paths, line[0m
 [38;2;248;248;242m            numbers, columns and the match itself. The separator may be any number of[0m
 [38;2;248;248;242m            bytes, including zero. Escape sequences like \x7F or \t may be used. The[0m
 [38;2;248;248;242m            default value is -.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m <PATTERNFILE>...                  [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<PATTERNFILE>[0m[38;2;248;248;242m...                  [0m
 [38;2;248;248;242m            Search for patterns from the given file, with one pattern per line. When this[0m
 [38;2;248;248;242m            flag is used multiple times or in combination with the -e/--regexp flag,[0m
 [38;2;248;248;242m            then all patterns provided are searched. Empty pattern lines will match all[0m
@@ -359,7 +359,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-follow.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--glob[0m[38;2;248;248;242m <GLOB>...                         [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--glob[0m[38;2;248;248;242m [0m[38;2;253;151;31m<GLOB>[0m[38;2;248;248;242m...                         [0m
 [38;2;248;248;242m            Include or exclude files and directories for searching that match the given[0m
 [38;2;248;248;242m            glob. This always overrides any other ignore logic. Multiple glob flags may be[0m
 [38;2;248;248;242m            used. Globbing rules match .gitignore globs. Precede a glob with a ! to exclude[0m
@@ -405,7 +405,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-hidden.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--iglob[0m[38;2;248;248;242m <GLOB>...                        [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--iglob[0m[38;2;248;248;242m [0m[38;2;253;151;31m<GLOB>[0m[38;2;248;248;242m...                        [0m
 [38;2;248;248;242m            Include or exclude files and directories for searching that match the given[0m
 [38;2;248;248;242m            glob. This always overrides any other ignore logic. Multiple glob flags may be[0m
 [38;2;248;248;242m            used. Globbing rules match .gitignore globs. Precede a glob with a ! to exclude[0m
@@ -418,7 +418,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag overrides -s/--case-sensitive and -S/--smart-case.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--ignore-file[0m[38;2;248;248;242m <PATH>...                  [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--ignore-file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<PATH>[0m[38;2;248;248;242m...                  [0m
 [38;2;248;248;242m            Specifies a path to one or more .gitignore format rules files. These patterns[0m
 [38;2;248;248;242m            are applied after the patterns found in .gitignore and .ignore are applied[0m
 [38;2;248;248;242m            and are matched relative to the current working directory. Multiple additional[0m
@@ -512,7 +512,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides the --word-regexp flag.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-columns[0m[38;2;248;248;242m <NUM>                      [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-columns[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM>[0m[38;2;248;248;242m                      [0m
 [38;2;248;248;242m            Don't print lines longer than this limit in bytes. Longer lines are omitted,[0m
 [38;2;248;248;242m            and only the number of matches in that line is printed.[0m
 [38;2;248;248;242m            [0m
@@ -529,10 +529,10 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with '--no-max-columns-preview'.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-count[0m[38;2;248;248;242m <NUM>                        [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-count[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM>[0m[38;2;248;248;242m                        [0m
 [38;2;248;248;242m            Limit the number of matching lines per file searched to NUM.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--max-depth[0m[38;2;248;248;242m <NUM>                        [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--max-depth[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM>[0m[38;2;248;248;242m                        [0m
 [38;2;248;248;242m            Limit the depth of directory traversal to NUM levels beyond the paths given. A[0m
 [38;2;248;248;242m            value of zero only searches the explicitly given paths themselves.[0m
 [38;2;248;248;242m            [0m
@@ -540,7 +540,7 @@
 [38;2;248;248;242m            descended into. 'rg --max-depth 1 dir/' will search only the direct children of[0m
 [38;2;248;248;242m            'dir'.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--max-filesize[0m[38;2;248;248;242m <NUM+SUFFIX?>             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--max-filesize[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM+SUFFIX?>[0m[38;2;248;248;242m             [0m
 [38;2;248;248;242m            Ignore files larger than NUM in size. This does not apply to directories.[0m
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            The input format accepts suffixes of K, M or G which correspond to kilobytes,[0m
@@ -809,7 +809,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides the --context, --after-context and --before-context flags.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--path-separator[0m[38;2;248;248;242m <SEPARATOR>             [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--path-separator[0m[38;2;248;248;242m [0m[38;2;253;151;31m<SEPARATOR>[0m[38;2;248;248;242m             [0m
 [38;2;248;248;242m            Set the path separator to use when printing file paths. This defaults to your[0m
 [38;2;248;248;242m            platform's path separator, which is / on Unix and \ on Windows. This flag is[0m
 [38;2;248;248;242m            intended for overriding the default when the environment demands it (e.g.,[0m
@@ -840,7 +840,7 @@
 [38;2;248;248;242m            along with other information, and then exit. If PCRE2 is not available, then[0m
 [38;2;248;248;242m            ripgrep will print an error message and exit with an error code.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--pre[0m[38;2;248;248;242m <COMMAND>                          [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--pre[0m[38;2;248;248;242m [0m[38;2;253;151;31m<COMMAND>[0m[38;2;248;248;242m                          [0m
 [38;2;248;248;242m            For each input FILE, search the standard output of COMMAND FILE rather than the[0m
 [38;2;248;248;242m            contents of FILE. This option expects the COMMAND program to either be an[0m
 [38;2;248;248;242m            absolute path or to be available in your PATH. Either an empty string COMMAND[0m
@@ -885,7 +885,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides the -z/--search-zip flag.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--pre-glob[0m[38;2;248;248;242m <GLOB>...[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--pre-glob[0m[38;2;248;248;242m [0m[38;2;253;151;31m<GLOB>[0m[38;2;248;248;242m...[0m
 [38;2;248;248;242m            This flag works in conjunction with the --pre flag. Namely, when one or more[0m
 [38;2;248;248;242m            --pre-glob flags are given, then only files that match the given set of globs[0m
 [38;2;248;248;242m            will be handed to the command specified by the --pre flag. Any non-matching[0m
@@ -921,13 +921,13 @@
 [38;2;248;248;242m            When --files is used, then ripgrep will stop finding files after finding the[0m
 [38;2;248;248;242m            first file that matches all ignore rules.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--regex-size-limit[0m[38;2;248;248;242m <NUM+SUFFIX?>         [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--regex-size-limit[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM+SUFFIX?>[0m[38;2;248;248;242m         [0m
 [38;2;248;248;242m            The upper size limit of the compiled regex. The default limit is 10M.[0m
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            The argument accepts the same size suffixes as allowed in the --max-filesize[0m
 [38;2;248;248;242m            flag.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--regexp[0m[38;2;248;248;242m <PATTERN>...                    [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--regexp[0m[38;2;248;248;242m [0m[38;2;253;151;31m<PATTERN>[0m[38;2;248;248;242m...                    [0m
 [38;2;248;248;242m            A pattern to search for. This option can be provided multiple times, where[0m
 [38;2;248;248;242m            all patterns given are searched. Lines matching at least one of the provided[0m
 [38;2;248;248;242m            patterns are printed. This flag can also be used when searching for patterns[0m
@@ -942,7 +942,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m                rg -- -foo[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--replace[0m[38;2;248;248;242m <REPLACEMENT_TEXT>             [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--replace[0m[38;2;248;248;242m [0m[38;2;253;151;31m<REPLACEMENT_TEXT>[0m[38;2;248;248;242m             [0m
 [38;2;248;248;242m            Replace every match with the text given when printing results. Neither this[0m
 [38;2;248;248;242m            flag nor any other ripgrep flag will modify your files.[0m
 [38;2;248;248;242m            [0m
@@ -984,7 +984,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This overrides the -s/--case-sensitive and -i/--ignore-case flags.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--sort[0m[38;2;248;248;242m <SORTBY>[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--sort[0m[38;2;248;248;242m [0m[38;2;253;151;31m<SORTBY>[0m
 [38;2;248;248;242m            This flag enables sorting of results in ascending order. The possible values[0m
 [38;2;248;248;242m            for this flag are:[0m
 [38;2;248;248;242m            [0m
@@ -1004,7 +1004,7 @@
 [38;2;248;248;242m            Note that sorting results currently always forces ripgrep to abandon[0m
 [38;2;248;248;242m            parallelism and run in a single thread.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--sortr[0m[38;2;248;248;242m <SORTBY>[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--sortr[0m[38;2;248;248;242m [0m[38;2;253;151;31m<SORTBY>[0m
 [38;2;248;248;242m            This flag enables sorting of results in descending order. The possible values[0m
 [38;2;248;248;242m            for this flag are:[0m
 [38;2;248;248;242m            [0m
@@ -1051,7 +1051,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with '--no-text'. It overrides the '--binary' flag.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--threads[0m[38;2;248;248;242m <NUM>                          [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--threads[0m[38;2;248;248;242m [0m[38;2;253;151;31m<NUM>[0m[38;2;248;248;242m                          [0m
 [38;2;248;248;242m            The approximate number of threads to use. A value of 0 (which is the default)[0m
 [38;2;248;248;242m            causes ripgrep to choose the thread count using heuristics.[0m
 [38;2;248;248;242m             [0m
@@ -1061,7 +1061,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m            This flag can be disabled with --no-trim.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type[0m[38;2;248;248;242m <TYPE>...                         [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE>[0m[38;2;248;248;242m...                         [0m
 [38;2;248;248;242m            Only search files matching TYPE. Multiple type flags may be provided. Use the[0m
 [38;2;248;248;242m            --type-list flag to list all available types.[0m
 [38;2;248;248;242m            [0m
@@ -1071,7 +1071,7 @@
 [38;2;248;248;242m            "whitelist" mode, where it will only search files it recognizes via its type[0m
 [38;2;248;248;242m            definitions.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--type-add[0m[38;2;248;248;242m <TYPE_SPEC>...                [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--type-add[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE_SPEC>[0m[38;2;248;248;242m...                [0m
 [38;2;248;248;242m            Add a new glob for a particular file type. Only one glob can be added at a[0m
 [38;2;248;248;242m            time. Multiple --type-add flags can be provided. Unless --type-clear is used,[0m
 [38;2;248;248;242m            globs are added to any existing globs defined inside of ripgrep.[0m
@@ -1099,7 +1099,7 @@
 [38;2;248;248;242m            Note that type names must consist only of Unicode letters or numbers.[0m
 [38;2;248;248;242m            Punctuation characters are not allowed.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--type-clear[0m[38;2;248;248;242m <TYPE>...                   [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--type-clear[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE>[0m[38;2;248;248;242m...                   [0m
 [38;2;248;248;242m            Clear the file type globs previously defined for TYPE. This only clears the[0m
 [38;2;248;248;242m            default type definitions that are found inside of ripgrep.[0m
 [38;2;248;248;242m            [0m
@@ -1109,7 +1109,7 @@
 [38;2;248;248;242m        [0m[38;2;166;226;46m--type-list[0m[38;2;248;248;242m                              [0m
 [38;2;248;248;242m            Show all supported file types and their corresponding globs.[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type-not[0m[38;2;248;248;242m <TYPE>...                     [0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type-not[0m[38;2;248;248;242m [0m[38;2;253;151;31m<TYPE>[0m[38;2;248;248;242m...                     [0m
 [38;2;248;248;242m            Do not search files matching TYPE. Multiple type-not flags may be provided. Use[0m
 [38;2;248;248;242m            the --type-list flag to list all available types.[0m
 [38;2;248;248;242m             [0m
