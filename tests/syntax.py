@@ -69,7 +69,26 @@ if script_args.summary:
 
 ### run
 
-subprocess.call(
+completed_process = subprocess.run(
     f"docker run --rm {volume} {image_tag} {args}",
-    shell=True
+    shell=True,
+    check=True,
+    capture_output=True,
+    text=True,
 )
+output = completed_process.stdout
+
+### process output
+
+noise_line = "The test file references syntax definition file: cmd-help.sublime-syntax"
+signal_lines = [line for line in output.splitlines() if line != noise_line]
+
+last_line = signal_lines[-1]
+if last_line == "exiting with code 0":
+    # colorize last line in green
+    signal_lines[-1] = f"\033[92m{last_line}\033[00m"
+else:
+    # colorize last line in red
+    signal_lines[-1] = f"\033[91m{last_line}\033[00m"
+
+print("\n".join(signal_lines))
