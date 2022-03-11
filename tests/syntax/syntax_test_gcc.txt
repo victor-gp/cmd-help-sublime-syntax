@@ -16,8 +16,7 @@ Options:
 # ^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.help
   -print-libgcc-file-name  Display the name of the compiler's companion library.
   -print-file-name=<lib>   Display the full path to library <lib>.
-#                  ^^^^^ - variable.parameter.option-argument.help
-#todo: handle these
+#                  ^^^^^ variable.parameter.option-argument.help
   -print-prog-name=<prog>  Display the full path to compiler component <prog>.
   -print-multiarch         Display the target's normalized GNU triplet, used as
                            a component in the library path.
@@ -29,6 +28,7 @@ Options:
   -print-sysroot-headers-suffix Display the sysroot suffix used to find headers.
   -Wa,<options>            Pass comma-separated <options> on to the assembler.
 #    ^ - entity.name.cmd-option.help
+#     ^^^^^^^^^ - entity.name.cmd-option.help
 #nice: handle option arguments coming after a comma
   -Wp,<options>            Pass comma-separated <options> on to the preprocessor.
   -Wl,<options>            Pass comma-separated <options> on to the linker.

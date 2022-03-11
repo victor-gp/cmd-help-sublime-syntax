@@ -110,6 +110,9 @@ contexts:
     - match: '{{relaxed_argument_name}}'
       scope: variable.parameter.option-argument.help
       set: option-argument-post
+    - match: '<.*?>'
+      scope: variable.parameter.option-argument.help
+      set: option-argument-post
     - include: else-pop
 
   square-brackets-after-option:
