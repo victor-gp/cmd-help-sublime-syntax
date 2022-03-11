@@ -32,7 +32,7 @@ contexts:
       push: [line-begin, line-indent]
 
   line-begin:
-    - match: '^'
+    - match: '^(?=\S)'
       set: [pre-heading, def-option]
     - include: else-pop
 
