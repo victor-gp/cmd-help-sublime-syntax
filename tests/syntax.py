@@ -85,9 +85,9 @@ signal_lines = [line for line in output.splitlines() if line != noise_line]
 last_line = signal_lines[-1]
 if last_line == "exiting with code 0":
     # colorize last line in green
-    signal_lines[-1] = f"\033[92m{last_line}\033[00m"
+    signal_lines[-1] = f"\033[32m{last_line}\033[00m"
 else:
     # colorize last line in red
-    signal_lines[-1] = f"\033[91m{last_line}\033[00m"
+    signal_lines[-1] = f"\033[31m{last_line}\033[00m"
 
 print("\n".join(signal_lines))
