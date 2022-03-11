@@ -6,7 +6,6 @@ Usage:	bash [GNU long option] [option] ...
 GNU long options:
 #^^^^^^^^^^^^^^^^ markup.heading.help
 	--debug
-#todo: differentiate tabs and spaces in line-indent
 	--debugger
 	--dump-po-strings
 	--dump-strings

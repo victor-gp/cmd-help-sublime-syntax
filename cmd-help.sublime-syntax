@@ -37,7 +37,9 @@ contexts:
     - include: else-pop
 
   line-indent:
-    - match: '^\s{1,8}'
+    - match: '^ {1,8}'
+      set: [def-option]
+    - match: '^\t{1,2}'
       set: [def-option]
     - include: else-pop
 
