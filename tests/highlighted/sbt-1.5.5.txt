@@ -1,12 +1,12 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m sbt [options][0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m | --help         print this message[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m | --verbose      this runner is chattier[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m | --version      print sbt version information[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m | [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m         print this message[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m | [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m      this runner is chattier[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m | [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m      print sbt version information[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--numeric-version[0m[38;2;248;248;242m   print the numeric sbt version (sbt sbtVersion)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--script-version[0m[38;2;248;248;242m    print the version of sbt script[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m | --debug        set sbt log level to debug[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-debug-inc[0m[38;2;248;248;242m | --debug-inc[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m | [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m        set sbt log level to debug[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-debug-inc[0m[38;2;248;248;242m | [0m[38;2;166;226;46m--debug-inc[0m
 [38;2;248;248;242m                      enable extra debugging for the incremental debugger[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-colors[0m[38;2;248;248;242m         disable ANSI color codes[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m=[0m[38;2;253;151;31mauto[0m[38;2;248;248;242m|always|true|false|never[0m

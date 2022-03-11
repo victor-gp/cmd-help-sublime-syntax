@@ -5,16 +5,16 @@
 
 [38;2;253;151;31mOptions:[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m --help           Show this screen[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m --version        Show version information[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m --list           List all commands in the cache[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m --render <file>  Render a specific markdown file[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m --os <type>      Override the operating system [linux, osx, sunos, windows][0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m --update         Update the local cache[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m --clear-cache    Clear the local cache[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m --pager          Use a pager to page output[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m --markdown       Display the raw markdown instead of rendering it[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m --quiet          Suppress informational messages[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m           Show this screen[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m        Show version information[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m           List all commands in the cache[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m [0m[38;2;166;226;46m--render[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m  Render a specific markdown file[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m [0m[38;2;166;226;46m--os[0m[38;2;248;248;242m [0m[38;2;253;151;31m<type>[0m[38;2;248;248;242m      Override the operating system [linux, osx, sunos, windows][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m [0m[38;2;166;226;46m--update[0m[38;2;248;248;242m         Update the local cache[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m [0m[38;2;166;226;46m--clear-cache[0m[38;2;248;248;242m    Clear the local cache[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m [0m[38;2;166;226;46m--pager[0m[38;2;248;248;242m          Use a pager to page output[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m [0m[38;2;166;226;46m--markdown[0m[38;2;248;248;242m       Display the raw markdown instead of rendering it[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m          Suppress informational messages[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--config-path[0m[38;2;248;248;242m       Show config file path[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--seed-config[0m[38;2;248;248;242m       Create a basic config[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m [0m[38;2;253;151;31m<when>[0m[38;2;248;248;242m      Control when to use color [always, auto, never] [default: auto][0m

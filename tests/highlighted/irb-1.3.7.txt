@@ -24,7 +24,7 @@
 [38;2;248;248;242m                    `default', `simple', `xmp' and `inf-ruby'[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--inf-ruby-mode[0m[38;2;248;248;242m   Use prompt appropriate for inf-ruby-mode on emacs.[0m
 [38;2;248;248;242m                    Suppresses --multiline and --singleline.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--sample-book-mode/--simple-prompt[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--sample-book-mode[0m[38;2;248;248;242m/[0m[38;2;166;226;46m--simple-prompt[0m
 [38;2;248;248;242m                    Simple prompt mode[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--noprompt[0m[38;2;248;248;242m        No prompt mode[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--single-irb[0m[38;2;248;248;242m      Share self with sub-irb.[0m

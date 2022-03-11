@@ -24,11 +24,11 @@
 [38;2;248;248;242m                  in a future release.[0m
 [38;2;248;248;242m                  require the specified version to run[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-showversion[0m[38;2;248;248;242m  print product version and continue[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-jre-restrict-search[0m[38;2;248;248;242m | -no-jre-restrict-search[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-jre-restrict-search[0m[38;2;248;248;242m | [0m[38;2;166;226;46m-no-jre-restrict-search[0m
 [38;2;248;248;242m                  Warning: this feature is deprecated and will be removed[0m
 [38;2;248;248;242m                  in a future release.[0m
 [38;2;248;248;242m                  include/exclude user private JREs in the version search[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-?[0m[38;2;248;248;242m -help      print this help message[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-?[0m[38;2;248;248;242m [0m[38;2;166;226;46m-help[0m[38;2;248;248;242m      print this help message[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m            print help on non-standard options[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-ea[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:<packagename>...|:<classname>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-enableassertions[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:<packagename>...|:<classname>[0m[38;2;248;248;242m][0m
@@ -36,9 +36,9 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m-da[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:<packagename>...|:<classname>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-disableassertions[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:<packagename>...|:<classname>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  disable assertions with specified granularity[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-esa[0m[38;2;248;248;242m | -enablesystemassertions[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-esa[0m[38;2;248;248;242m | [0m[38;2;166;226;46m-enablesystemassertions[0m
 [38;2;248;248;242m                  enable system assertions[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-dsa[0m[38;2;248;248;242m | -disablesystemassertions[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-dsa[0m[38;2;248;248;242m | [0m[38;2;166;226;46m-disablesystemassertions[0m
 [38;2;248;248;242m                  disable system assertions[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-agentlib:[0m[38;2;248;248;242m<libname>[=<options>][0m
 [38;2;248;248;242m                  load native agent library <libname>, e.g. -agentlib:hprof[0m

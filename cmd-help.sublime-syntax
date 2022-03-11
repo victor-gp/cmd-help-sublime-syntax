@@ -16,7 +16,7 @@ variables:
   leading_word: '[:upper:]({{alpha_dash}})*\b'
 
 ### command option variables:
-  option_stop: '[ \t\n,=\[<]'
+  option_stop: '[ \t\n,=\[</]'
   # marks seen in option names: . ? : # $ --
   option_name: '[^{{option_stop}}]+'
 
@@ -70,8 +70,7 @@ contexts:
     - include: else-pop
 
   def-option-post:
-    - match: ', '
-      set: def-option
+    - include: connect-option-alias
     - match: ' '
       set: space-after-option
     - match: '='
@@ -80,6 +79,18 @@ contexts:
     - match: '\[=|\['
       set: square-brackets-after-option
     - include: else-pop
+
+  connect-option-alias:
+    - match: ', '
+      set: def-option
+    - match: ' \| '
+      set: def-option
+    - match: ' (?=-)'
+      set: def-option
+    - match: ' or '
+      set: def-option
+    - match: '/'
+      set: def-option
 
   space-after-option:
     - match: '<.*?>'
@@ -110,6 +121,5 @@ contexts:
       scope: variable.parameter.option-argument.help
     # - match: ''
     #   set: def-option-post
-    - match: ', '
-      set: def-option
+    - include: connect-option-alias
     - include: else-pop

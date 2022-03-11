@@ -24,8 +24,7 @@ GNU long options:
 	--version
 Shell options:
 	-ilrsD or -c command or -O shopt_option		(invocation only)
-	        # ^^ - entity.name.cmd-option.help
-#nice: handle or-separated defs
+	        # ^^ entity.name.cmd-option.help
 	-abefhkmnptuvxBCHP or -o option
 Type `bash -c "help set"' for more information about shell options.
 Type `bash -c help' for more information about shell builtin commands.
