@@ -3,7 +3,7 @@
 [38;2;166;226;46m-b[0m[38;2;248;248;242m     : issue warnings about str(bytes_instance), str(bytearray_instance)[0m
 [38;2;248;248;242m         and comparing bytes/bytearray with str. (-bb: issue errors)[0m
 [38;2;166;226;46m-B[0m[38;2;248;248;242m     : don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x[0m
-[38;2;166;226;46m-c[0m[38;2;248;248;242m cmd : program passed in as string (terminates option list)[0m
+[38;2;166;226;46m-c[0m[38;2;248;248;242m [0m[38;2;253;151;31mcmd[0m[38;2;248;248;242m : program passed in as string (terminates option list)[0m
 [38;2;166;226;46m-d[0m[38;2;248;248;242m     : turn on parser debugging output (for experts only, only works on[0m
 [38;2;248;248;242m         debug builds); also PYTHONDEBUG=x[0m
 [38;2;166;226;46m-E[0m[38;2;248;248;242m     : ignore PYTHON* environment variables (such as PYTHONPATH)[0m
@@ -11,7 +11,7 @@
 [38;2;166;226;46m-i[0m[38;2;248;248;242m     : inspect interactively after running script; forces a prompt even[0m
 [38;2;248;248;242m         if stdin does not appear to be a terminal; also PYTHONINSPECT=x[0m
 [38;2;166;226;46m-I[0m[38;2;248;248;242m     : isolate Python from the user's environment (implies -E and -s)[0m
-[38;2;166;226;46m-m[0m[38;2;248;248;242m mod : run library module as a script (terminates option list)[0m
+[38;2;166;226;46m-m[0m[38;2;248;248;242m [0m[38;2;253;151;31mmod[0m[38;2;248;248;242m : run library module as a script (terminates option list)[0m
 [38;2;166;226;46m-O[0m[38;2;248;248;242m     : remove assert and __debug__-dependent statements; add .opt-1 before[0m
 [38;2;248;248;242m         .pyc extension; also PYTHONOPTIMIZE=x[0m
 [38;2;166;226;46m-OO[0m[38;2;248;248;242m    : do -O changes and also discard docstrings; add .opt-2 before[0m
@@ -25,10 +25,10 @@
 [38;2;248;248;242m         can be supplied multiple times to increase verbosity[0m
 [38;2;166;226;46m-V[0m[38;2;248;248;242m     : print the Python version number and exit (also --version)[0m
 [38;2;248;248;242m         when given twice, print more information about the build[0m
-[38;2;166;226;46m-W[0m[38;2;248;248;242m arg : warning control; arg is action:message:category:module:lineno[0m
+[38;2;166;226;46m-W[0m[38;2;248;248;242m [0m[38;2;253;151;31marg[0m[38;2;248;248;242m : warning control; arg is action:message:category:module:lineno[0m
 [38;2;248;248;242m         also PYTHONWARNINGS=arg[0m
 [38;2;166;226;46m-x[0m[38;2;248;248;242m     : skip first line of source, allowing use of non-Unix forms of #!cmd[0m
-[38;2;166;226;46m-X[0m[38;2;248;248;242m opt : set implementation-specific option. The following options are available:[0m
+[38;2;166;226;46m-X[0m[38;2;248;248;242m [0m[38;2;253;151;31mopt[0m[38;2;248;248;242m : set implementation-specific option. The following options are available:[0m
 
 [38;2;248;248;242m         -X faulthandler: enable faulthandler[0m
 [38;2;248;248;242m         -X showrefcount: output the total reference count and number of used[0m
@@ -58,7 +58,7 @@
 [38;2;248;248;242m             given directory instead of to the code tree[0m
 [38;2;248;248;242m         -X warn_default_encoding: enable opt-in EncodingWarning for 'encoding=None'[0m
 
-[38;2;166;226;46m--check-hash-based-pycs[0m[38;2;248;248;242m always|default|never:[0m
+[38;2;166;226;46m--check-hash-based-pycs[0m[38;2;248;248;242m [0m[38;2;253;151;31malways[0m[38;2;248;248;242m|default|never:[0m
 [38;2;248;248;242m    control how Python invalidates hash-based .pyc files[0m
 [38;2;248;248;242mfile   : program read from script file[0m
 [38;2;248;248;242m-      : program read from stdin (default; interactive mode if a tty)[0m

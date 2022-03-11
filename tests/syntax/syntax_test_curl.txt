@@ -94,6 +94,8 @@ Usage: curl [options...] <url>
      --local-port <num/range> Force use of RANGE for local port numbers
  -L, --location      Follow redirects
      --location-trusted Like --location, and send auth to other hosts
+#                       ^^^^ variable.parameter.option-argument.help
+#nice: fix this false positive
      --login-options <options> Server login options
      --mail-auth <address> Originator address of the original email
      --mail-from <address> Mail from this address

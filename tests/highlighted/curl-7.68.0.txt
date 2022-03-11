@@ -89,7 +89,7 @@
 [38;2;248;248;242m [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--list-only[0m[38;2;248;248;242m     List only mode[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--local-port[0m[38;2;248;248;242m [0m[38;2;253;151;31m<num/range>[0m[38;2;248;248;242m Force use of RANGE for local port numbers[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--location[0m[38;2;248;248;242m      Follow redirects[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--location-trusted[0m[38;2;248;248;242m Like --location, and send auth to other hosts[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--location-trusted[0m[38;2;248;248;242m [0m[38;2;253;151;31mLike[0m[38;2;248;248;242m [0m[38;2;166;226;46m--location[0m[38;2;248;248;242m, and send auth to other hosts[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--login-options[0m[38;2;248;248;242m [0m[38;2;253;151;31m<options>[0m[38;2;248;248;242m Server login options[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--mail-auth[0m[38;2;248;248;242m [0m[38;2;253;151;31m<address>[0m[38;2;248;248;242m Originator address of the original email[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--mail-from[0m[38;2;248;248;242m [0m[38;2;253;151;31m<address>[0m[38;2;248;248;242m Mail from this address[0m

@@ -36,9 +36,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exchange[0m[38;2;248;248;242m        Exchange the PRIMARY and SECONDARY selections[0m
 
 [38;2;253;151;31mX options[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--display[0m[38;2;248;248;242m displayname[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--display[0m[38;2;248;248;242m [0m[38;2;253;151;31mdisplayname[0m
 [38;2;248;248;242m                        Specify the connection to the X server[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m ms, --selectionTimeout ms[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;253;151;31mms[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--selectionTimeout[0m[38;2;248;248;242m [0m[38;2;253;151;31mms[0m
 [38;2;248;248;242m                        Specify the timeout in milliseconds within which the[0m
 [38;2;248;248;242m                        selection must be retrieved. A value of 0 (zero)[0m
 [38;2;248;248;242m                        specifies no timeout (default)[0m
