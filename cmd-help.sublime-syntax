@@ -11,7 +11,7 @@ variables:
   # lowercase, uppercase or dash char (for compound words)
   alpha_dash: '[[:alpha:]-]'
   # all kinds of words, including those within 1/2 parentheses
-  any_word: '\(?{{alpha_dash}}+\)?'
+  any_word: '\(?{{alpha_dash}}+\b\)?'
   # words starting with uppercase
   leading_word: '[:upper:]({{alpha_dash}})*\b'
 
@@ -22,8 +22,8 @@ variables:
 
 ### command/option argument variables:
   ellipsis: '\.\.\.'
+  allcaps_argument_name: '[:upper:][[:upper:][:digit:]_]*\b'
   relaxed_argument_name: '[:alpha:][[:alnum:]_-]*\b'
-  allcaps_argument_name: '[:upper:][[:upper:][:digit:]_]*'
 
 
 contexts:
