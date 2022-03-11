@@ -8,6 +8,7 @@ When a filename is '-', nano reads data from standard input.
 
  Option         Long option             Meaning
  -A             --smarthome             Enable smart home key
+#               ^^^^^^^^^^^ entity.name.cmd-option.help
  -B             --backup                Save backups of existing files
  -C <dir>       --backupdir=<dir>       Directory for saving unique backup files
  -D             --boldtext              Use bold instead of reverse video text

@@ -131,7 +131,7 @@
 [38;2;248;248;242m                  Dumb terminal.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m [_x_n_._n]  .  --color=_x_n_._n[0m
 [38;2;248;248;242m                  Set screen colors. (MS-DOS only)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m  -E  ....  --quit-at-eof  --QUIT-AT-EOF[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m  ....  --quit-at-eof  --QUIT-AT-EOF[0m
 [38;2;248;248;242m                  Quit at end of file.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m  ........  --force[0m
 [38;2;248;248;242m                  Force open non-regular files.[0m
@@ -157,9 +157,9 @@
 [38;2;248;248;242m                  Exit less in response to ctrl-C.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m  ........  --no-lessopen[0m
 [38;2;248;248;242m                  Ignore the LESSOPEN environment variable.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m  -M  ....  --long-prompt  --LONG-PROMPT[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m  ....  --long-prompt  --LONG-PROMPT[0m
 [38;2;248;248;242m                  Set prompt style.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m  -N  ....  --line-numbers  --LINE-NUMBERS[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m  ....  --line-numbers  --LINE-NUMBERS[0m
 [38;2;248;248;242m                  Don't use line numbers.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m [_f_i_l_e]  .  --log-file=[_f_i_l_e][0m
 [38;2;248;248;242m                  Copy to log file (standard input only).[0m
@@ -169,9 +169,9 @@
 [38;2;248;248;242m                  Start at pattern (from command line).[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m [_p_r_o_m_p_t]   --prompt=[_p_r_o_m_p_t][0m
 [38;2;248;248;242m                  Define new prompt.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m  -Q  ....  --quiet  --QUIET  --silent --SILENT[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-Q[0m[38;2;248;248;242m  ....  --quiet  --QUIET  --silent --SILENT[0m
 [38;2;248;248;242m                  Quiet the terminal bell.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m  -R  ....  --raw-control-chars  --RAW-CONTROL-CHARS[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m  ....  --raw-control-chars  --RAW-CONTROL-CHARS[0m
 [38;2;248;248;242m                  Output "raw" control characters.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m  ........  --squeeze-blank-lines[0m
 [38;2;248;248;242m                  Squeeze multiple blank lines.[0m
@@ -181,7 +181,7 @@
 [38;2;248;248;242m                  Find a tag.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m [_t_a_g_s_f_i_l_e] --tag-file=[_t_a_g_s_f_i_l_e][0m
 [38;2;248;248;242m                  Use an alternate tags file.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m  -U  ....  --underline-special  --UNDERLINE-SPECIAL[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m  ....  --underline-special  --UNDERLINE-SPECIAL[0m
 [38;2;248;248;242m                  Change handling of backspaces.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m  ........  --version[0m
 [38;2;248;248;242m                  Display the version number of "less".[0m

@@ -91,6 +91,8 @@ contexts:
       set: def-option
     - match: '/'
       set: def-option
+    - match: '\s+(?=-)'
+      set: def-option
 
   space-after-option:
     - match: '<.*?>'
