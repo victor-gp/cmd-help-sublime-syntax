@@ -110,8 +110,7 @@ Usage: curl [options...] <url>
      --netrc-file <filename> Specify FILE for netrc
      --netrc-optional Use either .netrc or URL
  -:, --next          Make next URL use its separate set of options
-#^^ - entity.name.option
-# nice: handle this
+#^^ entity.name.cmd-option.help
      --no-alpn       Disable the ALPN TLS extension
  -N, --no-buffer     Disable buffering of the output stream
      --no-keepalive  Disable TCP keepalive on the connection

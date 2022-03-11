@@ -11,6 +11,8 @@ Released under the GNU GPL.
 -t --tree                   Show the tree view by default
 -u --user=USERNAME          Show only processes of a given user
 -p --pid=PID,[,PID,PID...]  Show only the given PIDs
+#             ^^^^^^^^^^^ - variable.parameter.option-argument.help
+#nice: handle comma-separated, optional arguments
 -v --version                Print version info
 
 Long options may be passed with a single dash.
