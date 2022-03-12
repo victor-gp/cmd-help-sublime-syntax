@@ -23,7 +23,7 @@ GNU long options:
 	--version
 Shell options:
 	-ilrsD or -c command or -O shopt_option		(invocation only)
-	        # ^^ entity.name.cmd-option.cmd-help
+	        # ^^ entity.name.function.option.cmd-help
 #                ^^^^^^^ - variable.parameter.option-argument.cmd-help
 #nice: get this one right
 	-abefhkmnptuvxBCHP or -o option

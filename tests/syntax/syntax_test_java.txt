@@ -24,7 +24,7 @@ where options include:
                   enable verbose output
     -version      print product version and exit
     -version:<value>
-#           ^ entity.name.cmd-option.cmd-help
+#           ^ entity.name.function.option.cmd-help
 #            ^^^^^^^ - variable.parameter.option-argument.cmd-help
 #todo: handle colon (no scope) + option argument
                   Warning: this feature is deprecated and will be removed

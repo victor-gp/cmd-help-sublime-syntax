@@ -110,7 +110,7 @@ Usage: curl [options...] <url>
      --netrc-file <filename> Specify FILE for netrc
      --netrc-optional Use either .netrc or URL
  -:, --next          Make next URL use its separate set of options
-#^^ entity.name.cmd-option.cmd-help
+#^^ entity.name.function.option.cmd-help
      --no-alpn       Disable the ALPN TLS extension
  -N, --no-buffer     Disable buffering of the output stream
      --no-keepalive  Disable TCP keepalive on the connection
@@ -133,7 +133,7 @@ Usage: curl [options...] <url>
      --post303       Do not switch to GET after following a 303
      --preproxy [protocol://]host[:port] Use this proxy first
  -#, --progress-bar  Display transfer progress as a bar
-#^^ entity.name.cmd-option.cmd-help
+#^^ entity.name.function.option.cmd-help
      --proto <protocols> Enable/disable PROTOCOLS
      --proto-default <protocol> Use PROTOCOL for any URL missing a scheme
      --proto-redir <protocols> Enable/disable PROTOCOLS on redirect
@@ -219,7 +219,7 @@ Usage: curl [options...] <url>
      --tlsuser <name> TLS user name
  -1, --tlsv1         Use TLSv1.0 or greater
      --tlsv1.0       Use TLSv1.0 or greater
-#    ^^^^^^^^^ entity.name.cmd-option.cmd-help
+#    ^^^^^^^^^ entity.name.function.option.cmd-help
      --tlsv1.1       Use TLSv1.1 or greater
      --tlsv1.2       Use TLSv1.2 or greater
      --tlsv1.3       Use TLSv1.3 or greater

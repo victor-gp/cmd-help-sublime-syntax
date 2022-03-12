@@ -35,8 +35,8 @@ Mandatory arguments to long options are mandatory for short options too.
 #                   ^^^^^^^^^ variable.parameter.option-argument.cmd-help
       --parents                use full source file name under DIRECTORY
   -R, -r, --recursive          copy directories recursively
-#     ^^ entity.name.cmd-option.cmd-help
-#         ^^^^^^^^^^^ entity.name.cmd-option.cmd-help
+#     ^^ entity.name.function.option.cmd-help
+#         ^^^^^^^^^^^ entity.name.function.option.cmd-help
       --reflink[=WHEN]         control clone/CoW copies. See below
       --remove-destination     remove each existing destination file before
                                  attempting to open it (contrast with --force)

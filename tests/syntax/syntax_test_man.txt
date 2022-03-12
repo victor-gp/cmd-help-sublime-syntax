@@ -69,7 +69,7 @@ g - grap, r - refer, v - vgrind
   -Z, --ditroff              use groff and force it to produce ditroff
 
   -?, --help                 give this help list
- #^^ entity.name.cmd-option.cmd-help
+ #^^ entity.name.function.option.cmd-help
       --usage                give a short usage message
   -V, --version              print program version
 

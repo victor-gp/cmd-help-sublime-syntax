@@ -28,9 +28,9 @@ Usage:  irb.rb [options] [programfile] [arguments]
   --inf-ruby-mode   Use prompt appropriate for inf-ruby-mode on emacs.
                     Suppresses --multiline and --singleline.
   --sample-book-mode/--simple-prompt
-# ^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.cmd-help
-#                   ^ - entity.name.cmd-option.cmd-help
-#                    ^^^^^^^^^^^^^^^ entity.name.cmd-option.cmd-help
+# ^^^^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help
+#                   ^ - entity.name.function.option.cmd-help
+#                    ^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help
                     Simple prompt mode
   --noprompt        No prompt mode
   --single-irb      Share self with sub-irb.

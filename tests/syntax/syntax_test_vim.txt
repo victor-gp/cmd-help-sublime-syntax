@@ -9,7 +9,7 @@ Usage: vim [arguments] [file ..]       edit specified file(s)
 
 Arguments:
    --			Only file names after this
-#  ^^ entity.name.cmd-option.cmd-help
+#  ^^ entity.name.function.option.cmd-help
 #todo: scope this as a keyword.operator
    -v			Vi mode (like "vi")
    -e			Ex mode (like "ex")
@@ -42,7 +42,7 @@ Arguments:
    -o[N]		Open N windows (default: one for each file)
    -O[N]		Like -o but split vertically
    +			Start at end of file
-#  ^ - entity.name.cmd-option.cmd-help
+#  ^ - entity.name.function.option.cmd-help
 #nice: handle options prefixed with +
 
    +<lnum>		Start at line <lnum>

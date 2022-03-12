@@ -32,7 +32,7 @@ Basic Options:
     -s, --stdin FILE                 Pipe source from STDIN, using FILE in offense
                                      reports. This is useful for editor integration.
     -P, --[no-]parallel              Use available CPUs to execute inspection in
-#         ^^^^^^^^^^^^^ - entity.name.cmd-option.cmd-help
+#         ^^^^^^^^^^^^^ - entity.name.function.option.cmd-help
 #nice: handle on/off segments in options
                                      parallel. Default is true.
         --fail-level SEVERITY        Minimum severity (A/I/R/C/W/E/F) for exit

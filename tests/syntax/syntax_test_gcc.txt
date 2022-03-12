@@ -13,7 +13,7 @@ Options:
   -dumpversion             Display the version of the compiler.
   -dumpmachine             Display the compiler's target processor.
   -print-search-dirs       Display the directories in the compiler's search path.
-# ^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.cmd-help
+# ^^^^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help
   -print-libgcc-file-name  Display the name of the compiler's companion library.
   -print-file-name=<lib>   Display the full path to library <lib>.
 #                  ^^^^^ variable.parameter.option-argument.cmd-help
@@ -27,8 +27,8 @@ Options:
   -print-sysroot           Display the target libraries directory.
   -print-sysroot-headers-suffix Display the sysroot suffix used to find headers.
   -Wa,<options>            Pass comma-separated <options> on to the assembler.
-#    ^ - entity.name.cmd-option.cmd-help
-#     ^^^^^^^^^ - entity.name.cmd-option.cmd-help
+#    ^ - entity.name.function.option.cmd-help
+#     ^^^^^^^^^ - entity.name.function.option.cmd-help
 #nice: handle option arguments coming after a comma
   -Wp,<options>            Pass comma-separated <options> on to the preprocessor.
   -Wl,<options>            Pass comma-separated <options> on to the linker.
@@ -48,7 +48,7 @@ Options:
   -B <directory>           Add <directory> to the compiler's search paths.
   -v                       Display the programs invoked by the compiler.
   -###                     Like -v but options quoted and commands not executed.
-# ^^^^ entity.name.cmd-option.cmd-help
+# ^^^^ entity.name.function.option.cmd-help
   -E                       Preprocess only; do not compile, assemble or link.
   -S                       Compile only; do not assemble or link.
   -c                       Compile and assemble, but do not link.

@@ -4,7 +4,7 @@ htop 2.2.0 - (C) 2004-2019 Hisham Muhammad
 Released under the GNU GPL.
 
 -C --no-color               Use a monochrome color scheme
-#  ^^^^^^^^^^ entity.name.cmd-option.cmd-help
+#  ^^^^^^^^^^ entity.name.function.option.cmd-help
 -d --delay=DELAY            Set the delay between updates, in tenths of seconds
 -h --help                   Print this help screen
 -s --sort-key=COLUMN        Sort by COLUMN (try --sort-key=help for a list)

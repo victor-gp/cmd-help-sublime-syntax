@@ -45,7 +45,7 @@ X options
                         Specify the connection to the X server
   -t ms, --selectionTimeout ms
 #    ^^ variable.parameter.option-argument.cmd-help
-#        ^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.cmd-help
+#        ^^^^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help
                         Specify the timeout in milliseconds within which the
                         selection must be retrieved. A value of 0 (zero)
                         specifies no timeout (default)
