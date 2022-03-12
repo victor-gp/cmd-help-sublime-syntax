@@ -11,6 +11,6 @@ FROM debian:bullseye-slim
 COPY --from=build /usr/src/syntect/target/release/examples/syntest \
     /usr/local/bin/syntest
 ENTRYPOINT [ "syntest" ]
-CMD [ "/tests/syntax", "/tests/syntax/under-test" ]
+CMD [ "/tests/syntax", "/syntaxes" ]
 
 # don't run this manually, use unit.py

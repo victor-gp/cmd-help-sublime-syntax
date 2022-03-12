@@ -1,1 +1,2 @@
-tests/syntax/under-test/*
+syntaxes/*
+!syntaxes/cmd-help.sublime-syntax

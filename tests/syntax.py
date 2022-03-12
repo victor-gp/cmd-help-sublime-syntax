@@ -9,7 +9,9 @@ from os import chdir
 
 dockerfile_path = 'syntest.dockerfile'
 image_tag = 'syntest'
-volume = '-v="$PWD/syntax":/tests/syntax'
+tests_path = '/tests/syntax'
+syntaxes_path = '/syntaxes'
+volumes = f'-v="$PWD/syntax":{tests_path} -v="$PWD/../syntaxes":{syntaxes_path}'
 
 ### cli
 
@@ -44,20 +46,13 @@ if ret != 0: # image doesn't exist
         shell=True
     )
 
-subprocess.call(
-    "cp ../cmd-help.sublime-syntax syntax/under-test",
-    shell=True
-)
-
 ### arrange arguments
 
-default_tests_path = '/tests/syntax'
-default_syntaxes_path = '/tests/syntax/under-test'
-default_args = f"{default_tests_path} {default_syntaxes_path}"
+default_args = f"{tests_path} {syntaxes_path}"
 
 args = ""
 if script_args.test_path:
-    args = f"{script_args.test_path} {default_syntaxes_path}"
+    args = f"{script_args.test_path} {syntaxes_path}"
 if script_args.debug:
     if not args:
         args = default_args
@@ -70,7 +65,7 @@ if script_args.summary:
 ### run
 
 completed_process = subprocess.run(
-    f"docker run --rm {volume} {image_tag} {args}",
+    f"docker run --rm {volumes} {image_tag} {args}",
     shell=True,
     capture_output=True,
     text=True,
