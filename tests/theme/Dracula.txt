@@ -1,0 +1,43 @@
+[38;2;248;248;242mbat 0.18.2[0m
+[38;2;248;248;242mA cat(1) clone with syntax highlighting and Git integration.[0m
+
+[38;2;139;233;253mUSAGE:[0m
+[38;2;248;248;242m    bat [OPTIONS] [FILE]...[0m
+[38;2;248;248;242m    bat <SUBCOMMAND>[0m
+
+[38;2;139;233;253mOPTIONS:[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-A[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--show-all[0m[38;2;248;248;242m                       Show non-printable characters (space, tab, newline, ..).[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-p[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--plain[0m[38;2;248;248;242m                          Show plain style (alias for '--style=plain').[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-l[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--language[0m[38;2;248;248;242m [0m[38;2;255;184;108m<language>[0m[38;2;248;248;242m            Set the language for syntax highlighting.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-H[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--highlight-line[0m[38;2;248;248;242m [0m[38;2;255;184;108m<N:M>[0m[38;2;255;184;108m...[0m[38;2;248;248;242m        Highlight lines N through M.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--file-name[0m[38;2;248;248;242m [0m[38;2;255;184;108m<name>[0m[38;2;255;184;108m...[0m[38;2;248;248;242m            Specify the name to display for a file.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-d[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--diff[0m[38;2;248;248;242m                           Only show lines that have been added/removed/modified.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--tabs[0m[38;2;248;248;242m [0m[38;2;255;184;108m<T>[0m[38;2;248;248;242m                       Set the tab width to T spaces.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--wrap[0m[38;2;248;248;242m [0m[38;2;255;184;108m<mode>[0m[38;2;248;248;242m                    Specify the text-wrapping mode (*auto*, never, character).[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-n[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--number[0m[38;2;248;248;242m                         Show line numbers (alias for '--style=numbers').[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--color[0m[38;2;248;248;242m [0m[38;2;255;184;108m<when>[0m[38;2;248;248;242m                   When to use colors (*auto*, never, always).[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--italic-text[0m[38;2;248;248;242m [0m[38;2;255;184;108m<when>[0m[38;2;248;248;242m             Use italics in output (always, *never*)[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--decorations[0m[38;2;248;248;242m [0m[38;2;255;184;108m<when>[0m[38;2;248;248;242m             When to show the decorations (*auto*, never, always).[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--paging[0m[38;2;248;248;242m [0m[38;2;255;184;108m<when>[0m
+[38;2;248;248;242m            Specify when to use the pager, or use `-P` to disable (*auto*, never, always).[0m
+
+[38;2;248;248;242m    [0m[38;2;248;248;242m-m[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--map-syntax[0m[38;2;248;248;242m [0m[38;2;255;184;108m<glob:syntax>[0m[38;2;255;184;108m...[0m
+[38;2;248;248;242m            Use the specified syntax for files matching the glob pattern ('*.cpp:C++').[0m
+
+[38;2;248;248;242m        [0m[38;2;248;248;242m--theme[0m[38;2;248;248;242m [0m[38;2;255;184;108m<theme>[0m[38;2;248;248;242m                  Set the color theme for syntax highlighting.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--list-themes[0m[38;2;248;248;242m                    Display all supported highlighting themes.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--style[0m[38;2;248;248;242m [0m[38;2;255;184;108m<components>[0m
+[38;2;248;248;242m            Comma-separated list of style elements to display (*auto*, full, plain, changes, header,[0m
+[38;2;248;248;242m            grid, rule, numbers, snip).[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-r[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--line-range[0m[38;2;248;248;242m [0m[38;2;255;184;108m<N:M>[0m[38;2;255;184;108m...[0m[38;2;248;248;242m            Only print the lines from N to M.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-L[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--list-languages[0m[38;2;248;248;242m                 Display all supported languages.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-h[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--help[0m[38;2;248;248;242m                           Print this help message.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-V[0m[38;2;248;248;242m, [0m[38;2;248;248;242m--version[0m[38;2;248;248;242m                        Show version information.[0m
+
+[38;2;139;233;253mARGS:[0m
+[38;2;248;248;242m    <FILE>...    File(s) to print / concatenate. Use '-' for standard input.[0m
+
+[38;2;139;233;253mSUBCOMMANDS:[0m
+[38;2;248;248;242m    cache    Modify the syntax-definition and theme cache[0m
+
+[38;2;248;248;242mNote: `bat -h` prints a short and concise overview while `bat --help` gives all details.[0m

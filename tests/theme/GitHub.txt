@@ -1,0 +1,43 @@
+[38;2;51;51;51mbat 0.18.2[0m
+[38;2;51;51;51mA cat(1) clone with syntax highlighting and Git integration.[0m
+
+[38;2;51;51;51mUSAGE:[0m
+[38;2;51;51;51m    bat [OPTIONS] [FILE]...[0m
+[38;2;51;51;51m    bat <SUBCOMMAND>[0m
+
+[38;2;51;51;51mOPTIONS:[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-A[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--show-all[0m[38;2;51;51;51m                       Show non-printable characters (space, tab, newline, ..).[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-p[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--plain[0m[38;2;51;51;51m                          Show plain style (alias for '--style=plain').[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-l[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--language[0m[38;2;51;51;51m [0m[38;2;0;134;179m<language>[0m[38;2;51;51;51m            Set the language for syntax highlighting.[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-H[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--highlight-line[0m[38;2;51;51;51m [0m[38;2;0;134;179m<N:M>[0m[38;2;0;134;179m...[0m[38;2;51;51;51m        Highlight lines N through M.[0m
+[38;2;51;51;51m        [0m[38;2;51;51;51m--file-name[0m[38;2;51;51;51m [0m[38;2;0;134;179m<name>[0m[38;2;0;134;179m...[0m[38;2;51;51;51m            Specify the name to display for a file.[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-d[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--diff[0m[38;2;51;51;51m                           Only show lines that have been added/removed/modified.[0m
+[38;2;51;51;51m        [0m[38;2;51;51;51m--tabs[0m[38;2;51;51;51m [0m[38;2;0;134;179m<T>[0m[38;2;51;51;51m                       Set the tab width to T spaces.[0m
+[38;2;51;51;51m        [0m[38;2;51;51;51m--wrap[0m[38;2;51;51;51m [0m[38;2;0;134;179m<mode>[0m[38;2;51;51;51m                    Specify the text-wrapping mode (*auto*, never, character).[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-n[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--number[0m[38;2;51;51;51m                         Show line numbers (alias for '--style=numbers').[0m
+[38;2;51;51;51m        [0m[38;2;51;51;51m--color[0m[38;2;51;51;51m [0m[38;2;0;134;179m<when>[0m[38;2;51;51;51m                   When to use colors (*auto*, never, always).[0m
+[38;2;51;51;51m        [0m[38;2;51;51;51m--italic-text[0m[38;2;51;51;51m [0m[38;2;0;134;179m<when>[0m[38;2;51;51;51m             Use italics in output (always, *never*)[0m
+[38;2;51;51;51m        [0m[38;2;51;51;51m--decorations[0m[38;2;51;51;51m [0m[38;2;0;134;179m<when>[0m[38;2;51;51;51m             When to show the decorations (*auto*, never, always).[0m
+[38;2;51;51;51m        [0m[38;2;51;51;51m--paging[0m[38;2;51;51;51m [0m[38;2;0;134;179m<when>[0m
+[38;2;51;51;51m            Specify when to use the pager, or use `-P` to disable (*auto*, never, always).[0m
+
+[38;2;51;51;51m    [0m[38;2;51;51;51m-m[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--map-syntax[0m[38;2;51;51;51m [0m[38;2;0;134;179m<glob:syntax>[0m[38;2;0;134;179m...[0m
+[38;2;51;51;51m            Use the specified syntax for files matching the glob pattern ('*.cpp:C++').[0m
+
+[38;2;51;51;51m        [0m[38;2;51;51;51m--theme[0m[38;2;51;51;51m [0m[38;2;0;134;179m<theme>[0m[38;2;51;51;51m                  Set the color theme for syntax highlighting.[0m
+[38;2;51;51;51m        [0m[38;2;51;51;51m--list-themes[0m[38;2;51;51;51m                    Display all supported highlighting themes.[0m
+[38;2;51;51;51m        [0m[38;2;51;51;51m--style[0m[38;2;51;51;51m [0m[38;2;0;134;179m<components>[0m
+[38;2;51;51;51m            Comma-separated list of style elements to display (*auto*, full, plain, changes, header,[0m
+[38;2;51;51;51m            grid, rule, numbers, snip).[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-r[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--line-range[0m[38;2;51;51;51m [0m[38;2;0;134;179m<N:M>[0m[38;2;0;134;179m...[0m[38;2;51;51;51m            Only print the lines from N to M.[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-L[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--list-languages[0m[38;2;51;51;51m                 Display all supported languages.[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-h[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--help[0m[38;2;51;51;51m                           Print this help message.[0m
+[38;2;51;51;51m    [0m[38;2;51;51;51m-V[0m[38;2;51;51;51m, [0m[38;2;51;51;51m--version[0m[38;2;51;51;51m                        Show version information.[0m
+
+[38;2;51;51;51mARGS:[0m
+[38;2;51;51;51m    <FILE>...    File(s) to print / concatenate. Use '-' for standard input.[0m
+
+[38;2;51;51;51mSUBCOMMANDS:[0m
+[38;2;51;51;51m    cache    Modify the syntax-definition and theme cache[0m
+
+[38;2;51;51;51mNote: `bat -h` prints a short and concise overview while `bat --help` gives all details.[0m
