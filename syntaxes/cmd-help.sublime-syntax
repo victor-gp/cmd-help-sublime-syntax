@@ -25,6 +25,9 @@ variables:
   allcaps_argument_name: '[:upper:][[:upper:][:digit:]_]*\b'
   relaxed_argument_name: '[:alpha:][[:alnum:]_-]*\b'
 
+### scopes (last scope is matched first)
+  option_argument_scope: &OPTION_ARGUMENT_SCOPE
+    variable.other.option-argument.cmd-help variable.parameter.option-argument.cmd-help
 
 contexts:
   main:
@@ -98,34 +101,34 @@ contexts:
 
   space-after-option:
     - match: '<.*?>'
-      scope: variable.parameter.option-argument.cmd-help
+      scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
     - match: '{{allcaps_argument_name}}\b'
-      scope: variable.parameter.option-argument.cmd-help
+      scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
     - match: '{{relaxed_argument_name}}(?! [:alpha:])'
-      scope: variable.parameter.option-argument.cmd-help
+      scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
     - include: else-pop
 
   equals-after-option:
     - match: '{{relaxed_argument_name}}'
-      scope: variable.parameter.option-argument.cmd-help
+      scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
     - match: '<.*?>'
-      scope: variable.parameter.option-argument.cmd-help
+      scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
     - include: else-pop
 
   square-brackets-after-option:
-    - meta_content_scope: variable.parameter.option-argument.cmd-help
+    - meta_content_scope: *OPTION_ARGUMENT_SCOPE
     - match: '(?=])'
       #fixme: should consume (no lookahead), this forces else-pop on option-argument-post
       set: option-argument-post
 
   option-argument-post:
     - match: '({{ellipsis}})?'
-      scope: variable.parameter.option-argument.cmd-help
+      scope: *OPTION_ARGUMENT_SCOPE
     # - match: ''
     #   set: def-option-post
     - include: connect-option-alias
