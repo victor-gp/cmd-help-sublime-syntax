@@ -67,7 +67,7 @@ contexts:
       # definitely not an option
       pop: true
     - match: '-{{option_name}}'
-      scope: entity.name.cmd-option.cmd-help
+      scope: entity.name.function.option.cmd-help
       set: def-option-post
     - include: else-pop
 

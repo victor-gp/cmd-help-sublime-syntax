@@ -6,33 +6,33 @@
 [38;2;171;178;191m    bat <SUBCOMMAND>[0m
 
 [38;2;171;178;191mOPTIONS:[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-A[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--show-all[0m[38;2;171;178;191m                       Show non-printable characters (space, tab, newline, ..).[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-p[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--plain[0m[38;2;171;178;191m                          Show plain style (alias for '--style=plain').[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-l[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--language[0m[38;2;171;178;191m [0m[38;2;224;108;117m<language>[0m[38;2;171;178;191m            Set the language for syntax highlighting.[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-H[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--highlight-line[0m[38;2;171;178;191m [0m[38;2;224;108;117m<N:M>[0m[38;2;224;108;117m...[0m[38;2;171;178;191m        Highlight lines N through M.[0m
-[38;2;171;178;191m        [0m[38;2;171;178;191m--file-name[0m[38;2;171;178;191m [0m[38;2;224;108;117m<name>[0m[38;2;224;108;117m...[0m[38;2;171;178;191m            Specify the name to display for a file.[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-d[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--diff[0m[38;2;171;178;191m                           Only show lines that have been added/removed/modified.[0m
-[38;2;171;178;191m        [0m[38;2;171;178;191m--tabs[0m[38;2;171;178;191m [0m[38;2;224;108;117m<T>[0m[38;2;171;178;191m                       Set the tab width to T spaces.[0m
-[38;2;171;178;191m        [0m[38;2;171;178;191m--wrap[0m[38;2;171;178;191m [0m[38;2;224;108;117m<mode>[0m[38;2;171;178;191m                    Specify the text-wrapping mode (*auto*, never, character).[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-n[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--number[0m[38;2;171;178;191m                         Show line numbers (alias for '--style=numbers').[0m
-[38;2;171;178;191m        [0m[38;2;171;178;191m--color[0m[38;2;171;178;191m [0m[38;2;224;108;117m<when>[0m[38;2;171;178;191m                   When to use colors (*auto*, never, always).[0m
-[38;2;171;178;191m        [0m[38;2;171;178;191m--italic-text[0m[38;2;171;178;191m [0m[38;2;224;108;117m<when>[0m[38;2;171;178;191m             Use italics in output (always, *never*)[0m
-[38;2;171;178;191m        [0m[38;2;171;178;191m--decorations[0m[38;2;171;178;191m [0m[38;2;224;108;117m<when>[0m[38;2;171;178;191m             When to show the decorations (*auto*, never, always).[0m
-[38;2;171;178;191m        [0m[38;2;171;178;191m--paging[0m[38;2;171;178;191m [0m[38;2;224;108;117m<when>[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-A[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--show-all[0m[38;2;171;178;191m                       Show non-printable characters (space, tab, newline, ..).[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-p[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--plain[0m[38;2;171;178;191m                          Show plain style (alias for '--style=plain').[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-l[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--language[0m[38;2;171;178;191m [0m[38;2;224;108;117m<language>[0m[38;2;171;178;191m            Set the language for syntax highlighting.[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-H[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--highlight-line[0m[38;2;171;178;191m [0m[38;2;224;108;117m<N:M>[0m[38;2;224;108;117m...[0m[38;2;171;178;191m        Highlight lines N through M.[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--file-name[0m[38;2;171;178;191m [0m[38;2;224;108;117m<name>[0m[38;2;224;108;117m...[0m[38;2;171;178;191m            Specify the name to display for a file.[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-d[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--diff[0m[38;2;171;178;191m                           Only show lines that have been added/removed/modified.[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--tabs[0m[38;2;171;178;191m [0m[38;2;224;108;117m<T>[0m[38;2;171;178;191m                       Set the tab width to T spaces.[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--wrap[0m[38;2;171;178;191m [0m[38;2;224;108;117m<mode>[0m[38;2;171;178;191m                    Specify the text-wrapping mode (*auto*, never, character).[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-n[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--number[0m[38;2;171;178;191m                         Show line numbers (alias for '--style=numbers').[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--color[0m[38;2;171;178;191m [0m[38;2;224;108;117m<when>[0m[38;2;171;178;191m                   When to use colors (*auto*, never, always).[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--italic-text[0m[38;2;171;178;191m [0m[38;2;224;108;117m<when>[0m[38;2;171;178;191m             Use italics in output (always, *never*)[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--decorations[0m[38;2;171;178;191m [0m[38;2;224;108;117m<when>[0m[38;2;171;178;191m             When to show the decorations (*auto*, never, always).[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--paging[0m[38;2;171;178;191m [0m[38;2;224;108;117m<when>[0m
 [38;2;171;178;191m            Specify when to use the pager, or use `-P` to disable (*auto*, never, always).[0m
 
-[38;2;171;178;191m    [0m[38;2;171;178;191m-m[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--map-syntax[0m[38;2;171;178;191m [0m[38;2;224;108;117m<glob:syntax>[0m[38;2;224;108;117m...[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-m[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--map-syntax[0m[38;2;171;178;191m [0m[38;2;224;108;117m<glob:syntax>[0m[38;2;224;108;117m...[0m
 [38;2;171;178;191m            Use the specified syntax for files matching the glob pattern ('*.cpp:C++').[0m
 
-[38;2;171;178;191m        [0m[38;2;171;178;191m--theme[0m[38;2;171;178;191m [0m[38;2;224;108;117m<theme>[0m[38;2;171;178;191m                  Set the color theme for syntax highlighting.[0m
-[38;2;171;178;191m        [0m[38;2;171;178;191m--list-themes[0m[38;2;171;178;191m                    Display all supported highlighting themes.[0m
-[38;2;171;178;191m        [0m[38;2;171;178;191m--style[0m[38;2;171;178;191m [0m[38;2;224;108;117m<components>[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--theme[0m[38;2;171;178;191m [0m[38;2;224;108;117m<theme>[0m[38;2;171;178;191m                  Set the color theme for syntax highlighting.[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--list-themes[0m[38;2;171;178;191m                    Display all supported highlighting themes.[0m
+[38;2;171;178;191m        [0m[38;2;97;175;239m--style[0m[38;2;171;178;191m [0m[38;2;224;108;117m<components>[0m
 [38;2;171;178;191m            Comma-separated list of style elements to display (*auto*, full, plain, changes, header,[0m
 [38;2;171;178;191m            grid, rule, numbers, snip).[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-r[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--line-range[0m[38;2;171;178;191m [0m[38;2;224;108;117m<N:M>[0m[38;2;224;108;117m...[0m[38;2;171;178;191m            Only print the lines from N to M.[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-L[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--list-languages[0m[38;2;171;178;191m                 Display all supported languages.[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-h[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--help[0m[38;2;171;178;191m                           Print this help message.[0m
-[38;2;171;178;191m    [0m[38;2;171;178;191m-V[0m[38;2;171;178;191m, [0m[38;2;171;178;191m--version[0m[38;2;171;178;191m                        Show version information.[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-r[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--line-range[0m[38;2;171;178;191m [0m[38;2;224;108;117m<N:M>[0m[38;2;224;108;117m...[0m[38;2;171;178;191m            Only print the lines from N to M.[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-L[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--list-languages[0m[38;2;171;178;191m                 Display all supported languages.[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-h[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--help[0m[38;2;171;178;191m                           Print this help message.[0m
+[38;2;171;178;191m    [0m[38;2;97;175;239m-V[0m[38;2;171;178;191m, [0m[38;2;97;175;239m--version[0m[38;2;171;178;191m                        Show version information.[0m
 
 [38;2;171;178;191mARGS:[0m
 [38;2;171;178;191m    <FILE>...    File(s) to print / concatenate. Use '-' for standard input.[0m
