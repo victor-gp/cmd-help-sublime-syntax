@@ -1,11 +1,11 @@
 bat 0.18.2
 A cat(1) clone with syntax highlighting and Git integration.
 
-USAGE:
+[34mUSAGE:[0m
     bat [OPTIONS] [FILE]...
     bat <SUBCOMMAND>
 
-OPTIONS:
+[34mOPTIONS:[0m
     [34m-A[0m, [34m--show-all[0m                       Show non-printable characters (space, tab, newline, ..).
     [34m-p[0m, [34m--plain[0m                          Show plain style (alias for '--style=plain').
     [34m-l[0m, [34m--language[0m <language>            Set the language for syntax highlighting.
@@ -34,10 +34,10 @@ OPTIONS:
     [34m-h[0m, [34m--help[0m                           Print this help message.
     [34m-V[0m, [34m--version[0m                        Show version information.
 
-ARGS:
+[34mARGS:[0m
     <FILE>...    File(s) to print / concatenate. Use '-' for standard input.
 
-SUBCOMMANDS:
+[34mSUBCOMMANDS:[0m
     cache    Modify the syntax-definition and theme cache
 
 Note: `bat -h` prints a short and concise overview while `bat --help` gives all details.

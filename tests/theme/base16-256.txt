@@ -1,11 +1,11 @@
 [37mbat 0.18.2[0m
 [37mA cat(1) clone with syntax highlighting and Git integration.[0m
 
-[37mUSAGE:[0m
+[34mUSAGE:[0m
 [37m    bat [OPTIONS] [FILE]...[0m
 [37m    bat <SUBCOMMAND>[0m
 
-[37mOPTIONS:[0m
+[34mOPTIONS:[0m
 [37m    [0m[34m-A[0m[37m, [0m[34m--show-all[0m[37m                       Show non-printable characters (space, tab, newline, ..).[0m
 [37m    [0m[34m-p[0m[37m, [0m[34m--plain[0m[37m                          Show plain style (alias for '--style=plain').[0m
 [37m    [0m[34m-l[0m[37m, [0m[34m--language[0m[37m [0m[37m<language>[0m[37m            Set the language for syntax highlighting.[0m
@@ -34,10 +34,10 @@
 [37m    [0m[34m-h[0m[37m, [0m[34m--help[0m[37m                           Print this help message.[0m
 [37m    [0m[34m-V[0m[37m, [0m[34m--version[0m[37m                        Show version information.[0m
 
-[37mARGS:[0m
+[34mARGS:[0m
 [37m    <FILE>...    File(s) to print / concatenate. Use '-' for standard input.[0m
 
-[37mSUBCOMMANDS:[0m
+[34mSUBCOMMANDS:[0m
 [37m    cache    Modify the syntax-definition and theme cache[0m
 
 [37mNote: `bat -h` prints a short and concise overview while `bat --help` gives all details.[0m
