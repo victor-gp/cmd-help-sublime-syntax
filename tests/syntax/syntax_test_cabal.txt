@@ -78,7 +78,7 @@ Commands:
   v1-reconfigure    Reconfigure the package if necessary.
 
 For more information about a command use:
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.cmd-help
    cabal COMMAND --help
 or cabal help COMMAND
 
@@ -86,7 +86,7 @@ To install Cabal packages from hackage use:
   cabal install foo [--dry-run]
 
 Occasionally you need to update the list of available packages:
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.cmd-help
   cabal update
 
 Global flags:

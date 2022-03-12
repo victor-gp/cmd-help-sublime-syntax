@@ -1,8 +1,8 @@
 # SYNTAX TEST "cmd-help.sublime-syntax"
 
 Usage: cp [OPTION]... [-T] SOURCE DEST
-#^^^^^ markup.heading.inline-usage.help
-#     ^^^^^^ - markup.heading.inline-usage.help
+#^^^^^ markup.heading.inline-usage.cmd-help
+#     ^^^^^^ - markup.heading.inline-usage.cmd-help
   or:  cp [OPTION]... SOURCE... DIRECTORY
   or:  cp [OPTION]... -t DIRECTORY SOURCE...
 Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
@@ -11,7 +11,7 @@ Mandatory arguments to long options are mandatory for short options too.
   -a, --archive                same as -dR --preserve=all
       --attributes-only        don't copy the file data, just the attributes
       --backup[=CONTROL]       make a backup of each existing destination file
-#               ^^^^^^^ variable.parameter.option-argument.help
+#               ^^^^^^^ variable.parameter.option-argument.cmd-help
   -b                           like --backup but does not accept an argument
       --copy-contents          copy contents of special files when recursive
   -d                           same as --no-dereference --preserve=links
@@ -32,11 +32,11 @@ Mandatory arguments to long options are mandatory for short options too.
                                  additional attributes: context, links, xattr,
                                  all
       --no-preserve=ATTR_LIST  don't preserve the specified attributes
-#                   ^^^^^^^^^ variable.parameter.option-argument.help
+#                   ^^^^^^^^^ variable.parameter.option-argument.cmd-help
       --parents                use full source file name under DIRECTORY
   -R, -r, --recursive          copy directories recursively
-#     ^^ entity.name.cmd-option.help
-#         ^^^^^^^^^^^ entity.name.cmd-option.help
+#     ^^ entity.name.cmd-option.cmd-help
+#         ^^^^^^^^^^^ entity.name.cmd-option.cmd-help
       --reflink[=WHEN]         control clone/CoW copies. See below
       --remove-destination     remove each existing destination file before
                                  attempting to open it (contrast with --force)

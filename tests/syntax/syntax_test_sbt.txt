@@ -3,7 +3,7 @@
 Usage: sbt [options]
 
   -h | --help         print this message
-#      ^^^^^^ entity.name.cmd-option.help
+#      ^^^^^^ entity.name.cmd-option.cmd-help
   -v | --verbose      this runner is chattier
   -V | --version      print sbt version information
   --numeric-version   print the numeric sbt version (sbt sbtVersion)
@@ -13,8 +13,8 @@ Usage: sbt [options]
                       enable extra debugging for the incremental debugger
   --no-colors         disable ANSI color codes
   --color=auto|always|true|false|never
-#         ^^^^ variable.parameter.option-argument.help
-#              ^^^^^^ - variable.parameter.option-argument.help
+#         ^^^^ variable.parameter.option-argument.cmd-help
+#              ^^^^^^ - variable.parameter.option-argument.cmd-help
 #nice: handle |-separated argument enums
                       enable or disable ANSI color codes      (sbt 1.3 and above)
   --supershell=auto|always|true|false|never
@@ -23,7 +23,7 @@ Usage: sbt [options]
   --timings           display task timings report on shutdown
   --sbt-create        start sbt even if current directory contains no sbt project
   --sbt-dir   <path>  path to global settings/plugins directory (default: ~/.sbt)
-#             ^^^^^^ - variable.parameter.option-argument.help
+#             ^^^^^^ - variable.parameter.option-argument.cmd-help
 #nice: handle option arguments like this
   --sbt-boot  <path>  path to shared boot directory (default: ~/.sbt/boot in 0.11 series)
   --ivy       <path>  path to local Ivy repository (default: ~/.ivy2)

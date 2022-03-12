@@ -19,7 +19,7 @@ Mandatory arguments to long options are mandatory for short options too.
   -p, --show-c-function         show which C function each change is in
   -F, --show-function-line=RE   show the most recent line matching RE
       --label LABEL             use LABEL instead of file name and timestamp
-#             ^^^^^ variable.parameter.option-argument.help
+#             ^^^^^ variable.parameter.option-argument.cmd-help
                                   (can be repeated)
 
   -t, --expand-tabs             expand tabs to spaces in output
@@ -38,7 +38,7 @@ Mandatory arguments to long options are mandatory for short options too.
   -X, --exclude-from=FILE         exclude files that match any pattern in FILE
   -S, --starting-file=FILE        start with FILE when comparing directories
       --from-file=FILE1           compare FILE1 to all operands;
-#                 ^^^^^ variable.parameter.option-argument.help
+#                 ^^^^^ variable.parameter.option-argument.cmd-help
                                     FILE1 can be a directory
       --to-file=FILE2             compare all operands to FILE2;
                                     FILE2 can be a directory

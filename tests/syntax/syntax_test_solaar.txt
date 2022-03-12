@@ -6,7 +6,7 @@ usage: solaar [-h] [-d] [-D PATH] [--restart-on-wake-up] [-w {show,hide,only}]
               ...
 
 positional arguments:
-#^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
+#^^^^^^^^^^^^^^^^^^^^ - markup.heading.cmd-help
 #nice: allow sections beginning in lowercase? hardly
   {show,probe,config,pair,unpair}
                         optional actions to perform

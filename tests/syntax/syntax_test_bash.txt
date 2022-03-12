@@ -4,7 +4,7 @@ GNU bash, version 5.0.17(1)-release-(x86_64-pc-linux-gnu)
 Usage:	bash [GNU long option] [option] ...
 	bash [GNU long option] [option] script-file ...
 GNU long options:
-#^^^^^^^^^^^^^^^^ markup.heading.help
+#^^^^^^^^^^^^^^^^ markup.heading.cmd-help
 	--debug
 	--debugger
 	--dump-po-strings
@@ -23,8 +23,8 @@ GNU long options:
 	--version
 Shell options:
 	-ilrsD or -c command or -O shopt_option		(invocation only)
-	        # ^^ entity.name.cmd-option.help
-#                ^^^^^^^ - variable.parameter.option-argument.help
+	        # ^^ entity.name.cmd-option.cmd-help
+#                ^^^^^^^ - variable.parameter.option-argument.cmd-help
 #nice: get this one right
 	-abefhkmnptuvxBCHP or -o option
 Type `bash -c "help set"' for more information about shell options.

@@ -4,7 +4,7 @@ Usage: xsel [options]
 Manipulate the X selection.
 
 By default the current selection is output and not modified if both
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.cmd-help
 standard input and standard output are terminals (ttys).  Otherwise,
 the current selection is output if standard output is not a terminal
 (tty), and the selection is set from standard input if standard input
@@ -12,7 +12,7 @@ is not a terminal (tty). If any input or output options are given then
 the program behaves only in the requested mode.
 
 If both input and output is required then the previous selection is
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.cmd-help
 output before being replaced by the contents of standard input.
 
 Input options
@@ -41,11 +41,11 @@ Selection options
 
 X options
   --display displayname
-#           ^^^^^^^^^^^ variable.parameter.option-argument.help
+#           ^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
                         Specify the connection to the X server
   -t ms, --selectionTimeout ms
-#    ^^ variable.parameter.option-argument.help
-#        ^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.help
+#    ^^ variable.parameter.option-argument.cmd-help
+#        ^^^^^^^^^^^^^^^^^^ entity.name.cmd-option.cmd-help
                         Specify the timeout in milliseconds within which the
                         selection must be retrieved. A value of 0 (zero)
                         specifies no timeout (default)

@@ -8,7 +8,7 @@ Usage: man [OPTION...] [SECTION] PAGE...
       --warnings[=WARNINGS]  enable warnings from groff
 
  Main modes of operation:
-#^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
+#^^^^^^^^^^^^^^^^^^^^^^^^ - markup.heading.cmd-help
 #todo: handle indented section headings => last priority element in line-indent context
   -f, --whatis               equivalent to whatis
   -k, --apropos              equivalent to apropos
@@ -23,7 +23,7 @@ Usage: man [OPTION...] [SECTION] PAGE...
   -R, --recode=ENCODING      output source page encoded in ENCODING
 
  Finding manual pages:
-#^^^^^^^^^^^^^^^^^^^^^ - markup.heading.help
+#^^^^^^^^^^^^^^^^^^^^^ - markup.heading.cmd-help
   -L, --locale=LOCALE        define the locale for this particular man search
   -m, --systems=SYSTEM       use manual pages from other systems
   -M, --manpath=PATH         set search path for manual pages to PATH
@@ -69,7 +69,7 @@ g - grap, r - refer, v - vgrind
   -Z, --ditroff              use groff and force it to produce ditroff
 
   -?, --help                 give this help list
- #^^ entity.name.cmd-option.help
+ #^^ entity.name.cmd-option.cmd-help
       --usage                give a short usage message
   -V, --version              print program version
 

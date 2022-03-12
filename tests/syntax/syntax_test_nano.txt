@@ -8,7 +8,7 @@ When a filename is '-', nano reads data from standard input.
 
  Option         Long option             Meaning
  -A             --smarthome             Enable smart home key
-#               ^^^^^^^^^^^ entity.name.cmd-option.help
+#               ^^^^^^^^^^^ entity.name.cmd-option.cmd-help
  -B             --backup                Save backups of existing files
  -C <dir>       --backupdir=<dir>       Directory for saving unique backup files
  -D             --boldtext              Use bold instead of reverse video text
@@ -58,4 +58,4 @@ When a filename is '-', nano reads data from standard input.
  -y             --afterends             Make Ctrl+Right stop at word ends
  -z             --suspend               Enable suspension
  -$             --softwrap              Enable soft line wrapping
-#^^ entity.name.cmd-option.help
+#^^ entity.name.cmd-option.cmd-help

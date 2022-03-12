@@ -4,17 +4,17 @@ bat 0.18.2
 A cat(1) clone with syntax highlighting and Git integration.
 
 USAGE:
-# <- markup.heading.help
-#^^^^^ markup.heading.help
+# <- markup.heading.cmd-help
+#^^^^^ markup.heading.cmd-help
     bat [OPTIONS] [FILE]...
     bat <SUBCOMMAND>
 
 OPTIONS:
-#^^^^^^^ markup.heading.help
+#^^^^^^^ markup.heading.cmd-help
     -A, --show-all
-#   ^^ entity.name.cmd-option.help
-#     ^^ - entity.name.cmd-option.help
-#       ^^^^^^^^^^ entity.name.cmd-option.help
+#   ^^ entity.name.cmd-option.cmd-help
+#     ^^ - entity.name.cmd-option.cmd-help
+#       ^^^^^^^^^^ entity.name.cmd-option.cmd-help
             Show non-printable characters like space, tab or newline. This option can also be used
             # <- - option-def.cmd-help
             to print binary files. Use '--tabs' to control the width of the tab-placeholders.
@@ -22,23 +22,23 @@ OPTIONS:
             Only show plain style, no decorations. This is an alias for '--style=plain'. When '-p'
             is used twice ('-pp'), it also disables automatic paging (alias for '--style=plain
             --pager=never').
-#           ^^^^^^^ - entity.name.cmd-option.help
+#           ^^^^^^^ - entity.name.cmd-option.cmd-help
     -l, --language <language>
-#                 ^ - entity.name.cmd-option.help - variable.parameter.option-argument.help
-#                  ^^^^^^^^^^ variable.parameter.option-argument.help
+#                 ^ - entity.name.cmd-option.cmd-help - variable.parameter.option-argument.cmd-help
+#                  ^^^^^^^^^^ variable.parameter.option-argument.cmd-help
             Explicitly set the language for syntax highlighting. The language can be specified as a
             name (like 'C++' or 'LaTeX') or possible file extension (like 'cpp', 'hpp' or 'md'). Use
             '--list-languages' to show all supported language names and file extensions.
     -H, --highlight-line <N:M>...
-#                        ^^^^^ variable.parameter.option-argument.help
+#                        ^^^^^ variable.parameter.option-argument.cmd-help
             Highlight the specified line ranges with a different background color For example:
               '--highlight-line 40' highlights line 40
               '--highlight-line 30:40' highlights lines 30 to 40
               '--highlight-line :40' highlights lines 1 to 40
               '--highlight-line 40:' highlights lines 40 to the end of the file
         --file-name <name>...
-#       ^^^^^^^^^^^ entity.name.cmd-option.help
-#                   ^^^^^^^^^ variable.parameter.option-argument.help
+#       ^^^^^^^^^^^ entity.name.cmd-option.cmd-help
+#                   ^^^^^^^^^ variable.parameter.option-argument.cmd-help
             Specify the name to display for a file. Useful when piping data to bat from STDIN when
             bat does not otherwise know the filename. Note that the provided file name is also used
             for syntax detection.
@@ -79,7 +79,7 @@ OPTIONS:
         --paging <when>
             Specify when to use the pager. To disable the pager, use --paging=never' or its
             alias,'-P'. To disable the pager permanently, set BAT_PAGER to an empty string. To
-#                  ^^ - entity.name.cmd-option.help
+#                  ^^ - entity.name.cmd-option.cmd-help
             control which pager is used, see the '--pager' option. Possible values: *auto*, never,
             always.
         --pager <command>
@@ -90,7 +90,7 @@ OPTIONS:
             Map a glob pattern to an existing syntax name. The glob pattern is matched on the full
             path and the filename. For example, to highlight *.build files with the Python syntax,
             use -m '*.build:Python'. To highlight files named '.myignore' with the Git Ignore
-#               ^^ - entity.name.cmd-option.help
+#               ^^ - entity.name.cmd-option.cmd-help
             syntax, use -m '.myignore:Git Ignore'. Note that the right-hand side is the *name* of
             the syntax, not a file extension.
         --theme <theme>

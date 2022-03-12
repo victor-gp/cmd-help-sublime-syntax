@@ -17,15 +17,15 @@ where options include:
                   A : separated list of directories, JAR archives,
                   and ZIP archives to search for class files.
     -D<name>=<value>
-#     ^^^^^^^^^^^^^^ - variable.parameter.option-argument.help
+#     ^^^^^^^^^^^^^^ - variable.parameter.option-argument.cmd-help
 #nice: handle this
                   set a system property
     -verbose:[class|gc|jni]
                   enable verbose output
     -version      print product version and exit
     -version:<value>
-#           ^ entity.name.cmd-option.help
-#            ^^^^^^^ - variable.parameter.option-argument.help
+#           ^ entity.name.cmd-option.cmd-help
+#            ^^^^^^^ - variable.parameter.option-argument.cmd-help
 #todo: handle colon (no scope) + option argument
                   Warning: this feature is deprecated and will be removed
                   in a future release.
@@ -48,7 +48,7 @@ where options include:
     -dsa | -disablesystemassertions
                   disable system assertions
     -agentlib:<libname>[=<options>]
-#             ^^^^^^^^^^^^^^^^^^^^^ - variable.parameter.option-argument.help
+#             ^^^^^^^^^^^^^^^^^^^^^ - variable.parameter.option-argument.cmd-help
 #nice: handle these
                   load native agent library <libname>, e.g. -agentlib:hprof
                   see also, -agentlib:jdwp=help and -agentlib:hprof=help

@@ -14,7 +14,7 @@ Options and arguments (and corresponding environment variables):
          if stdin does not appear to be a terminal; also PYTHONINSPECT=x
 -I     : isolate Python from the user's environment (implies -E and -s)
 -m mod : run library module as a script (terminates option list)
-#  ^^^ variable.parameter.option-argument.help
+#  ^^^ variable.parameter.option-argument.cmd-help
 -O     : remove assert and __debug__-dependent statements; add .opt-1 before
          .pyc extension; also PYTHONOPTIMIZE=x
 -OO    : do -O changes and also discard docstrings; add .opt-2 before

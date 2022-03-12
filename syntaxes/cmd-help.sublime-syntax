@@ -3,7 +3,7 @@
 name: Command Help
 file_extensions:
   - cmd-help # doesn't really exist, but useful for the shortname
-scope: text.help
+scope: text.cmd-help
 
 
 variables:
@@ -49,7 +49,7 @@ contexts:
 
   pre-heading:
     - match: '(?i:usage):(?=.+\n)'
-      scope: markup.heading.inline-usage.help
+      scope: markup.heading.inline-usage.cmd-help
     # only consider lines <= 40 chars long
     - match: '^(?=.{1,40}\n)'
       set: heading
@@ -57,9 +57,9 @@ contexts:
 
   heading:
     - match: '{{leading_word}}( {{any_word}})*:?\n'
-      scope: markup.heading.help
+      scope: markup.heading.cmd-help
     # - match: '{{any_word}}( {{any_word}})*:\n'
-    #   scope: markup.heading.help
+    #   scope: markup.heading.cmd-help
     - include: else-pop
 
   def-option:
@@ -67,7 +67,7 @@ contexts:
       # definitely not an option
       pop: true
     - match: '-{{option_name}}'
-      scope: entity.name.cmd-option.help
+      scope: entity.name.cmd-option.cmd-help
       set: def-option-post
     - include: else-pop
 
@@ -98,34 +98,34 @@ contexts:
 
   space-after-option:
     - match: '<.*?>'
-      scope: variable.parameter.option-argument.help
+      scope: variable.parameter.option-argument.cmd-help
       set: option-argument-post
     - match: '{{allcaps_argument_name}}\b'
-      scope: variable.parameter.option-argument.help
+      scope: variable.parameter.option-argument.cmd-help
       set: option-argument-post
     - match: '{{relaxed_argument_name}}(?! [:alpha:])'
-      scope: variable.parameter.option-argument.help
+      scope: variable.parameter.option-argument.cmd-help
       set: option-argument-post
     - include: else-pop
 
   equals-after-option:
     - match: '{{relaxed_argument_name}}'
-      scope: variable.parameter.option-argument.help
+      scope: variable.parameter.option-argument.cmd-help
       set: option-argument-post
     - match: '<.*?>'
-      scope: variable.parameter.option-argument.help
+      scope: variable.parameter.option-argument.cmd-help
       set: option-argument-post
     - include: else-pop
 
   square-brackets-after-option:
-    - meta_content_scope: variable.parameter.option-argument.help
+    - meta_content_scope: variable.parameter.option-argument.cmd-help
     - match: '(?=])'
       #fixme: should consume (no lookahead), this forces else-pop on option-argument-post
       set: option-argument-post
 
   option-argument-post:
     - match: '({{ellipsis}})?'
-      scope: variable.parameter.option-argument.help
+      scope: variable.parameter.option-argument.cmd-help
     # - match: ''
     #   set: def-option-post
     - include: connect-option-alias
