@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eou pipefail
+set -euo pipefail
 
 # help.sublime-syntax must be symlinked to ~/.config/bat/syntaxes/
 bat cache --build
