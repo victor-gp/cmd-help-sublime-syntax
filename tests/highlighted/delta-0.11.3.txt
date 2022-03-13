@@ -508,7 +508,7 @@
 [38;2;248;248;242mThe following options allow the line number display to be customized:[0m
 
 [38;2;166;226;46m--line-numbers-left-format:[0m[38;2;248;248;242m  Change the contents of the left column[0m
-[38;2;166;226;46m--line-numbers-right-format:[0m[38;2;248;248;242m Change the contents of the right column[0m
+[38;2;166;226;46m--line-numbers-right-format:[0m[38;2;248;248;242m [0m[38;2;253;151;31mChange the contents of the right column[0m
 [38;2;166;226;46m--line-numbers-left-style:[0m[38;2;248;248;242m   Change the style applied to the left column[0m
 [38;2;166;226;46m--line-numbers-right-style:[0m[38;2;248;248;242m  Change the style applied to the right column[0m
 [38;2;166;226;46m--line-numbers-minus-style:[0m[38;2;248;248;242m  Change the style applied to line numbers in minus lines[0m

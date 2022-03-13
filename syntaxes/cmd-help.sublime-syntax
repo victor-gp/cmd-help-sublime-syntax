@@ -49,9 +49,11 @@ contexts:
     - include: else-pop
 
   line-indent:
-    - match: '^ {1,8}'
+    - match: '^ {1,2}(?=\S)'
+      set: [def-option, pre-heading]
+    - match: '^ {3,8}(?=\S)'
       set: [def-option]
-    - match: '^\t{1,2}'
+    - match: '^\t{1,2}(?=\S)'
       set: [def-option]
     - include: else-pop
 
@@ -63,7 +65,7 @@ contexts:
     - match: '(?i:usage):(?=.+\n)'
       scope: *INLINE_USAGE_SCOPE
     # only consider lines <= 40 chars long
-    - match: '^(?=.{1,40}\n)'
+    - match: '(?=.{1,40}\n)'
       set: heading
     - include: else-pop
 
