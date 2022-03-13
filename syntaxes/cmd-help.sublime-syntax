@@ -27,9 +27,9 @@ variables:
 
 ### scope variables (rightmost scope is matched first)
   section_heading_scope: &SECTION_HEADING_SCOPE
-    markup.heading.cmd-help  entity.name.section.cmd-help
+    string.section-heading.cmd-help  markup.heading.cmd-help  entity.name.section.cmd-help
   inline_usage_scope: &INLINE_USAGE_SCOPE
-    markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help
+    string.inline-usage.cmd-help  markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help
   def_option_scope: &DEF_OPTION_SCOPE
     entity.name.function.option.cmd-help
   option_argument_scope: &OPTION_ARGUMENT_SCOPE

@@ -1,11 +1,11 @@
 [38;2;248;248;242mbat 0.18.2[0m
 [38;2;248;248;242mA cat(1) clone with syntax highlighting and Git integration.[0m
 
-[38;2;248;248;242mUSAGE:[0m
+[38;2;251;227;191mUSAGE:[0m
 [38;2;248;248;242m    bat [OPTIONS] [FILE]...[0m
 [38;2;248;248;242m    bat <SUBCOMMAND>[0m
 
-[38;2;248;248;242mOPTIONS:[0m
+[38;2;251;227;191mOPTIONS:[0m
 [38;2;248;248;242m    [0m[38;2;140;218;255m-A[0m[38;2;248;248;242m, [0m[38;2;140;218;255m--show-all[0m[38;2;248;248;242m                       Show non-printable characters (space, tab, newline, ..).[0m
 [38;2;248;248;242m    [0m[38;2;140;218;255m-p[0m[38;2;248;248;242m, [0m[38;2;140;218;255m--plain[0m[38;2;248;248;242m                          Show plain style (alias for '--style=plain').[0m
 [38;2;248;248;242m    [0m[38;2;140;218;255m-l[0m[38;2;248;248;242m, [0m[38;2;140;218;255m--language[0m[38;2;248;248;242m [0m[38;2;252;147;84m<language>[0m[38;2;248;248;242m            Set the language for syntax highlighting.[0m
@@ -34,10 +34,10 @@
 [38;2;248;248;242m    [0m[38;2;140;218;255m-h[0m[38;2;248;248;242m, [0m[38;2;140;218;255m--help[0m[38;2;248;248;242m                           Print this help message.[0m
 [38;2;248;248;242m    [0m[38;2;140;218;255m-V[0m[38;2;248;248;242m, [0m[38;2;140;218;255m--version[0m[38;2;248;248;242m                        Show version information.[0m
 
-[38;2;248;248;242mARGS:[0m
+[38;2;251;227;191mARGS:[0m
 [38;2;248;248;242m    <FILE>...    File(s) to print / concatenate. Use '-' for standard input.[0m
 
-[38;2;248;248;242mSUBCOMMANDS:[0m
+[38;2;251;227;191mSUBCOMMANDS:[0m
 [38;2;248;248;242m    cache    Modify the syntax-definition and theme cache[0m
 
 [38;2;248;248;242mNote: `bat -h` prints a short and concise overview while `bat --help` gives all details.[0m
