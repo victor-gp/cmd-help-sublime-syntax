@@ -12,7 +12,10 @@ do
     unset IFS # then bash uses default IFS
 
     source_path=source/bat-short-0.18.2.txt
-    highlighted_path="theme/$theme.txt"
+    highlighted_path="theme/${theme}-1.txt"
+    bat --no-config -fpl cmd-help "$source_path" --theme "$theme" > "$highlighted_path"
+    source_path=source/vim-8.1.txt
+    highlighted_path="theme/${theme}-2.txt"
     bat --no-config -fpl cmd-help "$source_path" --theme "$theme" > "$highlighted_path"
 done
 
