@@ -39,7 +39,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--rawfile[0m[38;2;248;248;242m a f    set variable $a to a string consisting of the contents of <f>;[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--args[0m[38;2;248;248;242m           remaining arguments are string arguments, not files;[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jsonargs[0m[38;2;248;248;242m       remaining arguments are JSON arguments, not files;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--[0m[38;2;248;248;242m               terminates argument processing;[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114m--[0m[38;2;248;248;242m               terminates argument processing;[0m
 
 [38;2;248;248;242mNamed arguments are also available as $ARGS.named[], while[0m
 [38;2;248;248;242mpositional arguments are available as $ARGS.positional[].[0m

@@ -36,5 +36,5 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--noverbose[0m[38;2;248;248;242m       Don't show details[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m	    Print the version of irb[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m        Print help[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--[0m[38;2;248;248;242m                Separate options of irb from the list of command-line args[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114m--[0m[38;2;248;248;242m                Separate options of irb from the list of command-line args[0m
 

@@ -283,7 +283,7 @@
 [38;2;248;248;242m           Countermand commit.gpgSign configuration variable that is set to force each and every[0m
 [38;2;248;248;242m           commit to be signed.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--[0m
+[38;2;248;248;242m       [0m[38;2;249;38;114m--[0m
 [38;2;248;248;242m           Do not interpret any more arguments as options.[0m
 
 [38;2;248;248;242m       <pathspec>...[0m
