@@ -33,7 +33,7 @@ variables:
   def_option_scope: &DEF_OPTION_SCOPE
     entity.name.function.option.cmd-help
   option_argument_scope: &OPTION_ARGUMENT_SCOPE
-    variable.other.option-argument.cmd-help  variable.parameter.option-argument.cmd-help
+    string.option-argument.cmd-help  variable.other.option-argument.cmd-help  variable.parameter.option-argument.cmd-help
 
 
 contexts:

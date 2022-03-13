@@ -8,28 +8,28 @@ A cat(1) clone with syntax highlighting and Git integration.
 [34mOPTIONS:[0m
     [34m-A[0m, [34m--show-all[0m                       Show non-printable characters (space, tab, newline, ..).
     [34m-p[0m, [34m--plain[0m                          Show plain style (alias for '--style=plain').
-    [34m-l[0m, [34m--language[0m <language>            Set the language for syntax highlighting.
-    [34m-H[0m, [34m--highlight-line[0m <N:M>...        Highlight lines N through M.
-        [34m--file-name[0m <name>...            Specify the name to display for a file.
+    [34m-l[0m, [34m--language[0m [32m<language>[0m            Set the language for syntax highlighting.
+    [34m-H[0m, [34m--highlight-line[0m [32m<N:M>[0m[32m...[0m        Highlight lines N through M.
+        [34m--file-name[0m [32m<name>[0m[32m...[0m            Specify the name to display for a file.
     [34m-d[0m, [34m--diff[0m                           Only show lines that have been added/removed/modified.
-        [34m--tabs[0m <T>                       Set the tab width to T spaces.
-        [34m--wrap[0m <mode>                    Specify the text-wrapping mode (*auto*, never, character).
+        [34m--tabs[0m [32m<T>[0m                       Set the tab width to T spaces.
+        [34m--wrap[0m [32m<mode>[0m                    Specify the text-wrapping mode (*auto*, never, character).
     [34m-n[0m, [34m--number[0m                         Show line numbers (alias for '--style=numbers').
-        [34m--color[0m <when>                   When to use colors (*auto*, never, always).
-        [34m--italic-text[0m <when>             Use italics in output (always, *never*)
-        [34m--decorations[0m <when>             When to show the decorations (*auto*, never, always).
-        [34m--paging[0m <when>
+        [34m--color[0m [32m<when>[0m                   When to use colors (*auto*, never, always).
+        [34m--italic-text[0m [32m<when>[0m             Use italics in output (always, *never*)
+        [34m--decorations[0m [32m<when>[0m             When to show the decorations (*auto*, never, always).
+        [34m--paging[0m [32m<when>[0m
             Specify when to use the pager, or use `-P` to disable (*auto*, never, always).
 
-    [34m-m[0m, [34m--map-syntax[0m <glob:syntax>...
+    [34m-m[0m, [34m--map-syntax[0m [32m<glob:syntax>[0m[32m...[0m
             Use the specified syntax for files matching the glob pattern ('*.cpp:C++').
 
-        [34m--theme[0m <theme>                  Set the color theme for syntax highlighting.
+        [34m--theme[0m [32m<theme>[0m                  Set the color theme for syntax highlighting.
         [34m--list-themes[0m                    Display all supported highlighting themes.
-        [34m--style[0m <components>
+        [34m--style[0m [32m<components>[0m
             Comma-separated list of style elements to display (*auto*, full, plain, changes, header,
             grid, rule, numbers, snip).
-    [34m-r[0m, [34m--line-range[0m <N:M>...            Only print the lines from N to M.
+    [34m-r[0m, [34m--line-range[0m [32m<N:M>[0m[32m...[0m            Only print the lines from N to M.
     [34m-L[0m, [34m--list-languages[0m                 Display all supported languages.
     [34m-h[0m, [34m--help[0m                           Print this help message.
     [34m-V[0m, [34m--version[0m                        Show version information.
