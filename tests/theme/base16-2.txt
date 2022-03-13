@@ -1,0 +1,53 @@
+[37mVIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 01 2022 09:16:32)[0m
+
+[34mUsage:[0m[37m vim [arguments] [file ..]       edit specified file(s)[0m
+[37m   or: vim [arguments] -               read text from stdin[0m
+[37m   or: vim [arguments] -t tag          edit file where tag is defined[0m
+[37m   or: vim [arguments] -q [errorfile]  edit file with first error[0m
+
+[34mArguments:[0m
+[37m   [0m[35m--[0m[37m			Only file names after this[0m
+[37m   [0m[34m-v[0m[37m			Vi mode (like "vi")[0m
+[37m   [0m[34m-e[0m[37m			Ex mode (like "ex")[0m
+[37m   [0m[34m-E[0m[37m			Improved Ex mode[0m
+[37m   [0m[34m-s[0m[37m			Silent (batch) mode (only for "ex")[0m
+[37m   [0m[34m-d[0m[37m			Diff mode (like "vimdiff")[0m
+[37m   [0m[34m-y[0m[37m			Easy mode (like "evim", modeless)[0m
+[37m   [0m[34m-R[0m[37m			Readonly mode (like "view")[0m
+[37m   [0m[34m-Z[0m[37m			Restricted mode (like "rvim")[0m
+[37m   [0m[34m-m[0m[37m			Modifications (writing files) not allowed[0m
+[37m   [0m[34m-M[0m[37m			Modifications in text not allowed[0m
+[37m   [0m[34m-b[0m[37m			Binary mode[0m
+[37m   [0m[34m-l[0m[37m			Lisp mode[0m
+[37m   [0m[34m-C[0m[37m			Compatible with Vi: 'compatible'[0m
+[37m   [0m[34m-N[0m[37m			Not fully Vi compatible: 'nocompatible'[0m
+[37m   [0m[34m-V[0m[37m[[0m[37mN[0m[37m][fname]		Be verbose [level N] [log messages to fname][0m
+[37m   [0m[34m-D[0m[37m			Debugging mode[0m
+[37m   [0m[34m-n[0m[37m			No swap file, use memory only[0m
+[37m   [0m[34m-r[0m[37m			List swap files and exit[0m
+[37m   [0m[34m-r[0m[37m (with file name)	Recover crashed session[0m
+[37m   [0m[34m-L[0m[37m			Same as -r[0m
+[37m   [0m[34m-A[0m[37m			Start in Arabic mode[0m
+[37m   [0m[34m-H[0m[37m			Start in Hebrew mode[0m
+[37m   [0m[34m-T[0m[37m [0m[37m<terminal>[0m[37m	Set terminal type to <terminal>[0m
+[37m   [0m[34m--not-a-term[0m[37m		Skip warning for input/output not being a terminal[0m
+[37m   [0m[34m--ttyfail[0m[37m		Exit if input or output is not a terminal[0m
+[37m   [0m[34m-u[0m[37m [0m[37m<vimrc>[0m[37m		Use <vimrc> instead of any .vimrc[0m
+[37m   [0m[34m--noplugin[0m[37m		Don't load plugin scripts[0m
+[37m   [0m[34m-p[0m[37m[[0m[37mN[0m[37m]		Open N tab pages (default: one for each file)[0m
+[37m   [0m[34m-o[0m[37m[[0m[37mN[0m[37m]		Open N windows (default: one for each file)[0m
+[37m   [0m[34m-O[0m[37m[[0m[37mN[0m[37m]		Like -o but split vertically[0m
+[37m   +			Start at end of file[0m
+[37m   +<lnum>		Start at line <lnum>[0m
+[37m   [0m[34m--cmd[0m[37m [0m[37m<command>[0m[37m	Execute <command> before loading any vimrc file[0m
+[37m   [0m[34m-c[0m[37m [0m[37m<command>[0m[37m		Execute <command> after loading the first file[0m
+[37m   [0m[34m-S[0m[37m [0m[37m<session>[0m[37m		Source file <session> after loading the first file[0m
+[37m   [0m[34m-s[0m[37m [0m[37m<scriptin>[0m[37m	Read Normal mode commands from file <scriptin>[0m
+[37m   [0m[34m-w[0m[37m [0m[37m<scriptout>[0m[37m	Append all typed commands to file <scriptout>[0m
+[37m   [0m[34m-W[0m[37m [0m[37m<scriptout>[0m[37m	Write all typed commands to file <scriptout>[0m
+[37m   [0m[34m-x[0m[37m			Edit encrypted files[0m
+[37m   [0m[34m--startuptime[0m[37m [0m[37m<file>[0m[37m	Write startup timing messages to <file>[0m
+[37m   [0m[34m-i[0m[37m [0m[37m<viminfo>[0m[37m		Use <viminfo> instead of .viminfo[0m
+[37m   [0m[34m--clean[0m[37m		'nocompatible', Vim defaults, no plugins, no viminfo[0m
+[37m   [0m[34m-h[0m[37m  or  --help	Print Help (this message) and exit[0m
+[37m   [0m[34m--version[0m[37m		Print version information and exit[0m

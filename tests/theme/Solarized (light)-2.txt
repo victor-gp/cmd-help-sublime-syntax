@@ -1,0 +1,53 @@
+[38;2;101;123;131mVIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 01 2022 09:16:32)[0m
+
+[1;38;2;203;75;22mUsage:[0m[38;2;101;123;131m vim [arguments] [file ..]       edit specified file(s)[0m
+[38;2;101;123;131m   or: vim [arguments] -               read text from stdin[0m
+[38;2;101;123;131m   or: vim [arguments] -t tag          edit file where tag is defined[0m
+[38;2;101;123;131m   or: vim [arguments] -q [errorfile]  edit file with first error[0m
+
+[1;38;2;203;75;22mArguments:[0m
+[38;2;101;123;131m   [0m[38;2;133;153;0m--[0m[38;2;101;123;131m			Only file names after this[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-v[0m[38;2;101;123;131m			Vi mode (like "vi")[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-e[0m[38;2;101;123;131m			Ex mode (like "ex")[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-E[0m[38;2;101;123;131m			Improved Ex mode[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-s[0m[38;2;101;123;131m			Silent (batch) mode (only for "ex")[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-d[0m[38;2;101;123;131m			Diff mode (like "vimdiff")[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-y[0m[38;2;101;123;131m			Easy mode (like "evim", modeless)[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-R[0m[38;2;101;123;131m			Readonly mode (like "view")[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-Z[0m[38;2;101;123;131m			Restricted mode (like "rvim")[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-m[0m[38;2;101;123;131m			Modifications (writing files) not allowed[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-M[0m[38;2;101;123;131m			Modifications in text not allowed[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-b[0m[38;2;101;123;131m			Binary mode[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-l[0m[38;2;101;123;131m			Lisp mode[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-C[0m[38;2;101;123;131m			Compatible with Vi: 'compatible'[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-N[0m[38;2;101;123;131m			Not fully Vi compatible: 'nocompatible'[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-V[0m[38;2;101;123;131m[[0m[38;2;38;139;210mN[0m[38;2;101;123;131m][fname]		Be verbose [level N] [log messages to fname][0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-D[0m[38;2;101;123;131m			Debugging mode[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-n[0m[38;2;101;123;131m			No swap file, use memory only[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-r[0m[38;2;101;123;131m			List swap files and exit[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-r[0m[38;2;101;123;131m (with file name)	Recover crashed session[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-L[0m[38;2;101;123;131m			Same as -r[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-A[0m[38;2;101;123;131m			Start in Arabic mode[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-H[0m[38;2;101;123;131m			Start in Hebrew mode[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-T[0m[38;2;101;123;131m [0m[38;2;38;139;210m<terminal>[0m[38;2;101;123;131m	Set terminal type to <terminal>[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m--not-a-term[0m[38;2;101;123;131m		Skip warning for input/output not being a terminal[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m--ttyfail[0m[38;2;101;123;131m		Exit if input or output is not a terminal[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-u[0m[38;2;101;123;131m [0m[38;2;38;139;210m<vimrc>[0m[38;2;101;123;131m		Use <vimrc> instead of any .vimrc[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m--noplugin[0m[38;2;101;123;131m		Don't load plugin scripts[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-p[0m[38;2;101;123;131m[[0m[38;2;38;139;210mN[0m[38;2;101;123;131m]		Open N tab pages (default: one for each file)[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-o[0m[38;2;101;123;131m[[0m[38;2;38;139;210mN[0m[38;2;101;123;131m]		Open N windows (default: one for each file)[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-O[0m[38;2;101;123;131m[[0m[38;2;38;139;210mN[0m[38;2;101;123;131m]		Like -o but split vertically[0m
+[38;2;101;123;131m   +			Start at end of file[0m
+[38;2;101;123;131m   +<lnum>		Start at line <lnum>[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m--cmd[0m[38;2;101;123;131m [0m[38;2;38;139;210m<command>[0m[38;2;101;123;131m	Execute <command> before loading any vimrc file[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-c[0m[38;2;101;123;131m [0m[38;2;38;139;210m<command>[0m[38;2;101;123;131m		Execute <command> after loading the first file[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-S[0m[38;2;101;123;131m [0m[38;2;38;139;210m<session>[0m[38;2;101;123;131m		Source file <session> after loading the first file[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-s[0m[38;2;101;123;131m [0m[38;2;38;139;210m<scriptin>[0m[38;2;101;123;131m	Read Normal mode commands from file <scriptin>[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-w[0m[38;2;101;123;131m [0m[38;2;38;139;210m<scriptout>[0m[38;2;101;123;131m	Append all typed commands to file <scriptout>[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-W[0m[38;2;101;123;131m [0m[38;2;38;139;210m<scriptout>[0m[38;2;101;123;131m	Write all typed commands to file <scriptout>[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-x[0m[38;2;101;123;131m			Edit encrypted files[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m--startuptime[0m[38;2;101;123;131m [0m[38;2;38;139;210m<file>[0m[38;2;101;123;131m	Write startup timing messages to <file>[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-i[0m[38;2;101;123;131m [0m[38;2;38;139;210m<viminfo>[0m[38;2;101;123;131m		Use <viminfo> instead of .viminfo[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m--clean[0m[38;2;101;123;131m		'nocompatible', Vim defaults, no plugins, no viminfo[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m-h[0m[38;2;101;123;131m  or  --help	Print Help (this message) and exit[0m
+[38;2;101;123;131m   [0m[38;2;181;137;0m--version[0m[38;2;101;123;131m		Print version information and exit[0m

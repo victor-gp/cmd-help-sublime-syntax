@@ -1,0 +1,53 @@
+[38;2;255;255;255mVIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 01 2022 09:16:32)[0m
+
+[38;2;254;220;197mUsage:[0m[38;2;255;255;255m vim [arguments] [file ..]       edit specified file(s)[0m
+[38;2;255;255;255m   or: vim [arguments] -               read text from stdin[0m
+[38;2;255;255;255m   or: vim [arguments] -t tag          edit file where tag is defined[0m
+[38;2;255;255;255m   or: vim [arguments] -q [errorfile]  edit file with first error[0m
+
+[38;2;254;220;197mArguments:[0m
+[38;2;255;255;255m   [0m[38;2;102;204;255m--[0m[38;2;255;255;255m			Only file names after this[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-v[0m[38;2;255;255;255m			Vi mode (like "vi")[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-e[0m[38;2;255;255;255m			Ex mode (like "ex")[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-E[0m[38;2;255;255;255m			Improved Ex mode[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-s[0m[38;2;255;255;255m			Silent (batch) mode (only for "ex")[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-d[0m[38;2;255;255;255m			Diff mode (like "vimdiff")[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-y[0m[38;2;255;255;255m			Easy mode (like "evim", modeless)[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-R[0m[38;2;255;255;255m			Readonly mode (like "view")[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-Z[0m[38;2;255;255;255m			Restricted mode (like "rvim")[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-m[0m[38;2;255;255;255m			Modifications (writing files) not allowed[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-M[0m[38;2;255;255;255m			Modifications in text not allowed[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-b[0m[38;2;255;255;255m			Binary mode[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-l[0m[38;2;255;255;255m			Lisp mode[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-C[0m[38;2;255;255;255m			Compatible with Vi: 'compatible'[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-N[0m[38;2;255;255;255m			Not fully Vi compatible: 'nocompatible'[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-V[0m[38;2;255;255;255m[[0m[38;2;198;197;254mN[0m[38;2;255;255;255m][fname]		Be verbose [level N] [log messages to fname][0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-D[0m[38;2;255;255;255m			Debugging mode[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-n[0m[38;2;255;255;255m			No swap file, use memory only[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-r[0m[38;2;255;255;255m			List swap files and exit[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-r[0m[38;2;255;255;255m (with file name)	Recover crashed session[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-L[0m[38;2;255;255;255m			Same as -r[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-A[0m[38;2;255;255;255m			Start in Arabic mode[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-H[0m[38;2;255;255;255m			Start in Hebrew mode[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-T[0m[38;2;255;255;255m [0m[38;2;198;197;254m<terminal>[0m[38;2;255;255;255m	Set terminal type to <terminal>[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m--not-a-term[0m[38;2;255;255;255m		Skip warning for input/output not being a terminal[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m--ttyfail[0m[38;2;255;255;255m		Exit if input or output is not a terminal[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-u[0m[38;2;255;255;255m [0m[38;2;198;197;254m<vimrc>[0m[38;2;255;255;255m		Use <vimrc> instead of any .vimrc[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m--noplugin[0m[38;2;255;255;255m		Don't load plugin scripts[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-p[0m[38;2;255;255;255m[[0m[38;2;198;197;254mN[0m[38;2;255;255;255m]		Open N tab pages (default: one for each file)[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-o[0m[38;2;255;255;255m[[0m[38;2;198;197;254mN[0m[38;2;255;255;255m]		Open N windows (default: one for each file)[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-O[0m[38;2;255;255;255m[[0m[38;2;198;197;254mN[0m[38;2;255;255;255m]		Like -o but split vertically[0m
+[38;2;255;255;255m   +			Start at end of file[0m
+[38;2;255;255;255m   +<lnum>		Start at line <lnum>[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m--cmd[0m[38;2;255;255;255m [0m[38;2;198;197;254m<command>[0m[38;2;255;255;255m	Execute <command> before loading any vimrc file[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-c[0m[38;2;255;255;255m [0m[38;2;198;197;254m<command>[0m[38;2;255;255;255m		Execute <command> after loading the first file[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-S[0m[38;2;255;255;255m [0m[38;2;198;197;254m<session>[0m[38;2;255;255;255m		Source file <session> after loading the first file[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-s[0m[38;2;255;255;255m [0m[38;2;198;197;254m<scriptin>[0m[38;2;255;255;255m	Read Normal mode commands from file <scriptin>[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-w[0m[38;2;255;255;255m [0m[38;2;198;197;254m<scriptout>[0m[38;2;255;255;255m	Append all typed commands to file <scriptout>[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-W[0m[38;2;255;255;255m [0m[38;2;198;197;254m<scriptout>[0m[38;2;255;255;255m	Write all typed commands to file <scriptout>[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-x[0m[38;2;255;255;255m			Edit encrypted files[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m--startuptime[0m[38;2;255;255;255m [0m[38;2;198;197;254m<file>[0m[38;2;255;255;255m	Write startup timing messages to <file>[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-i[0m[38;2;255;255;255m [0m[38;2;198;197;254m<viminfo>[0m[38;2;255;255;255m		Use <viminfo> instead of .viminfo[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m--clean[0m[38;2;255;255;255m		'nocompatible', Vim defaults, no plugins, no viminfo[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m-h[0m[38;2;255;255;255m  or  --help	Print Help (this message) and exit[0m
+[38;2;255;255;255m   [0m[38;2;248;248;248m--version[0m[38;2;255;255;255m		Print version information and exit[0m
