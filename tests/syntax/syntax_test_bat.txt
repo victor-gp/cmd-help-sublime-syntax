@@ -4,13 +4,13 @@ bat 0.18.2
 A cat(1) clone with syntax highlighting and Git integration.
 
 USAGE:
-# <- markup.heading.cmd-help
-#^^^^^ markup.heading.cmd-help
+# <- entity.name.section.cmd-help
+#^^^^^ entity.name.section.cmd-help
     bat [OPTIONS] [FILE]...
     bat <SUBCOMMAND>
 
 OPTIONS:
-#^^^^^^^ markup.heading.cmd-help
+#^^^^^^^ entity.name.section.cmd-help
     -A, --show-all
 #   ^^ entity.name.function.option.cmd-help
 #     ^^ - entity.name.function.option.cmd-help

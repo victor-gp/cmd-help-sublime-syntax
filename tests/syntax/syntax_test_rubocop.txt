@@ -87,7 +87,7 @@ Output Options:
                                      the specified --fail-level or above
 
 Auto-correction:
-#^^^^^^^^^^^^^^^ markup.heading.cmd-help
+#^^^^^^^^^^^^^^^ entity.name.section.cmd-help
     -a, --auto-correct               Auto-correct offenses (only when it's safe).
         --safe-auto-correct          (same, deprecated)
     -A, --auto-correct-all           Auto-correct offenses (safe and unsafe)

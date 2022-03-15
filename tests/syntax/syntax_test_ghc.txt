@@ -6,7 +6,7 @@ Usage:
 
 To compile and link a complete Haskell program, run the compiler like
 so:
-# <- - markup.heading.cmd-help
+# <- - entity.name.section.cmd-help
     ghc Main
 
 where the module Main is in a file named Main.hs (or Main.lhs) in the
@@ -17,7 +17,7 @@ the file `Main' (or `Main.exe' on Windows).
 Alternatively, ghc can be used to compile files individually.  Each
 input file is guided through (some of the) possible phases of a
 compilation:
-# ^^^^^^^^^^ - markup.heading.cmd-help
+# ^^^^^^^^^^ - entity.name.section.cmd-help
     - unlit:	extract code from a "literate program"
     - hscpp:	run code through the C pre-processor (if -cpp flag given)
     - hsc:	run the Haskell compiler proper

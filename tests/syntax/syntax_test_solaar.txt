@@ -6,7 +6,7 @@ usage: solaar [-h] [-d] [-D PATH] [--restart-on-wake-up] [-w {show,hide,only}]
               ...
 
 positional arguments:
-#^^^^^^^^^^^^^^^^^^^^ markup.heading.cmd-help
+#^^^^^^^^^^^^^^^^^^^^ entity.name.section.cmd-help
   {show,probe,config,pair,unpair}
                         optional actions to perform
 
