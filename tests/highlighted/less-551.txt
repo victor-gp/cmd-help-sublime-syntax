@@ -95,8 +95,8 @@
 
 [38;2;248;248;242m                    MMIISSCCEELLLLAANNEEOOUUSS CCOOMMMMAANNDDSS[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-_[0m[38;2;248;248;242m<_f_l_a_g_>              Toggle a command line option [see OPTIONS below].[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--_[0m[38;2;248;248;242m<_n_a_m_e_>             Toggle a command line option, by name.[0m
+[38;2;248;248;242m  -_<_f_l_a_g_>              Toggle a command line option [see OPTIONS below].[0m
+[38;2;248;248;242m  --_<_n_a_m_e_>             Toggle a command line option, by name.[0m
 [38;2;248;248;242m  __<_f_l_a_g_>              Display the setting of a command line option.[0m
 [38;2;248;248;242m  ___<_n_a_m_e_>             Display the setting of an option, by name.[0m
 [38;2;248;248;242m  +_c_m_d                 Execute the less cmd each time a new file is examined.[0m
@@ -115,93 +115,93 @@
 [38;2;248;248;242m        Options may be given in one of two forms: either a single[0m
 [38;2;248;248;242m        character preceded by a -, or a name preceded by --.[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-?[0m[38;2;248;248;242m  ........  --help[0m
+[38;2;248;248;242m  -?  ........  --help[0m
 [38;2;248;248;242m                  Display help (from command line).[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m  ........  --search-skip-screen[0m
+[38;2;248;248;242m  -a  ........  --search-skip-screen[0m
 [38;2;248;248;242m                  Search skips current screen.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m  ........  --SEARCH-SKIP-SCREEN[0m
+[38;2;248;248;242m  -A  ........  --SEARCH-SKIP-SCREEN[0m
 [38;2;248;248;242m                  Search starts just after target line.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m [_N]  ....  --buffers=[_N][0m
+[38;2;248;248;242m  -b [_N]  ....  --buffers=[_N][0m
 [38;2;248;248;242m                  Number of buffers.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m  ........  --auto-buffers[0m
+[38;2;248;248;242m  -B  ........  --auto-buffers[0m
 [38;2;248;248;242m                  Don't automatically allocate buffers for pipes.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m  ........  --clear-screen[0m
+[38;2;248;248;242m  -c  ........  --clear-screen[0m
 [38;2;248;248;242m                  Repaint by clearing rather than scrolling.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m  ........  --dumb[0m
+[38;2;248;248;242m  -d  ........  --dumb[0m
 [38;2;248;248;242m                  Dumb terminal.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m [_x_n_._n]  .  --color=_x_n_._n[0m
+[38;2;248;248;242m  -D [_x_n_._n]  .  --color=_x_n_._n[0m
 [38;2;248;248;242m                  Set screen colors. (MS-DOS only)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m  ....  --quit-at-eof  --QUIT-AT-EOF[0m
+[38;2;248;248;242m  -e  -E  ....  --quit-at-eof  --QUIT-AT-EOF[0m
 [38;2;248;248;242m                  Quit at end of file.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m  ........  --force[0m
+[38;2;248;248;242m  -f  ........  --force[0m
 [38;2;248;248;242m                  Force open non-regular files.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m  ........  --quit-if-one-screen[0m
+[38;2;248;248;242m  -F  ........  --quit-if-one-screen[0m
 [38;2;248;248;242m                  Quit if entire file fits on first screen.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m  ........  --hilite-search[0m
+[38;2;248;248;242m  -g  ........  --hilite-search[0m
 [38;2;248;248;242m                  Highlight only last match for searches.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m  ........  --HILITE-SEARCH[0m
+[38;2;248;248;242m  -G  ........  --HILITE-SEARCH[0m
 [38;2;248;248;242m                  Don't highlight any matches for searches.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m [_N]  ....  --max-back-scroll=[_N][0m
+[38;2;248;248;242m  -h [_N]  ....  --max-back-scroll=[_N][0m
 [38;2;248;248;242m                  Backward scroll limit.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m  ........  --ignore-case[0m
+[38;2;248;248;242m  -i  ........  --ignore-case[0m
 [38;2;248;248;242m                  Ignore case in searches that do not contain uppercase.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m  ........  --IGNORE-CASE[0m
+[38;2;248;248;242m  -I  ........  --IGNORE-CASE[0m
 [38;2;248;248;242m                  Ignore case in all searches.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m [_N]  ....  --jump-target=[_N][0m
+[38;2;248;248;242m  -j [_N]  ....  --jump-target=[_N][0m
 [38;2;248;248;242m                  Screen position of target lines.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-J[0m[38;2;248;248;242m  ........  --status-column[0m
+[38;2;248;248;242m  -J  ........  --status-column[0m
 [38;2;248;248;242m                  Display a status column at left edge of screen.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m [_f_i_l_e]  .  --lesskey-file=[_f_i_l_e][0m
+[38;2;248;248;242m  -k [_f_i_l_e]  .  --lesskey-file=[_f_i_l_e][0m
 [38;2;248;248;242m                  Use a lesskey file.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m  ........  --quit-on-intr[0m
+[38;2;248;248;242m  -K  ........  --quit-on-intr[0m
 [38;2;248;248;242m                  Exit less in response to ctrl-C.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m  ........  --no-lessopen[0m
+[38;2;248;248;242m  -L  ........  --no-lessopen[0m
 [38;2;248;248;242m                  Ignore the LESSOPEN environment variable.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m  ....  --long-prompt  --LONG-PROMPT[0m
+[38;2;248;248;242m  -m  -M  ....  --long-prompt  --LONG-PROMPT[0m
 [38;2;248;248;242m                  Set prompt style.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m  ....  --line-numbers  --LINE-NUMBERS[0m
+[38;2;248;248;242m  -n  -N  ....  --line-numbers  --LINE-NUMBERS[0m
 [38;2;248;248;242m                  Don't use line numbers.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m [_f_i_l_e]  .  --log-file=[_f_i_l_e][0m
+[38;2;248;248;242m  -o [_f_i_l_e]  .  --log-file=[_f_i_l_e][0m
 [38;2;248;248;242m                  Copy to log file (standard input only).[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m [_f_i_l_e]  .  --LOG-FILE=[_f_i_l_e][0m
+[38;2;248;248;242m  -O [_f_i_l_e]  .  --LOG-FILE=[_f_i_l_e][0m
 [38;2;248;248;242m                  Copy to log file (unconditionally overwrite).[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m [_p_a_t_t_e_r_n]  --pattern=[_p_a_t_t_e_r_n][0m
+[38;2;248;248;242m  -p [_p_a_t_t_e_r_n]  --pattern=[_p_a_t_t_e_r_n][0m
 [38;2;248;248;242m                  Start at pattern (from command line).[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m [_p_r_o_m_p_t]   --prompt=[_p_r_o_m_p_t][0m
+[38;2;248;248;242m  -P [_p_r_o_m_p_t]   --prompt=[_p_r_o_m_p_t][0m
 [38;2;248;248;242m                  Define new prompt.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-Q[0m[38;2;248;248;242m  ....  --quiet  --QUIET  --silent --SILENT[0m
+[38;2;248;248;242m  -q  -Q  ....  --quiet  --QUIET  --silent --SILENT[0m
 [38;2;248;248;242m                  Quiet the terminal bell.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m  ....  --raw-control-chars  --RAW-CONTROL-CHARS[0m
+[38;2;248;248;242m  -r  -R  ....  --raw-control-chars  --RAW-CONTROL-CHARS[0m
 [38;2;248;248;242m                  Output "raw" control characters.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m  ........  --squeeze-blank-lines[0m
+[38;2;248;248;242m  -s  ........  --squeeze-blank-lines[0m
 [38;2;248;248;242m                  Squeeze multiple blank lines.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m  ........  --chop-long-lines[0m
+[38;2;248;248;242m  -S  ........  --chop-long-lines[0m
 [38;2;248;248;242m                  Chop (truncate) long lines rather than wrapping.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [_t_a_g]  ..  --tag=[_t_a_g][0m
+[38;2;248;248;242m  -t [_t_a_g]  ..  --tag=[_t_a_g][0m
 [38;2;248;248;242m                  Find a tag.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m [_t_a_g_s_f_i_l_e] --tag-file=[_t_a_g_s_f_i_l_e][0m
+[38;2;248;248;242m  -T [_t_a_g_s_f_i_l_e] --tag-file=[_t_a_g_s_f_i_l_e][0m
 [38;2;248;248;242m                  Use an alternate tags file.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m  ....  --underline-special  --UNDERLINE-SPECIAL[0m
+[38;2;248;248;242m  -u  -U  ....  --underline-special  --UNDERLINE-SPECIAL[0m
 [38;2;248;248;242m                  Change handling of backspaces.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m  ........  --version[0m
+[38;2;248;248;242m  -V  ........  --version[0m
 [38;2;248;248;242m                  Display the version number of "less".[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m  ........  --hilite-unread[0m
+[38;2;248;248;242m  -w  ........  --hilite-unread[0m
 [38;2;248;248;242m                  Highlight first new line after forward-screen.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m  ........  --HILITE-UNREAD[0m
+[38;2;248;248;242m  -W  ........  --HILITE-UNREAD[0m
 [38;2;248;248;242m                  Highlight first new line after any forward movement.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m [_N[,...]]  --tabs=[_N[,...]][0m
+[38;2;248;248;242m  -x [_N[,...]]  --tabs=[_N[,...]][0m
 [38;2;248;248;242m                  Set tab stops.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m  ........  --no-init[0m
+[38;2;248;248;242m  -X  ........  --no-init[0m
 [38;2;248;248;242m                  Don't use termcap init/deinit strings.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-y[0m[38;2;248;248;242m [_N]  ....  --max-forw-scroll=[_N][0m
+[38;2;248;248;242m  -y [_N]  ....  --max-forw-scroll=[_N][0m
 [38;2;248;248;242m                  Forward scroll limit.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m [_N]  ....  --window=[_N][0m
+[38;2;248;248;242m  -z [_N]  ....  --window=[_N][0m
 [38;2;248;248;242m                  Set size of window.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-"[0m[38;2;248;248;242m [_c[_c]]  .  --quotes=[_c[_c]][0m
+[38;2;248;248;242m  -" [_c[_c]]  .  --quotes=[_c[_c]][0m
 [38;2;248;248;242m                  Set shell quote characters.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-~[0m[38;2;248;248;242m  ........  --tilde[0m
+[38;2;248;248;242m  -~  ........  --tilde[0m
 [38;2;248;248;242m                  Don't display tildes after end of file.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-#[0m[38;2;248;248;242m [_N]  ....  --shift=[_N][0m
+[38;2;248;248;242m  -# [_N]  ....  --shift=[_N][0m
 [38;2;248;248;242m                  Horizontal scroll amount (0 = one half screen width)[0m
 [38;2;248;248;242m                --follow-name[0m
 [38;2;248;248;242m                  The F command changes files if the input file is renamed.[0m

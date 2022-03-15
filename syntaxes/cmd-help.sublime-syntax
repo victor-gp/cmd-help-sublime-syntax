@@ -43,7 +43,11 @@ scope_variables: # rightmost scope is matched first
 
 contexts:
   prototype:
+    # abort if color escape codes
     - match: '(?=.*\e\[0m)'
+      set: sink
+    # abort if formatted with backspace
+    - match: '(?=.*[\b])'
       set: sink
 
   main: # stack lv 0
