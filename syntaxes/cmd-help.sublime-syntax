@@ -78,14 +78,14 @@ contexts:
 
   indent-0:
     - meta_content_scope: indent-0
-    - include: pre-heading
+    - include: maybe-heading
     - include: maybe-option
     - include: else-pop
 
   indent-1-2:
     - meta_content_scope: indent-1-2
     - include: maybe-option
-    - include: pre-heading
+    - include: maybe-heading
     - include: else-pop
 
   indent-3-8:
@@ -93,15 +93,19 @@ contexts:
     - include: maybe-option
     - include: else-pop
 
-  pre-heading: # include only
-    - match: '(?i:usage):(?=.+\n)'
-      scope: *INLINE_USAGE_SCOPE
-      set: then-pop
+  # maybe-x contexts can be included sequentially for OR-like behavior
+
+  maybe-heading:
+    - include: heading-specials
     - match: '(?=.{1,40}\n)'
       # only consider lines <= 40 chars long
-      set: heading
+      set: heading-general
 
-  heading:
+  maybe-option:
+    - match: '(?=-)'
+      set: def-option
+
+  heading-general:
     - match: '{{leading_word}}( {{any_word}})*:?\n'
       scope: *SECTION_HEADING_SCOPE
       set: then-pop
@@ -110,9 +114,10 @@ contexts:
     #   scope: *SECTION_HEADING_SCOPE
     #   set: then-pop
 
-  maybe-option: # include-only
-    - match: '(?=-)'
-      set: def-option
+  heading-specials:
+    - match: '(?i:usage):(?=.+\n)'
+      scope: *INLINE_USAGE_SCOPE
+      set: then-pop
 
   def-option:
     - match: '---'
