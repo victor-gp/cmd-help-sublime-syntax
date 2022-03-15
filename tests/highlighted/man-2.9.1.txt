@@ -5,7 +5,7 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-D, --default              reset all options to their default values[0m
 [38;2;248;248;242m      [0m[38;2;248;248;242m--warnings[=WARNINGS]  enable warnings from groff[0m
 
-[38;2;248;248;242m [0m[38;2;248;248;242mMain modes of operation:[0m
+[38;2;248;248;242m [0m[38;2;253;151;31mMain modes of operation:[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-f, --whatis               equivalent to whatis[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-k, --apropos              equivalent to apropos[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-K, --global-apropos       search for text in all pages[0m
@@ -18,7 +18,7 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-c, --catman               used by catman to reformat out of date cat pages[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-R, --recode=ENCODING      output source page encoded in ENCODING[0m
 
-[38;2;248;248;242m [0m[38;2;248;248;242mFinding manual pages:[0m
+[38;2;248;248;242m [0m[38;2;253;151;31mFinding manual pages:[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-L, --locale=LOCALE        define the locale for this particular man search[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-m, --systems=SYSTEM       use manual pages from other systems[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-M, --manpath=PATH         set search path for manual pages to PATH[0m
@@ -42,7 +42,7 @@
 [38;2;248;248;242m      [0m[38;2;248;248;242m--no-subpages          don't try subpages, e.g. 'man foo bar' => 'man[0m
 [38;2;248;248;242m                             foo-bar'[0m
 
-[38;2;248;248;242m [0m[38;2;248;248;242mControlling formatted output:[0m
+[38;2;248;248;242m [0m[38;2;253;151;31mControlling formatted output:[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-P, --pager=PAGER          use program PAGER to display output[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-r, --prompt=STRING        provide the `less' pager with a prompt[0m
 

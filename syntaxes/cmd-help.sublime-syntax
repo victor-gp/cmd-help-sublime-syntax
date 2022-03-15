@@ -47,7 +47,7 @@ contexts:
     - match: '^(?=\S)'
       set: indent-0
     - match: '^ {1,2}(?=\S)'
-      set: line-indent-content
+      set: indent-2
     - match: '^ {3,8}(?=\S)'
       set: line-indent-content
     - match: '^\t{1,2}(?=\S)'
@@ -91,20 +91,25 @@ contexts:
     - include: pre-heading
     - include: else-pop
 
+  indent-2:
+    - meta_content_scope: indent-2
+    - include: pre-heading
+    - include: else-pop
+
   line-indent-content:
     - meta_content_scope: line-indent
     - include: eol-pop
 
   pre-heading: # include only
-    - match: '^(?i:usage):(?=.+\n)'
+    - match: '(?i:usage):(?=.+\n)'
       scope: *INLINE_USAGE_SCOPE
       set: then-pop
-    # only consider lines <= 40 chars long
-    - match: '^(?=.{1,40}\n)'
+    - match: '(?=.{1,40}\n)'
+      # only consider lines <= 40 chars long
       set: heading
 
   heading:
-    - match: '^{{leading_word}}( {{any_word}})*:?\n'
+    - match: '{{leading_word}}( {{any_word}})*:?\n'
       scope: *SECTION_HEADING_SCOPE
       set: then-pop
     - include: else-pop
