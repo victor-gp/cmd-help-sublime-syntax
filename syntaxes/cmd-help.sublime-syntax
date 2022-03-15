@@ -114,6 +114,9 @@ contexts:
     - match: '(?i:usage):(?=.+\n)'
       scope: *INLINE_USAGE_SCOPE
       set: then-pop
+    - match: '(positional arguments|optional arguments|options):\n'
+      scope: *SECTION_HEADING_SCOPE
+      set: then-pop
 
   def-option:
     - match: '---'

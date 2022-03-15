@@ -6,9 +6,7 @@ usage: solaar [-h] [-d] [-D PATH] [--restart-on-wake-up] [-w {show,hide,only}]
               ...
 
 positional arguments:
-#^^^^^^^^^^^^^^^^^^^^ - markup.heading.cmd-help
-#nice: allow sections beginning in lowercase? hardly / but maybe allowlist python/argparse sections:
-#      "positional arguments:", "optional arguments:", "options:", etc?
+#^^^^^^^^^^^^^^^^^^^^ markup.heading.cmd-help
   {show,probe,config,pair,unpair}
                         optional actions to perform
 
