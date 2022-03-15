@@ -39,48 +39,89 @@ variables:
 
 
 contexts:
-  main:
+  main: # stack lv 0
+    - match: '^'
+      push: [line, line-begin]
+
+  line: # stack lv 1
+    - match: '$'
+      pop: true
+
+  ### helpers ##################################################################
+
+  else-pop:
+    - include: eol-pop # '.' doesn't match '\n'
+    - match: '(?=.)'
+      pop: true
+
+  eol-pop:
+    - match: '\n'
+      pop: true
+
+  then-pop:
     - match: ''
-      push: [line-begin, line-indent]
+      pop: true
+
+  ### stack lv 2 ###############################################################
 
   line-begin:
     - match: '^(?=\S)'
-      set: [pre-heading, def-option]
+      set: indent-0
+    - match: '^ {1,2}(?=\S)'
+      set: indent-1-2
+    - match: '^ {3,8}(?=\S)'
+      set: indent-3-8
+    - match: '^\t{1,2}(?=\S)'
+      set: indent-3-8
     - include: else-pop
 
-  line-indent:
-    - match: '^ {1,8}'
-      set: [def-option]
-    - match: '^\t{1,2}'
-      set: [def-option]
+  indent-0:
+    - include: maybe-heading
+    - include: maybe-option
     - include: else-pop
 
-  else-pop:
-    - match: ''
-      pop: true
-
-  pre-heading:
-    - match: '(?i:usage):(?=.+\n)'
-      scope: *INLINE_USAGE_SCOPE
-    # only consider lines <= 40 chars long
-    - match: '^(?=.{1,40}\n)'
-      set: heading
+  indent-1-2:
+    - include: maybe-option
+    - include: maybe-heading
     - include: else-pop
 
-  heading:
+  indent-3-8:
+    - include: maybe-option
+    - include: else-pop
+
+  # maybe-x contexts can be included sequentially for OR-like behavior
+
+  maybe-heading:
+    - include: heading-specials
+    - match: '(?=.{1,40}\n)'
+      # only consider lines <= 40 chars long
+      set: heading-general
+
+  maybe-option:
+    - match: '(?=-)'
+      set: def-option
+
+  heading-general:
     - match: '{{leading_word}}( {{any_word}})*:?\n'
       scope: *SECTION_HEADING_SCOPE
+      set: then-pop
+    - include: else-pop
     # - match: '{{any_word}}( {{any_word}})*:\n'
     #   scope: *SECTION_HEADING_SCOPE
-    - include: else-pop
+    #   set: then-pop
+
+  heading-specials:
+    - match: '(?i:usage):(?=.+\n)'
+      scope: *INLINE_USAGE_SCOPE
+      set: then-pop
 
   def-option:
-    - match: '^----'
-      # definitely not an option
+    - match: '---'
+      # probably not an option
       pop: true
     - match: '--(?=\s)'
       scope: *END_OF_OPTIONS_SCOPE
-      pop: true
+      set: then-pop
     - match: '-{{option_name}}'
       scope: *DEF_OPTION_SCOPE
       set: def-option-post

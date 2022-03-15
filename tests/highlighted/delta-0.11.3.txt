@@ -397,7 +397,7 @@
 
 [38;2;253;151;31mHere is an example:[0m
 
-[38;2;166;226;46m--minus-style[0m[38;2;248;248;242m 'red bold ul "#ffeeee"'[0m
+[38;2;248;248;242m--minus-style 'red bold ul "#ffeeee"'[0m
 
 [38;2;248;248;242mThat means: For removed lines, set the foreground (text) color to 'red', make it bold and[0m
 [38;2;248;248;242m            underlined, and set the background color to '#ffeeee'.[0m
@@ -407,7 +407,7 @@
 
 [38;2;248;248;242mHere is an example of using special color names together with a single attribute:[0m
 
-[38;2;166;226;46m--minus-style[0m[38;2;248;248;242m 'syntax bold auto'[0m
+[38;2;248;248;242m--minus-style 'syntax bold auto'[0m
 
 [38;2;248;248;242mThat means: For removed lines, syntax-highlight the text, and make it bold, and do whatever delta[0m
 [38;2;248;248;242m            normally does for the background.[0m

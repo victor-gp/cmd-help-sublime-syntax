@@ -5,7 +5,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--default[0m[38;2;248;248;242m              reset all options to their default values[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--warnings[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mWARNINGS[0m[38;2;248;248;242m]  enable warnings from groff[0m
 
-[38;2;248;248;242m Main modes of operation:[0m
+[38;2;248;248;242m [0m[38;2;253;151;31mMain modes of operation:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--whatis[0m[38;2;248;248;242m               equivalent to whatis[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--apropos[0m[38;2;248;248;242m              equivalent to apropos[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--global-apropos[0m[38;2;248;248;242m       search for text in all pages[0m
@@ -18,7 +18,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--catman[0m[38;2;248;248;242m               used by catman to reformat out of date cat pages[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recode[0m[38;2;248;248;242m=[0m[38;2;253;151;31mENCODING[0m[38;2;248;248;242m      output source page encoded in ENCODING[0m
 
-[38;2;248;248;242m Finding manual pages:[0m
+[38;2;248;248;242m [0m[38;2;253;151;31mFinding manual pages:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--locale[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLOCALE[0m[38;2;248;248;242m        define the locale for this particular man search[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--systems[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSYSTEM[0m[38;2;248;248;242m       use manual pages from other systems[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--manpath[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPATH[0m[38;2;248;248;242m         set search path for manual pages to PATH[0m
@@ -42,7 +42,7 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-subpages[0m[38;2;248;248;242m          don't try subpages, e.g. 'man foo bar' => 'man[0m
 [38;2;248;248;242m                             foo-bar'[0m
 
-[38;2;248;248;242m Controlling formatted output:[0m
+[38;2;248;248;242m [0m[38;2;253;151;31mControlling formatted output:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--pager[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPAGER[0m[38;2;248;248;242m          use program PAGER to display output[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--prompt[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTRING[0m[38;2;248;248;242m        provide the `less' pager with a prompt[0m
 
