@@ -25,7 +25,7 @@ variables:
   allcaps_argument_name: '[:upper:][[:upper:][:digit:]_]*\b'
   relaxed_argument_name: '[:alpha:][[:alnum:]_-]*\b'
 
-### scope variables (rightmost scope is matched first)
+scope_variables: # rightmost scope is matched first
   section_heading_scope: &SECTION_HEADING_SCOPE
     constant.section-heading.cmd-help  string.section-heading.cmd-help
     markup.heading.cmd-help  entity.name.section.cmd-help
