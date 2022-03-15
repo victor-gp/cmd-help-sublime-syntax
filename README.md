@@ -10,7 +10,7 @@ It provides just enough color to help find your way around a help message. Here'
 
 ## Install
 
-To use this with `bat`, copy the `syntaxes/cmd-help.sublime-syntax` file into `~/.config/bat/syntaxes/`. You will probably need to `$ mkdir -p ~/.config/bat/syntaxes` first.
+To use this with `bat`, copy the `syntaxes/cmd-help.sublime-syntax` file into `~/.config/bat/syntaxes/`.
 
 Then run `$ bat cache --build`.
 
