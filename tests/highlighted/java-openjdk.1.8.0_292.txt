@@ -1,6 +1,6 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m java [-options] class [args...][0m
 [38;2;248;248;242m           (to execute a class)[0m
-[38;2;248;248;242m   [0m[38;2;248;248;242mor  java [-options] -jar jarfile [args...][0m
+[38;2;248;248;242m   or  java [-options] -jar jarfile [args...][0m
 [38;2;248;248;242m           (to execute a jar file)[0m
 [38;2;248;248;242mwhere options include:[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-d32[0m[38;2;248;248;242m	  use a 32-bit data model if available[0m

@@ -11,17 +11,17 @@
 
 
 [38;2;253;151;31mUSAGE:[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mrg [OPTIONS] PATTERN [PATH ...][0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mrg [OPTIONS] -e PATTERN ... [PATH ...][0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mrg [OPTIONS] -f PATTERNFILE ... [PATH ...][0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mrg [OPTIONS] --files [PATH ...][0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mrg [OPTIONS] --type-list[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mcommand | rg [OPTIONS] PATTERN[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mrg [OPTIONS] --help[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mrg [OPTIONS] --version[0m
+[38;2;248;248;242m    rg [OPTIONS] PATTERN [PATH ...][0m
+[38;2;248;248;242m    rg [OPTIONS] -e PATTERN ... [PATH ...][0m
+[38;2;248;248;242m    rg [OPTIONS] -f PATTERNFILE ... [PATH ...][0m
+[38;2;248;248;242m    rg [OPTIONS] --files [PATH ...][0m
+[38;2;248;248;242m    rg [OPTIONS] --type-list[0m
+[38;2;248;248;242m    command | rg [OPTIONS] PATTERN[0m
+[38;2;248;248;242m    rg [OPTIONS] --help[0m
+[38;2;248;248;242m    rg [OPTIONS] --version[0m
 
 [38;2;253;151;31mARGS:[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m<PATTERN>    [0m
+[38;2;248;248;242m    <PATTERN>    [0m
 [38;2;248;248;242m            A regular expression used for searching. To match a pattern beginning with a[0m
 [38;2;248;248;242m            dash, use the -e/--regexp flag.[0m
 [38;2;248;248;242m            [0m
@@ -34,7 +34,7 @@
 [38;2;248;248;242m            [0m
 [38;2;248;248;242m                rg -- -foo[0m
 [38;2;248;248;242m             [0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m<PATH>...    [0m
+[38;2;248;248;242m    <PATH>...    [0m
 [38;2;248;248;242m            A file or directory to search. Directories are searched recursively. File paths[0m
 [38;2;248;248;242m            specified on the command line override glob and ignore rules.  [0m
 

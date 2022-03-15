@@ -4,7 +4,7 @@
 [38;2;248;248;242m              ...[0m
 
 [38;2;248;248;242mpositional arguments:[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m{show,probe,config,pair,unpair}[0m
+[38;2;248;248;242m  {show,probe,config,pair,unpair}[0m
 [38;2;248;248;242m                        optional actions to perform[0m
 
 [38;2;248;248;242moptional arguments:[0m

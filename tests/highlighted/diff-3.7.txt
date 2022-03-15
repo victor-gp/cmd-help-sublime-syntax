@@ -54,30 +54,30 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--GTYPE-group-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31mGFMT[0m[38;2;248;248;242m   format GTYPE input groups with GFMT[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--line-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLFMT[0m[38;2;248;248;242m          format all input lines with LFMT[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--LTYPE-line-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLFMT[0m[38;2;248;248;242m    format LTYPE input lines with LFMT[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mThese format options provide fine-grained control over the output[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242mof diff, generalizing -D/--ifdef.[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mLTYPE is 'old', 'new', or 'unchanged'.  GTYPE is LTYPE or 'changed'.[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mGFMT (only) may contain:[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%<  lines from FILE1[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%>  lines from FILE2[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%=  lines common to FILE1 and FILE2[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%[-][WIDTH][.[PREC]]{doxX}LETTER  printf-style spec for LETTER[0m
-[38;2;248;248;242m        [0m[38;2;248;248;242mLETTERs are as follows for new group, lower case for old group:[0m
+[38;2;248;248;242m    These format options provide fine-grained control over the output[0m
+[38;2;248;248;242m      of diff, generalizing -D/--ifdef.[0m
+[38;2;248;248;242m    LTYPE is 'old', 'new', or 'unchanged'.  GTYPE is LTYPE or 'changed'.[0m
+[38;2;248;248;242m    GFMT (only) may contain:[0m
+[38;2;248;248;242m      %<  lines from FILE1[0m
+[38;2;248;248;242m      %>  lines from FILE2[0m
+[38;2;248;248;242m      %=  lines common to FILE1 and FILE2[0m
+[38;2;248;248;242m      %[-][WIDTH][.[PREC]]{doxX}LETTER  printf-style spec for LETTER[0m
+[38;2;248;248;242m        LETTERs are as follows for new group, lower case for old group:[0m
 [38;2;248;248;242m          F  first line number[0m
 [38;2;248;248;242m          L  last line number[0m
 [38;2;248;248;242m          N  number of lines = L-F+1[0m
 [38;2;248;248;242m          E  F-1[0m
 [38;2;248;248;242m          M  L+1[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%(A=B?T:E)  if A equals B then T else E[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mLFMT (only) may contain:[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%L  contents of line[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%l  contents of line, excluding any trailing newline[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%[-][WIDTH][.[PREC]]{doxX}n  printf-style spec for input line number[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mBoth GFMT and LFMT may contain:[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%%  %[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%c'C'  the single character C[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m%c'\OOO'  the character with octal code OOO[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242mC    the character C (other characters represent themselves)[0m
+[38;2;248;248;242m      %(A=B?T:E)  if A equals B then T else E[0m
+[38;2;248;248;242m    LFMT (only) may contain:[0m
+[38;2;248;248;242m      %L  contents of line[0m
+[38;2;248;248;242m      %l  contents of line, excluding any trailing newline[0m
+[38;2;248;248;242m      %[-][WIDTH][.[PREC]]{doxX}n  printf-style spec for input line number[0m
+[38;2;248;248;242m    Both GFMT and LFMT may contain:[0m
+[38;2;248;248;242m      %%  %[0m
+[38;2;248;248;242m      %c'C'  the single character C[0m
+[38;2;248;248;242m      %c'\OOO'  the character with octal code OOO[0m
+[38;2;248;248;242m      C    the character C (other characters represent themselves)[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--minimal[0m[38;2;248;248;242m            try hard to find a smaller set of changes[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--horizon-lines[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m  keep NUM lines of the common prefix and suffix[0m

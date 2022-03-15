@@ -25,21 +25,21 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jvm-debug[0m[38;2;248;248;242m [0m[38;2;253;151;31m<port>[0m[38;2;248;248;242m  Turn on JVM debugging, open at the given port.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--batch[0m[38;2;248;248;242m             disable interactive mode[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242m# sbt version (default: from project/build.properties if present, else latest release)[0m
+[38;2;248;248;242m  # sbt version (default: from project/build.properties if present, else latest release)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--sbt-version[0m[38;2;248;248;242m  <version>   use the specified version of sbt[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--sbt-jar[0m[38;2;248;248;242m      <path>      use the specified jar as the sbt launcher[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242m# java version (default: java from PATH, currently openjdk version "1.8.0_292")[0m
+[38;2;248;248;242m  # java version (default: java from PATH, currently openjdk version "1.8.0_292")[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--java-home[0m[38;2;248;248;242m [0m[38;2;253;151;31m<path>[0m[38;2;248;248;242m         alternate JAVA_HOME[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242m# jvm options and output control[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mJAVA_OPTS           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m.jvmopts            if this file exists in the current directory, its contents[0m
+[38;2;248;248;242m  # jvm options and output control[0m
+[38;2;248;248;242m  JAVA_OPTS           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
+[38;2;248;248;242m  .jvmopts            if this file exists in the current directory, its contents[0m
 [38;2;248;248;242m                      are appended to JAVA_OPTS[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mSBT_OPTS            environment variable, if unset uses ""[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m.sbtopts            if this file exists in the current directory, its contents[0m
+[38;2;248;248;242m  SBT_OPTS            environment variable, if unset uses ""[0m
+[38;2;248;248;242m  .sbtopts            if this file exists in the current directory, its contents[0m
 [38;2;248;248;242m                      are prepended to the runner args[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m/etc/sbt/sbtopts    if this file exists, it is prepended to the runner args[0m
+[38;2;248;248;242m  /etc/sbt/sbtopts    if this file exists, it is prepended to the runner args[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Dkey[0m[38;2;248;248;242m=[0m[38;2;253;151;31mval[0m[38;2;248;248;242m           pass -Dkey=val directly to the java runtime[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-J-X[0m[38;2;248;248;242m                pass option -X directly to the java runtime[0m
 [38;2;248;248;242m                      (-J is stripped)[0m

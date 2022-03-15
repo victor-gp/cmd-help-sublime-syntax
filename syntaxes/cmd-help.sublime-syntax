@@ -44,7 +44,6 @@ contexts:
       push: [line, line-begin]
 
   line: # stack lv 1
-    - meta_content_scope: line
     - match: '$'
       pop: true
 
@@ -77,19 +76,16 @@ contexts:
     - include: else-pop
 
   indent-0:
-    - meta_content_scope: indent-0
     - include: maybe-heading
     - include: maybe-option
     - include: else-pop
 
   indent-1-2:
-    - meta_content_scope: indent-1-2
     - include: maybe-option
     - include: maybe-heading
     - include: else-pop
 
   indent-3-8:
-    - meta_content_scope: indent-3-8
     - include: maybe-option
     - include: else-pop
 

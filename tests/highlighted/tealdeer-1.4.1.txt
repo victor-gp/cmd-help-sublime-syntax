@@ -1,7 +1,7 @@
 [38;2;253;151;31mUsage:[0m
 
-[38;2;248;248;242m    [0m[38;2;248;248;242mtldr [options] <command>...[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mtldr [options][0m
+[38;2;248;248;242m    tldr [options] <command>...[0m
+[38;2;248;248;242m    tldr [options][0m
 
 [38;2;253;151;31mOptions:[0m
 
@@ -21,14 +21,14 @@
 
 [38;2;253;151;31mExamples:[0m
 
-[38;2;248;248;242m    [0m[38;2;248;248;242m$ tldr tar[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m$ tldr --list[0m
+[38;2;248;248;242m    $ tldr tar[0m
+[38;2;248;248;242m    $ tldr --list[0m
 
 [38;2;253;151;31mTo control the cache:[0m
 
-[38;2;248;248;242m    [0m[38;2;248;248;242m$ tldr --update[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m$ tldr --clear-cache[0m
+[38;2;248;248;242m    $ tldr --update[0m
+[38;2;248;248;242m    $ tldr --clear-cache[0m
 
 [38;2;253;151;31mTo render a local file (for testing):[0m
 
-[38;2;248;248;242m    [0m[38;2;248;248;242m$ tldr --render /path/to/file.md[0m
+[38;2;248;248;242m    $ tldr --render /path/to/file.md[0m

@@ -1,16 +1,16 @@
 [38;2;248;248;242mswipl: Usage:[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m1) swipl --help     Display this message (also -h)[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m2) swipl --version  Display version information (also -v)[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m3) swipl --arch     Display architecture[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m4) swipl --dump-runtime-variables[=format][0m
+[38;2;248;248;242m    1) swipl --help     Display this message (also -h)[0m
+[38;2;248;248;242m    2) swipl --version  Display version information (also -v)[0m
+[38;2;248;248;242m    3) swipl --arch     Display architecture[0m
+[38;2;248;248;242m    4) swipl --dump-runtime-variables[=format][0m
 [38;2;248;248;242m                     Dump link info in sh(1) format[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m5) swipl [options] prolog-file ... [-- arg ...][0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m6) swipl [options] [-o output] -c prolog-file ...[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m7) swipl [options] [-o output] -b bootfile -c prolog-file ...[0m
+[38;2;248;248;242m    5) swipl [options] prolog-file ... [-- arg ...][0m
+[38;2;248;248;242m    6) swipl [options] [-o output] -c prolog-file ...[0m
+[38;2;248;248;242m    7) swipl [options] [-o output] -b bootfile -c prolog-file ...[0m
 
 [38;2;253;151;31mOptions:[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m [0m[38;2;253;151;31mstate[0m[38;2;248;248;242m         Start from state (must be first)[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m-[LGT]size[KMG]  Specify {Local,Global,Trail} limits[0m
+[38;2;248;248;242m    -[LGT]size[KMG]  Specify {Local,Global,Trail} limits[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;253;151;31mtoplevel[0m[38;2;248;248;242m      Toplevel goal[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m [0m[38;2;253;151;31mgoal[0m[38;2;248;248;242m          Initialisation goal[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m [0m[38;2;253;151;31mfile[0m[38;2;248;248;242m          User initialisation file[0m
@@ -18,7 +18,7 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m [0m[38;2;253;151;31mfile[0m[38;2;248;248;242m          Script source file[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m [0m[38;2;253;151;31mfile[0m[38;2;248;248;242m          Script source file[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m [0m[38;2;253;151;31malias[0m[38;2;248;248;242m=path    Define file search path 'alias'[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m[+/-]tty         Allow tty control[0m
+[38;2;248;248;242m    [+/-]tty         Allow tty control[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m               Optimised compilation[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--nosignals[0m[38;2;248;248;242m      Do not modify any signal handling[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--nodebug[0m[38;2;248;248;242m        Omit generation of debug info[0m

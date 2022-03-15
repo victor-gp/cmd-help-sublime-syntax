@@ -1,8 +1,8 @@
 [38;2;248;248;242mjq - commandline JSON processor [version 1.6][0m
 
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m	jq [options] <jq filter> [file...][0m
-[38;2;248;248;242m	[0m[38;2;248;248;242mjq [options] --args <jq filter> [strings...][0m
-[38;2;248;248;242m	[0m[38;2;248;248;242mjq [options] --jsonargs <jq filter> [JSON_TEXTS...][0m
+[38;2;248;248;242m	jq [options] --args <jq filter> [strings...][0m
+[38;2;248;248;242m	jq [options] --jsonargs <jq filter> [JSON_TEXTS...][0m
 
 [38;2;248;248;242mjq is a tool for processing JSON inputs, applying the given filter to[0m
 [38;2;248;248;242mits JSON text inputs and producing the filter's results as JSON on[0m
@@ -17,10 +17,10 @@
 
 [38;2;253;151;31mExample:[0m
 
-[38;2;248;248;242m	[0m[38;2;248;248;242m$ echo '{"foo": 0}' | jq .[0m
-[38;2;248;248;242m	[0m[38;2;248;248;242m{[0m
-[38;2;248;248;242m		[0m[38;2;248;248;242m"foo": 0[0m
-[38;2;248;248;242m	[0m[38;2;248;248;242m}[0m
+[38;2;248;248;242m	$ echo '{"foo": 0}' | jq .[0m
+[38;2;248;248;242m	{[0m
+[38;2;248;248;242m		"foo": 0[0m
+[38;2;248;248;242m	}[0m
 
 [38;2;253;151;31mSome of the options include:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m               compact instead of pretty-printed output;[0m

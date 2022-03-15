@@ -36,21 +36,21 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--backtrace-limit[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m
 [38;2;248;248;242m                  limit the maximum length of backtrace[0m
 [38;2;253;151;31mDump List:[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242minsns           instruction sequences[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242myydebug         yydebug of yacc parser generator[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mparsetree       AST[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mparsetree_with_comment[0m
+[38;2;248;248;242m  insns           instruction sequences[0m
+[38;2;248;248;242m  yydebug         yydebug of yacc parser generator[0m
+[38;2;248;248;242m  parsetree       AST[0m
+[38;2;248;248;242m  parsetree_with_comment[0m
 [38;2;248;248;242m                  AST with comments[0m
 [38;2;253;151;31mFeatures:[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mgems            rubygems (default: enabled)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mdid_you_mean    did_you_mean (default: enabled)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mrubyopt         RUBYOPT environment variable (default: enabled)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mfrozen-string-literal[0m
+[38;2;248;248;242m  gems            rubygems (default: enabled)[0m
+[38;2;248;248;242m  did_you_mean    did_you_mean (default: enabled)[0m
+[38;2;248;248;242m  rubyopt         RUBYOPT environment variable (default: enabled)[0m
+[38;2;248;248;242m  frozen-string-literal[0m
 [38;2;248;248;242m                  freeze all string literals (default: disabled)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mjit             JIT compiler (default: disabled)[0m
+[38;2;248;248;242m  jit             JIT compiler (default: disabled)[0m
 [38;2;253;151;31mWarning categories:[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mdeprecated      deprecated features[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mexperimental    experimental features[0m
+[38;2;248;248;242m  deprecated      deprecated features[0m
+[38;2;248;248;242m  experimental    experimental features[0m
 [38;2;253;151;31mJIT options (experimental):[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-warnings[0m[38;2;248;248;242m  Enable printing JIT warnings[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-debug[0m[38;2;248;248;242m     Enable JIT debugging (very slow), or add cflags if specified[0m

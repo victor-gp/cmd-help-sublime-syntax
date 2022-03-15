@@ -13,18 +13,18 @@
 
 [38;2;253;151;31mAll commands:[0m
 
-[38;2;248;248;242m    [0m[38;2;248;248;242maccess, adduser, audit, bin, bugs, cache, ci, completion,[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mconfig, dedupe, deprecate, diff, dist-tag, docs, doctor,[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242medit, exec, explain, explore, find-dupes, fund, get, help,[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mhook, init, install, install-ci-test, install-test, link,[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mll, login, logout, ls, org, outdated, owner, pack, ping,[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mpkg, prefix, profile, prune, publish, rebuild, repo,[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mrestart, root, run-script, search, set, set-script,[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242mshrinkwrap, star, stars, start, stop, team, test, token,[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242muninstall, unpublish, unstar, update, version, view, whoami[0m
+[38;2;248;248;242m    access, adduser, audit, bin, bugs, cache, ci, completion,[0m
+[38;2;248;248;242m    config, dedupe, deprecate, diff, dist-tag, docs, doctor,[0m
+[38;2;248;248;242m    edit, exec, explain, explore, find-dupes, fund, get, help,[0m
+[38;2;248;248;242m    hook, init, install, install-ci-test, install-test, link,[0m
+[38;2;248;248;242m    ll, login, logout, ls, org, outdated, owner, pack, ping,[0m
+[38;2;248;248;242m    pkg, prefix, profile, prune, publish, rebuild, repo,[0m
+[38;2;248;248;242m    restart, root, run-script, search, set, set-script,[0m
+[38;2;248;248;242m    shrinkwrap, star, stars, start, stop, team, test, token,[0m
+[38;2;248;248;242m    uninstall, unpublish, unstar, update, version, view, whoami[0m
 
 [38;2;248;248;242mSpecify configs in the ini-formatted file:[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m/home/victor-gp/.npmrc[0m
+[38;2;248;248;242m    /home/victor-gp/.npmrc[0m
 [38;2;248;248;242mor on the command line via: npm <command> --key=value[0m
 
 [38;2;248;248;242mMore configuration info: npm help config[0m

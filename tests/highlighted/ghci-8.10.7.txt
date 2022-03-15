@@ -1,13 +1,13 @@
 [38;2;253;151;31mUsage:[0m
 
-[38;2;248;248;242m    [0m[38;2;248;248;242mghci [command-line-options-and-input-files][0m
+[38;2;248;248;242m    ghci [command-line-options-and-input-files][0m
 
 [38;2;248;248;242mThe kinds of input files that can be given on the command-line[0m
 [38;2;248;248;242minclude:[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242m- Haskell source files (.hs or .lhs suffix)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m- Object files (.o suffix, or .obj on Windows)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m- Dynamic libraries (.so suffix, or .dll on Windows)[0m
+[38;2;248;248;242m  - Haskell source files (.hs or .lhs suffix)[0m
+[38;2;248;248;242m  - Object files (.o suffix, or .obj on Windows)[0m
+[38;2;248;248;242m  - Dynamic libraries (.so suffix, or .dll on Windows)[0m
 
 [38;2;248;248;242mIn addition, ghci accepts most of the command-line options that plain[0m
 [38;2;248;248;242mGHC does.  Some of the options that are commonly used are:[0m
@@ -21,7 +21,7 @@
 [38;2;248;248;242mFull details can be found in the User's Guide, an online copy of which[0m
 [38;2;248;248;242mcan be found here:[0m
 
-[38;2;248;248;242m    [0m[38;2;248;248;242mhttp://www.haskell.org/ghc/docs/latest/html/users_guide/[0m
+[38;2;248;248;242m    http://www.haskell.org/ghc/docs/latest/html/users_guide/[0m
 
 [38;2;248;248;242mIf you *really* want to see every option, then you can pass[0m
 [38;2;248;248;242m'--show-options' to ghci.[0m

@@ -5,85 +5,85 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m cabal [GLOBAL FLAGS] [COMMAND [FLAGS]][0m
 
 [38;2;253;151;31mCommands:[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m[global][0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mupdate            Updates list of known packages.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242minstall           Install packages.[0m
+[38;2;248;248;242m [global][0m
+[38;2;248;248;242m  update            Updates list of known packages.[0m
+[38;2;248;248;242m  install           Install packages.[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242mhelp              Help about commands.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242minfo              Display detailed information about a particular package.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mlist              List packages matching a search string.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mfetch             Downloads packages for later installation.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242muser-config       Display and update the user's global cabal configuration.[0m
+[38;2;248;248;242m  help              Help about commands.[0m
+[38;2;248;248;242m  info              Display detailed information about a particular package.[0m
+[38;2;248;248;242m  list              List packages matching a search string.[0m
+[38;2;248;248;242m  fetch             Downloads packages for later installation.[0m
+[38;2;248;248;242m  user-config       Display and update the user's global cabal configuration.[0m
 
-[38;2;248;248;242m [0m[38;2;248;248;242m[package][0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mget               Download/Extract a package's source code (repository).[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242minit              Create a new .cabal package file.[0m
+[38;2;248;248;242m [package][0m
+[38;2;248;248;242m  get               Download/Extract a package's source code (repository).[0m
+[38;2;248;248;242m  init              Create a new .cabal package file.[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242mconfigure         Add extra project configuration[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mbuild             Compile targets within the project.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mclean             Clean the package store and remove temporary files.[0m
+[38;2;248;248;242m  configure         Add extra project configuration[0m
+[38;2;248;248;242m  build             Compile targets within the project.[0m
+[38;2;248;248;242m  clean             Clean the package store and remove temporary files.[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242mrun               Run an executable.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mrepl              Open an interactive session for the given component.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mtest              Run test-suites[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mbench             Run benchmarks[0m
+[38;2;248;248;242m  run               Run an executable.[0m
+[38;2;248;248;242m  repl              Open an interactive session for the given component.[0m
+[38;2;248;248;242m  test              Run test-suites[0m
+[38;2;248;248;242m  bench             Run benchmarks[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242mcheck             Check the package for common mistakes.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242msdist             Generate a source distribution file (.tar.gz).[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mupload            Uploads source packages or documentation to Hackage.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mreport            Upload build reports to a remote server.[0m
+[38;2;248;248;242m  check             Check the package for common mistakes.[0m
+[38;2;248;248;242m  sdist             Generate a source distribution file (.tar.gz).[0m
+[38;2;248;248;242m  upload            Uploads source packages or documentation to Hackage.[0m
+[38;2;248;248;242m  report            Upload build reports to a remote server.[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242mfreeze            Freeze dependencies.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mgen-bounds        Generate dependency bounds.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242moutdated          Check for outdated dependencies[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mhaddock           Build Haddock documentation[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mhscolour          Generate HsColour colourised code, in HTML format.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mexec              Give a command access to the store.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mlist-bin          list path to a single executable.[0m
+[38;2;248;248;242m  freeze            Freeze dependencies.[0m
+[38;2;248;248;242m  gen-bounds        Generate dependency bounds.[0m
+[38;2;248;248;242m  outdated          Check for outdated dependencies[0m
+[38;2;248;248;242m  haddock           Build Haddock documentation[0m
+[38;2;248;248;242m  hscolour          Generate HsColour colourised code, in HTML format.[0m
+[38;2;248;248;242m  exec              Give a command access to the store.[0m
+[38;2;248;248;242m  list-bin          list path to a single executable.[0m
 
-[38;2;248;248;242m [0m[38;2;248;248;242m[new-style projects (forwards-compatible aliases)][0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-build          Compile targets within the project.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-configure      Add extra project configuration[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-repl           Open an interactive session for the given component.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-run            Run an executable.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-test           Run test-suites[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-bench          Run benchmarks[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-freeze         Freeze dependencies.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-haddock        Build Haddock documentation[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-exec           Give a command access to the store.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-update         Updates list of known packages.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-install        Install packages.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-clean          Clean the package store and remove temporary files.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv2-sdist          Generate a source distribution file (.tar.gz).[0m
+[38;2;248;248;242m [new-style projects (forwards-compatible aliases)][0m
+[38;2;248;248;242m  v2-build          Compile targets within the project.[0m
+[38;2;248;248;242m  v2-configure      Add extra project configuration[0m
+[38;2;248;248;242m  v2-repl           Open an interactive session for the given component.[0m
+[38;2;248;248;242m  v2-run            Run an executable.[0m
+[38;2;248;248;242m  v2-test           Run test-suites[0m
+[38;2;248;248;242m  v2-bench          Run benchmarks[0m
+[38;2;248;248;242m  v2-freeze         Freeze dependencies.[0m
+[38;2;248;248;242m  v2-haddock        Build Haddock documentation[0m
+[38;2;248;248;242m  v2-exec           Give a command access to the store.[0m
+[38;2;248;248;242m  v2-update         Updates list of known packages.[0m
+[38;2;248;248;242m  v2-install        Install packages.[0m
+[38;2;248;248;242m  v2-clean          Clean the package store and remove temporary files.[0m
+[38;2;248;248;242m  v2-sdist          Generate a source distribution file (.tar.gz).[0m
 
-[38;2;248;248;242m [0m[38;2;248;248;242m[legacy command aliases][0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-build          Compile all/specific components.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-configure      Prepare to build the package.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-repl           Open an interpreter session for the given component.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-run            Builds and runs an executable.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-test           Run all/specific tests in the test suite.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-bench          Run all/specific benchmarks.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-freeze         Freeze dependencies.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-haddock        Generate Haddock HTML documentation.[0m
-
-
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-install        Install packages.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-clean          Clean up after a build.[0m
+[38;2;248;248;242m [legacy command aliases][0m
+[38;2;248;248;242m  v1-build          Compile all/specific components.[0m
+[38;2;248;248;242m  v1-configure      Prepare to build the package.[0m
+[38;2;248;248;242m  v1-repl           Open an interpreter session for the given component.[0m
+[38;2;248;248;242m  v1-run            Builds and runs an executable.[0m
+[38;2;248;248;242m  v1-test           Run all/specific tests in the test suite.[0m
+[38;2;248;248;242m  v1-bench          Run all/specific benchmarks.[0m
+[38;2;248;248;242m  v1-freeze         Freeze dependencies.[0m
+[38;2;248;248;242m  v1-haddock        Generate Haddock HTML documentation.[0m
 
 
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-copy           Copy the files of all/specific components to install locations.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-register       Register this package with the compiler.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mv1-reconfigure    Reconfigure the package if necessary.[0m
+[38;2;248;248;242m  v1-install        Install packages.[0m
+[38;2;248;248;242m  v1-clean          Clean up after a build.[0m
+
+
+[38;2;248;248;242m  v1-copy           Copy the files of all/specific components to install locations.[0m
+[38;2;248;248;242m  v1-register       Register this package with the compiler.[0m
+[38;2;248;248;242m  v1-reconfigure    Reconfigure the package if necessary.[0m
 
 [38;2;248;248;242mFor more information about a command use:[0m
-[38;2;248;248;242m   [0m[38;2;248;248;242mcabal COMMAND --help[0m
+[38;2;248;248;242m   cabal COMMAND --help[0m
 [38;2;248;248;242mor cabal help COMMAND[0m
 
 [38;2;248;248;242mTo install Cabal packages from hackage use:[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mcabal install foo [--dry-run][0m
+[38;2;248;248;242m  cabal install foo [--dry-run][0m
 
 [38;2;248;248;242mOccasionally you need to update the list of available packages:[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242mcabal update[0m
+[38;2;248;248;242m  cabal update[0m
 
 [38;2;253;151;31mGlobal flags:[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                     Show this help text[0m
@@ -105,4 +105,4 @@
 [38;2;248;248;242m                                nix-shell if a 'shell.nix' file exists[0m
 
 [38;2;248;248;242mYou can edit the cabal configuration file to set defaults:[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m/home/victor-gp/.cabal/config[0m
+[38;2;248;248;242m  /home/victor-gp/.cabal/config[0m
