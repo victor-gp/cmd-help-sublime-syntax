@@ -48,18 +48,15 @@ if ret != 0: # image doesn't exist
 
 ### arrange arguments
 
-default_args = f"{tests_path} {syntaxes_path}"
-
 args = ""
 if script_args.test_path:
     args = f"{script_args.test_path} {syntaxes_path}"
+else:
+    args = f"{tests_path} {syntaxes_path}"
+
 if script_args.debug:
-    if not args:
-        args = default_args
     args += " --debug"
 if script_args.summary:
-    if not args:
-        args = default_args
     args += " --summary"
 
 ### run
