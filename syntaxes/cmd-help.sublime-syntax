@@ -16,7 +16,7 @@ variables:
   leading_word: '[:upper:]({{alpha_dash}})*\b'
 
 ### command option variables:
-  option_stop: '[ \t\n,=\[</]'
+  option_stop: '[ \t\n,=\[</:]'
   # marks seen in option names: . ? : # $ --
   option_name: '[^{{option_stop}}]+'
 
@@ -134,16 +134,22 @@ contexts:
       set: then-pop
 
   def-option:
+    - include: def-option-specials
+    - match: '-{{option_name}}'
+      scope: *DEF_OPTION_SCOPE
+      set: def-option-post
+    - include: else-pop
+
+  def-option-specials:
     - match: '---'
       # probably not an option
       pop: true
     - match: '--(?=\s)'
       scope: *END_OF_OPTIONS_SCOPE
       set: then-pop
-    - match: '-{{option_name}}'
+    - match: '-:(?={{option_stop}})'
       scope: *DEF_OPTION_SCOPE
       set: def-option-post
-    - include: else-pop
 
   def-option-post:
     - include: connect-option-alias
@@ -154,6 +160,8 @@ contexts:
       # alt: match directly in option-argument and colorize '=' too?
     - match: '\[=|\['
       set: square-brackets-after-option
+    - match: ':'
+      set: colon-after-option
     - include: else-pop
 
   connect-option-alias:
@@ -196,6 +204,12 @@ contexts:
     - match: '(?=])'
       #fixme: should consume (no lookahead), this forces else-pop on option-argument-post
       set: option-argument-post
+
+  colon-after-option:
+    - match: '<.*?>'
+      scope: *OPTION_ARGUMENT_SCOPE
+      set: option-argument-post
+    - include: else-pop
 
   option-argument-post:
     - match: '({{ellipsis}})?'

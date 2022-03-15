@@ -24,9 +24,8 @@ where options include:
                   enable verbose output
     -version      print product version and exit
     -version:<value>
-#           ^ entity.name.function.option.cmd-help
-#            ^^^^^^^ - variable.parameter.option-argument.cmd-help
-#todo: handle colon (no scope) + option argument
+#           ^ - entity.name.function.option.cmd-help
+#            ^^^^^^^ variable.parameter.option-argument.cmd-help
                   Warning: this feature is deprecated and will be removed
                   in a future release.
                   require the specified version to run
@@ -48,7 +47,8 @@ where options include:
     -dsa | -disablesystemassertions
                   disable system assertions
     -agentlib:<libname>[=<options>]
-#             ^^^^^^^^^^^^^^^^^^^^^ - variable.parameter.option-argument.cmd-help
+#             ^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#                        ^^^^^^^^^ - variable.parameter.option-argument.cmd-help
 #nice: handle these
                   load native agent library <libname>, e.g. -agentlib:hprof
                   see also, -agentlib:jdwp=help and -agentlib:hprof=help

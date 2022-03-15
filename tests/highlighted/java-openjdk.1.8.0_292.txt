@@ -16,10 +16,10 @@
 [38;2;248;248;242m                  and ZIP archives to search for class files.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m<name>=<value>[0m
 [38;2;248;248;242m                  set a system property[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-verbose:[0m[38;2;248;248;242m[[0m[38;2;253;151;31mclass|gc|jni[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-verbose[0m[38;2;248;248;242m:[class|gc|jni][0m
 [38;2;248;248;242m                  enable verbose output[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-version[0m[38;2;248;248;242m      print product version and exit[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-version:[0m[38;2;248;248;242m<value>[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-version[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<value>[0m
 [38;2;248;248;242m                  Warning: this feature is deprecated and will be removed[0m
 [38;2;248;248;242m                  in a future release.[0m
 [38;2;248;248;242m                  require the specified version to run[0m
@@ -40,13 +40,13 @@
 [38;2;248;248;242m                  enable system assertions[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-dsa[0m[38;2;248;248;242m | [0m[38;2;166;226;46m-disablesystemassertions[0m
 [38;2;248;248;242m                  disable system assertions[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-agentlib:[0m[38;2;248;248;242m<libname>[=<options>][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-agentlib[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<libname>[0m[38;2;248;248;242m[=<options>][0m
 [38;2;248;248;242m                  load native agent library <libname>, e.g. -agentlib:hprof[0m
 [38;2;248;248;242m                  see also, -agentlib:jdwp=help and -agentlib:hprof=help[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-agentpath:[0m[38;2;248;248;242m<pathname>[=<options>][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-agentpath[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<pathname>[0m[38;2;248;248;242m[=<options>][0m
 [38;2;248;248;242m                  load native agent library by full pathname[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-javaagent:[0m[38;2;248;248;242m<jarpath>[=<options>][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-javaagent[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<jarpath>[0m[38;2;248;248;242m[=<options>][0m
 [38;2;248;248;242m                  load Java programming language agent, see java.lang.instrument[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-splash:[0m[38;2;248;248;242m<imagepath>[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-splash[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<imagepath>[0m
 [38;2;248;248;242m                  show splash screen with specified image[0m
 [38;2;248;248;242mSee http://www.oracle.com/technetwork/java/javase/documentation/index.html for more details.[0m
