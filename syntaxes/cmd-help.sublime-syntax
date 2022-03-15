@@ -125,8 +125,8 @@ contexts:
     #   set: else-skip
 
   def-option:
-    - match: '^----'
-      # definitely not an option
+    - match: '---'
+      # probably not an option
       pop: true
     - match: '--(?=\s)'
       scope: *END_OF_OPTIONS_SCOPE
