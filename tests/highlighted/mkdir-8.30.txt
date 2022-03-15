@@ -2,10 +2,10 @@
 [38;2;248;248;242mCreate the DIRECTORY(ies), if they do not already exist.[0m
 
 [38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-p, --parents     no error if existing, make parent directories as needed[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-v, --verbose     print a message for each created directory[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-Z                   set SELinux security context of each created directory[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--mode[0m[38;2;248;248;242m=[0m[38;2;253;151;31mMODE[0m[38;2;248;248;242m   set file mode (as in chmod), not a=rwx - umask[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--parents[0m[38;2;248;248;242m     no error if existing, make parent directories as needed[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m     print a message for each created directory[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m                   set SELinux security context of each created directory[0m
 [38;2;248;248;242m                         to the default type[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mCTX[0m[38;2;248;248;242m]  like -Z, or if CTX is specified then set the SELinux[0m
 [38;2;248;248;242m                         or SMACK security context to CTX[0m

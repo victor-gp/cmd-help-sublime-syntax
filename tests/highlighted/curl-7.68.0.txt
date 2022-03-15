@@ -2,33 +2,33 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--abstract-unix-socket[0m[38;2;248;248;242m [0m[38;2;253;151;31m<path>[0m[38;2;248;248;242m Connect via abstract Unix domain socket[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--alt-svc[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file name>[0m[38;2;248;248;242m Enable alt-svc with this cache file[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--anyauth[0m[38;2;248;248;242m       Pick any authentication method[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-a, --append        Append to target file when uploading[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--append[0m[38;2;248;248;242m        Append to target file when uploading[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--basic[0m[38;2;248;248;242m         Use HTTP Basic Authentication[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--cacert[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m CA certificate to verify peer against[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--capath[0m[38;2;248;248;242m [0m[38;2;253;151;31m<dir>[0m[38;2;248;248;242m  CA directory to verify peer against[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-E, --cert <certificate[:password]> Client certificate file and password[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--cert[0m[38;2;248;248;242m [0m[38;2;253;151;31m<certificate[:password]>[0m[38;2;248;248;242m Client certificate file and password[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--cert-status[0m[38;2;248;248;242m   Verify the status of the server certificate[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--cert-type[0m[38;2;248;248;242m [0m[38;2;253;151;31m<type>[0m[38;2;248;248;242m Certificate file type (DER/PEM/ENG)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ciphers[0m[38;2;248;248;242m [0m[38;2;253;151;31m<list of ciphers>[0m[38;2;248;248;242m SSL ciphers to use[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--compressed[0m[38;2;248;248;242m    Request compressed response[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--compressed-ssh[0m[38;2;248;248;242m Enable SSH compression[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-K, --config <file> Read config from a file[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m Read config from a file[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--connect-timeout[0m[38;2;248;248;242m [0m[38;2;253;151;31m<seconds>[0m[38;2;248;248;242m Maximum time allowed for connection[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--connect-to[0m[38;2;248;248;242m [0m[38;2;253;151;31m<HOST1:PORT1:HOST2:PORT2>[0m[38;2;248;248;242m Connect to host[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-C, --continue-at <offset> Resumed transfer offset[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-b, --cookie <data|filename> Send cookies from string/file[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-c, --cookie-jar <filename> Write cookies to <filename> after operation[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--continue-at[0m[38;2;248;248;242m [0m[38;2;253;151;31m<offset>[0m[38;2;248;248;242m Resumed transfer offset[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--cookie[0m[38;2;248;248;242m [0m[38;2;253;151;31m<data|filename>[0m[38;2;248;248;242m Send cookies from string/file[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--cookie-jar[0m[38;2;248;248;242m [0m[38;2;253;151;31m<filename>[0m[38;2;248;248;242m Write cookies to <filename> after operation[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--create-dirs[0m[38;2;248;248;242m   Create necessary local directory hierarchy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--crlf[0m[38;2;248;248;242m          Convert LF to CRLF in upload[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--crlfile[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m Get a CRL list in PEM format from the given file[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-d, --data <data>   HTTP POST data[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--data[0m[38;2;248;248;242m [0m[38;2;253;151;31m<data>[0m[38;2;248;248;242m   HTTP POST data[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--data-ascii[0m[38;2;248;248;242m [0m[38;2;253;151;31m<data>[0m[38;2;248;248;242m HTTP POST ASCII data[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--data-binary[0m[38;2;248;248;242m [0m[38;2;253;151;31m<data>[0m[38;2;248;248;242m HTTP POST binary data[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--data-raw[0m[38;2;248;248;242m [0m[38;2;253;151;31m<data>[0m[38;2;248;248;242m HTTP POST data, '@' allowed[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--data-urlencode[0m[38;2;248;248;242m [0m[38;2;253;151;31m<data>[0m[38;2;248;248;242m HTTP POST data url encoded[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--delegation[0m[38;2;248;248;242m [0m[38;2;253;151;31m<LEVEL>[0m[38;2;248;248;242m GSS-API delegation permission[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--digest[0m[38;2;248;248;242m        Use HTTP Digest Authentication[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-q, --disable       Disable .curlrc[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--disable[0m[38;2;248;248;242m       Disable .curlrc[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--disable-eprt[0m[38;2;248;248;242m  Inhibit using EPRT or LPRT[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--disable-epsv[0m[38;2;248;248;242m  Inhibit using EPSV[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--disallow-username-in-url[0m[38;2;248;248;242m Disallow username in url[0m
@@ -37,75 +37,75 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--dns-ipv6-addr[0m[38;2;248;248;242m [0m[38;2;253;151;31m<address>[0m[38;2;248;248;242m IPv6 address to use for DNS requests[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--dns-servers[0m[38;2;248;248;242m [0m[38;2;253;151;31m<addresses>[0m[38;2;248;248;242m DNS server addrs to use[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--doh-url[0m[38;2;248;248;242m [0m[38;2;253;151;31m<URL>[0m[38;2;248;248;242m Resolve host names over DOH[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-D, --dump-header <filename> Write the received headers to <filename>[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--dump-header[0m[38;2;248;248;242m [0m[38;2;253;151;31m<filename>[0m[38;2;248;248;242m Write the received headers to <filename>[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--egd-file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m EGD socket path for random data[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--engine[0m[38;2;248;248;242m [0m[38;2;253;151;31m<name>[0m[38;2;248;248;242m Crypto engine to use[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--etag-save[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m Get an ETag from response header and save it to a FILE[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--etag-compare[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m Get an ETag from a file and send a conditional request[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--expect100-timeout[0m[38;2;248;248;242m [0m[38;2;253;151;31m<seconds>[0m[38;2;248;248;242m How long to wait for 100-continue[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-f, --fail          Fail silently (no output at all) on HTTP errors[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fail[0m[38;2;248;248;242m          Fail silently (no output at all) on HTTP errors[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--fail-early[0m[38;2;248;248;242m    Fail on first transfer error, do not continue[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--false-start[0m[38;2;248;248;242m   Enable TLS False Start[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-F, --form <name=content> Specify multipart MIME data[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--form[0m[38;2;248;248;242m [0m[38;2;253;151;31m<name=content>[0m[38;2;248;248;242m Specify multipart MIME data[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--form-string[0m[38;2;248;248;242m [0m[38;2;253;151;31m<name=string>[0m[38;2;248;248;242m Specify multipart MIME data[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-account[0m[38;2;248;248;242m [0m[38;2;253;151;31m<data>[0m[38;2;248;248;242m Account data string[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-alternative-to-user[0m[38;2;248;248;242m [0m[38;2;253;151;31m<command>[0m[38;2;248;248;242m String to replace USER [name][0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-create-dirs[0m[38;2;248;248;242m Create the remote dirs if not present[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-method[0m[38;2;248;248;242m [0m[38;2;253;151;31m<method>[0m[38;2;248;248;242m Control CWD usage[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-pasv[0m[38;2;248;248;242m      Use PASV/EPSV instead of PORT[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-P, --ftp-port <address> Use PORT instead of PASV[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ftp-port[0m[38;2;248;248;242m [0m[38;2;253;151;31m<address>[0m[38;2;248;248;242m Use PORT instead of PASV[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-pret[0m[38;2;248;248;242m      Send PRET before PASV[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-skip-pasv-ip[0m[38;2;248;248;242m Skip the IP address for PASV[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-ssl-ccc[0m[38;2;248;248;242m   Send CCC after authenticating[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-ssl-ccc-mode[0m[38;2;248;248;242m [0m[38;2;253;151;31m<active/passive>[0m[38;2;248;248;242m Set CCC mode[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ftp-ssl-control[0m[38;2;248;248;242m Require SSL/TLS for FTP login, clear for transfer[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-G, --get           Put the post data in the URL and use GET[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-g, --globoff       Disable URL sequences and ranges using {} and [][0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--get[0m[38;2;248;248;242m           Put the post data in the URL and use GET[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--globoff[0m[38;2;248;248;242m       Disable URL sequences and ranges using {} and [][0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--happy-eyeballs-timeout-ms[0m[38;2;248;248;242m [0m[38;2;253;151;31m<milliseconds>[0m[38;2;248;248;242m How long to wait in milliseconds for IPv6 before trying IPv4[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--haproxy-protocol[0m[38;2;248;248;242m Send HAProxy PROXY protocol v1 header[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-I, --head          Show document info only[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-H, --header <header/@file> Pass custom header(s) to server[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-h, --help          This help text[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--head[0m[38;2;248;248;242m          Show document info only[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--header[0m[38;2;248;248;242m [0m[38;2;253;151;31m<header/@file>[0m[38;2;248;248;242m Pass custom header(s) to server[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m          This help text[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--hostpubmd5[0m[38;2;248;248;242m [0m[38;2;253;151;31m<md5>[0m[38;2;248;248;242m Acceptable MD5 hash of the host public key[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--http0.9[0m[38;2;248;248;242m       Allow HTTP 0.9 responses[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-0, --http1.0       Use HTTP 1.0[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--http1.0[0m[38;2;248;248;242m       Use HTTP 1.0[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--http1.1[0m[38;2;248;248;242m       Use HTTP 1.1[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--http2[0m[38;2;248;248;242m         Use HTTP 2[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--http2-prior-knowledge[0m[38;2;248;248;242m Use HTTP 2 without HTTP/1.1 Upgrade[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--http3[0m[38;2;248;248;242m         Use HTTP v3[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ignore-content-length[0m[38;2;248;248;242m Ignore the size of the remote resource[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-i, --include       Include protocol response headers in the output[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-k, --insecure      Allow insecure server connections when using SSL[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--include[0m[38;2;248;248;242m       Include protocol response headers in the output[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--insecure[0m[38;2;248;248;242m      Allow insecure server connections when using SSL[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--interface[0m[38;2;248;248;242m [0m[38;2;253;151;31m<name>[0m[38;2;248;248;242m Use network INTERFACE (or address)[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-4, --ipv4          Resolve names to IPv4 addresses[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-6, --ipv6          Resolve names to IPv6 addresses[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-j, --junk-session-cookies Ignore session cookies read from file[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-4[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ipv4[0m[38;2;248;248;242m          Resolve names to IPv4 addresses[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-6[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ipv6[0m[38;2;248;248;242m          Resolve names to IPv6 addresses[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--junk-session-cookies[0m[38;2;248;248;242m Ignore session cookies read from file[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--keepalive-time[0m[38;2;248;248;242m [0m[38;2;253;151;31m<seconds>[0m[38;2;248;248;242m Interval time for keepalive probes[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--key[0m[38;2;248;248;242m [0m[38;2;253;151;31m<key>[0m[38;2;248;248;242m     Private key file name[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--key-type[0m[38;2;248;248;242m [0m[38;2;253;151;31m<type>[0m[38;2;248;248;242m Private key file type (DER/PEM/ENG)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--krb[0m[38;2;248;248;242m [0m[38;2;253;151;31m<level>[0m[38;2;248;248;242m   Enable Kerberos with security <level>[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--libcurl[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m Dump libcurl equivalent code of this command line[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--limit-rate[0m[38;2;248;248;242m [0m[38;2;253;151;31m<speed>[0m[38;2;248;248;242m Limit transfer speed to RATE[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-l, --list-only     List only mode[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--list-only[0m[38;2;248;248;242m     List only mode[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--local-port[0m[38;2;248;248;242m [0m[38;2;253;151;31m<num/range>[0m[38;2;248;248;242m Force use of RANGE for local port numbers[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-L, --location      Follow redirects[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--location[0m[38;2;248;248;242m      Follow redirects[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--location-trusted[0m[38;2;248;248;242m [0m[38;2;253;151;31mLike[0m[38;2;248;248;242m [0m[38;2;166;226;46m--location[0m[38;2;248;248;242m, and send auth to other hosts[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--login-options[0m[38;2;248;248;242m [0m[38;2;253;151;31m<options>[0m[38;2;248;248;242m Server login options[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--mail-auth[0m[38;2;248;248;242m [0m[38;2;253;151;31m<address>[0m[38;2;248;248;242m Originator address of the original email[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--mail-from[0m[38;2;248;248;242m [0m[38;2;253;151;31m<address>[0m[38;2;248;248;242m Mail from this address[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--mail-rcpt[0m[38;2;248;248;242m [0m[38;2;253;151;31m<address>[0m[38;2;248;248;242m Mail to this address[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-M, --manual        Display the full manual[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--manual[0m[38;2;248;248;242m        Display the full manual[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--max-filesize[0m[38;2;248;248;242m [0m[38;2;253;151;31m<bytes>[0m[38;2;248;248;242m Maximum file size to download[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--max-redirs[0m[38;2;248;248;242m [0m[38;2;253;151;31m<num>[0m[38;2;248;248;242m Maximum number of redirects allowed[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-m, --max-time <seconds> Maximum time allowed for the transfer[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--max-time[0m[38;2;248;248;242m [0m[38;2;253;151;31m<seconds>[0m[38;2;248;248;242m Maximum time allowed for the transfer[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--metalink[0m[38;2;248;248;242m      Process given URLs as metalink XML file[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--negotiate[0m[38;2;248;248;242m     Use HTTP Negotiate (SPNEGO) authentication[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-n, --netrc         Must read .netrc for user name and password[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--netrc[0m[38;2;248;248;242m         Must read .netrc for user name and password[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--netrc-file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<filename>[0m[38;2;248;248;242m Specify FILE for netrc[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--netrc-optional[0m[38;2;248;248;242m Use either .netrc or URL[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-:, --next          Make next URL use its separate set of options[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-:[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--next[0m[38;2;248;248;242m          Make next URL use its separate set of options[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--no-alpn[0m[38;2;248;248;242m       Disable the ALPN TLS extension[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-N, --no-buffer     Disable buffering of the output stream[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-buffer[0m[38;2;248;248;242m     Disable buffering of the output stream[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--no-keepalive[0m[38;2;248;248;242m  Disable TCP keepalive on the connection[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--no-npn[0m[38;2;248;248;242m        Disable the NPN TLS extension[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--no-progress-meter[0m[38;2;248;248;242m Do not show the progress meter[0m
@@ -114,8 +114,8 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ntlm[0m[38;2;248;248;242m          Use HTTP NTLM authentication[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ntlm-wb[0m[38;2;248;248;242m       Use HTTP NTLM authentication with winbind[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--oauth2-bearer[0m[38;2;248;248;242m [0m[38;2;253;151;31m<token>[0m[38;2;248;248;242m OAuth 2 Bearer Token[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-o, --output <file> Write to file instead of stdout[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-Z, --parallel      Perform transfers in parallel[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--output[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m Write to file instead of stdout[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--parallel[0m[38;2;248;248;242m      Perform transfers in parallel[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--parallel-immediate[0m[38;2;248;248;242m Do not wait for multiplexing (with --parallel)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--parallel-max[0m[38;2;248;248;242m  Maximum concurrency for parallel transfers[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--pass[0m[38;2;248;248;242m [0m[38;2;253;151;31m<phrase>[0m[38;2;248;248;242m Pass phrase for the private key[0m
@@ -125,11 +125,11 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--post302[0m[38;2;248;248;242m       Do not switch to GET after following a 302[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--post303[0m[38;2;248;248;242m       Do not switch to GET after following a 303[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--preproxy[0m[38;2;248;248;242m [protocol://]host[:port] Use this proxy first[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-#, --progress-bar  Display transfer progress as a bar[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-#[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--progress-bar[0m[38;2;248;248;242m  Display transfer progress as a bar[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proto[0m[38;2;248;248;242m [0m[38;2;253;151;31m<protocols>[0m[38;2;248;248;242m Enable/disable PROTOCOLS[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proto-default[0m[38;2;248;248;242m [0m[38;2;253;151;31m<protocol>[0m[38;2;248;248;242m Use PROTOCOL for any URL missing a scheme[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proto-redir[0m[38;2;248;248;242m [0m[38;2;253;151;31m<protocols>[0m[38;2;248;248;242m Enable/disable PROTOCOLS on redirect[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-x, --proxy [protocol://]host[:port] Use this proxy[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--proxy[0m[38;2;248;248;242m [protocol://]host[:port] Use this proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-anyauth[0m[38;2;248;248;242m Pick any proxy authentication method[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-basic[0m[38;2;248;248;242m   Use Basic authentication on the proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-cacert[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m CA certificate to verify peer against for proxy[0m
@@ -154,20 +154,20 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlspassword[0m[38;2;248;248;242m [0m[38;2;253;151;31m<string>[0m[38;2;248;248;242m TLS password for HTTPS proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlsuser[0m[38;2;248;248;242m [0m[38;2;253;151;31m<name>[0m[38;2;248;248;242m TLS username for HTTPS proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlsv1[0m[38;2;248;248;242m   Use TLSv1 for HTTPS proxy[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-U, --proxy-user <user:password> Proxy user and password[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--proxy-user[0m[38;2;248;248;242m [0m[38;2;253;151;31m<user:password>[0m[38;2;248;248;242m Proxy user and password[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy1.0[0m[38;2;248;248;242m [0m[38;2;253;151;31m<host[:port]>[0m[38;2;248;248;242m Use HTTP/1.0 proxy on given port[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-p, --proxytunnel   Operate through an HTTP proxy tunnel (using CONNECT)[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--proxytunnel[0m[38;2;248;248;242m   Operate through an HTTP proxy tunnel (using CONNECT)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--pubkey[0m[38;2;248;248;242m [0m[38;2;253;151;31m<key>[0m[38;2;248;248;242m  SSH Public key file name[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-Q, --quote         Send command(s) to server before transfer[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-Q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quote[0m[38;2;248;248;242m         Send command(s) to server before transfer[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--random-file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m File for reading random data from[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-r, --range <range> Retrieve only the bytes within RANGE[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--range[0m[38;2;248;248;242m [0m[38;2;253;151;31m<range>[0m[38;2;248;248;242m Retrieve only the bytes within RANGE[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--raw[0m[38;2;248;248;242m           Do HTTP "raw"; no transfer decoding[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-e, --referer <URL> Referrer URL[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-J, --remote-header-name Use the header-provided filename[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-O, --remote-name   Write output to a file named as the remote file[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--referer[0m[38;2;248;248;242m [0m[38;2;253;151;31m<URL>[0m[38;2;248;248;242m Referrer URL[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-J[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--remote-header-name[0m[38;2;248;248;242m Use the header-provided filename[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--remote-name[0m[38;2;248;248;242m   Write output to a file named as the remote file[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--remote-name-all[0m[38;2;248;248;242m Use the remote file name for all URLs[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-R, --remote-time   Set the remote file's time on the local output[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-X, --request <command> Specify request command to use[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--remote-time[0m[38;2;248;248;242m   Set the remote file's time on the local output[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--request[0m[38;2;248;248;242m [0m[38;2;253;151;31m<command>[0m[38;2;248;248;242m Specify request command to use[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--request-target[0m[38;2;248;248;242m Specify the target for this request[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--resolve[0m[38;2;248;248;242m [0m[38;2;253;151;31m<host:port:address[,address]...>[0m[38;2;248;248;242m Resolve the host+port to this address[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--retry[0m[38;2;248;248;242m [0m[38;2;253;151;31m<num>[0m[38;2;248;248;242m   Retry request if transient problems occur[0m
@@ -177,8 +177,8 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--sasl-authzid[0m[38;2;248;248;242m [0m[38;2;253;151;31m<identity>[0m[38;2;248;248;242m  Use this identity to act as during SASL PLAIN authentication[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--sasl-ir[0m[38;2;248;248;242m       Enable initial response in SASL authentication[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--service-name[0m[38;2;248;248;242m [0m[38;2;253;151;31m<name>[0m[38;2;248;248;242m SPNEGO service name[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-S, --show-error    Show error even when -s is used[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-s, --silent        Silent mode[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--show-error[0m[38;2;248;248;242m    Show error even when -s is used[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--silent[0m[38;2;248;248;242m        Silent mode[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--socks4[0m[38;2;248;248;242m [0m[38;2;253;151;31m<host[:port]>[0m[38;2;248;248;242m SOCKS4 proxy on given host + port[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--socks4a[0m[38;2;248;248;242m [0m[38;2;253;151;31m<host[:port]>[0m[38;2;248;248;242m SOCKS4a proxy on given host + port[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--socks5[0m[38;2;248;248;242m [0m[38;2;253;151;31m<host[:port]>[0m[38;2;248;248;242m SOCKS5 proxy on given host + port[0m
@@ -187,29 +187,29 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--socks5-gssapi-nec[0m[38;2;248;248;242m Compatibility with NEC SOCKS5 server[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--socks5-gssapi-service[0m[38;2;248;248;242m [0m[38;2;253;151;31m<name>[0m[38;2;248;248;242m SOCKS5 proxy service name for GSS-API[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--socks5-hostname[0m[38;2;248;248;242m [0m[38;2;253;151;31m<host[:port]>[0m[38;2;248;248;242m SOCKS5 proxy, pass host name to proxy[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-Y, --speed-limit <speed> Stop transfers slower than this[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-y, --speed-time <seconds> Trigger 'speed-limit' abort after this time[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-Y[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--speed-limit[0m[38;2;248;248;242m [0m[38;2;253;151;31m<speed>[0m[38;2;248;248;242m Stop transfers slower than this[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-y[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--speed-time[0m[38;2;248;248;242m [0m[38;2;253;151;31m<seconds>[0m[38;2;248;248;242m Trigger 'speed-limit' abort after this time[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ssl[0m[38;2;248;248;242m           Try SSL/TLS[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ssl-allow-beast[0m[38;2;248;248;242m Allow security flaw to improve interop[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ssl-no-revoke[0m[38;2;248;248;242m Disable cert revocation checks (Schannel)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--ssl-reqd[0m[38;2;248;248;242m      Require SSL/TLS[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-2, --sslv2         Use SSLv2[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-3, --sslv3         Use SSLv3[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-2[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--sslv2[0m[38;2;248;248;242m         Use SSLv2[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-3[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--sslv3[0m[38;2;248;248;242m         Use SSLv3[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--stderr[0m[38;2;248;248;242m        Where to redirect stderr[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--styled-output[0m[38;2;248;248;242m Enable styled output for HTTP headers[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--suppress-connect-headers[0m[38;2;248;248;242m Suppress proxy CONNECT response headers[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tcp-fastopen[0m[38;2;248;248;242m  Use TCP Fast Open[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tcp-nodelay[0m[38;2;248;248;242m   Use the TCP_NODELAY option[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-t, --telnet-option <opt=val> Set telnet option[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--telnet-option[0m[38;2;248;248;242m [0m[38;2;253;151;31m<opt=val>[0m[38;2;248;248;242m Set telnet option[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tftp-blksize[0m[38;2;248;248;242m [0m[38;2;253;151;31m<value>[0m[38;2;248;248;242m Set TFTP BLKSIZE option[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tftp-no-options[0m[38;2;248;248;242m Do not send any TFTP options[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-z, --time-cond <time> Transfer based on a time condition[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--time-cond[0m[38;2;248;248;242m [0m[38;2;253;151;31m<time>[0m[38;2;248;248;242m Transfer based on a time condition[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tls-max[0m[38;2;248;248;242m [0m[38;2;253;151;31m<VERSION>[0m[38;2;248;248;242m Set maximum allowed TLS version[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tls13-ciphers[0m[38;2;248;248;242m [0m[38;2;253;151;31m<list>[0m[38;2;248;248;242m TLS 1.3 ciphersuites (OpenSSL)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tlsauthtype[0m[38;2;248;248;242m [0m[38;2;253;151;31m<type>[0m[38;2;248;248;242m TLS authentication type[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tlspassword[0m[38;2;248;248;242m   TLS password[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tlsuser[0m[38;2;248;248;242m [0m[38;2;253;151;31m<name>[0m[38;2;248;248;242m TLS user name[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-1, --tlsv1         Use TLSv1.0 or greater[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-1[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--tlsv1[0m[38;2;248;248;242m         Use TLSv1.0 or greater[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1.0[0m[38;2;248;248;242m       Use TLSv1.0 or greater[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1.1[0m[38;2;248;248;242m       Use TLSv1.1 or greater[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--tlsv1.2[0m[38;2;248;248;242m       Use TLSv1.2 or greater[0m
@@ -219,12 +219,12 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--trace-ascii[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m Like --trace, but without hex output[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--trace-time[0m[38;2;248;248;242m    Add time stamps to trace/verbose output[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--unix-socket[0m[38;2;248;248;242m [0m[38;2;253;151;31m<path>[0m[38;2;248;248;242m Connect through this Unix domain socket[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-T, --upload-file <file> Transfer local FILE to destination[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--upload-file[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m Transfer local FILE to destination[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--url[0m[38;2;248;248;242m [0m[38;2;253;151;31m<url>[0m[38;2;248;248;242m     URL to work with[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-B, --use-ascii     Use ASCII/text transfer[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-u, --user <user:password> Server user and password[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-A, --user-agent <name> Send User-Agent <name> to server[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-v, --verbose       Make the operation more talkative[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-V, --version       Show version number and quit[0m
-[38;2;248;248;242m [0m[38;2;248;248;242m-w, --write-out <format> Use output FORMAT after completion[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--use-ascii[0m[38;2;248;248;242m     Use ASCII/text transfer[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--user[0m[38;2;248;248;242m [0m[38;2;253;151;31m<user:password>[0m[38;2;248;248;242m Server user and password[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--user-agent[0m[38;2;248;248;242m [0m[38;2;253;151;31m<name>[0m[38;2;248;248;242m Send User-Agent <name> to server[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m       Make the operation more talkative[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m       Show version number and quit[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--write-out[0m[38;2;248;248;242m [0m[38;2;253;151;31m<format>[0m[38;2;248;248;242m Use output FORMAT after completion[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--xattr[0m[38;2;248;248;242m         Store metadata in extended file attributes[0m

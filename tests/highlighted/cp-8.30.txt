@@ -4,47 +4,47 @@
 [38;2;248;248;242mCopy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.[0m
 
 [38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-a, --archive                same as -dR --preserve=all[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--archive[0m[38;2;248;248;242m                same as -dR --preserve=all[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--attributes-only[0m[38;2;248;248;242m        don't copy the file data, just the attributes[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--backup[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mCONTROL[0m[38;2;248;248;242m]       make a backup of each existing destination file[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-b                           like --backup but does not accept an argument[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m                           like --backup but does not accept an argument[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--copy-contents[0m[38;2;248;248;242m          copy contents of special files when recursive[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-d                           same as --no-dereference --preserve=links[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-f, --force                  if an existing destination file cannot be[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m                           same as --no-dereference --preserve=links[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--force[0m[38;2;248;248;242m                  if an existing destination file cannot be[0m
 [38;2;248;248;242m                                 opened, remove it and try again (this option[0m
 [38;2;248;248;242m                                 is ignored when the -n option is also used)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-i, --interactive            prompt before overwrite (overrides a previous -n[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--interactive[0m[38;2;248;248;242m            prompt before overwrite (overrides a previous -n[0m
 [38;2;248;248;242m                                  option)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-H                           follow command-line symbolic links in SOURCE[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-l, --link                   hard link files instead of copying[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-L, --dereference            always follow symbolic links in SOURCE[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-n, --no-clobber             do not overwrite an existing file (overrides[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m                           follow command-line symbolic links in SOURCE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--link[0m[38;2;248;248;242m                   hard link files instead of copying[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--dereference[0m[38;2;248;248;242m            always follow symbolic links in SOURCE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-clobber[0m[38;2;248;248;242m             do not overwrite an existing file (overrides[0m
 [38;2;248;248;242m                                 a previous -i option)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-P, --no-dereference         never follow symbolic links in SOURCE[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-p                           same as --preserve=mode,ownership,timestamps[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-dereference[0m[38;2;248;248;242m         never follow symbolic links in SOURCE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m                           same as --preserve=mode,ownership,timestamps[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--preserve[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mATTR_LIST[0m[38;2;248;248;242m]   preserve the specified attributes (default:[0m
 [38;2;248;248;242m                                 mode,ownership,timestamps), if possible[0m
 [38;2;248;248;242m                                 additional attributes: context, links, xattr,[0m
 [38;2;248;248;242m                                 all[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-preserve[0m[38;2;248;248;242m=[0m[38;2;253;151;31mATTR_LIST[0m[38;2;248;248;242m  don't preserve the specified attributes[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--parents[0m[38;2;248;248;242m                use full source file name under DIRECTORY[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-R, -r, --recursive          copy directories recursively[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recursive[0m[38;2;248;248;242m          copy directories recursively[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--reflink[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mWHEN[0m[38;2;248;248;242m]         control clone/CoW copies. See below[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--remove-destination[0m[38;2;248;248;242m     remove each existing destination file before[0m
 [38;2;248;248;242m                                 attempting to open it (contrast with --force)[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--sparse[0m[38;2;248;248;242m=[0m[38;2;253;151;31mWHEN[0m[38;2;248;248;242m            control creation of sparse files. See below[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--strip-trailing-slashes[0m[38;2;248;248;242m  remove any trailing slashes from each SOURCE[0m
 [38;2;248;248;242m                                 argument[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-s, --symbolic-link          make symbolic links instead of copying[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-S, --suffix=SUFFIX          override the usual backup suffix[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-T, --no-target-directory    treat DEST as a normal file[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-u, --update                 copy only when the SOURCE file is newer[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--symbolic-link[0m[38;2;248;248;242m          make symbolic links instead of copying[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--suffix[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSUFFIX[0m[38;2;248;248;242m          override the usual backup suffix[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--target-directory[0m[38;2;248;248;242m=[0m[38;2;253;151;31mDIRECTORY[0m[38;2;248;248;242m  copy all SOURCE arguments into DIRECTORY[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-target-directory[0m[38;2;248;248;242m    treat DEST as a normal file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--update[0m[38;2;248;248;242m                 copy only when the SOURCE file is newer[0m
 [38;2;248;248;242m                                 than the destination file or when the[0m
 [38;2;248;248;242m                                 destination file is missing[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-v, --verbose                explain what is being done[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-x, --one-file-system        stay on this file system[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-Z                           set SELinux security context of destination[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m                explain what is being done[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--one-file-system[0m[38;2;248;248;242m        stay on this file system[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m                           set SELinux security context of destination[0m
 [38;2;248;248;242m                                 file to default type[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mCTX[0m[38;2;248;248;242m]          like -Z, or if CTX is specified then set the[0m
 [38;2;248;248;242m                                 SELinux or SMACK security context to CTX[0m

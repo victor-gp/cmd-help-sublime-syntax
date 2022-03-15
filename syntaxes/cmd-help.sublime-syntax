@@ -93,6 +93,7 @@ contexts:
 
   indent-2:
     - meta_content_scope: indent-2
+    - include: def-option
     - include: pre-heading
     - include: else-pop
 

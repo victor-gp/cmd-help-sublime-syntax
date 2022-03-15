@@ -12,45 +12,45 @@
 [38;2;248;248;242moutput before being replaced by the contents of standard input.[0m
 
 [38;2;253;151;31mInput options[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-a, --append          Append standard input to the selection[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-f, --follow          Append to selection as standard input grows[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-z, --zeroflush       Overwrites selection when zero ('\0') is received[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-i, --input           Read standard input into the selection[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--append[0m[38;2;248;248;242m          Append standard input to the selection[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--follow[0m[38;2;248;248;242m          Append to selection as standard input grows[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--zeroflush[0m[38;2;248;248;242m       Overwrites selection when zero ('\0') is received[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--input[0m[38;2;248;248;242m           Read standard input into the selection[0m
 
 [38;2;253;151;31mOutput options[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-o, --output          Write the selection to standard output[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--output[0m[38;2;248;248;242m          Write the selection to standard output[0m
 
 [38;2;253;151;31mAction options[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-c, --clear           Clear the selection[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-d, --delete          Request that the selection be cleared and that[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--clear[0m[38;2;248;248;242m           Clear the selection[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--delete[0m[38;2;248;248;242m          Request that the selection be cleared and that[0m
 [38;2;248;248;242m                        the application owning it delete its contents[0m
 
 [38;2;253;151;31mSelection options[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-p, --primary         Operate on the PRIMARY selection (default)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-s, --secondary       Operate on the SECONDARY selection[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-b, --clipboard       Operate on the CLIPBOARD selection[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--primary[0m[38;2;248;248;242m         Operate on the PRIMARY selection (default)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--secondary[0m[38;2;248;248;242m       Operate on the SECONDARY selection[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--clipboard[0m[38;2;248;248;242m       Operate on the CLIPBOARD selection[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242m-k, --keep            Do not modify the selections, but make the PRIMARY[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--keep[0m[38;2;248;248;242m            Do not modify the selections, but make the PRIMARY[0m
 [38;2;248;248;242m                        and SECONDARY selections persist even after the[0m
 [38;2;248;248;242m                        programs they were selected in exit.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-x, --exchange        Exchange the PRIMARY and SECONDARY selections[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exchange[0m[38;2;248;248;242m        Exchange the PRIMARY and SECONDARY selections[0m
 
 [38;2;253;151;31mX options[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m--display displayname[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--display[0m[38;2;248;248;242m [0m[38;2;253;151;31mdisplayname[0m
 [38;2;248;248;242m                        Specify the connection to the X server[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-t ms, --selectionTimeout ms[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;253;151;31mms[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--selectionTimeout[0m[38;2;248;248;242m [0m[38;2;253;151;31mms[0m
 [38;2;248;248;242m                        Specify the timeout in milliseconds within which the[0m
 [38;2;248;248;242m                        selection must be retrieved. A value of 0 (zero)[0m
 [38;2;248;248;242m                        specifies no timeout (default)[0m
 
 [38;2;253;151;31mMiscellaneous options[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-l, --logfile         Specify file to log errors to when detached.[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-n, --nodetach        Do not detach from the controlling terminal. Without[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--logfile[0m[38;2;248;248;242m         Specify file to log errors to when detached.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--nodetach[0m[38;2;248;248;242m        Do not detach from the controlling terminal. Without[0m
 [38;2;248;248;242m                        this option, xsel will fork to become a background[0m
 [38;2;248;248;242m                        process in input, exchange and keep modes.[0m
 
-[38;2;248;248;242m  [0m[38;2;248;248;242m-h, --help            Display this help and exit[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-v, --verbose         Print informative messages[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m--version             Output version information and exit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m            Display this help and exit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m         Print informative messages[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m             Output version information and exit[0m
 
 [38;2;248;248;242mPlease report bugs to <conrad@vergenet.net>.[0m

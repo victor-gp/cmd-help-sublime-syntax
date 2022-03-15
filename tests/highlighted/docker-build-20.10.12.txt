@@ -11,25 +11,25 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--compress[0m[38;2;248;248;242m                Compress the build context using gzip[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--cpu-period[0m[38;2;248;248;242m [0m[38;2;253;151;31mint[0m[38;2;248;248;242m          Limit the CPU CFS (Completely Fair Scheduler) period[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--cpu-quota[0m[38;2;248;248;242m [0m[38;2;253;151;31mint[0m[38;2;248;248;242m           Limit the CPU CFS (Completely Fair Scheduler) quota[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-c, --cpu-shares int          CPU shares (relative weight)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--cpu-shares[0m[38;2;248;248;242m [0m[38;2;253;151;31mint[0m[38;2;248;248;242m          CPU shares (relative weight)[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--cpuset-cpus[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m      CPUs in which to allow execution (0-3, 0,1)[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--cpuset-mems[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m      MEMs in which to allow execution (0-3, 0,1)[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--disable-content-trust[0m[38;2;248;248;242m   Skip image verification (default true)[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-f, --file string             Name of the Dockerfile (Default is 'PATH/Dockerfile')[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m             Name of the Dockerfile (Default is 'PATH/Dockerfile')[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--force-rm[0m[38;2;248;248;242m                Always remove intermediate containers[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--iidfile[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m          Write the image ID to the file[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--isolation[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m        Container isolation technology[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m [0m[38;2;253;151;31mlist[0m[38;2;248;248;242m              Set metadata for an image[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-m, --memory bytes            Memory limit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--memory[0m[38;2;248;248;242m [0m[38;2;253;151;31mbytes[0m[38;2;248;248;242m            Memory limit[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--memory-swap[0m[38;2;248;248;242m [0m[38;2;253;151;31mbytes[0m[38;2;248;248;242m       Swap limit equal to memory plus swap: '-1' to enable unlimited swap[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--network[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m          Set the networking mode for the RUN instructions during build (default "default")[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-cache[0m[38;2;248;248;242m                Do not use cache when building the image[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--pull[0m[38;2;248;248;242m                    Always attempt to pull a newer version of the image[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-q, --quiet                   Suppress the build output and print image ID on success[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m                   Suppress the build output and print image ID on success[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--rm[0m[38;2;248;248;242m                      Remove intermediate containers after a successful build (default true)[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--security-opt[0m[38;2;248;248;242m [0m[38;2;253;151;31mstrings[0m[38;2;248;248;242m    Security options[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--shm-size[0m[38;2;248;248;242m [0m[38;2;253;151;31mbytes[0m[38;2;248;248;242m          Size of /dev/shm[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--squash[0m[38;2;248;248;242m                  Squash newly built layers into a single new layer[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m-t, --tag list                Name and optionally a tag in the 'name:tag' format[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--tag[0m[38;2;248;248;242m [0m[38;2;253;151;31mlist[0m[38;2;248;248;242m                Name and optionally a tag in the 'name:tag' format[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--target[0m[38;2;248;248;242m [0m[38;2;253;151;31mstring[0m[38;2;248;248;242m           Set the target build stage to build.[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--ulimit[0m[38;2;248;248;242m [0m[38;2;253;151;31mulimit[0m[38;2;248;248;242m           Ulimit options (default [])[0m
