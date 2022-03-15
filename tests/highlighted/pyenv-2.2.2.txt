@@ -1,7 +1,7 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m pyenv <command> [<args>][0m
 
 [38;2;253;151;31mSome useful pyenv commands are:[0m
-[38;2;248;248;242m   [0m[38;2;248;248;242m--version   Display the version of pyenv[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m   Display the version of pyenv[0m
 [38;2;248;248;242m   [0m[38;2;248;248;242mactivate    Activate virtual environment[0m
 [38;2;248;248;242m   [0m[38;2;248;248;242mcommands    List all available pyenv commands[0m
 [38;2;248;248;242m   [0m[38;2;248;248;242mdeactivate   Deactivate virtual environment[0m

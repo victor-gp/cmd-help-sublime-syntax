@@ -12,7 +12,7 @@
 [38;2;248;248;242minterpreted in relation to its parent directory.[0m
 
 [38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--backup[=CONTROL]      make a backup of each existing destination file[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--backup[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mCONTROL[0m[38;2;248;248;242m]      make a backup of each existing destination file[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-b                          like --backup but does not accept an argument[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-d, -F, --directory         allow the superuser to attempt to hard link[0m
 [38;2;248;248;242m                                directories (note: will probably fail due to[0m
@@ -30,8 +30,8 @@
 [38;2;248;248;242m                                the links[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-T, --no-target-directory   treat LINK_NAME as a normal file always[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-v, --verbose               print name of each linked file[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--help     display this help and exit[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--version  output version information and exit[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m     display this help and exit[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m
 
 [38;2;248;248;242mThe backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.[0m
 [38;2;248;248;242mThe version control method may be selected via the --backup option or through[0m

@@ -28,8 +28,8 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242mESC-F                Like F but stop when search pattern is found.[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242mr  ^R  ^L            Repaint screen.[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242mR                    Repaint screen, discarding buffered input.[0m
-[38;2;248;248;242m        [0m[38;2;248;248;242m---------------------------------------------------[0m
-[38;2;248;248;242m        [0m[38;2;248;248;242mDefault "window" is the screen height.[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m---------------------------------------------------[0m
+[38;2;248;248;242m        Default "window" is the screen height.[0m
 [38;2;248;248;242m        [0m[38;2;248;248;242mDefault "half-window" is half of the screen height.[0m
 [38;2;248;248;242m [0m[38;2;248;248;242m---------------------------------------------------------------------------[0m
 
@@ -43,8 +43,8 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242mESC-N             *  Repeat previous search, reverse dir. & spanning files.[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242mESC-u                Undo (toggle) search highlighting.[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m&_p_a_t_t_e_r_n          *  Display only matching lines[0m
-[38;2;248;248;242m        [0m[38;2;248;248;242m---------------------------------------------------[0m
-[38;2;248;248;242m        [0m[38;2;248;248;242mA search pattern may begin with one or more of:[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m---------------------------------------------------[0m
+[38;2;248;248;242m        A search pattern may begin with one or more of:[0m
 [38;2;248;248;242m        [0m[38;2;248;248;242m^N or !  Search for NON-matching lines.[0m
 [38;2;248;248;242m        [0m[38;2;248;248;242m^E or *  Search multiple files (pass thru END OF FILE).[0m
 [38;2;248;248;242m        [0m[38;2;248;248;242m^F or @  Start search at FIRST file (for /) or last file (for ?).[0m
@@ -63,8 +63,8 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m}  )  ]           *  Find open bracket { ( [.[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242mESC-^F _<_c_1_> _<_c_2_>  *  Find close bracket _<_c_2_>.[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242mESC-^B _<_c_1_> _<_c_2_>  *  Find open bracket _<_c_1_> [0m
-[38;2;248;248;242m        [0m[38;2;248;248;242m---------------------------------------------------[0m
-[38;2;248;248;242m        [0m[38;2;248;248;242mEach "find close bracket" command goes forward to the close bracket [0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m---------------------------------------------------[0m
+[38;2;248;248;242m        Each "find close bracket" command goes forward to the close bracket [0m
 [38;2;248;248;242m          matching the (_N-th) open bracket in the top line.[0m
 [38;2;248;248;242m        [0m[38;2;248;248;242mEach "find open bracket" command goes backward to the open bracket [0m
 [38;2;248;248;242m          matching the (_N-th) close bracket in the bottom line.[0m
@@ -75,8 +75,8 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m''                   Go to the previous position.[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m^X^X                 Same as '.[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242mESC-M_<_l_e_t_t_e_r_>        Clear a mark.[0m
-[38;2;248;248;242m        [0m[38;2;248;248;242m---------------------------------------------------[0m
-[38;2;248;248;242m        [0m[38;2;248;248;242mA mark is any upper-case or lower-case letter.[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m---------------------------------------------------[0m
+[38;2;248;248;242m        A mark is any upper-case or lower-case letter.[0m
 [38;2;248;248;242m        [0m[38;2;248;248;242mCertain marks are predefined:[0m
 [38;2;248;248;242m             ^  means  beginning of the file[0m
 [38;2;248;248;242m             $  means  end of the file[0m

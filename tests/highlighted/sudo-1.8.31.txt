@@ -12,7 +12,7 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-B, --bell                    ring bell when prompting[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-C, --close-from=num          close all file descriptors >= num[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-E, --preserve-env            preserve user environment when running command[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--preserve-env=list       preserve specific environment variables[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--preserve-env[0m[38;2;248;248;242m=[0m[38;2;253;151;31mlist[0m[38;2;248;248;242m       preserve specific environment variables[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-e, --edit                    edit files instead of running a command[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-g, --group=group             run command as the specified group name or ID[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-H, --set-home                set HOME variable to target user's home dir[0m

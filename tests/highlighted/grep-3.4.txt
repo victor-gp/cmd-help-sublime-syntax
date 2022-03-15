@@ -11,7 +11,7 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-e, --regexp=PATTERNS     use PATTERNS for matching[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-f, --file=FILE           take PATTERNS from FILE[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-i, --ignore-case         ignore case distinctions in patterns and data[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--no-ignore-case      do not ignore case distinctions (default)[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-ignore-case[0m[38;2;248;248;242m      do not ignore case distinctions (default)[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-w, --word-regexp         match only whole words[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-x, --line-regexp         match only whole lines[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-z, --null-data           a data line ends in 0 byte, not newline[0m
@@ -20,19 +20,19 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-s, --no-messages         suppress error messages[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-v, --invert-match        select non-matching lines[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-V, --version             display version information and exit[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--help                display this help text and exit[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                display this help text and exit[0m
 
 [38;2;253;151;31mOutput control:[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-m, --max-count=NUM       stop after NUM selected lines[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-b, --byte-offset         print the byte offset with output lines[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-n, --line-number         print line number with output lines[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--line-buffered       flush output on every line[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--line-buffered[0m[38;2;248;248;242m       flush output on every line[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-H, --with-filename       print file name with output lines[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-h, --no-filename         suppress the file name prefix on output[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--label=LABEL         use LABEL as the standard input file name prefix[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLABEL[0m[38;2;248;248;242m         use LABEL as the standard input file name prefix[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-o, --only-matching       show only nonempty parts of lines that match[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-q, --quiet, --silent     suppress all normal output[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--binary-files=TYPE   assume that binary files are TYPE;[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--binary-files[0m[38;2;248;248;242m=[0m[38;2;253;151;31mTYPE[0m[38;2;248;248;242m   assume that binary files are TYPE;[0m
 [38;2;248;248;242m                            TYPE is 'binary', 'text', or 'without-match'[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-a, --text                equivalent to --binary-files=text[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-I                        equivalent to --binary-files=without-match[0m
@@ -42,10 +42,10 @@
 [38;2;248;248;242m                            ACTION is 'read' or 'skip'[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-r, --recursive           like --directories=recurse[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-R, --dereference-recursive  likewise, but follow all symlinks[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--include=GLOB        search only files that match GLOB (a file pattern)[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--exclude=GLOB        skip files that match GLOB[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--exclude-from=FILE   skip files that match any file pattern from FILE[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--exclude-dir=GLOB    skip directories that match GLOB[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--include[0m[38;2;248;248;242m=[0m[38;2;253;151;31mGLOB[0m[38;2;248;248;242m        search only files that match GLOB (a file pattern)[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--exclude[0m[38;2;248;248;242m=[0m[38;2;253;151;31mGLOB[0m[38;2;248;248;242m        skip files that match GLOB[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--exclude-from[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m   skip files that match any file pattern from FILE[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--exclude-dir[0m[38;2;248;248;242m=[0m[38;2;253;151;31mGLOB[0m[38;2;248;248;242m    skip directories that match GLOB[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-L, --files-without-match  print only names of FILEs with no selected lines[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-l, --files-with-matches  print only names of FILEs with selected lines[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-c, --count               print only a count of selected lines per FILE[0m
@@ -57,8 +57,8 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-A, --after-context=NUM   print NUM lines of trailing context[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-C, --context=NUM         print NUM lines of output context[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-NUM                      same as --context=NUM[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--color[=WHEN],[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--colour[=WHEN]       use markers to highlight the matching strings;[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mWHEN[0m[38;2;248;248;242m],[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--colour[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mWHEN[0m[38;2;248;248;242m]       use markers to highlight the matching strings;[0m
 [38;2;248;248;242m                            WHEN is 'always', 'never', or 'auto'[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-U, --binary              do not strip CR characters at EOL (MSDOS/Windows)[0m
 

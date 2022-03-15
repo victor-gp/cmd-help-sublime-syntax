@@ -3,7 +3,7 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-C, --config-file=FILE     use this user configuration file[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-d, --debug                emit debugging messages[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-D, --default              reset all options to their default values[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--warnings[=WARNINGS]  enable warnings from groff[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--warnings[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mWARNINGS[0m[38;2;248;248;242m]  enable warnings from groff[0m
 
 [38;2;248;248;242m [0m[38;2;253;151;31mMain modes of operation:[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-f, --whatis               equivalent to whatis[0m
@@ -30,16 +30,16 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-i, --ignore-case          look for pages case-insensitively (default)[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-I, --match-case           look for pages case-sensitively[0m
 
-[38;2;248;248;242m      [0m[38;2;248;248;242m--regex                show all pages matching regex[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--wildcard             show all pages matching wildcard[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--regex[0m[38;2;248;248;242m                show all pages matching regex[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--wildcard[0m[38;2;248;248;242m             show all pages matching wildcard[0m
 
-[38;2;248;248;242m      [0m[38;2;248;248;242m--names-only           make --regex and --wildcard match page names only,[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--names-only[0m[38;2;248;248;242m           make --regex and --wildcard match page names only,[0m
 [38;2;248;248;242m                             not descriptions[0m
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-a, --all                  find all matching manual pages[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-u, --update               force a cache consistency check[0m
 
-[38;2;248;248;242m      [0m[38;2;248;248;242m--no-subpages          don't try subpages, e.g. 'man foo bar' => 'man[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-subpages[0m[38;2;248;248;242m          don't try subpages, e.g. 'man foo bar' => 'man[0m
 [38;2;248;248;242m                             foo-bar'[0m
 
 [38;2;248;248;242m [0m[38;2;253;151;31mControlling formatted output:[0m
@@ -48,8 +48,8 @@
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-7, --ascii                display ASCII translation of certain latin1 chars[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-E, --encoding=ENCODING    use selected output encoding[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--no-hyphenation, --nh turn off hyphenation[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--no-justification,                              --nj   turn off justification[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-hyphenation[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--nh[0m[38;2;248;248;242m turn off hyphenation[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-justification[0m[38;2;248;248;242m,                              --nj   turn off justification[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-p, --preprocessor=STRING  STRING indicates which preprocessors to run:[0m
 [38;2;248;248;242m                             e - [n]eqn, p - pic, t - tbl,[0m
 [38;2;248;248;242mg - grap, r - refer, v - vgrind[0m
@@ -64,7 +64,7 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-Z, --ditroff              use groff and force it to produce ditroff[0m
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-?, --help                 give this help list[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--usage                give a short usage message[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--usage[0m[38;2;248;248;242m                give a short usage message[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-V, --version              print program version[0m
 
 [38;2;248;248;242mMandatory or optional arguments to long options are also mandatory or optional[0m

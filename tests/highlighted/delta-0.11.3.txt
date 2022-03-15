@@ -458,7 +458,7 @@
 [38;2;248;248;242m2. RGB hex code[0m
 
 [38;2;248;248;242m   [0m[38;2;248;248;242mAn example of using an RGB hex code is:[0m
-[38;2;248;248;242m   [0m[38;2;248;248;242m--file-style="#0e7c0e"[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--file-style[0m[38;2;248;248;242m="#0e7c0e"[0m
 
 [38;2;248;248;242m3. ANSI color name[0m
 
@@ -469,7 +469,7 @@
 [38;2;248;248;242m   [0m[38;2;248;248;242mbrightblack, brightred, brightgreen, brightyellow, brightblue, brightmagenta, brightcyan, brightwhite.[0m
 
 [38;2;248;248;242m   [0m[38;2;248;248;242mAn example of using an ANSI color name is:[0m
-[38;2;248;248;242m   [0m[38;2;248;248;242m--file-style="green"[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--file-style[0m[38;2;248;248;242m="green"[0m
 
 [38;2;248;248;242m   [0m[38;2;248;248;242mUnlike RGB hex codes, ANSI color names are just names: you can choose the exact color that each[0m
 [38;2;248;248;242m   [0m[38;2;248;248;242mname corresponds to in the settings of your terminal application (the application you use to[0m
@@ -482,7 +482,7 @@
 [38;2;248;248;242m4. ANSI color number[0m
 
 [38;2;248;248;242m   [0m[38;2;248;248;242mAn example of using an ANSI color number is:[0m
-[38;2;248;248;242m   [0m[38;2;248;248;242m--file-style=28[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--file-style[0m[38;2;248;248;242m=28[0m
 
 [38;2;248;248;242m   [0m[38;2;248;248;242mThere are 256 ANSI color numbers: 0-255. The first 16 are the same as the colors described in[0m
 [38;2;248;248;242m   [0m[38;2;248;248;242mthe "ANSI color name" section above. See https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit.[0m

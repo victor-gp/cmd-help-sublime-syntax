@@ -49,7 +49,7 @@ contexts:
     - match: '^ {1,2}(?=\S)'
       set: indent-2
     - match: '^ {3,8}(?=\S)'
-      set: line-indent-content
+      set: indent-8
     - match: '^\t{1,2}(?=\S)'
       set: line-indent-content
     - include: eol-pop # necessary for empty lines
@@ -94,6 +94,11 @@ contexts:
   indent-2:
     - meta_content_scope: indent-2
     - include: pre-heading
+    - include: else-pop
+
+  indent-8:
+    - meta_content_scope: indent-8
+    - include: def-option
     - include: else-pop
 
   line-indent-content:

@@ -2,7 +2,7 @@
 [38;2;248;248;242mCompare FILES line by line.[0m
 
 [38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--normal                  output a normal diff (the default)[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--normal[0m[38;2;248;248;242m                  output a normal diff (the default)[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-q, --brief                   report only when files differ[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-s, --report-identical-files  report when two files are the same[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-c, -C NUM, --context[=NUM]   output NUM (default 3) lines of copied context[0m
@@ -11,32 +11,32 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-n, --rcs                     output an RCS format diff[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-y, --side-by-side            output in two columns[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-W, --width=NUM               output at most NUM (default 130) print columns[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--left-column             output only the left column of common lines[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--suppress-common-lines   do not output common lines[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--left-column[0m[38;2;248;248;242m             output only the left column of common lines[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--suppress-common-lines[0m[38;2;248;248;242m   do not output common lines[0m
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-p, --show-c-function         show which C function each change is in[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-F, --show-function-line=RE   show the most recent line matching RE[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--label LABEL             use LABEL instead of file name and timestamp[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m [0m[38;2;253;151;31mLABEL[0m[38;2;248;248;242m             use LABEL instead of file name and timestamp[0m
 [38;2;248;248;242m                                  (can be repeated)[0m
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-t, --expand-tabs             expand tabs to spaces in output[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-T, --initial-tab             make tabs line up by prepending a tab[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--tabsize=NUM             tab stops every NUM (default 8) print columns[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--suppress-blank-empty    suppress space or tab before empty output lines[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tabsize[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m             tab stops every NUM (default 8) print columns[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--suppress-blank-empty[0m[38;2;248;248;242m    suppress space or tab before empty output lines[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-l, --paginate                pass output through 'pr' to paginate it[0m
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-r, --recursive                 recursively compare any subdirectories found[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--no-dereference            don't follow symbolic links[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-dereference[0m[38;2;248;248;242m            don't follow symbolic links[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-N, --new-file                  treat absent files as empty[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--unidirectional-new-file   treat absent first files as empty[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--ignore-file-name-case     ignore case when comparing file names[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--no-ignore-file-name-case  consider case when comparing file names[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--unidirectional-new-file[0m[38;2;248;248;242m   treat absent first files as empty[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--ignore-file-name-case[0m[38;2;248;248;242m     ignore case when comparing file names[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--no-ignore-file-name-case[0m[38;2;248;248;242m  consider case when comparing file names[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-x, --exclude=PAT               exclude files that match PAT[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-X, --exclude-from=FILE         exclude files that match any pattern in FILE[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-S, --starting-file=FILE        start with FILE when comparing directories[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--from-file=FILE1           compare FILE1 to all operands;[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--from-file[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE1[0m[38;2;248;248;242m           compare FILE1 to all operands;[0m
 [38;2;248;248;242m                                    FILE1 can be a directory[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--to-file=FILE2             compare all operands to FILE2;[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--to-file[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE2[0m[38;2;248;248;242m             compare all operands to FILE2;[0m
 [38;2;248;248;242m                                    FILE2 can be a directory[0m
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-i, --ignore-case               ignore case differences in file contents[0m
@@ -48,12 +48,12 @@
 [38;2;248;248;242m  [0m[38;2;248;248;242m-I, --ignore-matching-lines=RE  ignore changes where all lines match RE[0m
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-a, --text                      treat all files as text[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--strip-trailing-cr         strip trailing carriage return on input[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--strip-trailing-cr[0m[38;2;248;248;242m         strip trailing carriage return on input[0m
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-D, --ifdef=NAME                output merged file with '#ifdef NAME' diffs[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--GTYPE-group-format=GFMT   format GTYPE input groups with GFMT[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--line-format=LFMT          format all input lines with LFMT[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--LTYPE-line-format=LFMT    format LTYPE input lines with LFMT[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--GTYPE-group-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31mGFMT[0m[38;2;248;248;242m   format GTYPE input groups with GFMT[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--line-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLFMT[0m[38;2;248;248;242m          format all input lines with LFMT[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--LTYPE-line-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLFMT[0m[38;2;248;248;242m    format LTYPE input lines with LFMT[0m
 [38;2;248;248;242m    [0m[38;2;248;248;242mThese format options provide fine-grained control over the output[0m
 [38;2;248;248;242m      [0m[38;2;248;248;242mof diff, generalizing -D/--ifdef.[0m
 [38;2;248;248;242m    [0m[38;2;248;248;242mLTYPE is 'old', 'new', or 'unchanged'.  GTYPE is LTYPE or 'changed'.[0m
@@ -80,14 +80,14 @@
 [38;2;248;248;242m      [0m[38;2;248;248;242mC    the character C (other characters represent themselves)[0m
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m-d, --minimal            try hard to find a smaller set of changes[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--horizon-lines=NUM  keep NUM lines of the common prefix and suffix[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--speed-large-files  assume large files and many scattered small changes[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--color[=WHEN]       colorize the output; WHEN can be 'never', 'always',[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--horizon-lines[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m  keep NUM lines of the common prefix and suffix[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--speed-large-files[0m[38;2;248;248;242m  assume large files and many scattered small changes[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mWHEN[0m[38;2;248;248;242m]       colorize the output; WHEN can be 'never', 'always',[0m
 [38;2;248;248;242m                             or 'auto' (the default)[0m
-[38;2;248;248;242m      [0m[38;2;248;248;242m--palette=PALETTE    the colors to use when --color is active; PALETTE is[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--palette[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPALETTE[0m[38;2;248;248;242m    the colors to use when --color is active; PALETTE is[0m
 [38;2;248;248;242m                             a colon-separated list of terminfo capabilities[0m
 
-[38;2;248;248;242m      [0m[38;2;248;248;242m--help               display this help and exit[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m               display this help and exit[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m-v, --version            output version information and exit[0m
 
 [38;2;248;248;242mFILES are 'FILE1 FILE2' or 'DIR1 DIR2' or 'DIR FILE' or 'FILE DIR'.[0m
