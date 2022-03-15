@@ -1,14 +1,14 @@
 [38;2;248;248;242mhtop 2.2.0 - (C) 2004-2019 Hisham Muhammad[0m
 [38;2;248;248;242mReleased under the GNU GPL.[0m
 
-[38;2;166;226;46m-C[0m[38;2;248;248;242m [0m[38;2;166;226;46m--no-color[0m[38;2;248;248;242m               Use a monochrome color scheme[0m
-[38;2;166;226;46m-d[0m[38;2;248;248;242m [0m[38;2;166;226;46m--delay[0m[38;2;248;248;242m=[0m[38;2;253;151;31mDELAY[0m[38;2;248;248;242m            Set the delay between updates, in tenths of seconds[0m
-[38;2;166;226;46m-h[0m[38;2;248;248;242m [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                   Print this help screen[0m
-[38;2;166;226;46m-s[0m[38;2;248;248;242m [0m[38;2;166;226;46m--sort-key[0m[38;2;248;248;242m=[0m[38;2;253;151;31mCOLUMN[0m[38;2;248;248;242m        Sort by COLUMN (try --sort-key=help for a list)[0m
-[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;166;226;46m--tree[0m[38;2;248;248;242m                   Show the tree view by default[0m
-[38;2;166;226;46m-u[0m[38;2;248;248;242m [0m[38;2;166;226;46m--user[0m[38;2;248;248;242m=[0m[38;2;253;151;31mUSERNAME[0m[38;2;248;248;242m          Show only processes of a given user[0m
-[38;2;166;226;46m-p[0m[38;2;248;248;242m [0m[38;2;166;226;46m--pid[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPID[0m[38;2;248;248;242m,[,PID,PID...]  Show only the given PIDs[0m
-[38;2;166;226;46m-v[0m[38;2;248;248;242m [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                Print version info[0m
+[38;2;248;248;242m-C --no-color               Use a monochrome color scheme[0m
+[38;2;248;248;242m-d --delay=DELAY            Set the delay between updates, in tenths of seconds[0m
+[38;2;248;248;242m-h --help                   Print this help screen[0m
+[38;2;248;248;242m-s --sort-key=COLUMN        Sort by COLUMN (try --sort-key=help for a list)[0m
+[38;2;248;248;242m-t --tree                   Show the tree view by default[0m
+[38;2;248;248;242m-u --user=USERNAME          Show only processes of a given user[0m
+[38;2;248;248;242m-p --pid=PID,[,PID,PID...]  Show only the given PIDs[0m
+[38;2;248;248;242m-v --version                Print version info[0m
 
 [38;2;248;248;242mLong options may be passed with a single dash.[0m
 

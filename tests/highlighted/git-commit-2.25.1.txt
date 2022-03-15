@@ -1,10 +1,10 @@
 [38;2;248;248;242mGIT-COMMIT(1)                               Git Manual                              GIT-COMMIT(1)[0m
 
 [38;2;253;151;31mNAME[0m
-[38;2;248;248;242m       git-commit - Record changes to the repository[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mgit-commit - Record changes to the repository[0m
 
 [38;2;253;151;31mSYNOPSIS[0m
-[38;2;248;248;242m       git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend][0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mgit commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend][0m
 [38;2;248;248;242m                  [--dry-run] [(-c | -C | --fixup | --squash) <commit>][0m
 [38;2;248;248;242m                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty][0m
 [38;2;248;248;242m                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>][0m
@@ -13,113 +13,113 @@
 [38;2;248;248;242m                  [-S[<keyid>]] [--] [<pathspec>...][0m
 
 [38;2;253;151;31mDESCRIPTION[0m
-[38;2;248;248;242m       Create a new commit containing the current contents of the index and the given log message[0m
-[38;2;248;248;242m       describing the changes. The new commit is a direct child of HEAD, usually the tip of the[0m
-[38;2;248;248;242m       current branch, and the branch is updated to point to it (unless no branch is associated[0m
-[38;2;248;248;242m       with the working tree, in which case HEAD is "detached" as described in git-checkout(1)).[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mCreate a new commit containing the current contents of the index and the given log message[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mdescribing the changes. The new commit is a direct child of HEAD, usually the tip of the[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mcurrent branch, and the branch is updated to point to it (unless no branch is associated[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mwith the working tree, in which case HEAD is "detached" as described in git-checkout(1)).[0m
 
-[38;2;248;248;242m       The content to be committed can be specified in several ways:[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThe content to be committed can be specified in several ways:[0m
 
-[38;2;248;248;242m        1. by using git-add(1) to incrementally "add" changes to the index before using the[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m1. by using git-add(1) to incrementally "add" changes to the index before using the[0m
 [38;2;248;248;242m           commit command (Note: even modified files must be "added");[0m
 
-[38;2;248;248;242m        2. by using git-rm(1) to remove files from the working tree and the index, again before[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m2. by using git-rm(1) to remove files from the working tree and the index, again before[0m
 [38;2;248;248;242m           using the commit command;[0m
 
-[38;2;248;248;242m        3. by listing files as arguments to the commit command (without --interactive or --patch[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m3. by listing files as arguments to the commit command (without --interactive or --patch[0m
 [38;2;248;248;242m           switch), in which case the commit will ignore changes staged in the index, and instead[0m
 [38;2;248;248;242m           record the current content of the listed files (which must already be known to Git);[0m
 
-[38;2;248;248;242m        4. by using the -a switch with the commit command to automatically "add" changes from all[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m4. by using the -a switch with the commit command to automatically "add" changes from all[0m
 [38;2;248;248;242m           known files (i.e. all files that are already listed in the index) and to automatically[0m
 [38;2;248;248;242m           "rm" files in the index that have been removed from the working tree, and then perform[0m
 [38;2;248;248;242m           the actual commit;[0m
 
-[38;2;248;248;242m        5. by using the --interactive or --patch switches with the commit command to decide one[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m5. by using the --interactive or --patch switches with the commit command to decide one[0m
 [38;2;248;248;242m           by one which files or hunks should be part of the commit in addition to contents in[0m
 [38;2;248;248;242m           the index, before finalizing the operation. See the “Interactive Mode” section of git-[0m
 [38;2;248;248;242m           add(1) to learn how to operate these modes.[0m
 
-[38;2;248;248;242m       The --dry-run option can be used to obtain a summary of what is included by any of the[0m
-[38;2;248;248;242m       above for the next commit by giving the same set of parameters (options and paths).[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThe --dry-run option can be used to obtain a summary of what is included by any of the[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mabove for the next commit by giving the same set of parameters (options and paths).[0m
 
-[38;2;248;248;242m       If you make a commit and then find a mistake immediately after that, you can recover from[0m
-[38;2;248;248;242m       it with git reset.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mIf you make a commit and then find a mistake immediately after that, you can recover from[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mit with git reset.[0m
 
 [38;2;253;151;31mOPTIONS[0m
-[38;2;248;248;242m       [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--all[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-a, --all[0m
 [38;2;248;248;242m           Tell the command to automatically stage files that have been modified and deleted, but[0m
 [38;2;248;248;242m           new files you have not told Git about are not affected.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--patch[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-p, --patch[0m
 [38;2;248;248;242m           Use the interactive patch selection interface to chose which changes to commit. See[0m
 [38;2;248;248;242m           git-add(1) for details.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m [0m[38;2;253;151;31m<commit>[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--reuse-message[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<commit>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-C <commit>, --reuse-message=<commit>[0m
 [38;2;248;248;242m           Take an existing commit object, and reuse the log message and the authorship[0m
 [38;2;248;248;242m           information (including the timestamp) when creating the commit.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m [0m[38;2;253;151;31m<commit>[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--reedit-message[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<commit>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-c <commit>, --reedit-message=<commit>[0m
 [38;2;248;248;242m           Like -C, but with -c the editor is invoked, so that the user can further edit the[0m
 [38;2;248;248;242m           commit message.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--fixup[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<commit>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--fixup=<commit>[0m
 [38;2;248;248;242m           Construct a commit message for use with rebase --autosquash. The commit message will[0m
 [38;2;248;248;242m           be the subject line from the specified commit with a prefix of "fixup! ". See git-[0m
 [38;2;248;248;242m           rebase(1) for details.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--squash[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<commit>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--squash=<commit>[0m
 [38;2;248;248;242m           Construct a commit message for use with rebase --autosquash. The commit message[0m
 [38;2;248;248;242m           subject line is taken from the specified commit with a prefix of "squash! ". Can be[0m
 [38;2;248;248;242m           used with additional commit message options (-m/-c/-C/-F). See git-rebase(1) for[0m
 [38;2;248;248;242m           details.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--reset-author[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--reset-author[0m
 [38;2;248;248;242m           When used with -C/-c/--amend options, or when committing after a conflicting[0m
 [38;2;248;248;242m           cherry-pick, declare that the authorship of the resulting commit now belongs to the[0m
 [38;2;248;248;242m           committer. This also renews the author timestamp.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--short[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--short[0m
 [38;2;248;248;242m           When doing a dry-run, give the output in the short-format. See git-status(1) for[0m
 [38;2;248;248;242m           details. Implies --dry-run.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--branch[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--branch[0m
 [38;2;248;248;242m           Show the branch and tracking info even in short-format.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--porcelain[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--porcelain[0m
 [38;2;248;248;242m           When doing a dry-run, give the output in a porcelain-ready format. See git-status(1)[0m
 [38;2;248;248;242m           for details. Implies --dry-run.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--long[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--long[0m
 [38;2;248;248;242m           When doing a dry-run, give the output in the long-format. Implies --dry-run.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--null[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-z, --null[0m
 [38;2;248;248;242m           When showing short or porcelain status output, print the filename verbatim and[0m
 [38;2;248;248;242m           terminate the entries with NUL, instead of LF. If no format is given, implies the[0m
 [38;2;248;248;242m           --porcelain output format. Without the -z option, filenames with "unusual" characters[0m
 [38;2;248;248;242m           are quoted as explained for the configuration variable core.quotePath (see git-[0m
 [38;2;248;248;242m           config(1)).[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<file>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-F <file>, --file=<file>[0m
 [38;2;248;248;242m           Take the commit message from the given file. Use - to read the message from the[0m
 [38;2;248;248;242m           standard input.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--author[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<author>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--author=<author>[0m
 [38;2;248;248;242m           Override the commit author. Specify an explicit author using the standard A U Thor[0m
 [38;2;248;248;242m           <author@example.com> format. Otherwise <author> is assumed to be a pattern and is used[0m
 [38;2;248;248;242m           to search for an existing commit by that author (i.e. rev-list --all -i[0m
 [38;2;248;248;242m           --author=<author>); the commit author is then copied from the first such commit found.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--date[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<date>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--date=<date>[0m
 [38;2;248;248;242m           Override the author date used in the commit.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m [0m[38;2;253;151;31m<msg>[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--message[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<msg>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-m <msg>, --message=<msg>[0m
 [38;2;248;248;242m           Use the given <msg> as the commit message. If multiple -m options are given, their[0m
 [38;2;248;248;242m           values are concatenated as separate paragraphs.[0m
 
 [38;2;248;248;242m           The -m option is mutually exclusive with -c, -C, and -F.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--template[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<file>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-t <file>, --template=<file>[0m
 [38;2;248;248;242m           When editing the commit message, start the editor with the contents in the given file.[0m
 [38;2;248;248;242m           The commit.template configuration variable is often used to give this option[0m
 [38;2;248;248;242m           implicitly to the command. This mechanism can be used by projects that want to guide[0m
@@ -127,26 +127,26 @@
 [38;2;248;248;242m           user exits the editor without editing the message, the commit is aborted. This has no[0m
 [38;2;248;248;242m           effect when a message is given by other means, e.g. with the -m or -F options.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--signoff[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-s, --signoff[0m
 [38;2;248;248;242m           Add Signed-off-by line by the committer at the end of the commit log message. The[0m
 [38;2;248;248;242m           meaning of a signoff depends on the project, but it typically certifies that committer[0m
 [38;2;248;248;242m           has the rights to submit this work under the same license and agrees to a Developer[0m
 [38;2;248;248;242m           Certificate of Origin (see http://developercertificate.org/ for more information).[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-verify[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-n, --no-verify[0m
 [38;2;248;248;242m           This option bypasses the pre-commit and commit-msg hooks. See also githooks(5).[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--allow-empty[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--allow-empty[0m
 [38;2;248;248;242m           Usually recording a commit that has the exact same tree as its sole parent commit is a[0m
 [38;2;248;248;242m           mistake, and the command prevents you from making such a commit. This option bypasses[0m
 [38;2;248;248;242m           the safety, and is primarily for use by foreign SCM interface scripts.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--allow-empty-message[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--allow-empty-message[0m
 [38;2;248;248;242m           Like --allow-empty this command is primarily for use by foreign SCM interface scripts.[0m
 [38;2;248;248;242m           It allows you to create a commit with an empty commit message without using plumbing[0m
 [38;2;248;248;242m           commands like git-commit-tree(1).[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--cleanup[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<mode>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--cleanup=<mode>[0m
 [38;2;248;248;242m           This option determines how the supplied commit message should be cleaned up before[0m
 [38;2;248;248;242m           committing. The <mode> can be strip, whitespace, verbatim, scissors or default.[0m
 
@@ -173,16 +173,16 @@
 [38;2;248;248;242m           The default can be changed by the commit.cleanup configuration variable (see git-[0m
 [38;2;248;248;242m           config(1)).[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--edit[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-e, --edit[0m
 [38;2;248;248;242m           The message taken from file with -F, command line with -m, and from commit object with[0m
 [38;2;248;248;242m           -C are usually used as the commit log message unmodified. This option lets you further[0m
 [38;2;248;248;242m           edit the message taken from these sources.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--no-edit[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--no-edit[0m
 [38;2;248;248;242m           Use the selected commit message without launching an editor. For example, git commit[0m
 [38;2;248;248;242m           --amend --no-edit amends a commit without changing its commit message.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--amend[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--amend[0m
 [38;2;248;248;242m           Replace the tip of the current branch by creating a new commit. The recorded tree is[0m
 [38;2;248;248;242m           prepared as usual (including the effect of the -i and -o options and explicit[0m
 [38;2;248;248;242m           pathspec), and the message from the original commit is used as the starting point,[0m
@@ -202,15 +202,15 @@
 [38;2;248;248;242m           has already been published. (See the "RECOVERING FROM UPSTREAM REBASE" section in git-[0m
 [38;2;248;248;242m           rebase(1).)[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--no-post-rewrite[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--no-post-rewrite[0m
 [38;2;248;248;242m           Bypass the post-rewrite hook.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--include[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-i, --include[0m
 [38;2;248;248;242m           Before making a commit out of staged contents so far, stage the contents of paths[0m
 [38;2;248;248;242m           given on the command line as well. This is usually not what you want unless you are[0m
 [38;2;248;248;242m           concluding a conflicted merge.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--only[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-o, --only[0m
 [38;2;248;248;242m           Make a commit by taking the updated working tree contents of the paths specified on[0m
 [38;2;248;248;242m           the command line, disregarding any contents that have been staged for other paths.[0m
 [38;2;248;248;242m           This is the default mode of operation of git commit if any paths are given on the[0m
@@ -220,18 +220,18 @@
 [38;2;248;248;242m           together with --allow-empty paths are also not required, and an empty commit will be[0m
 [38;2;248;248;242m           created.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--pathspec-from-file[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<file>[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--pathspec-from-file=<file>[0m
 [38;2;248;248;242m           Pathspec is passed in <file> instead of commandline args. If <file> is exactly - then[0m
 [38;2;248;248;242m           standard input is used. Pathspec elements are separated by LF or CR/LF. Pathspec[0m
 [38;2;248;248;242m           elements can be quoted as explained for the configuration variable core.quotePath (see[0m
 [38;2;248;248;242m           git-config(1)). See also --pathspec-file-nul and global --literal-pathspecs.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--pathspec-file-nul[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--pathspec-file-nul[0m
 [38;2;248;248;242m           Only meaningful with --pathspec-from-file. Pathspec elements are separated with NUL[0m
 [38;2;248;248;242m           character and all other characters are taken literally (including newlines and[0m
 [38;2;248;248;242m           quotes).[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m[[0m[38;2;253;151;31m<mode>[0m[38;2;248;248;242m], --untracked-files[=<mode>][0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-u[<mode>], --untracked-files[=<mode>][0m
 [38;2;248;248;242m           Show untracked files.[0m
 
 [38;2;248;248;242m           The mode parameter is optional (defaults to all), and is used to specify the handling[0m
@@ -249,7 +249,7 @@
 [38;2;248;248;242m           The default can be changed using the status.showUntrackedFiles configuration variable[0m
 [38;2;248;248;242m           documented in git-config(1).[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-v, --verbose[0m
 [38;2;248;248;242m           Show unified diff between the HEAD commit and what would be committed at the bottom of[0m
 [38;2;248;248;242m           the commit message template to help the user describe the commit by reminding what[0m
 [38;2;248;248;242m           changes the commit has. Note that this diff output doesn’t have its lines prefixed[0m
@@ -259,34 +259,34 @@
 [38;2;248;248;242m           If specified twice, show in addition the unified diff between what would be committed[0m
 [38;2;248;248;242m           and the worktree files, i.e. the unstaged changes to tracked files.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-q, --quiet[0m
 [38;2;248;248;242m           Suppress commit summary message.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--dry-run[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--dry-run[0m
 [38;2;248;248;242m           Do not create a commit, but show a list of paths that are to be committed, paths with[0m
 [38;2;248;248;242m           local changes that will be left uncommitted and paths that are untracked.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--status[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--status[0m
 [38;2;248;248;242m           Include the output of git-status(1) in the commit message template when using an[0m
 [38;2;248;248;242m           editor to prepare the commit message. Defaults to on, but can be used to override[0m
 [38;2;248;248;242m           configuration variable commit.status.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--no-status[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--no-status[0m
 [38;2;248;248;242m           Do not include the output of git-status(1) in the commit message template when using[0m
 [38;2;248;248;242m           an editor to prepare the default commit message.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m[[0m[38;2;253;151;31m<keyid>[0m[38;2;248;248;242m], --gpg-sign[=<keyid>][0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m-S[<keyid>], --gpg-sign[=<keyid>][0m
 [38;2;248;248;242m           GPG-sign commits. The keyid argument is optional and defaults to the committer[0m
 [38;2;248;248;242m           identity; if specified, it must be stuck to the option without a space.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m--no-gpg-sign[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--no-gpg-sign[0m
 [38;2;248;248;242m           Countermand commit.gpgSign configuration variable that is set to force each and every[0m
 [38;2;248;248;242m           commit to be signed.[0m
 
-[38;2;248;248;242m       [0m[38;2;249;38;114m--[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m--[0m
 [38;2;248;248;242m           Do not interpret any more arguments as options.[0m
 
-[38;2;248;248;242m       <pathspec>...[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m<pathspec>...[0m
 [38;2;248;248;242m           When pathspec is given on the command line, commit the contents of the files that[0m
 [38;2;248;248;242m           match the pathspec without recording the changes already added to the index. The[0m
 [38;2;248;248;242m           contents of these files are also staged for the next commit on top of what have been[0m
@@ -295,75 +295,75 @@
 [38;2;248;248;242m           For more details, see the pathspec entry in gitglossary(7).[0m
 
 [38;2;253;151;31mEXAMPLES[0m
-[38;2;248;248;242m       When recording your own work, the contents of modified files in your working tree are[0m
-[38;2;248;248;242m       temporarily stored to a staging area called the "index" with git add. A file can be[0m
-[38;2;248;248;242m       reverted back, only in the index but not in the working tree, to that of the last commit[0m
-[38;2;248;248;242m       with git restore --staged <file>, which effectively reverts git add and prevents the[0m
-[38;2;248;248;242m       changes to this file from participating in the next commit. After building the state to be[0m
-[38;2;248;248;242m       committed incrementally with these commands, git commit (without any pathname parameter)[0m
-[38;2;248;248;242m       is used to record what has been staged so far. This is the most basic form of the command.[0m
-[38;2;248;248;242m       An example:[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mWhen recording your own work, the contents of modified files in your working tree are[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mtemporarily stored to a staging area called the "index" with git add. A file can be[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mreverted back, only in the index but not in the working tree, to that of the last commit[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mwith git restore --staged <file>, which effectively reverts git add and prevents the[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mchanges to this file from participating in the next commit. After building the state to be[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mcommitted incrementally with these commands, git commit (without any pathname parameter)[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mis used to record what has been staged so far. This is the most basic form of the command.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mAn example:[0m
 
 [38;2;248;248;242m           $ edit hello.c[0m
 [38;2;248;248;242m           $ git rm goodbye.c[0m
 [38;2;248;248;242m           $ git add hello.c[0m
 [38;2;248;248;242m           $ git commit[0m
 
-[38;2;248;248;242m       Instead of staging files after each individual change, you can tell git commit to notice[0m
-[38;2;248;248;242m       the changes to the files whose contents are tracked in your working tree and do[0m
-[38;2;248;248;242m       corresponding git add and git rm for you. That is, this example does the same as the[0m
-[38;2;248;248;242m       earlier example if there is no other change in your working tree:[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mInstead of staging files after each individual change, you can tell git commit to notice[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mthe changes to the files whose contents are tracked in your working tree and do[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mcorresponding git add and git rm for you. That is, this example does the same as the[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mearlier example if there is no other change in your working tree:[0m
 
 [38;2;248;248;242m           $ edit hello.c[0m
 [38;2;248;248;242m           $ rm goodbye.c[0m
 [38;2;248;248;242m           $ git commit -a[0m
 
-[38;2;248;248;242m       The command git commit -a first looks at your working tree, notices that you have modified[0m
-[38;2;248;248;242m       hello.c and removed goodbye.c, and performs necessary git add and git rm for you.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThe command git commit -a first looks at your working tree, notices that you have modified[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mhello.c and removed goodbye.c, and performs necessary git add and git rm for you.[0m
 
-[38;2;248;248;242m       After staging changes to many files, you can alter the order the changes are recorded in,[0m
-[38;2;248;248;242m       by giving pathnames to git commit. When pathnames are given, the command makes a commit[0m
-[38;2;248;248;242m       that only records the changes made to the named paths:[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mAfter staging changes to many files, you can alter the order the changes are recorded in,[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mby giving pathnames to git commit. When pathnames are given, the command makes a commit[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mthat only records the changes made to the named paths:[0m
 
 [38;2;248;248;242m           $ edit hello.c hello.h[0m
 [38;2;248;248;242m           $ git add hello.c hello.h[0m
 [38;2;248;248;242m           $ edit Makefile[0m
 [38;2;248;248;242m           $ git commit Makefile[0m
 
-[38;2;248;248;242m       This makes a commit that records the modification to Makefile. The changes staged for[0m
-[38;2;248;248;242m       hello.c and hello.h are not included in the resulting commit. However, their changes are[0m
-[38;2;248;248;242m       not lost — they are still staged and merely held back. After the above sequence, if you[0m
-[38;2;248;248;242m       do:[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThis makes a commit that records the modification to Makefile. The changes staged for[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mhello.c and hello.h are not included in the resulting commit. However, their changes are[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mnot lost — they are still staged and merely held back. After the above sequence, if you[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mdo:[0m
 
 [38;2;248;248;242m           $ git commit[0m
 
-[38;2;248;248;242m       this second commit would record the changes to hello.c and hello.h as expected.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mthis second commit would record the changes to hello.c and hello.h as expected.[0m
 
-[38;2;248;248;242m       After a merge (initiated by git merge or git pull) stops because of conflicts, cleanly[0m
-[38;2;248;248;242m       merged paths are already staged to be committed for you, and paths that conflicted are[0m
-[38;2;248;248;242m       left in unmerged state. You would have to first check which paths are conflicting with git[0m
-[38;2;248;248;242m       status and after fixing them manually in your working tree, you would stage the result as[0m
-[38;2;248;248;242m       usual with git add:[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mAfter a merge (initiated by git merge or git pull) stops because of conflicts, cleanly[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mmerged paths are already staged to be committed for you, and paths that conflicted are[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mleft in unmerged state. You would have to first check which paths are conflicting with git[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mstatus and after fixing them manually in your working tree, you would stage the result as[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242musual with git add:[0m
 
 [38;2;248;248;242m           $ git status | grep unmerged[0m
 [38;2;248;248;242m           unmerged: hello.c[0m
 [38;2;248;248;242m           $ edit hello.c[0m
 [38;2;248;248;242m           $ git add hello.c[0m
 
-[38;2;248;248;242m       After resolving conflicts and staging the result, git ls-files -u would stop mentioning[0m
-[38;2;248;248;242m       the conflicted path. When you are done, run git commit to finally record the merge:[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mAfter resolving conflicts and staging the result, git ls-files -u would stop mentioning[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mthe conflicted path. When you are done, run git commit to finally record the merge:[0m
 
 [38;2;248;248;242m           $ git commit[0m
 
-[38;2;248;248;242m       As with the case to record your own changes, you can use -a option to save typing. One[0m
-[38;2;248;248;242m       difference is that during a merge resolution, you cannot use git commit with pathnames to[0m
-[38;2;248;248;242m       alter the order the changes are committed, because the merge should be recorded as a[0m
-[38;2;248;248;242m       single commit. In fact, the command refuses to run when given pathnames (but see -i[0m
-[38;2;248;248;242m       option).[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mAs with the case to record your own changes, you can use -a option to save typing. One[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mdifference is that during a merge resolution, you cannot use git commit with pathnames to[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242malter the order the changes are committed, because the merge should be recorded as a[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242msingle commit. In fact, the command refuses to run when given pathnames (but see -i[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242moption).[0m
 
 [38;2;253;151;31mCOMMIT INFORMATION[0m
-[38;2;248;248;242m       Author and committer information is taken from the following environment variables, if[0m
-[38;2;248;248;242m       set:[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mAuthor and committer information is taken from the following environment variables, if[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mset:[0m
 
 [38;2;248;248;242m           GIT_AUTHOR_NAME[0m
 [38;2;248;248;242m           GIT_AUTHOR_EMAIL[0m
@@ -372,41 +372,41 @@
 [38;2;248;248;242m           GIT_COMMITTER_EMAIL[0m
 [38;2;248;248;242m           GIT_COMMITTER_DATE[0m
 
-[38;2;248;248;242m       (nb "<", ">" and "\n"s are stripped)[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m(nb "<", ">" and "\n"s are stripped)[0m
 
-[38;2;248;248;242m       The author and committer names are by convention some form of a personal name (that is,[0m
-[38;2;248;248;242m       the name by which other humans refer to you), although Git does not enforce or require any[0m
-[38;2;248;248;242m       particular form. Arbitrary Unicode may be used, subject to the constraints listed above.[0m
-[38;2;248;248;242m       This name has no effect on authentication; for that, see the credential.username variable[0m
-[38;2;248;248;242m       in git-config(1).[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThe author and committer names are by convention some form of a personal name (that is,[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mthe name by which other humans refer to you), although Git does not enforce or require any[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mparticular form. Arbitrary Unicode may be used, subject to the constraints listed above.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThis name has no effect on authentication; for that, see the credential.username variable[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242min git-config(1).[0m
 
-[38;2;248;248;242m       In case (some of) these environment variables are not set, the information is taken from[0m
-[38;2;248;248;242m       the configuration items user.name and user.email, or, if not present, the environment[0m
-[38;2;248;248;242m       variable EMAIL, or, if that is not set, system user name and the hostname used for[0m
-[38;2;248;248;242m       outgoing mail (taken from /etc/mailname and falling back to the fully qualified hostname[0m
-[38;2;248;248;242m       when that file does not exist).[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mIn case (some of) these environment variables are not set, the information is taken from[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mthe configuration items user.name and user.email, or, if not present, the environment[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mvariable EMAIL, or, if that is not set, system user name and the hostname used for[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242moutgoing mail (taken from /etc/mailname and falling back to the fully qualified hostname[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mwhen that file does not exist).[0m
 
-[38;2;248;248;242m       The author.name and committer.name and their corresponding email options override[0m
-[38;2;248;248;242m       user.name and user.email if set and are overridden themselves by the environment[0m
-[38;2;248;248;242m       variables.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThe author.name and committer.name and their corresponding email options override[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242muser.name and user.email if set and are overridden themselves by the environment[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mvariables.[0m
 
-[38;2;248;248;242m       The typical usage is to set just the user.name and user.email variables; the other options[0m
-[38;2;248;248;242m       are provided for more complex use cases.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThe typical usage is to set just the user.name and user.email variables; the other options[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mare provided for more complex use cases.[0m
 
 [38;2;253;151;31mDATE FORMATS[0m
-[38;2;248;248;242m       The GIT_AUTHOR_DATE, GIT_COMMITTER_DATE environment variables and the --date option[0m
-[38;2;248;248;242m       support the following date formats:[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThe GIT_AUTHOR_DATE, GIT_COMMITTER_DATE environment variables and the --date option[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242msupport the following date formats:[0m
 
-[38;2;248;248;242m       Git internal format[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mGit internal format[0m
 [38;2;248;248;242m           It is <unix timestamp> <time zone offset>, where <unix timestamp> is the number of[0m
 [38;2;248;248;242m           seconds since the UNIX epoch.  <time zone offset> is a positive or negative offset[0m
 [38;2;248;248;242m           from UTC. For example CET (which is 1 hour ahead of UTC) is +0100.[0m
 
-[38;2;248;248;242m       RFC 2822[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mRFC 2822[0m
 [38;2;248;248;242m           The standard email format as described by RFC 2822, for example Thu, 07 Apr 2005[0m
 [38;2;248;248;242m           22:13:13 +0200.[0m
 
-[38;2;248;248;242m       ISO 8601[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mISO 8601[0m
 [38;2;248;248;242m           Time and date specified by the ISO 8601 standard, for example 2005-04-07T22:13:13. The[0m
 [38;2;248;248;242m           parser accepts a space instead of the T character as well.[0m
 
@@ -415,19 +415,19 @@
 [38;2;248;248;242m               MM/DD/YYYY and DD.MM.YYYY.[0m
 
 [38;2;253;151;31mDISCUSSION[0m
-[38;2;248;248;242m       Though not required, it’s a good idea to begin the commit message with a single short[0m
-[38;2;248;248;242m       (less than 50 character) line summarizing the change, followed by a blank line and then a[0m
-[38;2;248;248;242m       more thorough description. The text up to the first blank line in a commit message is[0m
-[38;2;248;248;242m       treated as the commit title, and that title is used throughout Git. For example, git-[0m
-[38;2;248;248;242m       format-patch(1) turns a commit into email, and it uses the title on the Subject line and[0m
-[38;2;248;248;242m       the rest of the commit in the body.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThough not required, it’s a good idea to begin the commit message with a single short[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m(less than 50 character) line summarizing the change, followed by a blank line and then a[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mmore thorough description. The text up to the first blank line in a commit message is[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mtreated as the commit title, and that title is used throughout Git. For example, git-[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mformat-patch(1) turns a commit into email, and it uses the title on the Subject line and[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mthe rest of the commit in the body.[0m
 
-[38;2;248;248;242m       Git is to some extent character encoding agnostic.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mGit is to some extent character encoding agnostic.[0m
 
-[38;2;248;248;242m       •   The contents of the blob objects are uninterpreted sequences of bytes. There is no[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m•   The contents of the blob objects are uninterpreted sequences of bytes. There is no[0m
 [38;2;248;248;242m           encoding translation at the core level.[0m
 
-[38;2;248;248;242m       •   Path names are encoded in UTF-8 normalization form C. This applies to tree objects,[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m•   Path names are encoded in UTF-8 normalization form C. This applies to tree objects,[0m
 [38;2;248;248;242m           the index file, ref names, as well as path names in command line arguments,[0m
 [38;2;248;248;242m           environment variables and config files (.git/config (see git-config(1)), gitignore(5),[0m
 [38;2;248;248;242m           gitattributes(5) and gitmodules(5)).[0m
@@ -440,17 +440,17 @@
 [38;2;248;248;242m           and vice versa. Additionally, many Git-based tools simply assume path names to be[0m
 [38;2;248;248;242m           UTF-8 and will fail to display other encodings correctly.[0m
 
-[38;2;248;248;242m       •   Commit log messages are typically encoded in UTF-8, but other extended ASCII encodings[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m•   Commit log messages are typically encoded in UTF-8, but other extended ASCII encodings[0m
 [38;2;248;248;242m           are also supported. This includes ISO-8859-x, CP125x and many others, but not[0m
 [38;2;248;248;242m           UTF-16/32, EBCDIC and CJK multi-byte encodings (GBK, Shift-JIS, Big5, EUC-x, CP9xx[0m
 [38;2;248;248;242m           etc.).[0m
 
-[38;2;248;248;242m       Although we encourage that the commit log messages are encoded in UTF-8, both the core and[0m
-[38;2;248;248;242m       Git Porcelain are designed not to force UTF-8 on projects. If all participants of a[0m
-[38;2;248;248;242m       particular project find it more convenient to use legacy encodings, Git does not forbid[0m
-[38;2;248;248;242m       it. However, there are a few things to keep in mind.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mAlthough we encourage that the commit log messages are encoded in UTF-8, both the core and[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mGit Porcelain are designed not to force UTF-8 on projects. If all participants of a[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mparticular project find it more convenient to use legacy encodings, Git does not forbid[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mit. However, there are a few things to keep in mind.[0m
 
-[38;2;248;248;242m        1. git commit and git commit-tree issues a warning if the commit log message given to it[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m1. git commit and git commit-tree issues a warning if the commit log message given to it[0m
 [38;2;248;248;242m           does not look like a valid UTF-8 string, unless you explicitly say your project uses a[0m
 [38;2;248;248;242m           legacy encoding. The way to say this is to have i18n.commitencoding in .git/config[0m
 [38;2;248;248;242m           file, like this:[0m
@@ -462,7 +462,7 @@
 [38;2;248;248;242m           in its encoding header. This is to help other people who look at them later. Lack of[0m
 [38;2;248;248;242m           this header implies that the commit log message is encoded in UTF-8.[0m
 
-[38;2;248;248;242m        2. git log, git show, git blame and friends look at the encoding header of a commit[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m2. git log, git show, git blame and friends look at the encoding header of a commit[0m
 [38;2;248;248;242m           object, and try to re-code the log message into UTF-8 unless otherwise specified. You[0m
 [38;2;248;248;242m           can specify the desired output encoding with i18n.logOutputEncoding in .git/config[0m
 [38;2;248;248;242m           file, like this:[0m
@@ -473,30 +473,30 @@
 [38;2;248;248;242m           If you do not have this configuration variable, the value of i18n.commitEncoding is[0m
 [38;2;248;248;242m           used instead.[0m
 
-[38;2;248;248;242m       Note that we deliberately chose not to re-code the commit log message when a commit is[0m
-[38;2;248;248;242m       made to force UTF-8 at the commit object level, because re-coding to UTF-8 is not[0m
-[38;2;248;248;242m       necessarily a reversible operation.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mNote that we deliberately chose not to re-code the commit log message when a commit is[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mmade to force UTF-8 at the commit object level, because re-coding to UTF-8 is not[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mnecessarily a reversible operation.[0m
 
 [38;2;253;151;31mENVIRONMENT AND CONFIGURATION VARIABLES[0m
-[38;2;248;248;242m       The editor used to edit the commit log message will be chosen from the GIT_EDITOR[0m
-[38;2;248;248;242m       environment variable, the core.editor configuration variable, the VISUAL environment[0m
-[38;2;248;248;242m       variable, or the EDITOR environment variable (in that order). See git-var(1) for details.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThe editor used to edit the commit log message will be chosen from the GIT_EDITOR[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242menvironment variable, the core.editor configuration variable, the VISUAL environment[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mvariable, or the EDITOR environment variable (in that order). See git-var(1) for details.[0m
 
 [38;2;253;151;31mHOOKS[0m
-[38;2;248;248;242m       This command can run commit-msg, prepare-commit-msg, pre-commit, post-commit and[0m
-[38;2;248;248;242m       post-rewrite hooks. See githooks(5) for more information.[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mThis command can run commit-msg, prepare-commit-msg, pre-commit, post-commit and[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mpost-rewrite hooks. See githooks(5) for more information.[0m
 
 [38;2;253;151;31mFILES[0m
-[38;2;248;248;242m       $GIT_DIR/COMMIT_EDITMSG[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242m$GIT_DIR/COMMIT_EDITMSG[0m
 [38;2;248;248;242m           This file contains the commit message of a commit in progress. If git commit exits due[0m
 [38;2;248;248;242m           to an error before creating a commit, any commit message that has been provided by the[0m
 [38;2;248;248;242m           user (e.g., in an editor session) will be available in this file, but will be[0m
 [38;2;248;248;242m           overwritten by the next invocation of git commit.[0m
 
 [38;2;253;151;31mSEE ALSO[0m
-[38;2;248;248;242m       git-add(1), git-rm(1), git-mv(1), git-merge(1), git-commit-tree(1)[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mgit-add(1), git-rm(1), git-mv(1), git-merge(1), git-commit-tree(1)[0m
 
 [38;2;253;151;31mGIT[0m
-[38;2;248;248;242m       Part of the git(1) suite[0m
+[38;2;248;248;242m       [0m[38;2;248;248;242mPart of the git(1) suite[0m
 
 [38;2;248;248;242mGit 2.25.1                                  09/09/2021                              GIT-COMMIT(1)[0m

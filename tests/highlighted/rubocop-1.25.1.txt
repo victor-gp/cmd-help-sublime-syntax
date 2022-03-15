@@ -1,48 +1,48 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m rubocop [options] [file1, file2, ...][0m
 
 [38;2;253;151;31mBasic Options:[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--lint[0m[38;2;248;248;242m                       Run only lint cops.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fix-layout[0m[38;2;248;248;242m                 Run only layout cops, with auto-correct on.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--safe[0m[38;2;248;248;242m                       Run only safe cops.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--except[0m[38;2;248;248;242m [COP1,COP2,...]     Exclude the given cop(s).[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--only[0m[38;2;248;248;242m [COP1,COP2,...]       Run only the given cop(s).[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--only-guide-cops[0m[38;2;248;248;242m            Run only cops for rules that link to a[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-l, --lint                       Run only lint cops.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-x, --fix-layout                 Run only layout cops, with auto-correct on.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--safe                       Run only safe cops.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--except [COP1,COP2,...]     Exclude the given cop(s).[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--only [COP1,COP2,...]       Run only the given cop(s).[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--only-guide-cops            Run only cops for rules that link to a[0m
 [38;2;248;248;242m                                     style guide.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fail-fast[0m[38;2;248;248;242m                  Inspect files in order of modification[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-F, --fail-fast                  Inspect files in order of modification[0m
 [38;2;248;248;242m                                     time and stop after the first file[0m
 [38;2;248;248;242m                                     containing offenses.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--disable-pending-cops[0m[38;2;248;248;242m       Run without pending cops.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--enable-pending-cops[0m[38;2;248;248;242m        Run with pending cops.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--ignore-disable-comments[0m[38;2;248;248;242m    Run cops even when they are disabled locally[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--disable-pending-cops       Run without pending cops.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--enable-pending-cops        Run with pending cops.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--ignore-disable-comments    Run cops even when they are disabled locally[0m
 [38;2;248;248;242m                                     by a `rubocop:disable` directive.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--force-exclusion[0m[38;2;248;248;242m            Any files excluded by `Exclude` in configuration[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--force-exclusion            Any files excluded by `Exclude` in configuration[0m
 [38;2;248;248;242m                                     files will be excluded, even if given explicitly[0m
 [38;2;248;248;242m                                     as arguments.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--only-recognized-file-types[0m[38;2;248;248;242m Inspect files given on the command line only if[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--only-recognized-file-types Inspect files given on the command line only if[0m
 [38;2;248;248;242m                                     they are listed in `AllCops/Include` parameters[0m
 [38;2;248;248;242m                                     of user configuration or default configuration.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--ignore-parent-exclusion[0m[38;2;248;248;242m    Prevent from inheriting `AllCops/Exclude` from[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--ignore-parent-exclusion    Prevent from inheriting `AllCops/Exclude` from[0m
 [38;2;248;248;242m                                     parent folders.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--force-default-config[0m[38;2;248;248;242m       Use default configuration even if configuration[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--force-default-config       Use default configuration even if configuration[0m
 [38;2;248;248;242m                                     files are present in the directory tree.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--stdin[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m                 Pipe source from STDIN, using FILE in offense[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-s, --stdin FILE                 Pipe source from STDIN, using FILE in offense[0m
 [38;2;248;248;242m                                     reports. This is useful for editor integration.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--[0m[38;2;248;248;242m[[0m[38;2;253;151;31mno-[0m[38;2;248;248;242m]parallel              Use available CPUs to execute inspection in[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-P, --[no-]parallel              Use available CPUs to execute inspection in[0m
 [38;2;248;248;242m                                     parallel. Default is true.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--fail-level[0m[38;2;248;248;242m [0m[38;2;253;151;31mSEVERITY[0m[38;2;248;248;242m        Minimum severity (A/I/R/C/W/E/F) for exit[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--fail-level SEVERITY        Minimum severity (A/I/R/C/W/E/F) for exit[0m
 [38;2;248;248;242m                                     with error code.[0m
 
 [38;2;253;151;31mCaching:[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--cache[0m[38;2;248;248;242m [0m[38;2;253;151;31mFLAG[0m[38;2;248;248;242m                 Use result caching (FLAG=true) or don't[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-C, --cache FLAG                 Use result caching (FLAG=true) or don't[0m
 [38;2;248;248;242m                                     (FLAG=false), default determined by[0m
 [38;2;248;248;242m                                     configuration parameter AllCops: UseCache.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--cache-root[0m[38;2;248;248;242m [0m[38;2;253;151;31mDIR[0m[38;2;248;248;242m             Set the cache root directory.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--cache-root DIR             Set the cache root directory.[0m
 [38;2;248;248;242m                                     Takes precedence over the configuration[0m
 [38;2;248;248;242m                                     parameter AllCops: CacheRootDirectory and[0m
 [38;2;248;248;242m                                     the $RUBOCOP_CACHE_ROOT environment variable.[0m
 
 [38;2;253;151;31mOutput Options:[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--format[0m[38;2;248;248;242m [0m[38;2;253;151;31mFORMATTER[0m[38;2;248;248;242m           Choose an output formatter. This option[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-f, --format FORMATTER           Choose an output formatter. This option[0m
 [38;2;248;248;242m                                     can be specified multiple times to enable[0m
 [38;2;248;248;242m                                     multiple formatters at the same time.[0m
 [38;2;248;248;242m                                       [a]utogenconf[0m
@@ -62,65 +62,65 @@
 [38;2;248;248;242m                                       [t]ap[0m
 [38;2;248;248;242m                                       [w]orst[0m
 [38;2;248;248;242m                                       custom formatter class name[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--[0m[38;2;248;248;242m[[0m[38;2;253;151;31mno-[0m[38;2;248;248;242m]display-cop-names     Display cop names in offense messages.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-D, --[no-]display-cop-names     Display cop names in offense messages.[0m
 [38;2;248;248;242m                                     Default is true.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--extra-details[0m[38;2;248;248;242m              Display extra details in offense messages.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--display-style-guide[0m[38;2;248;248;242m        Display style guide URLs in offense messages.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--out[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m                   Write output to a file instead of STDOUT.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-E, --extra-details              Display extra details in offense messages.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-S, --display-style-guide        Display style guide URLs in offense messages.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-o, --out FILE                   Write output to a file instead of STDOUT.[0m
 [38;2;248;248;242m                                     This option applies to the previously[0m
 [38;2;248;248;242m                                     specified --format, or the default format[0m
 [38;2;248;248;242m                                     if no format is specified.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--stderr[0m[38;2;248;248;242m                     Write all output to stderr except for the[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--stderr                     Write all output to stderr except for the[0m
 [38;2;248;248;242m                                     autocorrected source. This is especially useful[0m
 [38;2;248;248;242m                                     when combined with --auto-correct and --stdin.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--display-time[0m[38;2;248;248;242m               Display elapsed time in seconds.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--display-only-failed[0m[38;2;248;248;242m        Only output offense messages. Omit passing[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--display-time               Display elapsed time in seconds.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--display-only-failed        Only output offense messages. Omit passing[0m
 [38;2;248;248;242m                                     cops. Only valid for --format junit.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--display-only-fail-level-offenses[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--display-only-fail-level-offenses[0m
 [38;2;248;248;242m                                     Only output offense messages at[0m
 [38;2;248;248;242m                                     the specified --fail-level or above[0m
 
 [38;2;253;151;31mAuto-correction:[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--auto-correct[0m[38;2;248;248;242m               Auto-correct offenses (only when it's safe).[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--safe-auto-correct[0m[38;2;248;248;242m          (same, deprecated)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--auto-correct-all[0m[38;2;248;248;242m           Auto-correct offenses (safe and unsafe)[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--disable-uncorrectable[0m[38;2;248;248;242m      Used with --auto-correct to annotate any[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-a, --auto-correct               Auto-correct offenses (only when it's safe).[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--safe-auto-correct          (same, deprecated)[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-A, --auto-correct-all           Auto-correct offenses (safe and unsafe)[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--disable-uncorrectable      Used with --auto-correct to annotate any[0m
 [38;2;248;248;242m                                     offenses that do not support autocorrect[0m
 [38;2;248;248;242m                                     with `rubocop:todo` comments.[0m
 
 [38;2;253;151;31mConfig Generation:[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--auto-gen-config[0m[38;2;248;248;242m            Generate a configuration file acting as a[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--auto-gen-config            Generate a configuration file acting as a[0m
 [38;2;248;248;242m                                     TODO list.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--regenerate-todo[0m[38;2;248;248;242m            Regenerate the TODO configuration file using[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--regenerate-todo            Regenerate the TODO configuration file using[0m
 [38;2;248;248;242m                                     the last configuration. If there is no existing[0m
 [38;2;248;248;242m                                     TODO file, acts like --auto-gen-config.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--exclude-limit[0m[38;2;248;248;242m [0m[38;2;253;151;31mCOUNT[0m[38;2;248;248;242m        Set the limit for how many files to explicitly exclude.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--exclude-limit COUNT        Set the limit for how many files to explicitly exclude.[0m
 [38;2;248;248;242m                                     If there are more files than the limit, the cop will[0m
 [38;2;248;248;242m                                     be disabled instead. Default is 15.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--[0m[38;2;248;248;242m[[0m[38;2;253;151;31mno-[0m[38;2;248;248;242m]offense-counts        Include offense counts in configuration[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--[no-]offense-counts        Include offense counts in configuration[0m
 [38;2;248;248;242m                                     file generated by --auto-gen-config.[0m
 [38;2;248;248;242m                                     Default is true.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--[0m[38;2;248;248;242m[[0m[38;2;253;151;31mno-[0m[38;2;248;248;242m]auto-gen-only-exclude Generate only Exclude parameters and not Max[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--[no-]auto-gen-only-exclude Generate only Exclude parameters and not Max[0m
 [38;2;248;248;242m                                     when running --auto-gen-config, except if the[0m
 [38;2;248;248;242m                                     number of files with offenses is bigger than[0m
 [38;2;248;248;242m                                     exclude-limit. Default is false.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--[0m[38;2;248;248;242m[[0m[38;2;253;151;31mno-[0m[38;2;248;248;242m]auto-gen-timestamp    Include the date and time when the --auto-gen-config[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--[no-]auto-gen-timestamp    Include the date and time when the --auto-gen-config[0m
 [38;2;248;248;242m                                     was run in the file it generates. Default is true.[0m
 
 [38;2;253;151;31mAdditional Modes:[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--list-target-files[0m[38;2;248;248;242m          List all files RuboCop will inspect.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--show-cops[0m[38;2;248;248;242m [COP1,COP2,...]  Shows the given cops, or all cops by[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-L, --list-target-files          List all files RuboCop will inspect.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--show-cops [COP1,COP2,...]  Shows the given cops, or all cops by[0m
 [38;2;248;248;242m                                     default, and their configurations for the[0m
 [38;2;248;248;242m                                     current directory.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--show-docs-url[0m[38;2;248;248;242m [COP1,COP2,...][0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--show-docs-url [COP1,COP2,...][0m
 [38;2;248;248;242m                                     Display url to documentation for the given[0m
 [38;2;248;248;242m                                     cops, or base url by default.[0m
 
 [38;2;253;151;31mGeneral Options:[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--init[0m[38;2;248;248;242m                       Generate a .rubocop.yml file in the current directory.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m                Specify configuration file.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m                      Display debug info.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--require[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m               Require Ruby file.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--[0m[38;2;248;248;242m[[0m[38;2;253;151;31mno-[0m[38;2;248;248;242m]color                 Force color output on or off.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                    Display version.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose-version[0m[38;2;248;248;242m            Display verbose version.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--init                       Generate a .rubocop.yml file in the current directory.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-c, --config FILE                Specify configuration file.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-d, --debug                      Display debug info.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-r, --require FILE               Require Ruby file.[0m
+[38;2;248;248;242m        [0m[38;2;248;248;242m--[no-]color                 Force color output on or off.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-v, --version                    Display version.[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-V, --verbose-version            Display verbose version.[0m

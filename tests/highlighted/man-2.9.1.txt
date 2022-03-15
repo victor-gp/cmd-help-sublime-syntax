@@ -1,71 +1,71 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m man [OPTION...] [SECTION] PAGE...[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--config-file[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m     use this user configuration file[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m                emit debugging messages[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--default[0m[38;2;248;248;242m              reset all options to their default values[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--warnings[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mWARNINGS[0m[38;2;248;248;242m]  enable warnings from groff[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-C, --config-file=FILE     use this user configuration file[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-d, --debug                emit debugging messages[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-D, --default              reset all options to their default values[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--warnings[=WARNINGS]  enable warnings from groff[0m
 
-[38;2;248;248;242m [0m[38;2;253;151;31mMain modes of operation:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--whatis[0m[38;2;248;248;242m               equivalent to whatis[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--apropos[0m[38;2;248;248;242m              equivalent to apropos[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--global-apropos[0m[38;2;248;248;242m       search for text in all pages[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--local-file[0m[38;2;248;248;242m           interpret PAGE argument(s) as local filename(s)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--where[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--path[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--location[0m
+[38;2;248;248;242m [0m[38;2;248;248;242mMain modes of operation:[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-f, --whatis               equivalent to whatis[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-k, --apropos              equivalent to apropos[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-K, --global-apropos       search for text in all pages[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-l, --local-file           interpret PAGE argument(s) as local filename(s)[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-w, --where, --path, --location[0m
 [38;2;248;248;242m                             print physical location of man page(s)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--where-cat[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--location-cat[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-W, --where-cat, --location-cat[0m
 [38;2;248;248;242m                             print physical location of cat file(s)[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--catman[0m[38;2;248;248;242m               used by catman to reformat out of date cat pages[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recode[0m[38;2;248;248;242m=[0m[38;2;253;151;31mENCODING[0m[38;2;248;248;242m      output source page encoded in ENCODING[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-c, --catman               used by catman to reformat out of date cat pages[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-R, --recode=ENCODING      output source page encoded in ENCODING[0m
 
-[38;2;248;248;242m [0m[38;2;253;151;31mFinding manual pages:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--locale[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLOCALE[0m[38;2;248;248;242m        define the locale for this particular man search[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--systems[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSYSTEM[0m[38;2;248;248;242m       use manual pages from other systems[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--manpath[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPATH[0m[38;2;248;248;242m         set search path for manual pages to PATH[0m
+[38;2;248;248;242m [0m[38;2;248;248;242mFinding manual pages:[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-L, --locale=LOCALE        define the locale for this particular man search[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-m, --systems=SYSTEM       use manual pages from other systems[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-M, --manpath=PATH         set search path for manual pages to PATH[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--sections[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLIST[0m[38;2;248;248;242m    use colon separated section list[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-S, -s, --sections=LIST    use colon separated section list[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--extension[0m[38;2;248;248;242m=[0m[38;2;253;151;31mEXTENSION[0m[38;2;248;248;242m  limit search to extension type EXTENSION[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-e, --extension=EXTENSION  limit search to extension type EXTENSION[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-case[0m[38;2;248;248;242m          look for pages case-insensitively (default)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--match-case[0m[38;2;248;248;242m           look for pages case-sensitively[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-i, --ignore-case          look for pages case-insensitively (default)[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-I, --match-case           look for pages case-sensitively[0m
 
-[38;2;248;248;242m      [0m[38;2;166;226;46m--regex[0m[38;2;248;248;242m                show all pages matching regex[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--wildcard[0m[38;2;248;248;242m             show all pages matching wildcard[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--regex                show all pages matching regex[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--wildcard             show all pages matching wildcard[0m
 
-[38;2;248;248;242m      [0m[38;2;166;226;46m--names-only[0m[38;2;248;248;242m           make --regex and --wildcard match page names only,[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--names-only           make --regex and --wildcard match page names only,[0m
 [38;2;248;248;242m                             not descriptions[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--all[0m[38;2;248;248;242m                  find all matching manual pages[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--update[0m[38;2;248;248;242m               force a cache consistency check[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-a, --all                  find all matching manual pages[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-u, --update               force a cache consistency check[0m
 
-[38;2;248;248;242m      [0m[38;2;166;226;46m--no-subpages[0m[38;2;248;248;242m          don't try subpages, e.g. 'man foo bar' => 'man[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--no-subpages          don't try subpages, e.g. 'man foo bar' => 'man[0m
 [38;2;248;248;242m                             foo-bar'[0m
 
-[38;2;248;248;242m [0m[38;2;253;151;31mControlling formatted output:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--pager[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPAGER[0m[38;2;248;248;242m          use program PAGER to display output[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--prompt[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTRING[0m[38;2;248;248;242m        provide the `less' pager with a prompt[0m
+[38;2;248;248;242m [0m[38;2;248;248;242mControlling formatted output:[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-P, --pager=PAGER          use program PAGER to display output[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-r, --prompt=STRING        provide the `less' pager with a prompt[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-7[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ascii[0m[38;2;248;248;242m                display ASCII translation of certain latin1 chars[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mENCODING[0m[38;2;248;248;242m    use selected output encoding[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--no-hyphenation[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--nh[0m[38;2;248;248;242m turn off hyphenation[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--no-justification[0m[38;2;248;248;242m,                              --nj   turn off justification[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--preprocessor[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTRING[0m[38;2;248;248;242m  STRING indicates which preprocessors to run:[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-7, --ascii                display ASCII translation of certain latin1 chars[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-E, --encoding=ENCODING    use selected output encoding[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--no-hyphenation, --nh turn off hyphenation[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--no-justification,                              --nj   turn off justification[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-p, --preprocessor=STRING  STRING indicates which preprocessors to run:[0m
 [38;2;248;248;242m                             e - [n]eqn, p - pic, t - tbl,[0m
 [38;2;248;248;242mg - grap, r - refer, v - vgrind[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--troff[0m[38;2;248;248;242m                use groff to format pages[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--troff-device[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mDEVICE[0m[38;2;248;248;242m]   use groff with selected device[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-t, --troff                use groff to format pages[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-T, --troff-device[=DEVICE]   use groff with selected device[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--html[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mBROWSER[0m[38;2;248;248;242m]       use www-browser or BROWSER to display HTML output[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--gxditview[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mRESOLUTION[0m[38;2;248;248;242m]   use groff and display through gxditview[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-H, --html[=BROWSER]       use www-browser or BROWSER to display HTML output[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-X, --gxditview[=RESOLUTION]   use groff and display through gxditview[0m
 [38;2;248;248;242m                             (X11):[0m
 [38;2;248;248;242m                             -X = -TX75, -X100 = -TX100, -X100-12 = -TX100-12[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ditroff[0m[38;2;248;248;242m              use groff and force it to produce ditroff[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-Z, --ditroff              use groff and force it to produce ditroff[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-?[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                 give this help list[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--usage[0m[38;2;248;248;242m                give a short usage message[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m              print program version[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-?, --help                 give this help list[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--usage                give a short usage message[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-V, --version              print program version[0m
 
 [38;2;248;248;242mMandatory or optional arguments to long options are also mandatory or optional[0m
 [38;2;248;248;242mfor any corresponding short options.[0m

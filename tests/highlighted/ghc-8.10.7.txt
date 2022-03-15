@@ -1,11 +1,11 @@
 [38;2;253;151;31mUsage:[0m
 
-[38;2;248;248;242m    ghc [command-line-options-and-input-files][0m
+[38;2;248;248;242m    [0m[38;2;248;248;242mghc [command-line-options-and-input-files][0m
 
 [38;2;248;248;242mTo compile and link a complete Haskell program, run the compiler like[0m
 [38;2;248;248;242mso:[0m
 
-[38;2;248;248;242m    ghc Main[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242mghc Main[0m
 
 [38;2;248;248;242mwhere the module Main is in a file named Main.hs (or Main.lhs) in the[0m
 [38;2;248;248;242mcurrent directory.  The other modules in the program will be located[0m
@@ -16,64 +16,64 @@
 [38;2;248;248;242minput file is guided through (some of the) possible phases of a[0m
 [38;2;248;248;242mcompilation:[0m
 
-[38;2;248;248;242m    - unlit:	extract code from a "literate program"[0m
-[38;2;248;248;242m    - hscpp:	run code through the C pre-processor (if -cpp flag given)[0m
-[38;2;248;248;242m    - hsc:	run the Haskell compiler proper[0m
-[38;2;248;248;242m    - gcc:	run the C compiler (if compiling via C)[0m
-[38;2;248;248;242m    - as:	run the assembler[0m
-[38;2;248;248;242m    - ld:	run the linker[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- unlit:	extract code from a "literate program"[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- hscpp:	run code through the C pre-processor (if -cpp flag given)[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- hsc:	run the Haskell compiler proper[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- gcc:	run the C compiler (if compiling via C)[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- as:	run the assembler[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- ld:	run the linker[0m
 
 [38;2;248;248;242mFor each input file, the phase to START with is determined by the[0m
 [38;2;248;248;242mfile's suffix:[0m
 
-[38;2;248;248;242m    - .lhs	literate Haskell		 unlit[0m
-[38;2;248;248;242m    - .hs	plain Haskell			 ghc[0m
-[38;2;248;248;242m    - .hc	C from the Haskell compiler	 gcc[0m
-[38;2;248;248;242m    - .c	C not from the Haskell compiler  gcc[0m
-[38;2;248;248;242m    - .s	assembly language		 as[0m
-[38;2;248;248;242m    - other	passed directly to the linker	 ld[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- .lhs	literate Haskell		 unlit[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- .hs	plain Haskell			 ghc[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- .hc	C from the Haskell compiler	 gcc[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- .c	C not from the Haskell compiler  gcc[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- .s	assembly language		 as[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m- other	passed directly to the linker	 ld[0m
 
 [38;2;248;248;242mThe phase at which to STOP processing is determined by a command-line[0m
 [38;2;248;248;242moption:[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m		stop after generating preprocessed, de-litted Haskell[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-E		stop after generating preprocessed, de-litted Haskell[0m
 [38;2;248;248;242m		     (used in conjunction with -cpp)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m		stop after generating C (.hc output)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m		stop after generating assembler (.s output)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m		stop after generating object files (.o output)[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-C		stop after generating C (.hc output)[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-S		stop after generating assembler (.s output)[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-c		stop after generating object files (.o output)[0m
 
 [38;2;253;151;31mOther commonly-used options are:[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m[[0m[38;2;253;151;31mn[0m[38;2;248;248;242m]	    Control verbosity (n is 0--5, normal verbosity level is 1,[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-v[n]	    Control verbosity (n is 0--5, normal verbosity level is 1,[0m
 [38;2;248;248;242m	              -v alone is equivalent to -v3)[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m		    An `optimising' package of compiler flags, for faster code[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-O		    An `optimising' package of compiler flags, for faster code[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-prof[0m[38;2;248;248;242m	    Compile for cost-centre profiling[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-prof	    Compile for cost-centre profiling[0m
 [38;2;248;248;242m		     (add -fprof-auto for automagic cost-centres on all[0m
 [38;2;248;248;242m		      top-level functions)[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-H14m[0m[38;2;248;248;242m	    Increase compiler's heap size (might make compilation[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-H14m	    Increase compiler's heap size (might make compilation[0m
 [38;2;248;248;242m		    faster, especially on large source files).[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m              Output Makefile rules recording the[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m-M              Output Makefile rules recording the[0m
 [38;2;248;248;242m		    dependencies of a list of Haskell files.[0m
 
 [38;2;248;248;242mGiven the above, here are some TYPICAL invocations of ghc:[0m
 
-[38;2;248;248;242m    # compile a Haskell module to a .o file, optimising:[0m
-[38;2;248;248;242m    % ghc -c -O Foo.hs[0m
-[38;2;248;248;242m    # link three .o files into an executable called "test":[0m
-[38;2;248;248;242m    % ghc -o test Foo.o Bar.o Baz.o[0m
-[38;2;248;248;242m    # compile a Haskell module to C (a .hc file), using a bigger heap:[0m
-[38;2;248;248;242m    % ghc -C -H16m Foo.hs[0m
-[38;2;248;248;242m    # compile Haskell-produced C (.hc) to assembly language:[0m
-[38;2;248;248;242m    % ghc -S Foo.hc[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m# compile a Haskell module to a .o file, optimising:[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m% ghc -c -O Foo.hs[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m# link three .o files into an executable called "test":[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m% ghc -o test Foo.o Bar.o Baz.o[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m# compile a Haskell module to C (a .hc file), using a bigger heap:[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m% ghc -C -H16m Foo.hs[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m# compile Haskell-produced C (.hc) to assembly language:[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m% ghc -S Foo.hc[0m
 
 [38;2;248;248;242mThe User's Guide has more information about GHC's *many* options.  An[0m
 [38;2;248;248;242monline copy can be found here:[0m
 
-[38;2;248;248;242m   http://www.haskell.org/ghc/docs/latest/html/users_guide/[0m
+[38;2;248;248;242m   [0m[38;2;248;248;242mhttp://www.haskell.org/ghc/docs/latest/html/users_guide/[0m
 
 [38;2;248;248;242mIf you *really* want to see every option, then you can pass[0m
 [38;2;248;248;242m'--show-options' to the compiler.[0m

@@ -7,31 +7,31 @@
 [38;2;253;151;31musage:[0m[38;2;248;248;242m sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file ...[0m
 
 [38;2;253;151;31mOptions:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--askpass[0m[38;2;248;248;242m                 use a helper program for password prompting[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--background[0m[38;2;248;248;242m              run command in the background[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--bell[0m[38;2;248;248;242m                    ring bell when prompting[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--close-from[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m[38;2;248;248;242m          close all file descriptors >= num[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--preserve-env[0m[38;2;248;248;242m            preserve user environment when running command[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--preserve-env[0m[38;2;248;248;242m=[0m[38;2;253;151;31mlist[0m[38;2;248;248;242m       preserve specific environment variables[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--edit[0m[38;2;248;248;242m                    edit files instead of running a command[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--group[0m[38;2;248;248;242m=[0m[38;2;253;151;31mgroup[0m[38;2;248;248;242m             run command as the specified group name or ID[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--set-home[0m[38;2;248;248;242m                set HOME variable to target user's home dir[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                    display help message and exit[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--host[0m[38;2;248;248;242m=[0m[38;2;253;151;31mhost[0m[38;2;248;248;242m               run command on host (if supported by plugin)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--login[0m[38;2;248;248;242m                   run login shell as the target user; a command may also be specified[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--remove-timestamp[0m[38;2;248;248;242m        remove timestamp file completely[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--reset-timestamp[0m[38;2;248;248;242m         invalidate timestamp file[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m                    list user's privileges or check a specific command; use twice for longer format[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--non-interactive[0m[38;2;248;248;242m         non-interactive mode, no prompts are used[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--preserve-groups[0m[38;2;248;248;242m         preserve group vector instead of setting to target's[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--prompt[0m[38;2;248;248;242m=[0m[38;2;253;151;31mprompt[0m[38;2;248;248;242m           use the specified password prompt[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--role[0m[38;2;248;248;242m=[0m[38;2;253;151;31mrole[0m[38;2;248;248;242m               create SELinux security context with specified role[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--stdin[0m[38;2;248;248;242m                   read password from standard input[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--shell[0m[38;2;248;248;242m                   run shell as the target user; a command may also be specified[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--type[0m[38;2;248;248;242m=[0m[38;2;253;151;31mtype[0m[38;2;248;248;242m               create SELinux security context with specified type[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--command-timeout[0m[38;2;248;248;242m=[0m[38;2;253;151;31mtimeout[0m[38;2;248;248;242m terminate command after the specified time limit[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--other-user[0m[38;2;248;248;242m=[0m[38;2;253;151;31muser[0m[38;2;248;248;242m         in list mode, display privileges for user[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--user[0m[38;2;248;248;242m=[0m[38;2;253;151;31muser[0m[38;2;248;248;242m               run command (or edit file) as specified user name or ID[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                 display version information and exit[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--validate[0m[38;2;248;248;242m                update user's timestamp without running a command[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114m--[0m[38;2;248;248;242m                            stop processing command line arguments[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-A, --askpass                 use a helper program for password prompting[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-b, --background              run command in the background[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-B, --bell                    ring bell when prompting[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-C, --close-from=num          close all file descriptors >= num[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-E, --preserve-env            preserve user environment when running command[0m
+[38;2;248;248;242m      [0m[38;2;248;248;242m--preserve-env=list       preserve specific environment variables[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-e, --edit                    edit files instead of running a command[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-g, --group=group             run command as the specified group name or ID[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-H, --set-home                set HOME variable to target user's home dir[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-h, --help                    display help message and exit[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-h, --host=host               run command on host (if supported by plugin)[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-i, --login                   run login shell as the target user; a command may also be specified[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-K, --remove-timestamp        remove timestamp file completely[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-k, --reset-timestamp         invalidate timestamp file[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-l, --list                    list user's privileges or check a specific command; use twice for longer format[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-n, --non-interactive         non-interactive mode, no prompts are used[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-P, --preserve-groups         preserve group vector instead of setting to target's[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-p, --prompt=prompt           use the specified password prompt[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-r, --role=role               create SELinux security context with specified role[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-S, --stdin                   read password from standard input[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-s, --shell                   run shell as the target user; a command may also be specified[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-t, --type=type               create SELinux security context with specified type[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-T, --command-timeout=timeout terminate command after the specified time limit[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-U, --other-user=user         in list mode, display privileges for user[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-u, --user=user               run command (or edit file) as specified user name or ID[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-V, --version                 display version information and exit[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-v, --validate                update user's timestamp without running a command[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--                            stop processing command line arguments[0m

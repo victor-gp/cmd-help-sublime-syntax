@@ -1,8 +1,8 @@
 [38;2;248;248;242mjq - commandline JSON processor [version 1.6][0m
 
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m	jq [options] <jq filter> [file...][0m
-[38;2;248;248;242m	jq [options] --args <jq filter> [strings...][0m
-[38;2;248;248;242m	jq [options] --jsonargs <jq filter> [JSON_TEXTS...][0m
+[38;2;248;248;242m	[0m[38;2;248;248;242mjq [options] --args <jq filter> [strings...][0m
+[38;2;248;248;242m	[0m[38;2;248;248;242mjq [options] --jsonargs <jq filter> [JSON_TEXTS...][0m
 
 [38;2;248;248;242mjq is a tool for processing JSON inputs, applying the given filter to[0m
 [38;2;248;248;242mits JSON text inputs and producing the filter's results as JSON on[0m
@@ -17,29 +17,29 @@
 
 [38;2;253;151;31mExample:[0m
 
-[38;2;248;248;242m	$ echo '{"foo": 0}' | jq .[0m
-[38;2;248;248;242m	{[0m
-[38;2;248;248;242m		"foo": 0[0m
-[38;2;248;248;242m	}[0m
+[38;2;248;248;242m	[0m[38;2;248;248;242m$ echo '{"foo": 0}' | jq .[0m
+[38;2;248;248;242m	[0m[38;2;248;248;242m{[0m
+[38;2;248;248;242m		[0m[38;2;248;248;242m"foo": 0[0m
+[38;2;248;248;242m	[0m[38;2;248;248;242m}[0m
 
 [38;2;253;151;31mSome of the options include:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m               compact instead of pretty-printed output;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m               use `null` as the single input value;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m               set the exit status code based on the output;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m               read (slurp) all inputs into an array; apply filter to it;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m               output raw strings, not JSON texts;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m               read raw strings, not JSON texts;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m               colorize JSON;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m               monochrome (don't colorize JSON);[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m               sort keys of objects on output;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--tab[0m[38;2;248;248;242m            use tabs for indentation;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--arg[0m[38;2;248;248;242m a v        set variable $a to value <v>;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--argjson[0m[38;2;248;248;242m a v    set variable $a to JSON value <v>;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--slurpfile[0m[38;2;248;248;242m a f  set variable $a to an array of JSON texts read from <f>;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--rawfile[0m[38;2;248;248;242m a f    set variable $a to a string consisting of the contents of <f>;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--args[0m[38;2;248;248;242m           remaining arguments are string arguments, not files;[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jsonargs[0m[38;2;248;248;242m       remaining arguments are JSON arguments, not files;[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114m--[0m[38;2;248;248;242m               terminates argument processing;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-c               compact instead of pretty-printed output;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-n               use `null` as the single input value;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-e               set the exit status code based on the output;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-s               read (slurp) all inputs into an array; apply filter to it;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-r               output raw strings, not JSON texts;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-R               read raw strings, not JSON texts;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-C               colorize JSON;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-M               monochrome (don't colorize JSON);[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-S               sort keys of objects on output;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--tab            use tabs for indentation;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--arg a v        set variable $a to value <v>;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--argjson a v    set variable $a to JSON value <v>;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--slurpfile a f  set variable $a to an array of JSON texts read from <f>;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--rawfile a f    set variable $a to a string consisting of the contents of <f>;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--args           remaining arguments are string arguments, not files;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--jsonargs       remaining arguments are JSON arguments, not files;[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--               terminates argument processing;[0m
 
 [38;2;248;248;242mNamed arguments are also available as $ARGS.named[], while[0m
 [38;2;248;248;242mpositional arguments are available as $ARGS.positional[].[0m

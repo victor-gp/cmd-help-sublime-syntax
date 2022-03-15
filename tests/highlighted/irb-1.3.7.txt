@@ -1,40 +1,40 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m  irb.rb [options] [programfile] [arguments][0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m                Suppress read of ~/.irbrc[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m                Set $DEBUG to true (same as `ruby -d')[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m [0m[38;2;253;151;31mload-module[0m[38;2;248;248;242m    Same as `ruby -r'[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m [0m[38;2;253;151;31mpath[0m[38;2;248;248;242m           Specify $LOAD_PATH directory[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m                Same as `ruby -U`[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m [0m[38;2;253;151;31menc[0m[38;2;248;248;242m            Same as `ruby -E`[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m                Same as `ruby -w`[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m[[0m[38;2;253;151;31mlevel=2[0m[38;2;248;248;242m]       Same as `ruby -W`[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--context-mode[0m[38;2;248;248;242m [0m[38;2;253;151;31mn[0m[38;2;248;248;242m  Set n[0-4] to method to create Binding Object,[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-f                Suppress read of ~/.irbrc[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-d                Set $DEBUG to true (same as `ruby -d')[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-r load-module    Same as `ruby -r'[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-I path           Specify $LOAD_PATH directory[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-U                Same as `ruby -U`[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-E enc            Same as `ruby -E`[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-w                Same as `ruby -w`[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-W[level=2]       Same as `ruby -W`[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--context-mode n  Set n[0-4] to method to create Binding Object,[0m
 [38;2;248;248;242m                    when new workspace was created[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--echo[0m[38;2;248;248;242m            Show result(default)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--noecho[0m[38;2;248;248;242m          Don't show result[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--inspect[0m[38;2;248;248;242m         Use `inspect' for output[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--noinspect[0m[38;2;248;248;242m       Don't use inspect for output[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--multiline[0m[38;2;248;248;242m       Use multiline editor module[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--nomultiline[0m[38;2;248;248;242m     Don't use multiline editor module[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--singleline[0m[38;2;248;248;242m      Use singleline editor module[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--nosingleline[0m[38;2;248;248;242m    Don't use singleline editor module[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--colorize[0m[38;2;248;248;242m        Use colorization[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--nocolorize[0m[38;2;248;248;242m      Don't use colorization[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--prompt[0m[38;2;248;248;242m [0m[38;2;253;151;31mprompt-mode[0m[38;2;248;248;242m/[0m[38;2;166;226;46m--prompt-mode[0m[38;2;248;248;242m [0m[38;2;253;151;31mprompt-mode[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--echo            Show result(default)[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--noecho          Don't show result[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--inspect         Use `inspect' for output[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--noinspect       Don't use inspect for output[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--multiline       Use multiline editor module[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--nomultiline     Don't use multiline editor module[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--singleline      Use singleline editor module[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--nosingleline    Don't use singleline editor module[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--colorize        Use colorization[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--nocolorize      Don't use colorization[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--prompt prompt-mode/--prompt-mode prompt-mode[0m
 [38;2;248;248;242m                    Switch prompt mode. Pre-defined prompt modes are[0m
 [38;2;248;248;242m                    `default', `simple', `xmp' and `inf-ruby'[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--inf-ruby-mode[0m[38;2;248;248;242m   Use prompt appropriate for inf-ruby-mode on emacs.[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--inf-ruby-mode   Use prompt appropriate for inf-ruby-mode on emacs.[0m
 [38;2;248;248;242m                    Suppresses --multiline and --singleline.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--sample-book-mode[0m[38;2;248;248;242m/[0m[38;2;166;226;46m--simple-prompt[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--sample-book-mode/--simple-prompt[0m
 [38;2;248;248;242m                    Simple prompt mode[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--noprompt[0m[38;2;248;248;242m        No prompt mode[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--single-irb[0m[38;2;248;248;242m      Share self with sub-irb.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--tracer[0m[38;2;248;248;242m          Display trace for each execution of commands.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--back-trace-limit[0m[38;2;248;248;242m [0m[38;2;253;151;31mn[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--noprompt        No prompt mode[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--single-irb      Share self with sub-irb.[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--tracer          Display trace for each execution of commands.[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--back-trace-limit n[0m
 [38;2;248;248;242m                    Display backtrace top n and tail n. The default[0m
 [38;2;248;248;242m                    value is 16.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m         Show details[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--noverbose[0m[38;2;248;248;242m       Don't show details[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m	    Print the version of irb[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m        Print help[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114m--[0m[38;2;248;248;242m                Separate options of irb from the list of command-line args[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--verbose         Show details[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--noverbose       Don't show details[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-v, --version	    Print the version of irb[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m-h, --help        Print help[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m--                Separate options of irb from the list of command-line args[0m
 
