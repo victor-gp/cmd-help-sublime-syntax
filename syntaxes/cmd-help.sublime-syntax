@@ -72,9 +72,8 @@ contexts:
     - match: '^ {3,8}(?=\S)'
       set: indent-3-8
     - match: '^\t{1,2}(?=\S)'
-      # set: indent-3-8 #todo
-      set: line-indent-content
-    - include: eol-pop # necessary for empty lines
+      set: indent-3-8
+    - include: eol-pop # needed for empty lines
     - include: else-pop
 
   indent-0:
@@ -93,10 +92,6 @@ contexts:
     - meta_content_scope: indent-3-8
     - include: maybe-option
     - include: else-pop
-
-  line-indent-content:
-    - meta_content_scope: line-indent
-    - include: eol-pop
 
   pre-heading: # include only
     - match: '(?i:usage):(?=.+\n)'
