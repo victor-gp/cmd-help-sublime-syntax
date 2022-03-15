@@ -507,13 +507,13 @@
 
 [38;2;248;248;242mThe following options allow the line number display to be customized:[0m
 
-[38;2;248;248;242m--line-numbers-left-format:  Change the contents of the left column[0m
-[38;2;248;248;242m--line-numbers-right-format: Change the contents of the right column[0m
-[38;2;248;248;242m--line-numbers-left-style:   Change the style applied to the left column[0m
-[38;2;248;248;242m--line-numbers-right-style:  Change the style applied to the right column[0m
-[38;2;248;248;242m--line-numbers-minus-style:  Change the style applied to line numbers in minus lines[0m
-[38;2;248;248;242m--line-numbers-zero-style:   Change the style applied to line numbers in unchanged lines[0m
-[38;2;248;248;242m--line-numbers-plus-style:   Change the style applied to line numbers in plus lines[0m
+[38;2;166;226;46m--line-numbers-left-format:[0m[38;2;248;248;242m  Change the contents of the left column[0m
+[38;2;166;226;46m--line-numbers-right-format:[0m[38;2;248;248;242m Change the contents of the right column[0m
+[38;2;166;226;46m--line-numbers-left-style:[0m[38;2;248;248;242m   Change the style applied to the left column[0m
+[38;2;166;226;46m--line-numbers-right-style:[0m[38;2;248;248;242m  Change the style applied to the right column[0m
+[38;2;166;226;46m--line-numbers-minus-style:[0m[38;2;248;248;242m  Change the style applied to line numbers in minus lines[0m
+[38;2;166;226;46m--line-numbers-zero-style:[0m[38;2;248;248;242m   Change the style applied to line numbers in unchanged lines[0m
+[38;2;166;226;46m--line-numbers-plus-style:[0m[38;2;248;248;242m   Change the style applied to line numbers in plus lines[0m
 
 [38;2;248;248;242mOptions --line-numbers-left-format and --line-numbers-right-format allow you to change the contents[0m
 [38;2;248;248;242mof the line number columns. Their values are arbitrary format strings, which are allowed to contain[0m
