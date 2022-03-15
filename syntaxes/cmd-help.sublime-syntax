@@ -68,11 +68,11 @@ contexts:
     - match: '^(?=\S)'
       set: indent-0
     - match: '^ {1,2}(?=\S)'
-      set: indent-2
+      set: indent-1-2
     - match: '^ {3,8}(?=\S)'
-      set: indent-8
+      set: indent-3-8
     - match: '^\t{1,2}(?=\S)'
-      # set: indent-8 #todo
+      # set: indent-3-8 #todo
       set: line-indent-content
     - include: eol-pop # necessary for empty lines
     - include: else-pop
@@ -83,14 +83,14 @@ contexts:
     - include: maybe-option
     - include: else-pop
 
-  indent-2:
-    - meta_content_scope: indent-2
+  indent-1-2:
+    - meta_content_scope: indent-1-2
     - include: maybe-option
     - include: pre-heading
     - include: else-pop
 
-  indent-8:
-    - meta_content_scope: indent-8
+  indent-3-8:
+    - meta_content_scope: indent-3-8
     - include: maybe-option
     - include: else-pop
 
