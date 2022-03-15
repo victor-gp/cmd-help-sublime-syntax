@@ -51,6 +51,7 @@ contexts:
   ### helpers ##################################################################
 
   else-pop:
+    - include: eol-pop # '.' doesn't match '\n'
     - match: '(?=.)'
       pop: true
 
@@ -73,7 +74,6 @@ contexts:
       set: indent-3-8
     - match: '^\t{1,2}(?=\S)'
       set: indent-3-8
-    - include: eol-pop # needed for empty lines
     - include: else-pop
 
   indent-0:
@@ -135,7 +135,6 @@ contexts:
       # alt: match directly in option-argument and colorize '=' too?
     - match: '\[=|\['
       set: square-brackets-after-option
-    - include: eol-pop
     - include: else-pop
 
   connect-option-alias:
@@ -185,5 +184,4 @@ contexts:
     # - match: ''
     #   set: def-option-post
     - include: connect-option-alias
-    - include: eol-pop
     - include: else-pop
