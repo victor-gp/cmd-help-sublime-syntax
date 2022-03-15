@@ -1,7 +1,7 @@
 [38;2;248;248;242m[32mdelta[0m 0.11.3[0m
-[38;2;253;151;31mA viewer for git and diff output[0m
+[38;2;248;248;242mA viewer for git and diff output[0m
 [38;2;248;248;242m[33m[0m
-[38;2;253;151;31mUSAGE:[0m[38;2;248;248;242m[0m[0m
+[38;2;248;248;242mUSAGE:[0m[0m
 [38;2;248;248;242m    delta [FLAGS] [OPTIONS] [ARGS][0m
 
 [38;2;248;248;242m[33mFLAGS:[0m
@@ -356,7 +356,7 @@
 [38;2;248;248;242m                    equivalent to `diff -u file_1 file_2 | delta`[0m
 [38;2;248;248;242m    [32m<plus-file>[0m     Second file to be compared when delta is being used in diff mode[0m
 
-[38;2;253;151;31mGIT CONFIG[0m
+[38;2;248;248;242mGIT CONFIG[0m
 [38;2;248;248;242m----------[0m
 
 [38;2;248;248;242mBy default, delta takes settings from a section named "delta" in git config files, if one is[0m
@@ -369,7 +369,7 @@
 [38;2;248;248;242m    line-numbers = true[0m
 [38;2;248;248;242m    zero-style = dim syntax[0m
 
-[38;2;253;151;31mFEATURES[0m
+[38;2;248;248;242mFEATURES[0m
 [38;2;248;248;242m--------[0m
 [38;2;248;248;242mA feature is a named collection of delta options in git config. An example is:[0m
 
@@ -388,14 +388,14 @@
 
 [38;2;248;248;242mIf more than one feature sets the same option, the last one wins.[0m
 
-[38;2;253;151;31mSTYLES[0m
+[38;2;248;248;242mSTYLES[0m
 [38;2;248;248;242m------[0m
 
 [38;2;248;248;242mAll options that have a name like --*-style work the same way. It is very similar to how[0m
 [38;2;248;248;242mcolors/styles are specified in a gitconfig file:[0m
 [38;2;248;248;242mhttps://git-scm.com/docs/git-config#Documentation/git-config.txt-color[0m
 
-[38;2;253;151;31mHere is an example:[0m
+[38;2;248;248;242mHere is an example:[0m
 
 [38;2;248;248;242m--minus-style 'red bold ul "#ffeeee"'[0m
 
@@ -445,7 +445,7 @@
 [38;2;248;248;242m- The minimal style specification is the empty string ''. This means: do not apply any colors or[0m
 [38;2;248;248;242m  styling to the element in question.[0m
 
-[38;2;253;151;31mCOLORS[0m
+[38;2;248;248;242mCOLORS[0m
 [38;2;248;248;242m------[0m
 
 [38;2;248;248;242mThere are four ways to specify a color (this section applies to foreground and background colors[0m
@@ -458,7 +458,7 @@
 [38;2;248;248;242m2. RGB hex code[0m
 
 [38;2;248;248;242m   An example of using an RGB hex code is:[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m--file-style[0m[38;2;248;248;242m="#0e7c0e"[0m
+[38;2;248;248;242m   --file-style="#0e7c0e"[0m
 
 [38;2;248;248;242m3. ANSI color name[0m
 
@@ -469,7 +469,7 @@
 [38;2;248;248;242m   brightblack, brightred, brightgreen, brightyellow, brightblue, brightmagenta, brightcyan, brightwhite.[0m
 
 [38;2;248;248;242m   An example of using an ANSI color name is:[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m--file-style[0m[38;2;248;248;242m="green"[0m
+[38;2;248;248;242m   --file-style="green"[0m
 
 [38;2;248;248;242m   Unlike RGB hex codes, ANSI color names are just names: you can choose the exact color that each[0m
 [38;2;248;248;242m   name corresponds to in the settings of your terminal application (the application you use to[0m
@@ -482,7 +482,7 @@
 [38;2;248;248;242m4. ANSI color number[0m
 
 [38;2;248;248;242m   An example of using an ANSI color number is:[0m
-[38;2;248;248;242m   [0m[38;2;166;226;46m--file-style[0m[38;2;248;248;242m=28[0m
+[38;2;248;248;242m   --file-style=28[0m
 
 [38;2;248;248;242m   There are 256 ANSI color numbers: 0-255. The first 16 are the same as the colors described in[0m
 [38;2;248;248;242m   the "ANSI color name" section above. See https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit.[0m
@@ -490,7 +490,7 @@
 [38;2;248;248;242m   support 24-bit color).[0m
 
 
-[38;2;253;151;31mLINE NUMBERS[0m
+[38;2;248;248;242mLINE NUMBERS[0m
 [38;2;248;248;242m------------[0m
 
 [38;2;248;248;242mTo display line numbers, use --line-numbers.[0m
@@ -507,13 +507,13 @@
 
 [38;2;248;248;242mThe following options allow the line number display to be customized:[0m
 
-[38;2;166;226;46m--line-numbers-left-format:[0m[38;2;248;248;242m  Change the contents of the left column[0m
-[38;2;166;226;46m--line-numbers-right-format:[0m[38;2;248;248;242m Change the contents of the right column[0m
-[38;2;166;226;46m--line-numbers-left-style:[0m[38;2;248;248;242m   Change the style applied to the left column[0m
-[38;2;166;226;46m--line-numbers-right-style:[0m[38;2;248;248;242m  Change the style applied to the right column[0m
-[38;2;166;226;46m--line-numbers-minus-style:[0m[38;2;248;248;242m  Change the style applied to line numbers in minus lines[0m
-[38;2;166;226;46m--line-numbers-zero-style:[0m[38;2;248;248;242m   Change the style applied to line numbers in unchanged lines[0m
-[38;2;166;226;46m--line-numbers-plus-style:[0m[38;2;248;248;242m   Change the style applied to line numbers in plus lines[0m
+[38;2;248;248;242m--line-numbers-left-format:  Change the contents of the left column[0m
+[38;2;248;248;242m--line-numbers-right-format: Change the contents of the right column[0m
+[38;2;248;248;242m--line-numbers-left-style:   Change the style applied to the left column[0m
+[38;2;248;248;242m--line-numbers-right-style:  Change the style applied to the right column[0m
+[38;2;248;248;242m--line-numbers-minus-style:  Change the style applied to line numbers in minus lines[0m
+[38;2;248;248;242m--line-numbers-zero-style:   Change the style applied to line numbers in unchanged lines[0m
+[38;2;248;248;242m--line-numbers-plus-style:   Change the style applied to line numbers in plus lines[0m
 
 [38;2;248;248;242mOptions --line-numbers-left-format and --line-numbers-right-format allow you to change the contents[0m
 [38;2;248;248;242mof the line number columns. Their values are arbitrary format strings, which are allowed to contain[0m

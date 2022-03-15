@@ -1,8 +1,7 @@
 # SYNTAX TEST "cmd-help.sublime-syntax"
 
 [32mdelta[0m 0.11.3
-# <- text.cmd-help
-#todo: if the help message has any color escape codes, abort
+# <- - text.cmd-help
 A viewer for git and diff output
 [33m
 USAGE:[0m
