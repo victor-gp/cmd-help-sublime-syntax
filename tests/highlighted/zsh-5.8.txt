@@ -196,7 +196,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--xtrace[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--zle[0m
 
-[38;2;248;248;242mOption aliases:[0m
+[38;2;253;151;31mOption aliases:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--braceexpand[0m[38;2;248;248;242m            equivalent to --no-ignorebraces[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--dotglob[0m[38;2;248;248;242m                equivalent to --globdots[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--hashall[0m[38;2;248;248;242m                equivalent to --hashcmds[0m

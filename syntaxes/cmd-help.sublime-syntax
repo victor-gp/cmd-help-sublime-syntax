@@ -135,6 +135,7 @@ contexts:
       # alt: match directly in option-argument and colorize '=' too?
     - match: '\[=|\['
       set: square-brackets-after-option
+    - include: eol-pop
     - include: else-pop
 
   connect-option-alias:
@@ -184,4 +185,5 @@ contexts:
     # - match: ''
     #   set: def-option-post
     - include: connect-option-alias
+    - include: eol-pop
     - include: else-pop
