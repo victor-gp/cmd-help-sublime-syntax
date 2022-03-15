@@ -80,18 +80,18 @@ contexts:
   indent-0:
     - meta_content_scope: indent-0
     - include: pre-heading
-    - include: def-option
+    - include: maybe-option
     - include: else-pop
 
   indent-2:
     - meta_content_scope: indent-2
-    - include: def-option
+    - include: maybe-option
     - include: pre-heading
     - include: else-pop
 
   indent-8:
     - meta_content_scope: indent-8
-    - include: def-option
+    - include: maybe-option
     - include: else-pop
 
   line-indent-content:
@@ -113,7 +113,11 @@ contexts:
     - include: else-pop
     # - match: '{{any_word}}( {{any_word}})*:\n'
     #   scope: *SECTION_HEADING_SCOPE
-    #   set: else-skip
+    #   set: then-pop
+
+  maybe-option: # include-only
+    - match: '(?=-)'
+      set: def-option
 
   def-option:
     - match: '---'
@@ -121,7 +125,7 @@ contexts:
       pop: true
     - match: '--(?=\s)'
       scope: *END_OF_OPTIONS_SCOPE
-      pop: true
+      set: then-pop
     - match: '-{{option_name}}'
       scope: *DEF_OPTION_SCOPE
       set: def-option-post
