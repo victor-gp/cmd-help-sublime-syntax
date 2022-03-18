@@ -19,7 +19,7 @@
 [38;2;248;248;242m	[0m[38;2;166;226;46m--verbose[0m
 [38;2;248;248;242m	[0m[38;2;166;226;46m--version[0m
 [38;2;253;151;31mShell options:[0m
-[38;2;248;248;242m	[0m[38;2;166;226;46m-ilrsD[0m[38;2;248;248;242m or [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m command or -O shopt_option		(invocation only)[0m
+[38;2;248;248;242m	[0m[38;2;166;226;46m-ilrsD[0m[38;2;248;248;242m or [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m [0m[38;2;253;151;31mcommand[0m[38;2;248;248;242m or [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m [0m[38;2;253;151;31mshopt_option[0m[38;2;248;248;242m		(invocation only)[0m
 [38;2;248;248;242m	[0m[38;2;166;226;46m-abefhkmnptuvxBCHP[0m[38;2;248;248;242m or [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m [0m[38;2;253;151;31moption[0m
 [38;2;248;248;242mType `bash -c "help set"' for more information about shell options.[0m
 [38;2;248;248;242mType `bash -c help' for more information about shell builtin commands.[0m

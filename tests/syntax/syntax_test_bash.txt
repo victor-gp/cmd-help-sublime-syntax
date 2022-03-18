@@ -23,9 +23,10 @@ GNU long options:
 	--version
 Shell options:
 	-ilrsD or -c command or -O shopt_option		(invocation only)
-	        # ^^ entity.name.function.option.cmd-help
-#                ^^^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: get this one right
+	#         ^^ entity.name.function.option.cmd-help
+	#            ^^^^^^^ variable.parameter.option-argument.cmd-help
+	#                       ^^ entity.name.function.option.cmd-help
+	#                          ^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
 	-abefhkmnptuvxBCHP or -o option
 Type `bash -c "help set"' for more information about shell options.
 Type `bash -c help' for more information about shell builtin commands.
