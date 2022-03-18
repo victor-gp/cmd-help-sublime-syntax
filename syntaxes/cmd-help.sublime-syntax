@@ -202,8 +202,9 @@ contexts:
   square-brackets-after-option:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPE
     - match: '(?=])'
-      #fixme: should consume (no lookahead), this forces else-pop on option-argument-post
-      set: option-argument-post
+      set:
+        - match: ']'
+          set: option-argument-post
 
   colon-after-option:
     - match: '<.*?>'

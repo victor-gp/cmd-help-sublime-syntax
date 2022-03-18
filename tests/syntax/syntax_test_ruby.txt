@@ -12,7 +12,9 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   -e 'command'    one line of script. Several -e's allowed. Omit [programfile]
   -Eex[:in], --encoding=ex[:in]
 #      ^^^ variable.parameter.option-argument.cmd-help
-#                      ^^^^^^^^ - variable.parameter.option-argument.cmd-help
+#                       ^^ variable.parameter.option-argument.cmd-help
+#                          ^^^ - variable.parameter.option-argument.cmd-help
+#nice: scope this as option argument too
                   specify the default external and internal character encodings
   -Fpattern       split() pattern for autosplit (-a)
   -i[extension]   edit ARGV files in place (make backup if extension supplied)

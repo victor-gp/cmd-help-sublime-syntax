@@ -231,7 +231,7 @@
 [38;2;248;248;242m           character and all other characters are taken literally (including newlines and[0m
 [38;2;248;248;242m           quotes).[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m[[0m[38;2;253;151;31m<mode>[0m[38;2;248;248;242m], --untracked-files[=<mode>][0m
+[38;2;248;248;242m       [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m[[0m[38;2;253;151;31m<mode>[0m[38;2;248;248;242m], [0m[38;2;166;226;46m--untracked-files[0m[38;2;248;248;242m[=[0m[38;2;253;151;31m<mode>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m           Show untracked files.[0m
 
 [38;2;248;248;242m           The mode parameter is optional (defaults to all), and is used to specify the handling[0m
@@ -275,7 +275,7 @@
 [38;2;248;248;242m           Do not include the output of git-status(1) in the commit message template when using[0m
 [38;2;248;248;242m           an editor to prepare the default commit message.[0m
 
-[38;2;248;248;242m       [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m[[0m[38;2;253;151;31m<keyid>[0m[38;2;248;248;242m], --gpg-sign[=<keyid>][0m
+[38;2;248;248;242m       [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m[[0m[38;2;253;151;31m<keyid>[0m[38;2;248;248;242m], [0m[38;2;166;226;46m--gpg-sign[0m[38;2;248;248;242m[=[0m[38;2;253;151;31m<keyid>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m           GPG-sign commits. The keyid argument is optional and defaults to the committer[0m
 [38;2;248;248;242m           identity; if specified, it must be stuck to the option without a space.[0m
 
