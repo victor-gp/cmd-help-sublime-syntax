@@ -166,6 +166,8 @@ contexts:
       set: option-def+square-bracket
     - match: ':'
       set: option-def+colon
+    - match: ','
+      set: option-def+comma
     - include: else-pop
 
   option-def-connectors:
@@ -221,10 +223,18 @@ contexts:
       set: option-argument-post
     - include: else-pop
 
+  option-def+comma:
+    - match: '<.*?>'
+      scope: *OPTION_ARGUMENT_SCOPE
+      set: option-argument-post
+    - include: else-pop
+
   option-argument-post:
     - match: '({{ellipsis}})?'
       scope: *OPTION_ARGUMENT_SCOPE
     # - match: ''
     #   set: option-def-post
     - include: option-def-connectors
+    - match: ',\['
+      set: option-def+square-bracket
     - include: else-pop

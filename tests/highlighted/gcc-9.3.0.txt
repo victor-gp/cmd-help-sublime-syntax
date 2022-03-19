@@ -22,9 +22,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-print-multi-os-directory[0m[38;2;248;248;242m Display the relative path to OS libraries.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-print-sysroot[0m[38;2;248;248;242m           Display the target libraries directory.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-print-sysroot-headers-suffix[0m[38;2;248;248;242m Display the sysroot suffix used to find headers.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Wa[0m[38;2;248;248;242m,<options>            Pass comma-separated <options> on to the assembler.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Wp[0m[38;2;248;248;242m,<options>            Pass comma-separated <options> on to the preprocessor.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Wl[0m[38;2;248;248;242m,<options>            Pass comma-separated <options> on to the linker.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Wa[0m[38;2;248;248;242m,[0m[38;2;253;151;31m<options>[0m[38;2;248;248;242m            Pass comma-separated <options> on to the assembler.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Wp[0m[38;2;248;248;242m,[0m[38;2;253;151;31m<options>[0m[38;2;248;248;242m            Pass comma-separated <options> on to the preprocessor.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Wl[0m[38;2;248;248;242m,[0m[38;2;253;151;31m<options>[0m[38;2;248;248;242m            Pass comma-separated <options> on to the linker.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Xassembler[0m[38;2;248;248;242m [0m[38;2;253;151;31m<arg>[0m[38;2;248;248;242m        Pass <arg> on to the assembler.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Xpreprocessor[0m[38;2;248;248;242m [0m[38;2;253;151;31m<arg>[0m[38;2;248;248;242m     Pass <arg> on to the preprocessor.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Xlinker[0m[38;2;248;248;242m [0m[38;2;253;151;31m<arg>[0m[38;2;248;248;242m           Pass <arg> on to the linker.[0m
