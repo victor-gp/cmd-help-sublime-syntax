@@ -5,7 +5,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Cdirectory[0m[38;2;248;248;242m     cd to directory before executing your script[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m     set debugging flags (set $DEBUG to true)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m [0m[38;2;253;151;31m'command'[0m[38;2;248;248;242m    one line of script. Several -e's allowed. Omit [programfile][0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Eex[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:in[0m[38;2;248;248;242m], [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mex[0m[38;2;248;248;242m[:in][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Eex[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:in[0m[38;2;248;248;242m], [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mex[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:in[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  specify the default external and internal character encodings[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Fpattern[0m[38;2;248;248;242m       split() pattern for autosplit (-a)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m[[0m[38;2;253;151;31mextension[0m[38;2;248;248;242m]   edit ARGV files in place (make backup if extension supplied)[0m
@@ -24,9 +24,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit[0m[38;2;248;248;242m           enable JIT with default options (experimental)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-[0m[38;2;248;248;242m[[0m[38;2;253;151;31moption[0m[38;2;248;248;242m]  enable JIT with an option (experimental)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--copyright[0m[38;2;248;248;242m     print the copyright[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--dump[0m[38;2;248;248;242m={[0m[38;2;253;151;31minsns|parsetree|...[0m[38;2;248;248;242m}[,...][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--dump[0m[38;2;248;248;242m={[0m[38;2;253;151;31minsns|parsetree|...[0m[38;2;248;248;242m}[[0m[38;2;253;151;31m,...[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  dump debug information. see below for available dump list[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--enable[0m[38;2;248;248;242m={[0m[38;2;253;151;31mgems|rubyopt|...[0m[38;2;248;248;242m}[,...], --disable={gems|rubyopt|...}[,...][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--enable[0m[38;2;248;248;242m={[0m[38;2;253;151;31mgems|rubyopt|...[0m[38;2;248;248;242m}[[0m[38;2;253;151;31m,...[0m[38;2;248;248;242m], [0m[38;2;166;226;46m--disable[0m[38;2;248;248;242m={[0m[38;2;253;151;31mgems|rubyopt|...[0m[38;2;248;248;242m}[[0m[38;2;253;151;31m,...[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  enable or disable features. see below for available features[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--external-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--internal-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m
 [38;2;248;248;242m                  specify the default external or internal character encoding[0m

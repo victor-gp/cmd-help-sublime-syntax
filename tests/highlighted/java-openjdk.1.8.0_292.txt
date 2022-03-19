@@ -40,12 +40,12 @@
 [38;2;248;248;242m                  enable system assertions[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-dsa[0m[38;2;248;248;242m | [0m[38;2;166;226;46m-disablesystemassertions[0m
 [38;2;248;248;242m                  disable system assertions[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-agentlib[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<libname>[0m[38;2;248;248;242m[=<options>][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-agentlib[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<libname>[0m[38;2;248;248;242m[=[0m[38;2;253;151;31m<options>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  load native agent library <libname>, e.g. -agentlib:hprof[0m
 [38;2;248;248;242m                  see also, -agentlib:jdwp=help and -agentlib:hprof=help[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-agentpath[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<pathname>[0m[38;2;248;248;242m[=<options>][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-agentpath[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<pathname>[0m[38;2;248;248;242m[=[0m[38;2;253;151;31m<options>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  load native agent library by full pathname[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-javaagent[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<jarpath>[0m[38;2;248;248;242m[=<options>][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-javaagent[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<jarpath>[0m[38;2;248;248;242m[=[0m[38;2;253;151;31m<options>[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  load Java programming language agent, see java.lang.instrument[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-splash[0m[38;2;248;248;242m:[0m[38;2;253;151;31m<imagepath>[0m
 [38;2;248;248;242m                  show splash screen with specified image[0m

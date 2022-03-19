@@ -48,8 +48,7 @@ where options include:
                   disable system assertions
     -agentlib:<libname>[=<options>]
 #             ^^^^^^^^^ variable.parameter.option-argument.cmd-help
-#                        ^^^^^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: handle these
+#                        ^^^^^^^^^ variable.parameter.option-argument.cmd-help
                   load native agent library <libname>, e.g. -agentlib:hprof
                   see also, -agentlib:jdwp=help and -agentlib:hprof=help
     -agentpath:<pathname>[=<options>]

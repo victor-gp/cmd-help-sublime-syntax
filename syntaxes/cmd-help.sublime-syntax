@@ -242,11 +242,13 @@ contexts:
           set: option-argument-post
 
   option-argument-post:
+    - include: option-def-connectors
     - match: '({{ellipsis}})?'
       scope: *OPTION_ARGUMENT_SCOPE
     # - match: ''
     #   set: option-def-post
-    - include: option-def-connectors
+    - match: '\[=|\['
+      set: option-def+square-bracket
     - match: ',\['
       set: option-def+square-bracket
     - include: else-pop
