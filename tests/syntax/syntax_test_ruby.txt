@@ -39,6 +39,8 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   --dump={insns|parsetree|...}[,...]
 #         ^^^^^^^^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
 #                              ^^^^ variable.parameter.option-argument.cmd-help
+#              ^ variable.parameter.option-argument.cmd-help
+# nice: de-scope '|' enum separators
                   dump debug information. see below for available dump list
   --enable={gems|rubyopt|...}[,...], --disable={gems|rubyopt|...}[,...]
                   enable or disable features. see below for available features

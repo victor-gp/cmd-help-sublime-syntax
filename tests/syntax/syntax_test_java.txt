@@ -49,6 +49,7 @@ where options include:
     -agentlib:<libname>[=<options>]
 #             ^^^^^^^^^ variable.parameter.option-argument.cmd-help
 #                        ^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#nice: maybe I should scope ':' as option argument cause it's required?
                   load native agent library <libname>, e.g. -agentlib:hprof
                   see also, -agentlib:jdwp=help and -agentlib:hprof=help
     -agentpath:<pathname>[=<options>]
