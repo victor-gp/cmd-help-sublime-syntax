@@ -52,10 +52,6 @@ contexts:
     - match: '^'
       push: [line, line-begin]
 
-  sink:
-    - clear_scopes: true
-    - meta_include_prototype: false
-
   line: # stack lv 1
     - match: '$'
       pop: true
@@ -74,6 +70,10 @@ contexts:
   then-pop:
     - match: ''
       pop: true
+
+  sink:
+    - clear_scopes: true
+    - meta_include_prototype: false
 
   ### stack lv 2 ###############################################################
 
@@ -102,8 +102,6 @@ contexts:
     - include: maybe-option
     - include: else-pop
 
-  # maybe-x contexts can be included sequentially for OR-like behavior
-
   maybe-heading:
     - include: heading-specials
     - match: '(?=.{1,40}\n)'
@@ -114,6 +112,8 @@ contexts:
     - include: option-def-specials
     - match: '(?=-)'
       set: option-def
+
+  ### section headings #########################################################
 
   heading-general:
     - match: '{{leading_word}}( {{any_word}})*:?\n'
@@ -128,9 +128,12 @@ contexts:
     - match: '(?i:usage):(?=.+\n)'
       scope: *INLINE_USAGE_SCOPE
       set: then-pop
+    # python argparse
     - match: '(positional arguments|optional arguments|options):\n'
       scope: *SECTION_HEADING_SCOPE
       set: then-pop
+
+  ### option definitions #######################################################
 
   option-def:
     - match: '---'
@@ -178,6 +181,8 @@ contexts:
       set: option-def
     - match: '\s+(?=-)'
       set: option-def
+
+  ### option arguments #########################################################
 
   space-after-option:
     - match: '<.*?>'
