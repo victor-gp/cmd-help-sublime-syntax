@@ -156,19 +156,19 @@ contexts:
       set: option-def-post
 
   option-def-post:
-    - include: connect-option-alias
+    - include: option-def-connectors
     - match: ' '
-      set: space-after-option
+      set: option-def+space
     - match: '='
-      set: equals-after-option
+      set: option-def+equals
       # alt: match directly in option-argument and colorize '=' too?
     - match: '\[=|\['
-      set: square-brackets-after-option
+      set: option-def+square-bracket
     - match: ':'
-      set: colon-after-option
+      set: option-def+colon
     - include: else-pop
 
-  connect-option-alias:
+  option-def-connectors:
     - match: ', '
       set: option-def
     - match: ' \| '
@@ -184,7 +184,7 @@ contexts:
 
   ### option arguments #########################################################
 
-  space-after-option:
+  option-def+space:
     - match: '<.*?>'
       scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
@@ -199,7 +199,7 @@ contexts:
       set: option-argument-post
     - include: else-pop
 
-  equals-after-option:
+  option-def+equals:
     - match: '{{relaxed_argument_name}}'
       scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
@@ -208,14 +208,14 @@ contexts:
       set: option-argument-post
     - include: else-pop
 
-  square-brackets-after-option:
+  option-def+square-bracket:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPE
     - match: '(?=])'
       set:
         - match: ']'
           set: option-argument-post
 
-  colon-after-option:
+  option-def+colon:
     - match: '<.*?>'
       scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
@@ -226,5 +226,5 @@ contexts:
       scope: *OPTION_ARGUMENT_SCOPE
     # - match: ''
     #   set: option-def-post
-    - include: connect-option-alias
+    - include: option-def-connectors
     - include: else-pop
