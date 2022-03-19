@@ -37,8 +37,8 @@ VIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 01 2022 09:16:32)
    [34m-p[0m[[32mN[0m]		Open N tab pages (default: one for each file)
    [34m-o[0m[[32mN[0m]		Open N windows (default: one for each file)
    [34m-O[0m[[32mN[0m]		Like -o but split vertically
-   +			Start at end of file
-   +<lnum>		Start at line <lnum>
+   [35m+[0m			Start at end of file
+   [35m+[0m<lnum>		Start at line <lnum>
    [34m--cmd[0m [32m<command>[0m	Execute <command> before loading any vimrc file
    [34m-c[0m [32m<command>[0m		Execute <command> after loading the first file
    [34m-S[0m [32m<session>[0m		Source file <session> after loading the first file

@@ -37,8 +37,8 @@
 [38;2;227;234;242m   [0m[38;2;198;153;227m-p[0m[38;2;227;234;242m[[0m[38;2;102;204;204mN[0m[38;2;227;234;242m]		Open N tab pages (default: one for each file)[0m
 [38;2;227;234;242m   [0m[38;2;198;153;227m-o[0m[38;2;227;234;242m[[0m[38;2;102;204;204mN[0m[38;2;227;234;242m]		Open N windows (default: one for each file)[0m
 [38;2;227;234;242m   [0m[38;2;198;153;227m-O[0m[38;2;227;234;242m[[0m[38;2;102;204;204mN[0m[38;2;227;234;242m]		Like -o but split vertically[0m
-[38;2;227;234;242m   +			Start at end of file[0m
-[38;2;227;234;242m   +<lnum>		Start at line <lnum>[0m
+[38;2;227;234;242m   [0m[38;2;233;174;126m+[0m[38;2;227;234;242m			Start at end of file[0m
+[38;2;227;234;242m   [0m[38;2;233;174;126m+[0m[38;2;227;234;242m<lnum>		Start at line <lnum>[0m
 [38;2;227;234;242m   [0m[38;2;198;153;227m--cmd[0m[38;2;227;234;242m [0m[38;2;102;204;204m<command>[0m[38;2;227;234;242m	Execute <command> before loading any vimrc file[0m
 [38;2;227;234;242m   [0m[38;2;198;153;227m-c[0m[38;2;227;234;242m [0m[38;2;102;204;204m<command>[0m[38;2;227;234;242m		Execute <command> after loading the first file[0m
 [38;2;227;234;242m   [0m[38;2;198;153;227m-S[0m[38;2;227;234;242m [0m[38;2;102;204;204m<session>[0m[38;2;227;234;242m		Source file <session> after loading the first file[0m

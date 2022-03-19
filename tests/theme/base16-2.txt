@@ -37,8 +37,8 @@
 [37m   [0m[34m-p[0m[37m[[0m[37mN[0m[37m]		Open N tab pages (default: one for each file)[0m
 [37m   [0m[34m-o[0m[37m[[0m[37mN[0m[37m]		Open N windows (default: one for each file)[0m
 [37m   [0m[34m-O[0m[37m[[0m[37mN[0m[37m]		Like -o but split vertically[0m
-[37m   +			Start at end of file[0m
-[37m   +<lnum>		Start at line <lnum>[0m
+[37m   [0m[35m+[0m[37m			Start at end of file[0m
+[37m   [0m[35m+[0m[37m<lnum>		Start at line <lnum>[0m
 [37m   [0m[34m--cmd[0m[37m [0m[37m<command>[0m[37m	Execute <command> before loading any vimrc file[0m
 [37m   [0m[34m-c[0m[37m [0m[37m<command>[0m[37m		Execute <command> after loading the first file[0m
 [37m   [0m[34m-S[0m[37m [0m[37m<session>[0m[37m		Source file <session> after loading the first file[0m
