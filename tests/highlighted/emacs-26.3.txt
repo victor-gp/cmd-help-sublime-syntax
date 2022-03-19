@@ -34,8 +34,8 @@
 [38;2;253;151;31mAction options:[0m
 
 [38;2;248;248;242mFILE                    visit FILE[0m
-[38;2;248;248;242m+LINE                   go to line LINE in next FILE[0m
-[38;2;248;248;242m+LINE:COLUMN            go to line LINE, column COLUMN, in next FILE[0m
+[38;2;249;38;114m+[0m[38;2;248;248;242mLINE                   go to line LINE in next FILE[0m
+[38;2;249;38;114m+[0m[38;2;248;248;242mLINE:COLUMN            go to line LINE, column COLUMN, in next FILE[0m
 [38;2;166;226;46m--directory[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;253;151;31mDIR[0m[38;2;248;248;242m     prepend DIR to load-path (with :DIR, append DIR)[0m
 [38;2;166;226;46m--eval[0m[38;2;248;248;242m [0m[38;2;253;151;31mEXPR[0m[38;2;248;248;242m             evaluate Emacs Lisp expression EXPR[0m
 [38;2;166;226;46m--execute[0m[38;2;248;248;242m [0m[38;2;253;151;31mEXPR[0m[38;2;248;248;242m          evaluate Emacs Lisp expression EXPR[0m

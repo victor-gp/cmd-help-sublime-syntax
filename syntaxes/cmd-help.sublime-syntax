@@ -16,9 +16,9 @@ variables:
   leading_word: '[:upper:]({{alpha_dash}})*\b'
 
 ### command option variables:
-  option_stop: '[ \t\n,=\[</:]'
-  # marks seen in option names: . ? : # $ --
-  option_name: '[^{{option_stop}}]+'
+  option_break: '[ \t\n,=\[</:]'
+  # marks seen in options: . ? : # $ -- +
+  option_name: '[^{{option_break}}]+'
 
 ### command/option argument variables:
   ellipsis: '\.\.\.'
@@ -34,8 +34,6 @@ scope_variables: # rightmost scope is matched first
     markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help
   def_option_scope: &DEF_OPTION_SCOPE
     entity.name.function.option.cmd-help
-  end_of_options_scope: &END_OF_OPTIONS_SCOPE
-    keyword.control.end-of-options.cmd-help
   option_argument_scope: &OPTION_ARGUMENT_SCOPE
     string.option-argument.cmd-help  variable.other.option-argument.cmd-help
     variable.parameter.option-argument.cmd-help
@@ -113,7 +111,7 @@ contexts:
       set: heading-general
 
   maybe-option:
-    - match: '(?=-)'
+    - match: '(?=[-+])'
       set: def-option
 
   heading-general:
@@ -145,9 +143,12 @@ contexts:
       # probably not an option
       pop: true
     - match: '--(?=\s)'
-      scope: *END_OF_OPTIONS_SCOPE
+      scope: keyword.control.end-of-options.cmd-help
       set: then-pop
-    - match: '-:(?={{option_stop}})'
+    - match: '\+(?=[\s<[:alpha:]])'
+      scope: keyword.control.plus-option.cmd-help
+      set: def-option-post
+    - match: '-:(?={{option_break}})'
       scope: *DEF_OPTION_SCOPE
       set: def-option-post
 
