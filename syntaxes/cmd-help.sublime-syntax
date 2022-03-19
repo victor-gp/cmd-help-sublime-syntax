@@ -199,6 +199,9 @@ contexts:
     - match: '{{relaxed_argument_name}}(?= or )'
       scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
+    - match: "'{{relaxed_argument_name}}'"
+      scope: *OPTION_ARGUMENT_SCOPE
+      set: option-argument-post
     - include: else-pop
 
   option-def+equals:

@@ -10,6 +10,7 @@ Usage: ruby [switches] [--] [programfile] [arguments]
 # ^^^^^^^^^^^ entity.name.function.option.cmd-help
   -d, --debug     set debugging flags (set $DEBUG to true)
   -e 'command'    one line of script. Several -e's allowed. Omit [programfile]
+#    ^^^^^^^^^ variable.parameter.option-argument.cmd-help
   -Eex[:in], --encoding=ex[:in]
 #      ^^^ variable.parameter.option-argument.cmd-help
 #                       ^^ variable.parameter.option-argument.cmd-help
