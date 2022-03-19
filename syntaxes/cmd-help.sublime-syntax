@@ -211,6 +211,8 @@ contexts:
     - match: '<.*?>'
       scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
+    - match: '{'
+      set: option-argument-curly-bracket
     - include: else-pop
 
   option-def+square-bracket:
@@ -231,6 +233,13 @@ contexts:
       scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
     - include: else-pop
+
+  option-argument-curly-bracket:
+    - meta_content_scope: *OPTION_ARGUMENT_SCOPE
+    - match: '(?=})'
+      set:
+        - match: '}'
+          set: option-argument-post
 
   option-argument-post:
     - match: '({{ellipsis}})?'

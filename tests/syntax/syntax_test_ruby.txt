@@ -38,8 +38,9 @@ Usage: ruby [switches] [--] [programfile] [arguments]
 #        ^^^^^^ variable.parameter.option-argument.cmd-help
   --copyright     print the copyright
   --dump={insns|parsetree|...}[,...]
-#        ^^^^^^^^^^^^^^^^^^^^^^^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: this is super rare, no?
+#         ^^^^^^^^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#                              ^^^^ - variable.parameter.option-argument.cmd-help
+#nice: handle this too
                   dump debug information. see below for available dump list
   --enable={gems|rubyopt|...}[,...], --disable={gems|rubyopt|...}[,...]
                   enable or disable features. see below for available features

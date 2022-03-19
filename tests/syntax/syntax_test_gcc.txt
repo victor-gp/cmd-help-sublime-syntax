@@ -6,6 +6,8 @@ Options:
   --help                   Display this information.
   --target-help            Display target specific command line options.
   --help={common|optimizers|params|target|warnings|[^]{joined|separate|undocumented}}[,...].
+#         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#nice: handle nested option alternatives better
                            Display specific types of command line options.
   (Use '-v --help' to display command line options of sub-processes).
   --version                Display compiler version information.

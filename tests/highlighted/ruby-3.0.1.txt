@@ -24,9 +24,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit[0m[38;2;248;248;242m           enable JIT with default options (experimental)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-[0m[38;2;248;248;242m[[0m[38;2;253;151;31moption[0m[38;2;248;248;242m]  enable JIT with an option (experimental)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--copyright[0m[38;2;248;248;242m     print the copyright[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--dump[0m[38;2;248;248;242m={insns|parsetree|...}[,...][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--dump[0m[38;2;248;248;242m={[0m[38;2;253;151;31minsns|parsetree|...[0m[38;2;248;248;242m}[,...][0m
 [38;2;248;248;242m                  dump debug information. see below for available dump list[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--enable[0m[38;2;248;248;242m={gems|rubyopt|...}[,...], --disable={gems|rubyopt|...}[,...][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--enable[0m[38;2;248;248;242m={[0m[38;2;253;151;31mgems|rubyopt|...[0m[38;2;248;248;242m}[,...], --disable={gems|rubyopt|...}[,...][0m
 [38;2;248;248;242m                  enable or disable features. see below for available features[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--external-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--internal-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m
 [38;2;248;248;242m                  specify the default external or internal character encoding[0m
