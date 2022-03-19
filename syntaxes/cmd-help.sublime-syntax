@@ -32,7 +32,7 @@ scope_variables: # rightmost scope is matched first
   inline_usage_scope: &INLINE_USAGE_SCOPE
     constant.section-heading.cmd-help  string.inline-usage.cmd-help
     markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help
-  def_option_scope: &DEF_OPTION_SCOPE
+  option_def_scope: &OPTION_DEF_SCOPE
     entity.name.function.option.cmd-help
   option_argument_scope: &OPTION_ARGUMENT_SCOPE
     string.option-argument.cmd-help  variable.other.option-argument.cmd-help
@@ -111,9 +111,9 @@ contexts:
       set: heading-general
 
   maybe-option:
-    - include: def-option-specials
+    - include: option-def-specials
     - match: '(?=-)'
-      set: def-option
+      set: option-def
 
   heading-general:
     - match: '{{leading_word}}( {{any_word}})*:?\n'
@@ -132,27 +132,27 @@ contexts:
       scope: *SECTION_HEADING_SCOPE
       set: then-pop
 
-  def-option:
+  option-def:
     - match: '---'
       # probably not an option
       pop: true
     - match: '-{{option_name}}'
-      scope: *DEF_OPTION_SCOPE
-      set: def-option-post
+      scope: *OPTION_DEF_SCOPE
+      set: option-def-post
     - include: else-pop
 
-  def-option-specials:
+  option-def-specials:
     - match: '--(?=\s)'
       scope: keyword.control.end-of-options.cmd-help
       set: then-pop
     - match: '\+(?=[\s<[:alpha:]])'
       scope: keyword.control.plus-option.cmd-help
-      set: def-option-post
+      set: option-def-post
     - match: '-:(?={{option_break}})'
-      scope: *DEF_OPTION_SCOPE
-      set: def-option-post
+      scope: *OPTION_DEF_SCOPE
+      set: option-def-post
 
-  def-option-post:
+  option-def-post:
     - include: connect-option-alias
     - match: ' '
       set: space-after-option
@@ -167,17 +167,17 @@ contexts:
 
   connect-option-alias:
     - match: ', '
-      set: def-option
+      set: option-def
     - match: ' \| '
-      set: def-option
+      set: option-def
     - match: ' (?=-)'
-      set: def-option
+      set: option-def
     - match: ' or '
-      set: def-option
+      set: option-def
     - match: '/'
-      set: def-option
+      set: option-def
     - match: '\s+(?=-)'
-      set: def-option
+      set: option-def
 
   space-after-option:
     - match: '<.*?>'
@@ -220,6 +220,6 @@ contexts:
     - match: '({{ellipsis}})?'
       scope: *OPTION_ARGUMENT_SCOPE
     # - match: ''
-    #   set: def-option-post
+    #   set: option-def-post
     - include: connect-option-alias
     - include: else-pop
