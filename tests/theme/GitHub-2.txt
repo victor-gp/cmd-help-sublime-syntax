@@ -21,7 +21,7 @@
 [38;2;51;51;51m   [0m[38;2;121;93;163m-l[0m[38;2;51;51;51m			Lisp mode[0m
 [38;2;51;51;51m   [0m[38;2;121;93;163m-C[0m[38;2;51;51;51m			Compatible with Vi: 'compatible'[0m
 [38;2;51;51;51m   [0m[38;2;121;93;163m-N[0m[38;2;51;51;51m			Not fully Vi compatible: 'nocompatible'[0m
-[38;2;51;51;51m   [0m[38;2;121;93;163m-V[0m[38;2;51;51;51m[[0m[38;2;0;134;179mN[0m[38;2;51;51;51m][fname]		Be verbose [level N] [log messages to fname][0m
+[38;2;51;51;51m   [0m[38;2;121;93;163m-V[0m[38;2;51;51;51m[[0m[38;2;0;134;179mN[0m[38;2;51;51;51m][[0m[38;2;0;134;179mfname[0m[38;2;51;51;51m]		Be verbose [level N] [log messages to fname][0m
 [38;2;51;51;51m   [0m[38;2;121;93;163m-D[0m[38;2;51;51;51m			Debugging mode[0m
 [38;2;51;51;51m   [0m[38;2;121;93;163m-n[0m[38;2;51;51;51m			No swap file, use memory only[0m
 [38;2;51;51;51m   [0m[38;2;121;93;163m-r[0m[38;2;51;51;51m			List swap files and exit[0m

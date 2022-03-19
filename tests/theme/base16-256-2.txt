@@ -21,7 +21,7 @@
 [37m   [0m[34m-l[0m[37m			Lisp mode[0m
 [37m   [0m[34m-C[0m[37m			Compatible with Vi: 'compatible'[0m
 [37m   [0m[34m-N[0m[37m			Not fully Vi compatible: 'nocompatible'[0m
-[37m   [0m[34m-V[0m[37m[[0m[37mN[0m[37m][fname]		Be verbose [level N] [log messages to fname][0m
+[37m   [0m[34m-V[0m[37m[[0m[37mN[0m[37m][[0m[37mfname[0m[37m]		Be verbose [level N] [log messages to fname][0m
 [37m   [0m[34m-D[0m[37m			Debugging mode[0m
 [37m   [0m[34m-n[0m[37m			No swap file, use memory only[0m
 [37m   [0m[34m-r[0m[37m			List swap files and exit[0m
