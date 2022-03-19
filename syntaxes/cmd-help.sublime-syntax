@@ -60,11 +60,25 @@ contexts:
     # abort if color escape codes
     - match: '(?=.*\e\[0m)'
       set: sink
-    # abort if formatted with backspace
+    # abort if formatted with backspaces
     - match: '(?=.*[\b])'
       set: sink
 
-  main: # stack lv 0
+  main: # entrypoint, main2 is the real main
+    - match: ''
+      set: first-char
+
+  first-char:
+    - meta_include_prototype: false
+    - include: ignore-syntax-test-header
+    # man page first line: ^cmd/fn_name(man_section_digit) ... idem$
+    - match: '(?=^([A-Z-]+)\(([0-9])\)\s.+\s\1\(\2\)$)'
+      embed: scope:text.man
+      escape: we don't really want to escape so...
+    - match: '^'
+      set: main2
+
+  main2: # stack lv 0
     - match: '^'
       push: [line, line-begin]
 
@@ -94,6 +108,12 @@ contexts:
   sink:
     - clear_scopes: true
     - meta_include_prototype: false
+
+  ignore-syntax-test-header:
+  - match: '# SYNTAX TEST "cmd-help.sublime-syntax"\n'
+    set: first-char
+  - match: '^\n$' # empty line
+    set: first-char
 
   ### stack lv 2 ###############################################################
 
