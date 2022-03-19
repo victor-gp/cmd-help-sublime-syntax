@@ -111,7 +111,8 @@ contexts:
       set: heading-general
 
   maybe-option:
-    - match: '(?=[-+])'
+    - include: def-option-specials
+    - match: '(?=-)'
       set: def-option
 
   heading-general:
@@ -132,16 +133,15 @@ contexts:
       set: then-pop
 
   def-option:
-    - include: def-option-specials
+    - match: '---'
+      # probably not an option
+      pop: true
     - match: '-{{option_name}}'
       scope: *DEF_OPTION_SCOPE
       set: def-option-post
     - include: else-pop
 
   def-option-specials:
-    - match: '---'
-      # probably not an option
-      pop: true
     - match: '--(?=\s)'
       scope: keyword.control.end-of-options.cmd-help
       set: then-pop
