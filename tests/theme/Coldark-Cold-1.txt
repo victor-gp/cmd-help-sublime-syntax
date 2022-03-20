@@ -35,7 +35,7 @@
 [38;2;17;27;39m    [0m[38;2;124;0;170m-V[0m[38;2;17;27;39m, [0m[38;2;124;0;170m--version[0m[38;2;17;27;39m                        Show version information.[0m
 
 [1;38;2;0;90;142mARGS:[0m
-[38;2;17;27;39m    <FILE>...    File(s) to print / concatenate. Use '-' for standard input.[0m
+[38;2;17;27;39m    [0m[38;2;0;109;109m<FILE>...[0m[38;2;17;27;39m    File(s) to print / concatenate. Use '-' for standard input.[0m
 
 [1;38;2;0;90;142mSUBCOMMANDS:[0m
 [38;2;17;27;39m    cache    Modify the syntax-definition and theme cache[0m

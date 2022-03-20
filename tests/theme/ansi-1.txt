@@ -35,7 +35,7 @@ A cat(1) clone with syntax highlighting and Git integration.
     [34m-V[0m, [34m--version[0m                        Show version information.
 
 [34mARGS:[0m
-    <FILE>...    File(s) to print / concatenate. Use '-' for standard input.
+    [32m<FILE>...[0m    File(s) to print / concatenate. Use '-' for standard input.
 
 [34mSUBCOMMANDS:[0m
     cache    Modify the syntax-definition and theme cache
