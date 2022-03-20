@@ -106,7 +106,7 @@ contexts:
     - include: heading-specials
     - match: '(?=[:upper:].{1,39}\n)'
       # only consider lines <= 40 chars long
-      set: heading-general
+      set: heading
 
   maybe-option:
     - include: option-def-specials
@@ -115,14 +115,14 @@ contexts:
 
   ### section headings #########################################################
 
-  heading-general:
+  heading:
     - match: '{{leading_word}}( {{any_word}})*:?\n'
       scope: *SECTION_HEADING_SCOPE
       set: then-pop
-    - include: else-pop
     # - match: '{{any_word}}( {{any_word}})*:\n'
     #   scope: *SECTION_HEADING_SCOPE
     #   set: then-pop
+    - include: else-pop
 
   heading-specials:
     - match: '(?i:usage):(?=.+\n)'
