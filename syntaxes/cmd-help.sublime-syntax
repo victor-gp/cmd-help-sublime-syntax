@@ -104,7 +104,7 @@ contexts:
 
   maybe-heading:
     - include: heading-specials
-    - match: '(?=.{1,40}\n)'
+    - match: '(?=[:upper:].{1,39}\n)'
       # only consider lines <= 40 chars long
       set: heading-general
 

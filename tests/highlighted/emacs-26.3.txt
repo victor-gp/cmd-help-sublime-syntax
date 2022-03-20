@@ -39,13 +39,13 @@
 [38;2;166;226;46m--directory[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;253;151;31mDIR[0m[38;2;248;248;242m     prepend DIR to load-path (with :DIR, append DIR)[0m
 [38;2;166;226;46m--eval[0m[38;2;248;248;242m [0m[38;2;253;151;31mEXPR[0m[38;2;248;248;242m             evaluate Emacs Lisp expression EXPR[0m
 [38;2;166;226;46m--execute[0m[38;2;248;248;242m [0m[38;2;253;151;31mEXPR[0m[38;2;248;248;242m          evaluate Emacs Lisp expression EXPR[0m
-[38;2;248;248;242m--file FILE             visit FILE[0m
-[38;2;248;248;242m--find-file FILE        visit FILE[0m
+[38;2;166;226;46m--file[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m             visit FILE[0m
+[38;2;166;226;46m--find-file[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m        visit FILE[0m
 [38;2;166;226;46m--funcall[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m [0m[38;2;253;151;31mFUNC[0m[38;2;248;248;242m      call Emacs Lisp function FUNC with no arguments[0m
 [38;2;166;226;46m--insert[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m           insert contents of FILE into current buffer[0m
 [38;2;166;226;46m--kill[0m[38;2;248;248;242m                  exit without asking for confirmation[0m
 [38;2;166;226;46m--load[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m         load Emacs Lisp FILE using the load function[0m
-[38;2;248;248;242m--visit FILE            visit FILE[0m
+[38;2;166;226;46m--visit[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m            visit FILE[0m
 
 [38;2;253;151;31mDisplay options:[0m
 
