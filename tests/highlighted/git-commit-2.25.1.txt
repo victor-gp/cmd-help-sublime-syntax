@@ -286,7 +286,7 @@
 [38;2;248;248;242m       [0m[38;2;249;38;114m--[0m
 [38;2;248;248;242m           Do not interpret any more arguments as options.[0m
 
-[38;2;248;248;242m       <pathspec>...[0m
+[38;2;248;248;242m       [0m[38;2;253;151;31m<pathspec>...[0m
 [38;2;248;248;242m           When pathspec is given on the command line, commit the contents of the files that[0m
 [38;2;248;248;242m           match the pathspec without recording the changes already added to the index. The[0m
 [38;2;248;248;242m           contents of these files are also staged for the next commit on top of what have been[0m

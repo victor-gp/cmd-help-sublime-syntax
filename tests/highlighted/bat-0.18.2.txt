@@ -125,7 +125,7 @@
 
 
 [38;2;253;151;31mARGS:[0m
-[38;2;248;248;242m    <FILE>...    [0m
+[38;2;248;248;242m    [0m[38;2;253;151;31m<FILE>...[0m[38;2;248;248;242m    [0m
 [38;2;248;248;242m            File(s) to print / concatenate. Use a dash ('-') or no argument at all to read from[0m
 [38;2;248;248;242m            standard input.[0m
 

@@ -37,6 +37,9 @@ scope_variables: # rightmost scope is matched first
   option_argument_scope: &OPTION_ARGUMENT_SCOPE
     string.option-argument.cmd-help  variable.other.option-argument.cmd-help
     variable.parameter.option-argument.cmd-help
+  argument_def_scope: &ARGUMENT_DEF_SCOPE
+    string.argument.cmd-help  variable.other.argument.cmd-help
+    variable.parameter.argument.cmd-help
 
 
 contexts:
@@ -91,15 +94,18 @@ contexts:
   indent-0:
     - include: maybe-heading
     - include: maybe-option
+    - include: maybe-argument
     - include: else-pop
 
   indent-1-2:
     - include: maybe-option
     - include: maybe-heading
+    - include: maybe-argument
     - include: else-pop
 
   indent-3-8:
     - include: maybe-option
+    - include: maybe-argument
     - include: else-pop
 
   maybe-heading:
@@ -112,6 +118,10 @@ contexts:
     - include: option-def-specials
     - match: '(?=-)'
       set: option-def
+
+  maybe-argument:
+    - match: '(?=<)'
+      set: argument-def
 
   ### section headings #########################################################
 
@@ -251,4 +261,12 @@ contexts:
       set: option-def+square-bracket
     - match: ',\['
       set: option-def+square-bracket
+    - include: else-pop
+
+  ### argument definitions #####################################################
+
+  argument-def:
+    - match: '<{{relaxed_argument_name}}>({{ellipsis}})?'
+      scope: *ARGUMENT_DEF_SCOPE
+      set: then-pop
     - include: else-pop
