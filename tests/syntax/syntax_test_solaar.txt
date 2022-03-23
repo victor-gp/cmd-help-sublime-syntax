@@ -8,6 +8,8 @@ usage: solaar [-h] [-d] [-D PATH] [--restart-on-wake-up] [-w {show,hide,only}]
 positional arguments:
 #^^^^^^^^^^^^^^^^^^^^ entity.name.section.cmd-help
   {show,probe,config,pair,unpair}
+#  ^^^^ - variable.parameter.argument.cmd-help
+#nice: handle command argument enums like this
                         optional actions to perform
 
 optional arguments:
@@ -19,6 +21,8 @@ optional arguments:
                         if unspecified. Example: /dev/hidraw2
   --restart-on-wake-up  restart Solaar on sleep wake-up (experimental)
   -w {show,hide,only}, --window {show,hide,only}
+#     ^^^^ variable.parameter.option-argument.cmd-help
+#          ^^^^ variable.parameter.option-argument.cmd-help
                         start with window showing / hidden / only (no tray
                         icon)
   -b {regular,symbolic,solaar}, --battery-icons {regular,symbolic,solaar}

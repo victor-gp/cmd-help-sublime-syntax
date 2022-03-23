@@ -224,6 +224,8 @@ contexts:
     - match: "'{{relaxed_argument_name}}'"
       scope: *OPTION_ARGUMENT_SCOPE
       set: option-argument-post
+    - match: '{'
+      set: option-argument-curly-bracket
     - include: else-pop
 
   option-def+equals:
@@ -258,7 +260,7 @@ contexts:
 
   option-argument-curly-bracket:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPE
-    - match: '\|'
+    - match: ',|\|'
       push:
         - clear_scopes: 1
         - include: then-pop

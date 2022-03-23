@@ -15,10 +15,10 @@
 [38;2;248;248;242m                        unifying receiver to use; the first detected receiver[0m
 [38;2;248;248;242m                        if unspecified. Example: /dev/hidraw2[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--restart-on-wake-up[0m[38;2;248;248;242m  restart Solaar on sleep wake-up (experimental)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m {show,hide,only}, --window {show,hide,only}[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m {[0m[38;2;253;151;31mshow[0m[38;2;255;255;255m,[0m[38;2;253;151;31mhide[0m[38;2;255;255;255m,[0m[38;2;253;151;31monly[0m[38;2;248;248;242m}, [0m[38;2;166;226;46m--window[0m[38;2;248;248;242m {[0m[38;2;253;151;31mshow[0m[38;2;255;255;255m,[0m[38;2;253;151;31mhide[0m[38;2;255;255;255m,[0m[38;2;253;151;31monly[0m[38;2;248;248;242m}[0m
 [38;2;248;248;242m                        start with window showing / hidden / only (no tray[0m
 [38;2;248;248;242m                        icon)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m {regular,symbolic,solaar}, --battery-icons {regular,symbolic,solaar}[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m {[0m[38;2;253;151;31mregular[0m[38;2;255;255;255m,[0m[38;2;253;151;31msymbolic[0m[38;2;255;255;255m,[0m[38;2;253;151;31msolaar[0m[38;2;248;248;242m}, [0m[38;2;166;226;46m--battery-icons[0m[38;2;248;248;242m {[0m[38;2;253;151;31mregular[0m[38;2;255;255;255m,[0m[38;2;253;151;31msymbolic[0m[38;2;255;255;255m,[0m[38;2;253;151;31msolaar[0m[38;2;248;248;242m}[0m
 [38;2;248;248;242m                        prefer regular battery / symbolic battery / solaar[0m
 [38;2;248;248;242m                        icons[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--tray-icon-size[0m[38;2;248;248;242m [0m[38;2;253;151;31mTRAY_ICON_SIZE[0m
