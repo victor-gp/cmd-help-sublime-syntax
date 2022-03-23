@@ -7,8 +7,7 @@ a '+' before the filename.  The column number can be added after a comma.
 When a filename is '-', nano reads data from standard input.
 
  Option         Long option             Meaning
-#^^^^^^ keyword.other.cmd-help
-#nice: don't scope 1st column of a table
+#^^^^^^ - keyword.other.cmd-help
  -A             --smarthome             Enable smart home key
 #               ^^^^^^^^^^^ entity.name.function.option.cmd-help
  -B             --backup                Save backups of existing files

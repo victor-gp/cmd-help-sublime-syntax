@@ -82,8 +82,6 @@ Mandatory arguments to long options are mandatory for short options too.
       %c'C'  the single character C
       %c'\OOO'  the character with octal code OOO
       C    the character C (other characters represent themselves)
-#     ^ keyword.other.cmd-help
-#wontfix: acceptable
 
   -d, --minimal            try hard to find a smaller set of changes
       --horizon-lines=NUM  keep NUM lines of the common prefix and suffix
