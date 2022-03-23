@@ -291,4 +291,8 @@ contexts:
     - match: '{{other_lowercase_name}}\*(?=   )'
       scope: *OTHER_DEF_SCOPE
       set: then-pop
+    - match: '({{other_lowercase_name}}), ({{other_lowercase_name}})(?={{long_space}})'
+      captures:
+        1: *OTHER_DEF_SCOPE
+        2: *OTHER_DEF_SCOPE
     - include: else-pop

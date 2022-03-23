@@ -66,10 +66,10 @@
 [38;2;248;248;242mThe version control method may be selected via the --backup option or through[0m
 [38;2;248;248;242mthe VERSION_CONTROL environment variable.  Here are the values:[0m
 
-[38;2;248;248;242m  none, off       never make backups (even if --backup is given)[0m
-[38;2;248;248;242m  numbered, t     make numbered backups[0m
-[38;2;248;248;242m  existing, nil   numbered if numbered backups exist, simple otherwise[0m
-[38;2;248;248;242m  simple, never   always make simple backups[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnone[0m[38;2;248;248;242m, [0m[38;2;249;38;114moff[0m[38;2;248;248;242m       never make backups (even if --backup is given)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnumbered[0m[38;2;248;248;242m, [0m[38;2;249;38;114mt[0m[38;2;248;248;242m     make numbered backups[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mexisting[0m[38;2;248;248;242m, [0m[38;2;249;38;114mnil[0m[38;2;248;248;242m   numbered if numbered backups exist, simple otherwise[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114msimple[0m[38;2;248;248;242m, [0m[38;2;249;38;114mnever[0m[38;2;248;248;242m   always make simple backups[0m
 
 [38;2;248;248;242mAs a special case, cp makes a backup of SOURCE when the force and backup[0m
 [38;2;248;248;242moptions are given and SOURCE and DEST are the same name for an existing,[0m

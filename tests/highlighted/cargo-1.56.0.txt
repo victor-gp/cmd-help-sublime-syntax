@@ -18,14 +18,14 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                     Prints help information[0m
 
 [38;2;248;248;242mSome common cargo commands are (see all commands with --list):[0m
-[38;2;248;248;242m    build, b    Compile the current package[0m
-[38;2;248;248;242m    check, c    Analyze the current package and report errors, but don't build object files[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mbuild[0m[38;2;248;248;242m, [0m[38;2;249;38;114mb[0m[38;2;248;248;242m    Compile the current package[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mcheck[0m[38;2;248;248;242m, [0m[38;2;249;38;114mc[0m[38;2;248;248;242m    Analyze the current package and report errors, but don't build object files[0m
 [38;2;248;248;242m    [0m[38;2;249;38;114mclean[0m[38;2;248;248;242m       Remove the target directory[0m
-[38;2;248;248;242m    doc, d      Build this package's and its dependencies' documentation[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mdoc[0m[38;2;248;248;242m, [0m[38;2;249;38;114md[0m[38;2;248;248;242m      Build this package's and its dependencies' documentation[0m
 [38;2;248;248;242m    [0m[38;2;249;38;114mnew[0m[38;2;248;248;242m         Create a new cargo package[0m
 [38;2;248;248;242m    [0m[38;2;249;38;114minit[0m[38;2;248;248;242m        Create a new cargo package in an existing directory[0m
-[38;2;248;248;242m    run, r      Run a binary or example of the local package[0m
-[38;2;248;248;242m    test, t     Run the tests[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mrun[0m[38;2;248;248;242m, [0m[38;2;249;38;114mr[0m[38;2;248;248;242m      Run a binary or example of the local package[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mtest[0m[38;2;248;248;242m, [0m[38;2;249;38;114mt[0m[38;2;248;248;242m     Run the tests[0m
 [38;2;248;248;242m    [0m[38;2;249;38;114mbench[0m[38;2;248;248;242m       Run the benchmarks[0m
 [38;2;248;248;242m    [0m[38;2;249;38;114mupdate[0m[38;2;248;248;242m      Update dependencies listed in Cargo.lock[0m
 [38;2;248;248;242m    [0m[38;2;249;38;114msearch[0m[38;2;248;248;242m      Search registry for crates[0m
