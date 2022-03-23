@@ -151,7 +151,7 @@ contexts:
       scope: *INLINE_USAGE_SCOPE
       set: then-pop
     # python argparse
-    - match: '(positional arguments|optional arguments|options):\n'
+    - match: '(positional arguments|optional arguments|required arguments|options):\n'
       scope: *SECTION_HEADING_SCOPE
       set: then-pop
 
