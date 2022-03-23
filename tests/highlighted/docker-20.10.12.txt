@@ -17,10 +17,10 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m            Print version information and quit[0m
 
 [38;2;253;151;31mManagement Commands:[0m
-[38;2;248;248;242m  app*        Docker App (Docker Inc., v0.9.1-beta3)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mapp*[0m[38;2;248;248;242m        Docker App (Docker Inc., v0.9.1-beta3)[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mbuilder[0m[38;2;248;248;242m     Manage builds[0m
-[38;2;248;248;242m  buildx*     Docker Buildx (Docker Inc., v0.7.1-docker)[0m
-[38;2;248;248;242m  compose*    Docker Compose (Docker Inc., v2.2.3)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mbuildx*[0m[38;2;248;248;242m     Docker Buildx (Docker Inc., v0.7.1-docker)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mcompose*[0m[38;2;248;248;242m    Docker Compose (Docker Inc., v2.2.3)[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mconfig[0m[38;2;248;248;242m      Manage Docker configs[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mcontainer[0m[38;2;248;248;242m   Manage containers[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mcontext[0m[38;2;248;248;242m     Manage contexts[0m
@@ -29,7 +29,7 @@
 [38;2;248;248;242m  [0m[38;2;249;38;114mnetwork[0m[38;2;248;248;242m     Manage networks[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mnode[0m[38;2;248;248;242m        Manage Swarm nodes[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mplugin[0m[38;2;248;248;242m      Manage plugins[0m
-[38;2;248;248;242m  scan*       Docker Scan (Docker Inc., v0.12.0)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mscan*[0m[38;2;248;248;242m       Docker Scan (Docker Inc., v0.12.0)[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114msecret[0m[38;2;248;248;242m      Manage Docker secrets[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mservice[0m[38;2;248;248;242m     Manage services[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mstack[0m[38;2;248;248;242m       Manage Docker stacks[0m

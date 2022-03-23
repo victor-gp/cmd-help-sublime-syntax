@@ -292,4 +292,7 @@ contexts:
     - match: '{{other_lowercase_name}}(?=\n)'
       scope: *OTHER_DEF_SCOPE
       set: then-pop
+    - match: '{{other_lowercase_name}}\*(?=   )'
+      scope: *OTHER_DEF_SCOPE
+      set: then-pop
     - include: else-pop
