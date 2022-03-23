@@ -258,6 +258,10 @@ contexts:
 
   option-argument-curly-bracket:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPE
+    - match: '\|'
+      push:
+        - clear_scopes: 1
+        - include: then-pop
     - match: '(?=})'
       set:
         - match: '}'
