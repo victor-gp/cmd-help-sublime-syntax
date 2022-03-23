@@ -128,7 +128,7 @@ contexts:
       set: option-def
 
   maybe-argument:
-    - match: '(?=<)'
+    - match: '(?=<|{)'
       set: argument-def
 
   maybe-other:
@@ -287,7 +287,21 @@ contexts:
     - match: '<{{relaxed_argument_name}}>({{ellipsis}})?'
       scope: *ARGUMENT_DEF_SCOPE
       set: then-pop
+    - match: '{'
+      set: curly-bracket-argument-def
     - include: else-pop
+
+  curly-bracket-argument-def:
+    - meta_content_scope: *ARGUMENT_DEF_SCOPE
+    - match: ',|\|'
+      push:
+        - clear_scopes: 1
+        - include: then-pop
+    - match: '(?=})'
+      set:
+        - match: '}'
+          set: then-pop
+    - include: eol-pop
 
   other-def:
     - match: '{{other_lowercase_name}}(?={{long_space}})'

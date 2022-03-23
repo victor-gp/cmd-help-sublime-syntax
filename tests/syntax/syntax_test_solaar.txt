@@ -8,8 +8,7 @@ usage: solaar [-h] [-d] [-D PATH] [--restart-on-wake-up] [-w {show,hide,only}]
 positional arguments:
 #^^^^^^^^^^^^^^^^^^^^ entity.name.section.cmd-help
   {show,probe,config,pair,unpair}
-#  ^^^^ - variable.parameter.argument.cmd-help
-#nice: handle command argument enums like this
+#  ^^^^ variable.parameter.argument.cmd-help
                         optional actions to perform
 
 optional arguments:
