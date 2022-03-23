@@ -20,7 +20,7 @@ Options:
 
 Management Commands:
   app*        Docker App (Docker Inc., v0.9.1-beta3)
-# ^^^^ keyword.other.cmd-help
+# ^^^^ keyword.other.def.cmd-help
   builder     Manage builds
   buildx*     Docker Buildx (Docker Inc., v0.7.1-docker)
   compose*    Docker Compose (Docker Inc., v2.2.3)

@@ -149,6 +149,6 @@ ARGS:
 
 SUBCOMMANDS:
     cache    Modify the syntax-definition and theme cache
-#   ^^^^^ keyword.other.cmd-help
+#   ^^^^^ keyword.other.def.cmd-help
 
 Note: `bat -h` prints a short and concise overview while `bat --help` gives all details.

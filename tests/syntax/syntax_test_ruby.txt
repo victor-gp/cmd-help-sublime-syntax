@@ -65,10 +65,10 @@ Dump List:
 Features:
   gems            rubygems (default: enabled)
   did_you_mean    did_you_mean (default: enabled)
-# ^^^^^^^^^^^^ keyword.other.cmd-help
+# ^^^^^^^^^^^^ keyword.other.def.cmd-help
   rubyopt         RUBYOPT environment variable (default: enabled)
   frozen-string-literal
-# ^^^^^^^^^^^^^^^^^^^^^ keyword.other.cmd-help
+# ^^^^^^^^^^^^^^^^^^^^^ keyword.other.def.cmd-help
                   freeze all string literals (default: disabled)
   jit             JIT compiler (default: disabled)
 Warning categories:

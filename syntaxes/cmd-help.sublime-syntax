@@ -45,7 +45,7 @@ scope_variables: # rightmost scope is matched first
     string.argument.cmd-help  variable.other.argument.cmd-help
     variable.parameter.argument.cmd-help
   other_def_scope: &OTHER_DEF_SCOPE
-    keyword.other.cmd-help # support.fuction... ?
+    keyword.other.def.cmd-help # support.fuction... ?
 
 
 contexts:
