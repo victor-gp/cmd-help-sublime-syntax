@@ -38,6 +38,6 @@
 [38;2;51;51;51m    [0m[38;2;0;134;179m<FILE>...[0m[38;2;51;51;51m    File(s) to print / concatenate. Use '-' for standard input.[0m
 
 [38;2;51;51;51mSUBCOMMANDS:[0m
-[38;2;51;51;51m    cache    Modify the syntax-definition and theme cache[0m
+[38;2;51;51;51m    [0m[38;2;167;29;93mcache[0m[38;2;51;51;51m    Modify the syntax-definition and theme cache[0m
 
 [38;2;51;51;51mNote: `bat -h` prints a short and concise overview while `bat --help` gives all details.[0m

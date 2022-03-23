@@ -38,6 +38,6 @@ A cat(1) clone with syntax highlighting and Git integration.
     [32m<FILE>...[0m    File(s) to print / concatenate. Use '-' for standard input.
 
 [34mSUBCOMMANDS:[0m
-    cache    Modify the syntax-definition and theme cache
+    [35mcache[0m    Modify the syntax-definition and theme cache
 
 Note: `bat -h` prints a short and concise overview while `bat --help` gives all details.
