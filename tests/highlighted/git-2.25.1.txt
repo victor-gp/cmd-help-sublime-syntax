@@ -7,37 +7,37 @@
 [38;2;248;248;242mThese are common Git commands used in various situations:[0m
 
 [38;2;248;248;242mstart a working area (see also: git help tutorial)[0m
-[38;2;248;248;242m   clone             Clone a repository into a new directory[0m
-[38;2;248;248;242m   init              Create an empty Git repository or reinitialize an existing one[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mclone[0m[38;2;248;248;242m             Clone a repository into a new directory[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114minit[0m[38;2;248;248;242m              Create an empty Git repository or reinitialize an existing one[0m
 
 [38;2;248;248;242mwork on the current change (see also: git help everyday)[0m
-[38;2;248;248;242m   add               Add file contents to the index[0m
-[38;2;248;248;242m   mv                Move or rename a file, a directory, or a symlink[0m
-[38;2;248;248;242m   restore           Restore working tree files[0m
-[38;2;248;248;242m   rm                Remove files from the working tree and from the index[0m
-[38;2;248;248;242m   sparse-checkout   Initialize and modify the sparse-checkout[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114madd[0m[38;2;248;248;242m               Add file contents to the index[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mmv[0m[38;2;248;248;242m                Move or rename a file, a directory, or a symlink[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mrestore[0m[38;2;248;248;242m           Restore working tree files[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mrm[0m[38;2;248;248;242m                Remove files from the working tree and from the index[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114msparse-checkout[0m[38;2;248;248;242m   Initialize and modify the sparse-checkout[0m
 
 [38;2;248;248;242mexamine the history and state (see also: git help revisions)[0m
-[38;2;248;248;242m   bisect            Use binary search to find the commit that introduced a bug[0m
-[38;2;248;248;242m   diff              Show changes between commits, commit and working tree, etc[0m
-[38;2;248;248;242m   grep              Print lines matching a pattern[0m
-[38;2;248;248;242m   log               Show commit logs[0m
-[38;2;248;248;242m   show              Show various types of objects[0m
-[38;2;248;248;242m   status            Show the working tree status[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mbisect[0m[38;2;248;248;242m            Use binary search to find the commit that introduced a bug[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mdiff[0m[38;2;248;248;242m              Show changes between commits, commit and working tree, etc[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mgrep[0m[38;2;248;248;242m              Print lines matching a pattern[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mlog[0m[38;2;248;248;242m               Show commit logs[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mshow[0m[38;2;248;248;242m              Show various types of objects[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mstatus[0m[38;2;248;248;242m            Show the working tree status[0m
 
 [38;2;248;248;242mgrow, mark and tweak your common history[0m
-[38;2;248;248;242m   branch            List, create, or delete branches[0m
-[38;2;248;248;242m   commit            Record changes to the repository[0m
-[38;2;248;248;242m   merge             Join two or more development histories together[0m
-[38;2;248;248;242m   rebase            Reapply commits on top of another base tip[0m
-[38;2;248;248;242m   reset             Reset current HEAD to the specified state[0m
-[38;2;248;248;242m   switch            Switch branches[0m
-[38;2;248;248;242m   tag               Create, list, delete or verify a tag object signed with GPG[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mbranch[0m[38;2;248;248;242m            List, create, or delete branches[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mcommit[0m[38;2;248;248;242m            Record changes to the repository[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mmerge[0m[38;2;248;248;242m             Join two or more development histories together[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mrebase[0m[38;2;248;248;242m            Reapply commits on top of another base tip[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mreset[0m[38;2;248;248;242m             Reset current HEAD to the specified state[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mswitch[0m[38;2;248;248;242m            Switch branches[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mtag[0m[38;2;248;248;242m               Create, list, delete or verify a tag object signed with GPG[0m
 
 [38;2;248;248;242mcollaborate (see also: git help workflows)[0m
-[38;2;248;248;242m   fetch             Download objects and refs from another repository[0m
-[38;2;248;248;242m   pull              Fetch from and integrate with another repository or a local branch[0m
-[38;2;248;248;242m   push              Update remote refs along with associated objects[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mfetch[0m[38;2;248;248;242m             Download objects and refs from another repository[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mpull[0m[38;2;248;248;242m              Fetch from and integrate with another repository or a local branch[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mpush[0m[38;2;248;248;242m              Update remote refs along with associated objects[0m
 
 [38;2;248;248;242m'git help -a' and 'git help -g' list available subcommands and some[0m
 [38;2;248;248;242mconcept guides. See 'git help <command>' or 'git help <concept>'[0m

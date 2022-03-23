@@ -20,18 +20,18 @@
 [38;2;248;248;242mSome common cargo commands are (see all commands with --list):[0m
 [38;2;248;248;242m    build, b    Compile the current package[0m
 [38;2;248;248;242m    check, c    Analyze the current package and report errors, but don't build object files[0m
-[38;2;248;248;242m    clean       Remove the target directory[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mclean[0m[38;2;248;248;242m       Remove the target directory[0m
 [38;2;248;248;242m    doc, d      Build this package's and its dependencies' documentation[0m
-[38;2;248;248;242m    new         Create a new cargo package[0m
-[38;2;248;248;242m    init        Create a new cargo package in an existing directory[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mnew[0m[38;2;248;248;242m         Create a new cargo package[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114minit[0m[38;2;248;248;242m        Create a new cargo package in an existing directory[0m
 [38;2;248;248;242m    run, r      Run a binary or example of the local package[0m
 [38;2;248;248;242m    test, t     Run the tests[0m
-[38;2;248;248;242m    bench       Run the benchmarks[0m
-[38;2;248;248;242m    update      Update dependencies listed in Cargo.lock[0m
-[38;2;248;248;242m    search      Search registry for crates[0m
-[38;2;248;248;242m    publish     Package and upload this package to the registry[0m
-[38;2;248;248;242m    install     Install a Rust binary. Default location is $HOME/.cargo/bin[0m
-[38;2;248;248;242m    uninstall   Uninstall a Rust binary[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mbench[0m[38;2;248;248;242m       Run the benchmarks[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mupdate[0m[38;2;248;248;242m      Update dependencies listed in Cargo.lock[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114msearch[0m[38;2;248;248;242m      Search registry for crates[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mpublish[0m[38;2;248;248;242m     Package and upload this package to the registry[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114minstall[0m[38;2;248;248;242m     Install a Rust binary. Default location is $HOME/.cargo/bin[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114muninstall[0m[38;2;248;248;242m   Uninstall a Rust binary[0m
 
 [38;2;248;248;242mSee 'cargo help <command>' for more information on a specific command.[0m
 

@@ -4,7 +4,7 @@
 [38;2;248;248;242ma '+' before the filename.  The column number can be added after a comma.[0m
 [38;2;248;248;242mWhen a filename is '-', nano reads data from standard input.[0m
 
-[38;2;248;248;242m Option         Long option             Meaning[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mOption[0m[38;2;248;248;242m         Long option             Meaning[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m             [0m[38;2;166;226;46m--smarthome[0m[38;2;248;248;242m             Enable smart home key[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m             [0m[38;2;166;226;46m--backup[0m[38;2;248;248;242m                Save backups of existing files[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m [0m[38;2;253;151;31m<dir>[0m[38;2;248;248;242m       [0m[38;2;166;226;46m--backupdir[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<dir>[0m[38;2;248;248;242m       Directory for saving unique backup files[0m

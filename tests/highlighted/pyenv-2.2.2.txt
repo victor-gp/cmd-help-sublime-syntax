@@ -2,35 +2,35 @@
 
 [38;2;253;151;31mSome useful pyenv commands are:[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m   Display the version of pyenv[0m
-[38;2;248;248;242m   activate    Activate virtual environment[0m
-[38;2;248;248;242m   commands    List all available pyenv commands[0m
-[38;2;248;248;242m   deactivate   Deactivate virtual environment[0m
-[38;2;248;248;242m   doctor      Verify pyenv installation and development tools to build pythons.[0m
-[38;2;248;248;242m   exec        Run an executable with the selected Python version[0m
-[38;2;248;248;242m   global      Set or show the global Python version(s)[0m
-[38;2;248;248;242m   help        Display help for a command[0m
-[38;2;248;248;242m   hooks       List hook scripts for a given pyenv command[0m
-[38;2;248;248;242m   init        Configure the shell environment for pyenv[0m
-[38;2;248;248;242m   install     Install a Python version using python-build[0m
-[38;2;248;248;242m   local       Set or show the local application-specific Python version(s)[0m
-[38;2;248;248;242m   prefix      Display prefix for a Python version[0m
-[38;2;248;248;242m   rehash      Rehash pyenv shims (run this after installing executables)[0m
-[38;2;248;248;242m   root        Display the root directory where versions and shims are kept[0m
-[38;2;248;248;242m   shell       Set or show the shell-specific Python version[0m
-[38;2;248;248;242m   shims       List existing pyenv shims[0m
-[38;2;248;248;242m   uninstall   Uninstall a specific Python version[0m
-[38;2;248;248;242m   version     Show the current Python version(s) and its origin[0m
-[38;2;248;248;242m   version-file   Detect the file that sets the current pyenv version[0m
-[38;2;248;248;242m   version-name   Show the current Python version[0m
-[38;2;248;248;242m   version-origin   Explain how the current Python version is set[0m
-[38;2;248;248;242m   versions    List all Python versions available to pyenv[0m
-[38;2;248;248;242m   virtualenv   Create a Python virtualenv using the pyenv-virtualenv plugin[0m
-[38;2;248;248;242m   virtualenv-delete   Uninstall a specific Python virtualenv[0m
-[38;2;248;248;242m   virtualenv-init   Configure the shell environment for pyenv-virtualenv[0m
-[38;2;248;248;242m   virtualenv-prefix   Display real_prefix for a Python virtualenv version[0m
-[38;2;248;248;242m   virtualenvs   List all Python virtualenvs found in `$PYENV_ROOT/versions/*'.[0m
-[38;2;248;248;242m   whence      List all Python versions that contain the given executable[0m
-[38;2;248;248;242m   which       Display the full path to an executable[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mactivate[0m[38;2;248;248;242m    Activate virtual environment[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mcommands[0m[38;2;248;248;242m    List all available pyenv commands[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mdeactivate[0m[38;2;248;248;242m   Deactivate virtual environment[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mdoctor[0m[38;2;248;248;242m      Verify pyenv installation and development tools to build pythons.[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mexec[0m[38;2;248;248;242m        Run an executable with the selected Python version[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mglobal[0m[38;2;248;248;242m      Set or show the global Python version(s)[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mhelp[0m[38;2;248;248;242m        Display help for a command[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mhooks[0m[38;2;248;248;242m       List hook scripts for a given pyenv command[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114minit[0m[38;2;248;248;242m        Configure the shell environment for pyenv[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114minstall[0m[38;2;248;248;242m     Install a Python version using python-build[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mlocal[0m[38;2;248;248;242m       Set or show the local application-specific Python version(s)[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mprefix[0m[38;2;248;248;242m      Display prefix for a Python version[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mrehash[0m[38;2;248;248;242m      Rehash pyenv shims (run this after installing executables)[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mroot[0m[38;2;248;248;242m        Display the root directory where versions and shims are kept[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mshell[0m[38;2;248;248;242m       Set or show the shell-specific Python version[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mshims[0m[38;2;248;248;242m       List existing pyenv shims[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114muninstall[0m[38;2;248;248;242m   Uninstall a specific Python version[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mversion[0m[38;2;248;248;242m     Show the current Python version(s) and its origin[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mversion-file[0m[38;2;248;248;242m   Detect the file that sets the current pyenv version[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mversion-name[0m[38;2;248;248;242m   Show the current Python version[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mversion-origin[0m[38;2;248;248;242m   Explain how the current Python version is set[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mversions[0m[38;2;248;248;242m    List all Python versions available to pyenv[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mvirtualenv[0m[38;2;248;248;242m   Create a Python virtualenv using the pyenv-virtualenv plugin[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mvirtualenv-delete[0m[38;2;248;248;242m   Uninstall a specific Python virtualenv[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mvirtualenv-init[0m[38;2;248;248;242m   Configure the shell environment for pyenv-virtualenv[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mvirtualenv-prefix[0m[38;2;248;248;242m   Display real_prefix for a Python virtualenv version[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mvirtualenvs[0m[38;2;248;248;242m   List all Python virtualenvs found in `$PYENV_ROOT/versions/*'.[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mwhence[0m[38;2;248;248;242m      List all Python versions that contain the given executable[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mwhich[0m[38;2;248;248;242m       Display the full path to an executable[0m
 
 [38;2;248;248;242mSee `pyenv help <command>' for information on a specific command.[0m
 [38;2;248;248;242mFor full documentation, see: https://github.com/pyenv/pyenv#readme[0m

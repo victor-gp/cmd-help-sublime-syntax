@@ -77,7 +77,7 @@
 [38;2;248;248;242m      %%  %[0m
 [38;2;248;248;242m      %c'C'  the single character C[0m
 [38;2;248;248;242m      %c'\OOO'  the character with octal code OOO[0m
-[38;2;248;248;242m      C    the character C (other characters represent themselves)[0m
+[38;2;248;248;242m      [0m[38;2;249;38;114mC[0m[38;2;248;248;242m    the character C (other characters represent themselves)[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--minimal[0m[38;2;248;248;242m            try hard to find a smaller set of changes[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--horizon-lines[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m  keep NUM lines of the common prefix and suffix[0m

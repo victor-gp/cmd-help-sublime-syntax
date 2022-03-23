@@ -25,6 +25,9 @@ variables:
   allcaps_argument_name: '[:upper:][[:upper:][:digit:]_]*\b'
   relaxed_argument_name: '[:alpha:][[:alnum:]_-]*\b'
 
+### other-def variables:
+  other_name: '[:alpha:][[:alnum:]_-]*+\b'
+
 scope_variables: # rightmost scope is matched first
   section_heading_scope: &SECTION_HEADING_SCOPE
     constant.section-heading.cmd-help  string.section-heading.cmd-help
@@ -40,6 +43,8 @@ scope_variables: # rightmost scope is matched first
   argument_def_scope: &ARGUMENT_DEF_SCOPE
     string.argument.cmd-help  variable.other.argument.cmd-help
     variable.parameter.argument.cmd-help
+  other_def_scope: &OTHER_DEF_SCOPE
+    keyword.other.cmd-help
 
 
 contexts:
@@ -101,11 +106,13 @@ contexts:
     - include: maybe-option
     - include: maybe-heading
     - include: maybe-argument
+    - include: maybe-other
     - include: else-pop
 
   indent-3-8:
     - include: maybe-option
     - include: maybe-argument
+    - include: maybe-other
     - include: else-pop
 
   maybe-heading:
@@ -122,6 +129,10 @@ contexts:
   maybe-argument:
     - match: '(?=<)'
       set: argument-def
+
+  maybe-other:
+    - match: ''
+      set: other-def
 
   ### section headings #########################################################
 
@@ -263,10 +274,22 @@ contexts:
       set: option-def+square-bracket
     - include: else-pop
 
-  ### argument definitions #####################################################
+  ### other definitions ########################################################
 
   argument-def:
     - match: '<{{relaxed_argument_name}}>({{ellipsis}})?'
       scope: *ARGUMENT_DEF_SCOPE
+      set: then-pop
+    - include: else-pop
+
+  other-def:
+    - match: '{{other_name}}(?=   )'
+      scope: *OTHER_DEF_SCOPE
+      set: then-pop
+    - match: '{{other_name}}(?=\t)'
+      scope: *OTHER_DEF_SCOPE
+      set: then-pop
+    - match: '{{other_name}}(?=\n)'
+      scope: *OTHER_DEF_SCOPE
       set: then-pop
     - include: else-pop
