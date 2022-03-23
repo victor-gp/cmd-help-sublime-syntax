@@ -29,8 +29,9 @@ Options:
   -print-sysroot           Display the target libraries directory.
   -print-sysroot-headers-suffix Display the sysroot suffix used to find headers.
   -Wa,<options>            Pass comma-separated <options> on to the assembler.
-#    ^ - entity.name.function.option.cmd-help - variable.parameter.option-argument.cmd-help
 #     ^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#    ^ - entity.name.function.option.cmd-help - variable.parameter.option-argument.cmd-help
+#nice: the comma is required so this should be scoped
   -Wp,<options>            Pass comma-separated <options> on to the preprocessor.
   -Wl,<options>            Pass comma-separated <options> on to the linker.
   -Xassembler <arg>        Pass <arg> on to the assembler.

@@ -57,4 +57,5 @@ Arguments:
    -i <viminfo>		Use <viminfo> instead of .viminfo
    --clean		'nocompatible', Vim defaults, no plugins, no viminfo
    -h  or  --help	Print Help (this message) and exit
+#nice: handle option alias separators with \s+
    --version		Print version information and exit

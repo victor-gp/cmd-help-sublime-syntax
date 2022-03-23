@@ -24,7 +24,7 @@ Usage: sbt [options]
   --sbt-create        start sbt even if current directory contains no sbt project
   --sbt-dir   <path>  path to global settings/plugins directory (default: ~/.sbt)
 #             ^^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: handle option arguments like this
+#nice: handle option arguments with \s+ padding
   --sbt-boot  <path>  path to shared boot directory (default: ~/.sbt/boot in 0.11 series)
   --ivy       <path>  path to local Ivy repository (default: ~/.ivy2)
   --mem    <integer>  set memory options (default: 1024)
