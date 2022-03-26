@@ -14,8 +14,7 @@ Usage: sbt [options]
   --no-colors         disable ANSI color codes
   --color=auto|always|true|false|never
 #         ^^^^ variable.parameter.option-argument.cmd-help
-#              ^^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: handle |-separated argument enums
+#              ^^^^^^ variable.parameter.option-argument.cmd-help
                       enable or disable ANSI color codes      (sbt 1.3 and above)
   --supershell=auto|always|true|false|never
                       enable or disable supershell            (sbt 1.3 and above)

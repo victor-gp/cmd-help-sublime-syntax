@@ -284,6 +284,8 @@ contexts:
       set: option-def+square-bracket
     - match: '='
       set: option-def+equals
+    - match: '\|'
+      set: option-def+space
     - include: else-pop
 
   plus-option-post:
