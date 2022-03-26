@@ -135,7 +135,7 @@ Usage: curl [options...] <url>
 #                ^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
 #                            ^^^^ - variable.parameter.option-argument.cmd-help
 #                                 ^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: handle option argumet parts
+#nice: handle option argumet parts / I should handle rubocop's todo before this
  -#, --progress-bar  Display transfer progress as a bar
 #^^ entity.name.function.option.cmd-help
      --proto <protocols> Enable/disable PROTOCOLS
