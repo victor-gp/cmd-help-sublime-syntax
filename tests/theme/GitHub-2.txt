@@ -38,7 +38,7 @@
 [38;2;51;51;51m   [0m[38;2;121;93;163m-o[0m[38;2;51;51;51m[[0m[38;2;0;134;179mN[0m[38;2;51;51;51m]		Open N windows (default: one for each file)[0m
 [38;2;51;51;51m   [0m[38;2;121;93;163m-O[0m[38;2;51;51;51m[[0m[38;2;0;134;179mN[0m[38;2;51;51;51m]		Like -o but split vertically[0m
 [38;2;51;51;51m   [0m[38;2;167;29;93m+[0m[38;2;51;51;51m			Start at end of file[0m
-[38;2;51;51;51m   [0m[38;2;167;29;93m+[0m[38;2;51;51;51m<lnum>		Start at line <lnum>[0m
+[38;2;51;51;51m   [0m[38;2;167;29;93m+[0m[38;2;0;134;179m<lnum>[0m[38;2;51;51;51m		Start at line <lnum>[0m
 [38;2;51;51;51m   [0m[38;2;121;93;163m--cmd[0m[38;2;51;51;51m [0m[38;2;0;134;179m<command>[0m[38;2;51;51;51m	Execute <command> before loading any vimrc file[0m
 [38;2;51;51;51m   [0m[38;2;121;93;163m-c[0m[38;2;51;51;51m [0m[38;2;0;134;179m<command>[0m[38;2;51;51;51m		Execute <command> after loading the first file[0m
 [38;2;51;51;51m   [0m[38;2;121;93;163m-S[0m[38;2;51;51;51m [0m[38;2;0;134;179m<session>[0m[38;2;51;51;51m		Source file <session> after loading the first file[0m
