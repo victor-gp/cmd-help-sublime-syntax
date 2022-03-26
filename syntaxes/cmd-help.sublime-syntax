@@ -187,6 +187,8 @@ contexts:
       set: option-def+colon
     - match: ','
       set: option-def+comma
+    - match: '(?=<)'
+      set: option-def+space
     - match: ' '
       set: option-def+space
     - include: else-pop
@@ -278,6 +280,8 @@ contexts:
       set: option-def+square-bracket
     - match: ',\['
       set: option-def+square-bracket
+    - match: '='
+      set: option-def+equals
     - include: else-pop
 
   plus-option-post:

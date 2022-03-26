@@ -14,7 +14,7 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m-classpath[0m[38;2;248;248;242m [0m[38;2;253;151;31m<class search path of directories and zip/jar files>[0m
 [38;2;248;248;242m                  A : separated list of directories, JAR archives,[0m
 [38;2;248;248;242m                  and ZIP archives to search for class files.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m<name>=<value>[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-D[0m[38;2;253;151;31m<name>[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<value>[0m
 [38;2;248;248;242m                  set a system property[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-verbose[0m[38;2;248;248;242m:[class|gc|jni][0m
 [38;2;248;248;242m                  enable verbose output[0m

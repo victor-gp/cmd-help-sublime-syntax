@@ -17,8 +17,9 @@ where options include:
                   A : separated list of directories, JAR archives,
                   and ZIP archives to search for class files.
     -D<name>=<value>
-#     ^^^^^^^^^^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: handle this
+#     ^^^^^^ variable.parameter.option-argument.cmd-help
+#           ^ - variable.parameter.option-argument.cmd-help
+#            ^^^^^^^ variable.parameter.option-argument.cmd-help
                   set a system property
     -verbose:[class|gc|jni]
                   enable verbose output
