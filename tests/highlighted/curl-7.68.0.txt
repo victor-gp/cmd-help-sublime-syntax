@@ -124,12 +124,12 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--post301[0m[38;2;248;248;242m       Do not switch to GET after following a 301[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--post302[0m[38;2;248;248;242m       Do not switch to GET after following a 302[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--post303[0m[38;2;248;248;242m       Do not switch to GET after following a 303[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--preproxy[0m[38;2;248;248;242m [protocol://]host[:port] Use this proxy first[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--preproxy[0m[38;2;248;248;242m [[0m[38;2;253;151;31mprotocol://[0m[38;2;248;248;242m]host[:port] Use this proxy first[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-#[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--progress-bar[0m[38;2;248;248;242m  Display transfer progress as a bar[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proto[0m[38;2;248;248;242m [0m[38;2;253;151;31m<protocols>[0m[38;2;248;248;242m Enable/disable PROTOCOLS[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proto-default[0m[38;2;248;248;242m [0m[38;2;253;151;31m<protocol>[0m[38;2;248;248;242m Use PROTOCOL for any URL missing a scheme[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proto-redir[0m[38;2;248;248;242m [0m[38;2;253;151;31m<protocols>[0m[38;2;248;248;242m Enable/disable PROTOCOLS on redirect[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--proxy[0m[38;2;248;248;242m [protocol://]host[:port] Use this proxy[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--proxy[0m[38;2;248;248;242m [[0m[38;2;253;151;31mprotocol://[0m[38;2;248;248;242m]host[:port] Use this proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-anyauth[0m[38;2;248;248;242m Pick any proxy authentication method[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-basic[0m[38;2;248;248;242m   Use Basic authentication on the proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-cacert[0m[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m CA certificate to verify peer against for proxy[0m

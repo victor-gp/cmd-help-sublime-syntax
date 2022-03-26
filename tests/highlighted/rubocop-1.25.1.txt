@@ -4,8 +4,8 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--lint[0m[38;2;248;248;242m                       Run only lint cops.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fix-layout[0m[38;2;248;248;242m                 Run only layout cops, with auto-correct on.[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--safe[0m[38;2;248;248;242m                       Run only safe cops.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--except[0m[38;2;248;248;242m [COP1,COP2,...]     Exclude the given cop(s).[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--only[0m[38;2;248;248;242m [COP1,COP2,...]       Run only the given cop(s).[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--except[0m[38;2;248;248;242m [[0m[38;2;253;151;31mCOP1,COP2,...[0m[38;2;248;248;242m]     Exclude the given cop(s).[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--only[0m[38;2;248;248;242m [[0m[38;2;253;151;31mCOP1,COP2,...[0m[38;2;248;248;242m]       Run only the given cop(s).[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--only-guide-cops[0m[38;2;248;248;242m            Run only cops for rules that link to a[0m
 [38;2;248;248;242m                                     style guide.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fail-fast[0m[38;2;248;248;242m                  Inspect files in order of modification[0m
@@ -109,10 +109,10 @@
 
 [38;2;253;151;31mAdditional Modes:[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--list-target-files[0m[38;2;248;248;242m          List all files RuboCop will inspect.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--show-cops[0m[38;2;248;248;242m [COP1,COP2,...]  Shows the given cops, or all cops by[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--show-cops[0m[38;2;248;248;242m [[0m[38;2;253;151;31mCOP1,COP2,...[0m[38;2;248;248;242m]  Shows the given cops, or all cops by[0m
 [38;2;248;248;242m                                     default, and their configurations for the[0m
 [38;2;248;248;242m                                     current directory.[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--show-docs-url[0m[38;2;248;248;242m [COP1,COP2,...][0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--show-docs-url[0m[38;2;248;248;242m [[0m[38;2;253;151;31mCOP1,COP2,...[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                                     Display url to documentation for the given[0m
 [38;2;248;248;242m                                     cops, or base url by default.[0m
 

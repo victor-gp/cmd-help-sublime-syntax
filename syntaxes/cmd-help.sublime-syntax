@@ -179,17 +179,16 @@ contexts:
 
   option-def-post:
     - include: option-def-connectors
-    - match: ' '
-      set: option-def+space
     - match: '='
       set: option-def+equals
-      # alt: match directly in option-argument and colorize '=' too?
-    - match: '\[=|\['
+    - match: '\[=|\[| \['
       set: option-def+square-bracket
     - match: ':'
       set: option-def+colon
     - match: ','
       set: option-def+comma
+    - match: ' '
+      set: option-def+space
     - include: else-pop
 
   option-def-connectors:

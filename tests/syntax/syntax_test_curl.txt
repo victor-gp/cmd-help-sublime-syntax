@@ -132,6 +132,10 @@ Usage: curl [options...] <url>
      --post302       Do not switch to GET after following a 302
      --post303       Do not switch to GET after following a 303
      --preproxy [protocol://]host[:port] Use this proxy first
+#                ^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#                            ^^^^ - variable.parameter.option-argument.cmd-help
+#                                 ^^^^^ - variable.parameter.option-argument.cmd-help
+#nice: handle option argumet parts
  -#, --progress-bar  Display transfer progress as a bar
 #^^ entity.name.function.option.cmd-help
      --proto <protocols> Enable/disable PROTOCOLS
