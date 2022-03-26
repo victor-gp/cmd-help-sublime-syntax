@@ -37,7 +37,10 @@ Action options:
 
 FILE                    visit FILE
 +LINE                   go to line LINE in next FILE
+# <- keyword.control.plus-option.cmd-help
+#^^^^ variable.parameter.option-argument.cmd-help
 +LINE:COLUMN            go to line LINE, column COLUMN, in next FILE
+#^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
 --directory, -L DIR     prepend DIR to load-path (with :DIR, append DIR)
 --eval EXPR             evaluate Emacs Lisp expression EXPR
 --execute EXPR          evaluate Emacs Lisp expression EXPR

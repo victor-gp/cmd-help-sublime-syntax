@@ -44,8 +44,7 @@ Arguments:
 #  ^ keyword.control.plus-option.cmd-help
    +<lnum>		Start at line <lnum>
 #  ^ keyword.control.plus-option.cmd-help
-#   ^^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: handle this
+#   ^^^^^^ variable.parameter.option-argument.cmd-help
    --cmd <command>	Execute <command> before loading any vimrc file
    -c <command>		Execute <command> after loading the first file
    -S <session>		Source file <session> after loading the first file

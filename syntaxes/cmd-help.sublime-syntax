@@ -172,7 +172,7 @@ contexts:
       set: then-pop
     - match: '\+(?=[\s<[:alpha:]])'
       scope: keyword.control.plus-option.cmd-help
-      set: option-def-post
+      set: plus-option-post
     - match: '-:(?={{option_break}})'
       scope: *OPTION_DEF_SCOPE
       set: option-def-post
@@ -279,6 +279,16 @@ contexts:
       set: option-def+square-bracket
     - match: ',\['
       set: option-def+square-bracket
+    - include: else-pop
+
+  plus-option-post:
+    - match: '<.*?>'
+      scope: *OPTION_ARGUMENT_SCOPE
+      set: then-pop
+    # e.g.: "LINE:COLUMN" (from emacs)
+    - match: '{{allcaps_argument_name}}(:{{allcaps_argument_name}})*'
+      scope: *OPTION_ARGUMENT_SCOPE
+      set: then-pop
     - include: else-pop
 
   ### other definitions ########################################################
