@@ -202,6 +202,8 @@ contexts:
       set: option-def
     - match: ' or '
       set: option-def
+    - match: '  or  '
+      set: option-def
     - match: '/'
       set: option-def
     - match: '\s+(?=-)'
