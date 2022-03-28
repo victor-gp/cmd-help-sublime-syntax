@@ -18,7 +18,8 @@ variables:
 ### command option variables:
   option_break: '[ \t\n,=\[</:]'
   # marks seen in options: . ? : # $ -- +
-  option_name: '[^{{option_break}}]+'
+  option_char: '[^{{option_break}}]'
+  option_name: '{{option_char}}+'
 
 ### command/option argument variables:
   ellipsis: '\.\.\.'
@@ -129,11 +130,11 @@ contexts:
 
   maybe-option:
     - include: option-def-specials
-    - match: '(?=-)'
+    - match: '(?=-{{option_char}})'
       set: option-def
 
   maybe-argument:
-    - match: '(?=<|{)'
+    - match: '(?=<|{|-)'
       set: argument-def
 
   maybe-other:
@@ -311,6 +312,9 @@ contexts:
       set: then-pop
     - match: '{'
       set: curly-bracket-argument-def
+    - match: '-(?=  )'
+      scope: *ARGUMENT_DEF_SCOPE # stdin
+      set: then-pop
     - include: else-pop
 
   curly-bracket-argument-def:
@@ -339,6 +343,7 @@ contexts:
         1: *OTHER_DEF_SCOPE
         2: *OTHER_DEF_SCOPE
       set: then-pop
+
     - match: '{{allcaps_argument_name}}(?=  )'
       scope: *OTHER_VARIABLE_DEF_SCOPE
       set: then-pop

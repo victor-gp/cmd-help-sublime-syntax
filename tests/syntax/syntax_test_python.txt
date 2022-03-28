@@ -67,8 +67,7 @@ file   : program read from script file
 #^^^ keyword.other.def.cmd-help
 #wontfix: not ideal (should be variable.parameter.argument.cmd-help) but acceptable
 -      : program read from stdin (default; interactive mode if a tty)
-# <- - variable.parameter.argument.cmd-help
-#nice: and this
+# <- variable.parameter.argument.cmd-help
 arg ...: arguments passed to program in sys.argv[1:]
 
 Other environment variables:
