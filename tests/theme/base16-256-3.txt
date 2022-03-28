@@ -65,28 +65,28 @@
 [37marg ...: arguments passed to program in sys.argv[1:][0m
 
 [34mOther environment variables:[0m
-[37mPYTHONSTARTUP: file executed on interactive startup (no default)[0m
-[37mPYTHONPATH   : ':'-separated list of directories prefixed to the[0m
+[32mPYTHONSTARTUP[0m[37m: file executed on interactive startup (no default)[0m
+[32mPYTHONPATH[0m[37m   : ':'-separated list of directories prefixed to the[0m
 [37m               default module search path.  The result is sys.path.[0m
-[37mPYTHONHOME   : alternate <prefix> directory (or <prefix>:<exec_prefix>).[0m
+[32mPYTHONHOME[0m[37m   : alternate <prefix> directory (or <prefix>:<exec_prefix>).[0m
 [37m               The default module search path uses <prefix>/lib/pythonX.X.[0m
-[37mPYTHONPLATLIBDIR : override sys.platlibdir.[0m
-[37mPYTHONCASEOK : ignore case in 'import' statements (Windows).[0m
-[37mPYTHONUTF8: if set to 1, enable the UTF-8 mode.[0m
-[37mPYTHONIOENCODING: Encoding[:errors] used for stdin/stdout/stderr.[0m
-[37mPYTHONFAULTHANDLER: dump the Python traceback on fatal errors.[0m
-[37mPYTHONHASHSEED: if this variable is set to 'random', a random value is used[0m
+[32mPYTHONPLATLIBDIR[0m[37m : override sys.platlibdir.[0m
+[32mPYTHONCASEOK[0m[37m : ignore case in 'import' statements (Windows).[0m
+[32mPYTHONUTF8[0m[37m: if set to 1, enable the UTF-8 mode.[0m
+[32mPYTHONIOENCODING[0m[37m: Encoding[:errors] used for stdin/stdout/stderr.[0m
+[32mPYTHONFAULTHANDLER[0m[37m: dump the Python traceback on fatal errors.[0m
+[32mPYTHONHASHSEED[0m[37m: if this variable is set to 'random', a random value is used[0m
 [37m   to seed the hashes of str and bytes objects.  It can also be set to an[0m
 [37m   integer in the range [0,4294967295] to get hash values with a[0m
 [37m   predictable seed.[0m
-[37mPYTHONMALLOC: set the Python memory allocators and/or install debug hooks[0m
+[32mPYTHONMALLOC[0m[37m: set the Python memory allocators and/or install debug hooks[0m
 [37m   on Python memory allocators. Use PYTHONMALLOC=debug to install debug[0m
 [37m   hooks.[0m
-[37mPYTHONCOERCECLOCALE: if this variable is set to 0, it disables the locale[0m
+[32mPYTHONCOERCECLOCALE[0m[37m: if this variable is set to 0, it disables the locale[0m
 [37m   coercion behavior. Use PYTHONCOERCECLOCALE=warn to request display of[0m
 [37m   locale coercion and locale compatibility warnings on stderr.[0m
-[37mPYTHONBREAKPOINT: if this variable is set to 0, it disables the default[0m
+[32mPYTHONBREAKPOINT[0m[37m: if this variable is set to 0, it disables the default[0m
 [37m   debugger. It can be set to the callable of your debugger of choice.[0m
-[37mPYTHONDEVMODE: enable the development mode.[0m
-[37mPYTHONPYCACHEPREFIX: root directory for bytecode cache (pyc) files.[0m
-[37mPYTHONWARNDEFAULTENCODING: enable opt-in EncodingWarning for 'encoding=None'.[0m
+[32mPYTHONDEVMODE[0m[37m: enable the development mode.[0m
+[32mPYTHONPYCACHEPREFIX[0m[37m: root directory for bytecode cache (pyc) files.[0m
+[32mPYTHONWARNDEFAULTENCODING[0m[37m: enable opt-in EncodingWarning for 'encoding=None'.[0m

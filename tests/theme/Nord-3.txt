@@ -65,28 +65,28 @@
 [38;2;216;222;233marg ...: arguments passed to program in sys.argv[1:][0m
 
 [38;2;136;192;208mOther environment variables:[0m
-[38;2;216;222;233mPYTHONSTARTUP: file executed on interactive startup (no default)[0m
-[38;2;216;222;233mPYTHONPATH   : ':'-separated list of directories prefixed to the[0m
+[38;2;216;222;233mPYTHONSTARTUP[0m[38;2;216;222;233m: file executed on interactive startup (no default)[0m
+[38;2;216;222;233mPYTHONPATH[0m[38;2;216;222;233m   : ':'-separated list of directories prefixed to the[0m
 [38;2;216;222;233m               default module search path.  The result is sys.path.[0m
-[38;2;216;222;233mPYTHONHOME   : alternate <prefix> directory (or <prefix>:<exec_prefix>).[0m
+[38;2;216;222;233mPYTHONHOME[0m[38;2;216;222;233m   : alternate <prefix> directory (or <prefix>:<exec_prefix>).[0m
 [38;2;216;222;233m               The default module search path uses <prefix>/lib/pythonX.X.[0m
-[38;2;216;222;233mPYTHONPLATLIBDIR : override sys.platlibdir.[0m
-[38;2;216;222;233mPYTHONCASEOK : ignore case in 'import' statements (Windows).[0m
-[38;2;216;222;233mPYTHONUTF8: if set to 1, enable the UTF-8 mode.[0m
-[38;2;216;222;233mPYTHONIOENCODING: Encoding[:errors] used for stdin/stdout/stderr.[0m
-[38;2;216;222;233mPYTHONFAULTHANDLER: dump the Python traceback on fatal errors.[0m
-[38;2;216;222;233mPYTHONHASHSEED: if this variable is set to 'random', a random value is used[0m
+[38;2;216;222;233mPYTHONPLATLIBDIR[0m[38;2;216;222;233m : override sys.platlibdir.[0m
+[38;2;216;222;233mPYTHONCASEOK[0m[38;2;216;222;233m : ignore case in 'import' statements (Windows).[0m
+[38;2;216;222;233mPYTHONUTF8[0m[38;2;216;222;233m: if set to 1, enable the UTF-8 mode.[0m
+[38;2;216;222;233mPYTHONIOENCODING[0m[38;2;216;222;233m: Encoding[:errors] used for stdin/stdout/stderr.[0m
+[38;2;216;222;233mPYTHONFAULTHANDLER[0m[38;2;216;222;233m: dump the Python traceback on fatal errors.[0m
+[38;2;216;222;233mPYTHONHASHSEED[0m[38;2;216;222;233m: if this variable is set to 'random', a random value is used[0m
 [38;2;216;222;233m   to seed the hashes of str and bytes objects.  It can also be set to an[0m
 [38;2;216;222;233m   integer in the range [0,4294967295] to get hash values with a[0m
 [38;2;216;222;233m   predictable seed.[0m
-[38;2;216;222;233mPYTHONMALLOC: set the Python memory allocators and/or install debug hooks[0m
+[38;2;216;222;233mPYTHONMALLOC[0m[38;2;216;222;233m: set the Python memory allocators and/or install debug hooks[0m
 [38;2;216;222;233m   on Python memory allocators. Use PYTHONMALLOC=debug to install debug[0m
 [38;2;216;222;233m   hooks.[0m
-[38;2;216;222;233mPYTHONCOERCECLOCALE: if this variable is set to 0, it disables the locale[0m
+[38;2;216;222;233mPYTHONCOERCECLOCALE[0m[38;2;216;222;233m: if this variable is set to 0, it disables the locale[0m
 [38;2;216;222;233m   coercion behavior. Use PYTHONCOERCECLOCALE=warn to request display of[0m
 [38;2;216;222;233m   locale coercion and locale compatibility warnings on stderr.[0m
-[38;2;216;222;233mPYTHONBREAKPOINT: if this variable is set to 0, it disables the default[0m
+[38;2;216;222;233mPYTHONBREAKPOINT[0m[38;2;216;222;233m: if this variable is set to 0, it disables the default[0m
 [38;2;216;222;233m   debugger. It can be set to the callable of your debugger of choice.[0m
-[38;2;216;222;233mPYTHONDEVMODE: enable the development mode.[0m
-[38;2;216;222;233mPYTHONPYCACHEPREFIX: root directory for bytecode cache (pyc) files.[0m
-[38;2;216;222;233mPYTHONWARNDEFAULTENCODING: enable opt-in EncodingWarning for 'encoding=None'.[0m
+[38;2;216;222;233mPYTHONDEVMODE[0m[38;2;216;222;233m: enable the development mode.[0m
+[38;2;216;222;233mPYTHONPYCACHEPREFIX[0m[38;2;216;222;233m: root directory for bytecode cache (pyc) files.[0m
+[38;2;216;222;233mPYTHONWARNDEFAULTENCODING[0m[38;2;216;222;233m: enable opt-in EncodingWarning for 'encoding=None'.[0m

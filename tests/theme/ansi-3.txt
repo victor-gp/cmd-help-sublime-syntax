@@ -65,28 +65,28 @@ Options and arguments (and corresponding environment variables):
 arg ...: arguments passed to program in sys.argv[1:]
 
 [34mOther environment variables:[0m
-PYTHONSTARTUP: file executed on interactive startup (no default)
-PYTHONPATH   : ':'-separated list of directories prefixed to the
+[32mPYTHONSTARTUP[0m: file executed on interactive startup (no default)
+[32mPYTHONPATH[0m   : ':'-separated list of directories prefixed to the
                default module search path.  The result is sys.path.
-PYTHONHOME   : alternate <prefix> directory (or <prefix>:<exec_prefix>).
+[32mPYTHONHOME[0m   : alternate <prefix> directory (or <prefix>:<exec_prefix>).
                The default module search path uses <prefix>/lib/pythonX.X.
-PYTHONPLATLIBDIR : override sys.platlibdir.
-PYTHONCASEOK : ignore case in 'import' statements (Windows).
-PYTHONUTF8: if set to 1, enable the UTF-8 mode.
-PYTHONIOENCODING: Encoding[:errors] used for stdin/stdout/stderr.
-PYTHONFAULTHANDLER: dump the Python traceback on fatal errors.
-PYTHONHASHSEED: if this variable is set to 'random', a random value is used
+[32mPYTHONPLATLIBDIR[0m : override sys.platlibdir.
+[32mPYTHONCASEOK[0m : ignore case in 'import' statements (Windows).
+[32mPYTHONUTF8[0m: if set to 1, enable the UTF-8 mode.
+[32mPYTHONIOENCODING[0m: Encoding[:errors] used for stdin/stdout/stderr.
+[32mPYTHONFAULTHANDLER[0m: dump the Python traceback on fatal errors.
+[32mPYTHONHASHSEED[0m: if this variable is set to 'random', a random value is used
    to seed the hashes of str and bytes objects.  It can also be set to an
    integer in the range [0,4294967295] to get hash values with a
    predictable seed.
-PYTHONMALLOC: set the Python memory allocators and/or install debug hooks
+[32mPYTHONMALLOC[0m: set the Python memory allocators and/or install debug hooks
    on Python memory allocators. Use PYTHONMALLOC=debug to install debug
    hooks.
-PYTHONCOERCECLOCALE: if this variable is set to 0, it disables the locale
+[32mPYTHONCOERCECLOCALE[0m: if this variable is set to 0, it disables the locale
    coercion behavior. Use PYTHONCOERCECLOCALE=warn to request display of
    locale coercion and locale compatibility warnings on stderr.
-PYTHONBREAKPOINT: if this variable is set to 0, it disables the default
+[32mPYTHONBREAKPOINT[0m: if this variable is set to 0, it disables the default
    debugger. It can be set to the callable of your debugger of choice.
-PYTHONDEVMODE: enable the development mode.
-PYTHONPYCACHEPREFIX: root directory for bytecode cache (pyc) files.
-PYTHONWARNDEFAULTENCODING: enable opt-in EncodingWarning for 'encoding=None'.
+[32mPYTHONDEVMODE[0m: enable the development mode.
+[32mPYTHONPYCACHEPREFIX[0m: root directory for bytecode cache (pyc) files.
+[32mPYTHONWARNDEFAULTENCODING[0m: enable opt-in EncodingWarning for 'encoding=None'.
