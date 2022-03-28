@@ -8,12 +8,12 @@ scope: text.cmd-help
 
 variables:
 ### section name variables:
-  # lowercase, uppercase or dash char (for compound words)
-  alpha_dash: '[[:alpha:]-]'
-  # all kinds of words, including those within 1/2 parentheses
-  any_word: '\(?{{alpha_dash}}+\b\)?'
+  # words regardless of case, including dashes for compound words
+  any_word: '[A-Za-z][A-Za-z-]*\b'
+  # allow parentheses on both ends of the word
+  any_word2: '\(?{{any_word}}\)?'
   # words starting with uppercase
-  leading_word: '[:upper:]({{alpha_dash}})*\b'
+  leading_word: '[A-Z][A-Za-z-]*\b'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:]'
@@ -23,11 +23,11 @@ variables:
 
 ### command/option argument variables:
   ellipsis: '\.\.\.'
-  allcaps_argument_name: '[:upper:][[:upper:][:digit:]_]*\b'
-  relaxed_argument_name: '[:alpha:][[:alnum:]_-]*\b'
+  allcaps_argument_name: '[A-Z][0-9A-Z_]*\b'
+  relaxed_argument_name: '[A-Za-z][0-9A-Za-z_-]*\b'
 
 ### other-def variables:
-  other_lowercase_name: '[:lower:][[:lower:][:digit:]_-]*+\b'
+  other_lowercase_name: '[a-z][0-9a-z_-]*\b'
   long_space: '   |\t|\n'
 
 scope_variables: # rightmost scope is matched first
@@ -145,10 +145,10 @@ contexts:
   ### section headings #########################################################
 
   heading:
-    - match: '{{leading_word}}( {{any_word}})*:?\n'
+    - match: '{{leading_word}}( {{any_word2}})*:?\n'
       scope: *SECTION_HEADING_SCOPE
       set: then-pop
-    # - match: '{{any_word}}( {{any_word}})*:\n'
+    # - match: '{{any_word2}}( {{any_word2}})*:\n'
     #   scope: *SECTION_HEADING_SCOPE
     #   set: then-pop
     - include: else-pop
