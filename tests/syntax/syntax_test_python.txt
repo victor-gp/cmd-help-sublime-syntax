@@ -64,8 +64,8 @@ Options and arguments (and corresponding environment variables):
 --check-hash-based-pycs always|default|never:
     control how Python invalidates hash-based .pyc files
 file   : program read from script file
-#^^^ - variable.parameter.argument.cmd-help
-#nice: handle argument definitions like this
+#^^^ keyword.other.def.cmd-help
+#wontfix: not ideal (should be variable.parameter.argument.cmd-help) but acceptable
 -      : program read from stdin (default; interactive mode if a tty)
 # <- - variable.parameter.argument.cmd-help
 #nice: and this

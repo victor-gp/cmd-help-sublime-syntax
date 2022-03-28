@@ -60,7 +60,7 @@
 
 [38;2;166;226;46m--check-hash-based-pycs[0m[38;2;248;248;242m [0m[38;2;253;151;31malways[0m[38;2;248;248;242m|[0m[38;2;253;151;31mdefault[0m[38;2;248;248;242m|[0m[38;2;253;151;31mnever[0m[38;2;248;248;242m:[0m
 [38;2;248;248;242m    control how Python invalidates hash-based .pyc files[0m
-[38;2;248;248;242mfile   : program read from script file[0m
+[38;2;249;38;114mfile[0m[38;2;248;248;242m   : program read from script file[0m
 [38;2;248;248;242m-      : program read from stdin (default; interactive mode if a tty)[0m
 [38;2;248;248;242marg ...: arguments passed to program in sys.argv[1:][0m
 

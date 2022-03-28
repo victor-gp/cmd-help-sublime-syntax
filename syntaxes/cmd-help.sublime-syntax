@@ -101,6 +101,7 @@ contexts:
     - include: maybe-heading
     - include: maybe-option
     - include: maybe-argument
+    - include: maybe-other
     - include: else-pop
 
   indent-1-2:
