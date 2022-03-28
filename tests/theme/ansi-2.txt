@@ -49,5 +49,5 @@ VIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 01 2022 09:16:32)
    [34m--startuptime[0m [32m<file>[0m	Write startup timing messages to <file>
    [34m-i[0m [32m<viminfo>[0m		Use <viminfo> instead of .viminfo
    [34m--clean[0m		'nocompatible', Vim defaults, no plugins, no viminfo
-   [34m-h[0m  or  --help	Print Help (this message) and exit
+   [34m-h[0m  or  [34m--help[0m	Print Help (this message) and exit
    [34m--version[0m		Print version information and exit

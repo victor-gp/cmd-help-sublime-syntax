@@ -49,5 +49,5 @@
 [38;2;17;27;39m   [0m[38;2;124;0;170m--startuptime[0m[38;2;17;27;39m [0m[38;2;0;109;109m<file>[0m[38;2;17;27;39m	Write startup timing messages to <file>[0m
 [38;2;17;27;39m   [0m[38;2;124;0;170m-i[0m[38;2;17;27;39m [0m[38;2;0;109;109m<viminfo>[0m[38;2;17;27;39m		Use <viminfo> instead of .viminfo[0m
 [38;2;17;27;39m   [0m[38;2;124;0;170m--clean[0m[38;2;17;27;39m		'nocompatible', Vim defaults, no plugins, no viminfo[0m
-[38;2;17;27;39m   [0m[38;2;124;0;170m-h[0m[38;2;17;27;39m  or  --help	Print Help (this message) and exit[0m
+[38;2;17;27;39m   [0m[38;2;124;0;170m-h[0m[38;2;17;27;39m  or  [0m[38;2;124;0;170m--help[0m[38;2;17;27;39m	Print Help (this message) and exit[0m
 [38;2;17;27;39m   [0m[38;2;124;0;170m--version[0m[38;2;17;27;39m		Print version information and exit[0m
