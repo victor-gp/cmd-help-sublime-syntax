@@ -29,7 +29,9 @@ Usage: ruby [switches] [--] [programfile] [arguments]
   -v              print the version number, then turn on verbose mode
   -w              turn warnings on for your script
   -W[level=2|:category]
-#    ^^^^^^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#    ^^^^^^^ variable.parameter.option-argument.cmd-help
+#           ^ - variable.parameter.option-argument.cmd-help
+#            ^^^^^^^^^ variable.parameter.option-argument.cmd-help
                   set warning level; 0=silence, 1=medium, 2=verbose
   -x[directory]   strip off text before #!ruby line and perhaps cd to directory
   --jit           enable JIT with default options (experimental)

@@ -256,6 +256,8 @@ contexts:
 
   option-def+square-bracket:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPE
+    - match: '\|'
+      push: de-scope-match
     - match: '(?=])'
       set:
         - match: ']'

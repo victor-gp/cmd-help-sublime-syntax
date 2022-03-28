@@ -18,7 +18,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m              look for the script using PATH environment variable[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m              print the version number, then turn on verbose mode[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m              turn warnings on for your script[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m[[0m[38;2;253;151;31mlevel=2|:category[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m[[0m[38;2;253;151;31mlevel=2[0m[38;2;255;255;255m|[0m[38;2;253;151;31m:category[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  set warning level; 0=silence, 1=medium, 2=verbose[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m[[0m[38;2;253;151;31mdirectory[0m[38;2;248;248;242m]   strip off text before #!ruby line and perhaps cd to directory[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit[0m[38;2;248;248;242m           enable JIT with default options (experimental)[0m

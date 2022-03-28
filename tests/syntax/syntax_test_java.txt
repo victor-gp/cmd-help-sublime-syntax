@@ -24,7 +24,7 @@ where options include:
     -verbose:[class|gc|jni]
 #           ^ - variable.parameter.option-argument.cmd-help
 #            ^ - variable.parameter.option-argument.cmd-help
-#             ^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#             ^^^^^ variable.parameter.option-argument.cmd-help
 #nice: colon should be scoped, it's required
 #nice: OR pipes shouldn't be scoped
                   enable verbose output
@@ -43,6 +43,9 @@ where options include:
     -? -help      print this help message
     -X            print help on non-standard options
     -ea[:<packagename>...|:<classname>]
+#       ^^^^^^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#                        ^ - variable.parameter.option-argument.cmd-help
+#                         ^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
     -enableassertions[:<packagename>...|:<classname>]
                   enable assertions with specified granularity
     -da[:<packagename>...|:<classname>]
