@@ -85,6 +85,10 @@ contexts:
     - match: ''
       pop: true
 
+  de-scope-match:
+    - clear_scopes: 1
+    - include: then-pop
+
   sink:
     - clear_scopes: true
     - meta_include_prototype: false
@@ -188,6 +192,7 @@ contexts:
     - include: option-def-connectors
     - match: '='
       set: option-def+equals
+    # match '[=' or '[' or ' [' or ':['
     - match: '\[=|\[| \[|:\['
       set: option-def+square-bracket
     - match: ':'
@@ -270,10 +275,9 @@ contexts:
 
   option-argument-curly-bracket:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPE
+    # match ',' or '|'
     - match: ',|\|'
-      push:
-        - clear_scopes: 1
-        - include: then-pop
+      push: de-scope-match
     - match: '(?=})'
       set:
         - match: '}'
@@ -283,8 +287,7 @@ contexts:
     - include: option-def-connectors
     - match: '({{ellipsis}})?'
       scope: *OPTION_ARGUMENT_SCOPE
-    # - match: ''
-    #   set: option-def-post
+    # match '[=' or '['
     - match: '\[=|\['
       set: option-def+square-bracket
     - match: ',\['
@@ -324,10 +327,9 @@ contexts:
 
   curly-bracket-argument-def:
     - meta_content_scope: *ARGUMENT_DEF_SCOPE
+    # match ',' or '|'
     - match: ',|\|'
-      push:
-        - clear_scopes: 1
-        - include: then-pop
+      push: de-scope-match
     - match: '(?=})'
       set:
         - match: '}'
