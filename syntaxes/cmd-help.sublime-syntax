@@ -134,8 +134,9 @@ contexts:
       set: option-def
 
   maybe-argument:
-    - match: '(?=<|{|-)'
-      set: argument-def
+    # - match: '(?=<|{|-)'
+    #   set: argument-def
+    - include: argument-def
 
   maybe-other:
     - match: ''
@@ -315,7 +316,11 @@ contexts:
     - match: '-(?=  )'
       scope: *ARGUMENT_DEF_SCOPE # stdin
       set: then-pop
-    - include: else-pop
+    - match: '({{relaxed_argument_name}}) ({{ellipsis}})'
+      captures:
+        1: *ARGUMENT_DEF_SCOPE
+        2: *ARGUMENT_DEF_SCOPE
+      set: then-pop
 
   curly-bracket-argument-def:
     - meta_content_scope: *ARGUMENT_DEF_SCOPE

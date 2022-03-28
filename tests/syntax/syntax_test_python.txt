@@ -65,10 +65,13 @@ Options and arguments (and corresponding environment variables):
     control how Python invalidates hash-based .pyc files
 file   : program read from script file
 #^^^ keyword.other.def.cmd-help
-#wontfix: not ideal (should be variable.parameter.argument.cmd-help) but acceptable
+#wontfix: should be variable.parameter.argument.cmd-help, but a necessary evil
 -      : program read from stdin (default; interactive mode if a tty)
 # <- variable.parameter.argument.cmd-help
 arg ...: arguments passed to program in sys.argv[1:]
+#^^ variable.parameter.argument.cmd-help
+#  ^ - variable.parameter.argument.cmd-help
+#   ^^^ variable.parameter.argument.cmd-help
 
 Other environment variables:
 PYTHONSTARTUP: file executed on interactive startup (no default)
