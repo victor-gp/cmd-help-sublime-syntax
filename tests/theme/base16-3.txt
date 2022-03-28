@@ -1,0 +1,92 @@
+[34musage:[0m[37m /home/victor-gp/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
+[37mOptions and arguments (and corresponding environment variables):[0m
+[34m-b[0m[37m     : issue warnings about str(bytes_instance), str(bytearray_instance)[0m
+[37m         and comparing bytes/bytearray with str. (-bb: issue errors)[0m
+[34m-B[0m[37m     : don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x[0m
+[34m-c[0m[37m [0m[37mcmd[0m[37m : program passed in as string (terminates option list)[0m
+[34m-d[0m[37m     : turn on parser debugging output (for experts only, only works on[0m
+[37m         debug builds); also PYTHONDEBUG=x[0m
+[34m-E[0m[37m     : ignore PYTHON* environment variables (such as PYTHONPATH)[0m
+[34m-h[0m[37m     : print this help message and exit (also --help)[0m
+[34m-i[0m[37m     : inspect interactively after running script; forces a prompt even[0m
+[37m         if stdin does not appear to be a terminal; also PYTHONINSPECT=x[0m
+[34m-I[0m[37m     : isolate Python from the user's environment (implies -E and -s)[0m
+[34m-m[0m[37m [0m[37mmod[0m[37m : run library module as a script (terminates option list)[0m
+[34m-O[0m[37m     : remove assert and __debug__-dependent statements; add .opt-1 before[0m
+[37m         .pyc extension; also PYTHONOPTIMIZE=x[0m
+[34m-OO[0m[37m    : do -O changes and also discard docstrings; add .opt-2 before[0m
+[37m         .pyc extension[0m
+[34m-q[0m[37m     : don't print version and copyright messages on interactive startup[0m
+[34m-s[0m[37m     : don't add user site directory to sys.path; also PYTHONNOUSERSITE[0m
+[34m-S[0m[37m     : don't imply 'import site' on initialization[0m
+[34m-u[0m[37m     : force the stdout and stderr streams to be unbuffered;[0m
+[37m         this option has no effect on stdin; also PYTHONUNBUFFERED=x[0m
+[34m-v[0m[37m     : verbose (trace import statements); also PYTHONVERBOSE=x[0m
+[37m         can be supplied multiple times to increase verbosity[0m
+[34m-V[0m[37m     : print the Python version number and exit (also --version)[0m
+[37m         when given twice, print more information about the build[0m
+[34m-W[0m[37m [0m[37marg[0m[37m : warning control; arg is action:message:category:module:lineno[0m
+[37m         also PYTHONWARNINGS=arg[0m
+[34m-x[0m[37m     : skip first line of source, allowing use of non-Unix forms of #!cmd[0m
+[34m-X[0m[37m [0m[37mopt[0m[37m : set implementation-specific option. The following options are available:[0m
+
+[37m         -X faulthandler: enable faulthandler[0m
+[37m         -X showrefcount: output the total reference count and number of used[0m
+[37m             memory blocks when the program finishes or after each statement in the[0m
+[37m             interactive interpreter. This only works on debug builds[0m
+[37m         -X tracemalloc: start tracing Python memory allocations using the[0m
+[37m             tracemalloc module. By default, only the most recent frame is stored in a[0m
+[37m             traceback of a trace. Use -X tracemalloc=NFRAME to start tracing with a[0m
+[37m             traceback limit of NFRAME frames[0m
+[37m         -X importtime: show how long each import takes. It shows module name,[0m
+[37m             cumulative time (including nested imports) and self time (excluding[0m
+[37m             nested imports). Note that its output may be broken in multi-threaded[0m
+[37m             application. Typical usage is python3 -X importtime -c 'import asyncio'[0m
+[37m         -X dev: enable CPython's "development mode", introducing additional runtime[0m
+[37m             checks which are too expensive to be enabled by default. Effect of the[0m
+[37m             developer mode:[0m
+[37m                * Add default warning filter, as -W default[0m
+[37m                * Install debug hooks on memory allocators: see the PyMem_SetupDebugHooks() C function[0m
+[37m                * Enable the faulthandler module to dump the Python traceback on a crash[0m
+[37m                * Enable asyncio debug mode[0m
+[37m                * Set the dev_mode attribute of sys.flags to True[0m
+[37m                * io.IOBase destructor logs close() exceptions[0m
+[37m         -X utf8: enable UTF-8 mode for operating system interfaces, overriding the default[0m
+[37m             locale-aware mode. -X utf8=0 explicitly disables UTF-8 mode (even when it would[0m
+[37m             otherwise activate automatically)[0m
+[37m         -X pycache_prefix=PATH: enable writing .pyc files to a parallel tree rooted at the[0m
+[37m             given directory instead of to the code tree[0m
+[37m         -X warn_default_encoding: enable opt-in EncodingWarning for 'encoding=None'[0m
+
+[34m--check-hash-based-pycs[0m[37m [0m[37malways[0m[37m|[0m[37mdefault[0m[37m|[0m[37mnever[0m[37m:[0m
+[37m    control how Python invalidates hash-based .pyc files[0m
+[35mfile[0m[37m   : program read from script file[0m
+[37m-      : program read from stdin (default; interactive mode if a tty)[0m
+[37marg ...: arguments passed to program in sys.argv[1:][0m
+
+[34mOther environment variables:[0m
+[37mPYTHONSTARTUP: file executed on interactive startup (no default)[0m
+[37mPYTHONPATH   : ':'-separated list of directories prefixed to the[0m
+[37m               default module search path.  The result is sys.path.[0m
+[37mPYTHONHOME   : alternate <prefix> directory (or <prefix>:<exec_prefix>).[0m
+[37m               The default module search path uses <prefix>/lib/pythonX.X.[0m
+[37mPYTHONPLATLIBDIR : override sys.platlibdir.[0m
+[37mPYTHONCASEOK : ignore case in 'import' statements (Windows).[0m
+[37mPYTHONUTF8: if set to 1, enable the UTF-8 mode.[0m
+[37mPYTHONIOENCODING: Encoding[:errors] used for stdin/stdout/stderr.[0m
+[37mPYTHONFAULTHANDLER: dump the Python traceback on fatal errors.[0m
+[37mPYTHONHASHSEED: if this variable is set to 'random', a random value is used[0m
+[37m   to seed the hashes of str and bytes objects.  It can also be set to an[0m
+[37m   integer in the range [0,4294967295] to get hash values with a[0m
+[37m   predictable seed.[0m
+[37mPYTHONMALLOC: set the Python memory allocators and/or install debug hooks[0m
+[37m   on Python memory allocators. Use PYTHONMALLOC=debug to install debug[0m
+[37m   hooks.[0m
+[37mPYTHONCOERCECLOCALE: if this variable is set to 0, it disables the locale[0m
+[37m   coercion behavior. Use PYTHONCOERCECLOCALE=warn to request display of[0m
+[37m   locale coercion and locale compatibility warnings on stderr.[0m
+[37mPYTHONBREAKPOINT: if this variable is set to 0, it disables the default[0m
+[37m   debugger. It can be set to the callable of your debugger of choice.[0m
+[37mPYTHONDEVMODE: enable the development mode.[0m
+[37mPYTHONPYCACHEPREFIX: root directory for bytecode cache (pyc) files.[0m
+[37mPYTHONWARNDEFAULTENCODING: enable opt-in EncodingWarning for 'encoding=None'.[0m

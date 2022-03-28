@@ -6,6 +6,10 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 
 bat cache --build --source .. > /dev/null
 
+highlight() {
+    bat --no-config -fpl cmd-help "$2" --theme "$1" > "$3"
+}
+
 IFS=$'\n'
 for theme in $(bat --list-themes --color=never)
 do
@@ -13,10 +17,13 @@ do
 
     source_path=source/bat-short-0.18.2.txt
     highlighted_path="theme/${theme}-1.txt"
-    bat --no-config -fpl cmd-help "$source_path" --theme "$theme" > "$highlighted_path"
+    highlight "$theme" "$source_path" "$highlighted_path"
     source_path=source/vim-8.1.txt
     highlighted_path="theme/${theme}-2.txt"
-    bat --no-config -fpl cmd-help "$source_path" --theme "$theme" > "$highlighted_path"
+    highlight "$theme" "$source_path" "$highlighted_path"
+    source_path=source/python-3.10.0.txt
+    highlighted_path="theme/${theme}-3.txt"
+    highlight "$theme" "$source_path" "$highlighted_path"
 done
 
 # restore user configuration

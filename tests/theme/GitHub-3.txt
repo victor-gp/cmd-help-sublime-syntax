@@ -1,0 +1,92 @@
+[38;2;51;51;51musage:[0m[38;2;51;51;51m /home/victor-gp/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
+[38;2;51;51;51mOptions and arguments (and corresponding environment variables):[0m
+[38;2;121;93;163m-b[0m[38;2;51;51;51m     : issue warnings about str(bytes_instance), str(bytearray_instance)[0m
+[38;2;51;51;51m         and comparing bytes/bytearray with str. (-bb: issue errors)[0m
+[38;2;121;93;163m-B[0m[38;2;51;51;51m     : don't write .pyc files on import; also PYTHONDONTWRITEBYTECODE=x[0m
+[38;2;121;93;163m-c[0m[38;2;51;51;51m [0m[38;2;0;134;179mcmd[0m[38;2;51;51;51m : program passed in as string (terminates option list)[0m
+[38;2;121;93;163m-d[0m[38;2;51;51;51m     : turn on parser debugging output (for experts only, only works on[0m
+[38;2;51;51;51m         debug builds); also PYTHONDEBUG=x[0m
+[38;2;121;93;163m-E[0m[38;2;51;51;51m     : ignore PYTHON* environment variables (such as PYTHONPATH)[0m
+[38;2;121;93;163m-h[0m[38;2;51;51;51m     : print this help message and exit (also --help)[0m
+[38;2;121;93;163m-i[0m[38;2;51;51;51m     : inspect interactively after running script; forces a prompt even[0m
+[38;2;51;51;51m         if stdin does not appear to be a terminal; also PYTHONINSPECT=x[0m
+[38;2;121;93;163m-I[0m[38;2;51;51;51m     : isolate Python from the user's environment (implies -E and -s)[0m
+[38;2;121;93;163m-m[0m[38;2;51;51;51m [0m[38;2;0;134;179mmod[0m[38;2;51;51;51m : run library module as a script (terminates option list)[0m
+[38;2;121;93;163m-O[0m[38;2;51;51;51m     : remove assert and __debug__-dependent statements; add .opt-1 before[0m
+[38;2;51;51;51m         .pyc extension; also PYTHONOPTIMIZE=x[0m
+[38;2;121;93;163m-OO[0m[38;2;51;51;51m    : do -O changes and also discard docstrings; add .opt-2 before[0m
+[38;2;51;51;51m         .pyc extension[0m
+[38;2;121;93;163m-q[0m[38;2;51;51;51m     : don't print version and copyright messages on interactive startup[0m
+[38;2;121;93;163m-s[0m[38;2;51;51;51m     : don't add user site directory to sys.path; also PYTHONNOUSERSITE[0m
+[38;2;121;93;163m-S[0m[38;2;51;51;51m     : don't imply 'import site' on initialization[0m
+[38;2;121;93;163m-u[0m[38;2;51;51;51m     : force the stdout and stderr streams to be unbuffered;[0m
+[38;2;51;51;51m         this option has no effect on stdin; also PYTHONUNBUFFERED=x[0m
+[38;2;121;93;163m-v[0m[38;2;51;51;51m     : verbose (trace import statements); also PYTHONVERBOSE=x[0m
+[38;2;51;51;51m         can be supplied multiple times to increase verbosity[0m
+[38;2;121;93;163m-V[0m[38;2;51;51;51m     : print the Python version number and exit (also --version)[0m
+[38;2;51;51;51m         when given twice, print more information about the build[0m
+[38;2;121;93;163m-W[0m[38;2;51;51;51m [0m[38;2;0;134;179marg[0m[38;2;51;51;51m : warning control; arg is action:message:category:module:lineno[0m
+[38;2;51;51;51m         also PYTHONWARNINGS=arg[0m
+[38;2;121;93;163m-x[0m[38;2;51;51;51m     : skip first line of source, allowing use of non-Unix forms of #!cmd[0m
+[38;2;121;93;163m-X[0m[38;2;51;51;51m [0m[38;2;0;134;179mopt[0m[38;2;51;51;51m : set implementation-specific option. The following options are available:[0m
+
+[38;2;51;51;51m         -X faulthandler: enable faulthandler[0m
+[38;2;51;51;51m         -X showrefcount: output the total reference count and number of used[0m
+[38;2;51;51;51m             memory blocks when the program finishes or after each statement in the[0m
+[38;2;51;51;51m             interactive interpreter. This only works on debug builds[0m
+[38;2;51;51;51m         -X tracemalloc: start tracing Python memory allocations using the[0m
+[38;2;51;51;51m             tracemalloc module. By default, only the most recent frame is stored in a[0m
+[38;2;51;51;51m             traceback of a trace. Use -X tracemalloc=NFRAME to start tracing with a[0m
+[38;2;51;51;51m             traceback limit of NFRAME frames[0m
+[38;2;51;51;51m         -X importtime: show how long each import takes. It shows module name,[0m
+[38;2;51;51;51m             cumulative time (including nested imports) and self time (excluding[0m
+[38;2;51;51;51m             nested imports). Note that its output may be broken in multi-threaded[0m
+[38;2;51;51;51m             application. Typical usage is python3 -X importtime -c 'import asyncio'[0m
+[38;2;51;51;51m         -X dev: enable CPython's "development mode", introducing additional runtime[0m
+[38;2;51;51;51m             checks which are too expensive to be enabled by default. Effect of the[0m
+[38;2;51;51;51m             developer mode:[0m
+[38;2;51;51;51m                * Add default warning filter, as -W default[0m
+[38;2;51;51;51m                * Install debug hooks on memory allocators: see the PyMem_SetupDebugHooks() C function[0m
+[38;2;51;51;51m                * Enable the faulthandler module to dump the Python traceback on a crash[0m
+[38;2;51;51;51m                * Enable asyncio debug mode[0m
+[38;2;51;51;51m                * Set the dev_mode attribute of sys.flags to True[0m
+[38;2;51;51;51m                * io.IOBase destructor logs close() exceptions[0m
+[38;2;51;51;51m         -X utf8: enable UTF-8 mode for operating system interfaces, overriding the default[0m
+[38;2;51;51;51m             locale-aware mode. -X utf8=0 explicitly disables UTF-8 mode (even when it would[0m
+[38;2;51;51;51m             otherwise activate automatically)[0m
+[38;2;51;51;51m         -X pycache_prefix=PATH: enable writing .pyc files to a parallel tree rooted at the[0m
+[38;2;51;51;51m             given directory instead of to the code tree[0m
+[38;2;51;51;51m         -X warn_default_encoding: enable opt-in EncodingWarning for 'encoding=None'[0m
+
+[38;2;121;93;163m--check-hash-based-pycs[0m[38;2;51;51;51m [0m[38;2;0;134;179malways[0m[38;2;51;51;51m|[0m[38;2;0;134;179mdefault[0m[38;2;51;51;51m|[0m[38;2;0;134;179mnever[0m[38;2;51;51;51m:[0m
+[38;2;51;51;51m    control how Python invalidates hash-based .pyc files[0m
+[38;2;167;29;93mfile[0m[38;2;51;51;51m   : program read from script file[0m
+[38;2;51;51;51m-      : program read from stdin (default; interactive mode if a tty)[0m
+[38;2;51;51;51marg ...: arguments passed to program in sys.argv[1:][0m
+
+[38;2;51;51;51mOther environment variables:[0m
+[38;2;51;51;51mPYTHONSTARTUP: file executed on interactive startup (no default)[0m
+[38;2;51;51;51mPYTHONPATH   : ':'-separated list of directories prefixed to the[0m
+[38;2;51;51;51m               default module search path.  The result is sys.path.[0m
+[38;2;51;51;51mPYTHONHOME   : alternate <prefix> directory (or <prefix>:<exec_prefix>).[0m
+[38;2;51;51;51m               The default module search path uses <prefix>/lib/pythonX.X.[0m
+[38;2;51;51;51mPYTHONPLATLIBDIR : override sys.platlibdir.[0m
+[38;2;51;51;51mPYTHONCASEOK : ignore case in 'import' statements (Windows).[0m
+[38;2;51;51;51mPYTHONUTF8: if set to 1, enable the UTF-8 mode.[0m
+[38;2;51;51;51mPYTHONIOENCODING: Encoding[:errors] used for stdin/stdout/stderr.[0m
+[38;2;51;51;51mPYTHONFAULTHANDLER: dump the Python traceback on fatal errors.[0m
+[38;2;51;51;51mPYTHONHASHSEED: if this variable is set to 'random', a random value is used[0m
+[38;2;51;51;51m   to seed the hashes of str and bytes objects.  It can also be set to an[0m
+[38;2;51;51;51m   integer in the range [0,4294967295] to get hash values with a[0m
+[38;2;51;51;51m   predictable seed.[0m
+[38;2;51;51;51mPYTHONMALLOC: set the Python memory allocators and/or install debug hooks[0m
+[38;2;51;51;51m   on Python memory allocators. Use PYTHONMALLOC=debug to install debug[0m
+[38;2;51;51;51m   hooks.[0m
+[38;2;51;51;51mPYTHONCOERCECLOCALE: if this variable is set to 0, it disables the locale[0m
+[38;2;51;51;51m   coercion behavior. Use PYTHONCOERCECLOCALE=warn to request display of[0m
+[38;2;51;51;51m   locale coercion and locale compatibility warnings on stderr.[0m
+[38;2;51;51;51mPYTHONBREAKPOINT: if this variable is set to 0, it disables the default[0m
+[38;2;51;51;51m   debugger. It can be set to the callable of your debugger of choice.[0m
+[38;2;51;51;51mPYTHONDEVMODE: enable the development mode.[0m
+[38;2;51;51;51mPYTHONPYCACHEPREFIX: root directory for bytecode cache (pyc) files.[0m
+[38;2;51;51;51mPYTHONWARNDEFAULTENCODING: enable opt-in EncodingWarning for 'encoding=None'.[0m
