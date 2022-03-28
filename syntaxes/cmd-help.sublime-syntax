@@ -188,7 +188,7 @@ contexts:
     - include: option-def-connectors
     - match: '='
       set: option-def+equals
-    - match: '\[=|\[| \['
+    - match: '\[=|\[| \[|:\['
       set: option-def+square-bracket
     - match: ':'
       set: option-def+colon

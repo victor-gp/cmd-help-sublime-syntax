@@ -22,8 +22,11 @@ where options include:
 #            ^^^^^^^ variable.parameter.option-argument.cmd-help
                   set a system property
     -verbose:[class|gc|jni]
-#           ^^^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: handle this
+#           ^ - variable.parameter.option-argument.cmd-help
+#            ^ - variable.parameter.option-argument.cmd-help
+#             ^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#nice: colon should be scoped, it's required
+#nice: OR pipes shouldn't be scoped
                   enable verbose output
     -version      print product version and exit
     -version:<value>
