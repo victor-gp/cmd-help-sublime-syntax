@@ -61,8 +61,8 @@
 [38;2;154;237;254m--check-hash-based-pycs[0m[38;2;248;248;242m [0m[38;2;255;106;193malways[0m[38;2;248;248;242m|[0m[38;2;255;106;193mdefault[0m[38;2;248;248;242m|[0m[38;2;255;106;193mnever[0m[38;2;248;248;242m:[0m
 [38;2;248;248;242m    control how Python invalidates hash-based .pyc files[0m
 [38;2;255;92;87mfile[0m[38;2;248;248;242m   : program read from script file[0m
-[38;2;248;248;242m-      : program read from stdin (default; interactive mode if a tty)[0m
-[38;2;248;248;242marg ...: arguments passed to program in sys.argv[1:][0m
+[38;2;255;106;193m-[0m[38;2;248;248;242m      : program read from stdin (default; interactive mode if a tty)[0m
+[38;2;255;106;193marg[0m[38;2;248;248;242m [0m[38;2;255;106;193m...[0m[38;2;248;248;242m: arguments passed to program in sys.argv[1:][0m
 
 [38;2;243;249;157mOther environment variables:[0m
 [38;2;243;249;157mPYTHONSTARTUP[0m[38;2;248;248;242m: file executed on interactive startup (no default)[0m

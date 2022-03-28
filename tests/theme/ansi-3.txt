@@ -61,8 +61,8 @@ Options and arguments (and corresponding environment variables):
 [34m--check-hash-based-pycs[0m [32malways[0m|[32mdefault[0m|[32mnever[0m:
     control how Python invalidates hash-based .pyc files
 [35mfile[0m   : program read from script file
--      : program read from stdin (default; interactive mode if a tty)
-arg ...: arguments passed to program in sys.argv[1:]
+[32m-[0m      : program read from stdin (default; interactive mode if a tty)
+[32marg[0m [32m...[0m: arguments passed to program in sys.argv[1:]
 
 [34mOther environment variables:[0m
 [32mPYTHONSTARTUP[0m: file executed on interactive startup (no default)
