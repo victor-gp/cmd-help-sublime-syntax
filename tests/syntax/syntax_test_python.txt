@@ -73,7 +73,11 @@ arg ...: arguments passed to program in sys.argv[1:]
 
 Other environment variables:
 PYTHONSTARTUP: file executed on interactive startup (no default)
+#^^^^^^^^^^^^ string.other-variable.cmd-help
+#            ^ - string.other-variable.cmd-help
 PYTHONPATH   : ':'-separated list of directories prefixed to the
+#^^^^^^^^^ string.other-variable.cmd-help
+#         ^^^^ - string.other-variable.cmd-help
                default module search path.  The result is sys.path.
 PYTHONHOME   : alternate <prefix> directory (or <prefix>:<exec_prefix>).
                The default module search path uses <prefix>/lib/pythonX.X.

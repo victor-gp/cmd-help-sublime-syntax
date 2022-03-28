@@ -41,9 +41,9 @@ Usage: sbt [options]
 
   # jvm options and output control
   JAVA_OPTS           environment variable, if unset uses "-Dfile.encoding=UTF-8"
-# ^^^^^^^^^ - keyword.other.def.cmd-help
-#nice: what do I scope this as? and .files?
+# ^^^^^^^^^ string.other-variable.cmd-help
   .jvmopts            if this file exists in the current directory, its contents
+#nice: maybe scope this? as other def to match other lowercase filenames?
                       are appended to JAVA_OPTS
   SBT_OPTS            environment variable, if unset uses ""
   .sbtopts            if this file exists in the current directory, its contents

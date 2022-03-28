@@ -41,11 +41,15 @@ scope_variables: # rightmost scope is matched first
   option_argument_scope: &OPTION_ARGUMENT_SCOPE
     string.option-argument.cmd-help  variable.other.option-argument.cmd-help
     variable.parameter.option-argument.cmd-help
-  argument_def_scope: &ARGUMENT_DEF_SCOPE
+  argument_def_scope: &ARGUMENT_DEF_SCOPE # same base scopes as option argument
     string.argument.cmd-help  variable.other.argument.cmd-help
     variable.parameter.argument.cmd-help
+  # all-caps definitions, usually environment vars but also command args
+  other_variable_def_scope: &OTHER_VARIABLE_DEF_SCOPE
+    variable.other.readwrite.cmd-help  string.other-variable.cmd-help
+  # non all-caps definitions: subcommands, arguments, features, etc.
   other_def_scope: &OTHER_DEF_SCOPE
-    keyword.other.def.cmd-help # support.fuction... ?
+    keyword.other.def.cmd-help # support.fuction variable.function ?
 
 
 contexts:
@@ -325,12 +329,21 @@ contexts:
     - match: '{{other_lowercase_name}}(?={{long_space}})'
       scope: *OTHER_DEF_SCOPE
       set: then-pop
-    # ex: "compose*" (from docker)
+    # e.g.: "compose*" (from docker)
     - match: '{{other_lowercase_name}}\*(?=   )'
       scope: *OTHER_DEF_SCOPE
       set: then-pop
+    # e.g.: "build, b" (from cargo)
     - match: '({{other_lowercase_name}}), ({{other_lowercase_name}})(?={{long_space}})'
       captures:
         1: *OTHER_DEF_SCOPE
         2: *OTHER_DEF_SCOPE
+      set: then-pop
+    - match: '{{allcaps_argument_name}}(?=  )'
+      scope: *OTHER_VARIABLE_DEF_SCOPE
+      set: then-pop
+    # e.g.: "PYTHONSTARTUP:", "PYTHONCASEOK :"
+    - match: '{{allcaps_argument_name}}(?=\s*:)'
+      scope: *OTHER_VARIABLE_DEF_SCOPE
+      set: then-pop
     - include: else-pop
