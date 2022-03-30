@@ -109,20 +109,20 @@ contexts:
   indent-0:
     - include: maybe-heading
     - include: option-def-leading
-    - include: maybe-argument
+    - include: argument-def
     - include: maybe-other
     - include: else-pop
 
   indent-1-2:
     - include: option-def-leading
     - include: maybe-heading
-    - include: maybe-argument
+    - include: argument-def
     - include: maybe-other
     - include: else-pop
 
   indent-3-8:
     - include: option-def-leading
-    - include: maybe-argument
+    - include: argument-def
     - include: maybe-other
     - include: else-pop
 
@@ -131,11 +131,6 @@ contexts:
     - match: '(?=[:upper:].{1,39}\n)'
       # only consider lines <= 40 chars long
       set: heading
-
-  maybe-argument:
-    # - match: '(?=<|{|-)'
-    #   set: argument-def
-    - include: argument-def
 
   maybe-other:
     - match: ''
