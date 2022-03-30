@@ -110,20 +110,20 @@ contexts:
     - include: maybe-heading
     - include: option-def-leading
     - include: argument-def
-    - include: maybe-other
+    - include: other-def
     - include: else-pop
 
   indent-1-2:
     - include: option-def-leading
     - include: maybe-heading
     - include: argument-def
-    - include: maybe-other
+    - include: other-def
     - include: else-pop
 
   indent-3-8:
     - include: option-def-leading
     - include: argument-def
-    - include: maybe-other
+    - include: other-def
     - include: else-pop
 
   maybe-heading:
@@ -131,10 +131,6 @@ contexts:
     - match: '(?=[:upper:].{1,39}\n)'
       # only consider lines <= 40 chars long
       set: heading
-
-  maybe-other:
-    - match: ''
-      set: other-def
 
   ### section headings #########################################################
 
@@ -356,4 +352,3 @@ contexts:
     - match: '{{allcaps_argument_name}}(?=\s*:)'
       scope: *OTHER_VARIABLE_DEF_SCOPE
       set: then-pop
-    - include: else-pop
