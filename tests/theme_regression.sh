@@ -16,14 +16,11 @@ do
     unset IFS # then bash uses default IFS
 
     source_path=source/bat-short-0.18.2.txt
-    highlighted_path="theme/${theme}-1.txt"
-    highlight "$theme" "$source_path" "$highlighted_path"
+    highlight "$theme" "$source_path" "theme/${theme}-1.txt"
     source_path=source/vim-8.1.txt
-    highlighted_path="theme/${theme}-2.txt"
-    highlight "$theme" "$source_path" "$highlighted_path"
+    highlight "$theme" "$source_path" "theme/${theme}-2.txt"
     source_path=source/python-3.10.0.txt
-    highlighted_path="theme/${theme}-3.txt"
-    highlight "$theme" "$source_path" "$highlighted_path"
+    highlight "$theme" "$source_path" "theme/${theme}-3.txt"
 done
 
 # restore user configuration
