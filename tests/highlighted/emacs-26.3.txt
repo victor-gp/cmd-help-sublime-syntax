@@ -33,7 +33,7 @@
 
 [38;2;253;151;31mAction options:[0m
 
-[38;2;248;248;242mFILE                    visit FILE[0m
+[38;2;230;219;116mFILE[0m[38;2;248;248;242m                    visit FILE[0m
 [38;2;249;38;114m+[0m[38;2;253;151;31mLINE[0m[38;2;248;248;242m                   go to line LINE in next FILE[0m
 [38;2;249;38;114m+[0m[38;2;253;151;31mLINE:COLUMN[0m[38;2;248;248;242m            go to line LINE, column COLUMN, in next FILE[0m
 [38;2;166;226;46m--directory[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;253;151;31mDIR[0m[38;2;248;248;242m     prepend DIR to load-path (with :DIR, append DIR)[0m

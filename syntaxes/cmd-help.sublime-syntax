@@ -14,6 +14,8 @@ variables:
   any_word2: '\(?{{any_word}}\)?'
   # words starting with uppercase
   leading_word: '[A-Z][A-Za-z-]*\b'
+  # only consider lines <= 40 chars long
+  lookahead_40: '(?=.{1,40}\n)'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:]'
@@ -107,7 +109,7 @@ contexts:
     - include: else-pop
 
   indent-0:
-    - include: maybe-heading
+    - include: heading
     - include: option-def-leading
     - include: argument-def
     - include: other-def
@@ -115,7 +117,7 @@ contexts:
 
   indent-1-2:
     - include: option-def-leading
-    - include: maybe-heading
+    - include: heading
     - include: argument-def
     - include: other-def
     - include: else-pop
@@ -126,22 +128,16 @@ contexts:
     - include: other-def
     - include: else-pop
 
-  maybe-heading:
-    - include: heading-specials
-    - match: '(?=[:upper:].{1,39}\n)'
-      # only consider lines <= 40 chars long
-      set: heading
-
   ### section headings #########################################################
 
   heading:
-    - match: '{{leading_word}}( {{any_word2}})*:?\n'
+    - include: heading-specials
+    - match: '{{lookahead_40}}{{leading_word}}( {{any_word2}})*:?\n'
       scope: *SECTION_HEADING_SCOPE
       set: then-pop
     # - match: '{{any_word2}}( {{any_word2}})*:\n'
     #   scope: *SECTION_HEADING_SCOPE
     #   set: then-pop
-    - include: else-pop
 
   heading-specials:
     - match: '(?i:usage):(?=.+\n)'

@@ -36,8 +36,7 @@ Initialization options:
 Action options:
 
 FILE                    visit FILE
-#^^^ - string.other-variable.cmd-help
-#nice: fix this. it fails because it commits in maybe-heading and never tries other-def.
+#^^^ string.other-variable.cmd-help
 +LINE                   go to line LINE in next FILE
 # <- keyword.control.plus-option.cmd-help
 #^^^^ variable.parameter.option-argument.cmd-help
