@@ -108,20 +108,20 @@ contexts:
 
   indent-0:
     - include: maybe-heading
-    - include: maybe-option
+    - include: option-def-leading
     - include: maybe-argument
     - include: maybe-other
     - include: else-pop
 
   indent-1-2:
-    - include: maybe-option
+    - include: option-def-leading
     - include: maybe-heading
     - include: maybe-argument
     - include: maybe-other
     - include: else-pop
 
   indent-3-8:
-    - include: maybe-option
+    - include: option-def-leading
     - include: maybe-argument
     - include: maybe-other
     - include: else-pop
@@ -131,11 +131,6 @@ contexts:
     - match: '(?=[:upper:].{1,39}\n)'
       # only consider lines <= 40 chars long
       set: heading
-
-  maybe-option:
-    - include: option-def-specials
-    - match: '(?=-{{option_char}})'
-      set: option-def
 
   maybe-argument:
     # - match: '(?=<|{|-)'
@@ -169,13 +164,9 @@ contexts:
   ### option definitions #######################################################
 
   option-def:
-    - match: '---'
-      # probably not an option
-      pop: true
     - match: '-{{option_name}}'
       scope: *OPTION_DEF_SCOPE
       set: option-def-post
-    - include: else-pop
 
   option-def-specials:
     - match: '--(?=\s)'
@@ -187,6 +178,12 @@ contexts:
     - match: '-:(?={{option_break}})'
       scope: *OPTION_DEF_SCOPE
       set: option-def-post
+
+  option-def-leading:
+    - match: '---' # probably a separator
+      pop: true
+    - include: option-def-specials
+    - include: option-def
 
   option-def-post:
     - include: option-def-connectors
@@ -207,19 +204,23 @@ contexts:
 
   option-def-connectors:
     - match: ', '
-      set: option-def
+      set: option-def-or-pop
     - match: ' \| '
-      set: option-def
+      set: option-def-or-pop
     - match: ' (?=-)'
-      set: option-def
+      set: option-def-or-pop
     - match: ' or '
-      set: option-def
+      set: option-def-or-pop
     - match: '  or  '
-      set: option-def
+      set: option-def-or-pop
     - match: '/'
-      set: option-def
+      set: option-def-or-pop
     - match: '\s+(?=-)'
-      set: option-def
+      set: option-def-or-pop
+
+  option-def-or-pop:
+    - include: option-def
+    - include: else-pop
 
   ### option arguments #########################################################
 
