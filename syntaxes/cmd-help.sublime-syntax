@@ -110,20 +110,20 @@ contexts:
 
   indent-0:
     - include: heading
-    - include: option-def-leading
+    - include: option-def-first
     - include: argument-def
     - include: other-def
     - include: else-pop
 
   indent-1-2:
-    - include: option-def-leading
+    - include: option-def-first
     - include: heading
     - include: argument-def
     - include: other-def
     - include: else-pop
 
   indent-3-8:
-    - include: option-def-leading
+    - include: option-def-first
     - include: argument-def
     - include: other-def
     - include: else-pop
@@ -166,10 +166,10 @@ contexts:
       scope: *OPTION_DEF_SCOPE
       set: option-def-post
 
-  option-def-leading:
+  option-def-first:
+    - include: option-def-specials
     - match: '---' # probably a separator
       pop: true
-    - include: option-def-specials
     - include: option-def
 
   option-def-post:
