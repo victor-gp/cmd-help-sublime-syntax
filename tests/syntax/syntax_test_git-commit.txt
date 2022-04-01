@@ -1,8 +1,7 @@
 # SYNTAX TEST "cmd-help.sublime-syntax"
 
 GIT-COMMIT(1)                               Git Manual                              GIT-COMMIT(1)
-# <- text.cmd-help text.man
-#todo: if first_line looks like a man page, embed man.sublime-syntax
+# <- meta.preprocessor.man - text.cmd-help
 
 NAME
        git-commit - Record changes to the repository

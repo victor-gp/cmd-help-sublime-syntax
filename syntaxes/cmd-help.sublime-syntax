@@ -70,11 +70,12 @@ contexts:
 
   first-char:
     - meta_include_prototype: false
-    - include: ignore-syntax-test-header
     # man page first line: ^cmd/fn_name(man_section_digit) ... idem$
     - match: '(?=^([A-Z-]+)\(([0-9])\)\s.+\s\1\(\2\)$)'
-      embed: scope:text.man
-      escape: we don't really want to escape so...
+      push:
+        - clear_scopes: true
+        - include: Manpage.sublime-syntax
+    - include: ignore-syntax-test-header
     - match: '^'
       set: main2
 
