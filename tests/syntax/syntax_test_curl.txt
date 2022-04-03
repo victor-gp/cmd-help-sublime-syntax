@@ -22,7 +22,7 @@ Usage: curl [options...] <url>
  -C, --continue-at <offset> Resumed transfer offset
  -b, --cookie <data|filename> Send cookies from string/file
  #                 ^ variable.parameter.option-argument.cmd-help
- #nice: this is an OR, shouldn't be scoped
+ #nit: this is an OR, shouldn't be scoped
  -c, --cookie-jar <filename> Write cookies to <filename> after operation
      --create-dirs   Create necessary local directory hierarchy
      --crlf          Convert LF to CRLF in upload
@@ -97,7 +97,7 @@ Usage: curl [options...] <url>
  -L, --location      Follow redirects
      --location-trusted Like --location, and send auth to other hosts
 #                       ^^^^ variable.parameter.option-argument.cmd-help
-#nice: fix this false positive
+#nit: false positive
      --login-options <options> Server login options
      --mail-auth <address> Originator address of the original email
      --mail-from <address> Mail from this address
@@ -137,7 +137,7 @@ Usage: curl [options...] <url>
 #                ^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
 #                            ^^^^ - variable.parameter.option-argument.cmd-help
 #                                 ^^^^^ - variable.parameter.option-argument.cmd-help
-#nice: handle option argumet parts / I should handle rubocop's todo before this
+#nice: handle option argument parts / I should handle rubocop's todo before this
  -#, --progress-bar  Display transfer progress as a bar
 #^^ entity.name.function.option.cmd-help
      --proto <protocols> Enable/disable PROTOCOLS

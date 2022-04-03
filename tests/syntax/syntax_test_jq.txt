@@ -38,7 +38,7 @@ Some of the options include:
   --arg a v        set variable $a to value <v>;
 #       ^ - variable.parameter.option-argument.cmd-help
 #         ^ - variable.parameter.option-argument.cmd-help
-#nice: handle these
+#nit: handle these
 
   --argjson a v    set variable $a to JSON value <v>;
   --slurpfile a f  set variable $a to an array of JSON texts read from <f>;

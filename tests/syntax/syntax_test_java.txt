@@ -25,8 +25,9 @@ where options include:
 #           ^ - variable.parameter.option-argument.cmd-help
 #            ^ - variable.parameter.option-argument.cmd-help
 #             ^^^^^ variable.parameter.option-argument.cmd-help
-#nice: colon should be scoped, it's required
-#nice: OR pipes shouldn't be scoped
+#                  ^ - variable.parameter.option-argument.cmd-help
+#                   ^^ variable.parameter.option-argument.cmd-help
+#nit: colon should be scoped, it's required
                   enable verbose output
     -version      print product version and exit
     -version:<value>
@@ -58,7 +59,7 @@ where options include:
     -agentlib:<libname>[=<options>]
 #             ^^^^^^^^^ variable.parameter.option-argument.cmd-help
 #                        ^^^^^^^^^ variable.parameter.option-argument.cmd-help
-#nice: I should scope ':' as option argument cause it's required
+#nit: I should scope ':' as option argument cause it's required
                   load native agent library <libname>, e.g. -agentlib:hprof
                   see also, -agentlib:jdwp=help and -agentlib:hprof=help
     -agentpath:<pathname>[=<options>]
