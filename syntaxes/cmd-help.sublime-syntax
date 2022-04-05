@@ -64,22 +64,21 @@ contexts:
     - match: '(?=.*[\b])'
       set: sink
 
-  main: # entrypoint, main2 is the real main
-    - match: ''
-      set: first-char
-
-  first-char:
+  main: # entry point only, main-b is the real main
     - meta_include_prototype: false
+    - include: first-line-specials
+    - match: '^'
+      set: main-b
+
+  first-line-specials:
+    - include: ignore-syntax-test-header
     # man page first line: ^cmd/fn_name(man_section_digit) ... idem$
     - match: '(?=^([A-Z-]+)\(([0-9])\)\s.+\s\1\(\2\)$)'
       push:
         - clear_scopes: true
         - include: Manpage.sublime-syntax
-    - include: ignore-syntax-test-header
-    - match: '^'
-      set: main2
 
-  main2: # stack lv 0
+  main-b: # stack lv 0
     - match: '^'
       push: [line, line-begin]
 
@@ -112,9 +111,9 @@ contexts:
 
   ignore-syntax-test-header:
   - match: '# SYNTAX TEST "cmd-help.sublime-syntax"\n'
-    set: first-char
+    set: main
   - match: '^\n$' # empty line
-    set: first-char
+    set: main
 
   ### stack lv 2 ###############################################################
 

@@ -4,6 +4,7 @@ GIT-COMMIT(1)                               Git Manual                          
 # <- meta.preprocessor.man - text.cmd-help
 
 NAME
+# <- markup.heading.other.man - entity.name.section.cmd-help
        git-commit - Record changes to the repository
 
 SYNOPSIS
