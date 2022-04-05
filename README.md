@@ -2,19 +2,17 @@
 
 This is a Sublime Syntax definition for [bat](https://github.com/sharkdp/bat) to colorize command `--help` messages.
 
-It provides just enough color to help find your way around a help message. You can find some examples [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples).
+It provides just enough color to help find your way around a help message:
 
-And here's how it compares to the [currently recommended](https://github.com/sharkdp/bat/issues/1430) man syntax:
+<img src="./docs/assets/cmd-help-example.png" height="640" alt="Example usage of the cmd-help syntax on 'bat -h'">
 
-![bat -h colorized with the man and cmd-help syntaxes](./docs/assets/vs-man-syntax-1.png)
-
-![mv --help colorized with the man and cmd-help syntaxes](./docs/assets/vs-man-syntax-2.png)
+Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples).
 
 ## Install
 
-To use this with `bat`, copy the `syntaxes/cmd-help.sublime-syntax` file into `"$(bat --config-dir)/syntaxes/"`. Then run `$ bat cache --build`.
+To use this with `bat`, copy `syntaxes/cmd-help.sublime-syntax` into `"$(bat --config-dir)/syntaxes/"`. Then run `$ bat cache --build`.
 
-Now you can use this with `$ SOME_COMMAND --help | bat -pl cmd-help`.
+Now you can use this with `$ SOME_COMMAND --help | bat -pl cmd-help`
 
 You may want to use [an alias or a shell function](docs/bathelp.sh) around this.
 
