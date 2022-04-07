@@ -2,7 +2,9 @@
 ---
 name: Command Help
 file_extensions:
-  - cmd-help # doesn't really exist, but useful for the shortname
+  # don't really exist, but useful for the shortname
+  - cmd-help
+  - help
 scope: text.cmd-help
 
 
