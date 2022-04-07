@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# place these somewhere in your bashrc/zshrc/*rc
+# place these somewhere in your .bashrc/.zshrc/*rc
 
-alias bathelp="bat -p --language=cmd-help"
+alias bathelp='bat --plain --language=cmd-help'
 
-help() (
-    "$@" --help | bathelp
-)
+help() {
+    "$@" --help 2>&1 | bathelp
+}
