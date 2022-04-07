@@ -82,4 +82,4 @@
 
 [38;2;248;248;242mRun 'docker COMMAND --help' for more information on a command.[0m
 
-[38;2;248;248;242m[1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m[0m
+[1m[38;2;248;248;242m[1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m[0m
