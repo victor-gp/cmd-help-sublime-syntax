@@ -1,6 +1,6 @@
 # cmd-help.sublime-syntax
 
-This is a Sublime Syntax definition for [bat](https://github.com/sharkdp/bat) to colorize command `--help` messages.
+This is a Sublime Syntax definition for [`bat`](https://github.com/sharkdp/bat) to colorize command `--help` messages.
 
 It provides just enough color to help find your way around a help message:
 
