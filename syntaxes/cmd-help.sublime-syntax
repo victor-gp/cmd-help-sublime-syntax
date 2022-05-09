@@ -373,9 +373,8 @@ contexts:
   ### hardcoded exceptions #####################################################
 
   color-escape-codes-sink:
-    #nice: should have a digit lookahead/behind before the closing m
     # normal colors fg
-    - match: '(?=.*\e\[.*3[0-7].*m)'
+    - match: '(?=.*\e\[.*3[0-7].*(?<=[0-9])m)'
       set: sink
     # bright colors fg
     - match: '(?=.*\e\[.*9[0-7].*m)'

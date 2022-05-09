@@ -3,6 +3,7 @@
 [32mdelta[0m 0.11.3
 # <- - text.cmd-help
 A viewer for git and diff output
+################################ - text.cmd-help
 [33m
 USAGE:[0m
     delta [FLAGS] [OPTIONS] [ARGS]
