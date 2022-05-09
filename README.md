@@ -4,7 +4,7 @@ This is a Sublime Syntax definition for [`bat`](https://github.com/sharkdp/bat) 
 
 It provides just enough color to help find your way around a help message:
 
-<img src="./docs/assets/cmd-help-example.png" height="640" alt="Example usage of the cmd-help syntax on 'bat -h'">
+<img src="./docs/assets/cmd-help-example.png" width="750" alt="Example usage of the cmd-help syntax on 'bat -h'">
 
 Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples).
 
