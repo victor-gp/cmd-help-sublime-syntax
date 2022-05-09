@@ -1,0 +1,74 @@
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m dd [OPERAND]...[0m
+[38;2;248;248;242m  or:  dd OPTION[0m
+[38;2;248;248;242mCopy a file, converting and formatting according to the operands.[0m
+
+[38;2;248;248;242m  bs=BYTES        read and write up to BYTES bytes at a time (default: 512);[0m
+[38;2;248;248;242m                  overrides ibs and obs[0m
+[38;2;248;248;242m  cbs=BYTES       convert BYTES bytes at a time[0m
+[38;2;248;248;242m  conv=CONVS      convert the file as per the comma separated symbol list[0m
+[38;2;248;248;242m  count=N         copy only N input blocks[0m
+[38;2;248;248;242m  ibs=BYTES       read up to BYTES bytes at a time (default: 512)[0m
+[38;2;248;248;242m  if=FILE         read from FILE instead of stdin[0m
+[38;2;248;248;242m  iflag=FLAGS     read as per the comma separated symbol list[0m
+[38;2;248;248;242m  obs=BYTES       write BYTES bytes at a time (default: 512)[0m
+[38;2;248;248;242m  of=FILE         write to FILE instead of stdout[0m
+[38;2;248;248;242m  oflag=FLAGS     write as per the comma separated symbol list[0m
+[38;2;248;248;242m  seek=N          skip N obs-sized blocks at start of output[0m
+[38;2;248;248;242m  skip=N          skip N ibs-sized blocks at start of input[0m
+[38;2;248;248;242m  status=LEVEL    The LEVEL of information to print to stderr;[0m
+[38;2;248;248;242m                  'none' suppresses everything but error messages,[0m
+[38;2;248;248;242m                  'noxfer' suppresses the final transfer statistics,[0m
+[38;2;248;248;242m                  'progress' shows periodic transfer statistics[0m
+
+[38;2;248;248;242mN and BYTES may be followed by the following multiplicative suffixes:[0m
+[38;2;248;248;242mc =1, w =2, b =512, kB =1000, K =1024, MB =1000*1000, M =1024*1024, xM =M,[0m
+[38;2;248;248;242mGB =1000*1000*1000, G =1024*1024*1024, and so on for T, P, E, Z, Y.[0m
+
+[38;2;253;151;31mEach CONV symbol may be:[0m
+
+[38;2;248;248;242m  [0m[38;2;249;38;114mascii[0m[38;2;248;248;242m     from EBCDIC to ASCII[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mebcdic[0m[38;2;248;248;242m    from ASCII to EBCDIC[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mibm[0m[38;2;248;248;242m       from ASCII to alternate EBCDIC[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mblock[0m[38;2;248;248;242m     pad newline-terminated records with spaces to cbs-size[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114munblock[0m[38;2;248;248;242m   replace trailing spaces in cbs-size records with newline[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mlcase[0m[38;2;248;248;242m     change upper case to lower case[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mucase[0m[38;2;248;248;242m     change lower case to upper case[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114msparse[0m[38;2;248;248;242m    try to seek rather than write the output for NUL input blocks[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mswab[0m[38;2;248;248;242m      swap every pair of input bytes[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114msync[0m[38;2;248;248;242m      pad every input block with NULs to ibs-size; when used[0m
+[38;2;248;248;242m            with block or unblock, pad with spaces rather than NULs[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mexcl[0m[38;2;248;248;242m      fail if the output file already exists[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnocreat[0m[38;2;248;248;242m   do not create the output file[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnotrunc[0m[38;2;248;248;242m   do not truncate the output file[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnoerror[0m[38;2;248;248;242m   continue after read errors[0m
+[38;2;248;248;242m  fdatasync  physically write output file data before finishing[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mfsync[0m[38;2;248;248;242m     likewise, but also write metadata[0m
+
+[38;2;253;151;31mEach FLAG symbol may be:[0m
+
+[38;2;248;248;242m  [0m[38;2;249;38;114mappend[0m[38;2;248;248;242m    append mode (makes sense only for output; conv=notrunc suggested)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mdirect[0m[38;2;248;248;242m    use direct I/O for data[0m
+[38;2;248;248;242m  directory  fail unless a directory[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mdsync[0m[38;2;248;248;242m     use synchronized I/O for data[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114msync[0m[38;2;248;248;242m      likewise, but also for metadata[0m
+[38;2;248;248;242m  fullblock  accumulate full blocks of input (iflag only)[0m
+[38;2;248;248;242m  nonblock  use non-blocking I/O[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnoatime[0m[38;2;248;248;242m   do not update access time[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnocache[0m[38;2;248;248;242m   Request to drop cache.  See also oflag=sync[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnoctty[0m[38;2;248;248;242m    do not assign controlling terminal from file[0m
+[38;2;248;248;242m  nofollow  do not follow symlinks[0m
+[38;2;248;248;242m  count_bytes  treat 'count=N' as a byte count (iflag only)[0m
+[38;2;248;248;242m  skip_bytes  treat 'skip=N' as a byte count (iflag only)[0m
+[38;2;248;248;242m  seek_bytes  treat 'seek=N' as a byte count (oflag only)[0m
+
+[38;2;248;248;242mSending a USR1 signal to a running 'dd' process makes it[0m
+[38;2;248;248;242mprint I/O statistics to standard error and then resume copying.[0m
+
+[38;2;253;151;31mOptions are:[0m
+
+[38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m     display this help and exit[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m
+
+[38;2;248;248;242mGNU coreutils online help: <https://www.gnu.org/software/coreutils/>[0m
+[38;2;248;248;242mFull documentation at: <https://www.gnu.org/software/coreutils/dd>[0m
+[38;2;248;248;242mor available locally via: info '(coreutils) dd invocation'[0m

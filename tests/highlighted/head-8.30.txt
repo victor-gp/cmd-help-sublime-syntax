@@ -1,0 +1,26 @@
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m head [OPTION]... [FILE]...[0m
+[38;2;248;248;242mPrint the first 10 lines of each FILE to standard output.[0m
+[38;2;248;248;242mWith more than one FILE, precede each with a header giving the file name.[0m
+
+[38;2;248;248;242mWith no FILE, or when FILE is -, read standard input.[0m
+
+[38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--bytes[0m[38;2;248;248;242m=[-]NUM       print the first NUM bytes of each file;[0m
+[38;2;248;248;242m                             with the leading '-', print all but the last[0m
+[38;2;248;248;242m                             NUM bytes of each file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--lines[0m[38;2;248;248;242m=[-]NUM       print the first NUM lines instead of the first 10;[0m
+[38;2;248;248;242m                             with the leading '-', print all but the last[0m
+[38;2;248;248;242m                             NUM lines of each file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--silent[0m[38;2;248;248;242m    never print headers giving file names[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m            always print headers giving file names[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--zero-terminated[0m[38;2;248;248;242m    line delimiter is NUL, not newline[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m     display this help and exit[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m
+
+[38;2;253;151;31mNUM may have a multiplier suffix:[0m
+[38;2;248;248;242mb 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,[0m
+[38;2;248;248;242mGB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.[0m
+
+[38;2;248;248;242mGNU coreutils online help: <https://www.gnu.org/software/coreutils/>[0m
+[38;2;248;248;242mFull documentation at: <https://www.gnu.org/software/coreutils/head>[0m
+[38;2;248;248;242mor available locally via: info '(coreutils) head invocation'[0m
