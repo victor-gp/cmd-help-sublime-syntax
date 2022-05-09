@@ -34,6 +34,10 @@ variables:
   other_lowercase_name: '[a-z][0-9a-z_-]*\b'
   long_space: '   |\t|\n'
 
+### exceptions variables:
+  color_code_begin: (?=.*\e\[.*
+  color_code_end: .*(?<=[0-9])m)
+
 scope_variables: # rightmost scope is matched first
   section_heading_scope: &SECTION_HEADING_SCOPE
     constant.section-heading.cmd-help  string.section-heading.cmd-help
@@ -374,26 +378,26 @@ contexts:
 
   color-escape-codes-sink:
     # normal colors fg
-    - match: '(?=.*\e\[.*3[0-7].*(?<=[0-9])m)'
+    - match: '{{color_code_begin}}3[0-7]{{color_code_end}}'
       set: sink
     # bright colors fg
-    - match: '(?=.*\e\[.*9[0-7].*m)'
+    - match: '{{color_code_begin}}9[0-7]{{color_code_end}}'
       set: sink
     # normal colors bg
-    - match: '(?=.*\e\[.*4[0-7].*m)'
+    - match: '{{color_code_begin}}4[0-7]{{color_code_end}}'
       set: sink
     # bright colors bg
-    - match: '(?=.*\e\[.*10[0-7].*m)'
+    - match: '{{color_code_begin}}10[0-7]{{color_code_end}}'
       set: sink
     # 256 colors fg
-    - match: '(?=.*\e\[.*38;5;.*m)'
+    - match: '{{color_code_begin}}38;5;{{color_code_end}}'
       set: sink
     # 256 colors bg
-    - match: '(?=.*\e\[.*48;5;.*m)'
+    - match: '{{color_code_begin}}48;5;{{color_code_end}}'
       set: sink
     # RGB colors fg
-    - match: '(?=.*\e\[.*38;2;.*m)'
+    - match: '{{color_code_begin}}38;2;{{color_code_end}}'
       set: sink
     # RGB colors bg
-    - match: '(?=.*\e\[.*48;2;.*m)'
+    - match: '{{color_code_begin}}48;2;{{color_code_end}}'
       set: sink
