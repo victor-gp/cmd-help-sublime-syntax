@@ -86,5 +86,4 @@ Commands:
 Run 'docker COMMAND --help' for more information on a command.
 
 [1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m
-#^^^^^^^^^^^^^^^ - text.cmd-help
-#nice: allow bold escape codes, only abort on color codes
+#^^^^^^^^^^^^^^^ text.cmd-help

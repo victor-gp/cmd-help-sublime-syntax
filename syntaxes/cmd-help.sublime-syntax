@@ -60,8 +60,7 @@ scope_variables: # rightmost scope is matched first
 contexts:
   prototype:
     # abort if color escape codes
-    - match: '(?=.*\e\[0m)'
-      set: sink
+    - include: color-escape-codes-sink
     # abort if formatted with backspaces
     - match: '(?=.*[\b])'
       set: sink
@@ -370,3 +369,32 @@ contexts:
     - match: '{{allcaps_argument_name}}(?=\s*:)'
       scope: *OTHER_VARIABLE_DEF_SCOPE
       set: then-pop
+
+  ### hardcoded exceptions #####################################################
+
+  color-escape-codes-sink:
+    #nice: should have a digit lookahead/behind before the closing m
+    # normal colors fg
+    - match: '(?=.*\e\[.*3[0-7].*m)'
+      set: sink
+    # bright colors fg
+    - match: '(?=.*\e\[.*9[0-7].*m)'
+      set: sink
+    # normal colors bg
+    - match: '(?=.*\e\[.*4[0-7].*m)'
+      set: sink
+    # bright colors bg
+    - match: '(?=.*\e\[.*10[0-7].*m)'
+      set: sink
+    # 256 colors fg
+    - match: '(?=.*\e\[.*38;5;.*m)'
+      set: sink
+    # 256 colors bg
+    - match: '(?=.*\e\[.*48;5;.*m)'
+      set: sink
+    # RGB colors fg
+    - match: '(?=.*\e\[.*38;2;.*m)'
+      set: sink
+    # RGB colors bg
+    - match: '(?=.*\e\[.*48;2;.*m)'
+      set: sink
