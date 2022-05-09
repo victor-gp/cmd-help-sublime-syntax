@@ -44,14 +44,14 @@ Usage: sbt [options]
 # ^^^^^^^^^ string.other-variable.cmd-help
   .jvmopts            if this file exists in the current directory, its contents
 # ^^^^^^^^ - constant.file-def.cmd-help
-#nice: maybe scope this? as other def to match other lowercase filenames?
+#todo: maybe scope this? as other def to match other lowercase filenames?
                       are appended to JAVA_OPTS
   SBT_OPTS            environment variable, if unset uses ""
   .sbtopts            if this file exists in the current directory, its contents
                       are prepended to the runner args
   /etc/sbt/sbtopts    if this file exists, it is prepended to the runner args
 # ^^^^^^^^^^^^^^^^ - constant.file-def.cmd-help
-#nice: same as .jvmopts
+#todo: same as .jvmopts
   -Dkey=val           pass -Dkey=val directly to the java runtime
   -J-X                pass option -X directly to the java runtime
                       (-J is stripped)
