@@ -132,20 +132,20 @@ contexts:
 
   indent-0:
     - include: heading
-    - include: option-def-first
+    - include: option-def-head
     - include: argument-def
     - include: other-def
     - include: else-pop
 
   indent-1-2:
-    - include: option-def-first
+    - include: option-def-head
     - include: heading
     - include: argument-def
     - include: other-def
     - include: else-pop
 
   indent-3-8:
-    - include: option-def-first
+    - include: option-def-head
     - include: argument-def
     - include: other-def
     - include: else-pop
@@ -172,6 +172,12 @@ contexts:
 
   ### option definitions #######################################################
 
+  option-def-head:
+    - include: option-def-specials
+    - match: '---' # probably a separator
+      pop: true
+    - include: option-def
+
   option-def:
     - match: '-{{option_name}}'
       scope: *OPTION_DEF_SCOPE
@@ -187,12 +193,6 @@ contexts:
     - match: '-:(?={{option_break}})'
       scope: *OPTION_DEF_SCOPE
       set: option-def-post
-
-  option-def-first:
-    - include: option-def-specials
-    - match: '---' # probably a separator
-      pop: true
-    - include: option-def
 
   option-def-post:
     - include: option-def-connectors
@@ -213,21 +213,21 @@ contexts:
 
   option-def-connectors:
     - match: ', '
-      set: option-def-or-pop
+      set: option-def-alt
     - match: ' \| '
-      set: option-def-or-pop
+      set: option-def-alt
     - match: ' (?=-)'
-      set: option-def-or-pop
+      set: option-def-alt
     - match: ' or '
-      set: option-def-or-pop
+      set: option-def-alt
     - match: '  or  '
-      set: option-def-or-pop
+      set: option-def-alt
     - match: '/'
-      set: option-def-or-pop
+      set: option-def-alt
     - match: '\s+(?=-)'
-      set: option-def-or-pop
+      set: option-def-alt
 
-  option-def-or-pop:
+  option-def-alt:
     - include: option-def
     - include: else-pop
 
