@@ -8,18 +8,18 @@
 [38;2;248;248;242minteractive use by default.[0m
 
 [38;2;253;151;31mMost used commands:[0m
-[38;2;248;248;242m  list - list packages based on package names[0m
-[38;2;248;248;242m  search - search in package descriptions[0m
-[38;2;248;248;242m  show - show package details[0m
-[38;2;248;248;242m  install - install packages[0m
-[38;2;248;248;242m  reinstall - reinstall packages[0m
-[38;2;248;248;242m  remove - remove packages[0m
-[38;2;248;248;242m  autoremove - Remove automatically all unused packages[0m
-[38;2;248;248;242m  update - update list of available packages[0m
-[38;2;248;248;242m  upgrade - upgrade the system by installing/upgrading packages[0m
-[38;2;248;248;242m  full-upgrade - upgrade the system by removing/installing/upgrading packages[0m
-[38;2;248;248;242m  edit-sources - edit the source information file[0m
-[38;2;248;248;242m  satisfy - satisfy dependency strings[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mlist[0m[38;2;248;248;242m - list packages based on package names[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114msearch[0m[38;2;248;248;242m - search in package descriptions[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mshow[0m[38;2;248;248;242m - show package details[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114minstall[0m[38;2;248;248;242m - install packages[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mreinstall[0m[38;2;248;248;242m - reinstall packages[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mremove[0m[38;2;248;248;242m - remove packages[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mautoremove[0m[38;2;248;248;242m - Remove automatically all unused packages[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mupdate[0m[38;2;248;248;242m - update list of available packages[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mupgrade[0m[38;2;248;248;242m - upgrade the system by installing/upgrading packages[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mfull-upgrade[0m[38;2;248;248;242m - upgrade the system by removing/installing/upgrading packages[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114medit-sources[0m[38;2;248;248;242m - edit the source information file[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114msatisfy[0m[38;2;248;248;242m - satisfy dependency strings[0m
 
 [38;2;248;248;242mSee apt(8) for more information about the available commands.[0m
 [38;2;248;248;242mConfiguration options and syntax is detailed in apt.conf(5).[0m

@@ -11,8 +11,7 @@ interactive use by default.
 
 Most used commands:
   list - list packages based on package names
-# ^^^^ - keyword.other.def.cmd-help
-#todo scope subcommands separated from descriptions by -
+# ^^^^ keyword.other.def.cmd-help
   search - search in package descriptions
   show - show package details
   install - install packages

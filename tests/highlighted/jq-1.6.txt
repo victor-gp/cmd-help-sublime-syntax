@@ -1,4 +1,4 @@
-[38;2;248;248;242mjq - commandline JSON processor [version 1.6][0m
+[38;2;249;38;114mjq[0m[38;2;248;248;242m - commandline JSON processor [version 1.6][0m
 
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m	jq [options] <jq filter> [file...][0m
 [38;2;248;248;242m	jq [options] --args <jq filter> [strings...][0m

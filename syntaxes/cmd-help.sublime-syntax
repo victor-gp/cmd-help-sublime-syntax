@@ -355,6 +355,10 @@ contexts:
     - match: '{{other_lowercase_name}}(?={{long_space}})'
       scope: *OTHER_DEF_SCOPE
       set: then-pop
+    # e.g.: "install - install packages (from apt)"
+    - match: '{{other_lowercase_name}}(?=\s+-\s+\S)'
+      scope: *OTHER_DEF_SCOPE
+      set: then-pop
     # e.g.: "compose*" (from docker)
     - match: '{{other_lowercase_name}}\*(?=   )'
       scope: *OTHER_DEF_SCOPE
