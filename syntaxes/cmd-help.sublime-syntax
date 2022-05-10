@@ -115,12 +115,6 @@ contexts:
     - clear_scopes: true
     - meta_include_prototype: false
 
-  ignore-syntax-test-header:
-  - match: '# SYNTAX TEST "cmd-help.sublime-syntax"\n'
-    set: main
-  - match: '^\n$' # empty line
-    set: main
-
   ### stack lv 2 ###############################################################
 
   line-begin:
@@ -169,10 +163,7 @@ contexts:
     - match: '(?i:usage):(?=.+\n)'
       scope: *INLINE_USAGE_SCOPE
       set: then-pop
-    # python argparse
-    - match: '(positional arguments|optional arguments|required arguments|options):\n'
-      scope: *SECTION_HEADING_SCOPE
-      set: then-pop
+    - include: python-argparse-headings
 
   ### option definitions #######################################################
 
@@ -411,3 +402,14 @@ contexts:
     # RGB colors bg
     - match: '{{color_code_begin}}48;2;{{color_code_end}}'
       set: sink
+
+  ignore-syntax-test-header:
+    - match: '# SYNTAX TEST "cmd-help.sublime-syntax"\n'
+      set: main
+    - match: '^\n$' # empty line
+      set: main
+
+  python-argparse-headings:
+    - match: '(positional arguments|optional arguments|required arguments|options):\n'
+      scope: *SECTION_HEADING_SCOPE
+      set: then-pop
