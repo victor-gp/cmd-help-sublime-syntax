@@ -23,14 +23,15 @@ You may want to put an alias plus a function around this:
 ```sh
 # in your .bashrc/.zshrc/.*rc
 alias bathelp='bat --plain --language=cmd-help'
-function help {
+help() (
+    set -o pipefail
     "$@" --help 2>&1 | bathelp
-}
+)
 ```
 
 Then you can do `help git`. Or `help git commit`. Depending on the command, it can even handle alternative help options: `help bat -h`.
 
-Sometimes a command may not recognize `--help`. (I'm looking at you, `java`, though `help java -h` does work.) In that case, you just have to run `<command> --its-help-option | bathelp`.
+Sometimes a command may not recognize `--help`. (I'm looking at you, `java`, though `help java -h` does work.) In that case, you just have to run `<the command> --its-help-option | bathelp`.
 
 ## `bat` theme support
 
