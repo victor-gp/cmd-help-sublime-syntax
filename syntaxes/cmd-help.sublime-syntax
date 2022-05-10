@@ -32,7 +32,8 @@ variables:
 
 ### other-def variables:
   other_lowercase_name: '[a-z][0-9a-z_-]*\b'
-  long_space: '   |\t|\n'
+  long_space: '   |\t|\n|{{single_2_space}}'
+  single_2_space: '  (?!.*\S  \S)'
 
 ### exceptions variables:
   color_code_begin: (?=.*\e\[.*
@@ -352,6 +353,7 @@ contexts:
     - include: eol-pop
 
   other-def:
+    - include: other-def-escapes
     - match: '{{other_lowercase_name}}(?={{long_space}})'
       scope: *OTHER_DEF_SCOPE
       set: then-pop
@@ -360,7 +362,7 @@ contexts:
       scope: *OTHER_DEF_SCOPE
       set: then-pop
     # e.g.: "compose*" (from docker)
-    - match: '{{other_lowercase_name}}\*(?=   )'
+    - match: '{{other_lowercase_name}}\*(?={{long_space}})'
       scope: *OTHER_DEF_SCOPE
       set: then-pop
     # e.g.: "build, b" (from cargo)
@@ -378,7 +380,11 @@ contexts:
       scope: *OTHER_VARIABLE_DEF_SCOPE
       set: then-pop
 
-  ### hardcoded exceptions #####################################################
+  other-def-escapes:
+    - match: '(?=or\s)'
+      set: then-pop
+
+  ### notable exceptions #######################################################
 
   color-escape-codes-sink:
     # normal colors fg

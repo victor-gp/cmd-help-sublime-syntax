@@ -41,25 +41,25 @@
 [38;2;248;248;242m  [0m[38;2;249;38;114mnocreat[0m[38;2;248;248;242m   do not create the output file[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mnotrunc[0m[38;2;248;248;242m   do not truncate the output file[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mnoerror[0m[38;2;248;248;242m   continue after read errors[0m
-[38;2;248;248;242m  fdatasync  physically write output file data before finishing[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mfdatasync[0m[38;2;248;248;242m  physically write output file data before finishing[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mfsync[0m[38;2;248;248;242m     likewise, but also write metadata[0m
 
 [38;2;253;151;31mEach FLAG symbol may be:[0m
 
 [38;2;248;248;242m  [0m[38;2;249;38;114mappend[0m[38;2;248;248;242m    append mode (makes sense only for output; conv=notrunc suggested)[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mdirect[0m[38;2;248;248;242m    use direct I/O for data[0m
-[38;2;248;248;242m  directory  fail unless a directory[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mdirectory[0m[38;2;248;248;242m  fail unless a directory[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mdsync[0m[38;2;248;248;242m     use synchronized I/O for data[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114msync[0m[38;2;248;248;242m      likewise, but also for metadata[0m
-[38;2;248;248;242m  fullblock  accumulate full blocks of input (iflag only)[0m
-[38;2;248;248;242m  nonblock  use non-blocking I/O[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mfullblock[0m[38;2;248;248;242m  accumulate full blocks of input (iflag only)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnonblock[0m[38;2;248;248;242m  use non-blocking I/O[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mnoatime[0m[38;2;248;248;242m   do not update access time[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mnocache[0m[38;2;248;248;242m   Request to drop cache.  See also oflag=sync[0m
 [38;2;248;248;242m  [0m[38;2;249;38;114mnoctty[0m[38;2;248;248;242m    do not assign controlling terminal from file[0m
-[38;2;248;248;242m  nofollow  do not follow symlinks[0m
-[38;2;248;248;242m  count_bytes  treat 'count=N' as a byte count (iflag only)[0m
-[38;2;248;248;242m  skip_bytes  treat 'skip=N' as a byte count (iflag only)[0m
-[38;2;248;248;242m  seek_bytes  treat 'seek=N' as a byte count (oflag only)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mnofollow[0m[38;2;248;248;242m  do not follow symlinks[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mcount_bytes[0m[38;2;248;248;242m  treat 'count=N' as a byte count (iflag only)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mskip_bytes[0m[38;2;248;248;242m  treat 'skip=N' as a byte count (iflag only)[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mseek_bytes[0m[38;2;248;248;242m  treat 'seek=N' as a byte count (oflag only)[0m
 
 [38;2;248;248;242mSending a USR1 signal to a running 'dd' process makes it[0m
 [38;2;248;248;242mprint I/O statistics to standard error and then resume copying.[0m
