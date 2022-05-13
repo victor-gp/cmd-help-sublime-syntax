@@ -4,15 +4,15 @@ This is a Sublime Syntax definition for [`bat`](https://github.com/sharkdp/bat) 
 
 It provides just enough color to help find your way around a help message:
 
-<img src="./docs/assets/cmd-help-example.png" width="750" alt="Example usage of the cmd-help syntax on 'bat -h'">
+<img src="./docs/assets/cmd-help-example.png" width="700" alt="Example usage of the cmd-help syntax on 'bat -h'">
 
 Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples).
 
 ## Installation
 
-This syntax is included with `bat` if you [build from source](https://github.com/sharkdp/bat#from-source).
+This syntax is included with `bat` since version 0.21.0.
 
-But it hasn't made it into a release yet, so if you installed `bat` from a package manager you'll have to [add it as a custom syntax](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions).
+If you have an older version of `bat`, you can add [this](./syntaxes/cmd-help.sublime-syntax) as a [custom syntax](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions).
 
 Check things work by running `mv --help | bat -plhelp`
 
@@ -35,9 +35,11 @@ Sometimes a command may not recognize `--help`. (I'm looking at you, `java`, tho
 
 ## `bat` theme support
 
-The syntax works nicely with most `bat` themes. In some cases, even better than with the default theme (used in the above example). You can find examples of working themes [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples/theme).
+The syntax works nicely with most `bat` themes. In some cases, even better than with the default Monokai theme (used in the above example). You can find examples of working themes [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples/theme).
 
-If you want to use a different theme, just append `--theme=<your preferred theme>` to your `bat` commands. More info [here](https://github.com/sharkdp/bat#highlighting-theme).
+To use a different theme, just append `--theme=<your preferred theme>` to your `bat` commands. More info [here](https://github.com/sharkdp/bat#highlighting-theme).
+
+You may also want to experiment with setting `--italic-text=always`. A few themes use italics on some elements, including Monokai.
 
 ## License
 
