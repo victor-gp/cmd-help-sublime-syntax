@@ -36,8 +36,8 @@ variables:
   single_2_space: '  (?!.*\S  \S)'
 
 ### exceptions variables:
-  color_code_begin: (?=.*\e\[.*
-  color_code_end: .*(?<=[0-9])m)
+  color_code_begin: '(?=.*\e\[.*'
+  color_code_end: '.*(?<=[0-9])m)'
 
 scope_variables: # rightmost scope is matched first
   - &SECTION_HEADING_SCOPES
@@ -67,40 +67,40 @@ contexts:
     # abort if color escape codes
     - include: color-escape-codes-sink
     # abort if formatted with backspaces
-    - match: '(?=.*[\b])'
+    - match: (?=.*[\b])
       set: sink
 
   main: # entry point only, main-b is the real main
     - meta_include_prototype: false
     - include: first-line-specials
-    - match: '^'
+    - match: ^
       set: main-b
 
   first-line-specials:
     - include: ignore-syntax-test-header
     # man page first line: ^cmd/fn_name(man_section_digit) ... idem$
-    - match: '(?=^([A-Z-]+)\(([0-9])\)\s.+\s\1\(\2\)$)'
+    - match: (?=^([A-Z-]+)\(([0-9])\)\s.+\s\1\(\2\)$)
       push:
         - clear_scopes: true
         - include: Manpage.sublime-syntax
 
   main-b: # stack lv 0
-    - match: '^'
+    - match: ^
       push: [line, line-begin]
 
   line: # stack lv 1
-    - match: '$'
+    - match: $
       pop: true
 
   ### helpers ##################################################################
 
   else-pop:
     - include: eol-pop # '.' doesn't match '\n'
-    - match: '(?=.)'
+    - match: (?=.)
       pop: true
 
   eol-pop:
-    - match: '\n'
+    - match: \n
       pop: true
 
   then-pop:
@@ -118,13 +118,13 @@ contexts:
   ### stack lv 2 ###############################################################
 
   line-begin:
-    - match: '^(?=\S)'
+    - match: ^(?=\S)
       set: indent-0
-    - match: '^ {1,2}(?=\S)'
+    - match: ^ {1,2}(?=\S)
       set: indent-1-2
-    - match: '^ {3,8}(?=\S)'
+    - match: ^ {3,8}(?=\S)
       set: indent-3-8
-    - match: '^\t{1,2}(?=\S)'
+    - match: ^\t{1,2}(?=\S)
       set: indent-3-8
     - include: else-pop
 
@@ -160,7 +160,7 @@ contexts:
     #   set: then-pop
 
   heading-specials:
-    - match: '(?i:usage):(?=.+\n)'
+    - match: (?i:usage):(?=.+\n)
       scope: *INLINE_USAGE_SCOPES
       set: then-pop
     - include: python-argparse-headings
@@ -169,23 +169,23 @@ contexts:
 
   option-def-head:
     - include: option-def-specials
-    - match: '---' # probably a separator
+    - match: --- # probably a separator
       pop: true
     - include: option-def
 
   option-def:
-    - match: '-{{option_name}}'
+    - match: -{{option_name}}
       scope: *OPTION_DEF_SCOPES
       set: option-def-post
 
   option-def-specials:
-    - match: '--(?=\s)'
+    - match: --(?=\s)
       scope: keyword.control.end-of-options.cmd-help
       set: then-pop
-    - match: '\+(?=[\s<[:alpha:]])'
+    - match: \+(?=[\s<[:alpha:]])
       scope: keyword.control.plus-option.cmd-help
       set: plus-option-post
-    - match: '-:(?={{option_break}})'
+    - match: -:(?={{option_break}})
       scope: *OPTION_DEF_SCOPES
       set: option-def-post
 
@@ -229,7 +229,7 @@ contexts:
   ### option arguments #########################################################
 
   option-def+space:
-    - match: '<.*?>'
+    - match: <.*?>
       scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - match: '{{allcaps_argument_name}}\b'
@@ -252,7 +252,7 @@ contexts:
     - match: '{{relaxed_argument_name}}'
       scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
-    - match: '<.*?>'
+    - match: <.*?>
       scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - match: '{'
@@ -263,19 +263,19 @@ contexts:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPES
     - match: '\|'
       push: de-scope-match
-    - match: '(?=])'
+    - match: (?=])
       set:
         - match: ']'
           set: option-argument-post
 
   option-def+colon:
-    - match: '<.*?>'
+    - match: <.*?>
       scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - include: else-pop
 
   option-def+comma:
-    - match: '<.*?>'
+    - match: <.*?>
       scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - include: else-pop
@@ -285,14 +285,14 @@ contexts:
     # match ',' or '|'
     - match: ',|\|'
       push: de-scope-match
-    - match: '(?=})'
+    - match: (?=})
       set:
         - match: '}'
           set: option-argument-post
 
   option-argument-post:
     - include: option-def-connectors
-    - match: '({{ellipsis}})?'
+    - match: ({{ellipsis}})?
       scope: *OPTION_ARGUMENT_SCOPES
     # match '[=' or '['
     - match: '\[=|\['
@@ -306,7 +306,7 @@ contexts:
     - include: else-pop
 
   plus-option-post:
-    - match: '<.*?>'
+    - match: <.*?>
       scope: *OPTION_ARGUMENT_SCOPES
       set: then-pop
     # e.g.: "LINE:COLUMN" (from emacs)
@@ -318,15 +318,15 @@ contexts:
   ### other definitions ########################################################
 
   argument-def:
-    - match: '<{{relaxed_argument_name}}>({{ellipsis}})?'
+    - match: <{{relaxed_argument_name}}>({{ellipsis}})?
       scope: *ARGUMENT_DEF_SCOPES
       set: then-pop
     - match: '{'
       set: curly-bracket-argument-def
-    - match: '-(?=  )'
+    - match: -(?=  )
       scope: *ARGUMENT_DEF_SCOPES # stdin
       set: then-pop
-    - match: '({{relaxed_argument_name}}) ({{ellipsis}})'
+    - match: ({{relaxed_argument_name}}) ({{ellipsis}})
       captures:
         1: *ARGUMENT_DEF_SCOPES
         2: *ARGUMENT_DEF_SCOPES
@@ -337,7 +337,7 @@ contexts:
     # match ',' or '|'
     - match: ',|\|'
       push: de-scope-match
-    - match: '(?=})'
+    - match: (?=})
       set:
         - match: '}'
           set: then-pop
@@ -357,7 +357,7 @@ contexts:
       scope: *OTHER_DEF_SCOPES
       set: then-pop
     # e.g.: "build, b" (from cargo)
-    - match: '({{other_lowercase_name}}), ({{other_lowercase_name}})(?={{long_space}})'
+    - match: ({{other_lowercase_name}}), ({{other_lowercase_name}})(?={{long_space}})
       captures:
         1: *OTHER_DEF_SCOPES
         2: *OTHER_DEF_SCOPES
@@ -376,7 +376,8 @@ contexts:
       set: then-pop
 
   other-def-escapes:
-    - match: '(?=or\s)'
+    # pretty common in "usage:" alternatives
+    - match: (?=or\s)
       set: then-pop
 
   ### notable exceptions #######################################################
@@ -410,10 +411,10 @@ contexts:
   ignore-syntax-test-header:
     - match: '# SYNTAX TEST "cmd-help.sublime-syntax"\n'
       set: main
-    - match: '^\n$' # empty line
+    - match: ^\n$ # empty line
       set: main
 
   python-argparse-headings:
-    - match: '(positional arguments|optional arguments|required arguments|options):\n'
+    - match: (positional arguments|optional arguments|required arguments|options):\n
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
