@@ -1,8 +1,8 @@
 %YAML 1.2
 ---
 name: Command Help
+# don't really exist, but useful for the shortname
 file_extensions:
-  # don't really exist, but useful for the shortname
   - cmd-help
   - help
 scope: text.cmd-help
@@ -40,25 +40,25 @@ variables:
   color_code_end: .*(?<=[0-9])m)
 
 scope_variables: # rightmost scope is matched first
-  section_heading_scope: &SECTION_HEADING_SCOPE
+  - &SECTION_HEADING_SCOPE
     constant.section-heading.cmd-help  string.section-heading.cmd-help
     markup.heading.cmd-help  entity.name.section.cmd-help
-  inline_usage_scope: &INLINE_USAGE_SCOPE
+  - &INLINE_USAGE_SCOPE
     constant.section-heading.cmd-help  string.inline-usage.cmd-help
     markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help
-  option_def_scope: &OPTION_DEF_SCOPE
+  - &OPTION_DEF_SCOPE
     entity.name.function.option.cmd-help
-  option_argument_scope: &OPTION_ARGUMENT_SCOPE
+  - &OPTION_ARGUMENT_SCOPE
     string.option-argument.cmd-help  variable.other.option-argument.cmd-help
     variable.parameter.option-argument.cmd-help
-  argument_def_scope: &ARGUMENT_DEF_SCOPE # same base scopes as option argument
+  - &ARGUMENT_DEF_SCOPE # =~ option argument
     string.argument.cmd-help  variable.other.argument.cmd-help
     variable.parameter.argument.cmd-help
   # all-caps definitions, usually environment vars but also command args
-  other_variable_def_scope: &OTHER_VARIABLE_DEF_SCOPE
+  - &OTHER_VARIABLE_DEF_SCOPE
     variable.other.readwrite.cmd-help  string.other-variable.cmd-help
   # non all-caps definitions: subcommands, arguments, features, etc.
-  other_def_scope: &OTHER_DEF_SCOPE
+  - &OTHER_DEF_SCOPE
     keyword.other.def.cmd-help # support.fuction variable.function ?
 
 
