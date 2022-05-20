@@ -40,25 +40,25 @@ variables:
   color_code_end: .*(?<=[0-9])m)
 
 scope_variables: # rightmost scope is matched first
-  - &SECTION_HEADING_SCOPE
+  - &SECTION_HEADING_SCOPES
     constant.section-heading.cmd-help  string.section-heading.cmd-help
     markup.heading.cmd-help  entity.name.section.cmd-help
-  - &INLINE_USAGE_SCOPE
+  - &INLINE_USAGE_SCOPES
     constant.section-heading.cmd-help  string.inline-usage.cmd-help
     markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help
-  - &OPTION_DEF_SCOPE
+  - &OPTION_DEF_SCOPES
     entity.name.function.option.cmd-help
-  - &OPTION_ARGUMENT_SCOPE
+  - &OPTION_ARGUMENT_SCOPES
     string.option-argument.cmd-help  variable.other.option-argument.cmd-help
     variable.parameter.option-argument.cmd-help
-  - &ARGUMENT_DEF_SCOPE # =~ option argument
+  - &ARGUMENT_DEF_SCOPES # =~ option argument
     string.argument.cmd-help  variable.other.argument.cmd-help
     variable.parameter.argument.cmd-help
   # all-caps definitions, usually environment vars but also command args
-  - &OTHER_VARIABLE_DEF_SCOPE
+  - &OTHER_VARIABLE_DEF_SCOPES
     variable.other.readwrite.cmd-help  string.other-variable.cmd-help
   # non all-caps definitions: subcommands, arguments, features, etc.
-  - &OTHER_DEF_SCOPE
+  - &OTHER_DEF_SCOPES
     keyword.other.def.cmd-help # support.fuction variable.function ?
 
 
@@ -153,15 +153,15 @@ contexts:
   heading:
     - include: heading-specials
     - match: '{{lookahead_40}}{{leading_word}}( {{any_word2}})*:?\n'
-      scope: *SECTION_HEADING_SCOPE
+      scope: *SECTION_HEADING_SCOPES
       set: then-pop
     # - match: '{{any_word2}}( {{any_word2}})*:\n'
-    #   scope: *SECTION_HEADING_SCOPE
+    #   scope: *SECTION_HEADING_SCOPES
     #   set: then-pop
 
   heading-specials:
     - match: '(?i:usage):(?=.+\n)'
-      scope: *INLINE_USAGE_SCOPE
+      scope: *INLINE_USAGE_SCOPES
       set: then-pop
     - include: python-argparse-headings
 
@@ -175,7 +175,7 @@ contexts:
 
   option-def:
     - match: '-{{option_name}}'
-      scope: *OPTION_DEF_SCOPE
+      scope: *OPTION_DEF_SCOPES
       set: option-def-post
 
   option-def-specials:
@@ -186,7 +186,7 @@ contexts:
       scope: keyword.control.plus-option.cmd-help
       set: plus-option-post
     - match: '-:(?={{option_break}})'
-      scope: *OPTION_DEF_SCOPE
+      scope: *OPTION_DEF_SCOPES
       set: option-def-post
 
   option-def-post:
@@ -230,19 +230,19 @@ contexts:
 
   option-def+space:
     - match: '<.*?>'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - match: '{{allcaps_argument_name}}\b'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - match: '{{relaxed_argument_name}}(?! [:alpha:])'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - match: '{{relaxed_argument_name}}(?= or )'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - match: "'{{relaxed_argument_name}}'"
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - match: '{'
       set: option-argument-curly-bracket
@@ -250,17 +250,17 @@ contexts:
 
   option-def+equals:
     - match: '{{relaxed_argument_name}}'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - match: '<.*?>'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - match: '{'
       set: option-argument-curly-bracket
     - include: else-pop
 
   option-def+square-bracket:
-    - meta_content_scope: *OPTION_ARGUMENT_SCOPE
+    - meta_content_scope: *OPTION_ARGUMENT_SCOPES
     - match: '\|'
       push: de-scope-match
     - match: '(?=])'
@@ -270,18 +270,18 @@ contexts:
 
   option-def+colon:
     - match: '<.*?>'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - include: else-pop
 
   option-def+comma:
     - match: '<.*?>'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - include: else-pop
 
   option-argument-curly-bracket:
-    - meta_content_scope: *OPTION_ARGUMENT_SCOPE
+    - meta_content_scope: *OPTION_ARGUMENT_SCOPES
     # match ',' or '|'
     - match: ',|\|'
       push: de-scope-match
@@ -293,7 +293,7 @@ contexts:
   option-argument-post:
     - include: option-def-connectors
     - match: '({{ellipsis}})?'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
     # match '[=' or '['
     - match: '\[=|\['
       set: option-def+square-bracket
@@ -307,11 +307,11 @@ contexts:
 
   plus-option-post:
     - match: '<.*?>'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: then-pop
     # e.g.: "LINE:COLUMN" (from emacs)
     - match: '{{allcaps_argument_name}}(:{{allcaps_argument_name}})*'
-      scope: *OPTION_ARGUMENT_SCOPE
+      scope: *OPTION_ARGUMENT_SCOPES
       set: then-pop
     - include: else-pop
 
@@ -319,21 +319,21 @@ contexts:
 
   argument-def:
     - match: '<{{relaxed_argument_name}}>({{ellipsis}})?'
-      scope: *ARGUMENT_DEF_SCOPE
+      scope: *ARGUMENT_DEF_SCOPES
       set: then-pop
     - match: '{'
       set: curly-bracket-argument-def
     - match: '-(?=  )'
-      scope: *ARGUMENT_DEF_SCOPE # stdin
+      scope: *ARGUMENT_DEF_SCOPES # stdin
       set: then-pop
     - match: '({{relaxed_argument_name}}) ({{ellipsis}})'
       captures:
-        1: *ARGUMENT_DEF_SCOPE
-        2: *ARGUMENT_DEF_SCOPE
+        1: *ARGUMENT_DEF_SCOPES
+        2: *ARGUMENT_DEF_SCOPES
       set: then-pop
 
   curly-bracket-argument-def:
-    - meta_content_scope: *ARGUMENT_DEF_SCOPE
+    - meta_content_scope: *ARGUMENT_DEF_SCOPES
     # match ',' or '|'
     - match: ',|\|'
       push: de-scope-match
@@ -346,33 +346,33 @@ contexts:
   other-def:
     - include: other-def-escapes
     - match: '{{other_lowercase_name}}(?={{long_space}})'
-      scope: *OTHER_DEF_SCOPE
+      scope: *OTHER_DEF_SCOPES
       set: then-pop
     # e.g.: "install - install packages (from apt)"
     - match: '{{other_lowercase_name}}(?=\s+-\s+\S)'
-      scope: *OTHER_DEF_SCOPE
+      scope: *OTHER_DEF_SCOPES
       set: then-pop
     # e.g.: "compose*" (from docker)
     - match: '{{other_lowercase_name}}\*(?={{long_space}})'
-      scope: *OTHER_DEF_SCOPE
+      scope: *OTHER_DEF_SCOPES
       set: then-pop
     # e.g.: "build, b" (from cargo)
     - match: '({{other_lowercase_name}}), ({{other_lowercase_name}})(?={{long_space}})'
       captures:
-        1: *OTHER_DEF_SCOPE
-        2: *OTHER_DEF_SCOPE
+        1: *OTHER_DEF_SCOPES
+        2: *OTHER_DEF_SCOPES
       set: then-pop
 
     - match: '{{allcaps_argument_name}}(?=  )'
-      scope: *OTHER_VARIABLE_DEF_SCOPE
+      scope: *OTHER_VARIABLE_DEF_SCOPES
       set: then-pop
     # e.g.: "PYTHONSTARTUP:", "PYTHONCASEOK :"
     - match: '{{allcaps_argument_name}}(?=\s*:)'
-      scope: *OTHER_VARIABLE_DEF_SCOPE
+      scope: *OTHER_VARIABLE_DEF_SCOPES
       set: then-pop
     # e.g.: "'warn'" or "'warn-nopipe'" (from tee)
     - match: "'{{other_lowercase_name}}'"
-      scope: *OTHER_VARIABLE_DEF_SCOPE
+      scope: *OTHER_VARIABLE_DEF_SCOPES
       set: then-pop
 
   other-def-escapes:
@@ -415,5 +415,5 @@ contexts:
 
   python-argparse-headings:
     - match: '(positional arguments|optional arguments|required arguments|options):\n'
-      scope: *SECTION_HEADING_SCOPE
+      scope: *SECTION_HEADING_SCOPES
       set: then-pop
