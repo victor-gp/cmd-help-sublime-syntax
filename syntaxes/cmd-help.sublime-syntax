@@ -390,14 +390,14 @@ contexts:
       set: then-pop
 
   file-def:
-    - match: '{{absolute_path}}{{long_space}}'
+    - match: '{{absolute_path}}(?={{long_space}})'
       scope: *FILE_DEF_SCOPES
       set: then-pop
-    - match: '{{relative_path}}{{long_space}}'
+    - match: '{{relative_path}}(?={{long_space}})'
       scope: *FILE_DEF_SCOPES
       set: then-pop
     # dotfile
-    - match: '\.{{filename}}{{long_space}}'
+    - match: '\.{{filename}}(?={{long_space}})'
       scope: *FILE_DEF_SCOPES
       set: then-pop
 

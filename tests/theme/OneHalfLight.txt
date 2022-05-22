@@ -8,7 +8,7 @@
 [38;2;1;132;188m--option[0m[38;2;56;58;66m [0m[38;2;228;86;73m<argument>[0m[38;2;56;58;66m   bla bla bla[0m
 [38;2;1;132;188mARGUMENT[0m
 [38;2;166;38;164msubcommand[0m
-[38;2;56;58;66mpath/file[0m
+[38;2;193;132;1mpath/file[0m
 [38;2;166;38;164m--[0m
 
 
@@ -108,8 +108,8 @@
 [38;2;56;58;66m  [0m[38;2;80;161;79mJAVA_OPTS[0m[38;2;56;58;66m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
 [38;2;56;58;66m  [0m[38;2;80;161;79m'warn'[0m[38;2;56;58;66m         diagnose errors writing to any output[0m
 
-[38;2;56;58;66m  [0m[38;2;193;132;1m.jvmopts   [0m[38;2;56;58;66m         if this file exists in the current directory, its contents[0m
-[38;2;56;58;66m  [0m[38;2;193;132;1m/etc/sbt/sbtopts   [0m[38;2;56;58;66m if this file exists, it is prepended to the runner args[0m
+[38;2;56;58;66m  [0m[38;2;193;132;1m.jvmopts[0m[38;2;56;58;66m            if this file exists in the current directory, its contents[0m
+[38;2;56;58;66m  [0m[38;2;193;132;1m/etc/sbt/sbtopts[0m[38;2;56;58;66m    if this file exists, it is prepended to the runner args[0m
 
 [38;2;56;58;66m   [0m[38;2;166;38;164m+[0m[38;2;56;58;66m			Start at end of file[0m
 [38;2;56;58;66m   [0m[38;2;166;38;164m+[0m[38;2;228;86;73m<lnum>[0m[38;2;56;58;66m		Start at line <lnum>[0m

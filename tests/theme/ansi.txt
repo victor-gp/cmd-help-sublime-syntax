@@ -8,7 +8,7 @@ Most of these lines come from actual help messages in tests/source/.
 [34m--option[0m [32m<argument>[0m   bla bla bla
 [34mARGUMENT[0m
 [35msubcommand[0m
-path/file
+[33mpath/file[0m
 [35m--[0m
 
 
@@ -108,8 +108,8 @@ nor if it begins with lowercase
   [32mJAVA_OPTS[0m           environment variable, if unset uses "-Dfile.encoding=UTF-8"
   [32m'warn'[0m         diagnose errors writing to any output
 
-  [33m.jvmopts   [0m         if this file exists in the current directory, its contents
-  [33m/etc/sbt/sbtopts   [0m if this file exists, it is prepended to the runner args
+  [33m.jvmopts[0m            if this file exists in the current directory, its contents
+  [33m/etc/sbt/sbtopts[0m    if this file exists, it is prepended to the runner args
 
    [35m+[0m			Start at end of file
    [35m+[0m[32m<lnum>[0m		Start at line <lnum>
