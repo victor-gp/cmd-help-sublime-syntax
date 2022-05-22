@@ -35,6 +35,11 @@ variables:
   long_space: '   |\t|\n|{{single_2_space}}'
   single_2_space: '  (?!.*\S  \S)'
 
+### file-def variables:
+  filename: '[0-9a-zA-Z._-]+'
+  absolute_path: '/{{filename}}(/{{filename}})*'
+  relative_path: '{{filename}}/({{filename}}/)*{{filename}}'
+
 ### exceptions variables:
   color_code_begin: '(?=.*\e\[.*'
   color_code_end: '.*(?<=[0-9])m)'
@@ -60,6 +65,9 @@ scope_variables: # rightmost scope is matched first
   # non all-caps definitions: subcommands, arguments, features, etc.
   - &OTHER_DEF_SCOPES
     keyword.other.def.cmd-help # support.fuction variable.function ?
+  - &FILE_DEF_SCOPES
+    constant.file.cmd-help
+    # variable.other.readwrite.file.cmd-help  string.file.cmd-help
 
 
 contexts:
@@ -345,6 +353,7 @@ contexts:
 
   other-def:
     - include: other-def-escapes
+    - include: file-def
     - match: '{{other_lowercase_name}}(?={{long_space}})'
       scope: *OTHER_DEF_SCOPES
       set: then-pop
@@ -378,6 +387,18 @@ contexts:
   other-def-escapes:
     # pretty common in "usage:" alternatives
     - match: (?=or\s)
+      set: then-pop
+
+  file-def:
+    - match: '{{absolute_path}}{{long_space}}'
+      scope: *FILE_DEF_SCOPES
+      set: then-pop
+    - match: '{{relative_path}}{{long_space}}'
+      scope: *FILE_DEF_SCOPES
+      set: then-pop
+    # dotfile
+    - match: '\.{{filename}}{{long_space}}'
+      scope: *FILE_DEF_SCOPES
       set: then-pop
 
   ### notable exceptions #######################################################

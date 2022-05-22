@@ -34,12 +34,12 @@
 
 [38;2;248;248;242m  # jvm options and output control[0m
 [38;2;248;248;242m  [0m[38;2;230;219;116mJAVA_OPTS[0m[38;2;248;248;242m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
-[38;2;248;248;242m  .jvmopts            if this file exists in the current directory, its contents[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m.jvmopts   [0m[38;2;248;248;242m         if this file exists in the current directory, its contents[0m
 [38;2;248;248;242m                      are appended to JAVA_OPTS[0m
 [38;2;248;248;242m  [0m[38;2;230;219;116mSBT_OPTS[0m[38;2;248;248;242m            environment variable, if unset uses ""[0m
-[38;2;248;248;242m  .sbtopts            if this file exists in the current directory, its contents[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m.sbtopts   [0m[38;2;248;248;242m         if this file exists in the current directory, its contents[0m
 [38;2;248;248;242m                      are prepended to the runner args[0m
-[38;2;248;248;242m  /etc/sbt/sbtopts    if this file exists, it is prepended to the runner args[0m
+[38;2;248;248;242m  [0m[38;2;248;248;242m/etc/sbt/sbtopts   [0m[38;2;248;248;242m if this file exists, it is prepended to the runner args[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Dkey[0m[38;2;248;248;242m=[0m[38;2;253;151;31mval[0m[38;2;248;248;242m           pass -Dkey=val directly to the java runtime[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-J-X[0m[38;2;248;248;242m                pass option -X directly to the java runtime[0m
 [38;2;248;248;242m                      (-J is stripped)[0m
