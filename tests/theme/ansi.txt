@@ -2,6 +2,16 @@
 
 Most of these lines come from actual help messages in tests/source/.
 
+
+[34mQUICK REFERENCE:[0m
+
+[34m--option[0m [32m<argument>[0m   bla bla bla
+[34mARGUMENT[0m
+[35msubcommand[0m
+path/file
+[35m--[0m
+
+
 [34mHEADING PATTERNS:[0m
 
 [34mSelection options[0m
@@ -98,8 +108,8 @@ nor if it begins with lowercase
   [32mJAVA_OPTS[0m           environment variable, if unset uses "-Dfile.encoding=UTF-8"
   [32m'warn'[0m         diagnose errors writing to any output
 
-  .jvmopts            if this file exists in the current directory, its contents
-  /etc/sbt/sbtoptyys    if this file exists, it is prepended to the runner args
+  [33m.jvmopts   [0m         if this file exists in the current directory, its contents
+  [33m/etc/sbt/sbtopts   [0m if this file exists, it is prepended to the runner args
 
    [35m+[0m			Start at end of file
    [35m+[0m[32m<lnum>[0m		Start at line <lnum>

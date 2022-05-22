@@ -2,6 +2,16 @@
 
 [38;2;255;255;255mMost of these lines come from actual help messages in tests/source/.[0m
 
+
+[38;2;254;220;197mQUICK REFERENCE:[0m
+
+[38;2;248;248;248m--option[0m[38;2;255;255;255m [0m[38;2;198;197;254m<argument>[0m[38;2;255;255;255m   bla bla bla[0m
+[38;2;254;220;197mARGUMENT[0m
+[38;2;102;204;255msubcommand[0m
+[38;2;255;255;255mpath/file[0m
+[38;2;102;204;255m--[0m
+
+
 [38;2;254;220;197mHEADING PATTERNS:[0m
 
 [38;2;254;220;197mSelection options[0m
@@ -98,8 +108,8 @@
 [38;2;255;255;255m  [0m[38;2;204;255;102mJAVA_OPTS[0m[38;2;255;255;255m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
 [38;2;255;255;255m  [0m[38;2;204;255;102m'warn'[0m[38;2;255;255;255m         diagnose errors writing to any output[0m
 
-[38;2;255;255;255m  .jvmopts            if this file exists in the current directory, its contents[0m
-[38;2;255;255;255m  /etc/sbt/sbtoptyys    if this file exists, it is prepended to the runner args[0m
+[38;2;255;255;255m  [0m[38;2;153;204;153m.jvmopts   [0m[38;2;255;255;255m         if this file exists in the current directory, its contents[0m
+[38;2;255;255;255m  [0m[38;2;153;204;153m/etc/sbt/sbtopts   [0m[38;2;255;255;255m if this file exists, it is prepended to the runner args[0m
 
 [38;2;255;255;255m   [0m[38;2;102;204;255m+[0m[38;2;255;255;255m			Start at end of file[0m
 [38;2;255;255;255m   [0m[38;2;102;204;255m+[0m[38;2;198;197;254m<lnum>[0m[38;2;255;255;255m		Start at line <lnum>[0m
