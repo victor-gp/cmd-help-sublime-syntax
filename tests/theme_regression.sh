@@ -7,20 +7,15 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 bat cache --build --source .. > /dev/null
 
 highlight() {
-    bat --no-config -fpl cmd-help "$2" --theme "$1" > "$3"
+    bat --no-config -fpl cmd-help theme-source/synthetic.txt --theme "$1" > "$2"
 }
 
+# this is a hell of a hack :see_no_evil:
 IFS=$'\n'
 for theme in $(bat --list-themes --color=never)
 do
     unset IFS # then bash uses default IFS
-
-    source_path=source/bat-short-0.18.2.txt
-    highlight "$theme" "$source_path" "theme/${theme}-1.txt"
-    source_path=source/vim-8.1.txt
-    highlight "$theme" "$source_path" "theme/${theme}-2.txt"
-    source_path=source/python-3.10.0.txt
-    highlight "$theme" "$source_path" "theme/${theme}-3.txt"
+    highlight "$theme" "theme/${theme}.txt"
 done
 
 # restore user configuration

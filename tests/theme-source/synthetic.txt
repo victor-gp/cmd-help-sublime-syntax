@@ -1,0 +1,117 @@
+synthetic - fake help message for testing theme support
+
+Most of these lines come from actual help messages in tests/source/.
+
+HEADING PATTERNS:
+
+Selection options
+Basic Options:
+USAGE:
+ Finding manual pages:
+Auto-correction:
+GNU long options:
+JIT options (experimental):
+Usage: cp [OPTION]... [-T] SOURCE DEST
+usage: /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+
+But not if the line is longer than forty chars
+nor if it begins with lowercase
+   Nor after three spaces
+	Nor after a tab
+
+
+OPTION PATTERNS:
+
+    -A, --show-all
+    -l, --language <language>
+    -H, --highlight-line <N:M>...
+        --file-name <name>...
+      --backup[=CONTROL]       make a backup of each existing destination file
+      --no-preserve=ATTR_LIST  don't preserve the specified attributes
+  -R, -r, --recursive          copy directories recursively
+	-ilrsD or -c command or -O shopt_option		(invocation only)
+     --alt-svc <file name> Enable alt-svc with this cache file
+ -b, --cookie <data|filename> Send cookies from string/file
+     --tlsv1.0       Use TLSv1.0 or greater
+      --label LABEL             use LABEL instead of file name and timestamp
+      --from-file=FILE1           compare FILE1 to all operands;
+  --help={common|optimizers|params|target|warnings|[^]{joined|separate|undocumented}}[,...].
+  -print-search-dirs       Display the directories in the compiler's search path.
+  -print-file-name=<lib>   Display the full path to library <lib>.
+  -Wa,<options>            Pass comma-separated <options> on to the assembler.
+-C --no-color               Use a monochrome color scheme
+  -r load-module    Same as `ruby -r'
+  --sample-book-mode/--simple-prompt
+    -D<name>=<value>
+    -verbose:[class|gc|jni]
+    -version:<value>
+    -ea[:<packagename>...|:<classname>]
+    -agentlib:<libname>[=<options>]
+ -A             --smarthome             Enable smart home key
+-m mod : run library module as a script (terminates option list)
+        --except [COP1,COP2,...]     Exclude the given cop(s).
+    -P, --[no-]parallel              Use available CPUs to execute inspection in
+  -0[octal]       specify record separator (\0, if no argument)
+  -Cdirectory     cd to directory before executing your script
+  -e 'command'    one line of script. Several -e's allowed. Omit [programfile]
+  -Eex[:in], --encoding=ex[:in]
+  -rlibrary       require the library before executing your script
+  -W[level=2|:category]
+  --jit-[option]  enable JIT with an option (experimental)
+  --dump={insns|parsetree|...}[,...]
+  --external-encoding=encoding, --internal-encoding=encoding
+  --backtrace-limit=num
+  -h | --help         print this message
+  --color=auto|always|true|false|never
+  -w {show,hide,only}, --window {show,hide,only}
+   -h  or  --help	Print Help (this message) and exit
+  --display displayname
+  -t ms, --selectionTimeout ms
+      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files
+   --			Only file names after this
+
+
+ARGUMENT PATTERNS:
+
+(collapse with other patterns?)
+
+    <FILE>...
+-      : program read from stdin (default; interactive mode if a tty)
+arg ...: arguments passed to program in sys.argv[1:]
+
+
+OTHER PATTERNS:
+
+   commit            Record changes to the repository
+    cache    Modify the syntax-definition and theme cache
+    build, b    Compile the current package
+  list - list packages based on package names
+  full-upgrade - upgrade the system by removing/installing/upgrading packages
+  fdatasync  physically write output file data before finishing
+  compose*    Docker Compose (Docker Inc., v2.2.3)
+  did_you_mean    did_you_mean (default: enabled)
+  frozen-string-literal
+file   : program read from script file
+
+FILE                    visit FILE
+PYTHONSTARTUP: file executed on interactive startup (no default)
+  JAVA_OPTS           environment variable, if unset uses "-Dfile.encoding=UTF-8"
+  'warn'         diagnose errors writing to any output
+
+  .jvmopts            if this file exists in the current directory, its contents
+  /etc/sbt/sbtoptyys    if this file exists, it is prepended to the runner args
+
+   +			Start at end of file
+   +<lnum>		Start at line <lnum>
++LINE                   go to line LINE in next FILE
++LINE:COLUMN            go to line LINE, column COLUMN, in next FILE
+
+
+PRE-EXISTING FORMAT:
+
+[1mIt skips over bold text[0m
+And continues normal operation
+(as proven by the previous line being scoped as heading)
+[31mBut it aborts on color codes (this is red text)[0m
+And stops operation for what is left
+(otherwise the previous line would have been scoped as heading)

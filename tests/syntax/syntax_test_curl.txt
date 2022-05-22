@@ -21,8 +21,8 @@ Usage: curl [options...] <url>
      --connect-to <HOST1:PORT1:HOST2:PORT2> Connect to host
  -C, --continue-at <offset> Resumed transfer offset
  -b, --cookie <data|filename> Send cookies from string/file
- #                 ^ variable.parameter.option-argument.cmd-help
- #nit: this is an OR, shouldn't be scoped
+#                  ^ variable.parameter.option-argument.cmd-help
+#nit: this is an OR, shouldn't be scoped
  -c, --cookie-jar <filename> Write cookies to <filename> after operation
      --create-dirs   Create necessary local directory hierarchy
      --crlf          Convert LF to CRLF in upload
