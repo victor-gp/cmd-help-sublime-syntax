@@ -6,10 +6,10 @@
 [38;2;243;249;157mQUICK REFERENCE:[0m
 
 [38;2;154;237;254m--option[0m[38;2;248;248;242m [0m[38;2;255;106;193m<argument>[0m[38;2;248;248;242m   bla bla bla[0m
-[38;2;243;249;157mARGUMENT[0m
-[38;2;255;92;87msubcommand[0m
-[38;2;248;248;242mpath/file[0m
-[38;2;255;92;87m--[0m
+[38;2;243;249;157mARGUMENT[0m[38;2;248;248;242m              bla bla bla[0m
+[38;2;255;92;87msubcommand[0m[38;2;248;248;242m            bla bla bla[0m
+[38;2;248;248;242mpath/file[0m[38;2;248;248;242m             bla bla bla[0m
+[38;2;255;92;87m--[0m[38;2;248;248;242m                    bla bla bla[0m
 
 
 [38;2;243;249;157mHEADING PATTERNS:[0m
@@ -110,6 +110,7 @@
 
 [38;2;248;248;242m  [0m[38;2;248;248;242m.jvmopts[0m[38;2;248;248;242m            if this file exists in the current directory, its contents[0m
 [38;2;248;248;242m  [0m[38;2;248;248;242m/etc/sbt/sbtopts[0m[38;2;248;248;242m    if this file exists, it is prepended to the runner args[0m
+[38;2;248;248;242mpath/.to/file[0m
 
 [38;2;248;248;242m   [0m[38;2;255;92;87m+[0m[38;2;248;248;242m			Start at end of file[0m
 [38;2;248;248;242m   [0m[38;2;255;92;87m+[0m[38;2;255;106;193m<lnum>[0m[38;2;248;248;242m		Start at line <lnum>[0m

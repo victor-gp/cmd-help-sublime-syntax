@@ -6,10 +6,10 @@ Most of these lines come from actual help messages in tests/source/.
 [34mQUICK REFERENCE:[0m
 
 [34m--option[0m [32m<argument>[0m   bla bla bla
-[34mARGUMENT[0m
-[35msubcommand[0m
-[33mpath/file[0m
-[35m--[0m
+[32mARGUMENT[0m              bla bla bla
+[35msubcommand[0m            bla bla bla
+[33mpath/file[0m             bla bla bla
+[35m--[0m                    bla bla bla
 
 
 [34mHEADING PATTERNS:[0m
@@ -110,6 +110,7 @@ nor if it begins with lowercase
 
   [33m.jvmopts[0m            if this file exists in the current directory, its contents
   [33m/etc/sbt/sbtopts[0m    if this file exists, it is prepended to the runner args
+[33mpath/.to/file[0m
 
    [35m+[0m			Start at end of file
    [35m+[0m[32m<lnum>[0m		Start at line <lnum>

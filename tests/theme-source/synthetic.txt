@@ -6,10 +6,10 @@ Most of these lines come from actual help messages in tests/source/.
 QUICK REFERENCE:
 
 --option <argument>   bla bla bla
-ARGUMENT
-subcommand
-path/file
---
+ARGUMENT              bla bla bla
+subcommand            bla bla bla
+path/file             bla bla bla
+--                    bla bla bla
 
 
 HEADING PATTERNS:
@@ -110,6 +110,7 @@ PYTHONSTARTUP: file executed on interactive startup (no default)
 
   .jvmopts            if this file exists in the current directory, its contents
   /etc/sbt/sbtopts    if this file exists, it is prepended to the runner args
+path/.to/file
 
    +			Start at end of file
    +<lnum>		Start at line <lnum>
