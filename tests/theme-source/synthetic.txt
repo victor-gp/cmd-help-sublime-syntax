@@ -6,9 +6,10 @@ Most of these lines come from actual help messages in tests/source/.
 QUICK REFERENCE:
 
 --option <argument>   bla bla bla
+ENV                   or...
 ARGUMENT              bla bla bla
 subcommand            bla bla bla
-path/file             bla bla bla
+path/to/file          bla bla bla
 --                    bla bla bla
 
 

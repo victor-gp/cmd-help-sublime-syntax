@@ -6,9 +6,10 @@
 [38;2;1;132;188mQUICK REFERENCE:[0m
 
 [38;2;1;132;188m--option[0m[38;2;56;58;66m [0m[38;2;228;86;73m<argument>[0m[38;2;56;58;66m   bla bla bla[0m
+[38;2;228;86;73mENV[0m[38;2;56;58;66m                   or...[0m
 [38;2;228;86;73mARGUMENT[0m[38;2;56;58;66m              bla bla bla[0m
 [38;2;166;38;164msubcommand[0m[38;2;56;58;66m            bla bla bla[0m
-[38;2;193;132;1mpath/file[0m[38;2;56;58;66m             bla bla bla[0m
+[38;2;193;132;1mpath/to/file[0m[38;2;56;58;66m          bla bla bla[0m
 [38;2;166;38;164m--[0m[38;2;56;58;66m                    bla bla bla[0m
 
 

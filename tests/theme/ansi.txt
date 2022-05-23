@@ -6,9 +6,10 @@ Most of these lines come from actual help messages in tests/source/.
 [34mQUICK REFERENCE:[0m
 
 [34m--option[0m [32m<argument>[0m   bla bla bla
+[32mENV[0m                   or...
 [32mARGUMENT[0m              bla bla bla
 [35msubcommand[0m            bla bla bla
-[33mpath/file[0m             bla bla bla
+[33mpath/to/file[0m          bla bla bla
 [35m--[0m                    bla bla bla
 
 
