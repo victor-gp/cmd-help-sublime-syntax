@@ -41,7 +41,7 @@ Usage: sbt [options]
 
   # jvm options and output control
   JAVA_OPTS           environment variable, if unset uses "-Dfile.encoding=UTF-8"
-# ^^^^^^^^^ string.other-variable.cmd-help
+# ^^^^^^^^^ variable.parameter.other-value.cmd-help
   .jvmopts            if this file exists in the current directory, its contents
 # ^^^^^^^^ constant.file.cmd-help
                       are appended to JAVA_OPTS

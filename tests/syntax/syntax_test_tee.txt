@@ -12,7 +12,7 @@ Copy standard input to each FILE, and also to standard output.
 
 MODE determines behavior with write errors on the outputs:
   'warn'         diagnose errors writing to any output
-# ^^^^^^ string.other-variable.cmd-help
+# ^^^^^^ variable.parameter.other-value.cmd-help
   'warn-nopipe'  diagnose errors writing to any output not a pipe
   'exit'         exit on error writing to any output
   'exit-nopipe'  exit on error writing to any output not a pipe

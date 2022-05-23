@@ -9,10 +9,10 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m
 
 [38;2;248;248;242mMODE determines behavior with write errors on the outputs:[0m
-[38;2;248;248;242m  [0m[38;2;230;219;116m'warn'[0m[38;2;248;248;242m         diagnose errors writing to any output[0m
-[38;2;248;248;242m  [0m[38;2;230;219;116m'warn-nopipe'[0m[38;2;248;248;242m  diagnose errors writing to any output not a pipe[0m
-[38;2;248;248;242m  [0m[38;2;230;219;116m'exit'[0m[38;2;248;248;242m         exit on error writing to any output[0m
-[38;2;248;248;242m  [0m[38;2;230;219;116m'exit-nopipe'[0m[38;2;248;248;242m  exit on error writing to any output not a pipe[0m
+[38;2;248;248;242m  [0m[38;2;253;151;31m'warn'[0m[38;2;248;248;242m         diagnose errors writing to any output[0m
+[38;2;248;248;242m  [0m[38;2;253;151;31m'warn-nopipe'[0m[38;2;248;248;242m  diagnose errors writing to any output not a pipe[0m
+[38;2;248;248;242m  [0m[38;2;253;151;31m'exit'[0m[38;2;248;248;242m         exit on error writing to any output[0m
+[38;2;248;248;242m  [0m[38;2;253;151;31m'exit-nopipe'[0m[38;2;248;248;242m  exit on error writing to any output not a pipe[0m
 [38;2;248;248;242mThe default MODE for the -p option is 'warn-nopipe'.[0m
 [38;2;248;248;242mThe default operation when --output-error is not specified, is to[0m
 [38;2;248;248;242mexit immediately on error writing to a pipe, and diagnose errors[0m

@@ -65,28 +65,28 @@
 [38;2;253;151;31marg[0m[38;2;248;248;242m [0m[38;2;253;151;31m...[0m[38;2;248;248;242m: arguments passed to program in sys.argv[1:][0m
 
 [38;2;253;151;31mOther environment variables:[0m
-[38;2;230;219;116mPYTHONSTARTUP[0m[38;2;248;248;242m: file executed on interactive startup (no default)[0m
-[38;2;230;219;116mPYTHONPATH[0m[38;2;248;248;242m   : ':'-separated list of directories prefixed to the[0m
+[38;2;253;151;31mPYTHONSTARTUP[0m[38;2;248;248;242m: file executed on interactive startup (no default)[0m
+[38;2;253;151;31mPYTHONPATH[0m[38;2;248;248;242m   : ':'-separated list of directories prefixed to the[0m
 [38;2;248;248;242m               default module search path.  The result is sys.path.[0m
-[38;2;230;219;116mPYTHONHOME[0m[38;2;248;248;242m   : alternate <prefix> directory (or <prefix>:<exec_prefix>).[0m
+[38;2;253;151;31mPYTHONHOME[0m[38;2;248;248;242m   : alternate <prefix> directory (or <prefix>:<exec_prefix>).[0m
 [38;2;248;248;242m               The default module search path uses <prefix>/lib/pythonX.X.[0m
-[38;2;230;219;116mPYTHONPLATLIBDIR[0m[38;2;248;248;242m : override sys.platlibdir.[0m
-[38;2;230;219;116mPYTHONCASEOK[0m[38;2;248;248;242m : ignore case in 'import' statements (Windows).[0m
-[38;2;230;219;116mPYTHONUTF8[0m[38;2;248;248;242m: if set to 1, enable the UTF-8 mode.[0m
-[38;2;230;219;116mPYTHONIOENCODING[0m[38;2;248;248;242m: Encoding[:errors] used for stdin/stdout/stderr.[0m
-[38;2;230;219;116mPYTHONFAULTHANDLER[0m[38;2;248;248;242m: dump the Python traceback on fatal errors.[0m
-[38;2;230;219;116mPYTHONHASHSEED[0m[38;2;248;248;242m: if this variable is set to 'random', a random value is used[0m
+[38;2;253;151;31mPYTHONPLATLIBDIR[0m[38;2;248;248;242m : override sys.platlibdir.[0m
+[38;2;253;151;31mPYTHONCASEOK[0m[38;2;248;248;242m : ignore case in 'import' statements (Windows).[0m
+[38;2;253;151;31mPYTHONUTF8[0m[38;2;248;248;242m: if set to 1, enable the UTF-8 mode.[0m
+[38;2;253;151;31mPYTHONIOENCODING[0m[38;2;248;248;242m: Encoding[:errors] used for stdin/stdout/stderr.[0m
+[38;2;253;151;31mPYTHONFAULTHANDLER[0m[38;2;248;248;242m: dump the Python traceback on fatal errors.[0m
+[38;2;253;151;31mPYTHONHASHSEED[0m[38;2;248;248;242m: if this variable is set to 'random', a random value is used[0m
 [38;2;248;248;242m   to seed the hashes of str and bytes objects.  It can also be set to an[0m
 [38;2;248;248;242m   integer in the range [0,4294967295] to get hash values with a[0m
 [38;2;248;248;242m   predictable seed.[0m
-[38;2;230;219;116mPYTHONMALLOC[0m[38;2;248;248;242m: set the Python memory allocators and/or install debug hooks[0m
+[38;2;253;151;31mPYTHONMALLOC[0m[38;2;248;248;242m: set the Python memory allocators and/or install debug hooks[0m
 [38;2;248;248;242m   on Python memory allocators. Use PYTHONMALLOC=debug to install debug[0m
 [38;2;248;248;242m   hooks.[0m
-[38;2;230;219;116mPYTHONCOERCECLOCALE[0m[38;2;248;248;242m: if this variable is set to 0, it disables the locale[0m
+[38;2;253;151;31mPYTHONCOERCECLOCALE[0m[38;2;248;248;242m: if this variable is set to 0, it disables the locale[0m
 [38;2;248;248;242m   coercion behavior. Use PYTHONCOERCECLOCALE=warn to request display of[0m
 [38;2;248;248;242m   locale coercion and locale compatibility warnings on stderr.[0m
-[38;2;230;219;116mPYTHONBREAKPOINT[0m[38;2;248;248;242m: if this variable is set to 0, it disables the default[0m
+[38;2;253;151;31mPYTHONBREAKPOINT[0m[38;2;248;248;242m: if this variable is set to 0, it disables the default[0m
 [38;2;248;248;242m   debugger. It can be set to the callable of your debugger of choice.[0m
-[38;2;230;219;116mPYTHONDEVMODE[0m[38;2;248;248;242m: enable the development mode.[0m
-[38;2;230;219;116mPYTHONPYCACHEPREFIX[0m[38;2;248;248;242m: root directory for bytecode cache (pyc) files.[0m
-[38;2;230;219;116mPYTHONWARNDEFAULTENCODING[0m[38;2;248;248;242m: enable opt-in EncodingWarning for 'encoding=None'.[0m
+[38;2;253;151;31mPYTHONDEVMODE[0m[38;2;248;248;242m: enable the development mode.[0m
+[38;2;253;151;31mPYTHONPYCACHEPREFIX[0m[38;2;248;248;242m: root directory for bytecode cache (pyc) files.[0m
+[38;2;253;151;31mPYTHONWARNDEFAULTENCODING[0m[38;2;248;248;242m: enable opt-in EncodingWarning for 'encoding=None'.[0m

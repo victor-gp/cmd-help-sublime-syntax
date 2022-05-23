@@ -24,7 +24,7 @@
 [38;2;248;248;242m    uninstall, unpublish, unstar, update, version, view, whoami[0m
 
 [38;2;248;248;242mSpecify configs in the ini-formatted file:[0m
-[38;2;248;248;242m    /home/victor-gp/.npmrc[0m
+[38;2;248;248;242m    [0m[38;2;248;248;242m/home/victor-gp/.npmrc[0m
 [38;2;248;248;242mor on the command line via: npm <command> --key=value[0m
 
 [38;2;248;248;242mMore configuration info: npm help config[0m
