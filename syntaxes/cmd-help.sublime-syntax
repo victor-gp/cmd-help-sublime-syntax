@@ -51,20 +51,26 @@ scope_variables: # rightmost scope is matched first
   - &INLINE_USAGE_SCOPES
     constant.section-heading.cmd-help  string.inline-usage.cmd-help
     markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help
+
   - &OPTION_DEF_SCOPES
     entity.name.function.option.cmd-help
   - &OPTION_ARGUMENT_SCOPES
     string.option-argument.cmd-help  variable.other.option-argument.cmd-help
     variable.parameter.option-argument.cmd-help
+
+  # argument definitions (99% confidence)
   - &ARGUMENT_DEF_SCOPES # =~ option argument
     string.argument.cmd-help  variable.other.argument.cmd-help
     variable.parameter.argument.cmd-help
-  # all-caps definitions, usually environment vars but also command args
-  - &OTHER_VARIABLE_DEF_SCOPES
-    variable.other.readwrite.cmd-help  string.other-variable.cmd-help
-  # non all-caps definitions: subcommands, arguments, features, etc.
+  # mostly all-caps definitions. usually environment variables or arguments
+  - &OTHER_VAL_DEF_SCOPES # =~ option argument
+    string.other-value.cmd-help  variable.other.other-value.cmd-help
+    variable.parameter.other-value.cmd-help
+
+  # non all-caps definitions: subcommands, argument enums, etc.
   - &OTHER_DEF_SCOPES
     keyword.other.def.cmd-help # support.fuction variable.function ?
+
   - &FILE_DEF_SCOPES
     constant.file.cmd-help
     # variable.other.readwrite.file.cmd-help  string.file.cmd-help
@@ -373,15 +379,15 @@ contexts:
       set: then-pop
 
     - match: '{{allcaps_argument_name}}(?=  )'
-      scope: *OTHER_VARIABLE_DEF_SCOPES
+      scope: *OTHER_VAL_DEF_SCOPES
       set: then-pop
     # e.g.: "PYTHONSTARTUP:", "PYTHONCASEOK :"
     - match: '{{allcaps_argument_name}}(?=\s*:)'
-      scope: *OTHER_VARIABLE_DEF_SCOPES
+      scope: *OTHER_VAL_DEF_SCOPES
       set: then-pop
     # e.g.: "'warn'" or "'warn-nopipe'" (from tee)
     - match: "'{{other_lowercase_name}}'"
-      scope: *OTHER_VARIABLE_DEF_SCOPES
+      scope: *OTHER_VAL_DEF_SCOPES
       set: then-pop
 
   other-def-escapes:

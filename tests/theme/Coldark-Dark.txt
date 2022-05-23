@@ -6,7 +6,7 @@
 [1;38;2;108;184;230mQUICK REFERENCE:[0m
 
 [38;2;198;153;227m--option[0m[38;2;227;234;242m [0m[38;2;102;204;204m<argument>[0m[38;2;227;234;242m   bla bla bla[0m
-[38;2;145;208;118mARGUMENT[0m[38;2;227;234;242m              bla bla bla[0m
+[38;2;102;204;204mARGUMENT[0m[38;2;227;234;242m              bla bla bla[0m
 [38;2;233;174;126msubcommand[0m[38;2;227;234;242m            bla bla bla[0m
 [38;2;227;234;242mpath/file[0m[38;2;227;234;242m             bla bla bla[0m
 [38;2;233;174;126m--[0m[38;2;227;234;242m                    bla bla bla[0m
@@ -103,10 +103,10 @@
 [38;2;227;234;242m  [0m[38;2;233;174;126mfrozen-string-literal[0m
 [38;2;233;174;126mfile[0m[38;2;227;234;242m   : program read from script file[0m
 
-[38;2;145;208;118mFILE[0m[38;2;227;234;242m                    visit FILE[0m
-[38;2;145;208;118mPYTHONSTARTUP[0m[38;2;227;234;242m: file executed on interactive startup (no default)[0m
-[38;2;227;234;242m  [0m[38;2;145;208;118mJAVA_OPTS[0m[38;2;227;234;242m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
-[38;2;227;234;242m  [0m[38;2;145;208;118m'warn'[0m[38;2;227;234;242m         diagnose errors writing to any output[0m
+[38;2;102;204;204mFILE[0m[38;2;227;234;242m                    visit FILE[0m
+[38;2;102;204;204mPYTHONSTARTUP[0m[38;2;227;234;242m: file executed on interactive startup (no default)[0m
+[38;2;227;234;242m  [0m[38;2;102;204;204mJAVA_OPTS[0m[38;2;227;234;242m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
+[38;2;227;234;242m  [0m[38;2;102;204;204m'warn'[0m[38;2;227;234;242m         diagnose errors writing to any output[0m
 
 [38;2;227;234;242m  [0m[38;2;227;234;242m.jvmopts[0m[38;2;227;234;242m            if this file exists in the current directory, its contents[0m
 [38;2;227;234;242m  [0m[38;2;227;234;242m/etc/sbt/sbtopts[0m[38;2;227;234;242m    if this file exists, it is prepended to the runner args[0m

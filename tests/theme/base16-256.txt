@@ -6,7 +6,7 @@
 [34mQUICK REFERENCE:[0m
 
 [34m--option[0m[37m [0m[37m<argument>[0m[37m   bla bla bla[0m
-[32mARGUMENT[0m[37m              bla bla bla[0m
+[37mARGUMENT[0m[37m              bla bla bla[0m
 [35msubcommand[0m[37m            bla bla bla[0m
 [38;5;16mpath/file[0m[37m             bla bla bla[0m
 [35m--[0m[37m                    bla bla bla[0m
@@ -103,10 +103,10 @@
 [37m  [0m[35mfrozen-string-literal[0m
 [35mfile[0m[37m   : program read from script file[0m
 
-[32mFILE[0m[37m                    visit FILE[0m
-[32mPYTHONSTARTUP[0m[37m: file executed on interactive startup (no default)[0m
-[37m  [0m[32mJAVA_OPTS[0m[37m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
-[37m  [0m[32m'warn'[0m[37m         diagnose errors writing to any output[0m
+[37mFILE[0m[37m                    visit FILE[0m
+[37mPYTHONSTARTUP[0m[37m: file executed on interactive startup (no default)[0m
+[37m  [0m[37mJAVA_OPTS[0m[37m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
+[37m  [0m[37m'warn'[0m[37m         diagnose errors writing to any output[0m
 
 [37m  [0m[38;5;16m.jvmopts[0m[37m            if this file exists in the current directory, its contents[0m
 [37m  [0m[38;5;16m/etc/sbt/sbtopts[0m[37m    if this file exists, it is prepended to the runner args[0m

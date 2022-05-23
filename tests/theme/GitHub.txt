@@ -6,7 +6,7 @@
 [38;2;51;51;51mQUICK REFERENCE:[0m
 
 [38;2;121;93;163m--option[0m[38;2;51;51;51m [0m[38;2;0;134;179m<argument>[0m[38;2;51;51;51m   bla bla bla[0m
-[38;2;24;54;145mARGUMENT[0m[38;2;51;51;51m              bla bla bla[0m
+[38;2;0;134;179mARGUMENT[0m[38;2;51;51;51m              bla bla bla[0m
 [38;2;167;29;93msubcommand[0m[38;2;51;51;51m            bla bla bla[0m
 [38;2;0;134;179mpath/file[0m[38;2;51;51;51m             bla bla bla[0m
 [38;2;167;29;93m--[0m[38;2;51;51;51m                    bla bla bla[0m
@@ -103,10 +103,10 @@
 [38;2;51;51;51m  [0m[38;2;167;29;93mfrozen-string-literal[0m
 [38;2;167;29;93mfile[0m[38;2;51;51;51m   : program read from script file[0m
 
-[38;2;24;54;145mFILE[0m[38;2;51;51;51m                    visit FILE[0m
-[38;2;24;54;145mPYTHONSTARTUP[0m[38;2;51;51;51m: file executed on interactive startup (no default)[0m
-[38;2;51;51;51m  [0m[38;2;24;54;145mJAVA_OPTS[0m[38;2;51;51;51m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
-[38;2;51;51;51m  [0m[38;2;24;54;145m'warn'[0m[38;2;51;51;51m         diagnose errors writing to any output[0m
+[38;2;0;134;179mFILE[0m[38;2;51;51;51m                    visit FILE[0m
+[38;2;0;134;179mPYTHONSTARTUP[0m[38;2;51;51;51m: file executed on interactive startup (no default)[0m
+[38;2;51;51;51m  [0m[38;2;0;134;179mJAVA_OPTS[0m[38;2;51;51;51m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
+[38;2;51;51;51m  [0m[38;2;0;134;179m'warn'[0m[38;2;51;51;51m         diagnose errors writing to any output[0m
 
 [38;2;51;51;51m  [0m[38;2;0;134;179m.jvmopts[0m[38;2;51;51;51m            if this file exists in the current directory, its contents[0m
 [38;2;51;51;51m  [0m[38;2;0;134;179m/etc/sbt/sbtopts[0m[38;2;51;51;51m    if this file exists, it is prepended to the runner args[0m
