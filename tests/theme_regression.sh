@@ -7,7 +7,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 bat cache --build --source .. > /dev/null
 
 readarray -t themes <<< "$(bat --list-themes --color=never)"
-cmd_prefix="bat --no-config -fpl cmd-help theme-source/synthetic.txt"
+cmd_prefix="bat --no-config -fpl cmd-help source/theme/synthetic.txt"
 
 for theme in "${themes[@]}"; do
     $cmd_prefix --theme="$theme" > "theme/${theme}.txt"

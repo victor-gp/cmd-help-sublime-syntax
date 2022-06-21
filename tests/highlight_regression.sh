@@ -9,6 +9,9 @@ bat cache --build --source .. > /dev/null
 
 for source_path in source/*
 do
+    # skip it it's source/theme/
+    [ -d  "$source_path" ] && continue
+
     filename=$(basename "$source_path")
     highlighted_path="highlighted/$filename"
     bat --no-config -fpl cmd-help "$source_path" > "$highlighted_path"
