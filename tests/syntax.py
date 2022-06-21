@@ -4,6 +4,7 @@ import argparse
 import subprocess
 from pathlib import Path
 from os import chdir
+import urllib.request
 
 ### config
 
@@ -44,6 +45,13 @@ if ret != 0: # image doesn't exist
     subprocess.call(
         f"docker build -f {dockerfile_path} -t {image_tag} .",
         shell=True
+    )
+
+man_syntax_path = Path('../syntaxes/Manpage.sublime-syntax')
+if not man_syntax_path.is_file():
+    man_syntax = urllib.request.urlretrieve(
+        'https://raw.githubusercontent.com/sharkdp/bat/master/assets/syntaxes/02_Extra/Manpage.sublime-syntax',
+        '../syntaxes/Manpage.sublime-syntax'
     )
 
 ### arrange arguments

@@ -4,6 +4,7 @@ set -euo pipefail
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
+#nice: dockerize bat instead of messing with the local instance
 bat cache --build --source .. > /dev/null
 
 for source_path in source/*
