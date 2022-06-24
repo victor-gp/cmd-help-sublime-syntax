@@ -1,0 +1,13 @@
+services:
+  bat-server:
+    build:
+      context: .
+      dockerfile: bat-server.dockerfile
+    container_name: bat-server
+    image: bat-server # name for the built image
+    volumes:
+      # source paths relative to tests/docker/
+      - ../../syntaxes:/root/.config/bat/syntaxes:ro
+      - ../source:/tests/source:ro
+      - ../highlighted:/tests/highlighted
+      - ../theme:/tests/theme

@@ -9,7 +9,6 @@ RUN curl -LJ --output /tmp/bat.deb \
 FROM debian:bullseye-slim
 COPY --from=fetch-pkg /tmp/bat.deb /tmp
 RUN dpkg --install /tmp/bat.deb
-COPY highlight_regression.sh /tests/
-ENV WITHIN_BAT_SERVER=true
 ENV COLORTERM=truecolor
+COPY run_highlight_regression.sh /tests/
 CMD sleep infinity
