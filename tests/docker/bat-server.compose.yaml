@@ -1,3 +1,5 @@
+# usage: better run the regression scripts in tests/
+
 services:
   bat-server:
     build:

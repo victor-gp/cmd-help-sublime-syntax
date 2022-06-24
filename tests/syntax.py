@@ -8,7 +8,7 @@ import urllib.request
 
 ### config
 
-dockerfile_path = 'syntest.dockerfile'
+dockerfile_path = 'docker/syntest.dockerfile'
 image_tag = 'syntest'
 tests_path = '/tests/syntax'
 syntaxes_path = '/syntaxes'
