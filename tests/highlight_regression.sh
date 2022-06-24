@@ -5,7 +5,7 @@ set -euo pipefail
 if [ -v WITHIN_BAT_SERVER ]; then
     cd "$(dirname "${BASH_SOURCE[0]}")"
 
-    bat cache --build --source .. > /dev/null
+    bat cache --build > /dev/null
 
     for source_path in source/* ; do
         # skip it it's source/theme/
