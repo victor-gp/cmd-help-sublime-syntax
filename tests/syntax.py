@@ -42,8 +42,9 @@ ret = subprocess.call(
     stderr=subprocess.DEVNULL
 )
 if ret != 0: # image doesn't exist
+    print("\033[34m" + "Image not available, building syntest from source..." + "\033[00m")
     subprocess.call(
-        f"docker build -f {dockerfile_path} -t {image_tag} .",
+        f"docker build -f {dockerfile_path} -t {image_tag} docker/",
         shell=True
     )
 
