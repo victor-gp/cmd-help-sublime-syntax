@@ -10,5 +10,5 @@ FROM debian:bullseye-slim
 COPY --from=fetch-pkg /tmp/bat.deb /tmp
 RUN dpkg --install /tmp/bat.deb
 ENV COLORTERM=truecolor
-COPY run_highlight_regression.sh /tests/
+COPY run_*_regression.sh /tests/
 CMD sleep infinity
