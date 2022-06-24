@@ -11,4 +11,5 @@ COPY --from=fetch-pkg /tmp/bat.deb /tmp
 RUN dpkg --install /tmp/bat.deb
 COPY highlight_regression.sh /tests/
 ENV WITHIN_BAT_SERVER=true
+ENV COLORTERM=truecolor
 CMD sleep infinity
