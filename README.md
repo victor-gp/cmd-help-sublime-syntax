@@ -18,10 +18,9 @@ Check things work by running `mv --help | bat -plhelp`
 
 ## Streamline it
 
-You may want to put an alias plus a function around this:
+You may want to put an alias plus a function around this in your `.bashrc`/`.zshrc`/`.*rc`:
 
 ```sh
-# in your .bashrc/.zshrc/.*rc
 alias bathelp='bat --plain --language=cmd-help'
 help() (
     set -o pipefail
@@ -29,9 +28,9 @@ help() (
 )
 ```
 
-Then you can do `help git`. Or `help git commit`. Depending on the command, it can even handle alternative help options: `help bat -h`.
+Then you can do `help git`. Or `help git commit`. Depending on the command, `help()` can even handle alternative help options, like in `help bat -h`.
 
-Sometimes a command may not recognize `--help`. (I'm looking at you, `java`, though `help java -h` does work.) In that case, you just have to run `<the command> --its-help-option | bathelp`.
+If `help()` doesn't work with a command's alternative help option, you can still do `CMD --help-option | bathelp`.
 
 ## `bat` theme support
 
