@@ -1,3 +1,5 @@
+# usage: use syntax.py, don't run this manually
+
 FROM rust:1.59 as build
 LABEL keep=false
 RUN git clone --depth=1 --branch=v4.7.1 \
@@ -12,5 +14,3 @@ COPY --from=build /usr/src/syntect/target/release/examples/syntest \
     /usr/local/bin/syntest
 ENTRYPOINT [ "syntest" ]
 CMD [ "/tests/syntax", "/syntaxes" ]
-
-# don't run this manually, use unit.py
