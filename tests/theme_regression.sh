@@ -8,7 +8,7 @@ docker build --quiet -f docker/bat-test.dockerfile -t bat-test ..
 
 vol1="$PWD"/source:/tests/source:ro
 vol2="$PWD"/theme:/tests/theme
-docker run \
+docker run --rm \
     -v "$vol1" -v "$vol2" \
     --entrypoint /tests/run_theme_regression.sh \
     bat-test
