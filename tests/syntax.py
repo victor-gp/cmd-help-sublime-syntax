@@ -50,6 +50,7 @@ if ret != 0: # image doesn't exist
 
 man_syntax_path = Path('../syntaxes/Manpage.sublime-syntax')
 if not man_syntax_path.is_file():
+    print("\033[34m" + "Manpage syntax is missing, downloading it..." + "\033[00m")
     man_syntax = urllib.request.urlretrieve(
         'https://raw.githubusercontent.com/sharkdp/bat/master/assets/syntaxes/02_Extra/Manpage.sublime-syntax',
         '../syntaxes/Manpage.sublime-syntax'
@@ -57,12 +58,7 @@ if not man_syntax_path.is_file():
 
 ### arrange arguments
 
-args = ""
-if script_args.test_path:
-    args = f"{script_args.test_path} {syntaxes_path}"
-else:
-    args = f"{tests_path} {syntaxes_path}"
-
+args = f"{script_args.test_path or tests_path} {syntaxes_path}"
 if script_args.debug:
     args += " --debug"
 if script_args.summary:
