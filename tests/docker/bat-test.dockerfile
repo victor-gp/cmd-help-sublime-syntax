@@ -12,7 +12,6 @@ COPY --from=fetch-pkg  /tmp/bat.deb  /tmp
 RUN dpkg --install /tmp/bat.deb
 ENV COLORTERM=truecolor
 COPY ./tests/docker/*regression.sh  /tests/
-COPY ./tests/source  /tests/source
 COPY ./syntaxes/cmd-help.sublime-syntax  /root/.config/bat/syntaxes/
 RUN bat cache --build > /dev/null
 ENTRYPOINT /tests/run_highlight_regression.sh

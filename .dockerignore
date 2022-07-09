@@ -3,4 +3,3 @@
 *
 !/syntaxes/
 !/tests/docker/*regression.sh
-!/tests/source
