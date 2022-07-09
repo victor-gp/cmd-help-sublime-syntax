@@ -1,0 +1,6 @@
+# only used for bat-test.dockerfile
+
+*
+!/syntaxes/
+!/tests/docker/*regression.sh
+!/tests/source

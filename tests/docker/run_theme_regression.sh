@@ -4,8 +4,6 @@ set -euo pipefail
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
-bat cache --build > /dev/null
-
 readarray -t themes <<< "$(bat --list-themes --color=never)"
 cmd_prefix="bat --no-config -fpl cmd-help source/theme/synthetic.txt"
 
