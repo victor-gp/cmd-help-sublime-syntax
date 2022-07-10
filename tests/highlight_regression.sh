@@ -4,6 +4,7 @@ set -euo pipefail
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
+echo -n "using docker image "
 docker build --quiet -f docker/bat-test.dockerfile -t bat-test ..
 
 vol1="$PWD"/source:/tests/source:ro
