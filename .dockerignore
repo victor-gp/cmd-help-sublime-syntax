@@ -1,5 +1,4 @@
 # only used for tests/docker/bat-test.dockerfile
-
 *
 !/syntaxes/
-!/tests/docker/*regression.sh
+!/tests/docker/*regression_inner.sh
