@@ -1,4 +1,4 @@
-# usage: through highlight_regression.sh and theme_regression.sh
+# usage: through tests/highlight_regression.sh and tests/theme_regression.sh
 
 FROM curlimages/curl:latest AS fetch-pkg
 LABEL keep=false

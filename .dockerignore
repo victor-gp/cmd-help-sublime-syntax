@@ -1,4 +1,4 @@
-# only used for bat-test.dockerfile
+# only used for tests/docker/bat-test.dockerfile
 
 *
 !/syntaxes/

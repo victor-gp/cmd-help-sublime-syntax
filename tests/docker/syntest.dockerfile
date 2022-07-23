@@ -1,4 +1,4 @@
-# usage: use syntax.py, don't run this manually
+# usage: use tests/syntax.py, don't run this manually
 
 FROM rust:1.59 as build
 LABEL keep=false

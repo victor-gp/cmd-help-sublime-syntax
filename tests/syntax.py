@@ -10,9 +10,9 @@ import urllib.request
 
 dockerfile_path = 'docker/syntest.dockerfile'
 image_tag = 'syntest'
-tests_path = '/tests/syntax'
+tests_dir = '/tests/syntax'
 syntaxes_path = '/syntaxes'
-volumes = f'-v="$PWD/syntax":{tests_path} -v="$PWD/../syntaxes":{syntaxes_path}'
+volumes = f'-v="$PWD/syntax":{tests_dir} -v="$PWD/../syntaxes":{syntaxes_path}'
 
 ### cli
 
@@ -42,11 +42,12 @@ ret = subprocess.call(
     stderr=subprocess.DEVNULL
 )
 if ret != 0: # image doesn't exist
-    print("\033[34m" + "Image not available, building syntest from source..." + "\033[00m")
+    print("\033[34m" + "Docker image not available, building syntest from source..." + "\033[00m")
     subprocess.call(
         f"docker build -t {image_tag} - < {dockerfile_path}",
         shell=True
     )
+    print("\033[34m" + "Docker build ends here." + "\033[00m")
 
 man_syntax_path = Path('../syntaxes/Manpage.sublime-syntax')
 if not man_syntax_path.is_file():
@@ -58,7 +59,7 @@ if not man_syntax_path.is_file():
 
 ### arrange arguments
 
-args = f"{script_args.test_path or tests_path} {syntaxes_path}"
+args = f"{script_args.test_path or tests_dir} {syntaxes_path}"
 if script_args.debug:
     args += " --debug"
 if script_args.summary:
