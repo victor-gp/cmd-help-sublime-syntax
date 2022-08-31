@@ -2,7 +2,7 @@
 
 This is a Sublime Syntax definition for [`bat`](https://github.com/sharkdp/bat) to colorize command `--help` messages.
 
-It provides just enough color to help find your way around a help message:
+It provides just enough color to help find your way around a help message.
 
 <img src="./docs/assets/cmd-help-example.png" width="700" alt="Example usage of the cmd-help syntax on 'bat -h'">
 
@@ -16,7 +16,7 @@ If you have an older version of `bat`, you can add [this](./syntaxes/cmd-help.su
 
 Check things work by running `mv --help | bat -plhelp`
 
-## Streamline it
+## Setup
 
 You may want to put an alias plus a function around this in your `.bashrc`/`.zshrc`/`.*rc`:
 
@@ -28,11 +28,13 @@ help() (
 )
 ```
 
-Then you can do `help git`. Or `help git commit`. Depending on the command, `help()` can even handle alternative help options, like in `help bat -h`.
+Then you can do `help git`. Or `help git commit`.
+
+Depending on the command, `help()` will even handle alternative help options, e.g.: `help bat -h`.
 
 If `help()` doesn't work with a command's alternative help option, you can still do `CMD --help-option | bathelp`.
 
-## `bat` theme support
+### `bat` theme support
 
 The syntax works nicely with most `bat` themes. In some cases, even better than with the default Monokai theme (used in the above example). You can find examples of working themes [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples/theme).
 
