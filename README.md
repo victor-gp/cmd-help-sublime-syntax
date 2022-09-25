@@ -14,9 +14,11 @@ This syntax is included with `bat` since version 0.21.0.
 
 If you have an older version of `bat`, you can add [this](./syntaxes/cmd-help.sublime-syntax) as a [custom syntax](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions).
 
-Check things work by running `mv --help | bat -plhelp`
+Check it works properly by running `mv --help | bat -plhelp`
 
-## Setup
+## Configuration
+
+### Streamline it
 
 You may want to put an alias plus a function around this in your `.bashrc`/`.zshrc`/`.*rc`:
 
