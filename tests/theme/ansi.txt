@@ -5,7 +5,7 @@ Most of these lines come from actual help messages in tests/source/.
 
 ## QUICK REFERENCE:
 
-[34mHEADING:[0m
+[32mHEADING:[0m
 [34m--option[0m [32m<argument>[0m   bla bla bla
 [35msubcommand[0m            bla bla bla
 [32mARGUMENT[0m              or ENV sometimes
@@ -15,13 +15,13 @@ Most of these lines come from actual help messages in tests/source/.
 
 ## HEADING PATTERNS:
 
-[34mSelection options[0m
-[34mBasic Options:[0m
-[34mUSAGE:[0m
- [34mFinding manual pages:[0m
-[34mAuto-correction:[0m
-[34mGNU long options:[0m
-[34mJIT options (experimental):[0m
+[32mSelection options[0m
+[32mBasic Options:[0m
+[32mUSAGE:[0m
+ [32mFinding manual pages:[0m
+[32mAuto-correction:[0m
+[32mGNU long options:[0m
+[32mJIT options (experimental):[0m
 [34mUsage:[0m cp [OPTION]... [-T] SOURCE DEST
 [34musage:[0m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...
 

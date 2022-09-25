@@ -47,7 +47,8 @@ variables:
 scope_variables: # last scope is matched first
   - &SECTION_HEADING_SCOPES
     constant.section-heading.cmd-help  string.section-heading.cmd-help
-    markup.heading.cmd-help  entity.name.section.cmd-help
+    # markup.heading.cmd-help  entity.name.section.cmd-help
+
   - &INLINE_USAGE_SCOPES
     constant.section-heading.cmd-help  string.inline-usage.cmd-help
     markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help

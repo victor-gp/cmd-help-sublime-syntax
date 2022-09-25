@@ -5,7 +5,7 @@
 
 [37m## QUICK REFERENCE:[0m
 
-[34mHEADING:[0m
+[32mHEADING:[0m
 [34m--option[0m[37m [0m[37m<argument>[0m[37m   bla bla bla[0m
 [35msubcommand[0m[37m            bla bla bla[0m
 [37mARGUMENT[0m[37m              or ENV sometimes[0m
@@ -15,13 +15,13 @@
 
 [37m## HEADING PATTERNS:[0m
 
-[34mSelection options[0m
-[34mBasic Options:[0m
-[34mUSAGE:[0m
-[37m [0m[34mFinding manual pages:[0m
-[34mAuto-correction:[0m
-[34mGNU long options:[0m
-[34mJIT options (experimental):[0m
+[32mSelection options[0m
+[32mBasic Options:[0m
+[32mUSAGE:[0m
+[37m [0m[32mFinding manual pages:[0m
+[32mAuto-correction:[0m
+[32mGNU long options:[0m
+[32mJIT options (experimental):[0m
 [34mUsage:[0m[37m cp [OPTION]... [-T] SOURCE DEST[0m
 [34musage:[0m[37m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
 

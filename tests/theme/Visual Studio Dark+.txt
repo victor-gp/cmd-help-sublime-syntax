@@ -5,7 +5,7 @@
 
 [38;2;220;220;220m## QUICK REFERENCE:[0m
 
-[38;2;86;156;214mHEADING:[0m
+[38;2;214;157;133mHEADING:[0m
 [38;2;220;220;170m--option[0m[38;2;220;220;220m [0m[38;2;156;220;254m<argument>[0m[38;2;220;220;220m   bla bla bla[0m
 [38;2;197;134;192msubcommand[0m[38;2;220;220;220m            bla bla bla[0m
 [38;2;156;220;254mARGUMENT[0m[38;2;220;220;220m              or ENV sometimes[0m
@@ -15,13 +15,13 @@
 
 [38;2;220;220;220m## HEADING PATTERNS:[0m
 
-[38;2;86;156;214mSelection options[0m
-[38;2;86;156;214mBasic Options:[0m
-[38;2;86;156;214mUSAGE:[0m
-[38;2;220;220;220m [0m[38;2;86;156;214mFinding manual pages:[0m
-[38;2;86;156;214mAuto-correction:[0m
-[38;2;86;156;214mGNU long options:[0m
-[38;2;86;156;214mJIT options (experimental):[0m
+[38;2;214;157;133mSelection options[0m
+[38;2;214;157;133mBasic Options:[0m
+[38;2;214;157;133mUSAGE:[0m
+[38;2;220;220;220m [0m[38;2;214;157;133mFinding manual pages:[0m
+[38;2;214;157;133mAuto-correction:[0m
+[38;2;214;157;133mGNU long options:[0m
+[38;2;214;157;133mJIT options (experimental):[0m
 [38;2;86;156;214mUsage:[0m[38;2;220;220;220m cp [OPTION]... [-T] SOURCE DEST[0m
 [38;2;86;156;214musage:[0m[38;2;220;220;220m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
 
