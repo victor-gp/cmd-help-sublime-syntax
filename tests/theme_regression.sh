@@ -12,7 +12,7 @@ vol2="$PWD"/theme:/tests/theme
 
 docker run --rm \
     -v "$vol1" -v "$vol2" \
-    --entrypoint /tests/theme_regression_inner.sh \
+    --entrypoint /tests/inner_theme_regression.sh \
     bat-test
 
 # effective difference between HEAD/staging and working dir

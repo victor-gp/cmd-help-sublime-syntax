@@ -5,7 +5,7 @@ set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 for source_path in source/* ; do
-    # this dir is only for theme_regression_inner.sh
+    # this dir is only for inner_theme_regression.sh
     [ "$source_path" = source/theme ] && continue
 
     filename=$(basename "$source_path")
