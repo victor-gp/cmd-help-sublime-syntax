@@ -1,11 +1,15 @@
 # Roadmap
 
+## Current
+
 0. Keep iterating on the syntax
     - handle more syntax patterns
     - improve coverage of `bat` themes
 1. Make contributions to the project easier
     - add issue templates
-    - add CI setup for Pull Requests
+    - add CI setup for Pull Requests (with GitHub Actions)
+
+## Later
 
 In no particular order:
 

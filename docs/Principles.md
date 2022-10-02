@@ -1,7 +1,7 @@
 # Principles
 
 - [Trade offs](#trade-offs)
-- [Testing first](#tests-first)
+- [Tests first](#tests-first)
 - [Scope names](#scope-names)
   * [Constraint on Monokai](#constraint-on-monokai)
 - [Coding style](#coding-style)
@@ -19,7 +19,7 @@
 This project makes extensive use of TDD because I have yet to wrap my head around Sublime Syntaxes.
 
 Tests are super cheap in this small project and they allow me to **iterate speculatively**
-(read: I don't know what I'm doing) **without worrying about breaking things.**
+(read: I don't know what I'm doing) **without having to worry about breaking things.**
 
 It also doesn't help that sublime syntaxes weren't designed for help messages.
 Many of their features are useful to hook into patterns and structure that programming languages have, but help messages lack.
@@ -32,9 +32,9 @@ In this project, **we don't care about the correct use of scope names.**
 
 Command help messages don't conform to a language, not even a markup one. There's no point in following conventions designed for those languages.
 
-This is a syntax made with `bat` in mind, and **we assign our scopes to _overfit_ the ones targeted by the themes included in `bat`.**
+This is a syntax made with `bat` in mind, and we assign our scopes to _overfit_ the themes included with `bat`.
 
-Because syntax themes target some scopes and ignore some others (leave them with the default foreground color), the syntax assigns multiple scopes to every token class.
+Because syntax themes target some scopes and ignore some others (leaving them with the default foreground color), the syntax assigns multiple scopes to every token class.
 
 For instance:
 
@@ -47,7 +47,7 @@ scope_variables:
     entity.name.section.cmd-help
 ```
 
-**An optimal scope assignation is one where every `bat` theme styles each token class with a different color** (not default/fg).
+**An optimal scope assignation is one where every `bat` theme styles each token class with a different color.** But that's probably impossible.
 
 Just know that [there's a convention for scope names](https://www.sublimetext.com/docs/scope_naming.html), and syntax themes target those names.
 
@@ -92,7 +92,7 @@ Everything else is fair game. And even that constraint is bound to drop if you m
       set: option-def-alt
   ```
 
-  This isolation also makes it easier to treat any of these patters as a special case.
+  This decoupling also makes it easier to change the way we handle any of these patterns, to treat it as a special case.
 
 - You may do B depending on the context, but then you should **illustrate with comments**:
 
@@ -106,5 +106,5 @@ Everything else is fair game. And even that constraint is bound to drop if you m
       set: option-def+square-bracket
     - match: ':'
       set: option-def+colon
-    # ...
+    # etc
   ```

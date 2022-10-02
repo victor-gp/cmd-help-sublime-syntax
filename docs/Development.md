@@ -14,15 +14,15 @@
 ## Requirements
 
 - bash
-- docker
-- git
-- less
-- python
+- [docker](https://docs.docker.com/engine/install/)
+- [python](https://www.python.org/downloads/)
 
-I believe some of these make the project **unfit for development under Windows.**
+I believe some of these make the project **unfit for development under Windows & Powershell.**
+
 I'll be happy to update the setup to work there if an interested contributor is willing to drive this change.
+(And I'm willing to pair program on this.)
 
-On the other hand, the Windows Subsystem for Linux (WSL) should work just fine.
+On the other hand, the Windows Subsystem for Linux (WSL) should do just fine.
 
 ## Sublime Syntaxes
 
@@ -36,11 +36,11 @@ Both Sublime Syntaxes and `syntect` use the Oniguruma regex engine, which follow
 
 ### This syntax
 
-You don't have to build or compile the syntax. The testing scripts take care of it, in isolation within a Docker container. You only have to care about test results.
+You don't have to build or compile the syntax. The testing scripts take care of that, isolated within a Docker container. You only need to check the test results.
 
 You should take a look at the [Principles doc](./Principles.md). It contains guidelines on the syntax's scope, coding style, etc.
 
-I owe an Architecture doc on how the syntax is structured. In the meantime, if you get confused by how things work, ask me and I shall explain. (And I'll write the doc based on that session!)
+I owe an Architecture doc on how the syntax is structured. In the meantime, if you get confused by how things work, ask me and I shall explain. (And I'll use that session to write the doc!)
 
 You can also configure your IDE to highlight `.sublime-syntax` files like YAML code. For instance, I have this in my VS Code settings:
 
