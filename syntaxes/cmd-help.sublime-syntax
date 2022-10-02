@@ -44,7 +44,7 @@ variables:
   color_code_begin: '(?=.*\e\[.*'
   color_code_end: '.*(?<=[0-9])m)'
 
-scope_variables: # rightmost scope is matched first
+scope_variables: # last scope is matched first
   - &SECTION_HEADING_SCOPES
     constant.section-heading.cmd-help  string.section-heading.cmd-help
     markup.heading.cmd-help  entity.name.section.cmd-help
