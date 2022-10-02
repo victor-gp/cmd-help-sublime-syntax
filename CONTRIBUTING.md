@@ -6,6 +6,7 @@ Ways you can help:
 
 - [report](https://github.com/victor-gp/cmd-help-sublime-syntax/issues) a help message with a token that's not properly highlighted
 - fix one such instance
+  - [here's](./docs/Development.md#finding-pending-tasks) instructions on finding pending tasks
 - edit the docs (for clarity, to add missing bits, etc.)
 - improve support for contributions (issue templates, CI)
 
