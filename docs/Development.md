@@ -59,7 +59,7 @@ The project uses two classes of tests:
 - syntax tests: much like unit tests
 - regression tests: catch-all integration tests
 
-There's a number of commandline utils I use to streamline development, including tests.
+There's a number of command-line utils I use to streamline development, including tests.
 You can load them with `$ source scripts/env.sh`
 
 ### Syntax tests
