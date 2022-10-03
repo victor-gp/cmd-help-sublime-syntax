@@ -8,6 +8,7 @@ usage: codespell [-h] [--version] [-d] [-c] [-w] [-D DICTIONARY]
                  [-A LINES] [-B LINES] [-C LINES] [--config CONFIG]
                  [files ...]
 
+#nice: add tests/locks for argparse headings here
 positional arguments:
   files                 files or directories to check
 
@@ -26,7 +27,7 @@ options:
   --builtin BUILTIN-LIST
 #           ^^^^^^^ variable.parameter.option-argument.cmd-help
 #                  ^^^^^ - variable.parameter.option-argument.cmd-help
-#todo: this should be scoped as option argument too, - shouldn't break
+#todo: this should be scoped as option argument too, "-" shouldn't break it
                         comma-separated list of builtin dictionaries to
                         include (when "-D -" or no "-D" is passed). Current
                         options are:
