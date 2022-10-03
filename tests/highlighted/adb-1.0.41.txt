@@ -1,0 +1,162 @@
+[38;2;248;248;242mAndroid Debug Bridge version 1.0.41[0m
+[38;2;248;248;242mVersion 31.0.3p2-android-tools[0m
+[38;2;248;248;242mInstalled as /usr/bin/adb[0m
+
+[38;2;248;248;242mglobal options:[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m         listen on all network interfaces, not just localhost[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m         use USB device (error if multiple devices connected)[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m         use TCP/IP device (error if multiple TCP/IP devices available)[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m [0m[38;2;253;151;31mSERIAL[0m[38;2;248;248;242m  use device with given serial (overrides $ANDROID_SERIAL)[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;253;151;31mID[0m[38;2;248;248;242m      use device with given transport id[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m         name of adb server host [default=localhost][0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m         port of adb server [default=5037][0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;253;151;31mSOCKET[0m[38;2;248;248;242m  listen on given socket for adb server [default=tcp:localhost:5037][0m
+
+[38;2;248;248;242mgeneral commands:[0m
+[38;2;248;248;242m devices [-l]             list connected devices (-l for long output)[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mhelp[0m[38;2;248;248;242m                     show this help message[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mversion[0m[38;2;248;248;242m                  show version num[0m
+
+[38;2;248;248;242mnetworking:[0m
+[38;2;248;248;242m connect HOST[:PORT]      connect to a device via TCP/IP [default port=5555][0m
+[38;2;248;248;242m disconnect [HOST[:PORT]][0m
+[38;2;248;248;242m     disconnect from given TCP/IP device [default port=5555], or all[0m
+[38;2;248;248;242m pair HOST[:PORT] [PAIRING CODE][0m
+[38;2;248;248;242m     pair with a device for secure TCP/IP communication[0m
+[38;2;248;248;242m forward --list           list all forward socket connections[0m
+[38;2;248;248;242m forward [--no-rebind] LOCAL REMOTE[0m
+[38;2;248;248;242m     forward socket connection using:[0m
+[38;2;248;248;242m       tcp:<port> (<local> may be "tcp:0" to pick any open port)[0m
+[38;2;248;248;242m       localabstract:<unix domain socket name>[0m
+[38;2;248;248;242m       localreserved:<unix domain socket name>[0m
+[38;2;248;248;242m       localfilesystem:<unix domain socket name>[0m
+[38;2;248;248;242m       dev:<character device name>[0m
+[38;2;248;248;242m       jdwp:<process pid> (remote only)[0m
+[38;2;248;248;242m       vsock:<CID>:<port> (remote only)[0m
+[38;2;248;248;242m       acceptfd:<fd> (listen only)[0m
+[38;2;248;248;242m forward --remove LOCAL   remove specific forward socket connection[0m
+[38;2;248;248;242m forward --remove-all     remove all forward socket connections[0m
+[38;2;248;248;242m ppp TTY [PARAMETER...]   run PPP over USB[0m
+[38;2;248;248;242m reverse --list           list all reverse socket connections from device[0m
+[38;2;248;248;242m reverse [--no-rebind] REMOTE LOCAL[0m
+[38;2;248;248;242m     reverse socket connection using:[0m
+[38;2;248;248;242m       tcp:<port> (<remote> may be "tcp:0" to pick any open port)[0m
+[38;2;248;248;242m       localabstract:<unix domain socket name>[0m
+[38;2;248;248;242m       localreserved:<unix domain socket name>[0m
+[38;2;248;248;242m       localfilesystem:<unix domain socket name>[0m
+[38;2;248;248;242m reverse --remove REMOTE  remove specific reverse socket connection[0m
+[38;2;248;248;242m reverse --remove-all     remove all reverse socket connections from device[0m
+[38;2;248;248;242m mdns check               check if mdns discovery is available[0m
+[38;2;248;248;242m mdns services            list all discovered services[0m
+
+[38;2;248;248;242mfile transfer:[0m
+[38;2;248;248;242m push [--sync] [-z ALGORITHM] [-Z] LOCAL... REMOTE[0m
+[38;2;248;248;242m     copy local files/directories to device[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--sync[0m[38;2;248;248;242m: only push files that are newer on the host than the device[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m: dry run: push files to device without storing to the filesystem[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m: enable compression with a specified algorithm (any, none, brotli)[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m: disable compression[0m
+[38;2;248;248;242m pull [-a] [-z ALGORITHM] [-Z] REMOTE... LOCAL[0m
+[38;2;248;248;242m     copy files/dirs from device[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m: preserve file timestamp and mode[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m: enable compression with a specified algorithm (any, none, brotli)[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m: disable compression[0m
+[38;2;248;248;242m sync [-l] [-z ALGORITHM] [-Z] [all|data|odm|oem|product|system|system_ext|vendor][0m
+[38;2;248;248;242m     sync a local build from $ANDROID_PRODUCT_OUT to the device (default all)[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m: dry run: push files to device without storing to the filesystem[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m: list files that would be copied, but don't copy them[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m: enable compression with a specified algorithm (any, none, brotli)[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m: disable compression[0m
+
+[38;2;248;248;242mshell:[0m
+[38;2;248;248;242m shell [-e ESCAPE] [-n] [-Tt] [-x] [COMMAND...][0m
+[38;2;248;248;242m     run remote shell command (interactive shell if no command given)[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m: choose escape character, or "none"; default '~'[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m: don't read from stdin[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m: disable pty allocation[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m: allocate a pty if on a tty (-tt: force pty allocation)[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m: disable remote exit codes and stdout/stderr separation[0m
+[38;2;248;248;242m emu COMMAND              run emulator console command[0m
+
+[38;2;248;248;242mapp installation (see also `adb shell cmd package help`):[0m
+[38;2;248;248;242m install [-lrtsdg] [--instant] PACKAGE[0m
+[38;2;248;248;242m     push a single package to the device and install it[0m
+[38;2;248;248;242m install-multiple [-lrtsdpg] [--instant] PACKAGE...[0m
+[38;2;248;248;242m     push multiple APKs to the device for a single package and install them[0m
+[38;2;248;248;242m install-multi-package [-lrtsdpg] [--instant] PACKAGE...[0m
+[38;2;248;248;242m     push one or more packages to the device and install them atomically[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m: replace existing application[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m: allow test packages[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m: allow version code downgrade (debuggable packages only)[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m: partial application install (install-multiple only)[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m: grant all runtime permissions[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--abi[0m[38;2;248;248;242m [0m[38;2;253;151;31mABI[0m[38;2;248;248;242m: override platform's default ABI[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--instant[0m[38;2;248;248;242m: cause the app to be installed as an ephemeral install app[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--no-streaming[0m[38;2;248;248;242m: always push APK to device and invoke Package Manager as separate steps[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--streaming[0m[38;2;248;248;242m: force streaming APK directly into Package Manager[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--fastdeploy[0m[38;2;248;248;242m: use fast deploy[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--no-fastdeploy[0m[38;2;248;248;242m: prevent use of fast deploy[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--force-agent[0m[38;2;248;248;242m: force update of deployment agent when using fast deploy[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--date-check-agent[0m[38;2;248;248;242m: update deployment agent when local version is newer and using fast deploy[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--version-check-agent[0m[38;2;248;248;242m: update deployment agent when local version has different version code and using fast deploy[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--local-agent[0m[38;2;248;248;242m: locate agent files from local source build (instead of SDK location)[0m
+[38;2;248;248;242m     (See also `adb shell pm help` for more options.)[0m
+[38;2;248;248;242m uninstall [-k] PACKAGE[0m
+[38;2;248;248;242m     remove this app package from the device[0m
+[38;2;248;248;242m     '-k': keep the data and cache directories[0m
+
+[38;2;248;248;242mdebugging:[0m
+[38;2;248;248;242m bugreport [PATH][0m
+[38;2;248;248;242m     write bugreport to given PATH [default=bugreport.zip];[0m
+[38;2;248;248;242m     if PATH is a directory, the bug report is saved in that directory.[0m
+[38;2;248;248;242m     devices that don't support zipped bug reports output to stdout.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mjdwp[0m[38;2;248;248;242m                     list pids of processes hosting a JDWP transport[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mlogcat[0m[38;2;248;248;242m                   show device log (logcat --help for more)[0m
+
+[38;2;248;248;242msecurity:[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mdisable-verity[0m[38;2;248;248;242m           disable dm-verity checking on userdebug builds[0m
+[38;2;248;248;242m [0m[38;2;249;38;114menable-verity[0m[38;2;248;248;242m            re-enable dm-verity checking on userdebug builds[0m
+[38;2;248;248;242m keygen FILE[0m
+[38;2;248;248;242m     generate adb public/private key; private key stored in FILE,[0m
+
+[38;2;248;248;242mscripting:[0m
+[38;2;248;248;242m wait-for[-TRANSPORT]-STATE...[0m
+[38;2;248;248;242m     wait for device to be in a given state[0m
+[38;2;248;248;242m     [0m[38;2;253;151;31mSTATE[0m[38;2;248;248;242m: device, recovery, rescue, sideload, bootloader, or disconnect[0m
+[38;2;248;248;242m     [0m[38;2;253;151;31mTRANSPORT[0m[38;2;248;248;242m: usb, local, or any [default=any][0m
+[38;2;248;248;242m [0m[38;2;249;38;114mget-state[0m[38;2;248;248;242m                print offline | bootloader | device[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mget-serialno[0m[38;2;248;248;242m             print <serial-number>[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mget-devpath[0m[38;2;248;248;242m              print <device-path>[0m
+[38;2;248;248;242m remount [-R][0m
+[38;2;248;248;242m      remount partitions read-write. if a reboot is required, -R will[0m
+[38;2;248;248;242m      will automatically reboot the device.[0m
+[38;2;248;248;242m reboot [bootloader|recovery|sideload|sideload-auto-reboot][0m
+[38;2;248;248;242m     reboot the device; defaults to booting system image but[0m
+[38;2;248;248;242m     supports bootloader and recovery too. sideload reboots[0m
+[38;2;248;248;242m     into recovery and automatically starts sideload mode,[0m
+[38;2;248;248;242m     sideload-auto-reboot is the same but reboots after sideloading.[0m
+[38;2;248;248;242m sideload OTAPACKAGE      sideload the given full OTA package[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mroot[0m[38;2;248;248;242m                     restart adbd with root permissions[0m
+[38;2;248;248;242m [0m[38;2;249;38;114munroot[0m[38;2;248;248;242m                   restart adbd without root permissions[0m
+[38;2;248;248;242m [0m[38;2;249;38;114musb[0m[38;2;248;248;242m                      restart adbd listening on USB[0m
+[38;2;248;248;242m tcpip PORT               restart adbd listening on TCP on PORT[0m
+
+[38;2;248;248;242minternal debugging:[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mstart-server[0m[38;2;248;248;242m             ensure that there is a server running[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mkill-server[0m[38;2;248;248;242m              kill the server if it is running[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mreconnect[0m[38;2;248;248;242m                kick connection from host side to force reconnect[0m
+[38;2;248;248;242m reconnect device         kick connection from device side to force reconnect[0m
+[38;2;248;248;242m reconnect offline        reset offline/unauthorized devices to force reconnect[0m
+
+[38;2;248;248;242musb:[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mattach[0m[38;2;248;248;242m                   attach a detached USB device[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mdetach[0m[38;2;248;248;242m                   detach from a USB device to allow use by other processes[0m
+[38;2;248;248;242menvironment variables:[0m
+[38;2;248;248;242m $ADB_TRACE[0m
+[38;2;248;248;242m     comma-separated list of debug info to log:[0m
+[38;2;248;248;242m     all,adb,sockets,packets,rwx,usb,sync,sysdeps,transport,jdwp[0m
+[38;2;248;248;242m $ADB_VENDOR_KEYS         colon-separated list of keys (files or directories)[0m
+[38;2;248;248;242m $ANDROID_SERIAL          serial number to connect to (see -s)[0m
+[38;2;248;248;242m $ANDROID_LOG_TAGS        tags to be used by logcat (see logcat --help)[0m
+[38;2;248;248;242m $ADB_LOCAL_TRANSPORT_MAX_PORT max emulator scan port (default 5585, 16 emus)[0m
+[38;2;248;248;242m $ADB_MDNS_AUTO_CONNECT   comma-separated list of mdns services to allow auto-connect (default adb-tls-connect)[0m
