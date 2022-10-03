@@ -1,12 +1,21 @@
 # cmd-help.sublime-syntax
 
-This is a Sublime Syntax definition for [`bat`](https://github.com/sharkdp/bat) to colorize command `--help` messages.
+Sublime Syntax definition for [`bat`](https://github.com/sharkdp/bat) to colorize command `--help` messages.
 
 It provides just enough color to help find your way around a help message.
 
 <img src="./docs/assets/cmd-help-example.png" width="700" alt="Example usage of the cmd-help syntax on 'bat -h'">
 
-Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples).
+Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/examples).
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Configuration](#configuration)
+  * [Streamline it](#streamline-it)
+  * [`bat` theme support](#bat-theme-support)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Installation
 
@@ -43,6 +52,16 @@ The syntax works nicely with most `bat` themes. In some cases, even better than 
 To use a different theme, just append `--theme=<your preferred theme>` to your `bat` commands. More info [here](https://github.com/sharkdp/bat#highlighting-theme).
 
 You may also want to experiment with setting `--italic-text=always`. A few themes use italics on some elements, including Monokai.
+
+## Contributing
+
+Contributions are welcome! :D
+
+Make sure to give [CONTRIBUTING.md](./CONTRIBUTING.md) a cursory read to learn how you can help.
+
+If you want to hack on the project, look at [the Development doc](./docs/Development.md) to help get you started.
+
+This project participates in [Hacktoberfest 2022](https://hacktoberfest.com/), so let the PRs come and I shall review!
 
 ## License
 
