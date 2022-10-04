@@ -21,7 +21,7 @@
 [38;2;248;248;242m                        corrections. If this flag is not specified or equals[0m
 [38;2;248;248;242m                        "-" then the default dictionary is used. This option[0m
 [38;2;248;248;242m                        can be specified multiple times.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--builtin[0m[38;2;248;248;242m [0m[38;2;253;151;31mBUILTIN[0m[38;2;248;248;242m-LIST[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--builtin[0m[38;2;248;248;242m [0m[38;2;253;151;31mBUILTIN-LIST[0m
 [38;2;248;248;242m                        comma-separated list of builtin dictionaries to[0m
 [38;2;248;248;242m                        include (when "-D -" or no "-D" is passed). Current[0m
 [38;2;248;248;242m                        options are:[0m

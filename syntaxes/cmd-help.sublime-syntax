@@ -27,7 +27,7 @@ variables:
 
 ### command/option argument variables:
   ellipsis: '\.\.\.'
-  allcaps_argument_name: '[A-Z][0-9A-Z_]*\b'
+  allcaps_argument_name: '[A-Z][0-9A-Z_-]*\b'
   relaxed_argument_name: '[A-Za-z][0-9A-Za-z_-]*\b'
 
 ### other-def variables:
@@ -69,7 +69,7 @@ scope_variables: # last scope is matched first
 
   # non all-caps definitions: subcommands, argument enums, etc.
   - &OTHER_DEF_SCOPES
-    keyword.other.def.cmd-help # support.fuction variable.function ?
+    keyword.other.def.cmd-help # support.function variable.function ?
 
   - &FILE_DEF_SCOPES
     constant.file.cmd-help

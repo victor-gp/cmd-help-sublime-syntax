@@ -25,9 +25,7 @@ options:
                         "-" then the default dictionary is used. This option
                         can be specified multiple times.
   --builtin BUILTIN-LIST
-#           ^^^^^^^ variable.parameter.option-argument.cmd-help
-#                  ^^^^^ - variable.parameter.option-argument.cmd-help
-#todo: this should be scoped as option argument too, "-" shouldn't break it
+#           ^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
                         comma-separated list of builtin dictionaries to
                         include (when "-D -" or no "-D" is passed). Current
                         options are:
