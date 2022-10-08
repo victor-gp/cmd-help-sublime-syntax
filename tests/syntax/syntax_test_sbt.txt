@@ -3,6 +3,8 @@
 Usage: sbt [options]
 
   -h | --help         print this message
+# ^^ entity.name.function.option.cmd-help
+#   ^^^ - entity.name.function.option.cmd-help
 #      ^^^^^^ entity.name.function.option.cmd-help
   -v | --verbose      this runner is chattier
   -V | --version      print sbt version information
