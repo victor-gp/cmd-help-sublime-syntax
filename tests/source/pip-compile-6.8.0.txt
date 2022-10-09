@@ -1,0 +1,81 @@
+Usage: pip-compile [OPTIONS] [SRC_FILES]...
+
+  Compiles requirements.txt from requirements.in specs.
+
+Options:
+  --version                       Show the version and exit.
+  -v, --verbose                   Show more output
+  -q, --quiet                     Give less output
+  -n, --dry-run                   Only show what would happen, don't change
+                                  anything
+  -p, --pre                       Allow resolving to prereleases (default is
+                                  not)
+  -r, --rebuild                   Clear any caches upfront, rebuild from
+                                  scratch
+  --extra TEXT                    Name of an extras_require group to install;
+                                  may be used more than once
+  -f, --find-links TEXT           Look for archives in this directory or on
+                                  this HTML page; may be used more than once
+  -i, --index-url TEXT            Change index URL (defaults to
+                                  https://mirrors.bfsu.edu.cn/pypi/web/simple)
+  --extra-index-url TEXT          Add another index URL to search; may be used
+                                  more than once
+  --cert TEXT                     Path to alternate CA bundle.
+  --client-cert TEXT              Path to SSL client certificate, a single
+                                  file containing the private key and the
+                                  certificate in PEM format.
+  --trusted-host TEXT             Mark this host as trusted, even though it
+                                  does not have valid or any HTTPS; may be
+                                  used more than once
+  --header / --no-header          Add header to generated file
+  --emit-trusted-host / --no-emit-trusted-host
+                                  Add trusted host option to generated file
+  --annotate / --no-annotate      Annotate results, indicating where
+                                  dependencies come from
+  --annotation-style [line|split]
+                                  Choose the format of annotation comments
+  -U, --upgrade / --no-upgrade    Try to upgrade all dependencies to their
+                                  latest versions
+  -P, --upgrade-package TEXT      Specify a particular package to upgrade; may
+                                  be used more than once
+  -o, --output-file FILENAME      Output file name. Required if more than one
+                                  input file is given. Will be derived from
+                                  input file otherwise.
+  --allow-unsafe / --no-allow-unsafe
+                                  Pin packages considered unsafe: distribute,
+                                  pip, setuptools.
+
+                                  WARNING: Future versions of pip-tools will
+                                  enable this behavior by default. Use --no-
+                                  allow-unsafe to keep the old behavior. It is
+                                  recommended to pass the --allow-unsafe now
+                                  to adapt to the upcoming change.
+  --strip-extras                  Assure output file is constraints
+                                  compatible, avoiding use of extras.
+  --generate-hashes               Generate pip 8 style hashes in the resulting
+                                  requirements file.
+  --reuse-hashes / --no-reuse-hashes
+                                  Improve the speed of --generate-hashes by
+                                  reusing the hashes from an existing output
+                                  file.
+  --max-rounds INTEGER            Maximum number of rounds before resolving
+                                  the requirements aborts.
+  --build-isolation / --no-build-isolation
+                                  Enable isolation when building a modern
+                                  source distribution. Build dependencies
+                                  specified by PEP 518 must be already
+                                  installed if build isolation is disabled.
+  --emit-find-links / --no-emit-find-links
+                                  Add the find-links option to generated file
+  --cache-dir DIRECTORY           Store the cache data in DIRECTORY.  [env
+                                  var: PIP_TOOLS_CACHE_DIR; default:
+                                  /home/wzy/.cache/pip-tools]
+  --pip-args TEXT                 Arguments to pass directly to the pip
+                                  command.
+  --resolver [legacy|backtracking]
+                                  Choose the dependency resolver.
+  --emit-index-url / --no-emit-index-url
+                                  Add index URL to generated file
+  --emit-options / --no-emit-options
+                                  Add options to generated file
+  -h, --help                      Show this message and exit.
