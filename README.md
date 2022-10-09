@@ -1,5 +1,7 @@
 # cmd-help.sublime-syntax
 
+> This project participates in [Hacktoberfest 2022](https://hacktoberfest.com/), so let the PRs come and I shall review! :jack_o_lantern:
+
 Sublime Syntax definition for [`bat`](https://github.com/sharkdp/bat) to colorize command `--help` messages.
 
 It provides just enough color to help find your way around a help message.
@@ -61,7 +63,7 @@ Make sure to give [CONTRIBUTING.md](./CONTRIBUTING.md) a cursory read to learn h
 
 If you want to hack on the project, look at [the Development doc](./docs/Development.md) to help get you started.
 
-This project participates in [Hacktoberfest 2022](https://hacktoberfest.com/), so let the PRs come and I shall review!
+Also, this project participates in [Hacktoberfest 2022](https://hacktoberfest.com/). :jack_o_lantern:
 
 ## License
 
