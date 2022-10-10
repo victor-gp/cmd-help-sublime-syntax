@@ -42,6 +42,8 @@ Arguments:
    -O[N]		Like -o but split vertically
    +			Start at end of file
 #  ^ keyword.control.plus-option.cmd-help
+#  ^ - entity.name.function.option.cmd-help
+#todo #8: re-scope + as option
    +<lnum>		Start at line <lnum>
 #  ^ keyword.control.plus-option.cmd-help
 #   ^^^^^^ variable.parameter.option-argument.cmd-help
