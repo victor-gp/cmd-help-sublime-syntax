@@ -442,6 +442,11 @@ contexts:
     #nice: add an other_term_seq_break including '\. |\: '
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
       scope: *OTHER_TERM_SCOPES
+      set: subcommand-def-post
+
+  subcommand-def-post:
+    - match: ' (?={{allcaps_argument_name}}{{long_space}})'
+      set: option-term+space
 
   ### notable exceptions #######################################################
 

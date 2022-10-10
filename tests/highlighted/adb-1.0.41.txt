@@ -34,7 +34,7 @@
 [38;2;248;248;242m       jdwp:<process pid> (remote only)[0m
 [38;2;248;248;242m       vsock:<CID>:<port> (remote only)[0m
 [38;2;248;248;242m       acceptfd:<fd> (listen only)[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --remove LOCAL   remove specific forward socket connection[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --remove [0m[38;2;249;38;114mLOCAL[0m[38;2;248;248;242m   remove specific forward socket connection[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --remove-all     remove all forward socket connections[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mppp[0m[38;2;248;248;242m TTY [PARAMETER...]   run PPP over USB[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m --list           list all reverse socket connections from device[0m
@@ -76,7 +76,7 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m: disable pty allocation[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m: allocate a pty if on a tty (-tt: force pty allocation)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m: disable remote exit codes and stdout/stderr separation[0m
-[38;2;248;248;242m [0m[38;2;190;132;255memu[0m[38;2;248;248;242m COMMAND              run emulator console command[0m
+[38;2;248;248;242m [0m[38;2;190;132;255memu[0m[38;2;248;248;242m [0m[38;2;249;38;114mCOMMAND[0m[38;2;248;248;242m              run emulator console command[0m
 
 [38;2;248;248;242mapp installation (see also `adb shell cmd package help`):[0m
 [38;2;248;248;242m install [-lrtsdg] [--instant] PACKAGE[0m
@@ -135,11 +135,11 @@
 [38;2;248;248;242m     supports bootloader and recovery too. sideload reboots[0m
 [38;2;248;248;242m     into recovery and automatically starts sideload mode,[0m
 [38;2;248;248;242m     sideload-auto-reboot is the same but reboots after sideloading.[0m
-[38;2;248;248;242m [0m[38;2;190;132;255msideload[0m[38;2;248;248;242m OTAPACKAGE      sideload the given full OTA package[0m
+[38;2;248;248;242m [0m[38;2;190;132;255msideload[0m[38;2;248;248;242m [0m[38;2;249;38;114mOTAPACKAGE[0m[38;2;248;248;242m      sideload the given full OTA package[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mroot[0m[38;2;248;248;242m                     restart adbd with root permissions[0m
 [38;2;248;248;242m [0m[38;2;190;132;255munroot[0m[38;2;248;248;242m                   restart adbd without root permissions[0m
 [38;2;248;248;242m [0m[38;2;190;132;255musb[0m[38;2;248;248;242m                      restart adbd listening on USB[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mtcpip[0m[38;2;248;248;242m PORT               restart adbd listening on TCP on PORT[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mtcpip[0m[38;2;248;248;242m [0m[38;2;249;38;114mPORT[0m[38;2;248;248;242m               restart adbd listening on TCP on PORT[0m
 
 [38;2;248;248;242minternal debugging:[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mstart-server[0m[38;2;248;248;242m             ensure that there is a server running[0m

@@ -152,7 +152,7 @@ scripting:
  tcpip PORT               restart adbd listening on TCP on PORT
 #^^^^^ keyword.other.def.cmd-help
 #     ^ - keyword.other.def.cmd-help variable.parameter.option-argument.cmd-help
-#      ^^^^ - variable.parameter.option-argument.cmd-help
+#      ^^^^ variable.parameter.option-argument.cmd-help
 #nice: subcommand + ARG
 
 internal debugging:
