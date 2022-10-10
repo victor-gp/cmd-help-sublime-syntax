@@ -1,0 +1,81 @@
+[38;2;253;151;31mUsage:[0m[38;2;248;248;242m pip-compile [OPTIONS] [SRC_FILES]...[0m
+
+[38;2;248;248;242m  Compiles requirements.txt from requirements.in specs.[0m
+
+[38;2;253;151;31mOptions:[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                       Show the version and exit.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m                   Show more output[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m                     Give less output[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--dry-run[0m[38;2;248;248;242m                   Only show what would happen, don't change[0m
+[38;2;248;248;242m                                  anything[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--pre[0m[38;2;248;248;242m                       Allow resolving to prereleases (default is[0m
+[38;2;248;248;242m                                  not)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--rebuild[0m[38;2;248;248;242m                   Clear any caches upfront, rebuild from[0m
+[38;2;248;248;242m                                  scratch[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--extra[0m[38;2;248;248;242m [0m[38;2;253;151;31mTEXT[0m[38;2;248;248;242m                    Name of an extras_require group to install;[0m
+[38;2;248;248;242m                                  may be used more than once[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--find-links[0m[38;2;248;248;242m [0m[38;2;253;151;31mTEXT[0m[38;2;248;248;242m           Look for archives in this directory or on[0m
+[38;2;248;248;242m                                  this HTML page; may be used more than once[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--index-url[0m[38;2;248;248;242m [0m[38;2;253;151;31mTEXT[0m[38;2;248;248;242m            Change index URL (defaults to[0m
+[38;2;248;248;242m                                  https://mirrors.bfsu.edu.cn/pypi/web/simple)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--extra-index-url[0m[38;2;248;248;242m [0m[38;2;253;151;31mTEXT[0m[38;2;248;248;242m          Add another index URL to search; may be used[0m
+[38;2;248;248;242m                                  more than once[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--cert[0m[38;2;248;248;242m [0m[38;2;253;151;31mTEXT[0m[38;2;248;248;242m                     Path to alternate CA bundle.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--client-cert[0m[38;2;248;248;242m [0m[38;2;253;151;31mTEXT[0m[38;2;248;248;242m              Path to SSL client certificate, a single[0m
+[38;2;248;248;242m                                  file containing the private key and the[0m
+[38;2;248;248;242m                                  certificate in PEM format.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--trusted-host[0m[38;2;248;248;242m [0m[38;2;253;151;31mTEXT[0m[38;2;248;248;242m             Mark this host as trusted, even though it[0m
+[38;2;248;248;242m                                  does not have valid or any HTTPS; may be[0m
+[38;2;248;248;242m                                  used more than once[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--header[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-header[0m[38;2;248;248;242m          Add header to generated file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--emit-trusted-host[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-emit-trusted-host[0m
+[38;2;248;248;242m                                  Add trusted host option to generated file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--annotate[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-annotate[0m[38;2;248;248;242m      Annotate results, indicating where[0m
+[38;2;248;248;242m                                  dependencies come from[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--annotation-style[0m[38;2;248;248;242m [[0m[38;2;253;151;31mline[0m[38;2;255;255;255m|[0m[38;2;253;151;31msplit[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m                                  Choose the format of annotation comments[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--upgrade[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-upgrade[0m[38;2;248;248;242m    Try to upgrade all dependencies to their[0m
+[38;2;248;248;242m                                  latest versions[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--upgrade-package[0m[38;2;248;248;242m [0m[38;2;253;151;31mTEXT[0m[38;2;248;248;242m      Specify a particular package to upgrade; may[0m
+[38;2;248;248;242m                                  be used more than once[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--output-file[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILENAME[0m[38;2;248;248;242m      Output file name. Required if more than one[0m
+[38;2;248;248;242m                                  input file is given. Will be derived from[0m
+[38;2;248;248;242m                                  input file otherwise.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--allow-unsafe[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-allow-unsafe[0m
+[38;2;248;248;242m                                  Pin packages considered unsafe: distribute,[0m
+[38;2;248;248;242m                                  pip, setuptools.[0m
+
+[38;2;248;248;242m                                  WARNING: Future versions of pip-tools will[0m
+[38;2;248;248;242m                                  enable this behavior by default. Use --no-[0m
+[38;2;248;248;242m                                  allow-unsafe to keep the old behavior. It is[0m
+[38;2;248;248;242m                                  recommended to pass the --allow-unsafe now[0m
+[38;2;248;248;242m                                  to adapt to the upcoming change.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--strip-extras[0m[38;2;248;248;242m                  Assure output file is constraints[0m
+[38;2;248;248;242m                                  compatible, avoiding use of extras.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--generate-hashes[0m[38;2;248;248;242m               Generate pip 8 style hashes in the resulting[0m
+[38;2;248;248;242m                                  requirements file.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--reuse-hashes[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-reuse-hashes[0m
+[38;2;248;248;242m                                  Improve the speed of --generate-hashes by[0m
+[38;2;248;248;242m                                  reusing the hashes from an existing output[0m
+[38;2;248;248;242m                                  file.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--max-rounds[0m[38;2;248;248;242m [0m[38;2;253;151;31mINTEGER[0m[38;2;248;248;242m            Maximum number of rounds before resolving[0m
+[38;2;248;248;242m                                  the requirements aborts.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--build-isolation[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-build-isolation[0m
+[38;2;248;248;242m                                  Enable isolation when building a modern[0m
+[38;2;248;248;242m                                  source distribution. Build dependencies[0m
+[38;2;248;248;242m                                  specified by PEP 518 must be already[0m
+[38;2;248;248;242m                                  installed if build isolation is disabled.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--emit-find-links[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-emit-find-links[0m
+[38;2;248;248;242m                                  Add the find-links option to generated file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--cache-dir[0m[38;2;248;248;242m [0m[38;2;253;151;31mDIRECTORY[0m[38;2;248;248;242m           Store the cache data in DIRECTORY.  [env[0m
+[38;2;248;248;242m                                  var: PIP_TOOLS_CACHE_DIR; default:[0m
+[38;2;248;248;242m                                  /home/wzy/.cache/pip-tools][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--pip-args[0m[38;2;248;248;242m [0m[38;2;253;151;31mTEXT[0m[38;2;248;248;242m                 Arguments to pass directly to the pip[0m
+[38;2;248;248;242m                                  command.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--resolver[0m[38;2;248;248;242m [[0m[38;2;253;151;31mlegacy[0m[38;2;255;255;255m|[0m[38;2;253;151;31mbacktracking[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m                                  Choose the dependency resolver.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--emit-index-url[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-emit-index-url[0m
+[38;2;248;248;242m                                  Add index URL to generated file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--emit-options[0m[38;2;248;248;242m / [0m[38;2;166;226;46m--no-emit-options[0m
+[38;2;248;248;242m                                  Add options to generated file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                      Show this message and exit.[0m

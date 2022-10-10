@@ -225,6 +225,8 @@ contexts:
       set: option-def-alt
     - match: ' \| '
       set: option-def-alt
+    - match: ' / '
+      set: option-def-alt
     - match: ' (?=-)'
       set: option-def-alt
     - match: ' or '
