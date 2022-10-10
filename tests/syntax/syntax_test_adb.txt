@@ -142,9 +142,9 @@ scripting:
  unroot                   restart adbd without root permissions
  usb                      restart adbd listening on USB
  tcpip PORT               restart adbd listening on TCP on PORT
-#^^^^^ - entity.name.function.option.cmd-help
-#     ^ - entity.name.function.option.cmd-help entity.name.function.option.cmd-help keyword.other.argument.cmd-help
-#      ^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#^^^^^ keyword.other.def.cmd-help
+#     ^ - keyword.other.def.cmd-help variable.parameter.option-argument.cmd-help
+#      ^^^^ - variable.parameter.option-argument.cmd-help
 #nice: subcommand + ARG
 
 internal debugging:
