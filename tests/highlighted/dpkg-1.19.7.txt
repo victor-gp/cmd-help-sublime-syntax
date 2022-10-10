@@ -73,7 +73,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--abort-after[0m[38;2;248;248;242m [0m[38;2;249;38;114m<n>[0m[38;2;248;248;242m          Abort after encountering <n> errors.[0m
 
 [38;2;248;248;242mComparison operators for --compare-versions are:[0m
-[38;2;248;248;242m  lt le eq ne ge gt       (treat empty version as earlier than any version);[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mlt[0m[38;2;248;248;242m le eq ne ge gt       (treat empty version as earlier than any version);[0m
 [38;2;248;248;242m  lt-nl le-nl ge-nl gt-nl (treat empty version as later than any version);[0m
 [38;2;248;248;242m  < << <= = >= >> >       (only for compatibility with control file syntax).[0m
 

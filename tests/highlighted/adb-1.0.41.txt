@@ -13,17 +13,17 @@
 [38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;249;38;114mSOCKET[0m[38;2;248;248;242m  listen on given socket for adb server [default=tcp:localhost:5037][0m
 
 [38;2;248;248;242mgeneral commands:[0m
-[38;2;248;248;242m devices [-l]             list connected devices (-l for long output)[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mdevices[0m[38;2;248;248;242m [-l]             list connected devices (-l for long output)[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mhelp[0m[38;2;248;248;242m                     show this help message[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mversion[0m[38;2;248;248;242m                  show version num[0m
 
 [38;2;248;248;242mnetworking:[0m
-[38;2;248;248;242m connect HOST[:PORT]      connect to a device via TCP/IP [default port=5555][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mconnect[0m[38;2;248;248;242m HOST[:PORT]      connect to a device via TCP/IP [default port=5555][0m
 [38;2;248;248;242m disconnect [HOST[:PORT]][0m
 [38;2;248;248;242m     disconnect from given TCP/IP device [default port=5555], or all[0m
 [38;2;248;248;242m pair HOST[:PORT] [PAIRING CODE][0m
 [38;2;248;248;242m     pair with a device for secure TCP/IP communication[0m
-[38;2;248;248;242m forward --list           list all forward socket connections[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --list           list all forward socket connections[0m
 [38;2;248;248;242m forward [--no-rebind] LOCAL REMOTE[0m
 [38;2;248;248;242m     forward socket connection using:[0m
 [38;2;248;248;242m       tcp:<port> (<local> may be "tcp:0" to pick any open port)[0m
@@ -34,10 +34,10 @@
 [38;2;248;248;242m       jdwp:<process pid> (remote only)[0m
 [38;2;248;248;242m       vsock:<CID>:<port> (remote only)[0m
 [38;2;248;248;242m       acceptfd:<fd> (listen only)[0m
-[38;2;248;248;242m forward --remove LOCAL   remove specific forward socket connection[0m
-[38;2;248;248;242m forward --remove-all     remove all forward socket connections[0m
-[38;2;248;248;242m ppp TTY [PARAMETER...]   run PPP over USB[0m
-[38;2;248;248;242m reverse --list           list all reverse socket connections from device[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --remove LOCAL   remove specific forward socket connection[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --remove-all     remove all forward socket connections[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mppp[0m[38;2;248;248;242m TTY [PARAMETER...]   run PPP over USB[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m --list           list all reverse socket connections from device[0m
 [38;2;248;248;242m reverse [--no-rebind] REMOTE LOCAL[0m
 [38;2;248;248;242m     reverse socket connection using:[0m
 [38;2;248;248;242m       tcp:<port> (<remote> may be "tcp:0" to pick any open port)[0m
@@ -45,9 +45,9 @@
 [38;2;248;248;242m       localreserved:<unix domain socket name>[0m
 [38;2;248;248;242m       localfilesystem:<unix domain socket name>[0m
 [38;2;248;248;242m reverse --remove REMOTE  remove specific reverse socket connection[0m
-[38;2;248;248;242m reverse --remove-all     remove all reverse socket connections from device[0m
-[38;2;248;248;242m mdns check               check if mdns discovery is available[0m
-[38;2;248;248;242m mdns services            list all discovered services[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m --remove-all     remove all reverse socket connections from device[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mmdns[0m[38;2;248;248;242m check               check if mdns discovery is available[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mmdns[0m[38;2;248;248;242m services            list all discovered services[0m
 
 [38;2;248;248;242mfile transfer:[0m
 [38;2;248;248;242m push [--sync] [-z ALGORITHM] [-Z] LOCAL... REMOTE[0m
@@ -76,7 +76,7 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m: disable pty allocation[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m: allocate a pty if on a tty (-tt: force pty allocation)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m: disable remote exit codes and stdout/stderr separation[0m
-[38;2;248;248;242m emu COMMAND              run emulator console command[0m
+[38;2;248;248;242m [0m[38;2;190;132;255memu[0m[38;2;248;248;242m COMMAND              run emulator console command[0m
 
 [38;2;248;248;242mapp installation (see also `adb shell cmd package help`):[0m
 [38;2;248;248;242m install [-lrtsdg] [--instant] PACKAGE[0m
@@ -135,18 +135,18 @@
 [38;2;248;248;242m     supports bootloader and recovery too. sideload reboots[0m
 [38;2;248;248;242m     into recovery and automatically starts sideload mode,[0m
 [38;2;248;248;242m     sideload-auto-reboot is the same but reboots after sideloading.[0m
-[38;2;248;248;242m sideload OTAPACKAGE      sideload the given full OTA package[0m
+[38;2;248;248;242m [0m[38;2;190;132;255msideload[0m[38;2;248;248;242m OTAPACKAGE      sideload the given full OTA package[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mroot[0m[38;2;248;248;242m                     restart adbd with root permissions[0m
 [38;2;248;248;242m [0m[38;2;190;132;255munroot[0m[38;2;248;248;242m                   restart adbd without root permissions[0m
 [38;2;248;248;242m [0m[38;2;190;132;255musb[0m[38;2;248;248;242m                      restart adbd listening on USB[0m
-[38;2;248;248;242m tcpip PORT               restart adbd listening on TCP on PORT[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mtcpip[0m[38;2;248;248;242m PORT               restart adbd listening on TCP on PORT[0m
 
 [38;2;248;248;242minternal debugging:[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mstart-server[0m[38;2;248;248;242m             ensure that there is a server running[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mkill-server[0m[38;2;248;248;242m              kill the server if it is running[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mreconnect[0m[38;2;248;248;242m                kick connection from host side to force reconnect[0m
-[38;2;248;248;242m reconnect device         kick connection from device side to force reconnect[0m
-[38;2;248;248;242m reconnect offline        reset offline/unauthorized devices to force reconnect[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreconnect[0m[38;2;248;248;242m device         kick connection from device side to force reconnect[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreconnect[0m[38;2;248;248;242m offline        reset offline/unauthorized devices to force reconnect[0m
 
 [38;2;248;248;242musb:[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mattach[0m[38;2;248;248;242m                   attach a detached USB device[0m

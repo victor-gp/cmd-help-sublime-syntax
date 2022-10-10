@@ -404,6 +404,7 @@ contexts:
         1: *OTHER_TERM_SCOPES
         2: *OTHER_TERM_SCOPES
       set: then-pop
+    - include: other-def-seq
 
   other-variable-def:
     - match: '{{allcaps_argument_name}}(?=  )'
@@ -435,6 +436,11 @@ contexts:
     - match: '\.{{path_atom}}(?={{long_space}})'
       scope: *PATHNAME_SCOPES
       set: then-pop
+
+  other-def-seq:
+    #nice: limit the sequence to 3-4 terms top?
+    - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
+      scope: *OTHER_TERM_SCOPES
 
   ### notable exceptions #######################################################
 
