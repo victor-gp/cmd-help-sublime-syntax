@@ -1,2 +1,4 @@
 # Linguist overrides
 *.sublime-syntax linguist-detectable
+tests/highlighted/* linguist-generated
+tests/theme/* linguist-generated
