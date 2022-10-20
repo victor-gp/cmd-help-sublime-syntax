@@ -122,7 +122,7 @@
 [38;2;220;220;220m## PRE-EXISTING FORMAT:[0m
 
 [1m[38;2;220;220;220m[1mIt skips over bold text[0m[0m
-[38;2;86;156;214mAnd continues normal operation[0m
+[38;2;220;220;220m// And continues normal operation[0m
 [38;2;220;220;220m(as proven by the previous line being scoped as heading)[0m
 [31m[38;2;220;220;220m[31mBut it aborts on color codes (this is red text)[0m[0m
 [38;2;220;220;220mAnd stops operation for what is left[0m
