@@ -62,6 +62,7 @@ scope_variables: # last scope is matched first
   - &OPTION_ARGUMENT_SCOPES
     string.option-argument.cmd-help
     variable.other.option-argument.cmd-help
+    support.class.option-argument.cmd-help
     variable.parameter.option-argument.cmd-help
 
   # argument definitions (99% confidence)
