@@ -3,8 +3,9 @@
 [38;2;56;58;66mMost of these lines come from actual help messages in tests/source/.[0m
 
 
-[38;2;1;132;188mQUICK REFERENCE:[0m
+[38;2;56;58;66m## QUICK REFERENCE:[0m
 
+[38;2;1;132;188mHEADING:[0m
 [38;2;1;132;188m--option[0m[38;2;56;58;66m [0m[38;2;228;86;73m<argument>[0m[38;2;56;58;66m   bla bla bla[0m
 [38;2;166;38;164msubcommand[0m[38;2;56;58;66m            bla bla bla[0m
 [38;2;228;86;73mARGUMENT[0m[38;2;56;58;66m              or ENV sometimes[0m
@@ -12,7 +13,7 @@
 [38;2;166;38;164m--[0m[38;2;56;58;66m                    bla bla bla[0m
 
 
-[38;2;1;132;188mHEADING PATTERNS:[0m
+[38;2;56;58;66m## HEADING PATTERNS:[0m
 
 [38;2;1;132;188mSelection options[0m
 [38;2;1;132;188mBasic Options:[0m
@@ -30,7 +31,7 @@
 [38;2;56;58;66m	Nor after a tab[0m
 
 
-[38;2;1;132;188mOPTION PATTERNS:[0m
+[38;2;56;58;66m## OPTION PATTERNS:[0m
 
 [38;2;56;58;66m    [0m[38;2;1;132;188m-A[0m[38;2;56;58;66m, [0m[38;2;1;132;188m--show-all[0m
 [38;2;56;58;66m    [0m[38;2;1;132;188m-l[0m[38;2;56;58;66m, [0m[38;2;1;132;188m--language[0m[38;2;56;58;66m [0m[38;2;228;86;73m<language>[0m
@@ -81,7 +82,7 @@
 [38;2;56;58;66m   [0m[38;2;166;38;164m--[0m[38;2;56;58;66m			Only file names after this[0m
 
 
-[38;2;1;132;188mARGUMENT PATTERNS:[0m
+[38;2;56;58;66m## ARGUMENT PATTERNS:[0m
 
 [38;2;56;58;66m(collapse with other patterns?)[0m
 
@@ -90,7 +91,7 @@
 [38;2;228;86;73marg[0m[38;2;56;58;66m [0m[38;2;228;86;73m...[0m[38;2;56;58;66m: arguments passed to program in sys.argv[1:][0m
 
 
-[38;2;1;132;188mOTHER PATTERNS:[0m
+[38;2;56;58;66m## OTHER PATTERNS:[0m
 
 [38;2;56;58;66m   [0m[38;2;166;38;164mcommit[0m[38;2;56;58;66m            Record changes to the repository[0m
 [38;2;56;58;66m    [0m[38;2;166;38;164mcache[0m[38;2;56;58;66m    Modify the syntax-definition and theme cache[0m
@@ -118,7 +119,7 @@
 [38;2;166;38;164m+[0m[38;2;228;86;73mLINE:COLUMN[0m[38;2;56;58;66m            go to line LINE, column COLUMN, in next FILE[0m
 
 
-[38;2;1;132;188mPRE-EXISTING FORMAT:[0m
+[38;2;56;58;66m## PRE-EXISTING FORMAT:[0m
 
 [1m[38;2;56;58;66m[1mIt skips over bold text[0m[0m
 [38;2;1;132;188mAnd continues normal operation[0m

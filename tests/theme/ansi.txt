@@ -3,8 +3,9 @@
 Most of these lines come from actual help messages in tests/source/.
 
 
-[34mQUICK REFERENCE:[0m
+## QUICK REFERENCE:
 
+[34mHEADING:[0m
 [34m--option[0m [32m<argument>[0m   bla bla bla
 [35msubcommand[0m            bla bla bla
 [32mARGUMENT[0m              or ENV sometimes
@@ -12,7 +13,7 @@ Most of these lines come from actual help messages in tests/source/.
 [35m--[0m                    bla bla bla
 
 
-[34mHEADING PATTERNS:[0m
+## HEADING PATTERNS:
 
 [34mSelection options[0m
 [34mBasic Options:[0m
@@ -30,7 +31,7 @@ nor if it begins with lowercase
 	Nor after a tab
 
 
-[34mOPTION PATTERNS:[0m
+## OPTION PATTERNS:
 
     [34m-A[0m, [34m--show-all[0m
     [34m-l[0m, [34m--language[0m [32m<language>[0m
@@ -81,7 +82,7 @@ nor if it begins with lowercase
    [35m--[0m			Only file names after this
 
 
-[34mARGUMENT PATTERNS:[0m
+## ARGUMENT PATTERNS:
 
 (collapse with other patterns?)
 
@@ -90,7 +91,7 @@ nor if it begins with lowercase
 [32marg[0m [32m...[0m: arguments passed to program in sys.argv[1:]
 
 
-[34mOTHER PATTERNS:[0m
+## OTHER PATTERNS:
 
    [35mcommit[0m            Record changes to the repository
     [35mcache[0m    Modify the syntax-definition and theme cache
@@ -118,7 +119,7 @@ nor if it begins with lowercase
 [35m+[0m[32mLINE:COLUMN[0m            go to line LINE, column COLUMN, in next FILE
 
 
-[34mPRE-EXISTING FORMAT:[0m
+## PRE-EXISTING FORMAT:
 
 [1m[1mIt skips over bold text[0m
 [34mAnd continues normal operation[0m

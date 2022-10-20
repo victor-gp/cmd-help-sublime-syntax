@@ -3,8 +3,9 @@ synthetic - fake help message for testing theme support
 Most of these lines come from actual help messages in tests/source/.
 
 
-QUICK REFERENCE:
+## QUICK REFERENCE:
 
+HEADING:
 --option <argument>   bla bla bla
 subcommand            bla bla bla
 ARGUMENT              or ENV sometimes
@@ -12,7 +13,7 @@ path/to/file          bla bla bla
 --                    bla bla bla
 
 
-HEADING PATTERNS:
+## HEADING PATTERNS:
 
 Selection options
 Basic Options:
@@ -30,7 +31,7 @@ nor if it begins with lowercase
 	Nor after a tab
 
 
-OPTION PATTERNS:
+## OPTION PATTERNS:
 
     -A, --show-all
     -l, --language <language>
@@ -81,7 +82,7 @@ OPTION PATTERNS:
    --			Only file names after this
 
 
-ARGUMENT PATTERNS:
+## ARGUMENT PATTERNS:
 
 (collapse with other patterns?)
 
@@ -90,7 +91,7 @@ ARGUMENT PATTERNS:
 arg ...: arguments passed to program in sys.argv[1:]
 
 
-OTHER PATTERNS:
+## OTHER PATTERNS:
 
    commit            Record changes to the repository
     cache    Modify the syntax-definition and theme cache
@@ -118,7 +119,7 @@ path/.to/file
 +LINE:COLUMN            go to line LINE, column COLUMN, in next FILE
 
 
-PRE-EXISTING FORMAT:
+## PRE-EXISTING FORMAT:
 
 [1mIt skips over bold text[0m
 And continues normal operation

@@ -3,8 +3,9 @@
 [37mMost of these lines come from actual help messages in tests/source/.[0m
 
 
-[34mQUICK REFERENCE:[0m
+[37m## QUICK REFERENCE:[0m
 
+[34mHEADING:[0m
 [34m--option[0m[37m [0m[37m<argument>[0m[37m   bla bla bla[0m
 [35msubcommand[0m[37m            bla bla bla[0m
 [37mARGUMENT[0m[37m              or ENV sometimes[0m
@@ -12,7 +13,7 @@
 [35m--[0m[37m                    bla bla bla[0m
 
 
-[34mHEADING PATTERNS:[0m
+[37m## HEADING PATTERNS:[0m
 
 [34mSelection options[0m
 [34mBasic Options:[0m
@@ -30,7 +31,7 @@
 [37m	Nor after a tab[0m
 
 
-[34mOPTION PATTERNS:[0m
+[37m## OPTION PATTERNS:[0m
 
 [37m    [0m[34m-A[0m[37m, [0m[34m--show-all[0m
 [37m    [0m[34m-l[0m[37m, [0m[34m--language[0m[37m [0m[37m<language>[0m
@@ -81,7 +82,7 @@
 [37m   [0m[35m--[0m[37m			Only file names after this[0m
 
 
-[34mARGUMENT PATTERNS:[0m
+[37m## ARGUMENT PATTERNS:[0m
 
 [37m(collapse with other patterns?)[0m
 
@@ -90,7 +91,7 @@
 [37marg[0m[37m [0m[37m...[0m[37m: arguments passed to program in sys.argv[1:][0m
 
 
-[34mOTHER PATTERNS:[0m
+[37m## OTHER PATTERNS:[0m
 
 [37m   [0m[35mcommit[0m[37m            Record changes to the repository[0m
 [37m    [0m[35mcache[0m[37m    Modify the syntax-definition and theme cache[0m
@@ -118,7 +119,7 @@
 [35m+[0m[37mLINE:COLUMN[0m[37m            go to line LINE, column COLUMN, in next FILE[0m
 
 
-[34mPRE-EXISTING FORMAT:[0m
+[37m## PRE-EXISTING FORMAT:[0m
 
 [1m[37m[1mIt skips over bold text[0m[0m
 [34mAnd continues normal operation[0m

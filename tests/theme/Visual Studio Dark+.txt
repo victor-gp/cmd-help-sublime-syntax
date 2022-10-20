@@ -3,8 +3,9 @@
 [38;2;220;220;220mMost of these lines come from actual help messages in tests/source/.[0m
 
 
-[38;2;86;156;214mQUICK REFERENCE:[0m
+[38;2;220;220;220m## QUICK REFERENCE:[0m
 
+[38;2;86;156;214mHEADING:[0m
 [38;2;220;220;170m--option[0m[38;2;220;220;220m [0m[38;2;156;220;254m<argument>[0m[38;2;220;220;220m   bla bla bla[0m
 [38;2;197;134;192msubcommand[0m[38;2;220;220;220m            bla bla bla[0m
 [38;2;156;220;254mARGUMENT[0m[38;2;220;220;220m              or ENV sometimes[0m
@@ -12,7 +13,7 @@
 [38;2;197;134;192m--[0m[38;2;220;220;220m                    bla bla bla[0m
 
 
-[38;2;86;156;214mHEADING PATTERNS:[0m
+[38;2;220;220;220m## HEADING PATTERNS:[0m
 
 [38;2;86;156;214mSelection options[0m
 [38;2;86;156;214mBasic Options:[0m
@@ -30,7 +31,7 @@
 [38;2;220;220;220m	Nor after a tab[0m
 
 
-[38;2;86;156;214mOPTION PATTERNS:[0m
+[38;2;220;220;220m## OPTION PATTERNS:[0m
 
 [38;2;220;220;220m    [0m[38;2;220;220;170m-A[0m[38;2;220;220;220m, [0m[38;2;220;220;170m--show-all[0m
 [38;2;220;220;220m    [0m[38;2;220;220;170m-l[0m[38;2;220;220;220m, [0m[38;2;220;220;170m--language[0m[38;2;220;220;220m [0m[38;2;156;220;254m<language>[0m
@@ -81,7 +82,7 @@
 [38;2;220;220;220m   [0m[38;2;197;134;192m--[0m[38;2;220;220;220m			Only file names after this[0m
 
 
-[38;2;86;156;214mARGUMENT PATTERNS:[0m
+[38;2;220;220;220m## ARGUMENT PATTERNS:[0m
 
 [38;2;220;220;220m(collapse with other patterns?)[0m
 
@@ -90,7 +91,7 @@
 [38;2;156;220;254marg[0m[38;2;220;220;220m [0m[38;2;156;220;254m...[0m[38;2;220;220;220m: arguments passed to program in sys.argv[1:][0m
 
 
-[38;2;86;156;214mOTHER PATTERNS:[0m
+[38;2;220;220;220m## OTHER PATTERNS:[0m
 
 [38;2;220;220;220m   [0m[38;2;197;134;192mcommit[0m[38;2;220;220;220m            Record changes to the repository[0m
 [38;2;220;220;220m    [0m[38;2;197;134;192mcache[0m[38;2;220;220;220m    Modify the syntax-definition and theme cache[0m
@@ -118,7 +119,7 @@
 [38;2;197;134;192m+[0m[38;2;156;220;254mLINE:COLUMN[0m[38;2;220;220;220m            go to line LINE, column COLUMN, in next FILE[0m
 
 
-[38;2;86;156;214mPRE-EXISTING FORMAT:[0m
+[38;2;220;220;220m## PRE-EXISTING FORMAT:[0m
 
 [1m[38;2;220;220;220m[1mIt skips over bold text[0m[0m
 [38;2;86;156;214mAnd continues normal operation[0m
