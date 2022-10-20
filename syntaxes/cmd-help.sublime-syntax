@@ -46,35 +46,47 @@ variables:
 
 scope_variables: # last scope is matched first
   - &SECTION_HEADING_SCOPES
-    constant.section-heading.cmd-help  string.section-heading.cmd-help
-    # markup.heading.cmd-help  entity.name.section.cmd-help
+    constant.section-heading.cmd-help
+    string.section-heading.cmd-help
+    # markup.heading.cmd-help
+    # entity.name.section.cmd-help
 
   - &INLINE_USAGE_SCOPES
-    constant.section-heading.cmd-help  string.inline-usage.cmd-help
-    markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help
+    constant.section-heading.cmd-help
+    string.inline-usage.cmd-help
+    markup.heading.inline-usage.cmd-help
+    entity.name.section.inline-usage.cmd-help
 
   - &OPTION_DEF_SCOPES
     entity.name.function.option.cmd-help
+
   - &OPTION_ARGUMENT_SCOPES
-    string.option-argument.cmd-help  variable.other.option-argument.cmd-help
+    string.option-argument.cmd-help
+    variable.other.option-argument.cmd-help
     variable.parameter.option-argument.cmd-help
 
   # argument definitions (99% confidence)
   - &ARGUMENT_DEF_SCOPES # =~ option argument
-    string.argument.cmd-help  variable.other.argument.cmd-help
+    string.argument.cmd-help
+    variable.other.argument.cmd-help
     variable.parameter.argument.cmd-help
+
   # mostly all-caps definitions. usually environment variables or arguments
   - &OTHER_VAL_DEF_SCOPES # =~ option argument
-    string.other-value.cmd-help  variable.other.other-value.cmd-help
+    string.other-value.cmd-help
+    variable.other.other-value.cmd-help
     variable.parameter.other-value.cmd-help
 
   # non all-caps definitions: subcommands, argument enums, etc.
   - &OTHER_DEF_SCOPES
-    keyword.other.def.cmd-help # support.function variable.function ?
+    keyword.other.def.cmd-help
+    # support.function ?
+    # variable.function ?
 
   - &FILE_DEF_SCOPES
     constant.file.cmd-help
-    # variable.other.readwrite.file.cmd-help  string.file.cmd-help
+    # variable.other.readwrite.file.cmd-help
+    # string.file.cmd-help
 
 
 contexts:
