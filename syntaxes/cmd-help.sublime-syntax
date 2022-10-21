@@ -61,7 +61,7 @@ scope_variables: # last scope is matched first
 
   - &OPTION_ARGUMENT_SCOPES
     variable.parameter.option-argument.cmd-help
-    storage
+    support
 
   # argument definitions (99% confidence)
   - &ARGUMENT_DEF_SCOPES # =~ option argument
