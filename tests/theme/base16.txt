@@ -6,7 +6,7 @@
 [37m## QUICK REFERENCE:[0m
 
 [32mHEADING:[0m
-[34m--option[0m[37m [0m[37m<argument>[0m[37m   bla bla bla[0m
+[34m--option[0m[37m [0m[36m<argument>[0m[37m   bla bla bla[0m
 [35msubcommand[0m[37m            bla bla bla[0m
 [37mARGUMENT[0m[37m              or ENV sometimes[0m
 [38;5;9mpath/to/file[0m[37m          bla bla bla[0m
@@ -34,50 +34,50 @@
 [37m## OPTION PATTERNS:[0m
 
 [37m    [0m[34m-A[0m[37m, [0m[34m--show-all[0m
-[37m    [0m[34m-l[0m[37m, [0m[34m--language[0m[37m [0m[37m<language>[0m
-[37m    [0m[34m-H[0m[37m, [0m[34m--highlight-line[0m[37m [0m[37m<N:M>[0m[37m...[0m
-[37m        [0m[34m--file-name[0m[37m [0m[37m<name>[0m[37m...[0m
-[37m      [0m[34m--backup[0m[37m[=[0m[37mCONTROL[0m[37m]       make a backup of each existing destination file[0m
-[37m      [0m[34m--no-preserve[0m[37m=[0m[37mATTR_LIST[0m[37m  don't preserve the specified attributes[0m
+[37m    [0m[34m-l[0m[37m, [0m[34m--language[0m[37m [0m[36m<language>[0m
+[37m    [0m[34m-H[0m[37m, [0m[34m--highlight-line[0m[37m [0m[36m<N:M>[0m[36m...[0m
+[37m        [0m[34m--file-name[0m[37m [0m[36m<name>[0m[36m...[0m
+[37m      [0m[34m--backup[0m[37m[=[0m[36mCONTROL[0m[37m]       make a backup of each existing destination file[0m
+[37m      [0m[34m--no-preserve[0m[37m=[0m[36mATTR_LIST[0m[37m  don't preserve the specified attributes[0m
 [37m  [0m[34m-R[0m[37m, [0m[34m-r[0m[37m, [0m[34m--recursive[0m[37m          copy directories recursively[0m
-[37m	[0m[34m-ilrsD[0m[37m or [0m[34m-c[0m[37m [0m[37mcommand[0m[37m or [0m[34m-O[0m[37m [0m[37mshopt_option[0m[37m		(invocation only)[0m
-[37m     [0m[34m--alt-svc[0m[37m [0m[37m<file name>[0m[37m Enable alt-svc with this cache file[0m
-[37m [0m[34m-b[0m[37m, [0m[34m--cookie[0m[37m [0m[37m<data|filename>[0m[37m Send cookies from string/file[0m
+[37m	[0m[34m-ilrsD[0m[37m or [0m[34m-c[0m[37m [0m[36mcommand[0m[37m or [0m[34m-O[0m[37m [0m[36mshopt_option[0m[37m		(invocation only)[0m
+[37m     [0m[34m--alt-svc[0m[37m [0m[36m<file name>[0m[37m Enable alt-svc with this cache file[0m
+[37m [0m[34m-b[0m[37m, [0m[34m--cookie[0m[37m [0m[36m<data|filename>[0m[37m Send cookies from string/file[0m
 [37m     [0m[34m--tlsv1.0[0m[37m       Use TLSv1.0 or greater[0m
-[37m      [0m[34m--label[0m[37m [0m[37mLABEL[0m[37m             use LABEL instead of file name and timestamp[0m
-[37m      [0m[34m--from-file[0m[37m=[0m[37mFILE1[0m[37m           compare FILE1 to all operands;[0m
-[37m  [0m[34m--help[0m[37m={[0m[37mcommon[0m[33m|[0m[37moptimizers[0m[33m|[0m[37mparams[0m[33m|[0m[37mtarget[0m[33m|[0m[37mwarnings[0m[33m|[0m[37m[^]{joined[0m[33m|[0m[37mseparate[0m[33m|[0m[37mundocumented[0m[37m}}[,...].[0m
+[37m      [0m[34m--label[0m[37m [0m[36mLABEL[0m[37m             use LABEL instead of file name and timestamp[0m
+[37m      [0m[34m--from-file[0m[37m=[0m[36mFILE1[0m[37m           compare FILE1 to all operands;[0m
+[37m  [0m[34m--help[0m[37m={[0m[36mcommon[0m[37m|[0m[36moptimizers[0m[37m|[0m[36mparams[0m[37m|[0m[36mtarget[0m[37m|[0m[36mwarnings[0m[37m|[0m[36m[^]{joined[0m[37m|[0m[36mseparate[0m[37m|[0m[36mundocumented[0m[37m}}[,...].[0m
 [37m  [0m[34m-print-search-dirs[0m[37m       Display the directories in the compiler's search path.[0m
-[37m  [0m[34m-print-file-name[0m[37m=[0m[37m<lib>[0m[37m   Display the full path to library <lib>.[0m
-[37m  [0m[34m-Wa[0m[37m,[0m[37m<options>[0m[37m            Pass comma-separated <options> on to the assembler.[0m
+[37m  [0m[34m-print-file-name[0m[37m=[0m[36m<lib>[0m[37m   Display the full path to library <lib>.[0m
+[37m  [0m[34m-Wa[0m[37m,[0m[36m<options>[0m[37m            Pass comma-separated <options> on to the assembler.[0m
 [34m-C[0m[37m [0m[34m--no-color[0m[37m               Use a monochrome color scheme[0m
-[37m  [0m[34m-r[0m[37m [0m[37mload-module[0m[37m    Same as `ruby -r'[0m
+[37m  [0m[34m-r[0m[37m [0m[36mload-module[0m[37m    Same as `ruby -r'[0m
 [37m  [0m[34m--sample-book-mode[0m[37m/[0m[34m--simple-prompt[0m
-[37m    [0m[34m-D[0m[37m<name>[0m[37m=[0m[37m<value>[0m
-[37m    [0m[34m-verbose[0m[37m:[[0m[37mclass[0m[33m|[0m[37mgc[0m[33m|[0m[37mjni[0m[37m][0m
-[37m    [0m[34m-version[0m[37m:[0m[37m<value>[0m
-[37m    [0m[34m-ea[0m[37m[[0m[37m:<packagename>...[0m[33m|[0m[37m:<classname>[0m[37m][0m
-[37m    [0m[34m-agentlib[0m[37m:[0m[37m<libname>[0m[37m[=[0m[37m<options>[0m[37m][0m
+[37m    [0m[34m-D[0m[36m<name>[0m[37m=[0m[36m<value>[0m
+[37m    [0m[34m-verbose[0m[37m:[[0m[36mclass[0m[37m|[0m[36mgc[0m[37m|[0m[36mjni[0m[37m][0m
+[37m    [0m[34m-version[0m[37m:[0m[36m<value>[0m
+[37m    [0m[34m-ea[0m[37m[[0m[36m:<packagename>...[0m[37m|[0m[36m:<classname>[0m[37m][0m
+[37m    [0m[34m-agentlib[0m[37m:[0m[36m<libname>[0m[37m[=[0m[36m<options>[0m[37m][0m
 [37m [0m[34m-A[0m[37m             [0m[34m--smarthome[0m[37m             Enable smart home key[0m
-[34m-m[0m[37m [0m[37mmod[0m[37m : run library module as a script (terminates option list)[0m
-[37m        [0m[34m--except[0m[37m [[0m[37mCOP1,COP2,...[0m[37m]     Exclude the given cop(s).[0m
-[37m    [0m[34m-P[0m[37m, [0m[34m--[0m[37m[[0m[37mno-[0m[37m]parallel              Use available CPUs to execute inspection in[0m
-[37m  [0m[34m-0[0m[37m[[0m[37moctal[0m[37m]       specify record separator (\0, if no argument)[0m
+[34m-m[0m[37m [0m[36mmod[0m[37m : run library module as a script (terminates option list)[0m
+[37m        [0m[34m--except[0m[37m [[0m[36mCOP1,COP2,...[0m[37m]     Exclude the given cop(s).[0m
+[37m    [0m[34m-P[0m[37m, [0m[34m--[0m[37m[[0m[36mno-[0m[37m]parallel              Use available CPUs to execute inspection in[0m
+[37m  [0m[34m-0[0m[37m[[0m[36moctal[0m[37m]       specify record separator (\0, if no argument)[0m
 [37m  [0m[34m-Cdirectory[0m[37m     cd to directory before executing your script[0m
-[37m  [0m[34m-e[0m[37m [0m[37m'command'[0m[37m    one line of script. Several -e's allowed. Omit [programfile][0m
-[37m  [0m[34m-Eex[0m[37m[[0m[37m:in[0m[37m], [0m[34m--encoding[0m[37m=[0m[37mex[0m[37m[[0m[37m:in[0m[37m][0m
+[37m  [0m[34m-e[0m[37m [0m[36m'command'[0m[37m    one line of script. Several -e's allowed. Omit [programfile][0m
+[37m  [0m[34m-Eex[0m[37m[[0m[36m:in[0m[37m], [0m[34m--encoding[0m[37m=[0m[36mex[0m[37m[[0m[36m:in[0m[37m][0m
 [37m  [0m[34m-rlibrary[0m[37m       require the library before executing your script[0m
-[37m  [0m[34m-W[0m[37m[[0m[37mlevel=2[0m[33m|[0m[37m:category[0m[37m][0m
-[37m  [0m[34m--jit-[0m[37m[[0m[37moption[0m[37m]  enable JIT with an option (experimental)[0m
-[37m  [0m[34m--dump[0m[37m={[0m[37minsns[0m[33m|[0m[37mparsetree[0m[33m|[0m[37m...[0m[37m}[[0m[37m,...[0m[37m][0m
-[37m  [0m[34m--external-encoding[0m[37m=[0m[37mencoding[0m[37m, [0m[34m--internal-encoding[0m[37m=[0m[37mencoding[0m
-[37m  [0m[34m--backtrace-limit[0m[37m=[0m[37mnum[0m
+[37m  [0m[34m-W[0m[37m[[0m[36mlevel=2[0m[37m|[0m[36m:category[0m[37m][0m
+[37m  [0m[34m--jit-[0m[37m[[0m[36moption[0m[37m]  enable JIT with an option (experimental)[0m
+[37m  [0m[34m--dump[0m[37m={[0m[36minsns[0m[37m|[0m[36mparsetree[0m[37m|[0m[36m...[0m[37m}[[0m[36m,...[0m[37m][0m
+[37m  [0m[34m--external-encoding[0m[37m=[0m[36mencoding[0m[37m, [0m[34m--internal-encoding[0m[37m=[0m[36mencoding[0m
+[37m  [0m[34m--backtrace-limit[0m[37m=[0m[36mnum[0m
 [37m  [0m[34m-h[0m[37m | [0m[34m--help[0m[37m         print this message[0m
-[37m  [0m[34m--color[0m[37m=[0m[37mauto[0m[37m|[0m[37malways[0m[37m|[0m[37mtrue[0m[37m|[0m[37mfalse[0m[37m|[0m[37mnever[0m
-[37m  [0m[34m-w[0m[37m {[0m[37mshow[0m[33m,[0m[37mhide[0m[33m,[0m[37monly[0m[37m}, [0m[34m--window[0m[37m {[0m[37mshow[0m[33m,[0m[37mhide[0m[33m,[0m[37monly[0m[37m}[0m
+[37m  [0m[34m--color[0m[37m=[0m[36mauto[0m[37m|[0m[36malways[0m[37m|[0m[36mtrue[0m[37m|[0m[36mfalse[0m[37m|[0m[36mnever[0m
+[37m  [0m[34m-w[0m[37m {[0m[36mshow[0m[37m,[0m[36mhide[0m[37m,[0m[36monly[0m[37m}, [0m[34m--window[0m[37m {[0m[36mshow[0m[37m,[0m[36mhide[0m[37m,[0m[36monly[0m[37m}[0m
 [37m   [0m[34m-h[0m[37m  or  [0m[34m--help[0m[37m	Print Help (this message) and exit[0m
-[37m  [0m[34m--display[0m[37m [0m[37mdisplayname[0m
-[37m  [0m[34m-t[0m[37m [0m[37mms[0m[37m, [0m[34m--selectionTimeout[0m[37m [0m[37mms[0m
+[37m  [0m[34m--display[0m[37m [0m[36mdisplayname[0m
+[37m  [0m[34m-t[0m[37m [0m[36mms[0m[37m, [0m[34m--selectionTimeout[0m[37m [0m[36mms[0m
 [37m      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files[0m
 [37m   [0m[35m--[0m[37m			Only file names after this[0m
 
@@ -114,9 +114,9 @@
 [38;5;9mpath/.to/file[0m
 
 [37m   [0m[35m+[0m[37m			Start at end of file[0m
-[37m   [0m[35m+[0m[37m<lnum>[0m[37m		Start at line <lnum>[0m
-[35m+[0m[37mLINE[0m[37m                   go to line LINE in next FILE[0m
-[35m+[0m[37mLINE:COLUMN[0m[37m            go to line LINE, column COLUMN, in next FILE[0m
+[37m   [0m[35m+[0m[36m<lnum>[0m[37m		Start at line <lnum>[0m
+[35m+[0m[36mLINE[0m[37m                   go to line LINE in next FILE[0m
+[35m+[0m[36mLINE:COLUMN[0m[37m            go to line LINE, column COLUMN, in next FILE[0m
 
 
 [37m## PRE-EXISTING FORMAT:[0m
