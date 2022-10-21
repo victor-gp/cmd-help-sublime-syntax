@@ -6,7 +6,7 @@ Most of these lines come from actual help messages in tests/source/.
 ## QUICK REFERENCE:
 
 [32mHEADING:[0m
-[34m--option[0m [33m<argument>[0m   bla bla bla
+[34m--option[0m [35m<argument>[0m   bla bla bla
 [35msubcommand[0m            bla bla bla
 [32mARGUMENT[0m              or ENV sometimes
 [33mpath/to/file[0m          bla bla bla
@@ -34,50 +34,50 @@ nor if it begins with lowercase
 ## OPTION PATTERNS:
 
     [34m-A[0m, [34m--show-all[0m
-    [34m-l[0m, [34m--language[0m [33m<language>[0m
-    [34m-H[0m, [34m--highlight-line[0m [33m<N:M>[0m[33m...[0m
-        [34m--file-name[0m [33m<name>[0m[33m...[0m
-      [34m--backup[0m[=[33mCONTROL[0m]       make a backup of each existing destination file
-      [34m--no-preserve[0m=[33mATTR_LIST[0m  don't preserve the specified attributes
+    [34m-l[0m, [34m--language[0m [35m<language>[0m
+    [34m-H[0m, [34m--highlight-line[0m [35m<N:M>[0m[35m...[0m
+        [34m--file-name[0m [35m<name>[0m[35m...[0m
+      [34m--backup[0m[=[35mCONTROL[0m]       make a backup of each existing destination file
+      [34m--no-preserve[0m=[35mATTR_LIST[0m  don't preserve the specified attributes
   [34m-R[0m, [34m-r[0m, [34m--recursive[0m          copy directories recursively
-	[34m-ilrsD[0m or [34m-c[0m [33mcommand[0m or [34m-O[0m [33mshopt_option[0m		(invocation only)
-     [34m--alt-svc[0m [33m<file name>[0m Enable alt-svc with this cache file
- [34m-b[0m, [34m--cookie[0m [33m<data|filename>[0m Send cookies from string/file
+	[34m-ilrsD[0m or [34m-c[0m [35mcommand[0m or [34m-O[0m [35mshopt_option[0m		(invocation only)
+     [34m--alt-svc[0m [35m<file name>[0m Enable alt-svc with this cache file
+ [34m-b[0m, [34m--cookie[0m [35m<data|filename>[0m Send cookies from string/file
      [34m--tlsv1.0[0m       Use TLSv1.0 or greater
-      [34m--label[0m [33mLABEL[0m             use LABEL instead of file name and timestamp
-      [34m--from-file[0m=[33mFILE1[0m           compare FILE1 to all operands;
-  [34m--help[0m={[33mcommon[0m|[33moptimizers[0m|[33mparams[0m|[33mtarget[0m|[33mwarnings[0m|[33m[^]{joined[0m|[33mseparate[0m|[33mundocumented[0m}}[,...].
+      [34m--label[0m [35mLABEL[0m             use LABEL instead of file name and timestamp
+      [34m--from-file[0m=[35mFILE1[0m           compare FILE1 to all operands;
+  [34m--help[0m={[35mcommon[0m|[35moptimizers[0m|[35mparams[0m|[35mtarget[0m|[35mwarnings[0m|[35m[^]{joined[0m|[35mseparate[0m|[35mundocumented[0m}}[,...].
   [34m-print-search-dirs[0m       Display the directories in the compiler's search path.
-  [34m-print-file-name[0m=[33m<lib>[0m   Display the full path to library <lib>.
-  [34m-Wa[0m,[33m<options>[0m            Pass comma-separated <options> on to the assembler.
+  [34m-print-file-name[0m=[35m<lib>[0m   Display the full path to library <lib>.
+  [34m-Wa[0m,[35m<options>[0m            Pass comma-separated <options> on to the assembler.
 [34m-C[0m [34m--no-color[0m               Use a monochrome color scheme
-  [34m-r[0m [33mload-module[0m    Same as `ruby -r'
+  [34m-r[0m [35mload-module[0m    Same as `ruby -r'
   [34m--sample-book-mode[0m/[34m--simple-prompt[0m
-    [34m-D[0m[33m<name>[0m=[33m<value>[0m
-    [34m-verbose[0m:[[33mclass[0m|[33mgc[0m|[33mjni[0m]
-    [34m-version[0m:[33m<value>[0m
-    [34m-ea[0m[[33m:<packagename>...[0m|[33m:<classname>[0m]
-    [34m-agentlib[0m:[33m<libname>[0m[=[33m<options>[0m]
+    [34m-D[0m[35m<name>[0m=[35m<value>[0m
+    [34m-verbose[0m:[[35mclass[0m|[35mgc[0m|[35mjni[0m]
+    [34m-version[0m:[35m<value>[0m
+    [34m-ea[0m[[35m:<packagename>...[0m|[35m:<classname>[0m]
+    [34m-agentlib[0m:[35m<libname>[0m[=[35m<options>[0m]
  [34m-A[0m             [34m--smarthome[0m             Enable smart home key
-[34m-m[0m [33mmod[0m : run library module as a script (terminates option list)
-        [34m--except[0m [[33mCOP1,COP2,...[0m]     Exclude the given cop(s).
-    [34m-P[0m, [34m--[0m[[33mno-[0m]parallel              Use available CPUs to execute inspection in
-  [34m-0[0m[[33moctal[0m]       specify record separator (\0, if no argument)
+[34m-m[0m [35mmod[0m : run library module as a script (terminates option list)
+        [34m--except[0m [[35mCOP1,COP2,...[0m]     Exclude the given cop(s).
+    [34m-P[0m, [34m--[0m[[35mno-[0m]parallel              Use available CPUs to execute inspection in
+  [34m-0[0m[[35moctal[0m]       specify record separator (\0, if no argument)
   [34m-Cdirectory[0m     cd to directory before executing your script
-  [34m-e[0m [33m'command'[0m    one line of script. Several -e's allowed. Omit [programfile]
-  [34m-Eex[0m[[33m:in[0m], [34m--encoding[0m=[33mex[0m[[33m:in[0m]
+  [34m-e[0m [35m'command'[0m    one line of script. Several -e's allowed. Omit [programfile]
+  [34m-Eex[0m[[35m:in[0m], [34m--encoding[0m=[35mex[0m[[35m:in[0m]
   [34m-rlibrary[0m       require the library before executing your script
-  [34m-W[0m[[33mlevel=2[0m|[33m:category[0m]
-  [34m--jit-[0m[[33moption[0m]  enable JIT with an option (experimental)
-  [34m--dump[0m={[33minsns[0m|[33mparsetree[0m|[33m...[0m}[[33m,...[0m]
-  [34m--external-encoding[0m=[33mencoding[0m, [34m--internal-encoding[0m=[33mencoding[0m
-  [34m--backtrace-limit[0m=[33mnum[0m
+  [34m-W[0m[[35mlevel=2[0m|[35m:category[0m]
+  [34m--jit-[0m[[35moption[0m]  enable JIT with an option (experimental)
+  [34m--dump[0m={[35minsns[0m|[35mparsetree[0m|[35m...[0m}[[35m,...[0m]
+  [34m--external-encoding[0m=[35mencoding[0m, [34m--internal-encoding[0m=[35mencoding[0m
+  [34m--backtrace-limit[0m=[35mnum[0m
   [34m-h[0m | [34m--help[0m         print this message
-  [34m--color[0m=[33mauto[0m|[33malways[0m|[33mtrue[0m|[33mfalse[0m|[33mnever[0m
-  [34m-w[0m {[33mshow[0m,[33mhide[0m,[33monly[0m}, [34m--window[0m {[33mshow[0m,[33mhide[0m,[33monly[0m}
+  [34m--color[0m=[35mauto[0m|[35malways[0m|[35mtrue[0m|[35mfalse[0m|[35mnever[0m
+  [34m-w[0m {[35mshow[0m,[35mhide[0m,[35monly[0m}, [34m--window[0m {[35mshow[0m,[35mhide[0m,[35monly[0m}
    [34m-h[0m  or  [34m--help[0m	Print Help (this message) and exit
-  [34m--display[0m [33mdisplayname[0m
-  [34m-t[0m [33mms[0m, [34m--selectionTimeout[0m [33mms[0m
+  [34m--display[0m [35mdisplayname[0m
+  [34m-t[0m [35mms[0m, [34m--selectionTimeout[0m [35mms[0m
       [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files
    [35m--[0m			Only file names after this
 
@@ -114,9 +114,9 @@ nor if it begins with lowercase
 [33mpath/.to/file[0m
 
    [35m+[0m			Start at end of file
-   [35m+[0m[33m<lnum>[0m		Start at line <lnum>
-[35m+[0m[33mLINE[0m                   go to line LINE in next FILE
-[35m+[0m[33mLINE:COLUMN[0m            go to line LINE, column COLUMN, in next FILE
+   [35m+[0m[35m<lnum>[0m		Start at line <lnum>
+[35m+[0m[35mLINE[0m                   go to line LINE in next FILE
+[35m+[0m[35mLINE:COLUMN[0m            go to line LINE, column COLUMN, in next FILE
 
 
 ## PRE-EXISTING FORMAT:
