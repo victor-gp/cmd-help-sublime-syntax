@@ -8,8 +8,8 @@
 [32mHEADING:[0m
 [34m--option[0m[37m [0m[38;5;9m<argument>[0m[37m   bla bla bla[0m
 [35msubcommand[0m[37m            bla bla bla[0m
-[37mARGUMENT[0m[37m              or ENV sometimes[0m
-[38;5;9mpath/to/file[0m[37m          bla bla bla[0m
+[38;5;9mARGUMENT[0m[37m              or ENV sometimes[0m
+[37mpath/to/file[0m[37m          bla bla bla[0m
 [35m--[0m[37m                    bla bla bla[0m
 
 
@@ -86,9 +86,9 @@
 
 [37m(collapse with other patterns?)[0m
 
-[37m    [0m[37m<FILE>...[0m
-[37m-[0m[37m      : program read from stdin (default; interactive mode if a tty)[0m
-[37marg[0m[37m [0m[37m...[0m[37m: arguments passed to program in sys.argv[1:][0m
+[37m    [0m[38;5;9m<FILE>...[0m
+[38;5;9m-[0m[37m      : program read from stdin (default; interactive mode if a tty)[0m
+[38;5;9marg[0m[37m [0m[38;5;9m...[0m[37m: arguments passed to program in sys.argv[1:][0m
 
 
 [37m## OTHER PATTERNS:[0m
@@ -104,14 +104,14 @@
 [37m  [0m[35mfrozen-string-literal[0m
 [35mfile[0m[37m   : program read from script file[0m
 
-[37mFILE[0m[37m                    visit FILE[0m
-[37mPYTHONSTARTUP[0m[37m: file executed on interactive startup (no default)[0m
-[37m  [0m[37mJAVA_OPTS[0m[37m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
-[37m  [0m[37m'warn'[0m[37m         diagnose errors writing to any output[0m
+[38;5;9mFILE[0m[37m                    visit FILE[0m
+[38;5;9mPYTHONSTARTUP[0m[37m: file executed on interactive startup (no default)[0m
+[37m  [0m[38;5;9mJAVA_OPTS[0m[37m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
+[37m  [0m[38;5;9m'warn'[0m[37m         diagnose errors writing to any output[0m
 
-[37m  [0m[38;5;9m.jvmopts[0m[37m            if this file exists in the current directory, its contents[0m
-[37m  [0m[38;5;9m/etc/sbt/sbtopts[0m[37m    if this file exists, it is prepended to the runner args[0m
-[38;5;9mpath/.to/file[0m
+[37m  [0m[37m.jvmopts[0m[37m            if this file exists in the current directory, its contents[0m
+[37m  [0m[37m/etc/sbt/sbtopts[0m[37m    if this file exists, it is prepended to the runner args[0m
+[37mpath/.to/file[0m
 
 [37m   [0m[35m+[0m[37m			Start at end of file[0m
 [37m   [0m[35m+[0m[38;5;9m<lnum>[0m[37m		Start at line <lnum>[0m

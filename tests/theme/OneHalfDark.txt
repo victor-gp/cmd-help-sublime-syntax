@@ -8,8 +8,8 @@
 [38;2;152;195;121mHEADING:[0m
 [38;2;97;175;239m--option[0m[38;2;220;223;228m [0m[38;2;229;192;123m<argument>[0m[38;2;220;223;228m   bla bla bla[0m
 [38;2;198;120;221msubcommand[0m[38;2;220;223;228m            bla bla bla[0m
-[38;2;224;108;117mARGUMENT[0m[38;2;220;223;228m              or ENV sometimes[0m
-[38;2;229;192;123mpath/to/file[0m[38;2;220;223;228m          bla bla bla[0m
+[38;2;229;192;123mARGUMENT[0m[38;2;220;223;228m              or ENV sometimes[0m
+[38;2;224;108;117mpath/to/file[0m[38;2;220;223;228m          bla bla bla[0m
 [38;2;198;120;221m--[0m[38;2;220;223;228m                    bla bla bla[0m
 
 
@@ -86,9 +86,9 @@
 
 [38;2;220;223;228m(collapse with other patterns?)[0m
 
-[38;2;220;223;228m    [0m[38;2;224;108;117m<FILE>...[0m
-[38;2;224;108;117m-[0m[38;2;220;223;228m      : program read from stdin (default; interactive mode if a tty)[0m
-[38;2;224;108;117marg[0m[38;2;220;223;228m [0m[38;2;224;108;117m...[0m[38;2;220;223;228m: arguments passed to program in sys.argv[1:][0m
+[38;2;220;223;228m    [0m[38;2;229;192;123m<FILE>...[0m
+[38;2;229;192;123m-[0m[38;2;220;223;228m      : program read from stdin (default; interactive mode if a tty)[0m
+[38;2;229;192;123marg[0m[38;2;220;223;228m [0m[38;2;229;192;123m...[0m[38;2;220;223;228m: arguments passed to program in sys.argv[1:][0m
 
 
 [38;2;220;223;228m## OTHER PATTERNS:[0m
@@ -104,14 +104,14 @@
 [38;2;220;223;228m  [0m[38;2;198;120;221mfrozen-string-literal[0m
 [38;2;198;120;221mfile[0m[38;2;220;223;228m   : program read from script file[0m
 
-[38;2;224;108;117mFILE[0m[38;2;220;223;228m                    visit FILE[0m
-[38;2;224;108;117mPYTHONSTARTUP[0m[38;2;220;223;228m: file executed on interactive startup (no default)[0m
-[38;2;220;223;228m  [0m[38;2;224;108;117mJAVA_OPTS[0m[38;2;220;223;228m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
-[38;2;220;223;228m  [0m[38;2;224;108;117m'warn'[0m[38;2;220;223;228m         diagnose errors writing to any output[0m
+[38;2;229;192;123mFILE[0m[38;2;220;223;228m                    visit FILE[0m
+[38;2;229;192;123mPYTHONSTARTUP[0m[38;2;220;223;228m: file executed on interactive startup (no default)[0m
+[38;2;220;223;228m  [0m[38;2;229;192;123mJAVA_OPTS[0m[38;2;220;223;228m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
+[38;2;220;223;228m  [0m[38;2;229;192;123m'warn'[0m[38;2;220;223;228m         diagnose errors writing to any output[0m
 
-[38;2;220;223;228m  [0m[38;2;229;192;123m.jvmopts[0m[38;2;220;223;228m            if this file exists in the current directory, its contents[0m
-[38;2;220;223;228m  [0m[38;2;229;192;123m/etc/sbt/sbtopts[0m[38;2;220;223;228m    if this file exists, it is prepended to the runner args[0m
-[38;2;229;192;123mpath/.to/file[0m
+[38;2;220;223;228m  [0m[38;2;224;108;117m.jvmopts[0m[38;2;220;223;228m            if this file exists in the current directory, its contents[0m
+[38;2;220;223;228m  [0m[38;2;224;108;117m/etc/sbt/sbtopts[0m[38;2;220;223;228m    if this file exists, it is prepended to the runner args[0m
+[38;2;224;108;117mpath/.to/file[0m
 
 [38;2;220;223;228m   [0m[38;2;198;120;221m+[0m[38;2;220;223;228m			Start at end of file[0m
 [38;2;220;223;228m   [0m[38;2;198;120;221m+[0m[38;2;229;192;123m<lnum>[0m[38;2;220;223;228m		Start at line <lnum>[0m

@@ -64,17 +64,13 @@ scope_variables: # last scope is matched first
     # perhaps including entity.name.tag in the rotation.
     constant.other.option-argument.cmd-help
 
-  # argument definitions (99% confidence)
-  - &ARGUMENT_DEF_SCOPES # =~ option argument
-    string.argument.cmd-help
-    variable.other.argument.cmd-help
-    variable.parameter.argument.cmd-help
+  # argument definitions (99% confidence) =~ option argument
+  - &ARGUMENT_DEF_SCOPES
+    constant.other.argument.cmd-help
 
-  # mostly all-caps definitions. usually environment variables or arguments
-  - &OTHER_VAL_DEF_SCOPES # =~ option argument
-    string.other-value.cmd-help
-    variable.other.other-value.cmd-help
-    variable.parameter.other-value.cmd-help
+  # mostly all-caps definitions. usually envs or args =~ option argument
+  - &OTHER_VAL_DEF_SCOPES
+    constant.other.other-value.cmd-help
 
   # non all-caps definitions: subcommands, argument enums, etc.
   - &OTHER_DEF_SCOPES
@@ -83,9 +79,10 @@ scope_variables: # last scope is matched first
     # variable.function ?
 
   - &FILE_DEF_SCOPES
-    constant.file.cmd-help
-    # variable.other.readwrite.file.cmd-help
-    # string.file.cmd-help
+    constant
+    variable.other.readwrite
+    constant.character.file.cmd-help
+    variable.parameter
 
 
 contexts:

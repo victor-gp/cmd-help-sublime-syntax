@@ -8,8 +8,8 @@ Most of these lines come from actual help messages in tests/source/.
 [32mHEADING:[0m
 [34m--option[0m [33m<argument>[0m   bla bla bla
 [35msubcommand[0m            bla bla bla
-[32mARGUMENT[0m              or ENV sometimes
-[33mpath/to/file[0m          bla bla bla
+[33mARGUMENT[0m              or ENV sometimes
+path/to/file          bla bla bla
 [35m--[0m                    bla bla bla
 
 
@@ -86,9 +86,9 @@ nor if it begins with lowercase
 
 (collapse with other patterns?)
 
-    [32m<FILE>...[0m
-[32m-[0m      : program read from stdin (default; interactive mode if a tty)
-[32marg[0m [32m...[0m: arguments passed to program in sys.argv[1:]
+    [33m<FILE>...[0m
+[33m-[0m      : program read from stdin (default; interactive mode if a tty)
+[33marg[0m [33m...[0m: arguments passed to program in sys.argv[1:]
 
 
 ## OTHER PATTERNS:
@@ -104,14 +104,14 @@ nor if it begins with lowercase
   [35mfrozen-string-literal[0m
 [35mfile[0m   : program read from script file
 
-[32mFILE[0m                    visit FILE
-[32mPYTHONSTARTUP[0m: file executed on interactive startup (no default)
-  [32mJAVA_OPTS[0m           environment variable, if unset uses "-Dfile.encoding=UTF-8"
-  [32m'warn'[0m         diagnose errors writing to any output
+[33mFILE[0m                    visit FILE
+[33mPYTHONSTARTUP[0m: file executed on interactive startup (no default)
+  [33mJAVA_OPTS[0m           environment variable, if unset uses "-Dfile.encoding=UTF-8"
+  [33m'warn'[0m         diagnose errors writing to any output
 
-  [33m.jvmopts[0m            if this file exists in the current directory, its contents
-  [33m/etc/sbt/sbtopts[0m    if this file exists, it is prepended to the runner args
-[33mpath/.to/file[0m
+  .jvmopts            if this file exists in the current directory, its contents
+  /etc/sbt/sbtopts    if this file exists, it is prepended to the runner args
+path/.to/file
 
    [35m+[0m			Start at end of file
    [35m+[0m[33m<lnum>[0m		Start at line <lnum>
