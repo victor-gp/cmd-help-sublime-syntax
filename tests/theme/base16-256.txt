@@ -46,7 +46,7 @@
 [37m     [0m[34m--tlsv1.0[0m[37m       Use TLSv1.0 or greater[0m
 [37m      [0m[34m--label[0m[37m [0m[37mLABEL[0m[37m             use LABEL instead of file name and timestamp[0m
 [37m      [0m[34m--from-file[0m[37m=[0m[37mFILE1[0m[37m           compare FILE1 to all operands;[0m
-[37m  [0m[34m--help[0m[37m={[0m[37mcommon[0m[37m|[0m[37moptimizers[0m[37m|[0m[37mparams[0m[37m|[0m[37mtarget[0m[37m|[0m[37mwarnings[0m[37m|[0m[37m[^]{joined[0m[37m|[0m[37mseparate[0m[37m|[0m[37mundocumented[0m[37m}}[,...].[0m
+[37m  [0m[34m--help[0m[37m={[0m[37mcommon[0m[32m|[0m[37moptimizers[0m[32m|[0m[37mparams[0m[32m|[0m[37mtarget[0m[32m|[0m[37mwarnings[0m[32m|[0m[37m[^]{joined[0m[32m|[0m[37mseparate[0m[32m|[0m[37mundocumented[0m[37m}}[,...].[0m
 [37m  [0m[34m-print-search-dirs[0m[37m       Display the directories in the compiler's search path.[0m
 [37m  [0m[34m-print-file-name[0m[37m=[0m[37m<lib>[0m[37m   Display the full path to library <lib>.[0m
 [37m  [0m[34m-Wa[0m[37m,[0m[37m<options>[0m[37m            Pass comma-separated <options> on to the assembler.[0m
@@ -54,9 +54,9 @@
 [37m  [0m[34m-r[0m[37m [0m[37mload-module[0m[37m    Same as `ruby -r'[0m
 [37m  [0m[34m--sample-book-mode[0m[37m/[0m[34m--simple-prompt[0m
 [37m    [0m[34m-D[0m[37m<name>[0m[37m=[0m[37m<value>[0m
-[37m    [0m[34m-verbose[0m[37m:[[0m[37mclass[0m[37m|[0m[37mgc[0m[37m|[0m[37mjni[0m[37m][0m
+[37m    [0m[34m-verbose[0m[37m:[[0m[37mclass[0m[32m|[0m[37mgc[0m[32m|[0m[37mjni[0m[37m][0m
 [37m    [0m[34m-version[0m[37m:[0m[37m<value>[0m
-[37m    [0m[34m-ea[0m[37m[[0m[37m:<packagename>...[0m[37m|[0m[37m:<classname>[0m[37m][0m
+[37m    [0m[34m-ea[0m[37m[[0m[37m:<packagename>...[0m[32m|[0m[37m:<classname>[0m[37m][0m
 [37m    [0m[34m-agentlib[0m[37m:[0m[37m<libname>[0m[37m[=[0m[37m<options>[0m[37m][0m
 [37m [0m[34m-A[0m[37m             [0m[34m--smarthome[0m[37m             Enable smart home key[0m
 [34m-m[0m[37m [0m[37mmod[0m[37m : run library module as a script (terminates option list)[0m
@@ -67,14 +67,14 @@
 [37m  [0m[34m-e[0m[37m [0m[37m'command'[0m[37m    one line of script. Several -e's allowed. Omit [programfile][0m
 [37m  [0m[34m-Eex[0m[37m[[0m[37m:in[0m[37m], [0m[34m--encoding[0m[37m=[0m[37mex[0m[37m[[0m[37m:in[0m[37m][0m
 [37m  [0m[34m-rlibrary[0m[37m       require the library before executing your script[0m
-[37m  [0m[34m-W[0m[37m[[0m[37mlevel=2[0m[37m|[0m[37m:category[0m[37m][0m
+[37m  [0m[34m-W[0m[37m[[0m[37mlevel=2[0m[32m|[0m[37m:category[0m[37m][0m
 [37m  [0m[34m--jit-[0m[37m[[0m[37moption[0m[37m]  enable JIT with an option (experimental)[0m
-[37m  [0m[34m--dump[0m[37m={[0m[37minsns[0m[37m|[0m[37mparsetree[0m[37m|[0m[37m...[0m[37m}[[0m[37m,...[0m[37m][0m
+[37m  [0m[34m--dump[0m[37m={[0m[37minsns[0m[32m|[0m[37mparsetree[0m[32m|[0m[37m...[0m[37m}[[0m[37m,...[0m[37m][0m
 [37m  [0m[34m--external-encoding[0m[37m=[0m[37mencoding[0m[37m, [0m[34m--internal-encoding[0m[37m=[0m[37mencoding[0m
 [37m  [0m[34m--backtrace-limit[0m[37m=[0m[37mnum[0m
 [37m  [0m[34m-h[0m[37m | [0m[34m--help[0m[37m         print this message[0m
 [37m  [0m[34m--color[0m[37m=[0m[37mauto[0m[37m|[0m[37malways[0m[37m|[0m[37mtrue[0m[37m|[0m[37mfalse[0m[37m|[0m[37mnever[0m
-[37m  [0m[34m-w[0m[37m {[0m[37mshow[0m[37m,[0m[37mhide[0m[37m,[0m[37monly[0m[37m}, [0m[34m--window[0m[37m {[0m[37mshow[0m[37m,[0m[37mhide[0m[37m,[0m[37monly[0m[37m}[0m
+[37m  [0m[34m-w[0m[37m {[0m[37mshow[0m[32m,[0m[37mhide[0m[32m,[0m[37monly[0m[37m}, [0m[34m--window[0m[37m {[0m[37mshow[0m[32m,[0m[37mhide[0m[32m,[0m[37monly[0m[37m}[0m
 [37m   [0m[34m-h[0m[37m  or  [0m[34m--help[0m[37m	Print Help (this message) and exit[0m
 [37m  [0m[34m--display[0m[37m [0m[37mdisplayname[0m
 [37m  [0m[34m-t[0m[37m [0m[37mms[0m[37m, [0m[34m--selectionTimeout[0m[37m [0m[37mms[0m
