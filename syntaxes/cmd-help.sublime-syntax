@@ -60,6 +60,8 @@ scope_variables: # last scope is matched first
     entity.name.function.option.cmd-help
 
   - &OPTION_ARGUMENT_SCOPES
+    # todo: consider swapping this with OTHER_DEF_SCOPES,
+    # perhaps including entity.name.tag in the rotation.
     constant.other.option-argument.cmd-help
 
   # argument definitions (99% confidence)
