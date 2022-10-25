@@ -4,6 +4,10 @@ Usage: dpkg [<option> ...] <command>
 
 Commands:
   -i|--install       <.deb file name>... | -R|--recursive <directory>...
+# ^^ entity.name.function.option.cmd-help
+#   ^ entity.name.function.option.cmd-help
+#    ^^^^^^^^ entity.name.function.option.cmd-help
+#nice: un-scope the connector in -o|--option
   --unpack           <.deb file name>... | -R|--recursive <directory>...
   -A|--record-avail  <.deb file name>... | -R|--recursive <directory>...
   --configure        <package>... | -a|--pending
@@ -32,14 +36,20 @@ Commands:
   --print-foreign-architectures    Print allowed foreign architectures.
   --assert-<feature>               Assert support for the specified feature.
   --validate-<thing> <string>      Validate a <thing>'s <string>.
-#                    ^^^^^^^^
-#nice: handle series of arguments like these
+# ^^^^^^^^^^^ entity.name.function.option.cmd-help
+#            ^^^^^^^ variable.parameter.option-argument.cmd-help
+#                   ^ - variable.parameter.option-argument.cmd-help
+#                    ^^^^^^^^ - variable.parameter.option-argument.cmd-help
+#nice: handle --option-<arg> <arg>
   --compare-versions <a> <op> <b>  Compare version numbers - see below.
+# ^^^^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help
+#                   ^ - entity.name.function.option.cmd-help variable.parameter.option-argument.cmd-help
 #                    ^^^ variable.parameter.option-argument.cmd-help
 #                       ^ - variable.parameter.option-argument.cmd-help
 #                        ^^^^ - variable.parameter.option-argument.cmd-help
 #                            ^ - variable.parameter.option-argument.cmd-help
 #                             ^^^ - variable.parameter.option-argument.cmd-help
+#nice: handle --option( <arg>)+
   --force-help                     Show help on forcing.
   -Dh|--debug=help                 Show help on debugging.
 
