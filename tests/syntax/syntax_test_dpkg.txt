@@ -5,9 +5,8 @@ Usage: dpkg [<option> ...] <command>
 Commands:
   -i|--install       <.deb file name>... | -R|--recursive <directory>...
 # ^^ entity.name.function.option.cmd-help
-#   ^ entity.name.function.option.cmd-help
+#   ^ - entity.name.function.option.cmd-help
 #    ^^^^^^^^ entity.name.function.option.cmd-help
-#nice: un-scope the connector in -o|--option
   --unpack           <.deb file name>... | -R|--recursive <directory>...
   -A|--record-avail  <.deb file name>... | -R|--recursive <directory>...
   --configure        <package>... | -a|--pending

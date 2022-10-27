@@ -1,14 +1,14 @@
 [38;2;253;151;31mUsage:[0m[38;2;248;248;242m dpkg [<option> ...] <command>[0m
 
 [38;2;253;151;31mCommands:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-i|--install[0m[38;2;248;248;242m       <.deb file name>... | -R|--recursive <directory>...[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--install[0m[38;2;248;248;242m       <.deb file name>... | -R|--recursive <directory>...[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--unpack[0m[38;2;248;248;242m           <.deb file name>... | -R|--recursive <directory>...[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-A|--record-avail[0m[38;2;248;248;242m  <.deb file name>... | -R|--recursive <directory>...[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--record-avail[0m[38;2;248;248;242m  <.deb file name>... | -R|--recursive <directory>...[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--configure[0m[38;2;248;248;242m        <package>... | -a|--pending[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--triggers-only[0m[38;2;248;248;242m    <package>... | -a|--pending[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r|--remove[0m[38;2;248;248;242m        <package>... | -a|--pending[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-P|--purge[0m[38;2;248;248;242m         <package>... | -a|--pending[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-V|--verify[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<package>...[0m[38;2;248;248;242m]       Verify the integrity of package(s).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--remove[0m[38;2;248;248;242m        <package>... | -a|--pending[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--purge[0m[38;2;248;248;242m         <package>... | -a|--pending[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--verify[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<package>...[0m[38;2;248;248;242m]       Verify the integrity of package(s).[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--get-selections[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<pattern>...[0m[38;2;248;248;242m]  Get list of selections to stdout.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--set-selections[0m[38;2;248;248;242m                 Set package selections from stdin.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--clear-selections[0m[38;2;248;248;242m               Deselect every non-essential package.[0m
@@ -16,12 +16,12 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--merge-avail[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<Packages-file>[0m[38;2;248;248;242m]  Merge with info from file.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--clear-avail[0m[38;2;248;248;242m                    Erase existing available info.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--forget-old-unavail[0m[38;2;248;248;242m             Forget uninstalled unavailable pkgs.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-s|--status[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<package>...[0m[38;2;248;248;242m]       Display package status details.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-p|--print-avail[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<package>...[0m[38;2;248;248;242m]  Display available version details.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-L|--listfiles[0m[38;2;248;248;242m [0m[38;2;253;151;31m<package>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m      List files 'owned' by package(s).[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-l|--list[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<pattern>...[0m[38;2;248;248;242m]         List packages concisely.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S|--search[0m[38;2;248;248;242m [0m[38;2;253;151;31m<pattern>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m         Find package(s) owning file(s).[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-C|--audit[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<package>...[0m[38;2;248;248;242m]        Check for broken package(s).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--status[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<package>...[0m[38;2;248;248;242m]       Display package status details.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--print-avail[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<package>...[0m[38;2;248;248;242m]  Display available version details.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--listfiles[0m[38;2;248;248;242m [0m[38;2;253;151;31m<package>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m      List files 'owned' by package(s).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--list[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<pattern>...[0m[38;2;248;248;242m]         List packages concisely.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--search[0m[38;2;248;248;242m [0m[38;2;253;151;31m<pattern>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m         Find package(s) owning file(s).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--audit[0m[38;2;248;248;242m [[0m[38;2;253;151;31m<package>...[0m[38;2;248;248;242m]        Check for broken package(s).[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--yet-to-unpack[0m[38;2;248;248;242m                  Print packages selected for installation.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--predep-package[0m[38;2;248;248;242m                 Print pre-dependencies to unpack.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--add-architecture[0m[38;2;248;248;242m [0m[38;2;253;151;31m<arch>[0m[38;2;248;248;242m        Add <arch> to the list of architectures.[0m
@@ -32,7 +32,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--validate-[0m[38;2;253;151;31m<thing>[0m[38;2;248;248;242m <string>      Validate a <thing>'s <string>.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--compare-versions[0m[38;2;248;248;242m [0m[38;2;253;151;31m<a>[0m[38;2;248;248;242m <op> <b>  Compare version numbers - see below.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--force-help[0m[38;2;248;248;242m                     Show help on forcing.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Dh|--debug[0m[38;2;248;248;242m=[0m[38;2;253;151;31mhelp[0m[38;2;248;248;242m                 Show help on debugging.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Dh[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m=[0m[38;2;253;151;31mhelp[0m[38;2;248;248;242m                 Show help on debugging.[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-?[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                       Show this help message.[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                    Show the version.[0m
@@ -52,23 +52,23 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--instdir[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<directory>[0m[38;2;248;248;242m      Change installation dir without changing admin dir.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--path-exclude[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<pattern>[0m[38;2;248;248;242m   Do not install paths which match a shell pattern.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--path-include[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<pattern>[0m[38;2;248;248;242m   Re-include a pattern after a previous exclusion.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-O|--selected-only[0m[38;2;248;248;242m         Skip packages not selected for install/upgrade.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-E|--skip-same-version[0m[38;2;248;248;242m     Skip packages whose same version is installed.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-G|--refuse-downgrade[0m[38;2;248;248;242m      Skip packages with earlier version than installed.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-B|--auto-deconfigure[0m[38;2;248;248;242m      Install even if it would break some other package.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--selected-only[0m[38;2;248;248;242m         Skip packages not selected for install/upgrade.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--skip-same-version[0m[38;2;248;248;242m     Skip packages whose same version is installed.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--refuse-downgrade[0m[38;2;248;248;242m      Skip packages with earlier version than installed.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--auto-deconfigure[0m[38;2;248;248;242m      Install even if it would break some other package.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--[0m[38;2;248;248;242m[[0m[38;2;253;151;31mno-[0m[38;2;248;248;242m]triggers            Skip or force consequential trigger processing.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--verify-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<format>[0m[38;2;248;248;242m   Verify output format (supported: 'rpm').[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-debsig[0m[38;2;248;248;242m                Do not try to verify package signatures.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--no-act|--dry-run|--simulate[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--no-act[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--dry-run[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--simulate[0m
 [38;2;248;248;242m                             Just say what we would do - don't do it.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-D|--debug[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<octal>[0m[38;2;248;248;242m         Enable debugging (see -Dhelp or --debug=help).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<octal>[0m[38;2;248;248;242m         Enable debugging (see -Dhelp or --debug=help).[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--status-fd[0m[38;2;248;248;242m [0m[38;2;253;151;31m<n>[0m[38;2;248;248;242m            Send status change updates to file descriptor <n>.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--status-logger[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<command>[0m[38;2;248;248;242m  Send status change updates to <command>'s stdin.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--log[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<filename>[0m[38;2;248;248;242m           Log status changes and actions to <filename>.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--ignore-depends[0m[38;2;248;248;242m=[0m[38;2;253;151;31m<package>[0m[38;2;248;248;242m,...[0m
 [38;2;248;248;242m                             Ignore dependencies involving <package>.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--force-...[0m[38;2;248;248;242m                Override problems (see --force-help).[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--no-force-...|--refuse-...[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--no-force-...[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--refuse-...[0m
 [38;2;248;248;242m                             Stop when problems encountered.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--abort-after[0m[38;2;248;248;242m [0m[38;2;253;151;31m<n>[0m[38;2;248;248;242m          Abort after encountering <n> errors.[0m
 

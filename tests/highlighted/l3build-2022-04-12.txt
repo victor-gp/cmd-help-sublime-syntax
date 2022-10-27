@@ -1,0 +1,45 @@
+[38;2;253;151;31musage:[0m[38;2;248;248;242m l3build <target> [<options>] [<names>][0m
+
+[38;2;253;151;31mValid targets are:[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mcheck[0m[38;2;248;248;242m        Run all automated tests[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mclean[0m[38;2;248;248;242m        Clean out directory tree[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mctan[0m[38;2;248;248;242m         Create CTAN-ready archive[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mdoc[0m[38;2;248;248;242m          Typesets all documentation files[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114minstall[0m[38;2;248;248;242m      Installs files into the local texmf tree[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mmanifest[0m[38;2;248;248;242m     Creates a manifest file[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114msave[0m[38;2;248;248;242m         Saves test validation log[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mtag[0m[38;2;248;248;242m          Updates release tags in files[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114muninstall[0m[38;2;248;248;242m    Uninstalls files from the local texmf tree[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114munpack[0m[38;2;248;248;242m       Unpacks the source files into the build tree[0m
+[38;2;248;248;242m   [0m[38;2;249;38;114mupload[0m[38;2;248;248;242m       Send archive to CTAN for public release[0m
+
+[38;2;253;151;31mValid options are:[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-c[0m[38;2;248;248;242m            Sets the config(s) used for running tests[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--date[0m[38;2;248;248;242m                 Sets the date to insert into sources[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m                Runs target in debug mode[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--dirty[0m[38;2;248;248;242m                Skip cleaning up the test area[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--dry-run[0m[38;2;248;248;242m              Dry run for install or upload[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--email[0m[38;2;248;248;242m                Email address of CTAN uploader[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--engine[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-e[0m[38;2;248;248;242m            Sets the engine(s) to use for running test[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--epoch[0m[38;2;248;248;242m                Sets the epoch for tests and typesetting[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--file[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-F[0m[38;2;248;248;242m              Take the upload announcement from the given file[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--first[0m[38;2;248;248;242m                Name of first test to run[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--force[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-f[0m[38;2;248;248;242m             Force tests to run if engine is not set up[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--full[0m[38;2;248;248;242m                 Install all files[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--halt-on-error[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-H[0m[38;2;248;248;242m     Stops running tests after the first failure[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-h[0m[38;2;248;248;242m              Print this message and exit[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--last[0m[38;2;248;248;242m                 Name of last test to run[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--message[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-m[0m[38;2;248;248;242m           Text for upload announcement message[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-q[0m[38;2;248;248;242m             Suppresses TeX output when unpacking[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--rerun[0m[38;2;248;248;242m                Skip setup: simply rerun tests[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--show-log-on-error[0m[38;2;248;248;242m    Show the full log of the failure with 'halt-on-error'[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--show-saves[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-S[0m[38;2;248;248;242m        Show the invocation to update failing .tlg files[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--shuffle[0m[38;2;248;248;242m              Shuffle order of tests[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--texmfhome[0m[38;2;248;248;242m            Location of user texmf tree[0m
+[38;2;248;248;242m   [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m              Print version information and exit[0m
+
+[38;2;248;248;242mFull manual available via 'texdoc l3build'.[0m
+
+[38;2;248;248;242mRepository  : https://github.com/latex3/l3build[0m
+[38;2;248;248;242mBug tracker : https://github.com/latex3/l3build/issues[0m
+[38;2;248;248;242mCopyright (C) 2014-2021 The LaTeX Project[0m

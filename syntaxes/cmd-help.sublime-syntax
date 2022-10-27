@@ -20,7 +20,7 @@ variables:
   lookahead_40: '(?=.{1,40}\n)'
 
 ### command option variables:
-  option_break: '[ \t\n,=\[</:]'
+  option_break: '[ \t\n,=\[</:|]'
   # marks seen in options: . ? : # $ -- +
   option_char: '[^{{option_break}}]'
   option_name: '{{option_char}}+'
@@ -224,6 +224,8 @@ contexts:
     - match: ', '
       set: option-def-alt
     - match: ' \| '
+      set: option-def-alt
+    - match: '\|(?=-)'
       set: option-def-alt
     - match: ' / '
       set: option-def-alt
