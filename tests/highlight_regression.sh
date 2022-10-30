@@ -18,6 +18,9 @@ if [ ! "$CI" ]; then
     # have git tell the effective difference between the version of the syntax
     # in HEAD/staging and the one in working dir, for all highlighted samples
     GIT_PAGER='LESS=R less' git diff -- highlighted/
-else
-    git diff --exit-code -- highlighted > /dev/null
+
+elif ! git diff --exit-code -- highlighted > /dev/null; then
+    echo "::error::Generated highlight regression tests differ from those checked in." \
+        "Please run \`tests/highlight_regression.sh\` and add \`tests/highlighted/\` to the commit."
+    exit 1
 fi
