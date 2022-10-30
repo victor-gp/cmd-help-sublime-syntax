@@ -14,6 +14,10 @@ docker run --rm \
     -v "$vol1" -v "$vol2" \
     bat-test
 
-# have git tell the effective difference between the version of the syntax
-# in staging/HEAD and the one in working dir, for all highlighted samples
-GIT_PAGER='LESS=R less' git diff -- highlighted/
+if [ ! "$CI" ]; then
+    # have git tell the effective difference between the version of the syntax
+    # in HEAD/staging and the one in working dir, for all highlighted samples
+    GIT_PAGER='LESS=R less' git diff -- highlighted/
+else
+    git diff --exit-code -- highlighted > /dev/null
+fi
