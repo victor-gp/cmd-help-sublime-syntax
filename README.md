@@ -10,7 +10,7 @@ It provides just enough color to help find your way around a help message.
 
 Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/examples).
 
-## Table of Contents
+## :scroll: Table of Contents
 
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -19,7 +19,7 @@ Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syn
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
+## :wrench: Installation
 
 This syntax is included with `bat` since version 0.21.0.
 
@@ -27,7 +27,7 @@ If you have an older version of `bat`, you can add [this](./syntaxes/cmd-help.su
 
 Check it works properly by running `mv --help | bat -plhelp`
 
-## Configuration
+## :gear: Configuration
 
 ### Streamline it
 
@@ -55,7 +55,7 @@ To use a different theme, just append `--theme=<your preferred theme>` to your `
 
 You may also want to experiment with setting `--italic-text=always`. A few themes use italics on some elements, including Monokai.
 
-## Contributing
+## :sparkles: Contributing
 
 Contributions are welcome! :D
 
@@ -65,6 +65,6 @@ If you want to hack on the project, look at [the Development doc](./docs/Develop
 
 Also, this project participates in [Hacktoberfest 2022](https://hacktoberfest.com/). :jack_o_lantern:
 
-## License
+## :page_with_curl: License
 
 MIT © Víctor González Prieto
