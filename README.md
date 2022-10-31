@@ -67,4 +67,4 @@ Also, this project participates in [Hacktoberfest 2022](https://hacktoberfest.co
 
 ## :page_with_curl: License
 
-MIT © Víctor González Prieto
+[MIT](https://github.com/sb-decoder/cmd-help-sublime-syntax/blob/main/LICENSE) © Víctor González Prieto
