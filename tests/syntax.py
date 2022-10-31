@@ -9,7 +9,7 @@ import urllib.request
 ### config
 
 dockerfile_path = 'docker/syntest.dockerfile'
-image_tag = 'syntest'
+image_tag = 'syntest:latest'
 tests_dir = '/tests/syntax'
 syntaxes_path = '/syntaxes'
 volumes = f'-v="$PWD/syntax":{tests_dir} -v="$PWD/../syntaxes":{syntaxes_path}'
