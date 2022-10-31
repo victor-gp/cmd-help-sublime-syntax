@@ -30,7 +30,7 @@ jobs:
         with:
           context: .
           file: ./tests/docker/syntest.dockerfile
-          # tags: syntest:latest
+          tags: syntest
           # scope: main
           cache-from: type=gha
           cache-to: type=gha,mode=max
