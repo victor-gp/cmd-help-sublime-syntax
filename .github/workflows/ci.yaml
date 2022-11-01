@@ -29,8 +29,8 @@ jobs:
           context: .
           file: ./tests/docker/syntest.dockerfile
           tags: syntest
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-from: type=gha,scope=main
+          cache-to: type=gha,scope=main,mode=max
           load: true
       - name: Run syntax tests
         run: tests/syntax.py
