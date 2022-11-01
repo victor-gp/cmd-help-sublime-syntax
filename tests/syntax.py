@@ -3,7 +3,7 @@
 import argparse
 import subprocess
 from pathlib import Path
-from os import chdir
+from os import chdir, environ
 import urllib.request
 
 ### config
@@ -42,12 +42,19 @@ ret = subprocess.call(
     stderr=subprocess.DEVNULL
 )
 if ret != 0: # image doesn't exist
-    print("\033[34m" + "Docker image not available, building syntest from source..." + "\033[00m")
-    subprocess.call(
-        f"docker build -t {image_tag} - < {dockerfile_path}",
-        shell=True
-    )
-    print("\033[34m" + "Docker build ends here." + "\033[00m")
+    if not "CI" in environ:
+        print("\033[34m" + "Docker image not available, building syntest from source..." + "\033[00m")
+        subprocess.call(
+            f"docker build -t {image_tag} - < {dockerfile_path}",
+            shell=True
+        )
+        print("\033[34m" + "Docker image successfully built, tagged 'syntect'." + "\033[00m")
+    else:
+        subprocess.call(
+            f"buildctl build -t {image_tag} --import-cache type=gha - < {dockerfile_path}",
+            shell=True
+        )
+
 
 man_syntax_path = Path('../syntaxes/Manpage.sublime-syntax')
 if not man_syntax_path.is_file():
