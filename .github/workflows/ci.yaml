@@ -34,6 +34,7 @@ jobs:
           # scope: main
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          load: true
       - name: Run syntax tests
         run: tests/docker/syntax_ci.sh
 
