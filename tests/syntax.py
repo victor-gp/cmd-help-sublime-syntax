@@ -3,13 +3,13 @@
 import argparse
 import subprocess
 from pathlib import Path
-from os import chdir, environ
+from os import chdir
 import urllib.request
 
 ### config
 
 dockerfile_path = 'docker/syntest.dockerfile'
-image_tag = 'syntest:latest'
+image_tag = 'syntest'
 tests_dir = '/tests/syntax'
 syntaxes_path = '/syntaxes'
 volumes = f'-v="$PWD/syntax":{tests_dir} -v="$PWD/../syntaxes":{syntaxes_path}'
@@ -42,19 +42,12 @@ ret = subprocess.call(
     stderr=subprocess.DEVNULL
 )
 if ret != 0: # image doesn't exist
-    if not "CI" in environ:
-        print("\033[34m" + "Docker image not available, building syntest from source..." + "\033[00m")
-        subprocess.call(
-            f"docker build -t {image_tag} - < {dockerfile_path}",
-            shell=True
-        )
-        print("\033[34m" + "Docker image successfully built, tagged 'syntect'." + "\033[00m")
-    else:
-        subprocess.call(
-            f"buildctl build -t {image_tag} --import-cache type=gha - < {dockerfile_path}",
-            shell=True
-        )
-
+    print("\033[34m" + "Docker image not available, building syntest from source..." + "\033[00m")
+    subprocess.call(
+        f"docker build -t {image_tag} - < {dockerfile_path}",
+        shell=True
+    )
+    print("\033[34m" + "Docker image successfully built, tagged 'syntect'." + "\033[00m")
 
 man_syntax_path = Path('../syntaxes/Manpage.sublime-syntax')
 if not man_syntax_path.is_file():

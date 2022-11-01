@@ -23,15 +23,12 @@ jobs:
         with:
           python-version: '3.10'
       - uses: docker/setup-buildx-action@v2
-        with:
-          install: true
-      - name: Build and cache Syntest
+      - name: Build and cache syntest
         uses: docker/build-push-action@v3
         with:
           context: .
           file: ./tests/docker/syntest.dockerfile
-          tags: syntest:latest
-          # scope: main
+          tags: syntest
           cache-from: type=gha
           cache-to: type=gha,mode=max
           load: true
