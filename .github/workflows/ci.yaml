@@ -35,7 +35,7 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
       - name: Run syntax tests
-        run: tests/syntax.py
+        run: tests/docker/syntax_ci.sh
 
   highlight_regression_tests:
     name: Highlight regression tests
