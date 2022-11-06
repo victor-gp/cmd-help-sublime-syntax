@@ -8,9 +8,7 @@ usage: fzf [options]
     -e, --exact           Enable Exact-match
     -i                    Case-insensitive match (default: smart-case match)
     +i                    Case-sensitive match
-#   ^ entity.name.function.option.cmd-help
-#    ^ - entity.name.function.option.cmd-help
-#todo #8: scope +options
+#   ^^ entity.name.function.option.cmd-help
     --scheme=SCHEME       Scoring scheme [default|path|history]
     --literal             Do not normalize latin script letters before matching
     -n, --nth=N[,..]      Comma-separated list of field index expressions
@@ -20,10 +18,9 @@ usage: fzf [options]
                           field index expressions
     -d, --delimiter=STR   Field delimiter regex (default: AWK-style)
     +s, --no-sort         Do not sort the result
-#   ^ entity.name.function.option.cmd-help
-#    ^ - entity.name.function.option.cmd-help
+#   ^^ entity.name.function.option.cmd-help
 #     ^^ - entity.name.function.option.cmd-help
-#       ^^^^^^^^^ - entity.name.function.option.cmd-help
+#       ^^^^^^^^^ entity.name.function.option.cmd-help
     --tac                 Reverse the order of the input
     --disabled            Do not perform search
     --tiebreak=CRI[,..]   Comma-separated list of sort criteria to apply

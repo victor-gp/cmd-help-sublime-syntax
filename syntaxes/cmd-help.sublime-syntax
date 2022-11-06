@@ -331,6 +331,10 @@ contexts:
     - match: '{{allcaps_argument_name}}(:{{allcaps_argument_name}})*'
       scope: *OPTION_ARGUMENT_SCOPES
       set: then-pop
+    # e.g.: "+s, --no-sort" (from fzf)
+    - match: '[a-z]+'
+      scope: *OPTION_DEF_SCOPES
+      set: option-def-post
     - include: else-pop
 
   ### other definitions ########################################################
