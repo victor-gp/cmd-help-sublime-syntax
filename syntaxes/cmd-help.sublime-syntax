@@ -197,7 +197,7 @@ contexts:
       scope: keyword.control.end-of-options.cmd-help
       set: then-pop
     - match: \+(?=[\s<[:alpha:]])
-      scope: keyword.control.plus-option.cmd-help
+      scope: *OPTION_DEF_SCOPES
       set: plus-option-post
     - match: -:(?={{option_break}})
       scope: *OPTION_DEF_SCOPES
@@ -331,6 +331,10 @@ contexts:
     - match: '{{allcaps_argument_name}}(:{{allcaps_argument_name}})*'
       scope: *OPTION_ARGUMENT_SCOPES
       set: then-pop
+    # e.g.: "+s, --no-sort" (from fzf)
+    - match: '[a-z]+'
+      scope: *OPTION_DEF_SCOPES
+      set: option-def-post
     - include: else-pop
 
   ### other definitions ########################################################
