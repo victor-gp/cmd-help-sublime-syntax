@@ -113,10 +113,10 @@
 [38;2;131;148;150m  [0m[38;2;181;137;0m/etc/sbt/sbtopts[0m[38;2;131;148;150m    if this file exists, it is prepended to the runner args[0m
 [38;2;181;137;0mpath/.to/file[0m
 
-[38;2;131;148;150m   [0m[38;2;133;153;0m+[0m[38;2;131;148;150m			Start at end of file[0m
-[38;2;131;148;150m   [0m[38;2;133;153;0m+[0m[38;2;38;139;210m<lnum>[0m[38;2;131;148;150m		Start at line <lnum>[0m
-[38;2;133;153;0m+[0m[38;2;38;139;210mLINE[0m[38;2;131;148;150m                   go to line LINE in next FILE[0m
-[38;2;133;153;0m+[0m[38;2;38;139;210mLINE:COLUMN[0m[38;2;131;148;150m            go to line LINE, column COLUMN, in next FILE[0m
+[38;2;131;148;150m   [0m[38;2;181;137;0m+[0m[38;2;131;148;150m			Start at end of file[0m
+[38;2;131;148;150m   [0m[38;2;181;137;0m+[0m[38;2;38;139;210m<lnum>[0m[38;2;131;148;150m		Start at line <lnum>[0m
+[38;2;181;137;0m+[0m[38;2;38;139;210mLINE[0m[38;2;131;148;150m                   go to line LINE in next FILE[0m
+[38;2;181;137;0m+[0m[38;2;38;139;210mLINE:COLUMN[0m[38;2;131;148;150m            go to line LINE, column COLUMN, in next FILE[0m
 
 
 [38;2;131;148;150m## PRE-EXISTING FORMAT:[0m

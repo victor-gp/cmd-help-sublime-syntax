@@ -113,10 +113,10 @@ nor if it begins with lowercase
   [33m/etc/sbt/sbtopts[0m    if this file exists, it is prepended to the runner args
 [33mpath/.to/file[0m
 
-   [35m+[0m			Start at end of file
-   [35m+[0m[32m<lnum>[0m		Start at line <lnum>
-[35m+[0m[32mLINE[0m                   go to line LINE in next FILE
-[35m+[0m[32mLINE:COLUMN[0m            go to line LINE, column COLUMN, in next FILE
+   [34m+[0m			Start at end of file
+   [34m+[0m[32m<lnum>[0m		Start at line <lnum>
+[34m+[0m[32mLINE[0m                   go to line LINE in next FILE
+[34m+[0m[32mLINE:COLUMN[0m            go to line LINE, column COLUMN, in next FILE
 
 
 ## PRE-EXISTING FORMAT:
