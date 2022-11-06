@@ -193,12 +193,12 @@ contexts:
     - include: option-def-specials
     - match: --- # probably a separator
       pop: true
-    - include: option-def
+    - include: option-term
 
-  option-def:
+  option-term:
     - match: -{{option_name}}
       scope: *OPTION_DEF_SCOPES
-      set: option-def-post
+      set: option-term-post
 
   option-def-specials:
     - match: --(?=\s)
@@ -209,26 +209,26 @@ contexts:
       set: plus-option-post
     - match: -:(?={{option_break}})
       scope: *OPTION_DEF_SCOPES
-      set: option-def-post
+      set: option-term-post
 
-  option-def-post:
-    - include: option-def-connectors
+  option-term-post:
+    - include: option-term-connectors
     - match: '='
-      set: option-def+equals
+      set: option-term+equals
     # match '[=' or '[' or ' [' or ':['
     - match: '\[=|\[| \[|:\['
-      set: option-def+square-bracket
+      set: option-term+square-bracket
     - match: ':'
-      set: option-def+colon
+      set: option-term+colon
     - match: ','
-      set: option-def+comma
+      set: option-term+comma
     - match: '(?=<)'
-      set: option-def+space
+      set: option-term+space
     - match: ' '
-      set: option-def+space
+      set: option-term+space
     - include: else-pop
 
-  option-def-connectors:
+  option-term-connectors:
     - match: ', '
       set: option-def-alt
     - match: ' \| '
@@ -249,12 +249,12 @@ contexts:
       set: option-def-alt
 
   option-def-alt:
-    - include: option-def
+    - include: option-term
     - include: else-pop
 
   ### option arguments #########################################################
 
-  option-def+space:
+  option-term+space:
     - match: <.*?>
       scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
@@ -274,7 +274,7 @@ contexts:
       set: option-argument-curly-bracket
     - include: else-pop
 
-  option-def+equals:
+  option-term+equals:
     - match: '{{relaxed_argument_name}}'
       scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
@@ -285,7 +285,7 @@ contexts:
       set: option-argument-curly-bracket
     - include: else-pop
 
-  option-def+square-bracket:
+  option-term+square-bracket:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPES
     - match: '\|'
       push: de-scope-option-arg
@@ -294,13 +294,13 @@ contexts:
         - match: ']'
           set: option-argument-post
 
-  option-def+colon:
+  option-term+colon:
     - match: <.*?>
       scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
     - include: else-pop
 
-  option-def+comma:
+  option-term+comma:
     - match: <.*?>
       scope: *OPTION_ARGUMENT_SCOPES
       set: option-argument-post
@@ -317,18 +317,18 @@ contexts:
           set: option-argument-post
 
   option-argument-post:
-    - include: option-def-connectors
+    - include: option-term-connectors
     - match: ({{ellipsis}})?
       scope: *OPTION_ARGUMENT_SCOPES
     # match '[=' or '['
     - match: '\[=|\['
-      set: option-def+square-bracket
+      set: option-term+square-bracket
     - match: ',\['
-      set: option-def+square-bracket
+      set: option-term+square-bracket
     - match: '='
-      set: option-def+equals
+      set: option-term+equals
     - match: '\|'
-      set: option-def+space
+      set: option-term+space
     - include: else-pop
 
   plus-option-post:
@@ -342,7 +342,7 @@ contexts:
     # e.g.: "+s, --no-sort" (from fzf)
     - match: '[a-z]+'
       scope: *PLUS_OPTION_DEF_SCOPES
-      set: option-def-post
+      set: option-term-post
     - include: else-pop
 
   ### other definitions ########################################################
