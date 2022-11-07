@@ -54,6 +54,8 @@ scope_variables: # last scope is matched first
 
   - &OPTION_DEF_SCOPES
     entity.name.function.option.cmd-help
+  - &PLUS_OPTION_DEF_SCOPES
+    entity.name.function.option.plus.cmd-help
   - &OPTION_ARGUMENT_SCOPES
     string.option-argument.cmd-help  variable.other.option-argument.cmd-help
     variable.parameter.option-argument.cmd-help
@@ -197,7 +199,7 @@ contexts:
       scope: keyword.control.end-of-options.cmd-help
       set: then-pop
     - match: \+(?=[\s<[:alpha:]])
-      scope: *OPTION_DEF_SCOPES
+      scope: *PLUS_OPTION_DEF_SCOPES
       set: plus-option-post
     - match: -:(?={{option_break}})
       scope: *OPTION_DEF_SCOPES
@@ -333,7 +335,7 @@ contexts:
       set: then-pop
     # e.g.: "+s, --no-sort" (from fzf)
     - match: '[a-z]+'
-      scope: *OPTION_DEF_SCOPES
+      scope: *PLUS_OPTION_DEF_SCOPES
       set: option-def-post
     - include: else-pop
 

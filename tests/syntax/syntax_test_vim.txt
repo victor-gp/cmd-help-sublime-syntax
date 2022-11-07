@@ -41,9 +41,9 @@ Arguments:
    -o[N]		Open N windows (default: one for each file)
    -O[N]		Like -o but split vertically
    +			Start at end of file
-#  ^ entity.name.function.option.cmd-help
+#  ^ entity.name.function.option.plus.cmd-help
    +<lnum>		Start at line <lnum>
-#  ^ entity.name.function.option.cmd-help
+#  ^ entity.name.function.option.plus.cmd-help
 #   ^^^^^^ variable.parameter.option-argument.cmd-help
    --cmd <command>	Execute <command> before loading any vimrc file
    -c <command>		Execute <command> after loading the first file
