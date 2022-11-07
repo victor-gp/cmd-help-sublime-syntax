@@ -57,9 +57,9 @@ scope_variables: # last scope is matched first
     string.section-heading.inline-usage.cmd-help
     meta.constructor.argument.css.section-heading.inline-usage.cmd-help
 
-  - &OPTION_DEF_SCOPES
+  - &OPTION_SCOPES
     entity.name.function.option.cmd-help
-  - &PLUS_OPTION_DEF_SCOPES
+  - &PLUS_OPTION_SCOPES
     entity.name.function.option.plus.cmd-help
   - &END_OF_OPTIONS_SCOPE
     constant.other.end-of-options.cmd-help
@@ -68,17 +68,17 @@ scope_variables: # last scope is matched first
     entity.name.function.option.cmd-help
     keyword.other.argument.cmd-help
   # argument definitions (99% confidence) =~ OPTION_ARGUMENT
-  - &ARGUMENT_DEF_SCOPES
+  - &ARGUMENT_SCOPES
     keyword.other.argument.cmd-help
   # mostly all-caps definitions. usually envs or args =~ OPTION_ARGUMENT
-  - &OTHER_VAL_DEF_SCOPES
+  - &OTHER_VAL_SCOPES
     keyword.other.value.cmd-help
 
   # non all-caps definitions: subcommands, argument enums, etc.
-  - &OTHER_DEF_SCOPES
+  - &OTHER_TERM_SCOPES
     constant.other.def.cmd-help
 
-  - &PATHNAME_DEF_SCOPES
+  - &PATHNAME_SCOPES
     constant.character.escape.pathname.cmd-help
     variable.parameter.pathname.cmd-help
     meta.function.block.start.handlebars.pathname.cmd-help
@@ -197,7 +197,7 @@ contexts:
 
   option-term:
     - match: -{{option_name}}
-      scope: *OPTION_DEF_SCOPES
+      scope: *OPTION_SCOPES
       set: option-term-post
 
   option-def-specials:
@@ -205,10 +205,10 @@ contexts:
       scope: *END_OF_OPTIONS_SCOPE
       set: then-pop
     - match: \+(?=[\s<[:alpha:]])
-      scope: *PLUS_OPTION_DEF_SCOPES
+      scope: *PLUS_OPTION_SCOPES
       set: plus-option-post
     - match: -:(?={{option_break}})
-      scope: *OPTION_DEF_SCOPES
+      scope: *OPTION_SCOPES
       set: option-term-post
 
   option-term-post:
@@ -341,7 +341,7 @@ contexts:
       set: then-pop
     # e.g.: "+s, --no-sort" (from fzf)
     - match: '[a-z]+'
-      scope: *PLUS_OPTION_DEF_SCOPES
+      scope: *PLUS_OPTION_SCOPES
       set: option-term-post
     - include: else-pop
 
@@ -349,21 +349,21 @@ contexts:
 
   argument-def:
     - match: <{{relaxed_argument_name}}>({{ellipsis}})?
-      scope: *ARGUMENT_DEF_SCOPES
+      scope: *ARGUMENT_SCOPES
       set: then-pop
     - match: '{'
       set: curly-bracket-argument-def
     - match: -(?=  )
-      scope: *ARGUMENT_DEF_SCOPES # stdin
+      scope: *ARGUMENT_SCOPES # stdin
       set: then-pop
     - match: ({{relaxed_argument_name}}) ({{ellipsis}})
       captures:
-        1: *ARGUMENT_DEF_SCOPES
-        2: *ARGUMENT_DEF_SCOPES
+        1: *ARGUMENT_SCOPES
+        2: *ARGUMENT_SCOPES
       set: then-pop
 
   curly-bracket-argument-def:
-    - meta_content_scope: *ARGUMENT_DEF_SCOPES
+    - meta_content_scope: *ARGUMENT_SCOPES
     # match ',' or '|'
     - match: ',|\|'
       push: de-scope-option-arg
@@ -377,36 +377,36 @@ contexts:
     - include: other-def-escapes
     - include: pathname-def
     - match: '{{other_lowercase_name}}(?={{long_space}})'
-      scope: *OTHER_DEF_SCOPES
+      scope: *OTHER_TERM_SCOPES
       set: then-pop
     # e.g.: "install - install packages (from apt)"
     - match: '{{other_lowercase_name}}(?=\s+-\s+\S)'
-      scope: *OTHER_DEF_SCOPES
+      scope: *OTHER_TERM_SCOPES
       set: then-pop
     # e.g.: "compose*" (from docker)
     - match: '{{other_lowercase_name}}\*(?={{long_space}})'
-      scope: *OTHER_DEF_SCOPES
+      scope: *OTHER_TERM_SCOPES
       set: then-pop
     # e.g.: "build, b" (from cargo)
     - match: ({{other_lowercase_name}}), ({{other_lowercase_name}})(?={{long_space}})
       captures:
-        1: *OTHER_DEF_SCOPES
-        2: *OTHER_DEF_SCOPES
+        1: *OTHER_TERM_SCOPES
+        2: *OTHER_TERM_SCOPES
       set: then-pop
 
     - match: '{{allcaps_argument_name}}(?=  )'
-      scope: *OTHER_VAL_DEF_SCOPES
+      scope: *OTHER_VAL_SCOPES
       set: then-pop
     # e.g.: "PYTHONSTARTUP:", "PYTHONCASEOK :"
     - match: '{{allcaps_argument_name}}(?=\s*:)'
-      scope: *OTHER_VAL_DEF_SCOPES
+      scope: *OTHER_VAL_SCOPES
       set: then-pop
     - match: \${{allcaps_argument_name}}
-      scope: *OTHER_VAL_DEF_SCOPES
+      scope: *OTHER_VAL_SCOPES
       set: then-pop
     # e.g.: "'warn'" or "'warn-nopipe'" (from tee)
     - match: "'{{other_lowercase_name}}'"
-      scope: *OTHER_VAL_DEF_SCOPES
+      scope: *OTHER_VAL_SCOPES
       set: then-pop
 
   other-def-escapes:
@@ -416,17 +416,17 @@ contexts:
 
   pathname-def:
     - match: '{{absolute_path}}(?={{long_space}})'
-      scope: *PATHNAME_DEF_SCOPES
+      scope: *PATHNAME_SCOPES
       set: then-pop
     - match: '{{relative_path}}(?={{long_space}})'
-      scope: *PATHNAME_DEF_SCOPES
+      scope: *PATHNAME_SCOPES
       set: then-pop
     - match: '{{home_relative_path}}(?={{long_space}})'
-      scope: *PATHNAME_DEF_SCOPES
+      scope: *PATHNAME_SCOPES
       set: then-pop
     # dotfile
     - match: '\.{{path_atom}}(?={{long_space}})'
-      scope: *PATHNAME_DEF_SCOPES
+      scope: *PATHNAME_SCOPES
       set: then-pop
 
   ### notable exceptions #######################################################
