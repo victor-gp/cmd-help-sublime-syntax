@@ -15,7 +15,8 @@ docker run --rm \
     --entrypoint /tests/inner_theme_regression.sh \
     bat-test
 
-if [ ! "$CI" ]; then
+# if $CI is unset
+if [ -z ${CI+x} ]; then
     # effective difference between HEAD/staging and working dir
     GIT_PAGER='LESS=R less' git diff -- theme/
 

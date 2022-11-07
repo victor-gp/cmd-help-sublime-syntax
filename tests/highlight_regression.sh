@@ -14,7 +14,8 @@ docker run --rm \
     -v "$vol1" -v "$vol2" \
     bat-test
 
-if [ ! "$CI" ]; then
+# if $CI is unset
+if [ -z ${CI+x} ]; then
     # have git tell the effective difference between the version of the syntax
     # in HEAD/staging and the one in working dir, for all highlighted samples
     GIT_PAGER='LESS=R less' git diff -- highlighted/
