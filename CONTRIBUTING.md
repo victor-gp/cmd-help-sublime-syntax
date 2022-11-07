@@ -1,6 +1,6 @@
 # CONTRIBUTING.md
 
-Thank you for considering to contribute to `cmd-help.sublime-syntax`!
+Thank you for considering to contribute to `cmd-help`!
 
 Ways you can help:
 
