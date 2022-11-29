@@ -60,23 +60,19 @@ scope_variables: # last scope is matched first
     entity.name.function.option.cmd-help
 
   - &OPTION_ARGUMENT_SCOPES
-    # todo: consider swapping this with OTHER_DEF_SCOPES,
-    # perhaps including entity.name.tag in the rotation.
-    constant.other.option-argument.cmd-help
+    keyword.other.def.cmd-help
 
   # argument definitions (99% confidence) =~ option argument
   - &ARGUMENT_DEF_SCOPES
-    constant.other.argument.cmd-help
+    keyword.other.argument.cmd-help
 
   # mostly all-caps definitions. usually envs or args =~ option argument
   - &OTHER_VAL_DEF_SCOPES
-    constant.other.other-value.cmd-help
+    keyword.other.other-value.cmd-help
 
   # non all-caps definitions: subcommands, argument enums, etc.
   - &OTHER_DEF_SCOPES
-    keyword.other.def.cmd-help
-    # support.function ?
-    # variable.function ?
+    constant.other.option-argument.cmd-help
 
   - &FILE_DEF_SCOPES
     constant
@@ -203,7 +199,7 @@ contexts:
 
   option-def-specials:
     - match: --(?=\s)
-      scope: keyword.control.end-of-options.cmd-help
+      scope: constant.other.end-of-options.cmd-help
       set: then-pop
     - match: \+(?=[\s<[:alpha:]])
       scope: keyword.control.plus-option.cmd-help
