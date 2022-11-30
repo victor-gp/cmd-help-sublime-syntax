@@ -20,7 +20,7 @@ variables:
   lookahead_40: '(?=.{1,40}\n)'
 
 ### command option variables:
-  option_break: '[ \t\n,=\[</:]'
+  option_break: '[ \t\n,=\[</:|]'
   # marks seen in options: . ? : # $ -- +
   option_char: '[^{{option_break}}]'
   option_name: '{{option_char}}+'
@@ -58,7 +58,8 @@ scope_variables: # last scope is matched first
 
   - &OPTION_DEF_SCOPES
     entity.name.function.option.cmd-help
-
+  - &PLUS_OPTION_DEF_SCOPES
+    entity.name.function.option.plus.cmd-help
   - &OPTION_ARGUMENT_SCOPES
     keyword.other.def.cmd-help
 
@@ -202,7 +203,7 @@ contexts:
       scope: constant.other.end-of-options.cmd-help
       set: then-pop
     - match: \+(?=[\s<[:alpha:]])
-      scope: keyword.control.plus-option.cmd-help
+      scope: *PLUS_OPTION_DEF_SCOPES
       set: plus-option-post
     - match: -:(?={{option_break}})
       scope: *OPTION_DEF_SCOPES
@@ -229,6 +230,8 @@ contexts:
     - match: ', '
       set: option-def-alt
     - match: ' \| '
+      set: option-def-alt
+    - match: '\|(?=-)'
       set: option-def-alt
     - match: ' / '
       set: option-def-alt
@@ -334,6 +337,10 @@ contexts:
     - match: '{{allcaps_argument_name}}(:{{allcaps_argument_name}})*'
       scope: *OPTION_ARGUMENT_SCOPES
       set: then-pop
+    # e.g.: "+s, --no-sort" (from fzf)
+    - match: '[a-z]+'
+      scope: *PLUS_OPTION_DEF_SCOPES
+      set: option-def-post
     - include: else-pop
 
   ### other definitions ########################################################

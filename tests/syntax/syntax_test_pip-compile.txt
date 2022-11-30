@@ -1,4 +1,5 @@
 # SYNTAX TEST "cmd-help.sublime-syntax"
+
 Usage: pip-compile [OPTIONS] [SRC_FILES]...
 
   Compiles requirements.txt from requirements.in specs.

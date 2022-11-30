@@ -1,0 +1,8 @@
+brief: quick reference for theme support
+
+HEADING:
+--option <argument>   bla bla bla
+subcommand            bla bla bla
+ARGUMENT              or ENV sometimes
+path/to/file          bla bla bla
+--                    bla bla bla

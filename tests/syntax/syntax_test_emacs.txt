@@ -38,11 +38,10 @@ Action options:
 FILE                    visit FILE
 #^^^ variable.parameter.other-value.cmd-help
 +LINE                   go to line LINE in next FILE
-# <- keyword.control.plus-option.cmd-help
-# <- - entity.name.function.option.cmd-help
+# <- entity.name.function.option.plus.cmd-help
 #^^^^ variable.parameter.option-argument.cmd-help
-#todo #8: re-scope + as option
 +LINE:COLUMN            go to line LINE, column COLUMN, in next FILE
+# <- entity.name.function.option.plus.cmd-help
 #^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
 --directory, -L DIR     prepend DIR to load-path (with :DIR, append DIR)
 --eval EXPR             evaluate Emacs Lisp expression EXPR

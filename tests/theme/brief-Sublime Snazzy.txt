@@ -1,0 +1,8 @@
+[38;2;248;248;242mbrief: quick reference for theme support[0m
+
+[38;2;243;249;157mHEADING:[0m
+[38;2;154;237;254m--option[0m[38;2;248;248;242m [0m[38;2;255;92;87m<argument>[0m[38;2;248;248;242m   bla bla bla[0m
+[38;2;90;247;142msubcommand[0m[38;2;248;248;242m            bla bla bla[0m
+[38;2;255;92;87mARGUMENT[0m[38;2;248;248;242m              or ENV sometimes[0m
+[38;2;255;106;193mpath/to/file[0m[38;2;248;248;242m          bla bla bla[0m
+[38;2;90;247;142m--[0m[38;2;248;248;242m                    bla bla bla[0m

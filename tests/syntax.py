@@ -47,7 +47,7 @@ if ret != 0: # image doesn't exist
         f"docker build -t {image_tag} - < {dockerfile_path}",
         shell=True
     )
-    print("\033[34m" + "Docker build ends here." + "\033[00m")
+    print("\033[34m" + f"Docker image successfully built, tagged '{image_tag}'." + "\033[00m")
 
 man_syntax_path = Path('../syntaxes/Manpage.sublime-syntax')
 if not man_syntax_path.is_file():

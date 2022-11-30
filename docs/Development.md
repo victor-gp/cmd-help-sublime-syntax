@@ -26,10 +26,10 @@ On the other hand, the Windows Subsystem for Linux (WSL) should do just fine.
 
 ## Sublime Syntaxes
 
-I cannot say much here that isn't better explained in **[the official documentation](http://www.sublimetext.com/docs/syntax.html).**
+I cannot say much here that isn't better explained in **[the official documentation](https://www.sublimetext.com/docs/syntax.html#ver-3.2).**
 
 More precisely, the targeted interpreter for the syntax is [`syntect`](https://github.com/trishume/syntect), a Rust implementation of Sublime Syntaxes used by `bat`.
-For all intents and purposes, the Sublime Syntax documentation also applies to `syntect`.
+For all intents and purposes, the Sublime Syntax documentation for v3.2 also applies to `syntect`.
 
 Both Sublime Syntaxes and `syntect` use the Oniguruma regex engine, which follows [this specification](https://raw.githubusercontent.com/kkos/oniguruma/v6.9.1/doc/RE).
 (No need to read through this though, just keep it as reference.)

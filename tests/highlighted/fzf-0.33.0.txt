@@ -5,7 +5,7 @@
 [38;2;248;248;242m                          (enabled by default; +x or --no-extended to disable)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exact[0m[38;2;248;248;242m           Enable Exact-match[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m                    Case-insensitive match (default: smart-case match)[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114m+[0m[38;2;248;248;242mi                    Case-sensitive match[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m+[0m[38;2;166;226;46mi[0m[38;2;248;248;242m                    Case-sensitive match[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--scheme[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSCHEME[0m[38;2;248;248;242m       Scoring scheme [default|path|history][0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--literal[0m[38;2;248;248;242m             Do not normalize latin script letters before matching[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--nth[0m[38;2;248;248;242m=[0m[38;2;253;151;31mN[0m[38;2;248;248;242m[[0m[38;2;253;151;31m,..[0m[38;2;248;248;242m]      Comma-separated list of field index expressions[0m
@@ -14,7 +14,7 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m--with-nth[0m[38;2;248;248;242m=[0m[38;2;253;151;31mN[0m[38;2;248;248;242m[[0m[38;2;253;151;31m,..[0m[38;2;248;248;242m]     Transform the presentation of each line using[0m
 [38;2;248;248;242m                          field index expressions[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--delimiter[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTR[0m[38;2;248;248;242m   Field delimiter regex (default: AWK-style)[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114m+[0m[38;2;248;248;242ms, --no-sort         Do not sort the result[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m+[0m[38;2;166;226;46ms[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-sort[0m[38;2;248;248;242m         Do not sort the result[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--tac[0m[38;2;248;248;242m                 Reverse the order of the input[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--disabled[0m[38;2;248;248;242m            Do not perform search[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--tiebreak[0m[38;2;248;248;242m=[0m[38;2;253;151;31mCRI[0m[38;2;248;248;242m[[0m[38;2;253;151;31m,..[0m[38;2;248;248;242m]   Comma-separated list of sort criteria to apply[0m
