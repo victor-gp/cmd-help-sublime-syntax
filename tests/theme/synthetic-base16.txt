@@ -1,0 +1,119 @@
+[35msynthetic[0m[37m - fake help message for testing theme support[0m
+
+[37mMost of these lines come from actual help messages in tests/source/.[0m
+
+
+[37m## HEADING PATTERNS:[0m
+
+[34mSelection options[0m
+[34mBasic Options:[0m
+[34mUSAGE:[0m
+[37m [0m[34mFinding manual pages:[0m
+[34mAuto-correction:[0m
+[34mGNU long options:[0m
+[34mJIT options (experimental):[0m
+[34mUsage:[0m[37m cp [OPTION]... [-T] SOURCE DEST[0m
+[34musage:[0m[37m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
+
+[37mBut not if the line is longer than forty chars[0m
+[37mnor if it begins with lowercase[0m
+[37m   Nor after three spaces[0m
+[37m	Nor after a tab[0m
+
+
+[37m## OPTION PATTERNS:[0m
+
+[37m    [0m[34m-A[0m[37m, [0m[34m--show-all[0m
+[37m    [0m[34m-l[0m[37m, [0m[34m--language[0m[37m [0m[37m<language>[0m
+[37m    [0m[34m-H[0m[37m, [0m[34m--highlight-line[0m[37m [0m[37m<N:M>[0m[37m...[0m
+[37m        [0m[34m--file-name[0m[37m [0m[37m<name>[0m[37m...[0m
+[37m      [0m[34m--backup[0m[37m[=[0m[37mCONTROL[0m[37m]       make a backup of each existing destination file[0m
+[37m      [0m[34m--no-preserve[0m[37m=[0m[37mATTR_LIST[0m[37m  don't preserve the specified attributes[0m
+[37m  [0m[34m-R[0m[37m, [0m[34m-r[0m[37m, [0m[34m--recursive[0m[37m          copy directories recursively[0m
+[37m	[0m[34m-ilrsD[0m[37m or [0m[34m-c[0m[37m [0m[37mcommand[0m[37m or [0m[34m-O[0m[37m [0m[37mshopt_option[0m[37m		(invocation only)[0m
+[37m     [0m[34m--alt-svc[0m[37m [0m[37m<file name>[0m[37m Enable alt-svc with this cache file[0m
+[37m [0m[34m-b[0m[37m, [0m[34m--cookie[0m[37m [0m[37m<data|filename>[0m[37m Send cookies from string/file[0m
+[37m     [0m[34m--tlsv1.0[0m[37m       Use TLSv1.0 or greater[0m
+[37m      [0m[34m--label[0m[37m [0m[37mLABEL[0m[37m             use LABEL instead of file name and timestamp[0m
+[37m      [0m[34m--from-file[0m[37m=[0m[37mFILE1[0m[37m           compare FILE1 to all operands;[0m
+[37m  [0m[34m--help[0m[37m={[0m[37mcommon[0m[37m|[0m[37moptimizers[0m[37m|[0m[37mparams[0m[37m|[0m[37mtarget[0m[37m|[0m[37mwarnings[0m[37m|[0m[37m[^]{joined[0m[37m|[0m[37mseparate[0m[37m|[0m[37mundocumented[0m[37m}}[,...].[0m
+[37m  [0m[34m-print-search-dirs[0m[37m       Display the directories in the compiler's search path.[0m
+[37m  [0m[34m-print-file-name[0m[37m=[0m[37m<lib>[0m[37m   Display the full path to library <lib>.[0m
+[37m  [0m[34m-Wa[0m[37m,[0m[37m<options>[0m[37m            Pass comma-separated <options> on to the assembler.[0m
+[34m-C[0m[37m [0m[34m--no-color[0m[37m               Use a monochrome color scheme[0m
+[37m  [0m[34m-r[0m[37m [0m[37mload-module[0m[37m    Same as `ruby -r'[0m
+[37m  [0m[34m--sample-book-mode[0m[37m/[0m[34m--simple-prompt[0m
+[37m    [0m[34m-D[0m[37m<name>[0m[37m=[0m[37m<value>[0m
+[37m    [0m[34m-verbose[0m[37m:[[0m[37mclass[0m[37m|[0m[37mgc[0m[37m|[0m[37mjni[0m[37m][0m
+[37m    [0m[34m-version[0m[37m:[0m[37m<value>[0m
+[37m    [0m[34m-ea[0m[37m[[0m[37m:<packagename>...[0m[37m|[0m[37m:<classname>[0m[37m][0m
+[37m    [0m[34m-agentlib[0m[37m:[0m[37m<libname>[0m[37m[=[0m[37m<options>[0m[37m][0m
+[37m [0m[34m-A[0m[37m             [0m[34m--smarthome[0m[37m             Enable smart home key[0m
+[34m-m[0m[37m [0m[37mmod[0m[37m : run library module as a script (terminates option list)[0m
+[37m        [0m[34m--except[0m[37m [[0m[37mCOP1,COP2,...[0m[37m]     Exclude the given cop(s).[0m
+[37m    [0m[34m-P[0m[37m, [0m[34m--[0m[37m[[0m[37mno-[0m[37m]parallel              Use available CPUs to execute inspection in[0m
+[37m  [0m[34m-0[0m[37m[[0m[37moctal[0m[37m]       specify record separator (\0, if no argument)[0m
+[37m  [0m[34m-Cdirectory[0m[37m     cd to directory before executing your script[0m
+[37m  [0m[34m-e[0m[37m [0m[37m'command'[0m[37m    one line of script. Several -e's allowed. Omit [programfile][0m
+[37m  [0m[34m-Eex[0m[37m[[0m[37m:in[0m[37m], [0m[34m--encoding[0m[37m=[0m[37mex[0m[37m[[0m[37m:in[0m[37m][0m
+[37m  [0m[34m-rlibrary[0m[37m       require the library before executing your script[0m
+[37m  [0m[34m-W[0m[37m[[0m[37mlevel=2[0m[37m|[0m[37m:category[0m[37m][0m
+[37m  [0m[34m--jit-[0m[37m[[0m[37moption[0m[37m]  enable JIT with an option (experimental)[0m
+[37m  [0m[34m--dump[0m[37m={[0m[37minsns[0m[37m|[0m[37mparsetree[0m[37m|[0m[37m...[0m[37m}[[0m[37m,...[0m[37m][0m
+[37m  [0m[34m--external-encoding[0m[37m=[0m[37mencoding[0m[37m, [0m[34m--internal-encoding[0m[37m=[0m[37mencoding[0m
+[37m  [0m[34m--backtrace-limit[0m[37m=[0m[37mnum[0m
+[37m  [0m[34m-h[0m[37m | [0m[34m--help[0m[37m         print this message[0m
+[37m  [0m[34m--color[0m[37m=[0m[37mauto[0m[37m|[0m[37malways[0m[37m|[0m[37mtrue[0m[37m|[0m[37mfalse[0m[37m|[0m[37mnever[0m
+[37m  [0m[34m-w[0m[37m {[0m[37mshow[0m[37m,[0m[37mhide[0m[37m,[0m[37monly[0m[37m}, [0m[34m--window[0m[37m {[0m[37mshow[0m[37m,[0m[37mhide[0m[37m,[0m[37monly[0m[37m}[0m
+[37m   [0m[34m-h[0m[37m  or  [0m[34m--help[0m[37m	Print Help (this message) and exit[0m
+[37m  [0m[34m--display[0m[37m [0m[37mdisplayname[0m
+[37m  [0m[34m-t[0m[37m [0m[37mms[0m[37m, [0m[34m--selectionTimeout[0m[37m [0m[37mms[0m
+[37m      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files[0m
+[37m   [0m[35m--[0m[37m			Only file names after this[0m
+
+
+[37m## ARGUMENT PATTERNS:[0m
+
+[37m(collapse with other patterns?)[0m
+
+[37m    [0m[37m<FILE>...[0m
+[37m-[0m[37m      : program read from stdin (default; interactive mode if a tty)[0m
+[37marg[0m[37m [0m[37m...[0m[37m: arguments passed to program in sys.argv[1:][0m
+
+
+[37m## OTHER PATTERNS:[0m
+
+[37m   [0m[35mcommit[0m[37m            Record changes to the repository[0m
+[37m    [0m[35mcache[0m[37m    Modify the syntax-definition and theme cache[0m
+[37m    [0m[35mbuild[0m[37m, [0m[35mb[0m[37m    Compile the current package[0m
+[37m  [0m[35mlist[0m[37m - list packages based on package names[0m
+[37m  [0m[35mfull-upgrade[0m[37m - upgrade the system by removing/installing/upgrading packages[0m
+[37m  [0m[35mfdatasync[0m[37m  physically write output file data before finishing[0m
+[37m  [0m[35mcompose*[0m[37m    Docker Compose (Docker Inc., v2.2.3)[0m
+[37m  [0m[35mdid_you_mean[0m[37m    did_you_mean (default: enabled)[0m
+[37m  [0m[35mfrozen-string-literal[0m
+[35mfile[0m[37m   : program read from script file[0m
+
+[37mFILE[0m[37m                    visit FILE[0m
+[37mPYTHONSTARTUP[0m[37m: file executed on interactive startup (no default)[0m
+[37m  [0m[37mJAVA_OPTS[0m[37m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
+[37m  [0m[37m'warn'[0m[37m         diagnose errors writing to any output[0m
+
+[37m  [0m[38;5;9m.jvmopts[0m[37m            if this file exists in the current directory, its contents[0m
+[37m  [0m[38;5;9m/etc/sbt/sbtopts[0m[37m    if this file exists, it is prepended to the runner args[0m
+[38;5;9mpath/.to/file[0m
+
+[37m   [0m[34m+[0m[37m			Start at end of file[0m
+[37m   [0m[34m+[0m[37m<lnum>[0m[37m		Start at line <lnum>[0m
+[34m+[0m[37mLINE[0m[37m                   go to line LINE in next FILE[0m
+[34m+[0m[37mLINE:COLUMN[0m[37m            go to line LINE, column COLUMN, in next FILE[0m
+
+
+[37m## PRE-EXISTING FORMAT:[0m
+
+[1m[37m[1mIt skips over bold text[0m[0m
+[37m// And continues normal operation[0m
+[37m(as proven by the previous line being scoped as heading)[0m
+[31m[37m[31mBut it aborts on color codes (this is red text)[0m[0m
+[37mAnd stops operation for what is left[0m
+[37m(otherwise the previous line would have been scoped as heading)[0m

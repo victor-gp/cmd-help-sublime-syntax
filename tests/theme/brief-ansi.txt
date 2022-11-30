@@ -1,0 +1,8 @@
+brief: quick reference for theme support
+
+[34mHEADING:[0m
+[34m--option[0m [32m<argument>[0m   bla bla bla
+[35msubcommand[0m            bla bla bla
+[32mARGUMENT[0m              or ENV sometimes
+[33mpath/to/file[0m          bla bla bla
+[35m--[0m                    bla bla bla
