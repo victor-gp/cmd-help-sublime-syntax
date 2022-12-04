@@ -49,7 +49,6 @@ scope_variables: # last scope is matched first
     constant.section-heading.cmd-help
     markup.heading.cmd-help
     string.section-heading.cmd-help
-
   - &INLINE_USAGE_SCOPES
     constant.section-heading.inline-usage.cmd-help
     markup.heading.inline-usage.cmd-help
@@ -59,17 +58,18 @@ scope_variables: # last scope is matched first
     entity.name.function.option.cmd-help
   - &PLUS_OPTION_DEF_SCOPES
     entity.name.function.option.plus.cmd-help
+  - &END_OF_OPTIONS_SCOPE
+    constant.other.end-of-options.cmd-help
+
   - &OPTION_ARGUMENT_SCOPES
     option.name.function.option.cmd-help
     keyword.other.argument.cmd-help
-
-  # argument definitions (99% confidence) =~ option argument
+  # argument definitions (99% confidence) =~ OPTION_ARGUMENT
   - &ARGUMENT_DEF_SCOPES
     keyword.other.argument.cmd-help
-
-  # mostly all-caps definitions. usually envs or args =~ option argument
+  # mostly all-caps definitions. usually envs or args =~ OPTION_ARGUMENT
   - &OTHER_VAL_DEF_SCOPES
-    keyword.other.other-value.cmd-help
+    keyword.other.value.cmd-help
 
   # non all-caps definitions: subcommands, argument enums, etc.
   - &OTHER_DEF_SCOPES
@@ -200,7 +200,7 @@ contexts:
 
   option-def-specials:
     - match: --(?=\s)
-      scope: constant.other.end-of-options.cmd-help
+      scope: *END_OF_OPTIONS_SCOPE
       set: then-pop
     - match: \+(?=[\s<[:alpha:]])
       scope: *PLUS_OPTION_DEF_SCOPES
