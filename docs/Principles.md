@@ -51,16 +51,20 @@ scope_variables:
 
 Just know that [there's a convention for scope names](https://www.sublimetext.com/docs/scope_naming.html), and syntax themes target those names.
 
-### Constraint on Monokai
+### Constraints on Monokai
 
-There is a constraint I would like to preserve.
+There are a couple of constraints I would like to preserve.
 
-The help messages generated with the `clap` Rust library were the original inspiration for this project.
-They paint **headings in yellow and option definitions in green.**
+The help messages generated with the `clap` Rust library were the original inspiration for this project\*.
+They painted **headings in yellow\*\* and option definitions in green.**
 
 I'd like those two properties to hold for the default Monokai theme.
 
-Everything else is fair game. And even that constraint is bound to drop if you make a compelling case otherwise.
+Everything else is fair game. Even that constraint is bound to drop if you make a compelling case otherwise.
+
+\* Before clap v4, which ditched colors for style (bold, underlined) in help messages.
+
+\*\* In the theme I use in my terminal (srcery), yellow means golden. So favor e.g. golden orange over pale yellow.
 
 ## Coding style
 

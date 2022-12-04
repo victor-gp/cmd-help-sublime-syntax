@@ -5,15 +5,15 @@
 
 [38;2;255;255;255m## HEADING PATTERNS:[0m
 
-[38;2;204;255;102mSelection options[0m
-[38;2;204;255;102mBasic Options:[0m
-[38;2;204;255;102mUSAGE:[0m
-[38;2;255;255;255m [0m[38;2;204;255;102mFinding manual pages:[0m
-[38;2;204;255;102mAuto-correction:[0m
-[38;2;204;255;102mGNU long options:[0m
-[38;2;204;255;102mJIT options (experimental):[0m
-[38;2;204;255;102mUsage:[0m[38;2;255;255;255m cp [OPTION]... [-T] SOURCE DEST[0m
-[38;2;204;255;102musage:[0m[38;2;255;255;255m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
+[38;2;143;157;106mSelection options[0m
+[38;2;143;157;106mBasic Options:[0m
+[38;2;143;157;106mUSAGE:[0m
+[38;2;255;255;255m [0m[38;2;143;157;106mFinding manual pages:[0m
+[38;2;143;157;106mAuto-correction:[0m
+[38;2;143;157;106mGNU long options:[0m
+[38;2;143;157;106mJIT options (experimental):[0m
+[38;2;143;157;106mUsage:[0m[38;2;255;255;255m cp [OPTION]... [-T] SOURCE DEST[0m
+[38;2;143;157;106musage:[0m[38;2;255;255;255m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
 
 [38;2;255;255;255mBut not if the line is longer than forty chars[0m
 [38;2;255;255;255mnor if it begins with lowercase[0m
