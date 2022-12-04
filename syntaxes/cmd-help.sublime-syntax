@@ -61,7 +61,8 @@ scope_variables: # last scope is matched first
   - &PLUS_OPTION_DEF_SCOPES
     entity.name.function.option.plus.cmd-help
   - &OPTION_ARGUMENT_SCOPES
-    keyword.other.option-argument.cmd-help
+    option.name.function.option.cmd-help
+    keyword.other.argument.cmd-help
 
   # argument definitions (99% confidence) =~ option argument
   - &ARGUMENT_DEF_SCOPES
