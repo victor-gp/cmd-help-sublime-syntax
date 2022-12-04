@@ -64,7 +64,7 @@ scope_variables: # last scope is matched first
     constant.other.end-of-options.cmd-help
 
   - &OPTION_ARGUMENT_SCOPES
-    option.name.function.option.cmd-help
+    entity.name.function.option.cmd-help
     keyword.other.argument.cmd-help
   # argument definitions (99% confidence) =~ OPTION_ARGUMENT
   - &ARGUMENT_DEF_SCOPES
@@ -129,8 +129,8 @@ contexts:
     - match: ''
       pop: true
 
-  de-scope-match:
-    - clear_scopes: 1
+  de-scope-option-arg:
+    - clear_scopes: 2
     - include: then-pop
 
   sink:
@@ -288,7 +288,7 @@ contexts:
   option-def+square-bracket:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPES
     - match: '\|'
-      push: de-scope-match
+      push: de-scope-option-arg
     - match: (?=])
       set:
         - match: ']'
@@ -310,7 +310,7 @@ contexts:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPES
     # match ',' or '|'
     - match: ',|\|'
-      push: de-scope-match
+      push: de-scope-option-arg
     - match: (?=})
       set:
         - match: '}'
@@ -366,7 +366,7 @@ contexts:
     - meta_content_scope: *ARGUMENT_DEF_SCOPES
     # match ',' or '|'
     - match: ',|\|'
-      push: de-scope-match
+      push: de-scope-option-arg
     - match: (?=})
       set:
         - match: '}'
