@@ -12,8 +12,8 @@
 [1;38;2;145;208;118mAuto-correction:[0m
 [1;38;2;145;208;118mGNU long options:[0m
 [1;38;2;145;208;118mJIT options (experimental):[0m
-[1;38;2;108;184;230mUsage:[0m[38;2;227;234;242m cp [OPTION]... [-T] SOURCE DEST[0m
-[1;38;2;108;184;230musage:[0m[38;2;227;234;242m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
+[1;38;2;145;208;118mUsage:[0m[38;2;227;234;242m cp [OPTION]... [-T] SOURCE DEST[0m
+[1;38;2;145;208;118musage:[0m[38;2;227;234;242m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
 
 [38;2;227;234;242mBut not if the line is longer than forty chars[0m
 [38;2;227;234;242mnor if it begins with lowercase[0m

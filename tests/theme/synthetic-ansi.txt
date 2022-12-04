@@ -12,8 +12,8 @@ Most of these lines come from actual help messages in tests/source/.
 [32mAuto-correction:[0m
 [32mGNU long options:[0m
 [32mJIT options (experimental):[0m
-[34mUsage:[0m cp [OPTION]... [-T] SOURCE DEST
-[34musage:[0m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+[32mUsage:[0m cp [OPTION]... [-T] SOURCE DEST
+[32musage:[0m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...
 
 But not if the line is longer than forty chars
 nor if it begins with lowercase

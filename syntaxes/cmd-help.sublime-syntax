@@ -51,10 +51,9 @@ scope_variables: # last scope is matched first
     string.section-heading.cmd-help
 
   - &INLINE_USAGE_SCOPES
-    constant.section-heading.cmd-help
-    string.inline-usage.cmd-help
+    constant.section-heading.inline-usage.cmd-help
     markup.heading.inline-usage.cmd-help
-    entity.name.section.inline-usage.cmd-help
+    string.section-heading.inline-usage.cmd-help
 
   - &OPTION_DEF_SCOPES
     entity.name.function.option.cmd-help
