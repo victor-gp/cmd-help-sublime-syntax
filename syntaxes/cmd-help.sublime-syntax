@@ -78,10 +78,8 @@ scope_variables: # last scope is matched first
     constant.other.def.cmd-help
 
   - &FILE_DEF_SCOPES
-    constant
-    variable.other.readwrite
-    constant.character.file.cmd-help
-    variable.parameter
+    variable.parameter.file.cmd-help
+    meta.function.block.start.handlebars.file.cmd-help
 
 
 contexts:

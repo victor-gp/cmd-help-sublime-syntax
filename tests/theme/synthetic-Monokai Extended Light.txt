@@ -99,9 +99,9 @@
 [38;2;73;72;62m  [0m[38;2;249;0;90mJAVA_OPTS[0m[38;2;73;72;62m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
 [38;2;73;72;62m  [0m[38;2;249;0;90m'warn'[0m[38;2;73;72;62m         diagnose errors writing to any output[0m
 
-[38;2;73;72;62m  [0m[38;2;207;112;0m.jvmopts[0m[38;2;73;72;62m            if this file exists in the current directory, its contents[0m
-[38;2;73;72;62m  [0m[38;2;207;112;0m/etc/sbt/sbtopts[0m[38;2;73;72;62m    if this file exists, it is prepended to the runner args[0m
-[38;2;207;112;0mpath/.to/file[0m
+[38;2;73;72;62m  [0m[38;2;0;137;179m.jvmopts[0m[38;2;73;72;62m            if this file exists in the current directory, its contents[0m
+[38;2;73;72;62m  [0m[38;2;0;137;179m/etc/sbt/sbtopts[0m[38;2;73;72;62m    if this file exists, it is prepended to the runner args[0m
+[38;2;0;137;179mpath/.to/file[0m
 
 [38;2;73;72;62m   [0m[38;2;103;156;0m+[0m[38;2;73;72;62m			Start at end of file[0m
 [38;2;73;72;62m   [0m[38;2;103;156;0m+[0m[38;2;249;0;90m<lnum>[0m[38;2;73;72;62m		Start at line <lnum>[0m

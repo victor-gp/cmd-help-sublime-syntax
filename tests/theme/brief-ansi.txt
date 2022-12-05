@@ -4,5 +4,5 @@ brief: quick reference for theme support
 [34m--option[0m [35m<argument>[0m   bla bla bla
 [33msubcommand[0m            bla bla bla
 [35mARGUMENT[0m              or ENV sometimes
-[33mpath/to/file[0m          bla bla bla
+path/to/file          bla bla bla
 [33m--[0m                    bla bla bla
