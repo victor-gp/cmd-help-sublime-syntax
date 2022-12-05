@@ -99,9 +99,9 @@ nor if it begins with lowercase
   [35mJAVA_OPTS[0m           environment variable, if unset uses "-Dfile.encoding=UTF-8"
   [35m'warn'[0m         diagnose errors writing to any output
 
-  .jvmopts            if this file exists in the current directory, its contents
-  /etc/sbt/sbtopts    if this file exists, it is prepended to the runner args
-path/.to/file
+  [36m.jvmopts[0m            if this file exists in the current directory, its contents
+  [36m/etc/sbt/sbtopts[0m    if this file exists, it is prepended to the runner args
+[36mpath/.to/file[0m
 
    [34m+[0m			Start at end of file
    [34m+[0m[35m<lnum>[0m		Start at line <lnum>

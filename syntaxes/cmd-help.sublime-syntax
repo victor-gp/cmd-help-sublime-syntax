@@ -78,6 +78,7 @@ scope_variables: # last scope is matched first
     constant.other.def.cmd-help
 
   - &FILE_DEF_SCOPES
+    constant.character.escape.file.cmd-help
     variable.parameter.file.cmd-help
     meta.function.block.start.handlebars.file.cmd-help
 
