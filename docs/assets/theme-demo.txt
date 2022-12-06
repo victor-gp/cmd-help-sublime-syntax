@@ -1,25 +1,21 @@
-hat 0.1.0
-A silly help message to demo theme support.
+rat 0.1.0
+A rad cat(1). Or a silly help message to demo theme support.
 
-Usage: hat [options] [arguments] [subcommand]
-
-Options:
-  -h, --help           Show this help message and exit
-  -t, --top-color [COLOR]  Set the top color of the hat (default: "magenta")
-  -b, --bottom-color [COLOR]  Set the bottom color of the hat (default: "lime green")
-  -s, --size [SIZE]    Set the size of the hat (default: "bigger than your head")
-  +w, --wizard         Turn the hat into a wizard hat
+Usage: rat [OPTIONS] [FILE]...
+       rat <SUBCOMMAND>
 
 Arguments:
-  <HAT-NAME>  The name of the hat
-  <HAT-TYPE>...  One or more types for the hat
+    <FILE>...    File(s) to print / concatenate. Use '-' for standard input.
+
+Options:
+    -p, --plain                       Show plain style (alias for '--style=plain').
+    -l, --language <language>         Set the language for syntax highlighting.
+        --theme <theme>               Set the color theme for syntax highlighting.
+    +<seconds>                        Inactivity period before a rat eats your text.
 
 Subcommands:
-  create    Create a new hat
-  modify    Modify an existing hat
-  delete    Delete an existing hat
+    cache       Modify the syntax-definition and theme cache
+    mischief    A rat infestation eats your hard drive
 
 Other:
-  ~/.config/hat/config  Location of your config file
-
-Note: This command is not to be taken seriously. Use at your own risk.
+    ~/.config/hat/config    Location of your config file
