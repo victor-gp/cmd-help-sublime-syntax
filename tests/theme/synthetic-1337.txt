@@ -103,6 +103,7 @@
 [38;2;248;248;242m  [0m[38;2;252;147;84m/etc/sbt/sbtopts[0m[38;2;248;248;242m    if this file exists, it is prepended to the runner args[0m
 [38;2;252;147;84mpath/.to/file[0m
 [38;2;252;147;84m~/.config/bat[0m
+[38;2;252;147;84m~/.config/bat/[0m
 
 [38;2;248;248;242m   [0m[38;2;140;218;255m+[0m[38;2;248;248;242m			Start at end of file[0m
 [38;2;248;248;242m   [0m[38;2;140;218;255m+[0m[38;2;255;94;94m<lnum>[0m[38;2;248;248;242m		Start at line <lnum>[0m

@@ -37,8 +37,7 @@ variables:
 
 ### file-def variables:
   filename: '[0-9a-zA-Z._-]+'
-  # todo: allow pathnames to end in /
-  absolute_path: '(/{{filename}})+'
+  absolute_path: '(/{{filename}})+/?'
   relative_path: '{{filename}}{{absolute_path}}'
   home_relative_path: '~{{absolute_path}}'
 
