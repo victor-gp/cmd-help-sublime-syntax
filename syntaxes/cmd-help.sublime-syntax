@@ -36,7 +36,8 @@ variables:
   single_2_space: '  (?!.*\S  \S)'
 
 ### file-def variables:
-  filename: '[0-9a-zA-Z._-]+'
+  filename: '[0-9a-zA-Z._-~]+'
+  # todo: allow pathnames to end in /
   absolute_path: '/{{filename}}(/{{filename}})*'
   relative_path: '{{filename}}/({{filename}}/)*{{filename}}'
 
