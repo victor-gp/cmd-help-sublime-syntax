@@ -36,19 +36,19 @@ Initialization options:
 Action options:
 
 FILE                    visit FILE
-#^^^ variable.parameter.other-value.cmd-help
+#^^^ keyword.other.value.cmd-help
 +LINE                   go to line LINE in next FILE
 # <- entity.name.function.option.plus.cmd-help
-#^^^^ variable.parameter.option-argument.cmd-help
+#^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 +LINE:COLUMN            go to line LINE, column COLUMN, in next FILE
 # <- entity.name.function.option.plus.cmd-help
-#^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 --directory, -L DIR     prepend DIR to load-path (with :DIR, append DIR)
 --eval EXPR             evaluate Emacs Lisp expression EXPR
 --execute EXPR          evaluate Emacs Lisp expression EXPR
 --file FILE             visit FILE
 #^^^^^ entity.name.function.option.cmd-help
-#      ^^^^ variable.parameter.option-argument.cmd-help
+#      ^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 --find-file FILE        visit FILE
 --funcall, -f FUNC      call Emacs Lisp function FUNC with no arguments
 --insert FILE           insert contents of FILE into current buffer

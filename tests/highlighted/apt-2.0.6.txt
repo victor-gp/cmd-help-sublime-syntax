@@ -1,5 +1,5 @@
 [38;2;248;248;242mapt 2.0.6 (amd64)[0m
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m apt [options] command[0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m apt [options] command[0m
 
 [38;2;248;248;242mapt is a commandline package manager and provides commands for[0m
 [38;2;248;248;242msearching and managing as well as querying information about packages.[0m
@@ -7,19 +7,19 @@
 [38;2;248;248;242mlike apt-get and apt-cache, but enables options more suitable for[0m
 [38;2;248;248;242minteractive use by default.[0m
 
-[38;2;253;151;31mMost used commands:[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mlist[0m[38;2;248;248;242m - list packages based on package names[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114msearch[0m[38;2;248;248;242m - search in package descriptions[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mshow[0m[38;2;248;248;242m - show package details[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114minstall[0m[38;2;248;248;242m - install packages[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mreinstall[0m[38;2;248;248;242m - reinstall packages[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mremove[0m[38;2;248;248;242m - remove packages[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mautoremove[0m[38;2;248;248;242m - Remove automatically all unused packages[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mupdate[0m[38;2;248;248;242m - update list of available packages[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mupgrade[0m[38;2;248;248;242m - upgrade the system by installing/upgrading packages[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mfull-upgrade[0m[38;2;248;248;242m - upgrade the system by removing/installing/upgrading packages[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114medit-sources[0m[38;2;248;248;242m - edit the source information file[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114msatisfy[0m[38;2;248;248;242m - satisfy dependency strings[0m
+[38;2;246;170;17mMost used commands:[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mlist[0m[38;2;248;248;242m - list packages based on package names[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255msearch[0m[38;2;248;248;242m - search in package descriptions[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mshow[0m[38;2;248;248;242m - show package details[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255minstall[0m[38;2;248;248;242m - install packages[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mreinstall[0m[38;2;248;248;242m - reinstall packages[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mremove[0m[38;2;248;248;242m - remove packages[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mautoremove[0m[38;2;248;248;242m - Remove automatically all unused packages[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mupdate[0m[38;2;248;248;242m - update list of available packages[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mupgrade[0m[38;2;248;248;242m - upgrade the system by installing/upgrading packages[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mfull-upgrade[0m[38;2;248;248;242m - upgrade the system by removing/installing/upgrading packages[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255medit-sources[0m[38;2;248;248;242m - edit the source information file[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255msatisfy[0m[38;2;248;248;242m - satisfy dependency strings[0m
 
 [38;2;248;248;242mSee apt(8) for more information about the available commands.[0m
 [38;2;248;248;242mConfiguration options and syntax is detailed in apt.conf(5).[0m

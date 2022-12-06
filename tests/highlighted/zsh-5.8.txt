@@ -1,11 +1,11 @@
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m zsh [<options>] [<argument> ...][0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m zsh [<options>] [<argument> ...][0m
 
-[38;2;253;151;31mSpecial options:[0m
+[38;2;246;170;17mSpecial options:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m     show this message, then exit[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  show zsh version number, then exit[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m         end option processing, like --[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m         take first argument as a command to execute[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m [0m[38;2;253;151;31mOPTION[0m[38;2;248;248;242m  set an option by name (see below)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m [0m[38;2;249;38;114mOPTION[0m[38;2;248;248;242m  set an option by name (see below)[0m
 
 [38;2;248;248;242mNormal options are named.  An option may be turned on by[0m
 [38;2;248;248;242m`-o OPTION', `--OPTION', `+o no_OPTION' or `+-no-OPTION'.  An[0m
@@ -13,7 +13,7 @@
 [38;2;248;248;242m`+o OPTION' or `+-OPTION'.  Options are listed below only in[0m
 [38;2;248;248;242m`--OPTION' or `--no-OPTION' form.[0m
 
-[38;2;253;151;31mNamed options:[0m
+[38;2;246;170;17mNamed options:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--aliases[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--aliasfuncdef[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--allexport[0m
@@ -196,7 +196,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--xtrace[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--zle[0m
 
-[38;2;253;151;31mOption aliases:[0m
+[38;2;246;170;17mOption aliases:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--braceexpand[0m[38;2;248;248;242m            equivalent to --no-ignorebraces[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--dotglob[0m[38;2;248;248;242m                equivalent to --globdots[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--hashall[0m[38;2;248;248;242m                equivalent to --hashcmds[0m
@@ -210,7 +210,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--stdin[0m[38;2;248;248;242m                  equivalent to --shinstdin[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--trackall[0m[38;2;248;248;242m               equivalent to --hashcmds[0m
 
-[38;2;253;151;31mOption letters:[0m
+[38;2;246;170;17mOption letters:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m    equivalent to --completeinword[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-1[0m[38;2;248;248;242m    equivalent to --printexitvalue[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-2[0m[38;2;248;248;242m    equivalent to --no-autoresume[0m

@@ -36,8 +36,8 @@ Some of the options include:
   -S               sort keys of objects on output;
   --tab            use tabs for indentation;
   --arg a v        set variable $a to value <v>;
-#       ^ - variable.parameter.option-argument.cmd-help
-#         ^ - variable.parameter.option-argument.cmd-help
+#       ^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#         ^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 #nit: handle these
 
   --argjson a v    set variable $a to JSON value <v>;

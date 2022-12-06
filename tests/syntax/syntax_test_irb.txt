@@ -4,7 +4,7 @@ Usage:  irb.rb [options] [programfile] [arguments]
   -f                Suppress read of ~/.irbrc
   -d                Set $DEBUG to true (same as `ruby -d')
   -r load-module    Same as `ruby -r'
-#    ^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#    ^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
   -I path           Specify $LOAD_PATH directory
   -U                Same as `ruby -U`
   -E enc            Same as `ruby -E`

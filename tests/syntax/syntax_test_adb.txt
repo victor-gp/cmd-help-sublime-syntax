@@ -143,8 +143,8 @@ scripting:
  usb                      restart adbd listening on USB
  tcpip PORT               restart adbd listening on TCP on PORT
 #^^^^^ - entity.name.function.option.cmd-help
-#     ^ - entity.name.function.option.cmd-help variable.parameter.option-argument.cmd-help
-#      ^^^^ - variable.parameter.option-argument.cmd-help
+#     ^ - entity.name.function.option.cmd-help entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#      ^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 #nice: subcommand + ARG
 
 internal debugging:
@@ -152,9 +152,9 @@ internal debugging:
  kill-server              kill the server if it is running
  reconnect                kick connection from host side to force reconnect
  reconnect device         kick connection from device side to force reconnect
-#^^^^^^^^^ - keyword.other.def.cmd-help
-#         ^ - keyword.other.def.cmd-help
-#          ^^^^^^ - keyword.other.def.cmd-help
+#^^^^^^^^^ - constant.other.def.cmd-help
+#         ^ - constant.other.def.cmd-help
+#          ^^^^^^ - constant.other.def.cmd-help
 #nice: subcommand + subcommand/enum
  reconnect offline        reset offline/unauthorized devices to force reconnect
 

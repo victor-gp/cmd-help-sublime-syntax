@@ -1,14 +1,14 @@
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m ruby [switches] [--] [programfile] [arguments][0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m[[0m[38;2;253;151;31moctal[0m[38;2;248;248;242m]       specify record separator (\0, if no argument)[0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m ruby [switches] [--] [programfile] [arguments][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m[[0m[38;2;249;38;114moctal[0m[38;2;248;248;242m]       specify record separator (\0, if no argument)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m              autosplit mode with -n or -p (splits $_ into $F)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m              check syntax only[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Cdirectory[0m[38;2;248;248;242m     cd to directory before executing your script[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m     set debugging flags (set $DEBUG to true)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m [0m[38;2;253;151;31m'command'[0m[38;2;248;248;242m    one line of script. Several -e's allowed. Omit [programfile][0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Eex[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:in[0m[38;2;248;248;242m], [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mex[0m[38;2;248;248;242m[[0m[38;2;253;151;31m:in[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m [0m[38;2;249;38;114m'command'[0m[38;2;248;248;242m    one line of script. Several -e's allowed. Omit [programfile][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Eex[0m[38;2;248;248;242m[[0m[38;2;249;38;114m:in[0m[38;2;248;248;242m], [0m[38;2;166;226;46m--encoding[0m[38;2;248;248;242m=[0m[38;2;249;38;114mex[0m[38;2;248;248;242m[[0m[38;2;249;38;114m:in[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  specify the default external and internal character encodings[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Fpattern[0m[38;2;248;248;242m       split() pattern for autosplit (-a)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m[[0m[38;2;253;151;31mextension[0m[38;2;248;248;242m]   edit ARGV files in place (make backup if extension supplied)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m[[0m[38;2;249;38;114mextension[0m[38;2;248;248;242m]   edit ARGV files in place (make backup if extension supplied)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-Idirectory[0m[38;2;248;248;242m     specify $LOAD_PATH directory (may be used more than once)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m              enable line ending processing[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m              assume 'while gets(); ... end' loop around your script[0m
@@ -18,48 +18,48 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m              look for the script using PATH environment variable[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m              print the version number, then turn on verbose mode[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m              turn warnings on for your script[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m[[0m[38;2;253;151;31mlevel=2[0m[38;2;255;255;255m|[0m[38;2;253;151;31m:category[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m[[0m[38;2;249;38;114mlevel=2[0m[38;2;248;248;242m|[0m[38;2;249;38;114m:category[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  set warning level; 0=silence, 1=medium, 2=verbose[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m[[0m[38;2;253;151;31mdirectory[0m[38;2;248;248;242m]   strip off text before #!ruby line and perhaps cd to directory[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m[[0m[38;2;249;38;114mdirectory[0m[38;2;248;248;242m]   strip off text before #!ruby line and perhaps cd to directory[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit[0m[38;2;248;248;242m           enable JIT with default options (experimental)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-[0m[38;2;248;248;242m[[0m[38;2;253;151;31moption[0m[38;2;248;248;242m]  enable JIT with an option (experimental)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-[0m[38;2;248;248;242m[[0m[38;2;249;38;114moption[0m[38;2;248;248;242m]  enable JIT with an option (experimental)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--copyright[0m[38;2;248;248;242m     print the copyright[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--dump[0m[38;2;248;248;242m={[0m[38;2;253;151;31minsns[0m[38;2;255;255;255m|[0m[38;2;253;151;31mparsetree[0m[38;2;255;255;255m|[0m[38;2;253;151;31m...[0m[38;2;248;248;242m}[[0m[38;2;253;151;31m,...[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--dump[0m[38;2;248;248;242m={[0m[38;2;249;38;114minsns[0m[38;2;248;248;242m|[0m[38;2;249;38;114mparsetree[0m[38;2;248;248;242m|[0m[38;2;249;38;114m...[0m[38;2;248;248;242m}[[0m[38;2;249;38;114m,...[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  dump debug information. see below for available dump list[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--enable[0m[38;2;248;248;242m={[0m[38;2;253;151;31mgems[0m[38;2;255;255;255m|[0m[38;2;253;151;31mrubyopt[0m[38;2;255;255;255m|[0m[38;2;253;151;31m...[0m[38;2;248;248;242m}[[0m[38;2;253;151;31m,...[0m[38;2;248;248;242m], [0m[38;2;166;226;46m--disable[0m[38;2;248;248;242m={[0m[38;2;253;151;31mgems[0m[38;2;255;255;255m|[0m[38;2;253;151;31mrubyopt[0m[38;2;255;255;255m|[0m[38;2;253;151;31m...[0m[38;2;248;248;242m}[[0m[38;2;253;151;31m,...[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--enable[0m[38;2;248;248;242m={[0m[38;2;249;38;114mgems[0m[38;2;248;248;242m|[0m[38;2;249;38;114mrubyopt[0m[38;2;248;248;242m|[0m[38;2;249;38;114m...[0m[38;2;248;248;242m}[[0m[38;2;249;38;114m,...[0m[38;2;248;248;242m], [0m[38;2;166;226;46m--disable[0m[38;2;248;248;242m={[0m[38;2;249;38;114mgems[0m[38;2;248;248;242m|[0m[38;2;249;38;114mrubyopt[0m[38;2;248;248;242m|[0m[38;2;249;38;114m...[0m[38;2;248;248;242m}[[0m[38;2;249;38;114m,...[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m                  enable or disable features. see below for available features[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--external-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--internal-encoding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mencoding[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--external-encoding[0m[38;2;248;248;242m=[0m[38;2;249;38;114mencoding[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--internal-encoding[0m[38;2;248;248;242m=[0m[38;2;249;38;114mencoding[0m
 [38;2;248;248;242m                  specify the default external or internal character encoding[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m       turn on verbose mode and disable script from stdin[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m       print the version number, then exit[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m          show this message, -h for short message[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--backtrace-limit[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--backtrace-limit[0m[38;2;248;248;242m=[0m[38;2;249;38;114mnum[0m
 [38;2;248;248;242m                  limit the maximum length of backtrace[0m
-[38;2;253;151;31mDump List:[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114minsns[0m[38;2;248;248;242m           instruction sequences[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114myydebug[0m[38;2;248;248;242m         yydebug of yacc parser generator[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mparsetree[0m[38;2;248;248;242m       AST[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mparsetree_with_comment[0m
+[38;2;246;170;17mDump List:[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255minsns[0m[38;2;248;248;242m           instruction sequences[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255myydebug[0m[38;2;248;248;242m         yydebug of yacc parser generator[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mparsetree[0m[38;2;248;248;242m       AST[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mparsetree_with_comment[0m
 [38;2;248;248;242m                  AST with comments[0m
-[38;2;253;151;31mFeatures:[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mgems[0m[38;2;248;248;242m            rubygems (default: enabled)[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mdid_you_mean[0m[38;2;248;248;242m    did_you_mean (default: enabled)[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mrubyopt[0m[38;2;248;248;242m         RUBYOPT environment variable (default: enabled)[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mfrozen-string-literal[0m
+[38;2;246;170;17mFeatures:[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mgems[0m[38;2;248;248;242m            rubygems (default: enabled)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mdid_you_mean[0m[38;2;248;248;242m    did_you_mean (default: enabled)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mrubyopt[0m[38;2;248;248;242m         RUBYOPT environment variable (default: enabled)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mfrozen-string-literal[0m
 [38;2;248;248;242m                  freeze all string literals (default: disabled)[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mjit[0m[38;2;248;248;242m             JIT compiler (default: disabled)[0m
-[38;2;253;151;31mWarning categories:[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mdeprecated[0m[38;2;248;248;242m      deprecated features[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mexperimental[0m[38;2;248;248;242m    experimental features[0m
-[38;2;253;151;31mJIT options (experimental):[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mjit[0m[38;2;248;248;242m             JIT compiler (default: disabled)[0m
+[38;2;246;170;17mWarning categories:[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mdeprecated[0m[38;2;248;248;242m      deprecated features[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mexperimental[0m[38;2;248;248;242m    experimental features[0m
+[38;2;246;170;17mJIT options (experimental):[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-warnings[0m[38;2;248;248;242m  Enable printing JIT warnings[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-debug[0m[38;2;248;248;242m     Enable JIT debugging (very slow), or add cflags if specified[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-wait[0m[38;2;248;248;242m      Wait until JIT compilation finishes every time (for testing)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jit-save-temps[0m
 [38;2;248;248;242m                  Save JIT temporary files in $TMP or /tmp (for testing)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-verbose[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-verbose[0m[38;2;248;248;242m=[0m[38;2;249;38;114mnum[0m
 [38;2;248;248;242m                  Print JIT logs of level num or less to stderr (default: 0)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-max-cache[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-max-cache[0m[38;2;248;248;242m=[0m[38;2;249;38;114mnum[0m
 [38;2;248;248;242m                  Max number of methods to be JIT-ed in a cache (default: 100)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-min-calls[0m[38;2;248;248;242m=[0m[38;2;253;151;31mnum[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jit-min-calls[0m[38;2;248;248;242m=[0m[38;2;249;38;114mnum[0m
 [38;2;248;248;242m                  Number of calls to trigger JIT (for testing, default: 10000)[0m

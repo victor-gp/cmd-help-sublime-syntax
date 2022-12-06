@@ -21,8 +21,8 @@ OPTIONS:
 
 Some common cargo commands are (see all commands with --list):
     build, b    Compile the current package
-#   ^^^^^ keyword.other.def.cmd-help
-#          ^ keyword.other.def.cmd-help
+#   ^^^^^ constant.other.def.cmd-help
+#          ^ constant.other.def.cmd-help
     check, c    Analyze the current package and report errors, but don't build object files
     clean       Remove the target directory
     doc, d      Build this package's and its dependencies' documentation

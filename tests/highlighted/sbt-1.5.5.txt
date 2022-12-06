@@ -1,4 +1,4 @@
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m sbt [options][0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m sbt [options][0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m | [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m         print this message[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m | [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m      this runner is chattier[0m
@@ -9,9 +9,9 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-debug-inc[0m[38;2;248;248;242m | [0m[38;2;166;226;46m--debug-inc[0m
 [38;2;248;248;242m                      enable extra debugging for the incremental debugger[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-colors[0m[38;2;248;248;242m         disable ANSI color codes[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m=[0m[38;2;253;151;31mauto[0m[38;2;248;248;242m|[0m[38;2;253;151;31malways[0m[38;2;248;248;242m|[0m[38;2;253;151;31mtrue[0m[38;2;248;248;242m|[0m[38;2;253;151;31mfalse[0m[38;2;248;248;242m|[0m[38;2;253;151;31mnever[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m=[0m[38;2;249;38;114mauto[0m[38;2;248;248;242m|[0m[38;2;249;38;114malways[0m[38;2;248;248;242m|[0m[38;2;249;38;114mtrue[0m[38;2;248;248;242m|[0m[38;2;249;38;114mfalse[0m[38;2;248;248;242m|[0m[38;2;249;38;114mnever[0m
 [38;2;248;248;242m                      enable or disable ANSI color codes      (sbt 1.3 and above)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--supershell[0m[38;2;248;248;242m=[0m[38;2;253;151;31mauto[0m[38;2;248;248;242m|[0m[38;2;253;151;31malways[0m[38;2;248;248;242m|[0m[38;2;253;151;31mtrue[0m[38;2;248;248;242m|[0m[38;2;253;151;31mfalse[0m[38;2;248;248;242m|[0m[38;2;253;151;31mnever[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--supershell[0m[38;2;248;248;242m=[0m[38;2;249;38;114mauto[0m[38;2;248;248;242m|[0m[38;2;249;38;114malways[0m[38;2;248;248;242m|[0m[38;2;249;38;114mtrue[0m[38;2;248;248;242m|[0m[38;2;249;38;114mfalse[0m[38;2;248;248;242m|[0m[38;2;249;38;114mnever[0m
 [38;2;248;248;242m                      enable or disable supershell            (sbt 1.3 and above)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--traces[0m[38;2;248;248;242m            generate Trace Event report on shutdown (sbt 1.3 and above)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--timings[0m[38;2;248;248;242m           display task timings report on shutdown[0m
@@ -22,7 +22,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--mem[0m[38;2;248;248;242m    <integer>  set memory options (default: 1024)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-share[0m[38;2;248;248;242m          use all local caches; no sharing[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-global[0m[38;2;248;248;242m         uses global caches, but does not use global ~/.sbt directory.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--jvm-debug[0m[38;2;248;248;242m [0m[38;2;253;151;31m<port>[0m[38;2;248;248;242m  Turn on JVM debugging, open at the given port.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--jvm-debug[0m[38;2;248;248;242m [0m[38;2;249;38;114m<port>[0m[38;2;248;248;242m  Turn on JVM debugging, open at the given port.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--batch[0m[38;2;248;248;242m             disable interactive mode[0m
 
 [38;2;248;248;242m  # sbt version (default: from project/build.properties if present, else latest release)[0m
@@ -30,17 +30,17 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--sbt-jar[0m[38;2;248;248;242m      <path>      use the specified jar as the sbt launcher[0m
 
 [38;2;248;248;242m  # java version (default: java from PATH, currently openjdk version "1.8.0_292")[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--java-home[0m[38;2;248;248;242m [0m[38;2;253;151;31m<path>[0m[38;2;248;248;242m         alternate JAVA_HOME[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--java-home[0m[38;2;248;248;242m [0m[38;2;249;38;114m<path>[0m[38;2;248;248;242m         alternate JAVA_HOME[0m
 
 [38;2;248;248;242m  # jvm options and output control[0m
-[38;2;248;248;242m  [0m[38;2;253;151;31mJAVA_OPTS[0m[38;2;248;248;242m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m.jvmopts[0m[38;2;248;248;242m            if this file exists in the current directory, its contents[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mJAVA_OPTS[0m[38;2;248;248;242m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
+[38;2;248;248;242m  [0m[38;2;102;217;239m.jvmopts[0m[38;2;248;248;242m            if this file exists in the current directory, its contents[0m
 [38;2;248;248;242m                      are appended to JAVA_OPTS[0m
-[38;2;248;248;242m  [0m[38;2;253;151;31mSBT_OPTS[0m[38;2;248;248;242m            environment variable, if unset uses ""[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m.sbtopts[0m[38;2;248;248;242m            if this file exists in the current directory, its contents[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mSBT_OPTS[0m[38;2;248;248;242m            environment variable, if unset uses ""[0m
+[38;2;248;248;242m  [0m[38;2;102;217;239m.sbtopts[0m[38;2;248;248;242m            if this file exists in the current directory, its contents[0m
 [38;2;248;248;242m                      are prepended to the runner args[0m
-[38;2;248;248;242m  [0m[38;2;248;248;242m/etc/sbt/sbtopts[0m[38;2;248;248;242m    if this file exists, it is prepended to the runner args[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Dkey[0m[38;2;248;248;242m=[0m[38;2;253;151;31mval[0m[38;2;248;248;242m           pass -Dkey=val directly to the java runtime[0m
+[38;2;248;248;242m  [0m[38;2;102;217;239m/etc/sbt/sbtopts[0m[38;2;248;248;242m    if this file exists, it is prepended to the runner args[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Dkey[0m[38;2;248;248;242m=[0m[38;2;249;38;114mval[0m[38;2;248;248;242m           pass -Dkey=val directly to the java runtime[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-J-X[0m[38;2;248;248;242m                pass option -X directly to the java runtime[0m
 [38;2;248;248;242m                      (-J is stripped)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-S-X[0m[38;2;248;248;242m                add -X to sbt's scalacOptions (-S is stripped)[0m

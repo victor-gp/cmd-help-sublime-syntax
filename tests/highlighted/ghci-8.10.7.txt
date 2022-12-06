@@ -1,4 +1,4 @@
-[38;2;253;151;31mUsage:[0m
+[38;2;246;170;17mUsage:[0m
 
 [38;2;248;248;242m    ghci [command-line-options-and-input-files][0m
 
@@ -12,7 +12,7 @@
 [38;2;248;248;242mIn addition, ghci accepts most of the command-line options that plain[0m
 [38;2;248;248;242mGHC does.  Some of the options that are commonly used are:[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;253;151;31m<dir>[0m[38;2;248;248;242m         Search for imported modules in the directory <dir>.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;249;38;114m<dir>[0m[38;2;248;248;242m         Search for imported modules in the directory <dir>.[0m
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-H32m[0m[38;2;248;248;242m	    Increase GHC's default heap size to 32m[0m
 

@@ -6,16 +6,16 @@
 [38;2;248;248;242m [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m         listen on all network interfaces, not just localhost[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m         use USB device (error if multiple devices connected)[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m         use TCP/IP device (error if multiple TCP/IP devices available)[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m [0m[38;2;253;151;31mSERIAL[0m[38;2;248;248;242m  use device with given serial (overrides $ANDROID_SERIAL)[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;253;151;31mID[0m[38;2;248;248;242m      use device with given transport id[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m [0m[38;2;249;38;114mSERIAL[0m[38;2;248;248;242m  use device with given serial (overrides $ANDROID_SERIAL)[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [0m[38;2;249;38;114mID[0m[38;2;248;248;242m      use device with given transport id[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m         name of adb server host [default=localhost][0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m         port of adb server [default=5037][0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;253;151;31mSOCKET[0m[38;2;248;248;242m  listen on given socket for adb server [default=tcp:localhost:5037][0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;249;38;114mSOCKET[0m[38;2;248;248;242m  listen on given socket for adb server [default=tcp:localhost:5037][0m
 
 [38;2;248;248;242mgeneral commands:[0m
 [38;2;248;248;242m devices [-l]             list connected devices (-l for long output)[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mhelp[0m[38;2;248;248;242m                     show this help message[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mversion[0m[38;2;248;248;242m                  show version num[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mhelp[0m[38;2;248;248;242m                     show this help message[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mversion[0m[38;2;248;248;242m                  show version num[0m
 
 [38;2;248;248;242mnetworking:[0m
 [38;2;248;248;242m connect HOST[:PORT]      connect to a device via TCP/IP [default port=5555][0m
@@ -90,7 +90,7 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m: allow version code downgrade (debuggable packages only)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m: partial application install (install-multiple only)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m: grant all runtime permissions[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--abi[0m[38;2;248;248;242m [0m[38;2;253;151;31mABI[0m[38;2;248;248;242m: override platform's default ABI[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--abi[0m[38;2;248;248;242m [0m[38;2;249;38;114mABI[0m[38;2;248;248;242m: override platform's default ABI[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--instant[0m[38;2;248;248;242m: cause the app to be installed as an ephemeral install app[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--no-streaming[0m[38;2;248;248;242m: always push APK to device and invoke Package Manager as separate steps[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--streaming[0m[38;2;248;248;242m: force streaming APK directly into Package Manager[0m
@@ -110,23 +110,23 @@
 [38;2;248;248;242m     write bugreport to given PATH [default=bugreport.zip];[0m
 [38;2;248;248;242m     if PATH is a directory, the bug report is saved in that directory.[0m
 [38;2;248;248;242m     devices that don't support zipped bug reports output to stdout.[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mjdwp[0m[38;2;248;248;242m                     list pids of processes hosting a JDWP transport[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mlogcat[0m[38;2;248;248;242m                   show device log (logcat --help for more)[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mjdwp[0m[38;2;248;248;242m                     list pids of processes hosting a JDWP transport[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mlogcat[0m[38;2;248;248;242m                   show device log (logcat --help for more)[0m
 
 [38;2;248;248;242msecurity:[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mdisable-verity[0m[38;2;248;248;242m           disable dm-verity checking on userdebug builds[0m
-[38;2;248;248;242m [0m[38;2;249;38;114menable-verity[0m[38;2;248;248;242m            re-enable dm-verity checking on userdebug builds[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mdisable-verity[0m[38;2;248;248;242m           disable dm-verity checking on userdebug builds[0m
+[38;2;248;248;242m [0m[38;2;190;132;255menable-verity[0m[38;2;248;248;242m            re-enable dm-verity checking on userdebug builds[0m
 [38;2;248;248;242m keygen FILE[0m
 [38;2;248;248;242m     generate adb public/private key; private key stored in FILE,[0m
 
 [38;2;248;248;242mscripting:[0m
 [38;2;248;248;242m wait-for[-TRANSPORT]-STATE...[0m
 [38;2;248;248;242m     wait for device to be in a given state[0m
-[38;2;248;248;242m     [0m[38;2;253;151;31mSTATE[0m[38;2;248;248;242m: device, recovery, rescue, sideload, bootloader, or disconnect[0m
-[38;2;248;248;242m     [0m[38;2;253;151;31mTRANSPORT[0m[38;2;248;248;242m: usb, local, or any [default=any][0m
-[38;2;248;248;242m [0m[38;2;249;38;114mget-state[0m[38;2;248;248;242m                print offline | bootloader | device[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mget-serialno[0m[38;2;248;248;242m             print <serial-number>[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mget-devpath[0m[38;2;248;248;242m              print <device-path>[0m
+[38;2;248;248;242m     [0m[38;2;249;38;114mSTATE[0m[38;2;248;248;242m: device, recovery, rescue, sideload, bootloader, or disconnect[0m
+[38;2;248;248;242m     [0m[38;2;249;38;114mTRANSPORT[0m[38;2;248;248;242m: usb, local, or any [default=any][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mget-state[0m[38;2;248;248;242m                print offline | bootloader | device[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mget-serialno[0m[38;2;248;248;242m             print <serial-number>[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mget-devpath[0m[38;2;248;248;242m              print <device-path>[0m
 [38;2;248;248;242m remount [-R][0m
 [38;2;248;248;242m      remount partitions read-write. if a reboot is required, -R will[0m
 [38;2;248;248;242m      will automatically reboot the device.[0m
@@ -136,21 +136,21 @@
 [38;2;248;248;242m     into recovery and automatically starts sideload mode,[0m
 [38;2;248;248;242m     sideload-auto-reboot is the same but reboots after sideloading.[0m
 [38;2;248;248;242m sideload OTAPACKAGE      sideload the given full OTA package[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mroot[0m[38;2;248;248;242m                     restart adbd with root permissions[0m
-[38;2;248;248;242m [0m[38;2;249;38;114munroot[0m[38;2;248;248;242m                   restart adbd without root permissions[0m
-[38;2;248;248;242m [0m[38;2;249;38;114musb[0m[38;2;248;248;242m                      restart adbd listening on USB[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mroot[0m[38;2;248;248;242m                     restart adbd with root permissions[0m
+[38;2;248;248;242m [0m[38;2;190;132;255munroot[0m[38;2;248;248;242m                   restart adbd without root permissions[0m
+[38;2;248;248;242m [0m[38;2;190;132;255musb[0m[38;2;248;248;242m                      restart adbd listening on USB[0m
 [38;2;248;248;242m tcpip PORT               restart adbd listening on TCP on PORT[0m
 
 [38;2;248;248;242minternal debugging:[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mstart-server[0m[38;2;248;248;242m             ensure that there is a server running[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mkill-server[0m[38;2;248;248;242m              kill the server if it is running[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mreconnect[0m[38;2;248;248;242m                kick connection from host side to force reconnect[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mstart-server[0m[38;2;248;248;242m             ensure that there is a server running[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mkill-server[0m[38;2;248;248;242m              kill the server if it is running[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreconnect[0m[38;2;248;248;242m                kick connection from host side to force reconnect[0m
 [38;2;248;248;242m reconnect device         kick connection from device side to force reconnect[0m
 [38;2;248;248;242m reconnect offline        reset offline/unauthorized devices to force reconnect[0m
 
 [38;2;248;248;242musb:[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mattach[0m[38;2;248;248;242m                   attach a detached USB device[0m
-[38;2;248;248;242m [0m[38;2;249;38;114mdetach[0m[38;2;248;248;242m                   detach from a USB device to allow use by other processes[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mattach[0m[38;2;248;248;242m                   attach a detached USB device[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mdetach[0m[38;2;248;248;242m                   detach from a USB device to allow use by other processes[0m
 [38;2;248;248;242menvironment variables:[0m
 [38;2;248;248;242m $ADB_TRACE[0m
 [38;2;248;248;242m     comma-separated list of debug info to log:[0m

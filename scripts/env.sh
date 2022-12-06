@@ -9,7 +9,10 @@ function gdiffs {
 # to exclude e.g. THEME-italics, do:
 #   gdiff -- ":^*-italics*"
 
-alias gshow='GIT_PAGER="LESS=R less" git diff HEAD^ HEAD -- tests/{highlighted,theme}'
+function gshow {
+    GIT_PAGER="LESS=R less" git show "$@" -- tests/{highlighted,theme}
+}
+
 alias git0='GIT_CONFIG=/dev/null git'
 
 debug() {

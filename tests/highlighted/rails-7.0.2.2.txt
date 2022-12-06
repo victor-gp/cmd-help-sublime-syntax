@@ -1,7 +1,7 @@
-[38;2;253;151;31mUsage:[0m
+[38;2;246;170;17mUsage:[0m
 [38;2;248;248;242m  rails new APP_PATH [options][0m
 
-[38;2;253;151;31mOptions:[0m
+[38;2;246;170;17mOptions:[0m
 [38;2;248;248;242m      [--skip-namespace], [--no-skip-namespace]              # Skip namespace (affects only isolated engines)[0m
 [38;2;248;248;242m      [--skip-collision-check], [--no-skip-collision-check]  # Skip collision check[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [--ruby=PATH]                                          # Path to the Ruby binary of your choice[0m
@@ -39,17 +39,17 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [--css=CSS]                                            # Choose CSS processor [options: tailwind, bootstrap, bulma, postcss, sass... check https://github.com/rails/cssbundling-rails][0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [--skip-bundle], [--no-skip-bundle]                    # Don't run bundle install[0m
 
-[38;2;253;151;31mRuntime options:[0m
+[38;2;246;170;17mRuntime options:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [--force]                    # Overwrite files that already exist[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [--pretend], [--no-pretend]  # Run but do not make any changes[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [--quiet], [--no-quiet]      # Suppress status output[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [--skip], [--no-skip]        # Skip files that already exist[0m
 
-[38;2;253;151;31mRails options:[0m
+[38;2;246;170;17mRails options:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [--help], [--no-help]        # Show this help message and quit[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [--version], [--no-version]  # Show Rails version number and quit[0m
 
-[38;2;253;151;31mDescription:[0m
+[38;2;246;170;17mDescription:[0m
 [38;2;248;248;242m    The 'rails new' command creates a new Rails application with a default[0m
 [38;2;248;248;242m    directory structure and configuration at the path you specify.[0m
 
@@ -60,7 +60,7 @@
 [38;2;248;248;242m    Note that the arguments specified in the .railsrc file don't affect the[0m
 [38;2;248;248;242m    defaults values shown above in this help message.[0m
 
-[38;2;253;151;31mExample:[0m
+[38;2;246;170;17mExample:[0m
 [38;2;248;248;242m    rails new ~/Code/Ruby/weblog[0m
 
 [38;2;248;248;242m    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.[0m

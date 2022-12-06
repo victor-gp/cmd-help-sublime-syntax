@@ -1,19 +1,19 @@
-[38;2;253;151;31musage:[0m[38;2;248;248;242m l3build <target> [<options>] [<names>][0m
+[38;2;246;170;17musage:[0m[38;2;248;248;242m l3build <target> [<options>] [<names>][0m
 
-[38;2;253;151;31mValid targets are:[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114mcheck[0m[38;2;248;248;242m        Run all automated tests[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114mclean[0m[38;2;248;248;242m        Clean out directory tree[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114mctan[0m[38;2;248;248;242m         Create CTAN-ready archive[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114mdoc[0m[38;2;248;248;242m          Typesets all documentation files[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114minstall[0m[38;2;248;248;242m      Installs files into the local texmf tree[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114mmanifest[0m[38;2;248;248;242m     Creates a manifest file[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114msave[0m[38;2;248;248;242m         Saves test validation log[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114mtag[0m[38;2;248;248;242m          Updates release tags in files[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114muninstall[0m[38;2;248;248;242m    Uninstalls files from the local texmf tree[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114munpack[0m[38;2;248;248;242m       Unpacks the source files into the build tree[0m
-[38;2;248;248;242m   [0m[38;2;249;38;114mupload[0m[38;2;248;248;242m       Send archive to CTAN for public release[0m
+[38;2;246;170;17mValid targets are:[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255mcheck[0m[38;2;248;248;242m        Run all automated tests[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255mclean[0m[38;2;248;248;242m        Clean out directory tree[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255mctan[0m[38;2;248;248;242m         Create CTAN-ready archive[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255mdoc[0m[38;2;248;248;242m          Typesets all documentation files[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255minstall[0m[38;2;248;248;242m      Installs files into the local texmf tree[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255mmanifest[0m[38;2;248;248;242m     Creates a manifest file[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255msave[0m[38;2;248;248;242m         Saves test validation log[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255mtag[0m[38;2;248;248;242m          Updates release tags in files[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255muninstall[0m[38;2;248;248;242m    Uninstalls files from the local texmf tree[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255munpack[0m[38;2;248;248;242m       Unpacks the source files into the build tree[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255mupload[0m[38;2;248;248;242m       Send archive to CTAN for public release[0m
 
-[38;2;253;151;31mValid options are:[0m
+[38;2;246;170;17mValid options are:[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m|[0m[38;2;166;226;46m-c[0m[38;2;248;248;242m            Sets the config(s) used for running tests[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--date[0m[38;2;248;248;242m                 Sets the date to insert into sources[0m
 [38;2;248;248;242m   [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m                Runs target in debug mode[0m

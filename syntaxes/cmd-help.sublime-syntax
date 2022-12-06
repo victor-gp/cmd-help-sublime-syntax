@@ -46,36 +46,41 @@ variables:
 
 scope_variables: # last scope is matched first
   - &SECTION_HEADING_SCOPES
-    constant.section-heading.cmd-help  string.section-heading.cmd-help
-    markup.heading.cmd-help  entity.name.section.cmd-help
+    constant.section-heading.cmd-help
+    markup.heading.cmd-help
+    string.section-heading.cmd-help
+    meta.constructor.argument.css.section-heading.cmd-help
   - &INLINE_USAGE_SCOPES
-    constant.section-heading.cmd-help  string.inline-usage.cmd-help
-    markup.heading.inline-usage.cmd-help  entity.name.section.inline-usage.cmd-help
+    constant.section-heading.inline-usage.cmd-help
+    markup.heading.inline-usage.cmd-help
+    string.section-heading.inline-usage.cmd-help
+    meta.constructor.argument.css.section-heading.inline-usage.cmd-help
 
   - &OPTION_DEF_SCOPES
     entity.name.function.option.cmd-help
   - &PLUS_OPTION_DEF_SCOPES
     entity.name.function.option.plus.cmd-help
-  - &OPTION_ARGUMENT_SCOPES
-    string.option-argument.cmd-help  variable.other.option-argument.cmd-help
-    variable.parameter.option-argument.cmd-help
+  - &END_OF_OPTIONS_SCOPE
+    constant.other.end-of-options.cmd-help
 
-  # argument definitions (99% confidence)
-  - &ARGUMENT_DEF_SCOPES # =~ option argument
-    string.argument.cmd-help  variable.other.argument.cmd-help
-    variable.parameter.argument.cmd-help
-  # mostly all-caps definitions. usually environment variables or arguments
-  - &OTHER_VAL_DEF_SCOPES # =~ option argument
-    string.other-value.cmd-help  variable.other.other-value.cmd-help
-    variable.parameter.other-value.cmd-help
+  - &OPTION_ARGUMENT_SCOPES
+    entity.name.function.option.cmd-help
+    keyword.other.argument.cmd-help
+  # argument definitions (99% confidence) =~ OPTION_ARGUMENT
+  - &ARGUMENT_DEF_SCOPES
+    keyword.other.argument.cmd-help
+  # mostly all-caps definitions. usually envs or args =~ OPTION_ARGUMENT
+  - &OTHER_VAL_DEF_SCOPES
+    keyword.other.value.cmd-help
 
   # non all-caps definitions: subcommands, argument enums, etc.
   - &OTHER_DEF_SCOPES
-    keyword.other.def.cmd-help # support.function variable.function ?
+    constant.other.def.cmd-help
 
   - &FILE_DEF_SCOPES
-    constant.file.cmd-help
-    # variable.other.readwrite.file.cmd-help  string.file.cmd-help
+    constant.character.escape.file.cmd-help
+    variable.parameter.file.cmd-help
+    meta.function.block.start.handlebars.file.cmd-help
 
 
 contexts:
@@ -123,8 +128,8 @@ contexts:
     - match: ''
       pop: true
 
-  de-scope-match:
-    - clear_scopes: 1
+  de-scope-option-arg:
+    - clear_scopes: 2
     - include: then-pop
 
   sink:
@@ -196,7 +201,7 @@ contexts:
 
   option-def-specials:
     - match: --(?=\s)
-      scope: keyword.control.end-of-options.cmd-help
+      scope: *END_OF_OPTIONS_SCOPE
       set: then-pop
     - match: \+(?=[\s<[:alpha:]])
       scope: *PLUS_OPTION_DEF_SCOPES
@@ -282,7 +287,7 @@ contexts:
   option-def+square-bracket:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPES
     - match: '\|'
-      push: de-scope-match
+      push: de-scope-option-arg
     - match: (?=])
       set:
         - match: ']'
@@ -304,7 +309,7 @@ contexts:
     - meta_content_scope: *OPTION_ARGUMENT_SCOPES
     # match ',' or '|'
     - match: ',|\|'
-      push: de-scope-match
+      push: de-scope-option-arg
     - match: (?=})
       set:
         - match: '}'
@@ -360,7 +365,7 @@ contexts:
     - meta_content_scope: *ARGUMENT_DEF_SCOPES
     # match ',' or '|'
     - match: ',|\|'
-      push: de-scope-match
+      push: de-scope-option-arg
     - match: (?=})
       set:
         - match: '}'

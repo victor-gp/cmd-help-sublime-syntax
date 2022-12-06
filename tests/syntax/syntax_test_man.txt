@@ -8,7 +8,7 @@ Usage: man [OPTION...] [SECTION] PAGE...
       --warnings[=WARNINGS]  enable warnings from groff
 
  Main modes of operation:
-#^^^^^^^^^^^^^^^^^^^^^^^^ entity.name.section.cmd-help
+#^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
   -f, --whatis               equivalent to whatis
   -k, --apropos              equivalent to apropos
   -K, --global-apropos       search for text in all pages
@@ -22,7 +22,7 @@ Usage: man [OPTION...] [SECTION] PAGE...
   -R, --recode=ENCODING      output source page encoded in ENCODING
 
  Finding manual pages:
-#^^^^^^^^^^^^^^^^^^^^^ entity.name.section.cmd-help
+#^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
   -L, --locale=LOCALE        define the locale for this particular man search
   -m, --systems=SYSTEM       use manual pages from other systems
   -M, --manpath=PATH         set search path for manual pages to PATH
@@ -57,7 +57,7 @@ Usage: man [OPTION...] [SECTION] PAGE...
   -p, --preprocessor=STRING  STRING indicates which preprocessors to run:
                              e - [n]eqn, p - pic, t - tbl,
 g - grap, r - refer, v - vgrind
-# <- keyword.other.def.cmd-help
+# <- constant.other.def.cmd-help
 #nit: work around this (suggestion: reject "word - " if there's another instance later in the same line)
   -t, --troff                use groff to format pages
   -T, --troff-device[=DEVICE]   use groff with selected device

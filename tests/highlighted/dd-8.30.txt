@@ -1,4 +1,4 @@
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m dd [OPERAND]...[0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m dd [OPERAND]...[0m
 [38;2;248;248;242m  or:  dd OPTION[0m
 [38;2;248;248;242mCopy a file, converting and formatting according to the operands.[0m
 
@@ -24,47 +24,47 @@
 [38;2;248;248;242mc =1, w =2, b =512, kB =1000, K =1024, MB =1000*1000, M =1024*1024, xM =M,[0m
 [38;2;248;248;242mGB =1000*1000*1000, G =1024*1024*1024, and so on for T, P, E, Z, Y.[0m
 
-[38;2;253;151;31mEach CONV symbol may be:[0m
+[38;2;246;170;17mEach CONV symbol may be:[0m
 
-[38;2;248;248;242m  [0m[38;2;249;38;114mascii[0m[38;2;248;248;242m     from EBCDIC to ASCII[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mebcdic[0m[38;2;248;248;242m    from ASCII to EBCDIC[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mibm[0m[38;2;248;248;242m       from ASCII to alternate EBCDIC[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mblock[0m[38;2;248;248;242m     pad newline-terminated records with spaces to cbs-size[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114munblock[0m[38;2;248;248;242m   replace trailing spaces in cbs-size records with newline[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mlcase[0m[38;2;248;248;242m     change upper case to lower case[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mucase[0m[38;2;248;248;242m     change lower case to upper case[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114msparse[0m[38;2;248;248;242m    try to seek rather than write the output for NUL input blocks[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mswab[0m[38;2;248;248;242m      swap every pair of input bytes[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114msync[0m[38;2;248;248;242m      pad every input block with NULs to ibs-size; when used[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mascii[0m[38;2;248;248;242m     from EBCDIC to ASCII[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mebcdic[0m[38;2;248;248;242m    from ASCII to EBCDIC[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mibm[0m[38;2;248;248;242m       from ASCII to alternate EBCDIC[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mblock[0m[38;2;248;248;242m     pad newline-terminated records with spaces to cbs-size[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255munblock[0m[38;2;248;248;242m   replace trailing spaces in cbs-size records with newline[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mlcase[0m[38;2;248;248;242m     change upper case to lower case[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mucase[0m[38;2;248;248;242m     change lower case to upper case[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255msparse[0m[38;2;248;248;242m    try to seek rather than write the output for NUL input blocks[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mswab[0m[38;2;248;248;242m      swap every pair of input bytes[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255msync[0m[38;2;248;248;242m      pad every input block with NULs to ibs-size; when used[0m
 [38;2;248;248;242m            with block or unblock, pad with spaces rather than NULs[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mexcl[0m[38;2;248;248;242m      fail if the output file already exists[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mnocreat[0m[38;2;248;248;242m   do not create the output file[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mnotrunc[0m[38;2;248;248;242m   do not truncate the output file[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mnoerror[0m[38;2;248;248;242m   continue after read errors[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mfdatasync[0m[38;2;248;248;242m  physically write output file data before finishing[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mfsync[0m[38;2;248;248;242m     likewise, but also write metadata[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mexcl[0m[38;2;248;248;242m      fail if the output file already exists[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mnocreat[0m[38;2;248;248;242m   do not create the output file[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mnotrunc[0m[38;2;248;248;242m   do not truncate the output file[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mnoerror[0m[38;2;248;248;242m   continue after read errors[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mfdatasync[0m[38;2;248;248;242m  physically write output file data before finishing[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mfsync[0m[38;2;248;248;242m     likewise, but also write metadata[0m
 
-[38;2;253;151;31mEach FLAG symbol may be:[0m
+[38;2;246;170;17mEach FLAG symbol may be:[0m
 
-[38;2;248;248;242m  [0m[38;2;249;38;114mappend[0m[38;2;248;248;242m    append mode (makes sense only for output; conv=notrunc suggested)[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mdirect[0m[38;2;248;248;242m    use direct I/O for data[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mdirectory[0m[38;2;248;248;242m  fail unless a directory[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mdsync[0m[38;2;248;248;242m     use synchronized I/O for data[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114msync[0m[38;2;248;248;242m      likewise, but also for metadata[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mfullblock[0m[38;2;248;248;242m  accumulate full blocks of input (iflag only)[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mnonblock[0m[38;2;248;248;242m  use non-blocking I/O[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mnoatime[0m[38;2;248;248;242m   do not update access time[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mnocache[0m[38;2;248;248;242m   Request to drop cache.  See also oflag=sync[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mnoctty[0m[38;2;248;248;242m    do not assign controlling terminal from file[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mnofollow[0m[38;2;248;248;242m  do not follow symlinks[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mcount_bytes[0m[38;2;248;248;242m  treat 'count=N' as a byte count (iflag only)[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mskip_bytes[0m[38;2;248;248;242m  treat 'skip=N' as a byte count (iflag only)[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mseek_bytes[0m[38;2;248;248;242m  treat 'seek=N' as a byte count (oflag only)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mappend[0m[38;2;248;248;242m    append mode (makes sense only for output; conv=notrunc suggested)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mdirect[0m[38;2;248;248;242m    use direct I/O for data[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mdirectory[0m[38;2;248;248;242m  fail unless a directory[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mdsync[0m[38;2;248;248;242m     use synchronized I/O for data[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255msync[0m[38;2;248;248;242m      likewise, but also for metadata[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mfullblock[0m[38;2;248;248;242m  accumulate full blocks of input (iflag only)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mnonblock[0m[38;2;248;248;242m  use non-blocking I/O[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mnoatime[0m[38;2;248;248;242m   do not update access time[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mnocache[0m[38;2;248;248;242m   Request to drop cache.  See also oflag=sync[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mnoctty[0m[38;2;248;248;242m    do not assign controlling terminal from file[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mnofollow[0m[38;2;248;248;242m  do not follow symlinks[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mcount_bytes[0m[38;2;248;248;242m  treat 'count=N' as a byte count (iflag only)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mskip_bytes[0m[38;2;248;248;242m  treat 'skip=N' as a byte count (iflag only)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mseek_bytes[0m[38;2;248;248;242m  treat 'seek=N' as a byte count (oflag only)[0m
 
 [38;2;248;248;242mSending a USR1 signal to a running 'dd' process makes it[0m
 [38;2;248;248;242mprint I/O statistics to standard error and then resume copying.[0m
 
-[38;2;253;151;31mOptions are:[0m
+[38;2;246;170;17mOptions are:[0m
 
 [38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m     display this help and exit[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m

@@ -14,7 +14,7 @@ Options and arguments (and corresponding environment variables):
          if stdin does not appear to be a terminal; also PYTHONINSPECT=x
 -I     : isolate Python from the user's environment (implies -E and -s)
 -m mod : run library module as a script (terminates option list)
-#  ^^^ variable.parameter.option-argument.cmd-help
+#  ^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 -O     : remove assert and __debug__-dependent statements; add .opt-1 before
          .pyc extension; also PYTHONOPTIMIZE=x
 -OO    : do -O changes and also discard docstrings; add .opt-2 before
@@ -64,22 +64,22 @@ Options and arguments (and corresponding environment variables):
 --check-hash-based-pycs always|default|never:
     control how Python invalidates hash-based .pyc files
 file   : program read from script file
-#^^^ keyword.other.def.cmd-help
-#wontfix: should be variable.parameter.argument.cmd-help, but a necessary evil
+#^^^ constant.other.def.cmd-help
+#wontfix: should be keyword.other.argument.cmd-help, but a necessary evil
 -      : program read from stdin (default; interactive mode if a tty)
-# <- variable.parameter.argument.cmd-help
+# <- keyword.other.argument.cmd-help
 arg ...: arguments passed to program in sys.argv[1:]
-#^^ variable.parameter.argument.cmd-help
-#  ^ - variable.parameter.argument.cmd-help
-#   ^^^ variable.parameter.argument.cmd-help
+#^^ keyword.other.argument.cmd-help
+#  ^ - keyword.other.argument.cmd-help
+#   ^^^ keyword.other.argument.cmd-help
 
 Other environment variables:
 PYTHONSTARTUP: file executed on interactive startup (no default)
-#^^^^^^^^^^^^ variable.parameter.other-value.cmd-help
-#            ^ - variable.parameter.other-value.cmd-help
+#^^^^^^^^^^^^ keyword.other.value.cmd-help
+#            ^ - keyword.other.value.cmd-help
 PYTHONPATH   : ':'-separated list of directories prefixed to the
-#^^^^^^^^^ variable.parameter.other-value.cmd-help
-#         ^^^^ - variable.parameter.other-value.cmd-help
+#^^^^^^^^^ keyword.other.value.cmd-help
+#         ^^^^ - keyword.other.value.cmd-help
                default module search path.  The result is sys.path.
 PYTHONHOME   : alternate <prefix> directory (or <prefix>:<exec_prefix>).
                The default module search path uses <prefix>/lib/pythonX.X.

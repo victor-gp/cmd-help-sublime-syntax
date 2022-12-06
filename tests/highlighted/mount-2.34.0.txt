@@ -1,5 +1,5 @@
 
-[38;2;253;151;31mUsage:[0m
+[38;2;246;170;17mUsage:[0m
 [38;2;248;248;242m mount [-lhV][0m
 [38;2;248;248;242m mount -a [options][0m
 [38;2;248;248;242m mount [options] [--source] <source> | [--target] <directory>[0m
@@ -8,46 +8,46 @@
 
 [38;2;248;248;242mMount a filesystem.[0m
 
-[38;2;253;151;31mOptions:[0m
+[38;2;246;170;17mOptions:[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--all[0m[38;2;248;248;242m               mount all filesystems mentioned in fstab[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-canonicalize[0m[38;2;248;248;242m   don't canonicalize paths[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fake[0m[38;2;248;248;242m              dry run; skip the mount(2) syscall[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fork[0m[38;2;248;248;242m              fork off for each device (use with -a)[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fstab[0m[38;2;248;248;242m [0m[38;2;253;151;31m<path>[0m[38;2;248;248;242m      alternative file to /etc/fstab[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--fstab[0m[38;2;248;248;242m [0m[38;2;249;38;114m<path>[0m[38;2;248;248;242m      alternative file to /etc/fstab[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--internal-only[0m[38;2;248;248;242m     don't call the mount.<type> helpers[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--show-labels[0m[38;2;248;248;242m       show also filesystem labels[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-mtab[0m[38;2;248;248;242m           don't write to /etc/mtab[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--options-mode[0m[38;2;248;248;242m [0m[38;2;253;151;31m<mode>[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--options-mode[0m[38;2;248;248;242m [0m[38;2;249;38;114m<mode>[0m
 [38;2;248;248;242m                         what to do with options loaded from fstab[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--options-source[0m[38;2;248;248;242m [0m[38;2;253;151;31m<source>[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--options-source[0m[38;2;248;248;242m [0m[38;2;249;38;114m<source>[0m
 [38;2;248;248;242m                         mount options source[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--options-source-force[0m
 [38;2;248;248;242m                         force use of options from fstab/mtab[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--options[0m[38;2;248;248;242m [0m[38;2;253;151;31m<list>[0m[38;2;248;248;242m    comma-separated list of mount options[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--test-opts[0m[38;2;248;248;242m [0m[38;2;253;151;31m<list>[0m[38;2;248;248;242m  limit the set of filesystems (use with -a)[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--options[0m[38;2;248;248;242m [0m[38;2;249;38;114m<list>[0m[38;2;248;248;242m    comma-separated list of mount options[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--test-opts[0m[38;2;248;248;242m [0m[38;2;249;38;114m<list>[0m[38;2;248;248;242m  limit the set of filesystems (use with -a)[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--read-only[0m[38;2;248;248;242m         mount the filesystem read-only (same as -o ro)[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--types[0m[38;2;248;248;242m [0m[38;2;253;151;31m<list>[0m[38;2;248;248;242m      limit the set of filesystem types[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--source[0m[38;2;248;248;242m [0m[38;2;253;151;31m<src>[0m[38;2;248;248;242m      explicitly specifies source (path, label, uuid)[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--target[0m[38;2;248;248;242m [0m[38;2;253;151;31m<target>[0m[38;2;248;248;242m   explicitly specifies mountpoint[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--types[0m[38;2;248;248;242m [0m[38;2;249;38;114m<list>[0m[38;2;248;248;242m      limit the set of filesystem types[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--source[0m[38;2;248;248;242m [0m[38;2;249;38;114m<src>[0m[38;2;248;248;242m      explicitly specifies source (path, label, uuid)[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--target[0m[38;2;248;248;242m [0m[38;2;249;38;114m<target>[0m[38;2;248;248;242m   explicitly specifies mountpoint[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m           say what is being done[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--rw[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--read-write[0m[38;2;248;248;242m  mount the filesystem read-write (default)[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--namespace[0m[38;2;248;248;242m [0m[38;2;253;151;31m<ns>[0m[38;2;248;248;242m    perform mount in another namespace[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--namespace[0m[38;2;248;248;242m [0m[38;2;249;38;114m<ns>[0m[38;2;248;248;242m    perform mount in another namespace[0m
 
 [38;2;248;248;242m [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m              display this help[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m           display version[0m
 
-[38;2;253;151;31mSource:[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m [0m[38;2;253;151;31m<label>[0m[38;2;248;248;242m     synonym for LABEL=<label>[0m
-[38;2;248;248;242m [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--uuid[0m[38;2;248;248;242m [0m[38;2;253;151;31m<uuid>[0m[38;2;248;248;242m       synonym for UUID=<uuid>[0m
+[38;2;246;170;17mSource:[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m [0m[38;2;249;38;114m<label>[0m[38;2;248;248;242m     synonym for LABEL=<label>[0m
+[38;2;248;248;242m [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--uuid[0m[38;2;248;248;242m [0m[38;2;249;38;114m<uuid>[0m[38;2;248;248;242m       synonym for UUID=<uuid>[0m
 [38;2;248;248;242m LABEL=<label>           specifies device by filesystem label[0m
 [38;2;248;248;242m UUID=<uuid>             specifies device by filesystem UUID[0m
 [38;2;248;248;242m PARTLABEL=<label>       specifies device by partition label[0m
 [38;2;248;248;242m PARTUUID=<uuid>         specifies device by partition UUID[0m
-[38;2;248;248;242m [0m[38;2;253;151;31m<device>[0m[38;2;248;248;242m                specifies device by path[0m
-[38;2;248;248;242m [0m[38;2;253;151;31m<directory>[0m[38;2;248;248;242m             mountpoint for bind mounts (see --bind/rbind)[0m
-[38;2;248;248;242m [0m[38;2;253;151;31m<file>[0m[38;2;248;248;242m                  regular file for loopdev setup[0m
+[38;2;248;248;242m [0m[38;2;249;38;114m<device>[0m[38;2;248;248;242m                specifies device by path[0m
+[38;2;248;248;242m [0m[38;2;249;38;114m<directory>[0m[38;2;248;248;242m             mountpoint for bind mounts (see --bind/rbind)[0m
+[38;2;248;248;242m [0m[38;2;249;38;114m<file>[0m[38;2;248;248;242m                  regular file for loopdev setup[0m
 
-[38;2;253;151;31mOperations:[0m
+[38;2;246;170;17mOperations:[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--bind[0m[38;2;248;248;242m              mount a subtree somewhere else (same as -o bind)[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--move[0m[38;2;248;248;242m              move a subtree to some other place[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--rbind[0m[38;2;248;248;242m             mount a subtree and all submounts somewhere else[0m

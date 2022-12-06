@@ -45,7 +45,7 @@ Each CONV symbol may be:
   notrunc   do not truncate the output file
   noerror   continue after read errors
   fdatasync  physically write output file data before finishing
-# ^^^^^^^^^ keyword.other.def.cmd-help
+# ^^^^^^^^^ constant.other.def.cmd-help
   fsync     likewise, but also write metadata
 
 Each FLAG symbol may be:

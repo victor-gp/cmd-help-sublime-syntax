@@ -1,6 +1,6 @@
-[38;2;249;38;114mjq[0m[38;2;248;248;242m - commandline JSON processor [version 1.6][0m
+[38;2;190;132;255mjq[0m[38;2;248;248;242m - commandline JSON processor [version 1.6][0m
 
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m	jq [options] <jq filter> [file...][0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m	jq [options] <jq filter> [file...][0m
 [38;2;248;248;242m	jq [options] --args <jq filter> [strings...][0m
 [38;2;248;248;242m	jq [options] --jsonargs <jq filter> [JSON_TEXTS...][0m
 
@@ -15,14 +15,14 @@
 [38;2;248;248;242mFor more advanced filters see the jq(1) manpage ("man jq")[0m
 [38;2;248;248;242mand/or https://stedolan.github.io/jq[0m
 
-[38;2;253;151;31mExample:[0m
+[38;2;246;170;17mExample:[0m
 
 [38;2;248;248;242m	$ echo '{"foo": 0}' | jq .[0m
 [38;2;248;248;242m	{[0m
 [38;2;248;248;242m		"foo": 0[0m
 [38;2;248;248;242m	}[0m
 
-[38;2;253;151;31mSome of the options include:[0m
+[38;2;246;170;17mSome of the options include:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m               compact instead of pretty-printed output;[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m               use `null` as the single input value;[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m               set the exit status code based on the output;[0m
@@ -39,7 +39,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m--rawfile[0m[38;2;248;248;242m a f    set variable $a to a string consisting of the contents of <f>;[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--args[0m[38;2;248;248;242m           remaining arguments are string arguments, not files;[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--jsonargs[0m[38;2;248;248;242m       remaining arguments are JSON arguments, not files;[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114m--[0m[38;2;248;248;242m               terminates argument processing;[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255m--[0m[38;2;248;248;242m               terminates argument processing;[0m
 
 [38;2;248;248;242mNamed arguments are also available as $ARGS.named[], while[0m
 [38;2;248;248;242mpositional arguments are available as $ARGS.positional[].[0m

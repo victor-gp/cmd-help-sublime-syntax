@@ -1,4 +1,4 @@
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m head [OPTION]... [FILE]...[0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m head [OPTION]... [FILE]...[0m
 [38;2;248;248;242mPrint the first 10 lines of each FILE to standard output.[0m
 [38;2;248;248;242mWith more than one FILE, precede each with a header giving the file name.[0m
 
@@ -17,7 +17,7 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m     display this help and exit[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m
 
-[38;2;253;151;31mNUM may have a multiplier suffix:[0m
+[38;2;246;170;17mNUM may have a multiplier suffix:[0m
 [38;2;248;248;242mb 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,[0m
 [38;2;248;248;242mGB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.[0m
 

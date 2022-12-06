@@ -1,18 +1,18 @@
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m tee [OPTION]... [FILE]...[0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m tee [OPTION]... [FILE]...[0m
 [38;2;248;248;242mCopy standard input to each FILE, and also to standard output.[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--append[0m[38;2;248;248;242m              append to the given FILEs, do not overwrite[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-interrupts[0m[38;2;248;248;242m   ignore interrupt signals[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m                        diagnose errors writing to non pipes[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--output-error[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mMODE[0m[38;2;248;248;242m]   set behavior on write error.  See MODE below[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--output-error[0m[38;2;248;248;242m[=[0m[38;2;249;38;114mMODE[0m[38;2;248;248;242m]   set behavior on write error.  See MODE below[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m     display this help and exit[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m
 
 [38;2;248;248;242mMODE determines behavior with write errors on the outputs:[0m
-[38;2;248;248;242m  [0m[38;2;253;151;31m'warn'[0m[38;2;248;248;242m         diagnose errors writing to any output[0m
-[38;2;248;248;242m  [0m[38;2;253;151;31m'warn-nopipe'[0m[38;2;248;248;242m  diagnose errors writing to any output not a pipe[0m
-[38;2;248;248;242m  [0m[38;2;253;151;31m'exit'[0m[38;2;248;248;242m         exit on error writing to any output[0m
-[38;2;248;248;242m  [0m[38;2;253;151;31m'exit-nopipe'[0m[38;2;248;248;242m  exit on error writing to any output not a pipe[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114m'warn'[0m[38;2;248;248;242m         diagnose errors writing to any output[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114m'warn-nopipe'[0m[38;2;248;248;242m  diagnose errors writing to any output not a pipe[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114m'exit'[0m[38;2;248;248;242m         exit on error writing to any output[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114m'exit-nopipe'[0m[38;2;248;248;242m  exit on error writing to any output not a pipe[0m
 [38;2;248;248;242mThe default MODE for the -p option is 'warn-nopipe'.[0m
 [38;2;248;248;242mThe default operation when --output-error is not specified, is to[0m
 [38;2;248;248;242mexit immediately on error writing to a pipe, and diagnose errors[0m

@@ -1,37 +1,37 @@
 [38;2;248;248;242mRust's package manager[0m
 
-[38;2;253;151;31mUSAGE:[0m
+[38;2;246;170;17mUSAGE:[0m
 [38;2;248;248;242m    cargo [+toolchain] [OPTIONS] [SUBCOMMAND][0m
 
-[38;2;253;151;31mOPTIONS:[0m
+[38;2;246;170;17mOPTIONS:[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                  Print version info and exit[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m                     List installed commands[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--explain[0m[38;2;248;248;242m [0m[38;2;253;151;31m<CODE>[0m[38;2;248;248;242m           Run `rustc --explain CODE`[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--explain[0m[38;2;248;248;242m [0m[38;2;249;38;114m<CODE>[0m[38;2;248;248;242m           Run `rustc --explain CODE`[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m                  Use verbose output (-vv very verbose/build.rs output)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m                    No output printed to stdout[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m [0m[38;2;253;151;31m<WHEN>[0m[38;2;248;248;242m             Coloring: auto, always, never[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m [0m[38;2;249;38;114m<WHEN>[0m[38;2;248;248;242m             Coloring: auto, always, never[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--frozen[0m[38;2;248;248;242m                   Require Cargo.lock and cache are up to date[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--locked[0m[38;2;248;248;242m                   Require Cargo.lock is up to date[0m
 [38;2;248;248;242m        [0m[38;2;166;226;46m--offline[0m[38;2;248;248;242m                  Run without accessing the network[0m
-[38;2;248;248;242m        [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m [0m[38;2;253;151;31m<KEY=VALUE>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m    Override a configuration value (unstable)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m [0m[38;2;253;151;31m<FLAG>[0m[38;2;253;151;31m...[0m[38;2;248;248;242m                   Unstable (nightly-only) flags to Cargo, see 'cargo -Z help' for details[0m
+[38;2;248;248;242m        [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m [0m[38;2;249;38;114m<KEY=VALUE>[0m[38;2;249;38;114m...[0m[38;2;248;248;242m    Override a configuration value (unstable)[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m [0m[38;2;249;38;114m<FLAG>[0m[38;2;249;38;114m...[0m[38;2;248;248;242m                   Unstable (nightly-only) flags to Cargo, see 'cargo -Z help' for details[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                     Prints help information[0m
 
 [38;2;248;248;242mSome common cargo commands are (see all commands with --list):[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mbuild[0m[38;2;248;248;242m, [0m[38;2;249;38;114mb[0m[38;2;248;248;242m    Compile the current package[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mcheck[0m[38;2;248;248;242m, [0m[38;2;249;38;114mc[0m[38;2;248;248;242m    Analyze the current package and report errors, but don't build object files[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mclean[0m[38;2;248;248;242m       Remove the target directory[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mdoc[0m[38;2;248;248;242m, [0m[38;2;249;38;114md[0m[38;2;248;248;242m      Build this package's and its dependencies' documentation[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mnew[0m[38;2;248;248;242m         Create a new cargo package[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114minit[0m[38;2;248;248;242m        Create a new cargo package in an existing directory[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mrun[0m[38;2;248;248;242m, [0m[38;2;249;38;114mr[0m[38;2;248;248;242m      Run a binary or example of the local package[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mtest[0m[38;2;248;248;242m, [0m[38;2;249;38;114mt[0m[38;2;248;248;242m     Run the tests[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mbench[0m[38;2;248;248;242m       Run the benchmarks[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mupdate[0m[38;2;248;248;242m      Update dependencies listed in Cargo.lock[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114msearch[0m[38;2;248;248;242m      Search registry for crates[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114mpublish[0m[38;2;248;248;242m     Package and upload this package to the registry[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114minstall[0m[38;2;248;248;242m     Install a Rust binary. Default location is $HOME/.cargo/bin[0m
-[38;2;248;248;242m    [0m[38;2;249;38;114muninstall[0m[38;2;248;248;242m   Uninstall a Rust binary[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mbuild[0m[38;2;248;248;242m, [0m[38;2;190;132;255mb[0m[38;2;248;248;242m    Compile the current package[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mcheck[0m[38;2;248;248;242m, [0m[38;2;190;132;255mc[0m[38;2;248;248;242m    Analyze the current package and report errors, but don't build object files[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mclean[0m[38;2;248;248;242m       Remove the target directory[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mdoc[0m[38;2;248;248;242m, [0m[38;2;190;132;255md[0m[38;2;248;248;242m      Build this package's and its dependencies' documentation[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mnew[0m[38;2;248;248;242m         Create a new cargo package[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255minit[0m[38;2;248;248;242m        Create a new cargo package in an existing directory[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mrun[0m[38;2;248;248;242m, [0m[38;2;190;132;255mr[0m[38;2;248;248;242m      Run a binary or example of the local package[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mtest[0m[38;2;248;248;242m, [0m[38;2;190;132;255mt[0m[38;2;248;248;242m     Run the tests[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mbench[0m[38;2;248;248;242m       Run the benchmarks[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mupdate[0m[38;2;248;248;242m      Update dependencies listed in Cargo.lock[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255msearch[0m[38;2;248;248;242m      Search registry for crates[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mpublish[0m[38;2;248;248;242m     Package and upload this package to the registry[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255minstall[0m[38;2;248;248;242m     Install a Rust binary. Default location is $HOME/.cargo/bin[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255muninstall[0m[38;2;248;248;242m   Uninstall a Rust binary[0m
 
 [38;2;248;248;242mSee 'cargo help <command>' for more information on a specific command.[0m
 

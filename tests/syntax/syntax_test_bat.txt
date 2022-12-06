@@ -4,13 +4,13 @@ bat 0.18.2
 A cat(1) clone with syntax highlighting and Git integration.
 
 USAGE:
-# <- entity.name.section.cmd-help
-#^^^^^ entity.name.section.cmd-help
+# <- string.section-heading.cmd-help
+#^^^^^ string.section-heading.cmd-help
     bat [OPTIONS] [FILE]...
     bat <SUBCOMMAND>
 
 OPTIONS:
-#^^^^^^^ entity.name.section.cmd-help
+#^^^^^^^ string.section-heading.cmd-help
     -A, --show-all
 #   ^^ entity.name.function.option.cmd-help
 #     ^^ - entity.name.function.option.cmd-help
@@ -24,13 +24,13 @@ OPTIONS:
             --pager=never').
 #           ^^^^^^^ - entity.name.function.option.cmd-help
     -l, --language <language>
-#                 ^ - entity.name.function.option.cmd-help - variable.parameter.option-argument.cmd-help
-#                  ^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#                 ^ - entity.name.function.option.cmd-help - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                  ^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
             Explicitly set the language for syntax highlighting. The language can be specified as a
             name (like 'C++' or 'LaTeX') or possible file extension (like 'cpp', 'hpp' or 'md'). Use
             '--list-languages' to show all supported language names and file extensions.
     -H, --highlight-line <N:M>...
-#                        ^^^^^ variable.parameter.option-argument.cmd-help
+#                        ^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
             Highlight the specified line ranges with a different background color For example:
               '--highlight-line 40' highlights line 40
               '--highlight-line 30:40' highlights lines 30 to 40
@@ -38,7 +38,7 @@ OPTIONS:
               '--highlight-line 40:' highlights lines 40 to the end of the file
         --file-name <name>...
 #       ^^^^^^^^^^^ entity.name.function.option.cmd-help
-#                   ^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#                   ^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
             Specify the name to display for a file. Useful when piping data to bat from STDIN when
             bat does not otherwise know the filename. Note that the provided file name is also used
             for syntax detection.
@@ -143,12 +143,12 @@ OPTIONS:
 
 ARGS:
     <FILE>...
-#   ^^^^^^^^^ variable.parameter.argument.cmd-help
+#   ^^^^^^^^^ keyword.other.argument.cmd-help
             File(s) to print / concatenate. Use a dash ('-') or no argument at all to read from
             standard input.
 
 SUBCOMMANDS:
     cache    Modify the syntax-definition and theme cache
-#   ^^^^^ keyword.other.def.cmd-help
+#   ^^^^^ constant.other.def.cmd-help
 
 Note: `bat -h` prints a short and concise overview while `bat --help` gives all details.

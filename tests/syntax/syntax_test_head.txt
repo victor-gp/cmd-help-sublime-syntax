@@ -8,7 +8,7 @@ With no FILE, or when FILE is -, read standard input.
 
 Mandatory arguments to long options are mandatory for short options too.
   -c, --bytes=[-]NUM       print the first NUM bytes of each file;
-#             ^^^^^^ - variable.parameter.option-argument.cmd-help
+#             ^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 #nice: handle option arguments like this
                              with the leading '-', print all but the last
                              NUM bytes of each file

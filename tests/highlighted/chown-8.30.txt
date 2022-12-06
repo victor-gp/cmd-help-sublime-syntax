@@ -1,4 +1,4 @@
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m chown [OPTION]... [OWNER][:[GROUP]] FILE...[0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m chown [OPTION]... [OWNER][:[GROUP]] FILE...[0m
 [38;2;248;248;242m  or:  chown [OPTION]... --reference=RFILE FILE...[0m
 [38;2;248;248;242mChange the owner and/or group of each FILE to OWNER and/or GROUP.[0m
 [38;2;248;248;242mWith --reference, change the owner and group of each FILE to those of RFILE.[0m
@@ -11,14 +11,14 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-dereference[0m[38;2;248;248;242m   affect symbolic links instead of any referenced file[0m
 [38;2;248;248;242m                         (useful only on systems that can change the[0m
 [38;2;248;248;242m                         ownership of a symlink)[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--from[0m[38;2;248;248;242m=[0m[38;2;253;151;31mCURRENT_OWNER[0m[38;2;248;248;242m:CURRENT_GROUP[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--from[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCURRENT_OWNER[0m[38;2;248;248;242m:CURRENT_GROUP[0m
 [38;2;248;248;242m                         change the owner and/or group of each file only if[0m
 [38;2;248;248;242m                         its current owner and/or group match those specified[0m
 [38;2;248;248;242m                         here.  Either may be omitted, in which case a match[0m
 [38;2;248;248;242m                         is not required for the omitted attribute[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-preserve-root[0m[38;2;248;248;242m  do not treat '/' specially (the default)[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--preserve-root[0m[38;2;248;248;242m    fail to operate recursively on '/'[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--reference[0m[38;2;248;248;242m=[0m[38;2;253;151;31mRFILE[0m[38;2;248;248;242m  use RFILE's owner and group rather than[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--reference[0m[38;2;248;248;242m=[0m[38;2;249;38;114mRFILE[0m[38;2;248;248;242m  use RFILE's owner and group rather than[0m
 [38;2;248;248;242m                         specifying OWNER:GROUP values[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recursive[0m[38;2;248;248;242m        operate on files and directories recursively[0m
 
@@ -39,7 +39,7 @@
 [38;2;248;248;242mto login group if implied by a ':' following a symbolic OWNER.[0m
 [38;2;248;248;242mOWNER and GROUP may be numeric as well as symbolic.[0m
 
-[38;2;253;151;31mExamples:[0m
+[38;2;246;170;17mExamples:[0m
 [38;2;248;248;242m  chown root /u        Change the owner of /u to "root".[0m
 [38;2;248;248;242m  chown root:staff /u  Likewise, but also change its group to "staff".[0m
 [38;2;248;248;242m  chown -hR root /u    Change the owner of /u and subfiles to "root".[0m

@@ -1,92 +1,92 @@
-[38;2;253;151;31musage:[0m[38;2;248;248;242m fzf [options][0m
+[38;2;246;170;17musage:[0m[38;2;248;248;242m fzf [options][0m
 
-[38;2;248;248;242m  [0m[38;2;253;151;31mSearch[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mSearch[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--extended[0m[38;2;248;248;242m        Extended-search mode[0m
 [38;2;248;248;242m                          (enabled by default; +x or --no-extended to disable)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exact[0m[38;2;248;248;242m           Enable Exact-match[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m                    Case-insensitive match (default: smart-case match)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m+[0m[38;2;166;226;46mi[0m[38;2;248;248;242m                    Case-sensitive match[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--scheme[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSCHEME[0m[38;2;248;248;242m       Scoring scheme [default|path|history][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--scheme[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSCHEME[0m[38;2;248;248;242m       Scoring scheme [default|path|history][0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--literal[0m[38;2;248;248;242m             Do not normalize latin script letters before matching[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--nth[0m[38;2;248;248;242m=[0m[38;2;253;151;31mN[0m[38;2;248;248;242m[[0m[38;2;253;151;31m,..[0m[38;2;248;248;242m]      Comma-separated list of field index expressions[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--nth[0m[38;2;248;248;242m=[0m[38;2;249;38;114mN[0m[38;2;248;248;242m[[0m[38;2;249;38;114m,..[0m[38;2;248;248;242m]      Comma-separated list of field index expressions[0m
 [38;2;248;248;242m                          for limiting search scope. Each can be a non-zero[0m
 [38;2;248;248;242m                          integer or a range expression ([BEGIN]..[END]).[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--with-nth[0m[38;2;248;248;242m=[0m[38;2;253;151;31mN[0m[38;2;248;248;242m[[0m[38;2;253;151;31m,..[0m[38;2;248;248;242m]     Transform the presentation of each line using[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--with-nth[0m[38;2;248;248;242m=[0m[38;2;249;38;114mN[0m[38;2;248;248;242m[[0m[38;2;249;38;114m,..[0m[38;2;248;248;242m]     Transform the presentation of each line using[0m
 [38;2;248;248;242m                          field index expressions[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--delimiter[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTR[0m[38;2;248;248;242m   Field delimiter regex (default: AWK-style)[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--delimiter[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTR[0m[38;2;248;248;242m   Field delimiter regex (default: AWK-style)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m+[0m[38;2;166;226;46ms[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-sort[0m[38;2;248;248;242m         Do not sort the result[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--tac[0m[38;2;248;248;242m                 Reverse the order of the input[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--disabled[0m[38;2;248;248;242m            Do not perform search[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--tiebreak[0m[38;2;248;248;242m=[0m[38;2;253;151;31mCRI[0m[38;2;248;248;242m[[0m[38;2;253;151;31m,..[0m[38;2;248;248;242m]   Comma-separated list of sort criteria to apply[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--tiebreak[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCRI[0m[38;2;248;248;242m[[0m[38;2;249;38;114m,..[0m[38;2;248;248;242m]   Comma-separated list of sort criteria to apply[0m
 [38;2;248;248;242m                          when the scores are tied [length|chunk|begin|end|index][0m
 [38;2;248;248;242m                          (default: length)[0m
 
-[38;2;248;248;242m  [0m[38;2;253;151;31mInterface[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--multi[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mMAX[0m[38;2;248;248;242m]     Enable multi-select with tab/shift-tab[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mInterface[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--multi[0m[38;2;248;248;242m[=[0m[38;2;249;38;114mMAX[0m[38;2;248;248;242m]     Enable multi-select with tab/shift-tab[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--no-mouse[0m[38;2;248;248;242m            Disable mouse[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--bind[0m[38;2;248;248;242m=[0m[38;2;253;151;31mKEYBINDS[0m[38;2;248;248;242m       Custom key bindings. Refer to the man page.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--bind[0m[38;2;248;248;242m=[0m[38;2;249;38;114mKEYBINDS[0m[38;2;248;248;242m       Custom key bindings. Refer to the man page.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--cycle[0m[38;2;248;248;242m               Enable cyclic scroll[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--keep-right[0m[38;2;248;248;242m          Keep the right end of the line visible on overflow[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--scroll-off[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLINES[0m[38;2;248;248;242m    Number of screen lines to keep above or below when[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--scroll-off[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLINES[0m[38;2;248;248;242m    Number of screen lines to keep above or below when[0m
 [38;2;248;248;242m                          scrolling to the top or to the bottom (default: 0)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--no-hscroll[0m[38;2;248;248;242m          Disable horizontal scroll[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--hscroll-off[0m[38;2;248;248;242m=[0m[38;2;253;151;31mCOLS[0m[38;2;248;248;242m    Number of screen columns to keep to the right of the[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--hscroll-off[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCOLS[0m[38;2;248;248;242m    Number of screen columns to keep to the right of the[0m
 [38;2;248;248;242m                          highlighted substring (default: 10)[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--filepath-word[0m[38;2;248;248;242m       Make word-wise movements respect path separators[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--jump-labels[0m[38;2;248;248;242m=[0m[38;2;253;151;31mCHARS[0m[38;2;248;248;242m   Label characters for jump and jump-accept[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--jump-labels[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCHARS[0m[38;2;248;248;242m   Label characters for jump and jump-accept[0m
 
-[38;2;248;248;242m  [0m[38;2;253;151;31mLayout[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--height[0m[38;2;248;248;242m=[0m[38;2;253;151;31mHEIGHT[0m[38;2;248;248;242m[[0m[38;2;253;151;31m%[0m[38;2;248;248;242m]    Display fzf window below the cursor with the given[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mLayout[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--height[0m[38;2;248;248;242m=[0m[38;2;249;38;114mHEIGHT[0m[38;2;248;248;242m[[0m[38;2;249;38;114m%[0m[38;2;248;248;242m]    Display fzf window below the cursor with the given[0m
 [38;2;248;248;242m                          height instead of using fullscreen[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--min-height[0m[38;2;248;248;242m=[0m[38;2;253;151;31mHEIGHT[0m[38;2;248;248;242m   Minimum height when --height is given in percent[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--min-height[0m[38;2;248;248;242m=[0m[38;2;249;38;114mHEIGHT[0m[38;2;248;248;242m   Minimum height when --height is given in percent[0m
 [38;2;248;248;242m                          (default: 10)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--layout[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLAYOUT[0m[38;2;248;248;242m       Choose layout: [default|reverse|reverse-list][0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--border[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mSTYLE[0m[38;2;248;248;242m]      Draw border around the finder[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--layout[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLAYOUT[0m[38;2;248;248;242m       Choose layout: [default|reverse|reverse-list][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--border[0m[38;2;248;248;242m[=[0m[38;2;249;38;114mSTYLE[0m[38;2;248;248;242m]      Draw border around the finder[0m
 [38;2;248;248;242m                          [rounded|sharp|horizontal|vertical|[0m
 [38;2;248;248;242m                           top|bottom|left|right|none] (default: rounded)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--margin[0m[38;2;248;248;242m=[0m[38;2;253;151;31mMARGIN[0m[38;2;248;248;242m       Screen margin (TRBL | TB,RL | T,RL,B | T,R,B,L)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--padding[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPADDING[0m[38;2;248;248;242m     Padding inside border (TRBL | TB,RL | T,RL,B | T,R,B,L)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--info[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTYLE[0m[38;2;248;248;242m          Finder info style [default|inline|hidden][0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--prompt[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTR[0m[38;2;248;248;242m          Input prompt (default: '> ')[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--pointer[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTR[0m[38;2;248;248;242m         Pointer to the current line (default: '>')[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--marker[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTR[0m[38;2;248;248;242m          Multi-select marker (default: '>')[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--header[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTR[0m[38;2;248;248;242m          String to print as header[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--header-lines[0m[38;2;248;248;242m=[0m[38;2;253;151;31mN[0m[38;2;248;248;242m      The first N lines of the input are treated as header[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--margin[0m[38;2;248;248;242m=[0m[38;2;249;38;114mMARGIN[0m[38;2;248;248;242m       Screen margin (TRBL | TB,RL | T,RL,B | T,R,B,L)[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--padding[0m[38;2;248;248;242m=[0m[38;2;249;38;114mPADDING[0m[38;2;248;248;242m     Padding inside border (TRBL | TB,RL | T,RL,B | T,R,B,L)[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--info[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTYLE[0m[38;2;248;248;242m          Finder info style [default|inline|hidden][0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--prompt[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTR[0m[38;2;248;248;242m          Input prompt (default: '> ')[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--pointer[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTR[0m[38;2;248;248;242m         Pointer to the current line (default: '>')[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--marker[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTR[0m[38;2;248;248;242m          Multi-select marker (default: '>')[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--header[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTR[0m[38;2;248;248;242m          String to print as header[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--header-lines[0m[38;2;248;248;242m=[0m[38;2;249;38;114mN[0m[38;2;248;248;242m      The first N lines of the input are treated as header[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--header-first[0m[38;2;248;248;242m        Print header before the prompt line[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--ellipsis[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTR[0m[38;2;248;248;242m        Ellipsis to show when line is truncated (default: '..')[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--ellipsis[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTR[0m[38;2;248;248;242m        Ellipsis to show when line is truncated (default: '..')[0m
 
-[38;2;248;248;242m  [0m[38;2;253;151;31mDisplay[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mDisplay[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--ansi[0m[38;2;248;248;242m                Enable processing of ANSI color codes[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--tabstop[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSPACES[0m[38;2;248;248;242m      Number of spaces for a tab character (default: 8)[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m=[0m[38;2;253;151;31mCOLSPEC[0m[38;2;248;248;242m       Base scheme (dark|light|16|bw) and/or custom colors[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--tabstop[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSPACES[0m[38;2;248;248;242m      Number of spaces for a tab character (default: 8)[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCOLSPEC[0m[38;2;248;248;242m       Base scheme (dark|light|16|bw) and/or custom colors[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--no-bold[0m[38;2;248;248;242m             Do not use bold text[0m
 
-[38;2;248;248;242m  [0m[38;2;253;151;31mHistory[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--history[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m        History file[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--history-size[0m[38;2;248;248;242m=[0m[38;2;253;151;31mN[0m[38;2;248;248;242m      Maximum number of history entries (default: 1000)[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mHistory[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--history[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m        History file[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--history-size[0m[38;2;248;248;242m=[0m[38;2;249;38;114mN[0m[38;2;248;248;242m      Maximum number of history entries (default: 1000)[0m
 
-[38;2;248;248;242m  [0m[38;2;253;151;31mPreview[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--preview[0m[38;2;248;248;242m=[0m[38;2;253;151;31mCOMMAND[0m[38;2;248;248;242m     Command to preview highlighted line ({})[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--preview-window[0m[38;2;248;248;242m=[0m[38;2;253;151;31mOPT[0m[38;2;248;248;242m  Preview window layout (default: right:50%)[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mPreview[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--preview[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCOMMAND[0m[38;2;248;248;242m     Command to preview highlighted line ({})[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--preview-window[0m[38;2;248;248;242m=[0m[38;2;249;38;114mOPT[0m[38;2;248;248;242m  Preview window layout (default: right:50%)[0m
 [38;2;248;248;242m                          [up|down|left|right][,SIZE[%]][0m
 [38;2;248;248;242m                          [,[no]wrap][,[no]cycle][,[no]follow][,[no]hidden][0m
 [38;2;248;248;242m                          [,border-BORDER_OPT][0m
 [38;2;248;248;242m                          [,+SCROLL[OFFSETS][/DENOM]][,~HEADER_LINES][0m
 [38;2;248;248;242m                          [,default][,<SIZE_THRESHOLD(ALTERNATIVE_LAYOUT)][0m
 
-[38;2;248;248;242m  [0m[38;2;253;151;31mScripting[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--query[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTR[0m[38;2;248;248;242m       Start the finder with the given query[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mScripting[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--query[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTR[0m[38;2;248;248;242m       Start the finder with the given query[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-1[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--select-1[0m[38;2;248;248;242m        Automatically select the only match[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-0[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exit-0[0m[38;2;248;248;242m          Exit immediately when there's no match[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--filter[0m[38;2;248;248;242m=[0m[38;2;253;151;31mSTR[0m[38;2;248;248;242m      Filter mode. Do not start interactive finder.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--filter[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTR[0m[38;2;248;248;242m      Filter mode. Do not start interactive finder.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--print-query[0m[38;2;248;248;242m         Print query as the first line[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m--expect[0m[38;2;248;248;242m=[0m[38;2;253;151;31mKEYS[0m[38;2;248;248;242m         Comma-separated list of keys to complete fzf[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--expect[0m[38;2;248;248;242m=[0m[38;2;249;38;114mKEYS[0m[38;2;248;248;242m         Comma-separated list of keys to complete fzf[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--read0[0m[38;2;248;248;242m               Read input delimited by ASCII NUL characters[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--print0[0m[38;2;248;248;242m              Print output delimited by ASCII NUL characters[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--sync[0m[38;2;248;248;242m                Synchronous search for multi-staged filtering[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m             Display version information and exit[0m
 
-[38;2;248;248;242m  [0m[38;2;253;151;31mEnvironment variables[0m
-[38;2;248;248;242m    [0m[38;2;253;151;31mFZF_DEFAULT_COMMAND[0m[38;2;248;248;242m   Default command to use when input is tty[0m
-[38;2;248;248;242m    [0m[38;2;253;151;31mFZF_DEFAULT_OPTS[0m[38;2;248;248;242m      Default options[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mEnvironment variables[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mFZF_DEFAULT_COMMAND[0m[38;2;248;248;242m   Default command to use when input is tty[0m
+[38;2;248;248;242m    [0m[38;2;249;38;114mFZF_DEFAULT_OPTS[0m[38;2;248;248;242m      Default options[0m
 [38;2;248;248;242m                          (e.g. '--layout=reverse --inline-info')[0m

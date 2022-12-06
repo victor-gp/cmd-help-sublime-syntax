@@ -3,7 +3,7 @@
 Usage: curl [options...] <url>
      --abstract-unix-socket <path> Connect via abstract Unix domain socket
      --alt-svc <file name> Enable alt-svc with this cache file
-#              ^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#              ^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
      --anyauth       Pick any authentication method
  -a, --append        Append to target file when uploading
      --basic         Use HTTP Basic Authentication
@@ -15,13 +15,13 @@ Usage: curl [options...] <url>
      --ciphers <list of ciphers> SSL ciphers to use
      --compressed    Request compressed response
      --compressed-ssh Enable SSH compression
-#                     ^^^^^^ - variable.parameter.option-argument.cmd-help
+#                     ^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
  -K, --config <file> Read config from a file
      --connect-timeout <seconds> Maximum time allowed for connection
      --connect-to <HOST1:PORT1:HOST2:PORT2> Connect to host
  -C, --continue-at <offset> Resumed transfer offset
  -b, --cookie <data|filename> Send cookies from string/file
-#                  ^ variable.parameter.option-argument.cmd-help
+#                  ^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 #nit: this is an OR, shouldn't be scoped
  -c, --cookie-jar <filename> Write cookies to <filename> after operation
      --create-dirs   Create necessary local directory hierarchy
@@ -96,7 +96,7 @@ Usage: curl [options...] <url>
      --local-port <num/range> Force use of RANGE for local port numbers
  -L, --location      Follow redirects
      --location-trusted Like --location, and send auth to other hosts
-#                       ^^^^ variable.parameter.option-argument.cmd-help
+#                       ^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 #nit: false positive
      --login-options <options> Server login options
      --mail-auth <address> Originator address of the original email
@@ -134,9 +134,9 @@ Usage: curl [options...] <url>
      --post302       Do not switch to GET after following a 302
      --post303       Do not switch to GET after following a 303
      --preproxy [protocol://]host[:port] Use this proxy first
-#                ^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
-#                            ^^^^ - variable.parameter.option-argument.cmd-help
-#                                 ^^^^^ - variable.parameter.option-argument.cmd-help
+#                ^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                            ^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                                 ^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 #nice: handle option argument parts / I should handle rubocop's todo before this
  -#, --progress-bar  Display transfer progress as a bar
 #^^ entity.name.function.option.cmd-help

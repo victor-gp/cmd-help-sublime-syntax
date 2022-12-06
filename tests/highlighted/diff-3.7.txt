@@ -1,27 +1,27 @@
-[38;2;253;151;31mUsage:[0m[38;2;248;248;242m diff [OPTION]... FILES[0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m diff [OPTION]... FILES[0m
 [38;2;248;248;242mCompare FILES line by line.[0m
 
 [38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--normal[0m[38;2;248;248;242m                  output a normal diff (the default)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--brief[0m[38;2;248;248;242m                   report only when files differ[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--report-identical-files[0m[38;2;248;248;242m  report when two files are the same[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m [0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m]   output NUM (default 3) lines of copied context[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m [0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--unified[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m]   output NUM (default 3) lines of unified context[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m [0m[38;2;249;38;114mNUM[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m[=[0m[38;2;249;38;114mNUM[0m[38;2;248;248;242m]   output NUM (default 3) lines of copied context[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m [0m[38;2;249;38;114mNUM[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--unified[0m[38;2;248;248;242m[=[0m[38;2;249;38;114mNUM[0m[38;2;248;248;242m]   output NUM (default 3) lines of unified context[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ed[0m[38;2;248;248;242m                      output an ed script[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--rcs[0m[38;2;248;248;242m                     output an RCS format diff[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-y[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--side-by-side[0m[38;2;248;248;242m            output in two columns[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--width[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m               output at most NUM (default 130) print columns[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--width[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNUM[0m[38;2;248;248;242m               output at most NUM (default 130) print columns[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--left-column[0m[38;2;248;248;242m             output only the left column of common lines[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--suppress-common-lines[0m[38;2;248;248;242m   do not output common lines[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--show-c-function[0m[38;2;248;248;242m         show which C function each change is in[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--show-function-line[0m[38;2;248;248;242m=[0m[38;2;253;151;31mRE[0m[38;2;248;248;242m   show the most recent line matching RE[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m [0m[38;2;253;151;31mLABEL[0m[38;2;248;248;242m             use LABEL instead of file name and timestamp[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--show-function-line[0m[38;2;248;248;242m=[0m[38;2;249;38;114mRE[0m[38;2;248;248;242m   show the most recent line matching RE[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--label[0m[38;2;248;248;242m [0m[38;2;249;38;114mLABEL[0m[38;2;248;248;242m             use LABEL instead of file name and timestamp[0m
 [38;2;248;248;242m                                  (can be repeated)[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--expand-tabs[0m[38;2;248;248;242m             expand tabs to spaces in output[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--initial-tab[0m[38;2;248;248;242m             make tabs line up by prepending a tab[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--tabsize[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m             tab stops every NUM (default 8) print columns[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--tabsize[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNUM[0m[38;2;248;248;242m             tab stops every NUM (default 8) print columns[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--suppress-blank-empty[0m[38;2;248;248;242m    suppress space or tab before empty output lines[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--paginate[0m[38;2;248;248;242m                pass output through 'pr' to paginate it[0m
 
@@ -31,12 +31,12 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--unidirectional-new-file[0m[38;2;248;248;242m   treat absent first files as empty[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--ignore-file-name-case[0m[38;2;248;248;242m     ignore case when comparing file names[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--no-ignore-file-name-case[0m[38;2;248;248;242m  consider case when comparing file names[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exclude[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPAT[0m[38;2;248;248;242m               exclude files that match PAT[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exclude-from[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m         exclude files that match any pattern in FILE[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--starting-file[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m        start with FILE when comparing directories[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--from-file[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE1[0m[38;2;248;248;242m           compare FILE1 to all operands;[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exclude[0m[38;2;248;248;242m=[0m[38;2;249;38;114mPAT[0m[38;2;248;248;242m               exclude files that match PAT[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exclude-from[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m         exclude files that match any pattern in FILE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--starting-file[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m        start with FILE when comparing directories[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--from-file[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE1[0m[38;2;248;248;242m           compare FILE1 to all operands;[0m
 [38;2;248;248;242m                                    FILE1 can be a directory[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--to-file[0m[38;2;248;248;242m=[0m[38;2;253;151;31mFILE2[0m[38;2;248;248;242m             compare all operands to FILE2;[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--to-file[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE2[0m[38;2;248;248;242m             compare all operands to FILE2;[0m
 [38;2;248;248;242m                                    FILE2 can be a directory[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-case[0m[38;2;248;248;242m               ignore case differences in file contents[0m
@@ -45,15 +45,15 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-space-change[0m[38;2;248;248;242m       ignore changes in the amount of white space[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-all-space[0m[38;2;248;248;242m          ignore all white space[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-blank-lines[0m[38;2;248;248;242m        ignore changes where lines are all blank[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-matching-lines[0m[38;2;248;248;242m=[0m[38;2;253;151;31mRE[0m[38;2;248;248;242m  ignore changes where all lines match RE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-matching-lines[0m[38;2;248;248;242m=[0m[38;2;249;38;114mRE[0m[38;2;248;248;242m  ignore changes where all lines match RE[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--text[0m[38;2;248;248;242m                      treat all files as text[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--strip-trailing-cr[0m[38;2;248;248;242m         strip trailing carriage return on input[0m
 
-[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ifdef[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNAME[0m[38;2;248;248;242m                output merged file with '#ifdef NAME' diffs[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--GTYPE-group-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31mGFMT[0m[38;2;248;248;242m   format GTYPE input groups with GFMT[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--line-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLFMT[0m[38;2;248;248;242m          format all input lines with LFMT[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--LTYPE-line-format[0m[38;2;248;248;242m=[0m[38;2;253;151;31mLFMT[0m[38;2;248;248;242m    format LTYPE input lines with LFMT[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ifdef[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNAME[0m[38;2;248;248;242m                output merged file with '#ifdef NAME' diffs[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--GTYPE-group-format[0m[38;2;248;248;242m=[0m[38;2;249;38;114mGFMT[0m[38;2;248;248;242m   format GTYPE input groups with GFMT[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--line-format[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLFMT[0m[38;2;248;248;242m          format all input lines with LFMT[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--LTYPE-line-format[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLFMT[0m[38;2;248;248;242m    format LTYPE input lines with LFMT[0m
 [38;2;248;248;242m    These format options provide fine-grained control over the output[0m
 [38;2;248;248;242m      of diff, generalizing -D/--ifdef.[0m
 [38;2;248;248;242m    LTYPE is 'old', 'new', or 'unchanged'.  GTYPE is LTYPE or 'changed'.[0m
@@ -77,14 +77,14 @@
 [38;2;248;248;242m      %%  %[0m
 [38;2;248;248;242m      %c'C'  the single character C[0m
 [38;2;248;248;242m      %c'\OOO'  the character with octal code OOO[0m
-[38;2;248;248;242m      [0m[38;2;253;151;31mC[0m[38;2;248;248;242m    the character C (other characters represent themselves)[0m
+[38;2;248;248;242m      [0m[38;2;249;38;114mC[0m[38;2;248;248;242m    the character C (other characters represent themselves)[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--minimal[0m[38;2;248;248;242m            try hard to find a smaller set of changes[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--horizon-lines[0m[38;2;248;248;242m=[0m[38;2;253;151;31mNUM[0m[38;2;248;248;242m  keep NUM lines of the common prefix and suffix[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--horizon-lines[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNUM[0m[38;2;248;248;242m  keep NUM lines of the common prefix and suffix[0m
 [38;2;248;248;242m      [0m[38;2;166;226;46m--speed-large-files[0m[38;2;248;248;242m  assume large files and many scattered small changes[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m[=[0m[38;2;253;151;31mWHEN[0m[38;2;248;248;242m]       colorize the output; WHEN can be 'never', 'always',[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--color[0m[38;2;248;248;242m[=[0m[38;2;249;38;114mWHEN[0m[38;2;248;248;242m]       colorize the output; WHEN can be 'never', 'always',[0m
 [38;2;248;248;242m                             or 'auto' (the default)[0m
-[38;2;248;248;242m      [0m[38;2;166;226;46m--palette[0m[38;2;248;248;242m=[0m[38;2;253;151;31mPALETTE[0m[38;2;248;248;242m    the colors to use when --color is active; PALETTE is[0m
+[38;2;248;248;242m      [0m[38;2;166;226;46m--palette[0m[38;2;248;248;242m=[0m[38;2;249;38;114mPALETTE[0m[38;2;248;248;242m    the colors to use when --color is active; PALETTE is[0m
 [38;2;248;248;242m                             a colon-separated list of terminfo capabilities[0m
 
 [38;2;248;248;242m      [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m               display this help and exit[0m

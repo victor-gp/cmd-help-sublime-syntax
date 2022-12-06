@@ -7,7 +7,7 @@ Basic Options:
     -x, --fix-layout                 Run only layout cops, with auto-correct on.
         --safe                       Run only safe cops.
         --except [COP1,COP2,...]     Exclude the given cop(s).
-#                 ^^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#                 ^^^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
         --only [COP1,COP2,...]       Run only the given cop(s).
         --only-guide-cops            Run only cops for rules that link to a
                                      style guide.
@@ -31,7 +31,7 @@ Basic Options:
     -s, --stdin FILE                 Pipe source from STDIN, using FILE in offense
                                      reports. This is useful for editor integration.
     -P, --[no-]parallel              Use available CPUs to execute inspection in
-#         ^^^^^^^^^^^^^ - entity.name.function.option.cmd-help
+#              ^^^^^^^^ - entity.name.function.option.cmd-help
 #todo: handle on/off segments in options
                                      parallel. Default is true.
         --fail-level SEVERITY        Minimum severity (A/I/R/C/W/E/F) for exit
@@ -86,7 +86,7 @@ Output Options:
                                      the specified --fail-level or above
 
 Auto-correction:
-#^^^^^^^^^^^^^^^ entity.name.section.cmd-help
+#^^^^^^^^^^^^^^^ string.section-heading.cmd-help
     -a, --auto-correct               Auto-correct offenses (only when it's safe).
         --safe-auto-correct          (same, deprecated)
     -A, --auto-correct-all           Auto-correct offenses (safe and unsafe)

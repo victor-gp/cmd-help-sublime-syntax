@@ -1,6 +1,6 @@
 [38;2;248;248;242mnpm <command>[0m
 
-[38;2;253;151;31mUsage:[0m
+[38;2;246;170;17mUsage:[0m
 
 [38;2;248;248;242mnpm install        install all the dependencies in your project[0m
 [38;2;248;248;242mnpm install <foo>  add the <foo> dependency to your project[0m
@@ -11,7 +11,7 @@
 [38;2;248;248;242mnpm help <term>    search for help on <term>[0m
 [38;2;248;248;242mnpm help npm       more involved overview[0m
 
-[38;2;253;151;31mAll commands:[0m
+[38;2;246;170;17mAll commands:[0m
 
 [38;2;248;248;242m    access, adduser, audit, bin, bugs, cache, ci, completion,[0m
 [38;2;248;248;242m    config, dedupe, deprecate, diff, dist-tag, docs, doctor,[0m
@@ -24,7 +24,7 @@
 [38;2;248;248;242m    uninstall, unpublish, unstar, update, version, view, whoami[0m
 
 [38;2;248;248;242mSpecify configs in the ini-formatted file:[0m
-[38;2;248;248;242m    [0m[38;2;248;248;242m/home/victor-gp/.npmrc[0m
+[38;2;248;248;242m    [0m[38;2;102;217;239m/home/victor-gp/.npmrc[0m
 [38;2;248;248;242mor on the command line via: npm <command> --key=value[0m
 
 [38;2;248;248;242mMore configuration info: npm help config[0m

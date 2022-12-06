@@ -25,7 +25,7 @@ options:
                         "-" then the default dictionary is used. This option
                         can be specified multiple times.
   --builtin BUILTIN-LIST
-#           ^^^^^^^^^^^^ variable.parameter.option-argument.cmd-help
+#           ^^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
                         comma-separated list of builtin dictionaries to
                         include (when "-D -" or no "-D" is passed). Current
                         options are:

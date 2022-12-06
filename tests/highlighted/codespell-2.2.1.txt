@@ -1,4 +1,4 @@
-[38;2;253;151;31musage:[0m[38;2;248;248;242m codespell [-h] [--version] [-d] [-c] [-w] [-D DICTIONARY][0m
+[38;2;246;170;17musage:[0m[38;2;248;248;242m codespell [-h] [--version] [-d] [-c] [-w] [-D DICTIONARY][0m
 [38;2;248;248;242m                 [--builtin BUILTIN-LIST] [--ignore-regex IGNORE_REGEX][0m
 [38;2;248;248;242m                 [-I FILE] [-L WORDS] [--uri-ignore-words-list WORDS][0m
 [38;2;248;248;242m                 [-r REGEX] [--uri-regex URI_REGEX] [-s] [--count] [-S SKIP][0m
@@ -6,22 +6,22 @@
 [38;2;248;248;242m                 [-A LINES] [-B LINES] [-C LINES] [--config CONFIG][0m
 [38;2;248;248;242m                 [files ...][0m
 
-[38;2;253;151;31mpositional arguments:[0m
-[38;2;248;248;242m  [0m[38;2;249;38;114mfiles[0m[38;2;248;248;242m                 files or directories to check[0m
+[38;2;246;170;17mpositional arguments:[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mfiles[0m[38;2;248;248;242m                 files or directories to check[0m
 
-[38;2;253;151;31moptions:[0m
+[38;2;246;170;17moptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m            show this help message and exit[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m             show program's version number and exit[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--disable-colors[0m[38;2;248;248;242m  disable colors, even when printing to terminal (always[0m
 [38;2;248;248;242m                        set for Windows)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--enable-colors[0m[38;2;248;248;242m   enable colors, even when not printing to terminal[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--write-changes[0m[38;2;248;248;242m   write changes in place if possible[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m [0m[38;2;253;151;31mDICTIONARY[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--dictionary[0m[38;2;248;248;242m [0m[38;2;253;151;31mDICTIONARY[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m [0m[38;2;249;38;114mDICTIONARY[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--dictionary[0m[38;2;248;248;242m [0m[38;2;249;38;114mDICTIONARY[0m
 [38;2;248;248;242m                        custom dictionary file that contains spelling[0m
 [38;2;248;248;242m                        corrections. If this flag is not specified or equals[0m
 [38;2;248;248;242m                        "-" then the default dictionary is used. This option[0m
 [38;2;248;248;242m                        can be specified multiple times.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--builtin[0m[38;2;248;248;242m [0m[38;2;253;151;31mBUILTIN-LIST[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--builtin[0m[38;2;248;248;242m [0m[38;2;249;38;114mBUILTIN-LIST[0m
 [38;2;248;248;242m                        comma-separated list of builtin dictionaries to[0m
 [38;2;248;248;242m                        include (when "-D -" or no "-D" is passed). Current[0m
 [38;2;248;248;242m                        options are:[0m
@@ -37,54 +37,54 @@
 [38;2;248;248;242m                        - 'names' for valid proper names that might be typos[0m
 [38;2;248;248;242m                        - 'en-GB_to_en-US' for corrections from en-GB to en-US[0m
 [38;2;248;248;242m                        The default is 'clear,rare'.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--ignore-regex[0m[38;2;248;248;242m [0m[38;2;253;151;31mIGNORE_REGEX[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--ignore-regex[0m[38;2;248;248;242m [0m[38;2;249;38;114mIGNORE_REGEX[0m
 [38;2;248;248;242m                        regular expression that is used to find patterns to[0m
 [38;2;248;248;242m                        ignore by treating as whitespace. When writing regular[0m
 [38;2;248;248;242m                        expressions, consider ensuring there are boundary non-[0m
 [38;2;248;248;242m                        word chars, e.g., "\bmatch\b". Defaults to[0m
 [38;2;248;248;242m                        empty/disabled.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-words[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m [0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-words[0m[38;2;248;248;242m [0m[38;2;249;38;114mFILE[0m
 [38;2;248;248;242m                        file that contains words that will be ignored by[0m
 [38;2;248;248;242m                        codespell. File must contain 1 word per line. Words[0m
 [38;2;248;248;242m                        are case sensitive based on how they are written in[0m
 [38;2;248;248;242m                        the dictionary file[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;253;151;31mWORDS[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-words-list[0m[38;2;248;248;242m [0m[38;2;253;151;31mWORDS[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;249;38;114mWORDS[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-words-list[0m[38;2;248;248;242m [0m[38;2;249;38;114mWORDS[0m
 [38;2;248;248;242m                        comma separated list of words to be ignored by[0m
 [38;2;248;248;242m                        codespell. Words are case sensitive based on how they[0m
 [38;2;248;248;242m                        are written in the dictionary file[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--uri-ignore-words-list[0m[38;2;248;248;242m [0m[38;2;253;151;31mWORDS[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--uri-ignore-words-list[0m[38;2;248;248;242m [0m[38;2;249;38;114mWORDS[0m
 [38;2;248;248;242m                        comma separated list of words to be ignored by[0m
 [38;2;248;248;242m                        codespell in URIs and emails only. Words are case[0m
 [38;2;248;248;242m                        sensitive based on how they are written in the[0m
 [38;2;248;248;242m                        dictionary file. If set to "*", all misspelling in[0m
 [38;2;248;248;242m                        URIs and emails will be ignored.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m [0m[38;2;253;151;31mREGEX[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--regex[0m[38;2;248;248;242m [0m[38;2;253;151;31mREGEX[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m [0m[38;2;249;38;114mREGEX[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--regex[0m[38;2;248;248;242m [0m[38;2;249;38;114mREGEX[0m
 [38;2;248;248;242m                        regular expression that is used to find words. By[0m
 [38;2;248;248;242m                        default any alphanumeric character, the underscore,[0m
 [38;2;248;248;242m                        the hyphen, and the apostrophe is used to build words.[0m
 [38;2;248;248;242m                        This option cannot be specified together with --write-[0m
 [38;2;248;248;242m                        changes.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--uri-regex[0m[38;2;248;248;242m [0m[38;2;253;151;31mURI_REGEX[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--uri-regex[0m[38;2;248;248;242m [0m[38;2;249;38;114mURI_REGEX[0m
 [38;2;248;248;242m                        regular expression that is used to find URIs and[0m
 [38;2;248;248;242m                        emails. A default expression is provided.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--summary[0m[38;2;248;248;242m         print summary of fixes[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--count[0m[38;2;248;248;242m               print the number of errors as the last line of stderr[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m [0m[38;2;253;151;31mSKIP[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--skip[0m[38;2;248;248;242m [0m[38;2;253;151;31mSKIP[0m[38;2;248;248;242m  comma-separated list of files to skip. It accepts[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m [0m[38;2;249;38;114mSKIP[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--skip[0m[38;2;248;248;242m [0m[38;2;249;38;114mSKIP[0m[38;2;248;248;242m  comma-separated list of files to skip. It accepts[0m
 [38;2;248;248;242m                        globs as well. E.g.: if you want codespell to skip[0m
 [38;2;248;248;242m                        .eps and .txt files, you'd give "*.eps,*.txt" to this[0m
 [38;2;248;248;242m                        option.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exclude-file[0m[38;2;248;248;242m [0m[38;2;253;151;31mFILE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m [0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--exclude-file[0m[38;2;248;248;242m [0m[38;2;249;38;114mFILE[0m
 [38;2;248;248;242m                        ignore whole lines that match those in the file FILE.[0m
 [38;2;248;248;242m                        The lines in FILE should match the to-be-excluded[0m
 [38;2;248;248;242m                        lines exactly[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m [0m[38;2;253;151;31mINTERACTIVE[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--interactive[0m[38;2;248;248;242m [0m[38;2;253;151;31mINTERACTIVE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m [0m[38;2;249;38;114mINTERACTIVE[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--interactive[0m[38;2;248;248;242m [0m[38;2;249;38;114mINTERACTIVE[0m
 [38;2;248;248;242m                        set interactive mode when writing changes:[0m
 [38;2;248;248;242m                        - 0: no interactivity.[0m
 [38;2;248;248;242m                        - 1: ask for confirmation.[0m
 [38;2;248;248;242m                        - 2: ask user to choose one fix when more than one is[0m
 [38;2;248;248;242m                          available.[0m
 [38;2;248;248;242m                        - 3: both 1 and 2[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m [0m[38;2;253;151;31mQUIET_LEVEL[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet-level[0m[38;2;248;248;242m [0m[38;2;253;151;31mQUIET_LEVEL[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m [0m[38;2;249;38;114mQUIET_LEVEL[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--quiet-level[0m[38;2;248;248;242m [0m[38;2;249;38;114mQUIET_LEVEL[0m
 [38;2;248;248;242m                        bitmask that allows suppressing messages:[0m
 [38;2;248;248;242m                        - 0: print all messages.[0m
 [38;2;248;248;242m                        - 1: disable warnings about wrong encoding.[0m
@@ -105,10 +105,10 @@
 [38;2;248;248;242m                        check file names as well[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--check-hidden[0m[38;2;248;248;242m    check hidden files and directories (those starting[0m
 [38;2;248;248;242m                        with ".") as well.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m [0m[38;2;253;151;31mLINES[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--after-context[0m[38;2;248;248;242m [0m[38;2;253;151;31mLINES[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m [0m[38;2;249;38;114mLINES[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--after-context[0m[38;2;248;248;242m [0m[38;2;249;38;114mLINES[0m
 [38;2;248;248;242m                        print LINES of trailing context[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m [0m[38;2;253;151;31mLINES[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--before-context[0m[38;2;248;248;242m [0m[38;2;253;151;31mLINES[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m [0m[38;2;249;38;114mLINES[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--before-context[0m[38;2;248;248;242m [0m[38;2;249;38;114mLINES[0m
 [38;2;248;248;242m                        print LINES of leading context[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m [0m[38;2;253;151;31mLINES[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m [0m[38;2;253;151;31mLINES[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m [0m[38;2;249;38;114mLINES[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m [0m[38;2;249;38;114mLINES[0m
 [38;2;248;248;242m                        print LINES of surrounding context[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m [0m[38;2;253;151;31mCONFIG[0m[38;2;248;248;242m       path to config file.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m [0m[38;2;249;38;114mCONFIG[0m[38;2;248;248;242m       path to config file.[0m
