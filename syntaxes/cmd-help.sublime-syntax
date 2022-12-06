@@ -38,9 +38,9 @@ variables:
 ### file-def variables:
   filename: '[0-9a-zA-Z._-]+'
   # todo: allow pathnames to end in /
-  absolute_path: '/{{filename}}(/{{filename}})*'
-  relative_path: '{{filename}}/({{filename}}/)*{{filename}}'
-  home_subpath: '~{{absolute_path}}'
+  absolute_path: '(/{{filename}})+'
+  relative_path: '{{filename}}{{absolute_path}}'
+  home_relative_path: '~{{absolute_path}}'
 
 ### exceptions variables:
   color_code_begin: '(?=.*\e\[.*'
@@ -419,7 +419,7 @@ contexts:
     - match: '{{relative_path}}(?={{long_space}})'
       scope: *FILE_DEF_SCOPES
       set: then-pop
-    - match: '{{home_subpath}}(?={{long_space}})'
+    - match: '{{home_relative_path}}(?={{long_space}})'
       scope: *FILE_DEF_SCOPES
       set: then-pop
     # dotfile
