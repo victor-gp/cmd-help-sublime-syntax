@@ -102,6 +102,7 @@ PYTHONSTARTUP: file executed on interactive startup (no default)
   .jvmopts            if this file exists in the current directory, its contents
   /etc/sbt/sbtopts    if this file exists, it is prepended to the runner args
 path/.to/file
+~/.config/bat
 
    +			Start at end of file
    +<lnum>		Start at line <lnum>

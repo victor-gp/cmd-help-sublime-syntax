@@ -102,6 +102,7 @@
 [38;2;227;234;242m  [0m[38;2;102;204;204m.jvmopts[0m[38;2;227;234;242m            if this file exists in the current directory, its contents[0m
 [38;2;227;234;242m  [0m[38;2;102;204;204m/etc/sbt/sbtopts[0m[38;2;227;234;242m    if this file exists, it is prepended to the runner args[0m
 [38;2;102;204;204mpath/.to/file[0m
+[38;2;102;204;204m~/.config/bat[0m
 
 [38;2;227;234;242m   [0m[38;2;198;153;227m+[0m[38;2;227;234;242m			Start at end of file[0m
 [38;2;227;234;242m   [0m[38;2;198;153;227m+[0m[38;2;233;174;126m<lnum>[0m[38;2;227;234;242m		Start at line <lnum>[0m

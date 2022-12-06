@@ -1,0 +1,21 @@
+rat 0.1.0
+A rad cat(1). Or a silly help message to demo theme support.
+
+Usage: rat [OPTIONS] [FILE]...
+       rat <SUBCOMMAND>
+
+Arguments:
+    <FILE>...    File(s) to print / concatenate. Use '-' for standard input.
+
+Options:
+    -p, --plain                       Show plain style (alias for '--style=plain').
+    -l, --language <language>         Set the language for syntax highlighting.
+        --theme <theme>               Set the color theme for syntax highlighting.
+    +<seconds>                        Inactivity period before a rat eats your text.
+
+Subcommands:
+    cache       Modify the syntax-definition and theme cache
+    mischief    A rat infestation eats your hard drive
+
+Other:
+    ~/.config/rat/config    Location of your config file
