@@ -18,4 +18,4 @@ Subcommands:
     mischief    A rat infestation eats your hard drive
 
 Other:
-    ~/.config/hat/config    Location of your config file
+    ~/.config/rat/config    Location of your config file
