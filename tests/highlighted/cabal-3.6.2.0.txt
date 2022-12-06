@@ -105,4 +105,4 @@
 [38;2;248;248;242m                                nix-shell if a 'shell.nix' file exists[0m
 
 [38;2;248;248;242mYou can edit the cabal configuration file to set defaults:[0m
-[38;2;248;248;242m  /home/victor-gp/.cabal/config[0m
+[38;2;248;248;242m  [0m[38;2;102;217;239m/home/victor-gp/.cabal/config[0m
