@@ -81,11 +81,13 @@ noise_line = "The test file references syntax definition file: cmd-help.sublime-
 signal_lines = [line for line in output.splitlines() if line != noise_line]
 
 last_line = signal_lines[-1]
-if last_line == "exiting with code 0":
-    # colorize last line in green
-    signal_lines[-1] = f"\033[32m{last_line}\033[00m"
-else:
-    # colorize last line in red
-    signal_lines[-1] = f"\033[31m{last_line}\033[00m"
+success = last_line == "exiting with code 0"
 
+if success: # colorize last line in green
+    signal_lines[-1] = f"\033[32m{last_line}\033[00m"
+else: # colorize last line in red
+    signal_lines[-1] = f"\033[31m{last_line}\033[00m"
 print("\n".join(signal_lines))
+
+if not success:
+    exit(1)

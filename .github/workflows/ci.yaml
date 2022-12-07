@@ -13,7 +13,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  #fixme: it seems like syntax tests always pass?
   syntax_tests:
     name: Syntax tests
     runs-on: "ubuntu-latest"
