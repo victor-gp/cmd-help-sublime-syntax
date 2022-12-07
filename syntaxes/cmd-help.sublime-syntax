@@ -35,10 +35,10 @@ variables:
   long_space: '   |\t|\n|{{single_2_space}}'
   single_2_space: '  (?!.*\S  \S)'
 
-### file-def variables:
-  filename: '[0-9a-zA-Z._-]+'
-  absolute_path: '(/{{filename}})+/?'
-  relative_path: '{{filename}}{{absolute_path}}'
+### pathname variables:
+  path_atom: '[0-9a-zA-Z._-]+'
+  absolute_path: '(/{{path_atom}})+/?'
+  relative_path: '{{path_atom}}{{absolute_path}}'
   home_relative_path: '~{{absolute_path}}'
 
 ### exceptions variables:
@@ -78,10 +78,10 @@ scope_variables: # last scope is matched first
   - &OTHER_DEF_SCOPES
     constant.other.def.cmd-help
 
-  - &FILE_DEF_SCOPES
-    constant.character.escape.file.cmd-help
-    variable.parameter.file.cmd-help
-    meta.function.block.start.handlebars.file.cmd-help
+  - &PATHNAME_DEF_SCOPES
+    constant.character.escape.pathname.cmd-help
+    variable.parameter.pathname.cmd-help
+    meta.function.block.start.handlebars.pathname.cmd-help
 
 
 contexts:
@@ -375,7 +375,7 @@ contexts:
 
   other-def:
     - include: other-def-escapes
-    - include: file-def
+    - include: pathname-def
     - match: '{{other_lowercase_name}}(?={{long_space}})'
       scope: *OTHER_DEF_SCOPES
       set: then-pop
@@ -411,19 +411,19 @@ contexts:
     - match: (?=or\s)
       set: then-pop
 
-  file-def:
+  pathname-def:
     - match: '{{absolute_path}}(?={{long_space}})'
-      scope: *FILE_DEF_SCOPES
+      scope: *PATHNAME_DEF_SCOPES
       set: then-pop
     - match: '{{relative_path}}(?={{long_space}})'
-      scope: *FILE_DEF_SCOPES
+      scope: *PATHNAME_DEF_SCOPES
       set: then-pop
     - match: '{{home_relative_path}}(?={{long_space}})'
-      scope: *FILE_DEF_SCOPES
+      scope: *PATHNAME_DEF_SCOPES
       set: then-pop
     # dotfile
-    - match: '\.{{filename}}(?={{long_space}})'
-      scope: *FILE_DEF_SCOPES
+    - match: '\.{{path_atom}}(?={{long_space}})'
+      scope: *PATHNAME_DEF_SCOPES
       set: then-pop
 
   ### notable exceptions #######################################################
