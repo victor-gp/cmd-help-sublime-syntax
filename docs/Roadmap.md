@@ -3,11 +3,12 @@
 ## Current
 
 0. Keep iterating on the syntax
-    - handle more syntax patterns
-    - improve coverage of `bat` themes
+    - [ ] handle more syntax patterns
+    - [x] improve coverage of `bat` themes
 1. Make contributions to the project easier
-    - add issue templates
-    - add CI setup for Pull Requests (with GitHub Actions)
+    - [ ] add issue templates
+    - [x] add CI setup for Pull Requests (with GitHub Actions)
+    - [ ] docs v2: clear criteria for PRs, more detailed Development docs, etc.
 
 ## Later
 
