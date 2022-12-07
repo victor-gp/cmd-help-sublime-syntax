@@ -114,7 +114,7 @@ nor if it begins with lowercase
 ## PRE-EXISTING FORMAT:
 
 [1m[1mIt skips over bold text[0m
-// And continues normal operation
+[32mAnd continues normal operation[0m
 (as proven by the previous line being scoped as heading)
 [31m[31mBut it aborts on color codes (this is red text)[0m
 And stops operation for what is left
