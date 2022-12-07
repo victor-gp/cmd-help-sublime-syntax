@@ -103,6 +103,7 @@ nor if it begins with lowercase
   [36m/etc/sbt/sbtopts[0m    if this file exists, it is prepended to the runner args
 [36mpath/.to/file[0m
 [36m~/.config/bat[0m
+[36m~/.config/bat/[0m
 
    [34m+[0m			Start at end of file
    [34m+[0m[35m<lnum>[0m		Start at line <lnum>
