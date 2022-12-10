@@ -18,7 +18,7 @@ body:
     required: true
 - type: markdown
   attributes:
-    value: The following info helps us add this help message to the test corpus if need be.
+    value: "> The following info helps us add this help message to the test corpus."
 - type: textarea
   attributes:
     label: "<command> --help"
@@ -35,7 +35,7 @@ body:
     required: true
 - type: markdown
   attributes:
-    value: The following info can help us diagnose the bug.
+    value: "> The following info can help us diagnose the bug."
 - type: input
   attributes:
     label: bat --version
