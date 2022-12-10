@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug in the syntax.
-title: "`PATTERN` in COMMAND"
+title: \"PATTERN" in `COMMAND`
 labels: ["bug"]
 body:
 - type: markdown
@@ -13,7 +13,7 @@ body:
     description: |
       Please explain the bug. A screenshot is worth a thousand words.
 
-      Otherwise, or additionally, post the string that should have a different color and the line where it appears.
+      Otherwise, or additionally, post the string (PATTERN in the title) that should have a different color.
   validations:
     required: true
 - type: markdown
@@ -21,15 +21,16 @@ body:
     value: The following info helps us add this help message to the test corpus if need be.
 - type: textarea
   attributes:
-    label: "<COMMAND> --help"
+    label: "<command> --help"
     description: "Please paste the full help message where the bug appears."
     render: Text # aka: plain text
   validations:
     required: true
 - type: input
   attributes:
-    label: "<COMMAND> --version"
+    label: "<command> --version"
     description: "What version of the command are you running?"
+    placeholder: "3.1.3"
   validations:
     required: true
 - type: markdown
@@ -37,6 +38,9 @@ body:
     value: The following info can help us diagnose the bug.
 - type: input
   attributes:
-    label: "`bat --version`"
+    label: bat --version
     description: "What version of `bat` are you running?"
+    placeholder: bat 0.22.1
+  validations:
+    required: true
 # maybe add $ bat --diagnostic | grep -i "theme"
