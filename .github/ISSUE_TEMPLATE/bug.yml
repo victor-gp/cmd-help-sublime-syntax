@@ -6,14 +6,14 @@ body:
 - type: markdown
   attributes:
     value: "Thank you for taking the time to report a bug in `cmd-help`!"
-# maybe add dropdown for false positive vs false negative
+# maybe add dropdown for false positive vs false negative / but we'd have to manually tag anyways...
 - type: textarea
   attributes:
     label: description
     description: |
       Please explain the bug. A screenshot is worth a thousand words.
 
-      Otherwise, or additionally, post the string that should/not have a different color and the line where it appears.
+      Otherwise, or additionally, post the string that should have a different color and the line where it appears.
   validations:
     required: true
 - type: markdown
@@ -23,6 +23,7 @@ body:
   attributes:
     label: "<COMMAND> --help"
     description: "Please paste the full help message where the bug appears."
+    render: Text # aka: plain text
   validations:
     required: true
 - type: input
