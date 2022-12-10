@@ -1,0 +1,41 @@
+name: Bug Report
+description: Report a bug in the syntax.
+title: "`PATTERN` in COMMAND"
+labels: ["bug"]
+body:
+- type: markdown
+  attributes:
+    value: "Thank you for taking the time to report a bug in `cmd-help`!"
+# maybe add dropdown for false positive vs false negative
+- type: textarea
+  attributes:
+    label: description
+    description: |
+      Please explain the bug. A screenshot is worth a thousand words.
+
+      Otherwise, or additionally, post the string that should/not have a different color and the line where it appears.
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: The following info helps us add this help message to the test corpus if need be.
+- type: textarea
+  attributes:
+    label: "<COMMAND> --help"
+    description: "Please paste the full help message where the bug appears."
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: "<COMMAND> --version"
+    description: "What version of the command are you running?"
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: The following info can help us diagnose the bug.
+- type: input
+  attributes:
+    label: "`bat --version`"
+    description: "What version of `bat` are you running?"
+# maybe add $ bat --diagnostic | grep -i "theme"
