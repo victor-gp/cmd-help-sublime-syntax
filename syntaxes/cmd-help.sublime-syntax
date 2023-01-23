@@ -376,6 +376,15 @@ contexts:
   other-def:
     - include: other-def-escapes
     - include: pathname-def
+    - include: other-term-def
+    - include: other-variable-def
+
+  other-def-escapes:
+    # pretty common in "usage:" alternatives
+    - match: (?=or\s)
+      set: then-pop
+
+  other-term-def:
     - match: '{{other_lowercase_name}}(?={{long_space}})'
       scope: *OTHER_TERM_SCOPES
       set: then-pop
@@ -394,6 +403,7 @@ contexts:
         2: *OTHER_TERM_SCOPES
       set: then-pop
 
+  other-variable-def:
     - match: '{{allcaps_argument_name}}(?=  )'
       scope: *OTHER_VARIABLE_SCOPES
       set: then-pop
@@ -407,11 +417,6 @@ contexts:
     # e.g.: "'warn'" or "'warn-nopipe'" (from tee)
     - match: "'{{other_lowercase_name}}'"
       scope: *OTHER_VARIABLE_SCOPES
-      set: then-pop
-
-  other-def-escapes:
-    # pretty common in "usage:" alternatives
-    - match: (?=or\s)
       set: then-pop
 
   pathname-def:
