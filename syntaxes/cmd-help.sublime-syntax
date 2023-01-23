@@ -380,6 +380,7 @@ contexts:
     - include: pathname-def
     - include: other-term-def
     - include: other-variable-def
+    - include: other-def-seq
 
   other-def-escapes:
     # pretty common in "usage:" alternatives
@@ -404,7 +405,6 @@ contexts:
         1: *OTHER_TERM_SCOPES
         2: *OTHER_TERM_SCOPES
       set: then-pop
-    - include: other-def-seq
 
   other-variable-def:
     - match: '{{allcaps_argument_name}}(?=  )'
