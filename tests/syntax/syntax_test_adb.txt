@@ -163,8 +163,7 @@ usb:
  detach                   detach from a USB device to allow use by other processes
 environment variables:
  $ADB_TRACE
-#^^^^^^^^^^ - variable.parameter.environment.cmd-help
-#todo: $ENV
+#^^^^^^^^^^ keyword.other.value.cmd-help
      comma-separated list of debug info to log:
      all,adb,sockets,packets,rwx,usb,sync,sysdeps,transport,jdwp
  $ADB_VENDOR_KEYS         colon-separated list of keys (files or directories)

@@ -152,11 +152,11 @@
 [38;2;248;248;242m [0m[38;2;190;132;255mattach[0m[38;2;248;248;242m                   attach a detached USB device[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mdetach[0m[38;2;248;248;242m                   detach from a USB device to allow use by other processes[0m
 [38;2;248;248;242menvironment variables:[0m
-[38;2;248;248;242m $ADB_TRACE[0m
+[38;2;248;248;242m [0m[38;2;249;38;114m$ADB_TRACE[0m
 [38;2;248;248;242m     comma-separated list of debug info to log:[0m
 [38;2;248;248;242m     all,adb,sockets,packets,rwx,usb,sync,sysdeps,transport,jdwp[0m
-[38;2;248;248;242m $ADB_VENDOR_KEYS         colon-separated list of keys (files or directories)[0m
-[38;2;248;248;242m $ANDROID_SERIAL          serial number to connect to (see -s)[0m
-[38;2;248;248;242m $ANDROID_LOG_TAGS        tags to be used by logcat (see logcat --help)[0m
-[38;2;248;248;242m $ADB_LOCAL_TRANSPORT_MAX_PORT max emulator scan port (default 5585, 16 emus)[0m
-[38;2;248;248;242m $ADB_MDNS_AUTO_CONNECT   comma-separated list of mdns services to allow auto-connect (default adb-tls-connect)[0m
+[38;2;248;248;242m [0m[38;2;249;38;114m$ADB_VENDOR_KEYS[0m[38;2;248;248;242m         colon-separated list of keys (files or directories)[0m
+[38;2;248;248;242m [0m[38;2;249;38;114m$ANDROID_SERIAL[0m[38;2;248;248;242m          serial number to connect to (see -s)[0m
+[38;2;248;248;242m [0m[38;2;249;38;114m$ANDROID_LOG_TAGS[0m[38;2;248;248;242m        tags to be used by logcat (see logcat --help)[0m
+[38;2;248;248;242m [0m[38;2;249;38;114m$ADB_LOCAL_TRANSPORT_MAX_PORT[0m[38;2;248;248;242m max emulator scan port (default 5585, 16 emus)[0m
+[38;2;248;248;242m [0m[38;2;249;38;114m$ADB_MDNS_AUTO_CONNECT[0m[38;2;248;248;242m   comma-separated list of mdns services to allow auto-connect (default adb-tls-connect)[0m

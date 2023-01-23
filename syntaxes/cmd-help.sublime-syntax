@@ -401,6 +401,9 @@ contexts:
     - match: '{{allcaps_argument_name}}(?=\s*:)'
       scope: *OTHER_VAL_DEF_SCOPES
       set: then-pop
+    - match: \${{allcaps_argument_name}}
+      scope: *OTHER_VAL_DEF_SCOPES
+      set: then-pop
     # e.g.: "'warn'" or "'warn-nopipe'" (from tee)
     - match: "'{{other_lowercase_name}}'"
       scope: *OTHER_VAL_DEF_SCOPES
