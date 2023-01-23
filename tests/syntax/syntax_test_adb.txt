@@ -16,8 +16,8 @@ global options:
 
 general commands:
  devices [-l]             list connected devices (-l for long output)
-#^^^^^^^ keyword.other.def.cmd-help
-#       ^ - keyword.other.def.cmd-help entity.name.function.option.cmd-help
+#^^^^^^^ constant.other.def.cmd-help
+#       ^ - constant.other.def.cmd-help entity.name.function.option.cmd-help
 #        ^^^^ - entity.name.function.option.cmd-help
 #nice: [-option] after other-def-seq
  help                     show this help message
@@ -150,17 +150,17 @@ scripting:
  unroot                   restart adbd without root permissions
  usb                      restart adbd listening on USB
  tcpip PORT               restart adbd listening on TCP on PORT
-#^^^^^ keyword.other.def.cmd-help
-#     ^ - keyword.other.def.cmd-help variable.parameter.option-argument.cmd-help
-#      ^^^^ variable.parameter.option-argument.cmd-help
-#nice: subcommand + ARG
+#^^^^^ constant.other.def.cmd-help
+#     ^ - constant.other.def.cmd-help variable.parameter.option-argument.cmd-help
+#      ^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#nit: make the first scope of the argument "constant.other.def"
 
 internal debugging:
  start-server             ensure that there is a server running
  kill-server              kill the server if it is running
  reconnect                kick connection from host side to force reconnect
  reconnect device         kick connection from device side to force reconnect
-#^^^^^^^^^ - constant.other.def.cmd-help
+#^^^^^^^^^ constant.other.def.cmd-help
 #         ^ - constant.other.def.cmd-help
 #          ^^^^^^ - constant.other.def.cmd-help
 #nice: subcommand + subcommand/enum
