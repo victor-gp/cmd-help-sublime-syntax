@@ -36,7 +36,7 @@ Initialization options:
 Action options:
 
 FILE                    visit FILE
-#^^^ keyword.other.value.cmd-help
+#^^^ keyword.other.variable.cmd-help
 +LINE                   go to line LINE in next FILE
 # <- entity.name.function.option.plus.cmd-help
 #^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help

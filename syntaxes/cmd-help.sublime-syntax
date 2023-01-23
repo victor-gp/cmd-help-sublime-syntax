@@ -71,8 +71,8 @@ scope_variables: # last scope is matched first
   - &ARGUMENT_SCOPES
     keyword.other.argument.cmd-help
   # mostly all-caps definitions. usually envs or args =~ OPTION_ARGUMENT
-  - &OTHER_VAL_SCOPES
-    keyword.other.value.cmd-help
+  - &OTHER_VARIABLE_SCOPES
+    keyword.other.variable.cmd-help
 
   # non all-caps definitions: subcommands, argument enums, etc.
   - &OTHER_TERM_SCOPES
@@ -395,18 +395,18 @@ contexts:
       set: then-pop
 
     - match: '{{allcaps_argument_name}}(?=  )'
-      scope: *OTHER_VAL_SCOPES
+      scope: *OTHER_VARIABLE_SCOPES
       set: then-pop
     # e.g.: "PYTHONSTARTUP:", "PYTHONCASEOK :"
     - match: '{{allcaps_argument_name}}(?=\s*:)'
-      scope: *OTHER_VAL_SCOPES
+      scope: *OTHER_VARIABLE_SCOPES
       set: then-pop
     - match: \${{allcaps_argument_name}}
-      scope: *OTHER_VAL_SCOPES
+      scope: *OTHER_VARIABLE_SCOPES
       set: then-pop
     # e.g.: "'warn'" or "'warn-nopipe'" (from tee)
     - match: "'{{other_lowercase_name}}'"
-      scope: *OTHER_VAL_SCOPES
+      scope: *OTHER_VARIABLE_SCOPES
       set: then-pop
 
   other-def-escapes:
