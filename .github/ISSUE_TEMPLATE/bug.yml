@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug in the syntax.
-title: \"PATTERN" in `COMMAND`
+title: '"PATTERN" in `COMMAND`'
 labels: ["bug"]
 body:
 - type: markdown
@@ -11,14 +11,21 @@ body:
   attributes:
     label: description
     description: |
-      Please explain the bug. A screenshot is worth a thousand words.
+      Please explain the bug. Include a screenshot if possible, a picture is worth a thousand words. :wink:
 
-      Otherwise, or additionally, post the string (PATTERN in the title) that should have a different color.
+      Otherwise, or additionally, post the string that should have a different color (PATTERN in the issue title).
+
+      Also, please describe your expectations. For instance:
+
+      - "`PATTERN` is colorized but it shouldn't", or
+      - "`PATTERN` should be colorized because it's an argument", or
+      - "`PATTERN` is colorized like arguments but should be colorized like options"
+
   validations:
     required: true
 - type: markdown
   attributes:
-    value: ":speech_balloon: The following info helps us add this help message to the test corpus, if required."
+    value: ":speech_balloon: The following fields are required to add the help message to the test corpus."
 - type: textarea
   attributes:
     label: "<command> --help"
