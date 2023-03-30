@@ -2,15 +2,15 @@
 
 set -euo pipefail
 
-cd "$(dirname "${BASH_SOURCE[0]}")"
+cd "$(dirname "${BASH_SOURCE[0]}")" # /tests
 
 cmd_prefix="bat --no-config -fpl cmd-help"
-src='theme-demo/$ource.txt'
+src='source/theme/demo.txt'
 
 readarray -t themes <<< "$(bat --list-themes --color=never)"
 
 for theme in "${themes[@]}"; do
-    dest="theme-demo/${theme}.txt"
+    dest="destination/${theme}.txt"
     dest_it="${dest/.txt/-italics.txt}"
 
     $cmd_prefix --theme="$theme" $src > "$dest"

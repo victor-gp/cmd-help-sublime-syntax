@@ -1,4 +1,7 @@
-# usage: through tests/highlight_regression.sh and tests/theme_regression.sh
+# used in
+#  tests/highlight_regression.sh
+#  tests/theme_regression.sh
+#  scripts/demo_themes.sh
 
 FROM curlimages/curl:latest AS fetch-pkg
 LABEL keep=false
