@@ -11,43 +11,36 @@ body:
   attributes:
     label: description
     description: |
-      Please explain the bug. Include a screenshot if possible, a picture is worth a thousand words.
+      Please include a screenshot. Otherwise, paste the full line where the bug appears.
 
-      Otherwise, or additionally, post the string that should have a different color (PATTERN in the issue title).
+      Also, describe your expectations. For instance:
 
-      Also, please describe your expectations. For instance:
-
-      - "`PATTERN` is colorized but it shouldn't", or
-      - "`PATTERN` should be colorized because it's an argument", or
-      - "`PATTERN` is colorized like arguments but should be colorized like options"
+      - "PATTERN" is colorized but it shouldn't
+      - "PATTERN" should be colorized because it's an argument
+      - "PATTERN" is colorized like arguments but should be colorized like options
 
   validations:
     required: true
 - type: markdown
   attributes:
-    value: ":speech_balloon: The following fields are required to add the help message to the test corpus."
+    value: ":speech_balloon: The following info helps us diagnose the bug."
+- type: input
+  attributes:
+    label: "$ bat --version"
+    description: "Which version of `bat` are you running?"
+    placeholder: bat 0.23.0
+  validations:
+    required: true
 - type: textarea
   attributes:
-    label: "`<command> --help`"
-    description: "Please paste the full help message where the bug appears."
+    label: "$ COMMAND --help"
+    description: "Paste the full help message where the bug appears."
     render: Text # aka: plain text
   validations:
     required: true
 - type: input
   attributes:
-    label: "`<command> --version`"
-    description: "What version of the command are you running?"
+    label: "$ COMMAND --version"
+    description: "Which version of the command are you running?"
     placeholder: "3.1.3"
-  validations:
-    required: true
-- type: markdown
-  attributes:
-    value: ":speech_balloon: The following info can help us diagnose the bug."
-- type: input
-  attributes:
-    label: "`bat --version`"
-    description: "What version of `bat` are you running?"
-    placeholder: bat 0.22.1
-  validations:
-    required: true
 # maybe add $ bat --diagnostic | grep -i "theme"
