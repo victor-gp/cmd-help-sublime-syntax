@@ -7,7 +7,7 @@ RUN git clone --depth=1 --branch=v${SYNTECT_VERSION} \
     https://github.com/trishume/syntect.git \
     /usr/src/syntect
 WORKDIR /usr/src/syntect
-RUN cargo build --release --example syntest
+RUN cargo build --example syntest
 
 FROM debian:bullseye-slim
 # RUN apt-get update && apt-get install -y EXTRA_RUNTIME_DEPENDENCIES && rm -rf /var/lib/apt/lists/*
