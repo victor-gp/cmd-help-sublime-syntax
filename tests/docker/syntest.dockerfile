@@ -1,6 +1,6 @@
 # usage: use tests/syntax.py, don't run this manually
 
-FROM rust:1.65 as build
+FROM rust:1.70 as build
 LABEL keep=false
 ARG SYNTECT_VERSION=5.0.0
 RUN git clone --depth=1 --branch=v${SYNTECT_VERSION} \
