@@ -29,6 +29,23 @@ parser.add_argument('-s', '--summary', action='store_true')
 
 script_args = parser.parse_args()
 
+### utils
+
+prefix = "syntax.py: "
+
+def info(msg):
+    blue_msg = "\033[34m" + prefix + msg + "\033[00m"
+    print(blue_msg)
+
+def error(msg):
+    print(color_red(prefix + msg))
+
+def color_red(msg):
+    return f"\033[31m{msg}\033[00m"
+
+def color_green(msg):
+    return f"\033[32m{msg}\033[00m"
+
 ### environment
 
 source_path = Path(__file__).resolve()
@@ -42,16 +59,20 @@ ret = subprocess.call(
     stderr=subprocess.DEVNULL
 )
 if ret != 0: # image doesn't exist
-    print("\033[34m" + "Docker image not available, building syntest from source..." + "\033[00m")
-    subprocess.call(
+    info("Docker image not available, building syntest from source...")
+    ret2 = subprocess.call(
         f"docker build -t {image_tag} - < {dockerfile_path}",
         shell=True
     )
-    print("\033[34m" + f"Docker image successfully built, tagged '{image_tag}'." + "\033[00m")
+    if ret2 == 0:
+        info(f"Docker image successfully built, tagged '{image_tag}'.")
+    else:
+        error(f"Docker image build failed, fix that and try again.")
+        exit(1)
 
 man_syntax_path = Path('../syntaxes/Manpage.sublime-syntax')
 if not man_syntax_path.is_file():
-    print("\033[34m" + "Manpage syntax is missing, downloading it..." + "\033[00m")
+    info("Manpage syntax is missing, downloading it...")
     man_syntax = urllib.request.urlretrieve(
         'https://raw.githubusercontent.com/sharkdp/bat/master/assets/syntaxes/02_Extra/Manpage.sublime-syntax',
         '../syntaxes/Manpage.sublime-syntax'
@@ -83,10 +104,10 @@ signal_lines = [line for line in output.splitlines() if line != noise_line]
 last_line = signal_lines[-1]
 success = last_line == "exiting with code 0"
 
-if success: # colorize last line in green
-    signal_lines[-1] = f"\033[32m{last_line}\033[00m"
-else: # colorize last line in red
-    signal_lines[-1] = f"\033[31m{last_line}\033[00m"
+if success:
+    signal_lines[-1] = color_green(last_line)
+else:
+    signal_lines[-1] = color_red(last_line)
 print("\n".join(signal_lines))
 
 if not success:
