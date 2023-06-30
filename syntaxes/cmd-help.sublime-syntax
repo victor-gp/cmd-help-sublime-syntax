@@ -71,11 +71,11 @@ scope_variables: # last scope is matched first
   - &ARGUMENT_SCOPES
     keyword.other.argument.cmd-help
   # mostly all-caps definitions. usually envs or args =~ OPTION_ARGUMENT
-  - &OTHER_VARIABLE_SCOPES
+  - &VARIABLE_SCOPES
     keyword.other.variable.cmd-help
 
   # non all-caps definitions: subcommands, argument enums, etc.
-  - &OTHER_TERM_SCOPES
+  - &KEYWORD_SCOPES
     constant.other.def.cmd-help
 
   - &PATHNAME_SCOPES
@@ -378,8 +378,8 @@ contexts:
   other-def:
     - include: other-def-escapes
     - include: pathname-def
-    - include: other-term-def
-    - include: other-variable-def
+    - include: keyword-def
+    - include: variable-def
     - include: other-def-seq
 
   other-def-escapes:
@@ -387,39 +387,39 @@ contexts:
     - match: (?=or\s)
       set: then-pop
 
-  other-term-def:
+  keyword-def:
     - match: '{{other_lowercase_name}}(?={{long_space}})'
-      scope: *OTHER_TERM_SCOPES
+      scope: *KEYWORD_SCOPES
       set: then-pop
     # e.g.: "install - install packages (from apt)"
     - match: '{{other_lowercase_name}}(?=\s+-\s+\S)'
-      scope: *OTHER_TERM_SCOPES
+      scope: *KEYWORD_SCOPES
       set: then-pop
     # e.g.: "compose*" (from docker)
     - match: '{{other_lowercase_name}}\*(?={{long_space}})'
-      scope: *OTHER_TERM_SCOPES
+      scope: *KEYWORD_SCOPES
       set: then-pop
     # e.g.: "build, b" (from cargo)
     - match: ({{other_lowercase_name}}), ({{other_lowercase_name}})(?={{long_space}})
       captures:
-        1: *OTHER_TERM_SCOPES
-        2: *OTHER_TERM_SCOPES
+        1: *KEYWORD_SCOPES
+        2: *KEYWORD_SCOPES
       set: then-pop
 
-  other-variable-def:
+  variable-def:
     - match: '{{allcaps_argument_name}}(?=  )'
-      scope: *OTHER_VARIABLE_SCOPES
+      scope: *VARIABLE_SCOPES
       set: then-pop
     # e.g.: "PYTHONSTARTUP:", "PYTHONCASEOK :"
     - match: '{{allcaps_argument_name}}(?=\s*:)'
-      scope: *OTHER_VARIABLE_SCOPES
+      scope: *VARIABLE_SCOPES
       set: then-pop
     - match: \${{allcaps_argument_name}}
-      scope: *OTHER_VARIABLE_SCOPES
+      scope: *VARIABLE_SCOPES
       set: then-pop
     # e.g.: "'warn'" or "'warn-nopipe'" (from tee)
     - match: "'{{other_lowercase_name}}'"
-      scope: *OTHER_VARIABLE_SCOPES
+      scope: *VARIABLE_SCOPES
       set: then-pop
 
   pathname-def:
@@ -441,7 +441,7 @@ contexts:
     #nice: limit the sequence to 3-4 terms top?
     #nice: add an other_term_seq_break including '\. |\: '
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
-      scope: *OTHER_TERM_SCOPES
+      scope: *KEYWORD_SCOPES
       set: subcommand-def-post
 
   subcommand-def-post:
