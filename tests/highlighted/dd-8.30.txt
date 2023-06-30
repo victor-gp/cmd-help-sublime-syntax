@@ -62,7 +62,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mseek_bytes[0m[38;2;248;248;242m  treat 'seek=N' as a byte count (oflag only)[0m
 
 [38;2;248;248;242mSending a USR1 signal to a running 'dd' process makes it[0m
-[38;2;248;248;242mprint I/O statistics to standard error and then resume copying.[0m
+[38;2;190;132;255mprint[0m[38;2;248;248;242m [0m[38;2;249;38;114mI[0m[38;2;248;248;242m/O statistics to standard error and then resume copying.[0m
 
 [38;2;246;170;17mOptions are:[0m
 

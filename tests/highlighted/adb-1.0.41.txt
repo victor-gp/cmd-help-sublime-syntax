@@ -18,10 +18,10 @@
 [38;2;248;248;242m [0m[38;2;190;132;255mversion[0m[38;2;248;248;242m                  show version num[0m
 
 [38;2;248;248;242mnetworking:[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mconnect[0m[38;2;248;248;242m HOST[:PORT]      connect to a device via TCP/IP [default port=5555][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mconnect[0m[38;2;248;248;242m [0m[38;2;249;38;114mHOST[0m[38;2;248;248;242m[:PORT]      connect to a device via TCP/IP [default port=5555][0m
 [38;2;248;248;242m disconnect [HOST[:PORT]][0m
 [38;2;248;248;242m     disconnect from given TCP/IP device [default port=5555], or all[0m
-[38;2;248;248;242m pair HOST[:PORT] [PAIRING CODE][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mpair[0m[38;2;248;248;242m [0m[38;2;249;38;114mHOST[0m[38;2;248;248;242m[:PORT] [PAIRING CODE][0m
 [38;2;248;248;242m     pair with a device for secure TCP/IP communication[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m           list all forward socket connections[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [[0m[38;2;166;226;46m--no-rebind[0m[38;2;248;248;242m] LOCAL REMOTE[0m
@@ -36,7 +36,7 @@
 [38;2;248;248;242m       acceptfd:<fd> (listen only)[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove[0m[38;2;248;248;242m LOCAL   remove specific forward socket connection[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove-all[0m[38;2;248;248;242m     remove all forward socket connections[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mppp[0m[38;2;248;248;242m TTY [PARAMETER...]   run PPP over USB[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mppp[0m[38;2;248;248;242m [0m[38;2;249;38;114mTTY[0m[38;2;248;248;242m [PARAMETER...]   run PPP over USB[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m           list all reverse socket connections from device[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [[0m[38;2;166;226;46m--no-rebind[0m[38;2;248;248;242m] REMOTE LOCAL[0m
 [38;2;248;248;242m     reverse socket connection using:[0m
@@ -108,7 +108,7 @@
 [38;2;248;248;242mdebugging:[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mbugreport[0m[38;2;248;248;242m [[0m[38;2;249;38;114mPATH[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m     write bugreport to given PATH [default=bugreport.zip];[0m
-[38;2;248;248;242m     if PATH is a directory, the bug report is saved in that directory.[0m
+[38;2;248;248;242m     [0m[38;2;190;132;255mif[0m[38;2;248;248;242m [0m[38;2;249;38;114mPATH[0m[38;2;248;248;242m is a directory, the bug report is saved in that directory.[0m
 [38;2;248;248;242m     devices that don't support zipped bug reports output to stdout.[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mjdwp[0m[38;2;248;248;242m                     list pids of processes hosting a JDWP transport[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mlogcat[0m[38;2;248;248;242m                   show device log (logcat --help for more)[0m
@@ -116,7 +116,7 @@
 [38;2;248;248;242msecurity:[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mdisable-verity[0m[38;2;248;248;242m           disable dm-verity checking on userdebug builds[0m
 [38;2;248;248;242m [0m[38;2;190;132;255menable-verity[0m[38;2;248;248;242m            re-enable dm-verity checking on userdebug builds[0m
-[38;2;248;248;242m keygen FILE[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mkeygen[0m[38;2;248;248;242m [0m[38;2;249;38;114mFILE[0m
 [38;2;248;248;242m     generate adb public/private key; private key stored in FILE,[0m
 
 [38;2;248;248;242mscripting:[0m

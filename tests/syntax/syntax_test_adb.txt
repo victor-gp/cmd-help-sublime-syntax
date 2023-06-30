@@ -24,6 +24,8 @@ general commands:
 
 networking:
  connect HOST[:PORT]      connect to a device via TCP/IP [default port=5555]
+#^^^^^^^ constant.other.keyword.cmd-help
+#        ^^^^ keyword.other.argument.cmd-help
  disconnect [HOST[:PORT]]
      disconnect from given TCP/IP device [default port=5555], or all
  pair HOST[:PORT] [PAIRING CODE]
@@ -154,8 +156,8 @@ scripting:
  usb                      restart adbd listening on USB
  tcpip PORT               restart adbd listening on TCP on PORT
 #^^^^^ constant.other.keyword.cmd-help
-#     ^ - constant.other.keyword.cmd-help variable.parameter.option-argument.cmd-help
-#      ^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#     ^ - constant.other.keyword.cmd-help keyword.other.argument.cmd-help
+#      ^^^^ keyword.other.argument.cmd-help
 #nit: make the first scope of the argument "constant.other.def"
 
 internal debugging:

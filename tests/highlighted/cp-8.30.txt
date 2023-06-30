@@ -52,7 +52,7 @@
 [38;2;248;248;242m      [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m  output version information and exit[0m
 
 [38;2;248;248;242mBy default, sparse SOURCE files are detected by a crude heuristic and the[0m
-[38;2;248;248;242mcorresponding DEST file is made sparse as well.  That is the behavior[0m
+[38;2;190;132;255mcorresponding[0m[38;2;248;248;242m [0m[38;2;249;38;114mDEST[0m[38;2;248;248;242m file is made sparse as well.  That is the behavior[0m
 [38;2;248;248;242mselected by --sparse=auto.  Specify --sparse=always to create a sparse DEST[0m
 [38;2;248;248;242mfile whenever the SOURCE file contains a long enough sequence of zero bytes.[0m
 [38;2;248;248;242mUse --sparse=never to inhibit creation of sparse files.[0m
@@ -64,7 +64,7 @@
 
 [38;2;248;248;242mThe backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.[0m
 [38;2;248;248;242mThe version control method may be selected via the --backup option or through[0m
-[38;2;248;248;242mthe VERSION_CONTROL environment variable.  Here are the values:[0m
+[38;2;190;132;255mthe[0m[38;2;248;248;242m [0m[38;2;249;38;114mVERSION_CONTROL[0m[38;2;248;248;242m environment variable.  Here are the values:[0m
 
 [38;2;248;248;242m  [0m[38;2;190;132;255mnone[0m[38;2;248;248;242m, [0m[38;2;190;132;255moff[0m[38;2;248;248;242m       never make backups (even if --backup is given)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mnumbered[0m[38;2;248;248;242m, [0m[38;2;190;132;255mt[0m[38;2;248;248;242m     make numbered backups[0m
