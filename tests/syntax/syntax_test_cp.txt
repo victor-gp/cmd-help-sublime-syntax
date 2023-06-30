@@ -61,9 +61,8 @@ Mandatory arguments to long options are mandatory for short options too.
 
 By default, sparse SOURCE files are detected by a crude heuristic and the
 corresponding DEST file is made sparse as well.  That is the behavior
-#^^^^^^^^^^^^ constant.other.keyword.cmd-help
-#             ^^^^ keyword.other.argument.cmd-help
-#fixme
+#^^^^^^^^^^^^ - constant.other.keyword.cmd-help
+#             ^^^^ - keyword.other.argument.cmd-help
 selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
 file whenever the SOURCE file contains a long enough sequence of zero bytes.
 Use --sparse=never to inhibit creation of sparse files.

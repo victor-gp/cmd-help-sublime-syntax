@@ -18,10 +18,10 @@
 [38;2;248;248;242m [0m[38;2;190;132;255mversion[0m[38;2;248;248;242m                  show version num[0m
 
 [38;2;248;248;242mnetworking:[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mconnect[0m[38;2;248;248;242m [0m[38;2;249;38;114mHOST[0m[38;2;248;248;242m[:PORT]      connect to a device via TCP/IP [default port=5555][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mconnect[0m[38;2;248;248;242m HOST[:PORT]      connect to a device via TCP/IP [default port=5555][0m
 [38;2;248;248;242m disconnect [HOST[:PORT]][0m
 [38;2;248;248;242m     disconnect from given TCP/IP device [default port=5555], or all[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mpair[0m[38;2;248;248;242m [0m[38;2;249;38;114mHOST[0m[38;2;248;248;242m[:PORT] [PAIRING CODE][0m
+[38;2;248;248;242m pair HOST[:PORT] [PAIRING CODE][0m
 [38;2;248;248;242m     pair with a device for secure TCP/IP communication[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m           list all forward socket connections[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [[0m[38;2;166;226;46m--no-rebind[0m[38;2;248;248;242m] LOCAL REMOTE[0m
@@ -108,7 +108,7 @@
 [38;2;248;248;242mdebugging:[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mbugreport[0m[38;2;248;248;242m [[0m[38;2;249;38;114mPATH[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m     write bugreport to given PATH [default=bugreport.zip];[0m
-[38;2;248;248;242m     [0m[38;2;190;132;255mif[0m[38;2;248;248;242m [0m[38;2;249;38;114mPATH[0m[38;2;248;248;242m is a directory, the bug report is saved in that directory.[0m
+[38;2;248;248;242m     if PATH is a directory, the bug report is saved in that directory.[0m
 [38;2;248;248;242m     devices that don't support zipped bug reports output to stdout.[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mjdwp[0m[38;2;248;248;242m                     list pids of processes hosting a JDWP transport[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mlogcat[0m[38;2;248;248;242m                   show device log (logcat --help for more)[0m

@@ -25,7 +25,7 @@ general commands:
 networking:
  connect HOST[:PORT]      connect to a device via TCP/IP [default port=5555]
 #^^^^^^^ constant.other.keyword.cmd-help
-#        ^^^^ keyword.other.argument.cmd-help
+#        ^^^^ - keyword.other.argument.cmd-help
  disconnect [HOST[:PORT]]
      disconnect from given TCP/IP device [default port=5555], or all
  pair HOST[:PORT] [PAIRING CODE]

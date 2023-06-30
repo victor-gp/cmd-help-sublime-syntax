@@ -76,7 +76,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mv1-reconfigure[0m[38;2;248;248;242m    Reconfigure the package if necessary.[0m
 
 [38;2;248;248;242mFor more information about a command use:[0m
-[38;2;248;248;242m   [0m[38;2;190;132;255mcabal[0m[38;2;248;248;242m [0m[38;2;249;38;114mCOMMAND[0m[38;2;248;248;242m --help[0m
+[38;2;248;248;242m   cabal COMMAND --help[0m
 [38;2;248;248;242mor cabal help COMMAND[0m
 
 [38;2;248;248;242mTo install Cabal packages from hackage use:[0m

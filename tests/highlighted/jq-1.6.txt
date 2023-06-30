@@ -5,7 +5,7 @@
 [38;2;248;248;242m	jq [options] --jsonargs <jq filter> [JSON_TEXTS...][0m
 
 [38;2;248;248;242mjq is a tool for processing JSON inputs, applying the given filter to[0m
-[38;2;190;132;255mits[0m[38;2;248;248;242m [0m[38;2;249;38;114mJSON[0m[38;2;248;248;242m text inputs and producing the filter's results as JSON on[0m
+[38;2;248;248;242mits JSON text inputs and producing the filter's results as JSON on[0m
 [38;2;248;248;242mstandard output.[0m
 
 [38;2;248;248;242mThe simplest filter is ., which copies jq's input to its output[0m
