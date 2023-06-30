@@ -46,7 +46,7 @@ OWNER and GROUP may be numeric as well as symbolic.
 
 Examples:
   chown root /u        Change the owner of /u to "root".
-# ^^^^^ constant.other.def.cmd-help
+# ^^^^^ constant.other.keyword.cmd-help
   chown root:staff /u  Likewise, but also change its group to "staff".
 # ^^^^^
 #nit: scope this to make it consistent with the other 2 examples

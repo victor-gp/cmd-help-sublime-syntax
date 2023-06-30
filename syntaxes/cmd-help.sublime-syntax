@@ -61,7 +61,7 @@ scope_variables: # last scope is matched first
     entity.name.function.option.cmd-help
   - &PLUS_OPTION_SCOPES
     entity.name.function.option.plus.cmd-help
-  - &END_OF_OPTIONS_SCOPE
+  - &END_OF_OPTIONS_SCOPE # =~ KEYWORD_SCOPES
     constant.other.end-of-options.cmd-help
 
   - &OPTION_ARGUMENT_SCOPES
@@ -76,7 +76,7 @@ scope_variables: # last scope is matched first
 
   # non all-caps definitions: subcommands, argument enums, etc.
   - &KEYWORD_SCOPES
-    constant.other.def.cmd-help
+    constant.other.keyword.cmd-help
 
   - &PATHNAME_SCOPES
     constant.character.escape.pathname.cmd-help
