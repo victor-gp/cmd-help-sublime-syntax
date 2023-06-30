@@ -116,6 +116,8 @@ app installation (see also `adb shell cmd package help`):
 
 debugging:
  bugreport [PATH]
+#^^^^^^^^^ constant.other.keyword.cmd-help
+#           ^^^^ keyword.other.argument.cmd-help
      write bugreport to given PATH [default=bugreport.zip];
      if PATH is a directory, the bug report is saved in that directory.
      devices that don't support zipped bug reports output to stdout.

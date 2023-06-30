@@ -448,6 +448,10 @@ contexts:
       captures:
         1: *KEYWORD_SCOPES
         2: *OPTION_SCOPES
+    - match: '({{other_lowercase_name}}) \[({{allcaps_argument_name}})\]'
+      captures:
+        1: *KEYWORD_SCOPES
+        2: *ARGUMENT_SCOPES
     #nice: limit the sequence to 3-4 terms top?
     #nice: add an other_term_seq_break including '\. |\: '
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'

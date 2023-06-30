@@ -106,7 +106,7 @@
 [38;2;248;248;242m     '-k': keep the data and cache directories[0m
 
 [38;2;248;248;242mdebugging:[0m
-[38;2;248;248;242m bugreport [PATH][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mbugreport[0m[38;2;248;248;242m [[0m[38;2;249;38;114mPATH[0m[38;2;248;248;242m][0m
 [38;2;248;248;242m     write bugreport to given PATH [default=bugreport.zip];[0m
 [38;2;248;248;242m     if PATH is a directory, the bug report is saved in that directory.[0m
 [38;2;248;248;242m     devices that don't support zipped bug reports output to stdout.[0m
