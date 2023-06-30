@@ -23,7 +23,7 @@
 [38;2;248;248;242m     disconnect from given TCP/IP device [default port=5555], or all[0m
 [38;2;248;248;242m pair HOST[:PORT] [PAIRING CODE][0m
 [38;2;248;248;242m     pair with a device for secure TCP/IP communication[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --list           list all forward socket connections[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m           list all forward socket connections[0m
 [38;2;248;248;242m forward [--no-rebind] LOCAL REMOTE[0m
 [38;2;248;248;242m     forward socket connection using:[0m
 [38;2;248;248;242m       tcp:<port> (<local> may be "tcp:0" to pick any open port)[0m
@@ -34,18 +34,18 @@
 [38;2;248;248;242m       jdwp:<process pid> (remote only)[0m
 [38;2;248;248;242m       vsock:<CID>:<port> (remote only)[0m
 [38;2;248;248;242m       acceptfd:<fd> (listen only)[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --remove [0m[38;2;249;38;114mLOCAL[0m[38;2;248;248;242m   remove specific forward socket connection[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --remove-all     remove all forward socket connections[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove[0m[38;2;248;248;242m LOCAL   remove specific forward socket connection[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove-all[0m[38;2;248;248;242m     remove all forward socket connections[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mppp[0m[38;2;248;248;242m TTY [PARAMETER...]   run PPP over USB[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m --list           list all reverse socket connections from device[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m           list all reverse socket connections from device[0m
 [38;2;248;248;242m reverse [--no-rebind] REMOTE LOCAL[0m
 [38;2;248;248;242m     reverse socket connection using:[0m
 [38;2;248;248;242m       tcp:<port> (<remote> may be "tcp:0" to pick any open port)[0m
 [38;2;248;248;242m       localabstract:<unix domain socket name>[0m
 [38;2;248;248;242m       localreserved:<unix domain socket name>[0m
 [38;2;248;248;242m       localfilesystem:<unix domain socket name>[0m
-[38;2;248;248;242m reverse --remove REMOTE  remove specific reverse socket connection[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m --remove-all     remove all reverse socket connections from device[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove[0m[38;2;248;248;242m REMOTE  remove specific reverse socket connection[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove-all[0m[38;2;248;248;242m     remove all reverse socket connections from device[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mmdns[0m[38;2;248;248;242m check               check if mdns discovery is available[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mmdns[0m[38;2;248;248;242m services            list all discovered services[0m
 

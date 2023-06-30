@@ -391,7 +391,7 @@ contexts:
     - match: '{{other_lowercase_name}}(?={{long_space}})'
       scope: *KEYWORD_SCOPES
       set: then-pop
-    # e.g.: "install - install packages (from apt)"
+    # e.g.: "install - install packages" (from apt)
     - match: '{{other_lowercase_name}}(?=\s+-\s+\S)'
       scope: *KEYWORD_SCOPES
       set: then-pop
@@ -405,6 +405,7 @@ contexts:
         1: *KEYWORD_SCOPES
         2: *KEYWORD_SCOPES
       set: then-pop
+    - include: keyword-seq-def
 
   variable-def:
     - match: '{{allcaps_argument_name}}(?=  )'
@@ -437,7 +438,11 @@ contexts:
       scope: *PATHNAME_SCOPES
       set: then-pop
 
-  other-def-seq:
+  keyword-seq-def:
+    - match: '({{other_lowercase_name}}) (-{{option_name}})'
+      captures:
+        1: *KEYWORD_SCOPES
+        2: *OPTION_SCOPES
     #nice: limit the sequence to 3-4 terms top?
     #nice: add an other_term_seq_break including '\. |\: '
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'

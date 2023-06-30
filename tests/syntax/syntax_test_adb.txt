@@ -30,6 +30,8 @@ networking:
  pair HOST[:PORT] [PAIRING CODE]
      pair with a device for secure TCP/IP communication
  forward --list           list all forward socket connections
+#^^^^^^^ constant.other.keyword.cmd-help
+#        ^^^^^^ entity.name.function.option.cmd-help
  forward [--no-rebind] LOCAL REMOTE
      forward socket connection using:
        tcp:<port> (<local> may be "tcp:0" to pick any open port)
