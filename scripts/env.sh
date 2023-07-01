@@ -3,9 +3,15 @@
 function gdiff {
     GIT_PAGER="LESS=R less" git diff "$@" -- tests/{highlighted,theme}
 }
+
 function gdiffs {
     gdiff --staged "$@"
 }
+
+function gdiffm {
+    gdiff main "$@"
+}
+
 # to exclude e.g. THEME-italics, do:
 #   gdiff -- ":^*-italics*"
 
