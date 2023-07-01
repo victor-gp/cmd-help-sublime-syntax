@@ -13,7 +13,7 @@
 [38;2;248;248;242m [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m [0m[38;2;249;38;114mSOCKET[0m[38;2;248;248;242m  listen on given socket for adb server [default=tcp:localhost:5037][0m
 
 [38;2;248;248;242mgeneral commands:[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mdevices[0m[38;2;248;248;242m [[0m[38;2;166;226;46m-l[0m[38;2;248;248;242m]             list connected devices (-l for long output)[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mdevices[0m[38;2;248;248;242m [-l]             list connected devices (-l for long output)[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mhelp[0m[38;2;248;248;242m                     show this help message[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mversion[0m[38;2;248;248;242m                  show version num[0m
 
@@ -23,8 +23,8 @@
 [38;2;248;248;242m     disconnect from given TCP/IP device [default port=5555], or all[0m
 [38;2;248;248;242m pair HOST[:PORT] [PAIRING CODE][0m
 [38;2;248;248;242m     pair with a device for secure TCP/IP communication[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m           list all forward socket connections[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [[0m[38;2;166;226;46m--no-rebind[0m[38;2;248;248;242m] LOCAL REMOTE[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --list           list all forward socket connections[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [--no-rebind] LOCAL REMOTE[0m
 [38;2;248;248;242m     forward socket connection using:[0m
 [38;2;248;248;242m       tcp:<port> (<local> may be "tcp:0" to pick any open port)[0m
 [38;2;248;248;242m       localabstract:<unix domain socket name>[0m
@@ -34,34 +34,34 @@
 [38;2;248;248;242m       jdwp:<process pid> (remote only)[0m
 [38;2;248;248;242m       vsock:<CID>:<port> (remote only)[0m
 [38;2;248;248;242m       acceptfd:<fd> (listen only)[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove[0m[38;2;248;248;242m LOCAL   remove specific forward socket connection[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove-all[0m[38;2;248;248;242m     remove all forward socket connections[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mppp[0m[38;2;248;248;242m [0m[38;2;249;38;114mTTY[0m[38;2;248;248;242m [PARAMETER...]   run PPP over USB[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [0m[38;2;166;226;46m--list[0m[38;2;248;248;242m           list all reverse socket connections from device[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [[0m[38;2;166;226;46m--no-rebind[0m[38;2;248;248;242m] REMOTE LOCAL[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --remove LOCAL   remove specific forward socket connection[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --remove-all     remove all forward socket connections[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mppp[0m[38;2;248;248;242m TTY [PARAMETER...]   run PPP over USB[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m --list           list all reverse socket connections from device[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [--no-rebind] REMOTE LOCAL[0m
 [38;2;248;248;242m     reverse socket connection using:[0m
 [38;2;248;248;242m       tcp:<port> (<remote> may be "tcp:0" to pick any open port)[0m
 [38;2;248;248;242m       localabstract:<unix domain socket name>[0m
 [38;2;248;248;242m       localreserved:<unix domain socket name>[0m
 [38;2;248;248;242m       localfilesystem:<unix domain socket name>[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove[0m[38;2;248;248;242m REMOTE  remove specific reverse socket connection[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m [0m[38;2;166;226;46m--remove-all[0m[38;2;248;248;242m     remove all reverse socket connections from device[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m --remove REMOTE  remove specific reverse socket connection[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreverse[0m[38;2;248;248;242m --remove-all     remove all reverse socket connections from device[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mmdns[0m[38;2;248;248;242m check               check if mdns discovery is available[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mmdns[0m[38;2;248;248;242m services            list all discovered services[0m
 
 [38;2;248;248;242mfile transfer:[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mpush[0m[38;2;248;248;242m [[0m[38;2;166;226;46m--sync[0m[38;2;248;248;242m] [-z ALGORITHM] [-Z] LOCAL... REMOTE[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mpush[0m[38;2;248;248;242m [--sync] [-z ALGORITHM] [-Z] LOCAL... REMOTE[0m
 [38;2;248;248;242m     copy local files/directories to device[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--sync[0m[38;2;248;248;242m: only push files that are newer on the host than the device[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m: dry run: push files to device without storing to the filesystem[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m: enable compression with a specified algorithm (any, none, brotli)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m: disable compression[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mpull[0m[38;2;248;248;242m [[0m[38;2;166;226;46m-a[0m[38;2;248;248;242m] [-z ALGORITHM] [-Z] REMOTE... LOCAL[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mpull[0m[38;2;248;248;242m [-a] [-z ALGORITHM] [-Z] REMOTE... LOCAL[0m
 [38;2;248;248;242m     copy files/dirs from device[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m: preserve file timestamp and mode[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m: enable compression with a specified algorithm (any, none, brotli)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m: disable compression[0m
-[38;2;248;248;242m [0m[38;2;190;132;255msync[0m[38;2;248;248;242m [[0m[38;2;166;226;46m-l[0m[38;2;248;248;242m] [-z ALGORITHM] [-Z] [all|data|odm|oem|product|system|system_ext|vendor][0m
+[38;2;248;248;242m [0m[38;2;190;132;255msync[0m[38;2;248;248;242m [-l] [-z ALGORITHM] [-Z] [all|data|odm|oem|product|system|system_ext|vendor][0m
 [38;2;248;248;242m     sync a local build from $ANDROID_PRODUCT_OUT to the device (default all)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m: dry run: push files to device without storing to the filesystem[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m: list files that would be copied, but don't copy them[0m
@@ -76,14 +76,14 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m: disable pty allocation[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m: allocate a pty if on a tty (-tt: force pty allocation)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m: disable remote exit codes and stdout/stderr separation[0m
-[38;2;248;248;242m [0m[38;2;190;132;255memu[0m[38;2;248;248;242m [0m[38;2;249;38;114mCOMMAND[0m[38;2;248;248;242m              run emulator console command[0m
+[38;2;248;248;242m [0m[38;2;190;132;255memu[0m[38;2;248;248;242m COMMAND              run emulator console command[0m
 
 [38;2;248;248;242mapp installation (see also `adb shell cmd package help`):[0m
-[38;2;248;248;242m [0m[38;2;190;132;255minstall[0m[38;2;248;248;242m [[0m[38;2;166;226;46m-lrtsdg[0m[38;2;248;248;242m] [--instant] PACKAGE[0m
+[38;2;248;248;242m [0m[38;2;190;132;255minstall[0m[38;2;248;248;242m [-lrtsdg] [--instant] PACKAGE[0m
 [38;2;248;248;242m     push a single package to the device and install it[0m
-[38;2;248;248;242m [0m[38;2;190;132;255minstall-multiple[0m[38;2;248;248;242m [[0m[38;2;166;226;46m-lrtsdpg[0m[38;2;248;248;242m] [--instant] PACKAGE...[0m
+[38;2;248;248;242m [0m[38;2;190;132;255minstall-multiple[0m[38;2;248;248;242m [-lrtsdpg] [--instant] PACKAGE...[0m
 [38;2;248;248;242m     push multiple APKs to the device for a single package and install them[0m
-[38;2;248;248;242m [0m[38;2;190;132;255minstall-multi-package[0m[38;2;248;248;242m [[0m[38;2;166;226;46m-lrtsdpg[0m[38;2;248;248;242m] [--instant] PACKAGE...[0m
+[38;2;248;248;242m [0m[38;2;190;132;255minstall-multi-package[0m[38;2;248;248;242m [-lrtsdpg] [--instant] PACKAGE...[0m
 [38;2;248;248;242m     push one or more packages to the device and install them atomically[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m: replace existing application[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m: allow test packages[0m
@@ -101,12 +101,12 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--version-check-agent[0m[38;2;248;248;242m: update deployment agent when local version has different version code and using fast deploy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--local-agent[0m[38;2;248;248;242m: locate agent files from local source build (instead of SDK location)[0m
 [38;2;248;248;242m     (See also `adb shell pm help` for more options.)[0m
-[38;2;248;248;242m [0m[38;2;190;132;255muninstall[0m[38;2;248;248;242m [[0m[38;2;166;226;46m-k[0m[38;2;248;248;242m] PACKAGE[0m
+[38;2;248;248;242m [0m[38;2;190;132;255muninstall[0m[38;2;248;248;242m [-k] PACKAGE[0m
 [38;2;248;248;242m     remove this app package from the device[0m
 [38;2;248;248;242m     '-k': keep the data and cache directories[0m
 
 [38;2;248;248;242mdebugging:[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mbugreport[0m[38;2;248;248;242m [[0m[38;2;249;38;114mPATH[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mbugreport[0m[38;2;248;248;242m [PATH][0m
 [38;2;248;248;242m     write bugreport to given PATH [default=bugreport.zip];[0m
 [38;2;248;248;242m     if PATH is a directory, the bug report is saved in that directory.[0m
 [38;2;248;248;242m     devices that don't support zipped bug reports output to stdout.[0m
@@ -116,7 +116,7 @@
 [38;2;248;248;242msecurity:[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mdisable-verity[0m[38;2;248;248;242m           disable dm-verity checking on userdebug builds[0m
 [38;2;248;248;242m [0m[38;2;190;132;255menable-verity[0m[38;2;248;248;242m            re-enable dm-verity checking on userdebug builds[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mkeygen[0m[38;2;248;248;242m [0m[38;2;249;38;114mFILE[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mkeygen[0m[38;2;248;248;242m FILE[0m
 [38;2;248;248;242m     generate adb public/private key; private key stored in FILE,[0m
 
 [38;2;248;248;242mscripting:[0m
@@ -127,7 +127,7 @@
 [38;2;248;248;242m [0m[38;2;190;132;255mget-state[0m[38;2;248;248;242m                print offline | bootloader | device[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mget-serialno[0m[38;2;248;248;242m             print <serial-number>[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mget-devpath[0m[38;2;248;248;242m              print <device-path>[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mremount[0m[38;2;248;248;242m [[0m[38;2;166;226;46m-R[0m[38;2;248;248;242m][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mremount[0m[38;2;248;248;242m [-R][0m
 [38;2;248;248;242m      remount partitions read-write. if a reboot is required, -R will[0m
 [38;2;248;248;242m      will automatically reboot the device.[0m
 [38;2;248;248;242m reboot [bootloader|recovery|sideload|sideload-auto-reboot][0m
@@ -135,11 +135,11 @@
 [38;2;248;248;242m     supports bootloader and recovery too. sideload reboots[0m
 [38;2;248;248;242m     into recovery and automatically starts sideload mode,[0m
 [38;2;248;248;242m     sideload-auto-reboot is the same but reboots after sideloading.[0m
-[38;2;248;248;242m [0m[38;2;190;132;255msideload[0m[38;2;248;248;242m [0m[38;2;249;38;114mOTAPACKAGE[0m[38;2;248;248;242m      sideload the given full OTA package[0m
+[38;2;248;248;242m [0m[38;2;190;132;255msideload[0m[38;2;248;248;242m OTAPACKAGE      sideload the given full OTA package[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mroot[0m[38;2;248;248;242m                     restart adbd with root permissions[0m
 [38;2;248;248;242m [0m[38;2;190;132;255munroot[0m[38;2;248;248;242m                   restart adbd without root permissions[0m
 [38;2;248;248;242m [0m[38;2;190;132;255musb[0m[38;2;248;248;242m                      restart adbd listening on USB[0m
-[38;2;248;248;242m [0m[38;2;190;132;255mtcpip[0m[38;2;248;248;242m [0m[38;2;249;38;114mPORT[0m[38;2;248;248;242m               restart adbd listening on TCP on PORT[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mtcpip[0m[38;2;248;248;242m PORT               restart adbd listening on TCP on PORT[0m
 
 [38;2;248;248;242minternal debugging:[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mstart-server[0m[38;2;248;248;242m             ensure that there is a server running[0m

@@ -7,8 +7,7 @@ USAGE:
 # <- string.section-heading.cmd-help
 #^^^^^ string.section-heading.cmd-help
     bat [OPTIONS] [FILE]...
-#        ^^^^^^^ keyword.other.argument.cmd-help
-#fixme: unscope this
+#        ^^^^^^^ - keyword.other.argument.cmd-help
     bat <SUBCOMMAND>
 
 OPTIONS:

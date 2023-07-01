@@ -17,8 +17,7 @@ global options:
 general commands:
  devices [-l]             list connected devices (-l for long output)
 #^^^^^^^ constant.other.keyword.cmd-help
-#       ^ - constant.other.keyword.cmd-help entity.name.function.option.cmd-help
-#         ^^  entity.name.function.option.cmd-help
+#         ^^  - entity.name.function.option.cmd-help
  help                     show this help message
  version                  show version num
 
@@ -27,12 +26,14 @@ networking:
 #^^^^^^^ constant.other.keyword.cmd-help
 #        ^^^^ - keyword.other.argument.cmd-help
  disconnect [HOST[:PORT]]
+#^^^^^^^^^^ - constant.other.keyword.cmd-help
+#            ^^^^ - keyword.other.argument.cmd-help
      disconnect from given TCP/IP device [default port=5555], or all
  pair HOST[:PORT] [PAIRING CODE]
      pair with a device for secure TCP/IP communication
  forward --list           list all forward socket connections
 #^^^^^^^ constant.other.keyword.cmd-help
-#        ^^^^^^ entity.name.function.option.cmd-help
+#        ^^^^^^ - entity.name.function.option.cmd-help
  forward [--no-rebind] LOCAL REMOTE
      forward socket connection using:
        tcp:<port> (<local> may be "tcp:0" to pick any open port)
@@ -119,7 +120,7 @@ app installation (see also `adb shell cmd package help`):
 debugging:
  bugreport [PATH]
 #^^^^^^^^^ constant.other.keyword.cmd-help
-#           ^^^^ keyword.other.argument.cmd-help
+#           ^^^^ - keyword.other.argument.cmd-help
      write bugreport to given PATH [default=bugreport.zip];
      if PATH is a directory, the bug report is saved in that directory.
      devices that don't support zipped bug reports output to stdout.
@@ -130,8 +131,7 @@ security:
  disable-verity           disable dm-verity checking on userdebug builds
  enable-verity            re-enable dm-verity checking on userdebug builds
  keygen FILE
-#^^^^^^ - keyword.other.def.cmd-help
-#fixme: other-def-seq ending in newline
+#^^^^^^ constant.other.keyword.cmd-help
      generate adb public/private key; private key stored in FILE,
 
 scripting:
@@ -156,9 +156,8 @@ scripting:
  usb                      restart adbd listening on USB
  tcpip PORT               restart adbd listening on TCP on PORT
 #^^^^^ constant.other.keyword.cmd-help
-#     ^ - constant.other.keyword.cmd-help keyword.other.argument.cmd-help
-#      ^^^^ keyword.other.argument.cmd-help
-#nit: make the first scope of the argument "constant.other.def"
+#      ^^^^ - keyword.other.argument.cmd-help
+#nit: make the first scope of the argument "constant.other.keyword"
 
 internal debugging:
  start-server             ensure that there is a server running
@@ -166,7 +165,6 @@ internal debugging:
  reconnect                kick connection from host side to force reconnect
  reconnect device         kick connection from device side to force reconnect
 #^^^^^^^^^ constant.other.keyword.cmd-help
-#         ^ - constant.other.keyword.cmd-help
 #          ^^^^^^ - constant.other.keyword.cmd-help
 #nice: subcommand + subcommand/enum
  reconnect offline        reset offline/unauthorized devices to force reconnect

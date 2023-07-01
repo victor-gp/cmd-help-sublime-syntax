@@ -42,7 +42,7 @@
 [38;2;246;170;17mExamples:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mchown[0m[38;2;248;248;242m root /u        Change the owner of /u to "root".[0m
 [38;2;248;248;242m  chown root:staff /u  Likewise, but also change its group to "staff".[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mchown[0m[38;2;248;248;242m [0m[38;2;166;226;46m-hR[0m[38;2;248;248;242m root /u    Change the owner of /u and subfiles to "root".[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mchown[0m[38;2;248;248;242m -hR root /u    Change the owner of /u and subfiles to "root".[0m
 
 [38;2;248;248;242mGNU coreutils online help: <https://www.gnu.org/software/coreutils/>[0m
 [38;2;248;248;242mFull documentation at: <https://www.gnu.org/software/coreutils/chown>[0m

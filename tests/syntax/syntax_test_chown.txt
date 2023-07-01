@@ -51,8 +51,7 @@ Examples:
 # ^^^^^
 #nit: scope this to make it consistent with the other 2 examples
   chown -hR root /u    Change the owner of /u and subfiles to "root".
-#       ^^^ entity.name.function.option.cmd-help
-#nit: don't scope this as option
+#       ^^^ - entity.name.function.option.cmd-help
 
 GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
 Full documentation at: <https://www.gnu.org/software/coreutils/chown>

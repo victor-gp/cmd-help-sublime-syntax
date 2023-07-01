@@ -7,7 +7,7 @@
 [38;2;190;132;255mnpm[0m[38;2;248;248;242m test           run this project's tests[0m
 [38;2;190;132;255mnpm[0m[38;2;248;248;242m run <foo>      run the script named <foo>[0m
 [38;2;190;132;255mnpm[0m[38;2;248;248;242m <command> -h   quick help on <command>[0m
-[38;2;190;132;255mnpm[0m[38;2;248;248;242m [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m             display usage info for all commands[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m -l             display usage info for all commands[0m
 [38;2;190;132;255mnpm[0m[38;2;248;248;242m help <term>    search for help on <term>[0m
 [38;2;190;132;255mnpm[0m[38;2;248;248;242m help npm       more involved overview[0m
 
