@@ -30,6 +30,8 @@ networking:
 #            ^^^^ - keyword.other.argument.cmd-help
      disconnect from given TCP/IP device [default port=5555], or all
  pair HOST[:PORT] [PAIRING CODE]
+#^^^^ constant.other.keyword.cmd-help
+#     ^^^^ - keyword.other.argument.cmd-help
      pair with a device for secure TCP/IP communication
  forward --list           list all forward socket connections
 #^^^^^^^ constant.other.keyword.cmd-help

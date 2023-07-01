@@ -21,7 +21,7 @@
 [38;2;248;248;242m [0m[38;2;190;132;255mconnect[0m[38;2;248;248;242m HOST[:PORT]      connect to a device via TCP/IP [default port=5555][0m
 [38;2;248;248;242m [0m[38;2;190;132;255mdisconnect[0m[38;2;248;248;242m [HOST[:PORT]][0m
 [38;2;248;248;242m     disconnect from given TCP/IP device [default port=5555], or all[0m
-[38;2;248;248;242m pair HOST[:PORT] [PAIRING CODE][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mpair[0m[38;2;248;248;242m HOST[:PORT] [PAIRING CODE][0m
 [38;2;248;248;242m     pair with a device for secure TCP/IP communication[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m --list           list all forward socket connections[0m
 [38;2;248;248;242m [0m[38;2;190;132;255mforward[0m[38;2;248;248;242m [--no-rebind] LOCAL REMOTE[0m
