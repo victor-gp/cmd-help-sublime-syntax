@@ -468,6 +468,12 @@ contexts:
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
+    # e.g.: "shell [-e ESCAPE] [-n] [-Tt] [-x] [COMMAND...]" (from adb)
+    - match: '({{other_lowercase_name}}) \[(-{{option_name}}) ({{allcaps_argument_name}})\]'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *OPTION_SCOPES
+        # 3: *ARGUMENT_SCOPES
 
     #nice: limit the sequence to 3-4 terms top?
     #nice: add an other_term_seq_break including '\. |\: '

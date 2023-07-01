@@ -69,7 +69,7 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m: disable compression[0m
 
 [38;2;248;248;242mshell:[0m
-[38;2;248;248;242m shell [-e ESCAPE] [-n] [-Tt] [-x] [COMMAND...][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mshell[0m[38;2;248;248;242m [-e ESCAPE] [-n] [-Tt] [-x] [COMMAND...][0m
 [38;2;248;248;242m     run remote shell command (interactive shell if no command given)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m: choose escape character, or "none"; default '~'[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m: don't read from stdin[0m

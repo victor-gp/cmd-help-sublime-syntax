@@ -84,6 +84,9 @@ file transfer:
 
 shell:
  shell [-e ESCAPE] [-n] [-Tt] [-x] [COMMAND...]
+#^^^^ constant.other.keyword.cmd-help
+#       ^^ - entity.name.function.option.cmd-help
+#          ^^^^^^ - keyword.other.argument.cmd-help
      run remote shell command (interactive shell if no command given)
      -e: choose escape character, or "none"; default '~'
      -n: don't read from stdin
