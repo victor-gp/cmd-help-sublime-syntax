@@ -120,7 +120,7 @@
 [38;2;248;248;242m     generate adb public/private key; private key stored in FILE,[0m
 
 [38;2;248;248;242mscripting:[0m
-[38;2;248;248;242m wait-for[-TRANSPORT]-STATE...[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mwait-for[0m[38;2;248;248;242m[-TRANSPORT][0m[38;2;166;226;46m-STATE...[0m
 [38;2;248;248;242m     wait for device to be in a given state[0m
 [38;2;248;248;242m     [0m[38;2;249;38;114mSTATE[0m[38;2;248;248;242m: device, recovery, rescue, sideload, bootloader, or disconnect[0m
 [38;2;248;248;242m     [0m[38;2;249;38;114mTRANSPORT[0m[38;2;248;248;242m: usb, local, or any [default=any][0m
