@@ -130,7 +130,7 @@
 [38;2;248;248;242m [0m[38;2;190;132;255mremount[0m[38;2;248;248;242m [-R][0m
 [38;2;248;248;242m      remount partitions read-write. if a reboot is required, -R will[0m
 [38;2;248;248;242m      will automatically reboot the device.[0m
-[38;2;248;248;242m reboot [bootloader|recovery|sideload|sideload-auto-reboot][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mreboot[0m[38;2;248;248;242m [bootloader|recovery|sideload|sideload-auto-reboot][0m
 [38;2;248;248;242m     reboot the device; defaults to booting system image but[0m
 [38;2;248;248;242m     supports bootloader and recovery too. sideload reboots[0m
 [38;2;248;248;242m     into recovery and automatically starts sideload mode,[0m

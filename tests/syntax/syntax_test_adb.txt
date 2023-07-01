@@ -155,6 +155,8 @@ scripting:
       remount partitions read-write. if a reboot is required, -R will
       will automatically reboot the device.
  reboot [bootloader|recovery|sideload|sideload-auto-reboot]
+#^^^^^^ constant.other.keyword.cmd-help
+#        ^^^^^^^^^^ - keyword.other.argument.cmd-help
      reboot the device; defaults to booting system image but
      supports bootloader and recovery too. sideload reboots
      into recovery and automatically starts sideload mode,
