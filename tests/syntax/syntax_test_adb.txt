@@ -26,7 +26,7 @@ networking:
 #^^^^^^^ constant.other.keyword.cmd-help
 #        ^^^^ - keyword.other.argument.cmd-help
  disconnect [HOST[:PORT]]
-#^^^^^^^^^^ - constant.other.keyword.cmd-help
+#^^^^^^^^^^ constant.other.keyword.cmd-help
 #            ^^^^ - keyword.other.argument.cmd-help
      disconnect from given TCP/IP device [default port=5555], or all
  pair HOST[:PORT] [PAIRING CODE]
@@ -157,7 +157,7 @@ scripting:
  tcpip PORT               restart adbd listening on TCP on PORT
 #^^^^^ constant.other.keyword.cmd-help
 #      ^^^^ - keyword.other.argument.cmd-help
-#nit: make the first scope of the argument "constant.other.keyword"
+#nit: make the first scope of the argument: "constant.other.keyword"
 
 internal debugging:
  start-server             ensure that there is a server running
