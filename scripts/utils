@@ -1,4 +1,5 @@
-#!/bin/bash
+# usage: source scripts/utils
+# shellcheck shell=bash
 
 function gdiff {
     GIT_PAGER="LESS=R less" git diff "$@" -- tests/{highlighted,theme}
