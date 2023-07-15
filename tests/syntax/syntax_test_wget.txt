@@ -9,8 +9,7 @@ Startup:
   -V,  --version                   display the version of Wget and exit
 # ^^ entity.name.function.option.cmd-help
 #   ^^^ - entity.name.function.option.cmd-help
-#      ^^^^^^^^^  - entity.name.function.option.cmd-help
-#todo: scope the alternative
+#      ^^^^^^^^^  entity.name.function.option.cmd-help
   -h,  --help                      print this help
   -b,  --background                go to background after startup
   -e,  --execute=COMMAND           execute a `.wgetrc'-style command
@@ -19,10 +18,9 @@ Logging and input file:
   -o,  --output-file=FILE          log messages to FILE
 # ^^ entity.name.function.option.cmd-help
 #   ^^^ - entity.name.function.option.cmd-help
-#      ^^^^^^^^^^^^^  - entity.name.function.option.cmd-help
-#                   ^  - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
-#                    ^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
-#todo: scope the alternative and its arg
+#      ^^^^^^^^^^^^^  entity.name.function.option.cmd-help
+#                   ^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                    ^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
   -a,  --append-output=FILE        append messages to FILE
   -d,  --debug                     print lots of debugging information
   -q,  --quiet                     quiet (no output)

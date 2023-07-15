@@ -229,6 +229,8 @@ contexts:
     - include: else-pop
 
   option-term-connectors:
+    - match: ',  '
+      set: option-def-alt
     - match: ', '
       set: option-def-alt
     - match: ' \| '

@@ -4,63 +4,63 @@
 [38;2;248;248;242mMandatory arguments to long options are mandatory for short options too.[0m
 
 [38;2;246;170;17mStartup:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m,  --version                   display the version of Wget and exit[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m,  --help                      print this help[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m,  --background                go to background after startup[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m,  --execute=COMMAND           execute a `.wgetrc'-style command[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m                   display the version of Wget and exit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                      print this help[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--background[0m[38;2;248;248;242m                go to background after startup[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--execute[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCOMMAND[0m[38;2;248;248;242m           execute a `.wgetrc'-style command[0m
 
 [38;2;246;170;17mLogging and input file:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m,  --output-file=FILE          log messages to FILE[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m,  --append-output=FILE        append messages to FILE[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m,  --debug                     print lots of debugging information[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m,  --quiet                     quiet (no output)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m,  --verbose                   be verbose (this is the default)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--output-file[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m          log messages to FILE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--append-output[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m        append messages to FILE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m                     print lots of debugging information[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m                     quiet (no output)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--verbose[0m[38;2;248;248;242m                   be verbose (this is the default)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-nv[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-verbose[0m[38;2;248;248;242m                turn off verboseness, without being quiet[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--report-speed[0m[38;2;248;248;242m=[0m[38;2;249;38;114mTYPE[0m[38;2;248;248;242m         output bandwidth as TYPE.  TYPE can be bits[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,  --input-file=FILE           download URLs found in local or external FILE[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m,  --force-html                treat input file as HTML[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m,  --base=URL                  resolves HTML input-file links (-i -F)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--input-file[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m           download URLs found in local or external FILE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--force-html[0m[38;2;248;248;242m                treat input file as HTML[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--base[0m[38;2;248;248;242m=[0m[38;2;249;38;114mURL[0m[38;2;248;248;242m                  resolves HTML input-file links (-i -F)[0m
 [38;2;248;248;242m                                     relative to URL[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--config[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m               specify config file to use[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-config[0m[38;2;248;248;242m                 do not read any config file[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--rejected-log[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m         log reasons for URL rejection to FILE[0m
 
 [38;2;246;170;17mDownload:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m,  --tries=NUMBER              set number of retries to NUMBER (0 unlimits)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--tries[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNUMBER[0m[38;2;248;248;242m              set number of retries to NUMBER (0 unlimits)[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--retry-connrefused[0m[38;2;248;248;242m         retry even if connection is refused[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--retry-on-http-error[0m[38;2;248;248;242m=[0m[38;2;249;38;114mERRORS[0m[38;2;248;248;242m    comma-separated list of HTTP errors to retry[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m,  --output-document=FILE      write documents to FILE[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--output-document[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m      write documents to FILE[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-nc[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-clobber[0m[38;2;248;248;242m                skip downloads that would download to[0m
 [38;2;248;248;242m                                     existing files (overwriting them)[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-netrc[0m[38;2;248;248;242m                  don't try to obtain credentials from .netrc[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m,  --continue                  resume getting a partially-downloaded file[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--continue[0m[38;2;248;248;242m                  resume getting a partially-downloaded file[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--start-pos[0m[38;2;248;248;242m=[0m[38;2;249;38;114mOFFSET[0m[38;2;248;248;242m          start downloading from zero-based position OFFSET[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--progress[0m[38;2;248;248;242m=[0m[38;2;249;38;114mTYPE[0m[38;2;248;248;242m             select progress gauge type[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--show-progress[0m[38;2;248;248;242m             display the progress bar in any verbosity mode[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m,  --timestamping              don't re-retrieve files unless newer than[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--timestamping[0m[38;2;248;248;242m              don't re-retrieve files unless newer than[0m
 [38;2;248;248;242m                                     local[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-if-modified-since[0m[38;2;248;248;242m      don't use conditional if-modified-since get[0m
 [38;2;248;248;242m                                     requests in timestamping mode[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-use-server-timestamps[0m[38;2;248;248;242m  don't set the local file's timestamp by[0m
 [38;2;248;248;242m                                     the one on the server[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m,  --server-response           print server response[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--server-response[0m[38;2;248;248;242m           print server response[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--spider[0m[38;2;248;248;242m                    don't download anything[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m,  --timeout=SECONDS           set all timeout values to SECONDS[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--timeout[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSECONDS[0m[38;2;248;248;242m           set all timeout values to SECONDS[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--dns-timeout[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSECS[0m[38;2;248;248;242m          set the DNS lookup timeout to SECS[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--connect-timeout[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSECS[0m[38;2;248;248;242m      set the connect timeout to SECS[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--read-timeout[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSECS[0m[38;2;248;248;242m         set the read timeout to SECS[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m,  --wait=SECONDS              wait SECONDS between retrievals[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--wait[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSECONDS[0m[38;2;248;248;242m              wait SECONDS between retrievals[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--waitretry[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSECONDS[0m[38;2;248;248;242m         wait 1..SECONDS between retries of a retrieval[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--random-wait[0m[38;2;248;248;242m               wait from 0.5*WAIT...1.5*WAIT secs between retrievals[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-proxy[0m[38;2;248;248;242m                  explicitly turn off proxy[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-Q[0m[38;2;248;248;242m,  --quota=NUMBER              set retrieval quota to NUMBER[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Q[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--quota[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNUMBER[0m[38;2;248;248;242m              set retrieval quota to NUMBER[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--bind-address[0m[38;2;248;248;242m=[0m[38;2;249;38;114mADDRESS[0m[38;2;248;248;242m      bind to ADDRESS (hostname or IP) on local host[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--limit-rate[0m[38;2;248;248;242m=[0m[38;2;249;38;114mRATE[0m[38;2;248;248;242m           limit download rate to RATE[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-dns-cache[0m[38;2;248;248;242m              disable caching DNS lookups[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--restrict-file-names[0m[38;2;248;248;242m=[0m[38;2;249;38;114mOS[0m[38;2;248;248;242m    restrict chars in file names to ones OS allows[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--ignore-case[0m[38;2;248;248;242m               ignore case when matching files/directories[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-4[0m[38;2;248;248;242m,  --inet4-only                connect only to IPv4 addresses[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-6[0m[38;2;248;248;242m,  --inet6-only                connect only to IPv6 addresses[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-4[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--inet4-only[0m[38;2;248;248;242m                connect only to IPv4 addresses[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-6[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--inet6-only[0m[38;2;248;248;242m                connect only to IPv6 addresses[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--prefer-family[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFAMILY[0m[38;2;248;248;242m      connect first to addresses of specified family,[0m
 [38;2;248;248;242m                                     one of IPv6, IPv4, or none[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--user[0m[38;2;248;248;242m=[0m[38;2;249;38;114mUSER[0m[38;2;248;248;242m                 set both ftp and http user to USER[0m
@@ -78,10 +78,10 @@
 
 [38;2;246;170;17mDirectories:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-nd[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-directories[0m[38;2;248;248;242m            don't create directories[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m,  --force-directories         force creation of directories[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--force-directories[0m[38;2;248;248;242m         force creation of directories[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-nH[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-host-directories[0m[38;2;248;248;242m       don't create host directories[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--protocol-directories[0m[38;2;248;248;242m      use protocol name in directories[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m,  --directory-prefix=PREFIX   save files to PREFIX/..[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--directory-prefix[0m[38;2;248;248;242m=[0m[38;2;249;38;114mPREFIX[0m[38;2;248;248;242m   save files to PREFIX/..[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--cut-dirs[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNUMBER[0m[38;2;248;248;242m           ignore NUMBER remote directory components[0m
 
 [38;2;246;170;17mHTTP options:[0m
@@ -90,7 +90,7 @@
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-cache[0m[38;2;248;248;242m                  disallow server-cached data[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--default-page[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNAME[0m[38;2;248;248;242m         change the default page name (normally[0m
 [38;2;248;248;242m                                     this is 'index.html'.)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m,  --adjust-extension          save HTML/CSS documents with proper extensions[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--adjust-extension[0m[38;2;248;248;242m          save HTML/CSS documents with proper extensions[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--ignore-length[0m[38;2;248;248;242m             ignore 'Content-Length' header field[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--header[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTRING[0m[38;2;248;248;242m             insert STRING among the headers[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--compression[0m[38;2;248;248;242m=[0m[38;2;249;38;114mTYPE[0m[38;2;248;248;242m          choose compression, one of auto, gzip and none. (default: none)[0m
@@ -99,7 +99,7 @@
 [38;2;248;248;242m       [0m[38;2;166;226;46m--proxy-password[0m[38;2;248;248;242m=[0m[38;2;249;38;114mPASS[0m[38;2;248;248;242m       set PASS as proxy password[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--referer[0m[38;2;248;248;242m=[0m[38;2;249;38;114mURL[0m[38;2;248;248;242m               include 'Referer: URL' header in HTTP request[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--save-headers[0m[38;2;248;248;242m              save the HTTP headers to file[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m,  --user-agent=AGENT          identify as AGENT instead of Wget/VERSION[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--user-agent[0m[38;2;248;248;242m=[0m[38;2;249;38;114mAGENT[0m[38;2;248;248;242m          identify as AGENT instead of Wget/VERSION[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-http-keep-alive[0m[38;2;248;248;242m        disable HTTP keep-alive (persistent connections)[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-cookies[0m[38;2;248;248;242m                don't use cookies[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--load-cookies[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m         load cookies from FILE before session[0m
@@ -170,35 +170,35 @@
 [38;2;248;248;242m                                     WARC writer[0m
 
 [38;2;246;170;17mRecursive download:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m,  --recursive                 specify recursive download[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,  --level=NUMBER              maximum recursion depth (inf or 0 for infinite)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--recursive[0m[38;2;248;248;242m                 specify recursive download[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--level[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNUMBER[0m[38;2;248;248;242m              maximum recursion depth (inf or 0 for infinite)[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--delete-after[0m[38;2;248;248;242m              delete files locally after downloading them[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m,  --convert-links             make links in downloaded HTML or CSS point to[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--convert-links[0m[38;2;248;248;242m             make links in downloaded HTML or CSS point to[0m
 [38;2;248;248;242m                                     local files[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--convert-file-only[0m[38;2;248;248;242m         convert the file part of the URLs only (usually known as the basename)[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--backups[0m[38;2;248;248;242m=[0m[38;2;249;38;114mN[0m[38;2;248;248;242m                 before writing file X, rotate up to N backup files[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m,  --backup-converted          before converting file X, back up as X.orig[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m,  --mirror                    shortcut for -N -r -l inf --no-remove-listing[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m,  --page-requisites           get all images, etc. needed to display HTML page[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--backup-converted[0m[38;2;248;248;242m          before converting file X, back up as X.orig[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--mirror[0m[38;2;248;248;242m                    shortcut for -N -r -l inf --no-remove-listing[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--page-requisites[0m[38;2;248;248;242m           get all images, etc. needed to display HTML page[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--strict-comments[0m[38;2;248;248;242m           turn on strict (SGML) handling of HTML comments[0m
 
 [38;2;248;248;242mRecursive accept/reject:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m,  --accept=LIST               comma-separated list of accepted extensions[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m,  --reject=LIST               comma-separated list of rejected extensions[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--accept[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLIST[0m[38;2;248;248;242m               comma-separated list of accepted extensions[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--reject[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLIST[0m[38;2;248;248;242m               comma-separated list of rejected extensions[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--accept-regex[0m[38;2;248;248;242m=[0m[38;2;249;38;114mREGEX[0m[38;2;248;248;242m        regex matching accepted URLs[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--reject-regex[0m[38;2;248;248;242m=[0m[38;2;249;38;114mREGEX[0m[38;2;248;248;242m        regex matching rejected URLs[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--regex-type[0m[38;2;248;248;242m=[0m[38;2;249;38;114mTYPE[0m[38;2;248;248;242m           regex type (posix|pcre)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m,  --domains=LIST              comma-separated list of accepted domains[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--domains[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLIST[0m[38;2;248;248;242m              comma-separated list of accepted domains[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--exclude-domains[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLIST[0m[38;2;248;248;242m      comma-separated list of rejected domains[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--follow-ftp[0m[38;2;248;248;242m                follow FTP links from HTML documents[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--follow-tags[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLIST[0m[38;2;248;248;242m          comma-separated list of followed HTML tags[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--ignore-tags[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLIST[0m[38;2;248;248;242m          comma-separated list of ignored HTML tags[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m,  --span-hosts                go to foreign hosts when recursive[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m,  --relative                  follow relative links only[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m,  --include-directories=LIST  list of allowed directories[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--span-hosts[0m[38;2;248;248;242m                go to foreign hosts when recursive[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--relative[0m[38;2;248;248;242m                  follow relative links only[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--include-directories[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLIST[0m[38;2;248;248;242m  list of allowed directories[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--trust-server-names[0m[38;2;248;248;242m        use the name specified by the redirection[0m
 [38;2;248;248;242m                                     URL's last component[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m,  --exclude-directories=LIST  list of excluded directories[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--exclude-directories[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLIST[0m[38;2;248;248;242m  list of excluded directories[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-np[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--no-parent[0m[38;2;248;248;242m                 don't ascend to the parent directory[0m
 
 [38;2;248;248;242mEmail bug reports, questions, discussions to <bug-wget@gnu.org>[0m
