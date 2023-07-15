@@ -128,6 +128,8 @@ HTTP options:
                                      challenge
 
 HTTPS (SSL/TLS) options:
+#^^^^^^^^^^^^^^^^^^^^^^^ - constant.section-heading.cmd-help
+#nice: scope headings like this
        --secure-protocol=PR        choose secure protocol, one of auto, SSLv2,
                                      SSLv3, TLSv1, TLSv1_1, TLSv1_2 and PFS
        --https-only                only follow secure HTTPS links
@@ -193,6 +195,8 @@ Recursive download:
        --strict-comments           turn on strict (SGML) handling of HTML comments
 
 Recursive accept/reject:
+#^^^^^^^^^^^^^^^^^^^^^^^ - constant.section-heading.cmd-help
+#nice: scope headings like this
   -A,  --accept=LIST               comma-separated list of accepted extensions
   -R,  --reject=LIST               comma-separated list of rejected extensions
        --accept-regex=REGEX        regex matching accepted URLs
