@@ -142,6 +142,12 @@ HTTPS (SSL/TLS) options:
        --ca-directory=DIR          directory where hash list of CAs is stored
        --crl-file=FILE             file with bundle of CRLs
        --pinnedpubkey=FILE/HASHES  Public key (PEM/DER) file, or any number
+#      ^^^^^^^^^^^^^^  entity.name.function.option.cmd-help
+#                    ^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                     ^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                         ^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                          ^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#nice: handle option argument alternatives separated by /
                                    of base64 encoded sha256 hashes preceded by
                                    'sha256//' and separated by ';', to verify
                                    peer against
