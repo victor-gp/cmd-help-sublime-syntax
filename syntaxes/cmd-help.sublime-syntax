@@ -484,16 +484,9 @@ contexts:
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
-
-    #nice: limit the sequence to 3-4 terms top?
-    #nice: add an other_term_seq_break including '\. |\: '
+    # less restrictive match, catch all
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
       scope: *KEYWORD_SCOPES
-      set: subcommand-def-post
-
-  subcommand-def-post:
-    - match: ' (?={{allcaps_argument_name}}{{long_space}})'
-      set: option-term+space
 
   ### notable exceptions #######################################################
 
