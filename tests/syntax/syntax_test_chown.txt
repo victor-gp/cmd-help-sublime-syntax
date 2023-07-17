@@ -49,7 +49,7 @@ Examples:
 # ^^^^^ constant.other.keyword.cmd-help
   chown root:staff /u  Likewise, but also change its group to "staff".
 # ^^^^^
-#nit: scope this to make it consistent with the other 2 examples
+#nit: scope this to make it consistent with the other 2 examples.
   chown -hR root /u    Change the owner of /u and subfiles to "root".
 #       ^^^ - entity.name.function.option.cmd-help
 

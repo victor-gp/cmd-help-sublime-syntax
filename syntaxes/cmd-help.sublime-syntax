@@ -32,8 +32,8 @@ variables:
 
 ### other-def variables:
   other_lowercase_name: '[a-z][0-9a-z_-]*\b'
-  long_space: '   |\t|\n|{{single_2_space}}'
-  single_2_space: '  (?!.*\S  \S)'
+  long_space: '   |\t|\n'
+  lookahead_single_2_space: '(?=.*  )(?!.*\S  \S)'
 
 ### pathname variables:
   path_atom: '[0-9a-zA-Z._-]+'
@@ -489,8 +489,10 @@ contexts:
       captures:
         1: *KEYWORD_SCOPES
         # 2: *KEYWORD_SCOPES
-    # less restrictive match, catch all
+    # less restrictive matches, catch all
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
+      scope: *KEYWORD_SCOPES
+    - match: '{{other_lowercase_name}}{{lookahead_single_2_space}}'
       scope: *KEYWORD_SCOPES
 
   ### notable exceptions #######################################################

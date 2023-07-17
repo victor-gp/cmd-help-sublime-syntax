@@ -5,7 +5,10 @@ Usage: dd [OPERAND]...
 Copy a file, converting and formatting according to the operands.
 
   bs=BYTES        read and write up to BYTES bytes at a time (default: 512);
-#nice: should I scope these
+# ^^ constant.other.keyword.cmd-help
+#   ^ - constant.other.keyword.cmd-help keyword.other.argument.cmd-help
+#    ^^^^^ - constant.other.keyword.cmd-help keyword.other.argument.cmd-help
+#nice: scope these
                   overrides ibs and obs
   cbs=BYTES       convert BYTES bytes at a time
   conv=CONVS      convert the file as per the comma separated symbol list

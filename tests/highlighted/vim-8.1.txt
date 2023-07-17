@@ -1,8 +1,8 @@
 [38;2;248;248;242mVIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 01 2022 09:16:32)[0m
 
 [38;2;246;170;17mUsage:[0m[38;2;248;248;242m vim [arguments] [file ..]       edit specified file(s)[0m
-[38;2;248;248;242m   or: vim [arguments] -               read text from stdin[0m
-[38;2;248;248;242m   or: vim [arguments] -t tag          edit file where tag is defined[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255mor[0m[38;2;248;248;242m: vim [arguments] -               read text from stdin[0m
+[38;2;248;248;242m   [0m[38;2;190;132;255mor[0m[38;2;248;248;242m: vim [arguments] -t tag          edit file where tag is defined[0m
 [38;2;248;248;242m   or: vim [arguments] -q [errorfile]  edit file with first error[0m
 
 [38;2;246;170;17mArguments:[0m
