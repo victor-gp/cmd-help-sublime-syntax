@@ -4,7 +4,7 @@
 [38;2;248;248;242m [0m[38;2;190;132;255mmount[0m[38;2;248;248;242m -a [options][0m
 [38;2;248;248;242m mount [options] [--source] <source> | [--target] <directory>[0m
 [38;2;248;248;242m mount [options] <source> <directory>[0m
-[38;2;248;248;242m mount <operation> <mountpoint> [<target>][0m
+[38;2;248;248;242m [0m[38;2;190;132;255mmount[0m[38;2;248;248;242m <operation> <mountpoint> [<target>][0m
 
 [38;2;248;248;242mMount a filesystem.[0m
 

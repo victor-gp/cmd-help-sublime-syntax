@@ -479,11 +479,16 @@ contexts:
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
-    # e.g.: " reboot [bootloader|recovery| ..." (from adb)
+    # e.g.: "reboot [bootloader|recovery| ..." (from adb)
     - match: '({{other_lowercase_name}}) \[({{relaxed_argument_name}})\|'
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
+    # e.g.: "bat <SUBCOMMAND>" (from bat)
+    - match: '({{other_lowercase_name}}) <({{relaxed_argument_name}})>'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *KEYWORD_SCOPES
     # less restrictive match, catch all
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
       scope: *KEYWORD_SCOPES

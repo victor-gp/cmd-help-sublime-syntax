@@ -1,7 +1,7 @@
 [38;2;248;248;242mA cat(1) clone with wings.[0m
 
 [38;2;246;170;17mUsage:[0m[38;2;248;248;242m bat [OPTIONS] [FILE]...[0m
-[38;2;248;248;242m       bat <COMMAND>[0m
+[38;2;248;248;242m       [0m[38;2;190;132;255mbat[0m[38;2;248;248;242m <COMMAND>[0m
 
 [38;2;246;170;17mArguments:[0m
 [38;2;248;248;242m  [FILE]...  File(s) to print / concatenate. Use '-' for standard input.[0m

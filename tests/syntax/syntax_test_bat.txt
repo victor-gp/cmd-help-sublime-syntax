@@ -7,8 +7,12 @@ USAGE:
 # <- string.section-heading.cmd-help
 #^^^^^ string.section-heading.cmd-help
     bat [OPTIONS] [FILE]...
-#        ^^^^^^^ - keyword.other.argument.cmd-help
+#   ^^^ constant.other.keyword.cmd-help
+#        ^^^^^^^ - entity.name.function.option.cmd-help
     bat <SUBCOMMAND>
+#   ^^^ constant.other.keyword.cmd-help
+#       ^^^^^^^^^^^^ - constant.other.keyword.cmd-help
+#todo: handle Usage lines
 
 OPTIONS:
 #^^^^^^^ string.section-heading.cmd-help
