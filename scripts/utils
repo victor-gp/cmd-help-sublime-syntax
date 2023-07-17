@@ -1,10 +1,13 @@
-# usage: source scripts/utils
+# usage: $ source scripts/utils
 # shellcheck shell=bash
 
 # regression tests diff
 function reg {
     GIT_PAGER="LESS=R less" git diff "$@" -- tests/{highlighted,theme}
 }
+
+# to exclude e.g. THEME-italics, do:
+#   reg -- ":^*-italics*"
 
 function regs {
     reg --staged "$@"
@@ -14,9 +17,6 @@ function regm {
     reg main "$@"
 }
 
-# to exclude e.g. THEME-italics, do:
-#   gdiff -- ":^*-italics*"
-
 # regression tests show
 function regshow {
     GIT_PAGER="LESS=R less" git show "$@" -- tests/{highlighted,theme}
@@ -24,15 +24,16 @@ function regshow {
 
 alias git0='GIT_CONFIG=/dev/null git'
 
-debug() {
+# run a syntax test in debug mode
+function debug {
     tests/syntax.py "$@" -d | less -R
 }
 
-demo() {
+function demo {
     "$@" --help | bat --no-config -pl cmd-help --pager='less -R'
 }
 
-demo_it() {
+function demo_it {
     "$@" --help | bat --no-config -pl cmd-help --pager='less -R' --italic-text=always
 }
 
