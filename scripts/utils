@@ -1,22 +1,24 @@
 # usage: source scripts/utils
 # shellcheck shell=bash
 
-function gdiff {
+# regression tests diff
+function reg {
     GIT_PAGER="LESS=R less" git diff "$@" -- tests/{highlighted,theme}
 }
 
-function gdiffs {
-    gdiff --staged "$@"
+function regs {
+    reg --staged "$@"
 }
 
-function gdiffm {
-    gdiff main "$@"
+function regm {
+    reg main "$@"
 }
 
 # to exclude e.g. THEME-italics, do:
 #   gdiff -- ":^*-italics*"
 
-function gshow {
+# regression tests show
+function regshow {
     GIT_PAGER="LESS=R less" git show "$@" -- tests/{highlighted,theme}
 }
 
