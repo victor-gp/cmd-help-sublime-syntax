@@ -445,57 +445,69 @@ contexts:
       captures:
         1: *KEYWORD_SCOPES
         # 2: *OPTION_SCOPES
+      set: then-pop
     # e.g.: "devices [-l]" (from adb)
     - match: '({{other_lowercase_name}}) \[(-{{option_name}})\]'
       captures:
         1: *KEYWORD_SCOPES
         # 2: *OPTION_SCOPES
+      set: then-pop
     # e.g.: "connect HOST[:PORT]   ..." (from adb)
     - match: '({{other_lowercase_name}}) ({{allcaps_argument_name}})(?= .*{{long_space}})'
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
+      set: then-pop
     # e.g.: "bugreport [PATH]" (from adb)
     - match: '({{other_lowercase_name}}) \[({{allcaps_argument_name}})\]'
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
+      set: then-pop
     # e.g.: "disconnect [HOST[:PORT]]" (from adb)
     - match: '({{other_lowercase_name}}) \[({{allcaps_argument_name}})\['
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
+      set: then-pop
     # e.g.: "pair HOST[:PORT] [PAIRING CODE]" (from adb)
     - match: '({{other_lowercase_name}}) ({{allcaps_argument_name}})\['
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
+      set: then-pop
     # e.g.: "shell [-e ESCAPE] [-n] [-Tt] [-x] [COMMAND...]" (from adb)
     - match: '({{other_lowercase_name}}) \[(-{{option_name}}) ({{allcaps_argument_name}})\]'
       captures:
         1: *KEYWORD_SCOPES
         # 2: *OPTION_SCOPES
         # 3: *ARGUMENT_SCOPES
+      set: then-pop
     # e.g.: "wait-for[-TRANSPORT]-STATE..." (from adb)
     - match: '({{other_lowercase_name}})\[(-{{allcaps_argument_name}})\]'
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
+      set: then-pop
     # e.g.: "reboot [bootloader|recovery| ..." (from adb)
     - match: '({{other_lowercase_name}}) \[({{relaxed_argument_name}})\|'
       captures:
         1: *KEYWORD_SCOPES
         # 2: *ARGUMENT_SCOPES
+      set: then-pop
     # e.g.: "bat <SUBCOMMAND>" (from bat)
     - match: '({{other_lowercase_name}}) <({{relaxed_argument_name}})>'
       captures:
         1: *KEYWORD_SCOPES
         # 2: *KEYWORD_SCOPES
+      set: then-pop
     # less restrictive matches, catch all
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
       scope: *KEYWORD_SCOPES
+      set: then-pop
     - match: '{{other_lowercase_name}}{{lookahead_single_2_space}}'
       scope: *KEYWORD_SCOPES
+      set: then-pop
 
   ### notable exceptions #######################################################
 

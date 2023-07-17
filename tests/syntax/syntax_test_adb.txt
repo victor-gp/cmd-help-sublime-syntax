@@ -143,8 +143,7 @@ scripting:
  wait-for[-TRANSPORT]-STATE...
 #^^^^^^^^ constant.other.keyword.cmd-help
 #         ^^^^^^^^^^ - keyword.other.argument.cmd-help
-#                    ^^^^^^^^^ entity.name.function.option.cmd-help
-#fixme: unscope -STATE
+#                    ^^^^^^^^^ - entity.name.function.option.cmd-help
      wait for device to be in a given state
      STATE: device, recovery, rescue, sideload, bootloader, or disconnect
      TRANSPORT: usb, local, or any [default=any]
