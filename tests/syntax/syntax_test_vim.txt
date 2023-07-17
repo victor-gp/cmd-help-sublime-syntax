@@ -4,6 +4,7 @@ VIM - Vi IMproved 8.1 (2018 May 18, compiled Feb 01 2022 09:16:32)
 
 Usage: vim [arguments] [file ..]       edit specified file(s)
    or: vim [arguments] -               read text from stdin
+#  ^^ - constant.other.keyword.cmd-help
    or: vim [arguments] -t tag          edit file where tag is defined
    or: vim [arguments] -q [errorfile]  edit file with first error
 

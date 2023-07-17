@@ -386,6 +386,8 @@ contexts:
     # pretty common in "usage:" alternatives
     - match: (?=or\s)
       set: then-pop
+    - match: (?=or:)
+      set: then-pop
 
   keyword-def:
     - match: '{{other_lowercase_name}}(?={{long_space}})'
