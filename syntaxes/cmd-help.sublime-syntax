@@ -511,6 +511,12 @@ contexts:
         1: *KEYWORD_SCOPES
         # 2: *KEYWORD_SCOPES
       set: then-pop
+    # e.g.: "mount [options] ..." (from mount)
+    - match: '({{other_lowercase_name}}) \[({{other_lowercase_name}})\]'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *OPTION_SCOPES
+      set: then-pop
     # less restrictive matches, catch all
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
       scope: *KEYWORD_SCOPES
