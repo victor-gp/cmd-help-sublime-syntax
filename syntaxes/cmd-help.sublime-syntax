@@ -184,8 +184,18 @@ contexts:
   heading-specials:
     - match: (?i:usage):(?=.+\n)
       scope: *INLINE_USAGE_SCOPES
-      set: then-pop
+      set: maybe-bat
     - include: python-argparse-headings
+
+
+  # hack to harmonize usage lines in bat's help message
+  #nice: generalize this pattern and remove this hardcoded case
+  maybe-bat:
+    - match: " (bat)"
+      captures:
+        1: *KEYWORD_SCOPES
+      set: then-pop
+    - include: else-pop
 
   ### option definitions #######################################################
 
