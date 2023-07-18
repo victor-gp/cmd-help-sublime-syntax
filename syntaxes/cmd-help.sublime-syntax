@@ -33,6 +33,7 @@ variables:
 ### other-def variables:
   other_lowercase_name: '[a-z][0-9a-z_-]*\b'
   long_space: '   |\t|\n'
+  lookahead_long_space: '(?={{long_space}})'
   lookahead_single_2_space: '(?=.*  )(?!.*\S  \S)'
 
 ### pathname variables:
@@ -400,7 +401,7 @@ contexts:
       set: then-pop
 
   keyword-def:
-    - match: '{{other_lowercase_name}}(?={{long_space}})'
+    - match: '{{other_lowercase_name}}{{lookahead_long_space}}'
       scope: *KEYWORD_SCOPES
       set: then-pop
     # e.g.: "install - install packages" (from apt)
@@ -408,11 +409,11 @@ contexts:
       scope: *KEYWORD_SCOPES
       set: then-pop
     # e.g.: "compose*" (from docker)
-    - match: '{{other_lowercase_name}}\*(?={{long_space}})'
+    - match: '{{other_lowercase_name}}\*{{lookahead_long_space}}'
       scope: *KEYWORD_SCOPES
       set: then-pop
     # e.g.: "build, b" (from cargo)
-    - match: ({{other_lowercase_name}}), ({{other_lowercase_name}})(?={{long_space}})
+    - match: ({{other_lowercase_name}}), ({{other_lowercase_name}}){{lookahead_long_space}}
       captures:
         1: *KEYWORD_SCOPES
         2: *KEYWORD_SCOPES
@@ -436,17 +437,17 @@ contexts:
       set: then-pop
 
   pathname-def:
-    - match: '{{absolute_path}}(?={{long_space}})'
+    - match: '{{absolute_path}}{{lookahead_long_space}}'
       scope: *PATHNAME_SCOPES
       set: then-pop
-    - match: '{{relative_path}}(?={{long_space}})'
+    - match: '{{relative_path}}{{lookahead_long_space}}'
       scope: *PATHNAME_SCOPES
       set: then-pop
-    - match: '{{home_relative_path}}(?={{long_space}})'
+    - match: '{{home_relative_path}}{{lookahead_long_space}}'
       scope: *PATHNAME_SCOPES
       set: then-pop
     # dotfile
-    - match: '\.{{path_atom}}(?={{long_space}})'
+    - match: '\.{{path_atom}}{{lookahead_long_space}}'
       scope: *PATHNAME_SCOPES
       set: then-pop
 
