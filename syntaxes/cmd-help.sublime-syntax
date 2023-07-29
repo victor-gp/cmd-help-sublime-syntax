@@ -518,7 +518,10 @@ contexts:
         1: *KEYWORD_SCOPES
         # 2: *OPTION_SCOPES
       set: then-pop
-    # less restrictive matches, catch all
+    - include: keyword-def-seq-lax
+
+  # less restrictive matches, catch all
+  keyword-def-seq-lax:
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
       scope: *KEYWORD_SCOPES
       set: then-pop
