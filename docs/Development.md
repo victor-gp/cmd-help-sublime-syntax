@@ -89,24 +89,37 @@ For that, I like to pair both within the same commit, so the former serves as an
 
 ### Highlight regression tests
 
-These take all the samples (help messages from actual commands) in `tests/source` and run them through `bat` + `cmd-help`.
-Then they store the result (syntax highlighted text) in `tests/highlighted/`.
+There are a bunch of samples (help messages from actual commands) in `tests/source`.
 
-You can run them with `$ tests/highlight_regression`
+Regression tests take all these samples and run them through `bat` + `cmd-help`, storing the result (syntax highlighted text) in `tests/highlighted/`.
+
+Run them with `$ tests/highlight_regression`
+
+This script runs the entire suite of highlight regression tests. They usually take < 5s, but it depends on how fast Docker + `bat` update the syntax theme.
 
 **They're good for quickly validating if your change breaks existing functionality.**
 
-Because the result files contain color escape characters, they should be opened with `less -R`
+#### Displaying regression test differences
 
-To query their changes with respect to the git index, do `$ reg` (from `scripts/utils`)
+Because the result files in `tests/highlighted` contain color escape characters (e.g.: `ESC[0m`), they should be opened with `less -R`.
 
-For the diff between the index and the last commit (so staged changes), do `$ regs`
+To check highlight regression changes with respect to the git index, load `scripts/utils` and do `$ reg`
 
-These are also a great place to look at when looking for unhandled patterns, to document pending tasks.
+There are a few more utils based on `reg`:
 
-To query them do: `less -R tests/highlighted/*`
+- For the regression diff between the index and the last commit (so staged changes), do `$ regs`
+- For the regression diff between your branch and `main`, do `$ regm`
+- To show the regression diff from a commit (HEAD by default), do `$ regshow`
 
-or `less -R tests/highlighted/<TEST_FILE>`
+#### Looking for pending work in regression tests
+
+The corpus of highlighted help messages is also a great place to look for pending work:
+
+- do `$ less -R tests/highlighted/*`
+- iterate through the files with `:n` (next) and `:p` (previous)
+- scroll through the highligted help messages and look for tokens that should (not) be colorized
+
+#### Syntax tests > regression tests to illustrate changes
 
 After a big syntax change that causes many highlight test files to update, it's ok not to include them in the same commit as the syntax change.
 
@@ -125,7 +138,7 @@ These track the syntax's coverage for the themes included with `bat`. The motiva
 You can run them with `$ tests/theme_regression`
 
 It runs a synthetic help message through `bat` + `cmd-help`, twice for each theme: with and without italics enabled.
-Then it store the result in `tests/theme_regression/`, but deleting the italics version if it makes no difference.
+Then it stores the result in `tests/theme_regression/`, but deleting the italics version if it makes no difference.
 
 Everything I mentioned on `highlight_regression` applies here, just replacing `highlight` for `theme`.
 
@@ -154,10 +167,11 @@ Look there if you want to break entirely new ground.
 1. Update the assertion/s related to that task, negate it to make it fail.
 1. Make whatever changes in the syntax to try and fix that test case.
 1. Run `tests/syntax.py` to check the assertion now passes without breaking anything else.
-1. Repeat steps 3-4 until you get it right.
 1. Run `tests/highlight_regression.sh` to ensure the changes don't have unintended consequences in the larger body of help messages.
-1. Run `tests/theme_regression.sh` to make double sure.
+1. Repeat steps 3-5 until you get it right.
 1. Commit, early and often!
+1. Run `tests/theme_regression.sh` to check that you didn't break support for any theme.
+1. [Submit a Pull Request](https://github.com/victor-gp/cmd-help-sublime-syntax/pulls)
 
 ## Contact
 
