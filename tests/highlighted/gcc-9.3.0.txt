@@ -54,7 +54,7 @@
 [38;2;248;248;242m                           guessing the language based on the file's extension.[0m
 
 [38;2;248;248;242mOptions starting with -g, -f, -m, -O, -W, or --param are automatically[0m
-[38;2;248;248;242m passed on to the various sub-processes invoked by gcc.  In order to pass[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mpassed[0m[38;2;248;248;242m on to the various sub-processes invoked by gcc.  In order to pass[0m
 [38;2;248;248;242m other options on to these processes the -W<letter> options must be used.[0m
 
 [38;2;248;248;242mFor bug reporting instructions, please see:[0m

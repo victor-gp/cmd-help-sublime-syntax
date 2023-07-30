@@ -3,7 +3,7 @@
 [38;2;246;170;17mUsage:[0m
 
 [38;2;190;132;255mnpm[0m[38;2;248;248;242m install        install all the dependencies in your project[0m
-[38;2;248;248;242mnpm install <foo>  add the <foo> dependency to your project[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m install <foo>  add the <foo> dependency to your project[0m
 [38;2;190;132;255mnpm[0m[38;2;248;248;242m test           run this project's tests[0m
 [38;2;190;132;255mnpm[0m[38;2;248;248;242m run <foo>      run the script named <foo>[0m
 [38;2;190;132;255mnpm[0m[38;2;248;248;242m <command> -h   quick help on <command>[0m

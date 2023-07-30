@@ -8,7 +8,7 @@
 [38;2;248;248;242m    ghc Main[0m
 
 [38;2;248;248;242mwhere the module Main is in a file named Main.hs (or Main.lhs) in the[0m
-[38;2;248;248;242mcurrent directory.  The other modules in the program will be located[0m
+[38;2;190;132;255mcurrent[0m[38;2;248;248;242m directory.  The other modules in the program will be located[0m
 [38;2;248;248;242mand compiled automatically, and the linked program will be placed in[0m
 [38;2;248;248;242mthe file `Main' (or `Main.exe' on Windows).[0m
 

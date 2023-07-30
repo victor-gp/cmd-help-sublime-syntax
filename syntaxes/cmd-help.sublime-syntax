@@ -34,7 +34,7 @@ variables:
   other_lowercase_name: '[a-z][0-9a-z_-]*\b'
   long_space: '   |\t|\n'
   lookahead_long_space: '(?={{long_space}})'
-  lookahead_single_2_space: '(?=.*  )(?!.*\S  \S)'
+  lookahead_single_2_space: '(?=.*  (?!.*\S  \S))'
 
 ### pathname variables:
   path_atom: '[0-9a-zA-Z._-]+'
