@@ -111,14 +111,6 @@ There are a few more utils based on `reg`:
 - For the regression diff between your branch and `main`, do `$ regm`
 - To show the regression diff from a commit (HEAD by default), do `$ regshow`
 
-#### Looking for pending work in regression tests
-
-The corpus of highlighted help messages is also a great place to look for pending work:
-
-- do `$ less -R tests/highlighted/*`
-- iterate through the files with `:n` (next) and `:p` (previous)
-- scroll through the highligted help messages and look for tokens that should (not) be colorized
-
 #### Syntax tests > regression tests to illustrate changes
 
 After a big syntax change that causes many highlight test files to update, it's ok not to include them in the same commit as the syntax change.
@@ -160,6 +152,14 @@ I should probably make these into GitHub Issues, but I haven't got the chance to
 
 There's also a [Roadmap doc](./Roadmap.md) that defines some long-term goals for the project.
 Look there if you want to break entirely new ground.
+
+### Spotting issues in regression tests
+
+The corpus of highlighted help messages in `tests/highlighted` is also a great place to look for pending work:
+
+- do `$ less -R tests/highlighted/*`
+- iterate through the files with `:n` (next) and `:p` (previous)
+- scroll through the highlighted text and look for tokens that should (not) be colorized
 
 ## Sample development workflow
 
