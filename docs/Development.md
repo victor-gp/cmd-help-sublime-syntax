@@ -74,13 +74,13 @@ You can run them with `$ tests/syntax.py`
 If you expect the tests to pass, it's better to run them with the *summary* option: `$ tests/syntax.py -s`
 
 Syntax tests are also useful to *debug* the workings of the syntax line by line.
-If you can't make heads or tails of why something doesn't work, run `$ tests/syntax.py -d tests/syntax/<test file>`
+If you can't make heads or tails of why something doesn't work, run `$ tests/syntax.py -d tests/syntax/<TEST_FILE>`
 
-`scripts/utils` also contains an util to run with debug and pipe the output to `less`: `$ debug tests/syntax/<test file>`
+`scripts/utils` also contains an util to run with debug and pipe the output to `less`: `$ debug tests/syntax/<TEST_FILE>`
 
 The `syntax -d` output is a bit hard to grasp unless you understand Sublime Syntaxes very well (not my case). So have patience and ask for help if you get stuck.
 
-Lastly, there's an util to create a syntax test from a `tests/source/` help message: `$ mksyn tests/source/<source file>`
+Lastly, there's an util to create a syntax test from a `tests/source/` help message: `$ mksyn tests/source/<SOURCE_FILE>`
 
 As a rule of thumb, if there's a syntax test for a command, it should also be in `tests/source`.
 
@@ -106,7 +106,7 @@ These are also a great place to look at when looking for unhandled patterns, to 
 
 To query them do: `less -R tests/highlighted/*`
 
-or `less -R tests/highlighted/<test file>`
+or `less -R tests/highlighted/<TEST_FILE>`
 
 After a big syntax change that causes many highlight test files to update, it's ok not to include them in the same commit as the syntax change.
 
