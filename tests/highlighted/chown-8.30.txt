@@ -23,7 +23,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recursive[0m[38;2;248;248;242m        operate on files and directories recursively[0m
 
 [38;2;248;248;242mThe following options modify how a hierarchy is traversed when the -R[0m
-[38;2;190;132;255moption[0m[38;2;248;248;242m is also specified.  If more than one is specified, only the final[0m
+[38;2;248;248;242moption is also specified.  If more than one is specified, only the final[0m
 [38;2;248;248;242mone takes effect.[0m
 
 [38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m                     if a command line argument is a symbolic link[0m

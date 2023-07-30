@@ -63,7 +63,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--binary[0m[38;2;248;248;242m              do not strip CR characters at EOL (MSDOS/Windows)[0m
 
 [38;2;248;248;242mWhen FILE is '-', read standard input.  With no FILE, read '.' if[0m
-[38;2;190;132;255mrecursive[0m[38;2;248;248;242m, '-' otherwise.  With fewer than two FILEs, assume -h.[0m
+[38;2;248;248;242mrecursive, '-' otherwise.  With fewer than two FILEs, assume -h.[0m
 [38;2;248;248;242mExit status is 0 if any line (or file if -L) is selected, 1 otherwise;[0m
 [38;2;248;248;242mif any error occurs and -q is not given, the exit status is 2.[0m
 

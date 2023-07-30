@@ -1,7 +1,7 @@
 [38;2;246;170;17mUsage:[0m[38;2;248;248;242m nano [OPTIONS] [[+LINE[,COLUMN]] FILE]...[0m
 
 [38;2;248;248;242mTo place the cursor on a specific line of a file, put the line number with[0m
-[38;2;190;132;255ma[0m[38;2;248;248;242m '+' before the filename.  The column number can be added after a comma.[0m
+[38;2;248;248;242ma '+' before the filename.  The column number can be added after a comma.[0m
 [38;2;248;248;242mWhen a filename is '-', nano reads data from standard input.[0m
 
 [38;2;248;248;242m Option         Long option             Meaning[0m

@@ -76,7 +76,7 @@
 [38;2;249;38;114mPYTHONIOENCODING[0m[38;2;248;248;242m: Encoding[:errors] used for stdin/stdout/stderr.[0m
 [38;2;249;38;114mPYTHONFAULTHANDLER[0m[38;2;248;248;242m: dump the Python traceback on fatal errors.[0m
 [38;2;249;38;114mPYTHONHASHSEED[0m[38;2;248;248;242m: if this variable is set to 'random', a random value is used[0m
-[38;2;248;248;242m   [0m[38;2;190;132;255mto[0m[38;2;248;248;242m seed the hashes of str and bytes objects.  It can also be set to an[0m
+[38;2;248;248;242m   to seed the hashes of str and bytes objects.  It can also be set to an[0m
 [38;2;248;248;242m   integer in the range [0,4294967295] to get hash values with a[0m
 [38;2;248;248;242m   predictable seed.[0m
 [38;2;249;38;114mPYTHONMALLOC[0m[38;2;248;248;242m: set the Python memory allocators and/or install debug hooks[0m

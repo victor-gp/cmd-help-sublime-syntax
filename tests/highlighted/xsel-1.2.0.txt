@@ -2,7 +2,7 @@
 [38;2;248;248;242mManipulate the X selection.[0m
 
 [38;2;248;248;242mBy default the current selection is output and not modified if both[0m
-[38;2;190;132;255mstandard[0m[38;2;248;248;242m input and standard output are terminals (ttys).  Otherwise,[0m
+[38;2;248;248;242mstandard input and standard output are terminals (ttys).  Otherwise,[0m
 [38;2;248;248;242mthe current selection is output if standard output is not a terminal[0m
 [38;2;248;248;242m(tty), and the selection is set from standard input if standard input[0m
 [38;2;248;248;242mis not a terminal (tty). If any input or output options are given then[0m

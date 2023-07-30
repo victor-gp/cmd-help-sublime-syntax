@@ -35,6 +35,7 @@ variables:
   long_space: '   |\t|\n'
   lookahead_long_space: '(?={{long_space}})'
   lookahead_single_2_space: '(?=.*  (?!.*\S  \S))'
+  lookahead_no_period_2_space: '(?!.*\.  )'
 
 ### pathname variables:
   path_atom: '[0-9a-zA-Z._-]+'
@@ -525,7 +526,7 @@ contexts:
     - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
       scope: *KEYWORD_SCOPES
       set: then-pop
-    - match: '{{other_lowercase_name}}{{lookahead_single_2_space}}'
+    - match: '{{other_lowercase_name}}{{lookahead_single_2_space}}{{lookahead_no_period_2_space}}'
       scope: *KEYWORD_SCOPES
       set: then-pop
 
