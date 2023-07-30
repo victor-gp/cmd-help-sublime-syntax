@@ -60,7 +60,7 @@ The project uses two classes of tests:
 - regression tests: catch-all integration tests
 
 There's a number of command-line utils I use to streamline development, including tests.
-You can load them with `$ source scripts/env.sh`
+You can load them with `$ source scripts/utils`
 
 ### Syntax tests
 
@@ -76,7 +76,7 @@ If you expect the tests to pass, it's better to run them with the *summary* opti
 Syntax tests are also useful to *debug* the workings of the syntax line by line.
 If you can't make heads or tails of why something doesn't work, run `$ tests/syntax.py -d tests/syntax/<test file>`
 
-`env.sh` also contains an util to run with debug and pipe the output to `less`: `$ debug tests/syntax/<test file>`
+`scripts/utils` also contains an util to run with debug and pipe the output to `less`: `$ debug tests/syntax/<test file>`
 
 The `syntax -d` output is a bit hard to grasp unless you understand Sublime Syntaxes very well (not my case). So have patience and ask for help if you get stuck.
 
@@ -98,9 +98,9 @@ You can run them with `$ tests/highlight_regression`
 
 Because the result files contain color escape characters, they should be opened with `less -R`
 
-To query their changes with respect to the git index, do `$ gdiff` (from `env.sh`)
+To query their changes with respect to the git index, do `$ reg` (from `scripts/utils`)
 
-For the diff between the index and the last commit (so staged changes), do `$ gdiffs`
+For the diff between the index and the last commit (so staged changes), do `$ regs`
 
 These are also a great place to look at when looking for unhandled patterns, to document pending tasks.
 
