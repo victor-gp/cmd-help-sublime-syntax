@@ -3,7 +3,10 @@
 jq - commandline JSON processor [version 1.6]
 
 Usage:	jq [options] <jq filter> [file...]
+#      ^^ - constant.other.keyword.cmd-help
+#todo: scope this one too
 	jq [options] --args <jq filter> [strings...]
+#^^	constant.other.keyword.cmd-help
 	jq [options] --jsonargs <jq filter> [JSON_TEXTS...]
 
 jq is a tool for processing JSON inputs, applying the given filter to

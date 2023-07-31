@@ -7,7 +7,12 @@ USAGE:
 # <- string.section-heading.cmd-help
 #^^^^^ string.section-heading.cmd-help
     bat [OPTIONS] [FILE]...
+#   ^^^ constant.other.keyword.cmd-help
+#        ^^^^^^^ - entity.name.function.option.cmd-help
     bat <SUBCOMMAND>
+#   ^^^ constant.other.keyword.cmd-help
+#       ^^^^^^^^^^^^ - constant.other.keyword.cmd-help
+#todo: handle Usage lines
 
 OPTIONS:
 #^^^^^^^ string.section-heading.cmd-help
@@ -149,6 +154,6 @@ ARGS:
 
 SUBCOMMANDS:
     cache    Modify the syntax-definition and theme cache
-#   ^^^^^ constant.other.def.cmd-help
+#   ^^^^^ constant.other.keyword.cmd-help
 
 Note: `bat -h` prints a short and concise overview while `bat --help` gives all details.

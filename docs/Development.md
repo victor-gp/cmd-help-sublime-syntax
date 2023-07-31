@@ -60,7 +60,7 @@ The project uses two classes of tests:
 - regression tests: catch-all integration tests
 
 There's a number of command-line utils I use to streamline development, including tests.
-You can load them with `$ source scripts/env.sh`
+You can load them with `$ source scripts/utils`
 
 ### Syntax tests
 
@@ -74,13 +74,13 @@ You can run them with `$ tests/syntax.py`
 If you expect the tests to pass, it's better to run them with the *summary* option: `$ tests/syntax.py -s`
 
 Syntax tests are also useful to *debug* the workings of the syntax line by line.
-If you can't make heads or tails of why something doesn't work, run `$ tests/syntax.py -d tests/syntax/<test file>`
+If you can't make heads or tails of why something doesn't work, run `$ tests/syntax.py -d tests/syntax/<TEST_FILE>`
 
-`env.sh` also contains an util to run with debug and pipe the output to `less`: `$ debug tests/syntax/<test file>`
+`scripts/utils` also contains an util to run with debug and pipe the output to `less`: `$ debug tests/syntax/<TEST_FILE>`
 
 The `syntax -d` output is a bit hard to grasp unless you understand Sublime Syntaxes very well (not my case). So have patience and ask for help if you get stuck.
 
-Lastly, there's an util to create a syntax test from a `tests/source/` help message: `$ mksyn tests/source/<source file>`
+Lastly, there's an util to create a syntax test from a `tests/source/` help message: `$ mksyn tests/source/<SOURCE_FILE>`
 
 As a rule of thumb, if there's a syntax test for a command, it should also be in `tests/source`.
 
@@ -89,24 +89,29 @@ For that, I like to pair both within the same commit, so the former serves as an
 
 ### Highlight regression tests
 
-These take all the samples (help messages from actual commands) in `tests/source` and run them through `bat` + `cmd-help`.
-Then they store the result (syntax highlighted text) in `tests/highlighted/`.
+There are a bunch of samples (help messages from actual commands) in `tests/source`.
 
-You can run them with `$ tests/highlight_regression`
+Regression tests take all these samples and run them through `bat` + `cmd-help`, storing the result (syntax highlighted text) in `tests/highlighted/`.
+
+Run them with `$ tests/highlight_regression`
+
+This script runs the entire suite of highlight regression tests. They usually take < 5s, but it depends on how fast Docker + `bat` update the syntax theme.
 
 **They're good for quickly validating if your change breaks existing functionality.**
 
-Because the result files contain color escape characters, they should be opened with `less -R`
+#### Displaying regression test differences
 
-To query their changes with respect to the git index, do `$ gdiff` (from `env.sh`)
+Because the result files in `tests/highlighted` contain color escape characters (e.g.: `ESC[0m`), they should be opened with `less -R`.
 
-For the diff between the index and the last commit (so staged changes), do `$ gdiffs`
+To check highlight regression changes with respect to the git index, load `scripts/utils` and do `$ reg`
 
-These are also a great place to look at when looking for unhandled patterns, to document pending tasks.
+There are a few more utils based on `reg`:
 
-To query them do: `less -R tests/highlighted/*`
+- For the regression diff between the index and the last commit (so staged changes), do `$ regs`
+- For the regression diff between your branch and `main`, do `$ regm`
+- To show the regression diff from a commit (HEAD by default), do `$ regshow`
 
-or `less -R tests/highlighted/<test file>`
+#### Syntax tests > regression tests to illustrate changes
 
 After a big syntax change that causes many highlight test files to update, it's ok not to include them in the same commit as the syntax change.
 
@@ -125,7 +130,7 @@ These track the syntax's coverage for the themes included with `bat`. The motiva
 You can run them with `$ tests/theme_regression`
 
 It runs a synthetic help message through `bat` + `cmd-help`, twice for each theme: with and without italics enabled.
-Then it store the result in `tests/theme_regression/`, but deleting the italics version if it makes no difference.
+Then it stores the result in `tests/theme_regression/`, but deleting the italics version if it makes no difference.
 
 Everything I mentioned on `highlight_regression` applies here, just replacing `highlight` for `theme`.
 
@@ -148,16 +153,25 @@ I should probably make these into GitHub Issues, but I haven't got the chance to
 There's also a [Roadmap doc](./Roadmap.md) that defines some long-term goals for the project.
 Look there if you want to break entirely new ground.
 
+### Spotting issues in regression tests
+
+The corpus of highlighted help messages in `tests/highlighted` is also a great place to look for pending work:
+
+- do `$ less -R tests/highlighted/*`
+- iterate through the files with `:n` (next) and `:p` (previous)
+- scroll through the highlighted text and look for tokens that should (not) be colorized
+
 ## Sample development workflow
 
 1. Search pending tasks with the to-do marker keywords. Choose one.
 1. Update the assertion/s related to that task, negate it to make it fail.
 1. Make whatever changes in the syntax to try and fix that test case.
 1. Run `tests/syntax.py` to check the assertion now passes without breaking anything else.
-1. Repeat steps 3-4 until you get it right.
 1. Run `tests/highlight_regression.sh` to ensure the changes don't have unintended consequences in the larger body of help messages.
-1. Run `tests/theme_regression.sh` to make double sure.
+1. Repeat steps 3-5 until you get it right.
 1. Commit, early and often!
+1. Run `tests/theme_regression.sh` to check that you didn't break support for any theme.
+1. [Submit a Pull Request](https://github.com/victor-gp/cmd-help-sublime-syntax/pulls)
 
 ## Contact
 

@@ -17,7 +17,7 @@ variables:
   # words starting with uppercase
   leading_word: '[A-Z][A-Za-z-]*\b'
   # only consider lines <= 40 chars long
-  lookahead_40: '(?=.{1,40}\n)'
+  lookahead_lte_40_chars: '(?=.{1,40}\n)'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:|]'
@@ -32,8 +32,10 @@ variables:
 
 ### other-def variables:
   other_lowercase_name: '[a-z][0-9a-z_-]*\b'
-  long_space: '   |\t|\n|{{single_2_space}}'
-  single_2_space: '  (?!.*\S  \S)'
+  long_space: '   |\t|\n'
+  lookahead_long_space: '(?={{long_space}})'
+  lookahead_single_2_space: '(?=.*  (?!.*\S  \S))'
+  lookahead_no_period_2_space: '(?!.*\.  )'
 
 ### pathname variables:
   path_atom: '[0-9a-zA-Z._-]+'
@@ -61,7 +63,7 @@ scope_variables: # last scope is matched first
     entity.name.function.option.cmd-help
   - &PLUS_OPTION_SCOPES
     entity.name.function.option.plus.cmd-help
-  - &END_OF_OPTIONS_SCOPE
+  - &END_OF_OPTIONS_SCOPE # =~ KEYWORD_SCOPES
     constant.other.end-of-options.cmd-help
 
   - &OPTION_ARGUMENT_SCOPES
@@ -71,12 +73,12 @@ scope_variables: # last scope is matched first
   - &ARGUMENT_SCOPES
     keyword.other.argument.cmd-help
   # mostly all-caps definitions. usually envs or args =~ OPTION_ARGUMENT
-  - &OTHER_VARIABLE_SCOPES
+  - &VARIABLE_SCOPES
     keyword.other.variable.cmd-help
 
   # non all-caps definitions: subcommands, argument enums, etc.
-  - &OTHER_TERM_SCOPES
-    constant.other.def.cmd-help
+  - &KEYWORD_SCOPES
+    constant.other.keyword.cmd-help
 
   - &PATHNAME_SCOPES
     constant.character.escape.pathname.cmd-help
@@ -174,7 +176,7 @@ contexts:
 
   heading:
     - include: heading-specials
-    - match: '{{lookahead_40}}{{leading_word}}( {{any_word2}})*:?\n'
+    - match: '{{lookahead_lte_40_chars}}{{leading_word}}( {{any_word2}})*:?\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
     # - match: '{{any_word2}}( {{any_word2}})*:\n'
@@ -184,8 +186,18 @@ contexts:
   heading-specials:
     - match: (?i:usage):(?=.+\n)
       scope: *INLINE_USAGE_SCOPES
-      set: then-pop
+      set: maybe-bat
     - include: python-argparse-headings
+
+
+  # hack to harmonize usage lines in bat's help message
+  #nice: generalize this pattern and remove this hardcoded case
+  maybe-bat:
+    - match: " (bat)"
+      captures:
+        1: *KEYWORD_SCOPES
+      set: then-pop
+    - include: else-pop
 
   ### option definitions #######################################################
 
@@ -378,62 +390,144 @@ contexts:
   other-def:
     - include: other-def-escapes
     - include: pathname-def
-    - include: other-term-def
-    - include: other-variable-def
+    - include: keyword-def
+    - include: variable-def
+    - include: other-def-seq
 
   other-def-escapes:
     # pretty common in "usage:" alternatives
     - match: (?=or\s)
       set: then-pop
-
-  other-term-def:
-    - match: '{{other_lowercase_name}}(?={{long_space}})'
-      scope: *OTHER_TERM_SCOPES
+    - match: (?=or:)
       set: then-pop
-    # e.g.: "install - install packages (from apt)"
+
+  keyword-def:
+    - match: '{{other_lowercase_name}}{{lookahead_long_space}}'
+      scope: *KEYWORD_SCOPES
+      set: then-pop
+    # e.g.: "install - install packages" (from apt)
     - match: '{{other_lowercase_name}}(?=\s+-\s+\S)'
-      scope: *OTHER_TERM_SCOPES
+      scope: *KEYWORD_SCOPES
       set: then-pop
     # e.g.: "compose*" (from docker)
-    - match: '{{other_lowercase_name}}\*(?={{long_space}})'
-      scope: *OTHER_TERM_SCOPES
+    - match: '{{other_lowercase_name}}\*{{lookahead_long_space}}'
+      scope: *KEYWORD_SCOPES
       set: then-pop
     # e.g.: "build, b" (from cargo)
-    - match: ({{other_lowercase_name}}), ({{other_lowercase_name}})(?={{long_space}})
+    - match: ({{other_lowercase_name}}), ({{other_lowercase_name}}){{lookahead_long_space}}
       captures:
-        1: *OTHER_TERM_SCOPES
-        2: *OTHER_TERM_SCOPES
+        1: *KEYWORD_SCOPES
+        2: *KEYWORD_SCOPES
       set: then-pop
+    - include: keyword-seq-def
 
-  other-variable-def:
+  variable-def:
     - match: '{{allcaps_argument_name}}(?=  )'
-      scope: *OTHER_VARIABLE_SCOPES
+      scope: *VARIABLE_SCOPES
       set: then-pop
     # e.g.: "PYTHONSTARTUP:", "PYTHONCASEOK :"
     - match: '{{allcaps_argument_name}}(?=\s*:)'
-      scope: *OTHER_VARIABLE_SCOPES
+      scope: *VARIABLE_SCOPES
       set: then-pop
     - match: \${{allcaps_argument_name}}
-      scope: *OTHER_VARIABLE_SCOPES
+      scope: *VARIABLE_SCOPES
       set: then-pop
     # e.g.: "'warn'" or "'warn-nopipe'" (from tee)
     - match: "'{{other_lowercase_name}}'"
-      scope: *OTHER_VARIABLE_SCOPES
+      scope: *VARIABLE_SCOPES
       set: then-pop
 
   pathname-def:
-    - match: '{{absolute_path}}(?={{long_space}})'
+    - match: '{{absolute_path}}{{lookahead_long_space}}'
       scope: *PATHNAME_SCOPES
       set: then-pop
-    - match: '{{relative_path}}(?={{long_space}})'
+    - match: '{{relative_path}}{{lookahead_long_space}}'
       scope: *PATHNAME_SCOPES
       set: then-pop
-    - match: '{{home_relative_path}}(?={{long_space}})'
+    - match: '{{home_relative_path}}{{lookahead_long_space}}'
       scope: *PATHNAME_SCOPES
       set: then-pop
     # dotfile
-    - match: '\.{{path_atom}}(?={{long_space}})'
+    - match: '\.{{path_atom}}{{lookahead_long_space}}'
       scope: *PATHNAME_SCOPES
+      set: then-pop
+
+  keyword-seq-def:
+    - match: '({{other_lowercase_name}}) (-{{option_name}})'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *OPTION_SCOPES
+      set: then-pop
+    # e.g.: "devices [-l]" (from adb)
+    - match: '({{other_lowercase_name}}) \[(-{{option_name}})\]'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *OPTION_SCOPES
+      set: then-pop
+    # e.g.: "connect HOST[:PORT]   ..." (from adb)
+    - match: '({{other_lowercase_name}}) ({{allcaps_argument_name}})(?= .*{{long_space}})'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *ARGUMENT_SCOPES
+      set: then-pop
+    # e.g.: "bugreport [PATH]" (from adb)
+    - match: '({{other_lowercase_name}}) \[({{allcaps_argument_name}})\]'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *ARGUMENT_SCOPES
+      set: then-pop
+    # e.g.: "disconnect [HOST[:PORT]]" (from adb)
+    - match: '({{other_lowercase_name}}) \[({{allcaps_argument_name}})\['
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *ARGUMENT_SCOPES
+      set: then-pop
+    # e.g.: "pair HOST[:PORT] [PAIRING CODE]" (from adb)
+    - match: '({{other_lowercase_name}}) ({{allcaps_argument_name}})\['
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *ARGUMENT_SCOPES
+      set: then-pop
+    # e.g.: "shell [-e ESCAPE] [-n] [-Tt] [-x] [COMMAND...]" (from adb)
+    - match: '({{other_lowercase_name}}) \[(-{{option_name}}) ({{allcaps_argument_name}})\]'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *OPTION_SCOPES
+        # 3: *ARGUMENT_SCOPES
+      set: then-pop
+    # e.g.: "wait-for[-TRANSPORT]-STATE..." (from adb)
+    - match: '({{other_lowercase_name}})\[(-{{allcaps_argument_name}})\]'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *ARGUMENT_SCOPES
+      set: then-pop
+    # e.g.: "reboot [bootloader|recovery| ..." (from adb)
+    - match: '({{other_lowercase_name}}) \[({{relaxed_argument_name}})\|'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *ARGUMENT_SCOPES
+      set: then-pop
+    # e.g.: "bat <SUBCOMMAND>" (from bat)
+    - match: '({{other_lowercase_name}}) <({{relaxed_argument_name}})>'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *KEYWORD_SCOPES
+      set: then-pop
+    # e.g.: "mount [options] ..." (from mount)
+    - match: '({{other_lowercase_name}}) \[({{other_lowercase_name}})\]'
+      captures:
+        1: *KEYWORD_SCOPES
+        # 2: *OPTION_SCOPES
+      set: then-pop
+    - include: keyword-def-seq-lax
+
+  # less restrictive matches, catch all
+  keyword-def-seq-lax:
+    - match: '{{other_lowercase_name}}(?= .*{{long_space}})'
+      scope: *KEYWORD_SCOPES
+      set: then-pop
+    - match: '{{other_lowercase_name}}{{lookahead_single_2_space}}{{lookahead_no_period_2_space}}'
+      scope: *KEYWORD_SCOPES
       set: then-pop
 
   ### notable exceptions #######################################################

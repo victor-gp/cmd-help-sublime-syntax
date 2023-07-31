@@ -5,7 +5,10 @@ Usage: dd [OPERAND]...
 Copy a file, converting and formatting according to the operands.
 
   bs=BYTES        read and write up to BYTES bytes at a time (default: 512);
-#nice: should I scope these
+# ^^ constant.other.keyword.cmd-help
+#   ^ - constant.other.keyword.cmd-help keyword.other.argument.cmd-help
+#    ^^^^^ - constant.other.keyword.cmd-help keyword.other.argument.cmd-help
+#todo: scope these
                   overrides ibs and obs
   cbs=BYTES       convert BYTES bytes at a time
   conv=CONVS      convert the file as per the comma separated symbol list
@@ -45,7 +48,7 @@ Each CONV symbol may be:
   notrunc   do not truncate the output file
   noerror   continue after read errors
   fdatasync  physically write output file data before finishing
-# ^^^^^^^^^ constant.other.def.cmd-help
+# ^^^^^^^^^ constant.other.keyword.cmd-help
   fsync     likewise, but also write metadata
 
 Each FLAG symbol may be:

@@ -1,8 +1,8 @@
 [38;2;190;132;255mjq[0m[38;2;248;248;242m - commandline JSON processor [version 1.6][0m
 
 [38;2;246;170;17mUsage:[0m[38;2;248;248;242m	jq [options] <jq filter> [file...][0m
-[38;2;248;248;242m	jq [options] --args <jq filter> [strings...][0m
-[38;2;248;248;242m	jq [options] --jsonargs <jq filter> [JSON_TEXTS...][0m
+[38;2;248;248;242m	[0m[38;2;190;132;255mjq[0m[38;2;248;248;242m [options] --args <jq filter> [strings...][0m
+[38;2;248;248;242m	[0m[38;2;190;132;255mjq[0m[38;2;248;248;242m [options] --jsonargs <jq filter> [JSON_TEXTS...][0m
 
 [38;2;248;248;242mjq is a tool for processing JSON inputs, applying the given filter to[0m
 [38;2;248;248;242mits JSON text inputs and producing the filter's results as JSON on[0m

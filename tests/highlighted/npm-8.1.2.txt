@@ -1,15 +1,15 @@
-[38;2;248;248;242mnpm <command>[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m <command>[0m
 
 [38;2;246;170;17mUsage:[0m
 
-[38;2;248;248;242mnpm install        install all the dependencies in your project[0m
-[38;2;248;248;242mnpm install <foo>  add the <foo> dependency to your project[0m
-[38;2;248;248;242mnpm test           run this project's tests[0m
-[38;2;248;248;242mnpm run <foo>      run the script named <foo>[0m
-[38;2;248;248;242mnpm <command> -h   quick help on <command>[0m
-[38;2;248;248;242mnpm -l             display usage info for all commands[0m
-[38;2;248;248;242mnpm help <term>    search for help on <term>[0m
-[38;2;248;248;242mnpm help npm       more involved overview[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m install        install all the dependencies in your project[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m install <foo>  add the <foo> dependency to your project[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m test           run this project's tests[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m run <foo>      run the script named <foo>[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m <command> -h   quick help on <command>[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m -l             display usage info for all commands[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m help <term>    search for help on <term>[0m
+[38;2;190;132;255mnpm[0m[38;2;248;248;242m help npm       more involved overview[0m
 
 [38;2;246;170;17mAll commands:[0m
 

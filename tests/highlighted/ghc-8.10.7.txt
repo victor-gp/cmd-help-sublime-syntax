@@ -1,6 +1,6 @@
 [38;2;246;170;17mUsage:[0m
 
-[38;2;248;248;242m    ghc [command-line-options-and-input-files][0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mghc[0m[38;2;248;248;242m [command-line-options-and-input-files][0m
 
 [38;2;248;248;242mTo compile and link a complete Haskell program, run the compiler like[0m
 [38;2;248;248;242mso:[0m

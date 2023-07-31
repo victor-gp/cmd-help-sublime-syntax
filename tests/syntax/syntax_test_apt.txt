@@ -11,7 +11,7 @@ interactive use by default.
 
 Most used commands:
   list - list packages based on package names
-# ^^^^ constant.other.def.cmd-help
+# ^^^^ constant.other.keyword.cmd-help
   search - search in package descriptions
   show - show package details
   install - install packages

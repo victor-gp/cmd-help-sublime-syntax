@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# usage: scripts/make_syntax_test.sh tests/source/<file>
-# or:    mksyn tests/source/<file>   (if you $ source scripts/env.sh)
-
+# usage: scripts/make_syntax_test.sh tests/source/<FILE>
+# or:    mksyn tests/source/<FILE>   (if you $ source scripts/utils)
 
 set -euo pipefail
 
@@ -10,7 +9,7 @@ set -euo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
 if [ $# -ne 1 ] || [ ! -f "$1" ]; then
-    >&2 echo "usage: $0 tests/source/<file>"
+    >&2 echo "usage: $0 tests/source/<FILE>"
     exit 2
 fi
 

@@ -5,6 +5,8 @@ Version 31.0.3p2-android-tools
 Installed as /usr/bin/adb
 
 global options:
+#^^^^^^^^^^^^^^ - string.section-heading.cmd-help
+#nice: lowercase headings
  -a         listen on all network interfaces, not just localhost
  -d         use USB device (error if multiple devices connected)
  -e         use TCP/IP device (error if multiple TCP/IP devices available)
@@ -16,16 +18,26 @@ global options:
 
 general commands:
  devices [-l]             list connected devices (-l for long output)
+#^^^^^^^ constant.other.keyword.cmd-help
+#         ^^  - entity.name.function.option.cmd-help
  help                     show this help message
  version                  show version num
 
 networking:
  connect HOST[:PORT]      connect to a device via TCP/IP [default port=5555]
+#^^^^^^^ constant.other.keyword.cmd-help
+#        ^^^^ - keyword.other.argument.cmd-help
  disconnect [HOST[:PORT]]
+#^^^^^^^^^^ constant.other.keyword.cmd-help
+#            ^^^^ - keyword.other.argument.cmd-help
      disconnect from given TCP/IP device [default port=5555], or all
  pair HOST[:PORT] [PAIRING CODE]
+#^^^^ constant.other.keyword.cmd-help
+#     ^^^^ - keyword.other.argument.cmd-help
      pair with a device for secure TCP/IP communication
  forward --list           list all forward socket connections
+#^^^^^^^ constant.other.keyword.cmd-help
+#        ^^^^^^ - entity.name.function.option.cmd-help
  forward [--no-rebind] LOCAL REMOTE
      forward socket connection using:
        tcp:<port> (<local> may be "tcp:0" to pick any open port)
@@ -47,6 +59,8 @@ networking:
        localreserved:<unix domain socket name>
        localfilesystem:<unix domain socket name>
  reverse --remove REMOTE  remove specific reverse socket connection
+#^^^^^^^ constant.other.keyword.cmd-help
+#        ^^^^^^^^ - entity.name.function.option.cmd-help
  reverse --remove-all     remove all reverse socket connections from device
  mdns check               check if mdns discovery is available
  mdns services            list all discovered services
@@ -72,6 +86,9 @@ file transfer:
 
 shell:
  shell [-e ESCAPE] [-n] [-Tt] [-x] [COMMAND...]
+#^^^^ constant.other.keyword.cmd-help
+#       ^^ - entity.name.function.option.cmd-help
+#          ^^^^^^ - keyword.other.argument.cmd-help
      run remote shell command (interactive shell if no command given)
      -e: choose escape character, or "none"; default '~'
      -n: don't read from stdin
@@ -109,6 +126,8 @@ app installation (see also `adb shell cmd package help`):
 
 debugging:
  bugreport [PATH]
+#^^^^^^^^^ constant.other.keyword.cmd-help
+#           ^^^^ - keyword.other.argument.cmd-help
      write bugreport to given PATH [default=bugreport.zip];
      if PATH is a directory, the bug report is saved in that directory.
      devices that don't support zipped bug reports output to stdout.
@@ -119,10 +138,14 @@ security:
  disable-verity           disable dm-verity checking on userdebug builds
  enable-verity            re-enable dm-verity checking on userdebug builds
  keygen FILE
+#^^^^^^ constant.other.keyword.cmd-help
      generate adb public/private key; private key stored in FILE,
 
 scripting:
  wait-for[-TRANSPORT]-STATE...
+#^^^^^^^^ constant.other.keyword.cmd-help
+#         ^^^^^^^^^^ - keyword.other.argument.cmd-help
+#                    ^^^^^^^^^ - entity.name.function.option.cmd-help
      wait for device to be in a given state
      STATE: device, recovery, rescue, sideload, bootloader, or disconnect
      TRANSPORT: usb, local, or any [default=any]
@@ -133,6 +156,8 @@ scripting:
       remount partitions read-write. if a reboot is required, -R will
       will automatically reboot the device.
  reboot [bootloader|recovery|sideload|sideload-auto-reboot]
+#^^^^^^ constant.other.keyword.cmd-help
+#        ^^^^^^^^^^ - keyword.other.argument.cmd-help
      reboot the device; defaults to booting system image but
      supports bootloader and recovery too. sideload reboots
      into recovery and automatically starts sideload mode,
@@ -142,19 +167,17 @@ scripting:
  unroot                   restart adbd without root permissions
  usb                      restart adbd listening on USB
  tcpip PORT               restart adbd listening on TCP on PORT
-#^^^^^ - entity.name.function.option.cmd-help
-#     ^ - entity.name.function.option.cmd-help entity.name.function.option.cmd-help keyword.other.argument.cmd-help
-#      ^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
-#nice: subcommand + ARG
+#^^^^^ constant.other.keyword.cmd-help
+#      ^^^^ - keyword.other.argument.cmd-help
+#nit: make the first scope of the argument: "constant.other.keyword"
 
 internal debugging:
  start-server             ensure that there is a server running
  kill-server              kill the server if it is running
  reconnect                kick connection from host side to force reconnect
  reconnect device         kick connection from device side to force reconnect
-#^^^^^^^^^ - constant.other.def.cmd-help
-#         ^ - constant.other.def.cmd-help
-#          ^^^^^^ - constant.other.def.cmd-help
+#^^^^^^^^^ constant.other.keyword.cmd-help
+#          ^^^^^^ - constant.other.keyword.cmd-help
 #nice: subcommand + subcommand/enum
  reconnect offline        reset offline/unauthorized devices to force reconnect
 

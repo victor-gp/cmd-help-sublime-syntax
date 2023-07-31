@@ -3,6 +3,7 @@
 Usage:
 
     ghc [command-line-options-and-input-files]
+#   ^^^	constant.other.keyword.cmd-help
 
 To compile and link a complete Haskell program, run the compiler like
 so:

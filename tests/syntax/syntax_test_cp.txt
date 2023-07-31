@@ -61,6 +61,8 @@ Mandatory arguments to long options are mandatory for short options too.
 
 By default, sparse SOURCE files are detected by a crude heuristic and the
 corresponding DEST file is made sparse as well.  That is the behavior
+#^^^^^^^^^^^^ - constant.other.keyword.cmd-help
+#             ^^^^ - keyword.other.argument.cmd-help
 selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
 file whenever the SOURCE file contains a long enough sequence of zero bytes.
 Use --sparse=never to inhibit creation of sparse files.
@@ -75,8 +77,8 @@ The version control method may be selected via the --backup option or through
 the VERSION_CONTROL environment variable.  Here are the values:
 
   none, off       never make backups (even if --backup is given)
-# ^^^^ constant.other.def.cmd-help
-#       ^^^ constant.other.def.cmd-help
+# ^^^^ constant.other.keyword.cmd-help
+#       ^^^ constant.other.keyword.cmd-help
 # not sure this is ideal, but it's a lesser evil anyways
   numbered, t     make numbered backups
   existing, nil   numbered if numbered backups exist, simple otherwise
