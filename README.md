@@ -21,9 +21,9 @@ Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syn
 
 This syntax is included with `bat` since version 0.21.0.
 
-If you have an older version of `bat`, you can add [this file](./syntaxes/cmd-help.sublime-syntax) as a [custom syntax](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions).
+If you have an older version of `bat` or you want the latest version of the syntax, you can [add it as a custom syntax](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions). Copy [this file](./syntaxes/cmd-help.sublime-syntax).
 
-Check it works properly by running `git --help | bat -plhelp`
+To check that everything works correctly, run `git --help | bat -plhelp`
 
 ## Configuration
 
