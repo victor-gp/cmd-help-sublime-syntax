@@ -47,7 +47,7 @@ If `help()` doesn't work with a command's alternative help option, you can still
 
 ### `bat` theme support
 
-The syntax works nicely with most `bat` themes. In some cases, even better than with the default Monokai theme (used in the above example). You can find examples of working themes [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples/theme).
+The syntax works nicely with most `bat` themes. You can find examples of working themes [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/docs/examples/theme).
 
 To use a different theme, just append `--theme='<THEME_NAME>'` to your `bat` commands. More info [here](https://github.com/sharkdp/bat#highlighting-theme).
 
