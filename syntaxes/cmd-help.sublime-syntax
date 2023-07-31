@@ -365,10 +365,14 @@ contexts:
     - match: <{{relaxed_argument_name}}>({{ellipsis}})?
       scope: *ARGUMENT_SCOPES
       set: then-pop
+    - match: \[{{allcaps_argument_name}}\]({{ellipsis}})?
+      scope: *ARGUMENT_SCOPES
+      set: then-pop
     - match: '{'
       set: curly-bracket-argument-def
+    # i.e.: "-" as in stdin
     - match: -(?=  )
-      scope: *ARGUMENT_SCOPES # stdin
+      scope: *ARGUMENT_SCOPES
       set: then-pop
     - match: ({{relaxed_argument_name}}) ({{ellipsis}})
       captures:

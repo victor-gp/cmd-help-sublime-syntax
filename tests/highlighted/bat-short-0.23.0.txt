@@ -4,7 +4,7 @@
 [38;2;248;248;242m       [0m[38;2;190;132;255mbat[0m[38;2;248;248;242m <COMMAND>[0m
 
 [38;2;246;170;17mArguments:[0m
-[38;2;248;248;242m  [FILE]...  File(s) to print / concatenate. Use '-' for standard input.[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114m[FILE]...[0m[38;2;248;248;242m  File(s) to print / concatenate. Use '-' for standard input.[0m
 
 [38;2;246;170;17mOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--show-all[0m[38;2;248;248;242m                  Show non-printable characters (space, tab, newline, ..).[0m

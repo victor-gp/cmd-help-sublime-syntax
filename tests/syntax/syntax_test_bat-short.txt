@@ -8,8 +8,7 @@ Usage: bat [OPTIONS] [FILE]...
 
 Arguments:
   [FILE]...  File(s) to print / concatenate. Use '-' for standard input.
-#  ^^^^ - keyword.other.argument.cmd-help
-#todo: handle cmd arguments like this
+# ^^^^^^^^^ keyword.other.argument.cmd-help
 
 Options:
   -A, --show-all                  Show non-printable characters (space, tab, newline, ..).
