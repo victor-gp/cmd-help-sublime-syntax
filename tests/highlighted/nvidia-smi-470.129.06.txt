@@ -22,13 +22,13 @@
 [38;2;248;248;242m    - All Geforce products, starting with the Kepler architecture[0m
 [38;2;248;248;242mnvidia-smi [OPTION1 [ARG1]] [OPTION2 [ARG2]] ...[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m,   --help                Print usage information and exit.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                Print usage information and exit.[0m
 
 [38;2;248;248;242m  [0m[38;2;246;170;17mLIST OPTIONS:[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m,   --list-gpus           Display a list of GPUs connected to the system.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--list-gpus[0m[38;2;248;248;242m           Display a list of GPUs connected to the system.[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m,   --list-excluded-gpus  Display a list of excluded GPUs in the system.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--list-excluded-gpus[0m[38;2;248;248;242m  Display a list of excluded GPUs in the system.[0m
 
 [38;2;248;248;242m  [0m[38;2;246;170;17mSUMMARY OPTIONS:[0m
 
@@ -36,22 +36,22 @@
 
 [38;2;248;248;242m    [plus any of][0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific GPU.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   --filename=           Log to a specified file, rather than to stdout.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,   --loop=               Probe until Ctrl+C at specified second interval.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--id[0m[38;2;248;248;242m=                 Target a specific GPU.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--filename[0m[38;2;248;248;242m=           Log to a specified file, rather than to stdout.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--loop[0m[38;2;248;248;242m=               Probe until Ctrl+C at specified second interval.[0m
 
 [38;2;248;248;242m  [0m[38;2;246;170;17mQUERY OPTIONS:[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m,   --query               Display GPU or Unit info.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--query[0m[38;2;248;248;242m               Display GPU or Unit info.[0m
 
 [38;2;248;248;242m    [plus any of][0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m,   --unit                Show unit, rather than GPU, attributes.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific GPU or Unit.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   --filename=           Log to a specified file, rather than to stdout.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m,   --xml-format          Produce XML output.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--unit[0m[38;2;248;248;242m                Show unit, rather than GPU, attributes.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--id[0m[38;2;248;248;242m=                 Target a specific GPU or Unit.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--filename[0m[38;2;248;248;242m=           Log to a specified file, rather than to stdout.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--xml-format[0m[38;2;248;248;242m          Produce XML output.[0m
 [38;2;248;248;242m          --dtd                 When showing xml output, embed DTD.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m,   --display=            Display only selected information: MEMORY,[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--display[0m[38;2;248;248;242m=            Display only selected information: MEMORY,[0m
 [38;2;248;248;242m                                    UTILIZATION, ECC, TEMPERATURE, POWER, CLOCK,[0m
 [38;2;248;248;242m                                    COMPUTE, PIDS, PERFORMANCE, SUPPORTED_CLOCKS,[0m
 [38;2;248;248;242m                                    PAGE_RETIREMENT, ACCOUNTING, ENCODER_STATS,[0m
@@ -61,7 +61,7 @@
 [38;2;248;248;242m                                Sampling data with max/min/avg is also returned[0m
 [38;2;248;248;242m                                for POWER, UTILIZATION and CLOCK display types.[0m
 [38;2;248;248;242m                                Doesn't work with -u or -x flags.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,   --loop=               Probe until Ctrl+C at specified second interval.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--loop[0m[38;2;248;248;242m=               Probe until Ctrl+C at specified second interval.[0m
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-lms[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--loop-ms[0m[38;2;248;248;242m=            Probe until Ctrl+C at specified millisecond interval.[0m
 
@@ -95,9 +95,9 @@
 
 [38;2;248;248;242m    [plus any of][0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific GPU or Unit.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   --filename=           Log to a specified file, rather than to stdout.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,   --loop=               Probe until Ctrl+C at specified second interval.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--id[0m[38;2;248;248;242m=                 Target a specific GPU or Unit.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--filename[0m[38;2;248;248;242m=           Log to a specified file, rather than to stdout.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--loop[0m[38;2;248;248;242m=               Probe until Ctrl+C at specified second interval.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-lms[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--loop-ms[0m[38;2;248;248;242m=            Probe until Ctrl+C at specified millisecond interval.[0m
 
 [38;2;248;248;242m  [0m[38;2;246;170;17mDEVICE MODIFICATION OPTIONS:[0m
@@ -105,9 +105,9 @@
 [38;2;248;248;242m    [any one of][0m
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m-pm[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--persistence-mode[0m[38;2;248;248;242m=   Set persistence mode: 0/DISABLED, 1/ENABLED[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m,   --ecc-config=         Toggle ECC support: 0/DISABLED, 1/ENABLED[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m,   --reset-ecc-errors=   Reset ECC error counts: 0/VOLATILE, 1/AGGREGATE[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m,   --compute-mode=       Set MODE for compute applications:[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--ecc-config[0m[38;2;248;248;242m=         Toggle ECC support: 0/DISABLED, 1/ENABLED[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--reset-ecc-errors[0m[38;2;248;248;242m=   Reset ECC error counts: 0/VOLATILE, 1/AGGREGATE[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--compute-mode[0m[38;2;248;248;242m=       Set MODE for compute applications:[0m
 [38;2;248;248;242m                                0/DEFAULT, 1/EXCLUSIVE_PROCESS,[0m
 [38;2;248;248;242m                                2/PROHIBITED[0m
 [38;2;248;248;242m          --gom=                Set GPU Operation Mode:[0m
@@ -166,16 +166,16 @@
 
 [38;2;248;248;242m   [plus optional][0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific GPU.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--id[0m[38;2;248;248;242m=                 Target a specific GPU.[0m
 [38;2;248;248;242m    [0m[38;2;166;226;46m-eow[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--error-on-warning[0m[38;2;248;248;242m    Return a non-zero error for warnings.[0m
 
 [38;2;248;248;242m  [0m[38;2;246;170;17mUNIT MODIFICATION OPTIONS:[0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m,   --toggle-led=         Set Unit LED state: 0/GREEN, 1/AMBER[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--toggle-led[0m[38;2;248;248;242m=         Set Unit LED state: 0/GREEN, 1/AMBER[0m
 
 [38;2;248;248;242m   [plus optional][0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific Unit.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--id[0m[38;2;248;248;242m=                 Target a specific Unit.[0m
 
 [38;2;248;248;242m  [0m[38;2;246;170;17mSHOW DTD OPTIONS:[0m
 
@@ -183,8 +183,8 @@
 
 [38;2;248;248;242m     [plus optional][0m
 
-[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   --filename=           Log to a specified file, rather than to stdout.[0m
-[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m,   --unit                Show unit, rather than device, DTD.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--filename[0m[38;2;248;248;242m=           Log to a specified file, rather than to stdout.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m,   [0m[38;2;166;226;46m--unit[0m[38;2;248;248;242m                Show unit, rather than device, DTD.[0m
 
 [38;2;248;248;242m    [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m=                    Log encrypted debug information to a specified file.[0m
 

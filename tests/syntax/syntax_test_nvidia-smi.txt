@@ -30,8 +30,7 @@ nvidia-smi [OPTION1 [ARG1]] [OPTION2 [ARG2]] ...
     -h,   --help                Print usage information and exit.
 #   ^^ entity.name.function.option.cmd-help
 #     ^^^ - entity.name.function.option.cmd-help
-#         ^^^^^^ - entity.name.function.option.cmd-help
-#todo: #25
+#         ^^^^^^ entity.name.function.option.cmd-help
 
   LIST OPTIONS:
 

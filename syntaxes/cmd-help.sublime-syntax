@@ -259,7 +259,7 @@ contexts:
       set: option-def-alt
     - match: '\s+(?=-)'
       set: option-def-alt
-    - match: ',  (?=\S)'
+    - match: ', {2,3}(?=\S)'
       set: option-def-alt
 
   option-def-alt:
