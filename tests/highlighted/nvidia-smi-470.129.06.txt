@@ -1,0 +1,244 @@
+[38;2;248;248;242mNVIDIA System Management Interface -- v470.129.06[0m
+
+[38;2;248;248;242mNVSMI provides monitoring information for Tesla and select Quadro devices.[0m
+[38;2;248;248;242mThe data is presented in either a plain text or an XML format, via stdout or a file.[0m
+[38;2;248;248;242mNVSMI also provides several management operations for changing the device state.[0m
+
+[38;2;248;248;242mNote that the functionality of NVSMI is exposed through the NVML C-based[0m
+[38;2;248;248;242mlibrary. See the NVIDIA developer website for more information about NVML.[0m
+[38;2;248;248;242mPython wrappers to NVML are also available.  The output of NVSMI is[0m
+[38;2;248;248;242mnot guaranteed to be backwards compatible; NVML and the bindings are backwards[0m
+[38;2;248;248;242mcompatible.[0m
+
+[38;2;248;248;242mhttp://developer.nvidia.com/nvidia-management-library-nvml/[0m
+[38;2;248;248;242mhttp://pypi.python.org/pypi/nvidia-ml-py/[0m
+[38;2;246;170;17mSupported products:[0m
+[38;2;248;248;242m- Full Support[0m
+[38;2;248;248;242m    - All Tesla products, starting with the Kepler architecture[0m
+[38;2;248;248;242m    - All Quadro products, starting with the Kepler architecture[0m
+[38;2;248;248;242m    - All GRID products, starting with the Kepler architecture[0m
+[38;2;248;248;242m    - GeForce Titan products, starting with the Kepler architecture[0m
+[38;2;248;248;242m- Limited Support[0m
+[38;2;248;248;242m    - All Geforce products, starting with the Kepler architecture[0m
+[38;2;248;248;242mnvidia-smi [OPTION1 [ARG1]] [OPTION2 [ARG2]] ...[0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m,   --help                Print usage information and exit.[0m
+
+[38;2;248;248;242m  [0m[38;2;246;170;17mLIST OPTIONS:[0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m,   --list-gpus           Display a list of GPUs connected to the system.[0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m,   --list-excluded-gpus  Display a list of excluded GPUs in the system.[0m
+
+[38;2;248;248;242m  [0m[38;2;246;170;17mSUMMARY OPTIONS:[0m
+
+[38;2;248;248;242m    <no arguments>              Show a summary of GPUs connected to the system.[0m
+
+[38;2;248;248;242m    [plus any of][0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific GPU.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   --filename=           Log to a specified file, rather than to stdout.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,   --loop=               Probe until Ctrl+C at specified second interval.[0m
+
+[38;2;248;248;242m  [0m[38;2;246;170;17mQUERY OPTIONS:[0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m,   --query               Display GPU or Unit info.[0m
+
+[38;2;248;248;242m    [plus any of][0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m,   --unit                Show unit, rather than GPU, attributes.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific GPU or Unit.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   --filename=           Log to a specified file, rather than to stdout.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m,   --xml-format          Produce XML output.[0m
+[38;2;248;248;242m          --dtd                 When showing xml output, embed DTD.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m,   --display=            Display only selected information: MEMORY,[0m
+[38;2;248;248;242m                                    UTILIZATION, ECC, TEMPERATURE, POWER, CLOCK,[0m
+[38;2;248;248;242m                                    COMPUTE, PIDS, PERFORMANCE, SUPPORTED_CLOCKS,[0m
+[38;2;248;248;242m                                    PAGE_RETIREMENT, ACCOUNTING, ENCODER_STATS,[0m
+[38;2;248;248;242m                                    SUPPORTED_GPU_TARGET_TEMP, VOLTAGE[0m
+[38;2;248;248;242m                                    FBC_STATS, ROW_REMAPPER[0m
+[38;2;248;248;242m                                Flags can be combined with comma e.g. ECC,POWER.[0m
+[38;2;248;248;242m                                Sampling data with max/min/avg is also returned[0m
+[38;2;248;248;242m                                for POWER, UTILIZATION and CLOCK display types.[0m
+[38;2;248;248;242m                                Doesn't work with -u or -x flags.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,   --loop=               Probe until Ctrl+C at specified second interval.[0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-lms[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--loop-ms[0m[38;2;248;248;242m=            Probe until Ctrl+C at specified millisecond interval.[0m
+
+[38;2;248;248;242m  [0m[38;2;246;170;17mSELECTIVE QUERY OPTIONS:[0m
+
+[38;2;248;248;242m    Allows the caller to pass an explicit list of properties to query.[0m
+
+[38;2;248;248;242m    [one of][0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m--query-gpu[0m[38;2;248;248;242m=                Information about GPU.[0m
+[38;2;248;248;242m                                Call --help-query-gpu for more info.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--query-supported-clocks[0m[38;2;248;248;242m=   List of supported clocks.[0m
+[38;2;248;248;242m                                Call --help-query-supported-clocks for more info.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--query-compute-apps[0m[38;2;248;248;242m=       List of currently active compute processes.[0m
+[38;2;248;248;242m                                Call --help-query-compute-apps for more info.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--query-accounted-apps[0m[38;2;248;248;242m=     List of accounted compute processes.[0m
+[38;2;248;248;242m                                Call --help-query-accounted-apps for more info.[0m
+[38;2;248;248;242m                                This query is not supported on vGPU host.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--query-retired-pages[0m[38;2;248;248;242m=      List of device memory pages that have been retired.[0m
+[38;2;248;248;242m                                Call --help-query-retired-pages for more info.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m--query-remapped-rows[0m[38;2;248;248;242m=      Information about remapped rows.[0m
+[38;2;248;248;242m                                Call --help-query-remapped-rows for more info.[0m
+
+[38;2;248;248;242m    [mandatory][0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m--format[0m[38;2;248;248;242m=                   Comma separated list of format options:[0m
+[38;2;248;248;242m                                  csv - comma separated values (MANDATORY)[0m
+[38;2;248;248;242m                                  noheader - skip the first line with column headers[0m
+[38;2;248;248;242m                                  nounits - don't print units for numerical[0m
+[38;2;248;248;242m                                             values[0m
+
+[38;2;248;248;242m    [plus any of][0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific GPU or Unit.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   --filename=           Log to a specified file, rather than to stdout.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m,   --loop=               Probe until Ctrl+C at specified second interval.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-lms[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--loop-ms[0m[38;2;248;248;242m=            Probe until Ctrl+C at specified millisecond interval.[0m
+
+[38;2;248;248;242m  [0m[38;2;246;170;17mDEVICE MODIFICATION OPTIONS:[0m
+
+[38;2;248;248;242m    [any one of][0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-pm[0m[38;2;248;248;242m,  [0m[38;2;166;226;46m--persistence-mode[0m[38;2;248;248;242m=   Set persistence mode: 0/DISABLED, 1/ENABLED[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m,   --ecc-config=         Toggle ECC support: 0/DISABLED, 1/ENABLED[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m,   --reset-ecc-errors=   Reset ECC error counts: 0/VOLATILE, 1/AGGREGATE[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m,   --compute-mode=       Set MODE for compute applications:[0m
+[38;2;248;248;242m                                0/DEFAULT, 1/EXCLUSIVE_PROCESS,[0m
+[38;2;248;248;242m                                2/PROHIBITED[0m
+[38;2;248;248;242m          --gom=                Set GPU Operation Mode:[0m
+[38;2;248;248;242m                                    0/ALL_ON, 1/COMPUTE, 2/LOW_DP[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m    [0m[38;2;166;226;46m--gpu-reset[0m[38;2;248;248;242m           Trigger reset of the GPU.[0m
+[38;2;248;248;242m                                Can be used to reset the GPU HW state in situations[0m
+[38;2;248;248;242m                                that would otherwise require a machine reboot.[0m
+[38;2;248;248;242m                                Typically useful if a double bit ECC error has[0m
+[38;2;248;248;242m                                occurred.[0m
+[38;2;248;248;242m                                Reset operations are not guarenteed to work in[0m
+[38;2;248;248;242m                                all cases and should be used with caution.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-vm[0m[38;2;248;248;242m   [0m[38;2;166;226;46m--virt-mode[0m[38;2;248;248;242m=          Switch GPU Virtualization Mode:[0m
+[38;2;248;248;242m                                Sets GPU virtualization mode to 3/VGPU or 4/VSGA[0m
+[38;2;248;248;242m                                Virtualization mode of a GPU can only be set when[0m
+[38;2;248;248;242m                                it is running on a hypervisor.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-lgc[0m[38;2;248;248;242m  [0m[38;2;166;226;46m--lock-gpu-clocks[0m[38;2;248;248;242m=    Specifies <minGpuClock,maxGpuClock> clocks as a[0m
+[38;2;248;248;242m                                    pair (e.g. 1500,1500) that defines the range[0m
+[38;2;248;248;242m                                    of desired locked GPU clock speed in MHz.[0m
+[38;2;248;248;242m                                    Setting this will supercede application clocks[0m
+[38;2;248;248;242m                                    and take effect regardless if an app is running.[0m
+[38;2;248;248;242m                                    Input can also be a singular desired clock value[0m
+[38;2;248;248;242m                                    (e.g. <GpuClockValue>).[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-rgc[0m[38;2;248;248;242m  [0m[38;2;166;226;46m--reset-gpu-clocks[0m
+[38;2;248;248;242m                                Resets the Gpu clocks to the default values.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-lmc[0m[38;2;248;248;242m  [0m[38;2;166;226;46m--lock-memory-clocks[0m[38;2;248;248;242m=  Specifies <minMemClock,maxMemClock> clocks as a[0m
+[38;2;248;248;242m                                    pair (e.g. 5100,5100) that defines the range[0m
+[38;2;248;248;242m                                    of desired locked Memory clock speed in MHz.[0m
+[38;2;248;248;242m                                    Input can also be a singular desired clock value[0m
+[38;2;248;248;242m                                    (e.g. <MemClockValue>).[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-rmc[0m[38;2;248;248;242m  [0m[38;2;166;226;46m--reset-memory-clocks[0m
+[38;2;248;248;242m                                Resets the Memory clocks to the default values.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-ac[0m[38;2;248;248;242m   [0m[38;2;166;226;46m--applications-clocks[0m[38;2;248;248;242m= Specifies <memory,graphics> clocks as a[0m
+[38;2;248;248;242m                                    pair (e.g. 2000,800) that defines GPU's[0m
+[38;2;248;248;242m                                    speed in MHz while running applications on a GPU.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-rac[0m[38;2;248;248;242m  [0m[38;2;166;226;46m--reset-applications-clocks[0m
+[38;2;248;248;242m                                Resets the applications clocks to the default values.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-pl[0m[38;2;248;248;242m   [0m[38;2;166;226;46m--power-limit[0m[38;2;248;248;242m=        Specifies maximum power management limit in watts.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-cc[0m[38;2;248;248;242m   [0m[38;2;166;226;46m--cuda-clocks[0m[38;2;248;248;242m=        Overrides or restores default CUDA clocks.[0m
+[38;2;248;248;242m                                In override mode, GPU clocks higher frequencies when running CUDA applications.[0m
+[38;2;248;248;242m                                Only on supported devices starting from the Volta series.[0m
+[38;2;248;248;242m                                Requires administrator privileges.[0m
+[38;2;248;248;242m                                0/RESTORE_DEFAULT, 1/OVERRIDE[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-am[0m[38;2;248;248;242m   [0m[38;2;166;226;46m--accounting-mode[0m[38;2;248;248;242m=    Enable or disable Accounting Mode: 0/DISABLED, 1/ENABLED[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-caa[0m[38;2;248;248;242m  [0m[38;2;166;226;46m--clear-accounted-apps[0m
+[38;2;248;248;242m                                Clears all the accounted PIDs in the buffer.[0m
+[38;2;248;248;242m          --auto-boost-default= Set the default auto boost policy to 0/DISABLED[0m
+[38;2;248;248;242m                                or 1/ENABLED, enforcing the change only after the[0m
+[38;2;248;248;242m                                last boost client has exited.[0m
+[38;2;248;248;242m          --auto-boost-permission=[0m
+[38;2;248;248;242m                                Allow non-admin/root control over auto boost mode:[0m
+[38;2;248;248;242m                                0/UNRESTRICTED, 1/RESTRICTED[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-mig[0m[38;2;248;248;242m  [0m[38;2;166;226;46m--multi-instance-gpu[0m[38;2;248;248;242m= Enable or disable Multi Instance GPU: 0/DISABLED, 1/ENABLED[0m
+[38;2;248;248;242m                                Requires root.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-gtt[0m[38;2;248;248;242m  [0m[38;2;166;226;46m--gpu-target-temp[0m[38;2;248;248;242m=    Set GPU Target Temperature for a GPU in degree celsius.[0m
+[38;2;248;248;242m                                Requires administrator privileges[0m
+
+[38;2;248;248;242m   [plus optional][0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific GPU.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-eow[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--error-on-warning[0m[38;2;248;248;242m    Return a non-zero error for warnings.[0m
+
+[38;2;248;248;242m  [0m[38;2;246;170;17mUNIT MODIFICATION OPTIONS:[0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m,   --toggle-led=         Set Unit LED state: 0/GREEN, 1/AMBER[0m
+
+[38;2;248;248;242m   [plus optional][0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m,   --id=                 Target a specific Unit.[0m
+
+[38;2;248;248;242m  [0m[38;2;246;170;17mSHOW DTD OPTIONS:[0m
+
+[38;2;248;248;242m          --dtd                 Print device DTD and exit.[0m
+
+[38;2;248;248;242m     [plus optional][0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m,   --filename=           Log to a specified file, rather than to stdout.[0m
+[38;2;248;248;242m    [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m,   --unit                Show unit, rather than device, DTD.[0m
+
+[38;2;248;248;242m    [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m=                    Log encrypted debug information to a specified file.[0m
+
+[38;2;248;248;242m [0m[38;2;249;38;114mSTATISTICS[0m[38;2;248;248;242m: (EXPERIMENTAL)[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mstats[0m[38;2;248;248;242m                       Displays device statistics. "nvidia-smi stats -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mDevice Monitoring:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mdmon[0m[38;2;248;248;242m                        Displays device stats in scrolling format.[0m
+[38;2;248;248;242m                                "nvidia-smi dmon -h" for more information.[0m
+
+[38;2;248;248;242m    [0m[38;2;190;132;255mdaemon[0m[38;2;248;248;242m                      Runs in background and monitor devices as a daemon process.[0m
+[38;2;248;248;242m                                This is an experimental feature. Not supported on Windows baremetal[0m
+[38;2;248;248;242m                                "nvidia-smi daemon -h" for more information.[0m
+
+[38;2;248;248;242m    [0m[38;2;190;132;255mreplay[0m[38;2;248;248;242m                      Used to replay/extract the persistent stats generated by daemon.[0m
+[38;2;248;248;242m                                This is an experimental feature.[0m
+[38;2;248;248;242m                                "nvidia-smi replay -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mProcess Monitoring:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mpmon[0m[38;2;248;248;242m                        Displays process stats in scrolling format.[0m
+[38;2;248;248;242m                                "nvidia-smi pmon -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mTOPOLOGY:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mtopo[0m[38;2;248;248;242m                        Displays device/system topology. "nvidia-smi topo -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mDRAIN STATES:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mdrain[0m[38;2;248;248;242m                       Displays/modifies GPU drain states for power idling. "nvidia-smi drain -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mNVLINK:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mnvlink[0m[38;2;248;248;242m                      Displays device nvlink information. "nvidia-smi nvlink -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mCLOCKS:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mclocks[0m[38;2;248;248;242m                      Control and query clock information. "nvidia-smi clocks -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mENCODER SESSIONS:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mencodersessions[0m[38;2;248;248;242m             Displays device encoder sessions information. "nvidia-smi encodersessions -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mFBC SESSIONS:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mfbcsessions[0m[38;2;248;248;242m                 Displays device FBC sessions information. "nvidia-smi fbcsessions -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mGRID vGPU:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mvgpu[0m[38;2;248;248;242m                        Displays vGPU information. "nvidia-smi vgpu -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mMIG:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mmig[0m[38;2;248;248;242m                         Provides controls for MIG management. "nvidia-smi mig -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mCOMPUTE POLICY:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mcompute-policy[0m[38;2;248;248;242m              Control and query compute policies. "nvidia-smi compute-policy -h" for more information.[0m
+
+[38;2;248;248;242m [0m[38;2;246;170;17mBOOST SLIDER:[0m
+[38;2;248;248;242m    [0m[38;2;190;132;255mboost-slider[0m[38;2;248;248;242m                Control and query boost sliders. "nvidia-smi boost-slider -h" for more information.[0m
+
+[38;2;248;248;242m POWER HINT:    power-hint                  Estimates GPU power usage. "nvidia-smi power-hint -h" for more information.[0m
+
+[38;2;248;248;242m BASE CLOCKS:    base-clocks                 Query GPU base clocks. "nvidia-smi base-clocks -h" for more information.[0m
+
+[38;2;248;248;242mPlease see the nvidia-smi(1) manual page for more detailed information.[0m
