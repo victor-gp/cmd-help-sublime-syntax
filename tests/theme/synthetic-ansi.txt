@@ -51,7 +51,7 @@ nor if it begins with lowercase
  [34m-A[0m             [34m--smarthome[0m             Enable smart home key
 [34m-m[0m [35mmod[0m : run library module as a script (terminates option list)
         [34m--except[0m [[35mCOP1,COP2,...[0m]     Exclude the given cop(s).
-    [34m-P[0m, [34m--[0m[[35mno-[0m]parallel              Use available CPUs to execute inspection in
+    [34m-P[0m, [34m--[0m[[34mno-[0m][34mparallel[0m              Use available CPUs to execute inspection in
   [34m-0[0m[[35moctal[0m]       specify record separator (\0, if no argument)
   [34m-Cdirectory[0m     cd to directory before executing your script
   [34m-e[0m [35m'command'[0m    one line of script. Several -e's allowed. Omit [programfile]

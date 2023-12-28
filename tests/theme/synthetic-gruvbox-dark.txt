@@ -51,7 +51,7 @@
 [38;2;251;241;199m [0m[38;2;184;187;38m-A[0m[38;2;251;241;199m             [0m[38;2;184;187;38m--smarthome[0m[38;2;251;241;199m             Enable smart home key[0m
 [38;2;184;187;38m-m[0m[38;2;251;241;199m [0m[38;2;251;73;52mmod[0m[38;2;251;241;199m : run library module as a script (terminates option list)[0m
 [38;2;251;241;199m        [0m[38;2;184;187;38m--except[0m[38;2;251;241;199m [[0m[38;2;251;73;52mCOP1,COP2,...[0m[38;2;251;241;199m]     Exclude the given cop(s).[0m
-[38;2;251;241;199m    [0m[38;2;184;187;38m-P[0m[38;2;251;241;199m, [0m[38;2;184;187;38m--[0m[38;2;251;241;199m[[0m[38;2;251;73;52mno-[0m[38;2;251;241;199m]parallel              Use available CPUs to execute inspection in[0m
+[38;2;251;241;199m    [0m[38;2;184;187;38m-P[0m[38;2;251;241;199m, [0m[38;2;184;187;38m--[0m[38;2;251;241;199m[[0m[38;2;184;187;38mno-[0m[38;2;251;241;199m][0m[38;2;184;187;38mparallel[0m[38;2;251;241;199m              Use available CPUs to execute inspection in[0m
 [38;2;251;241;199m  [0m[38;2;184;187;38m-0[0m[38;2;251;241;199m[[0m[38;2;251;73;52moctal[0m[38;2;251;241;199m]       specify record separator (\0, if no argument)[0m
 [38;2;251;241;199m  [0m[38;2;184;187;38m-Cdirectory[0m[38;2;251;241;199m     cd to directory before executing your script[0m
 [38;2;251;241;199m  [0m[38;2;184;187;38m-e[0m[38;2;251;241;199m [0m[38;2;251;73;52m'command'[0m[38;2;251;241;199m    one line of script. Several -e's allowed. Omit [programfile][0m
