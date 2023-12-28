@@ -397,7 +397,6 @@ contexts:
     - include: pathname-def
     - include: keyword-def
     - include: variable-def
-    - include: other-def-seq
 
   other-def-escapes:
     # pretty common in "usage:" alternatives
