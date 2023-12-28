@@ -68,7 +68,7 @@ nor if it begins with lowercase
    [34m-h[0m  or  [34m--help[0m	Print Help (this message) and exit
   [34m--display[0m [35mdisplayname[0m
   [34m-t[0m [35mms[0m, [34m--selectionTimeout[0m [35mms[0m
-      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files
+      [[34m--skip-active-storage[0m], [[34m--no-skip-active-storage[0m]    # Skip Active Storage files
    [33m--[0m			Only file names after this
 
 

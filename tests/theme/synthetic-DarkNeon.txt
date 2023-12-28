@@ -68,7 +68,7 @@
 [38;2;255;255;255m   [0m[38;2;248;248;248m-h[0m[38;2;255;255;255m  or  [0m[38;2;248;248;248m--help[0m[38;2;255;255;255m	Print Help (this message) and exit[0m
 [38;2;255;255;255m  [0m[38;2;248;248;248m--display[0m[38;2;255;255;255m [0m[38;2;102;204;255mdisplayname[0m
 [38;2;255;255;255m  [0m[38;2;248;248;248m-t[0m[38;2;255;255;255m [0m[38;2;102;204;255mms[0m[38;2;255;255;255m, [0m[38;2;248;248;248m--selectionTimeout[0m[38;2;255;255;255m [0m[38;2;102;204;255mms[0m
-[38;2;255;255;255m      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files[0m
+[38;2;255;255;255m      [[0m[38;2;248;248;248m--skip-active-storage[0m[38;2;255;255;255m], [[0m[38;2;248;248;248m--no-skip-active-storage[0m[38;2;255;255;255m]    # Skip Active Storage files[0m
 [38;2;255;255;255m   [0m[38;2;153;204;153m--[0m[38;2;255;255;255m			Only file names after this[0m
 
 
