@@ -12,9 +12,11 @@ Options:
 #                                             ^ - entity.name.function.option.cmd-help
       [--skip-collision-check], [--no-skip-collision-check]  # Skip collision check
   -r, [--ruby=PATH]                                          # Path to the Ruby binary of your choice
-#      ^^^^^^ - entity.name.function.option.cmd-help
-#             ^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
-#todo: handle these args too
+#     ^ - entity.name.function.option.cmd-help
+#      ^^^^^^ entity.name.function.option.cmd-help
+#            ^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#             ^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                  ^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
                                                              # Default: /home/victor-gp/.rbenv/versions/3.0.1/bin/ruby
   -m, [--template=TEMPLATE]                                  # Path to some application template (can be a filesystem path or URL)
   -d, [--database=DATABASE]                                  # Preconfigure for selected database (options: mysql/postgresql/sqlite3/oracle/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)
@@ -30,6 +32,9 @@ Options:
   -C, [--skip-action-cable], [--no-skip-action-cable]        # Skip Action Cable files
   -A, [--skip-asset-pipeline], [--no-skip-asset-pipeline]    # Indicates when to generate skip asset pipeline
   -a, [--asset-pipeline=ASSET_PIPELINE]                      # Choose your asset pipeline [options: sprockets (default), propshaft]
+#      ^^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help
+#                      ^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                       ^^^^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
                                                              # Default: sprockets
   -J, [--skip-javascript], [--no-skip-javascript]            # Skip JavaScript files
       [--skip-hotwire], [--no-skip-hotwire]                  # Skip Hotwire integration
