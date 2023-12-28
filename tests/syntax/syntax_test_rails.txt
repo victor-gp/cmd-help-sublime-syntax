@@ -5,10 +5,16 @@ Usage:
 
 Options:
       [--skip-namespace], [--no-skip-namespace]              # Skip namespace (affects only isolated engines)
-#     ^^^^^^^^^^^^^^^^^^ - entity.name.function.option.cmd-help
-# nice: handle options between square brackets
+#     ^ - entity.name.function.option.cmd-help
+#      ^^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help
+#                      ^^^^ - entity.name.function.option.cmd-help
+#                          ^^^^^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help
+#                                             ^ - entity.name.function.option.cmd-help
       [--skip-collision-check], [--no-skip-collision-check]  # Skip collision check
   -r, [--ruby=PATH]                                          # Path to the Ruby binary of your choice
+#      ^^^^^^ - entity.name.function.option.cmd-help
+#             ^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#todo: handle these args too
                                                              # Default: /home/victor-gp/.rbenv/versions/3.0.1/bin/ruby
   -m, [--template=TEMPLATE]                                  # Path to some application template (can be a filesystem path or URL)
   -d, [--database=DATABASE]                                  # Preconfigure for selected database (options: mysql/postgresql/sqlite3/oracle/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)

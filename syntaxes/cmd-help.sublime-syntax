@@ -211,6 +211,10 @@ contexts:
     - match: -{{option_name}}
       scope: *OPTION_SCOPES
       set: option-term-post
+    - match: '\[(--{{option_name}})\]'
+      captures:
+        1: *OPTION_SCOPES
+      set: option-term-post
 
   option-def-specials:
     - match: --(?=\s)
