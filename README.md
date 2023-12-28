@@ -6,7 +6,7 @@ It provides just enough color to help find your way around a help message.
 
 <img src="./docs/assets/cmd-help-example.png" width="700" alt="Example usage of the cmd-help syntax on 'bat -h'">
 
-Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/examples).
+[See examples from other help messages.](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/examples)
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ Check out more examples [here](https://github.com/victor-gp/cmd-help-sublime-syn
 
 This syntax is included with `bat` since version 0.21.0.
 
-If you have an older version of `bat` or you want the latest version of `cmd-help`, you can [add it as a custom syntax](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions). Just copy [this file](./syntaxes/cmd-help.sublime-syntax).
+If you have an older version of `bat` or you want the latest version of `cmd-help`, you can [add it as a new syntax](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions). You should copy [this file](./syntaxes/cmd-help.sublime-syntax).
 
 To check that everything works, run `git --help | bat -plhelp`
 
