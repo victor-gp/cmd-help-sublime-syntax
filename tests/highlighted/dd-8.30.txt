@@ -2,20 +2,20 @@
 [38;2;248;248;242m  or:  dd OPTION[0m
 [38;2;248;248;242mCopy a file, converting and formatting according to the operands.[0m
 
-[38;2;248;248;242m  [0m[38;2;190;132;255mbs[0m[38;2;248;248;242m=BYTES        read and write up to BYTES bytes at a time (default: 512);[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mbs[0m[38;2;248;248;242m=[0m[38;2;249;38;114mBYTES[0m[38;2;248;248;242m        read and write up to BYTES bytes at a time (default: 512);[0m
 [38;2;248;248;242m                  overrides ibs and obs[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mcbs[0m[38;2;248;248;242m=BYTES       convert BYTES bytes at a time[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mconv[0m[38;2;248;248;242m=CONVS      convert the file as per the comma separated symbol list[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mcount[0m[38;2;248;248;242m=N         copy only N input blocks[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mibs[0m[38;2;248;248;242m=BYTES       read up to BYTES bytes at a time (default: 512)[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mif[0m[38;2;248;248;242m=FILE         read from FILE instead of stdin[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255miflag[0m[38;2;248;248;242m=FLAGS     read as per the comma separated symbol list[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mobs[0m[38;2;248;248;242m=BYTES       write BYTES bytes at a time (default: 512)[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mof[0m[38;2;248;248;242m=FILE         write to FILE instead of stdout[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255moflag[0m[38;2;248;248;242m=FLAGS     write as per the comma separated symbol list[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mseek[0m[38;2;248;248;242m=N          skip N obs-sized blocks at start of output[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mskip[0m[38;2;248;248;242m=N          skip N ibs-sized blocks at start of input[0m
-[38;2;248;248;242m  [0m[38;2;190;132;255mstatus[0m[38;2;248;248;242m=LEVEL    The LEVEL of information to print to stderr;[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mcbs[0m[38;2;248;248;242m=[0m[38;2;249;38;114mBYTES[0m[38;2;248;248;242m       convert BYTES bytes at a time[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mconv[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCONVS[0m[38;2;248;248;242m      convert the file as per the comma separated symbol list[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mcount[0m[38;2;248;248;242m=[0m[38;2;249;38;114mN[0m[38;2;248;248;242m         copy only N input blocks[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mibs[0m[38;2;248;248;242m=[0m[38;2;249;38;114mBYTES[0m[38;2;248;248;242m       read up to BYTES bytes at a time (default: 512)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mif[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m         read from FILE instead of stdin[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255miflag[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFLAGS[0m[38;2;248;248;242m     read as per the comma separated symbol list[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mobs[0m[38;2;248;248;242m=[0m[38;2;249;38;114mBYTES[0m[38;2;248;248;242m       write BYTES bytes at a time (default: 512)[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mof[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILE[0m[38;2;248;248;242m         write to FILE instead of stdout[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255moflag[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFLAGS[0m[38;2;248;248;242m     write as per the comma separated symbol list[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mseek[0m[38;2;248;248;242m=[0m[38;2;249;38;114mN[0m[38;2;248;248;242m          skip N obs-sized blocks at start of output[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mskip[0m[38;2;248;248;242m=[0m[38;2;249;38;114mN[0m[38;2;248;248;242m          skip N ibs-sized blocks at start of input[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mstatus[0m[38;2;248;248;242m=[0m[38;2;249;38;114mLEVEL[0m[38;2;248;248;242m    The LEVEL of information to print to stderr;[0m
 [38;2;248;248;242m                  'none' suppresses everything but error messages,[0m
 [38;2;248;248;242m                  'noxfer' suppresses the final transfer statistics,[0m
 [38;2;248;248;242m                  'progress' shows periodic transfer statistics[0m

@@ -524,6 +524,12 @@ contexts:
         1: *KEYWORD_SCOPES
         # 2: *OPTION_SCOPES
       set: then-pop
+    # e.g.: "bs=BYTES" (from dd)
+    - match: '({{other_lowercase_name}})=({{allcaps_argument_name}})(?={{long_space}})'
+      captures:
+        1: *KEYWORD_SCOPES
+        2: *ARGUMENT_SCOPES
+      set: then-pop
     - include: keyword-def-seq-lax
 
   # less restrictive matches, catch all
