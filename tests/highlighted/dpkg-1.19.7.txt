@@ -56,7 +56,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--skip-same-version[0m[38;2;248;248;242m     Skip packages whose same version is installed.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--refuse-downgrade[0m[38;2;248;248;242m      Skip packages with earlier version than installed.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--auto-deconfigure[0m[38;2;248;248;242m      Install even if it would break some other package.[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--[no-]triggers[0m[38;2;248;248;242m            Skip or force consequential trigger processing.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--[0m[38;2;248;248;242m[[0m[38;2;166;226;46mno-[0m[38;2;248;248;242m][0m[38;2;166;226;46mtriggers[0m[38;2;248;248;242m            Skip or force consequential trigger processing.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--verify-format[0m[38;2;248;248;242m=[0m[38;2;249;38;114m<format>[0m[38;2;248;248;242m   Verify output format (supported: 'rpm').[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-debsig[0m[38;2;248;248;242m                Do not try to verify package signatures.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m--no-act[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--dry-run[0m[38;2;248;248;242m|[0m[38;2;166;226;46m--simulate[0m

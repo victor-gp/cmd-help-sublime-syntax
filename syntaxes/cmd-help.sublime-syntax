@@ -215,8 +215,11 @@ contexts:
     - include: rails-long-options
 
   option-term-optional-bits:
-    - match: -{{option_name}}\[{{option_name}}-\]{{option_name}}
-      scope: *OPTION_SCOPES
+    - match: (-{{option_name}})\[({{option_name}}-)\]({{option_name}})
+      captures:
+        1: *OPTION_SCOPES
+        2: *OPTION_SCOPES
+        3: *OPTION_SCOPES
       set: option-term-post
 
   option-def-specials:
