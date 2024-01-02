@@ -2,7 +2,7 @@
 
 FROM rust:1.70 as build
 LABEL keep=false
-ARG SYNTECT_VERSION=5.0.0
+ARG SYNTECT_VERSION=5.1.0
 RUN git clone --depth=1 --branch=v${SYNTECT_VERSION} \
     https://github.com/trishume/syntect.git \
     /usr/src/syntect
