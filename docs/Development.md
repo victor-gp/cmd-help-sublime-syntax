@@ -9,6 +9,7 @@
   * [Theme regression tests](#theme-regression-tests)
 - [Finding pending tasks](#finding-pending-tasks)
 - [Sample development workflow](#sample-development-workflow)
+- [Chores](#Chores)
 - [Contact](#contact)
 
 ## Requirements
@@ -172,6 +173,10 @@ The corpus of highlighted help messages in `tests/highlighted` is also a great p
 1. Commit, early and often!
 1. Run `tests/theme_regression.sh` to check that you didn't break support for any theme.
 1. [Submit a Pull Request](https://github.com/victor-gp/cmd-help-sublime-syntax/pulls)
+
+## Chores
+
+There are some How-To documents explaining how to do some maintainance tasks in [the project's wiki](https://github.com/victor-gp/cmd-help-sublime-syntax/wiki).
 
 ## Contact
 
