@@ -1,0 +1,34 @@
+# SYNTAX TEST "cmd-help.sublime-syntax"
+
+Install a package
+
+Usage:
+npm install [<package-spec> ...]
+
+Options:
+[-S|--save|--no-save|--save-prod|--save-dev|--save-optional|--save-peer|--save-bundle]
+#^^ - entity.name.function.option.cmd-help
+#   ^^^^^^ - entity.name.function.option.cmd-help
+# nice: handle square-surrounded options with | alternatives
+[-E|--save-exact] [-g|--global]
+#^^ - entity.name.function.option.cmd-help
+#                  ^^ - entity.name.function.option.cmd-help
+# nice: handle square-surrounded options separated by space
+[--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+#                   ^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                            ^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#nice: handle option arguments like these
+[--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+[--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+[--strict-peer-deps] [--prefer-dedupe] [--no-package-lock] [--package-lock-only]
+[--foreground-scripts] [--ignore-scripts] [--no-audit] [--no-bin-links]
+[--no-fund] [--dry-run] [--cpu <cpu>] [--os <os>]
+[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+#                                 ^^ - entity.name.function.option.cmd-help
+#nice: handle nested options like these
+[-ws|--workspaces] [--include-workspace-root] [--install-links]
+
+aliases: add, i, in, ins, inst, insta, instal, isnt, isnta, isntal, isntall
+#nice: handle aliases?
+
+Run "npm help install" for more info

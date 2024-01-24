@@ -6,7 +6,7 @@ Usage:
 Options:
       [--skip-namespace], [--no-skip-namespace]              # Skip namespace (affects only isolated engines)
 #     ^^^^^^^^^^^^^^^^^^ - entity.name.function.option.cmd-help
-# nice: handle options between square brackets
+# todo: handle options between square brackets
       [--skip-collision-check], [--no-skip-collision-check]  # Skip collision check
   -r, [--ruby=PATH]                                          # Path to the Ruby binary of your choice
                                                              # Default: /home/victor-gp/.rbenv/versions/3.0.1/bin/ruby
