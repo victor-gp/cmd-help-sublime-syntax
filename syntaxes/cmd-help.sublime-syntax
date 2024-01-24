@@ -212,7 +212,6 @@ contexts:
     - match: -{{option_name}}
       scope: *OPTION_SCOPES
       set: option-term-post
-    - include: rails-long-options
 
   option-term-optional-bits:
     - match: (-{{option_name}})\[({{option_name}}-)\]({{option_name}})
@@ -587,14 +586,3 @@ contexts:
     - match: (positional arguments|optional arguments|required arguments|options):\n
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-
-  rails-long-options:
-    - match: '\[(--{{option_name}})\]'
-      captures:
-        1: *OPTION_SCOPES
-      set: option-term-post
-    - match: '\[(--{{option_name}})=({{allcaps_argument_name}})\]'
-      captures:
-        1: *OPTION_SCOPES
-        2: *OPTION_ARGUMENT_SCOPES
-      set: option-term-post

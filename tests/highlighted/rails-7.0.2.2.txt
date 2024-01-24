@@ -2,52 +2,52 @@
 [38;2;248;248;242m  rails new APP_PATH [options][0m
 
 [38;2;246;170;17mOptions:[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-namespace[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-namespace[0m[38;2;248;248;242m]              # Skip namespace (affects only isolated engines)[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-collision-check[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-collision-check[0m[38;2;248;248;242m]  # Skip collision check[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--ruby[0m[38;2;248;248;242m=[0m[38;2;249;38;114mPATH[0m[38;2;248;248;242m]                                          # Path to the Ruby binary of your choice[0m
+[38;2;248;248;242m      [--skip-namespace], [--no-skip-namespace]              # Skip namespace (affects only isolated engines)[0m
+[38;2;248;248;242m      [--skip-collision-check], [--no-skip-collision-check]  # Skip collision check[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [--ruby=PATH]                                          # Path to the Ruby binary of your choice[0m
 [38;2;248;248;242m                                                             # Default: /home/victor-gp/.rbenv/versions/3.0.1/bin/ruby[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--template[0m[38;2;248;248;242m=[0m[38;2;249;38;114mTEMPLATE[0m[38;2;248;248;242m]                                  # Path to some application template (can be a filesystem path or URL)[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--database[0m[38;2;248;248;242m=[0m[38;2;249;38;114mDATABASE[0m[38;2;248;248;242m]                                  # Preconfigure for selected database (options: mysql/postgresql/sqlite3/oracle/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [--template=TEMPLATE]                                  # Path to some application template (can be a filesystem path or URL)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [--database=DATABASE]                                  # Preconfigure for selected database (options: mysql/postgresql/sqlite3/oracle/sqlserver/jdbcmysql/jdbcsqlite3/jdbcpostgresql/jdbc)[0m
 [38;2;248;248;242m                                                             # Default: sqlite3[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--skip-git[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-git[0m[38;2;248;248;242m]                          # Skip .gitignore file[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-keeps[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-keeps[0m[38;2;248;248;242m]                      # Skip source control .keep files[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--skip-action-mailer[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-action-mailer[0m[38;2;248;248;242m]      # Skip Action Mailer files[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-action-mailbox[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-action-mailbox[0m[38;2;248;248;242m]    # Skip Action Mailbox gem[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-action-text[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-action-text[0m[38;2;248;248;242m]          # Skip Action Text gem[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--skip-active-record[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-active-record[0m[38;2;248;248;242m]      # Skip Active Record files[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-active-job[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-active-job[0m[38;2;248;248;242m]            # Skip Active Job[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-active-storage[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-active-storage[0m[38;2;248;248;242m]    # Skip Active Storage files[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--skip-action-cable[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-action-cable[0m[38;2;248;248;242m]        # Skip Action Cable files[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--skip-asset-pipeline[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-asset-pipeline[0m[38;2;248;248;242m]    # Indicates when to generate skip asset pipeline[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--asset-pipeline[0m[38;2;248;248;242m=[0m[38;2;249;38;114mASSET_PIPELINE[0m[38;2;248;248;242m]                      # Choose your asset pipeline [options: sprockets (default), propshaft][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m, [--skip-git], [--no-skip-git]                          # Skip .gitignore file[0m
+[38;2;248;248;242m      [--skip-keeps], [--no-skip-keeps]                      # Skip source control .keep files[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [--skip-action-mailer], [--no-skip-action-mailer]      # Skip Action Mailer files[0m
+[38;2;248;248;242m      [--skip-action-mailbox], [--no-skip-action-mailbox]    # Skip Action Mailbox gem[0m
+[38;2;248;248;242m      [--skip-action-text], [--no-skip-action-text]          # Skip Action Text gem[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m, [--skip-active-record], [--no-skip-active-record]      # Skip Active Record files[0m
+[38;2;248;248;242m      [--skip-active-job], [--no-skip-active-job]            # Skip Active Job[0m
+[38;2;248;248;242m      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-C[0m[38;2;248;248;242m, [--skip-action-cable], [--no-skip-action-cable]        # Skip Action Cable files[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [--skip-asset-pipeline], [--no-skip-asset-pipeline]    # Indicates when to generate skip asset pipeline[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [--asset-pipeline=ASSET_PIPELINE]                      # Choose your asset pipeline [options: sprockets (default), propshaft][0m
 [38;2;248;248;242m                                                             # Default: sprockets[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-J[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--skip-javascript[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-javascript[0m[38;2;248;248;242m]            # Skip JavaScript files[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-hotwire[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-hotwire[0m[38;2;248;248;242m]                  # Skip Hotwire integration[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-jbuilder[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-jbuilder[0m[38;2;248;248;242m]                # Skip jbuilder gem[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--skip-test[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-test[0m[38;2;248;248;242m]                        # Skip test files[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-system-test[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-system-test[0m[38;2;248;248;242m]          # Skip system test files[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--skip-bootsnap[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-bootsnap[0m[38;2;248;248;242m]                # Skip bootsnap gem[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--dev[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-dev[0m[38;2;248;248;242m]                                    # Set up the application with Gemfile pointing to your Rails checkout[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--edge[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-edge[0m[38;2;248;248;242m]                                  # Set up the application with Gemfile pointing to Rails repository[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m--master[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--main[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-main[0m[38;2;248;248;242m]                            # Set up the application with Gemfile pointing to Rails repository main branch[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--rc[0m[38;2;248;248;242m=[0m[38;2;249;38;114mRC[0m[38;2;248;248;242m]                                              # Path to file containing extra configuration options for rails command[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--no-rc[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-no-rc[0m[38;2;248;248;242m]                                # Skip loading of extra configuration options from .railsrc file[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--api[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-api[0m[38;2;248;248;242m]                                    # Preconfigure smaller stack for API only apps[0m
-[38;2;248;248;242m      [[0m[38;2;166;226;46m--minimal[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-minimal[0m[38;2;248;248;242m]                            # Preconfigure a minimal rails app[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--javascript[0m[38;2;248;248;242m=[0m[38;2;249;38;114mJAVASCRIPT[0m[38;2;248;248;242m]                              # Choose JavaScript approach [options: importmap (default), webpack, esbuild, rollup][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-J[0m[38;2;248;248;242m, [--skip-javascript], [--no-skip-javascript]            # Skip JavaScript files[0m
+[38;2;248;248;242m      [--skip-hotwire], [--no-skip-hotwire]                  # Skip Hotwire integration[0m
+[38;2;248;248;242m      [--skip-jbuilder], [--no-skip-jbuilder]                # Skip jbuilder gem[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [--skip-test], [--no-skip-test]                        # Skip test files[0m
+[38;2;248;248;242m      [--skip-system-test], [--no-skip-system-test]          # Skip system test files[0m
+[38;2;248;248;242m      [--skip-bootsnap], [--no-skip-bootsnap]                # Skip bootsnap gem[0m
+[38;2;248;248;242m      [--dev], [--no-dev]                                    # Set up the application with Gemfile pointing to your Rails checkout[0m
+[38;2;248;248;242m      [--edge], [--no-edge]                                  # Set up the application with Gemfile pointing to Rails repository[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--master[0m[38;2;248;248;242m, [--main], [--no-main]                            # Set up the application with Gemfile pointing to Rails repository main branch[0m
+[38;2;248;248;242m      [--rc=RC]                                              # Path to file containing extra configuration options for rails command[0m
+[38;2;248;248;242m      [--no-rc], [--no-no-rc]                                # Skip loading of extra configuration options from .railsrc file[0m
+[38;2;248;248;242m      [--api], [--no-api]                                    # Preconfigure smaller stack for API only apps[0m
+[38;2;248;248;242m      [--minimal], [--no-minimal]                            # Preconfigure a minimal rails app[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m, [--javascript=JAVASCRIPT]                              # Choose JavaScript approach [options: importmap (default), webpack, esbuild, rollup][0m
 [38;2;248;248;242m                                                             # Default: importmap[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--css[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCSS[0m[38;2;248;248;242m]                                            # Choose CSS processor [options: tailwind, bootstrap, bulma, postcss, sass... check https://github.com/rails/cssbundling-rails][0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--skip-bundle[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip-bundle[0m[38;2;248;248;242m]                    # Don't run bundle install[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m, [--css=CSS]                                            # Choose CSS processor [options: tailwind, bootstrap, bulma, postcss, sass... check https://github.com/rails/cssbundling-rails][0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [--skip-bundle], [--no-skip-bundle]                    # Don't run bundle install[0m
 
 [38;2;246;170;17mRuntime options:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--force[0m[38;2;248;248;242m]                    # Overwrite files that already exist[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--pretend[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-pretend[0m[38;2;248;248;242m]  # Run but do not make any changes[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--quiet[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-quiet[0m[38;2;248;248;242m]      # Suppress status output[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--skip[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-skip[0m[38;2;248;248;242m]        # Skip files that already exist[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [--force]                    # Overwrite files that already exist[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m, [--pretend], [--no-pretend]  # Run but do not make any changes[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m, [--quiet], [--no-quiet]      # Suppress status output[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [--skip], [--no-skip]        # Skip files that already exist[0m
 
 [38;2;246;170;17mRails options:[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--help[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-help[0m[38;2;248;248;242m]        # Show this help message and quit[0m
-[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [[0m[38;2;166;226;46m--version[0m[38;2;248;248;242m], [[0m[38;2;166;226;46m--no-version[0m[38;2;248;248;242m]  # Show Rails version number and quit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [--help], [--no-help]        # Show this help message and quit[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [--version], [--no-version]  # Show Rails version number and quit[0m
 
 [38;2;246;170;17mDescription:[0m
 [38;2;248;248;242m    The 'rails new' command creates a new Rails application with a default[0m

@@ -7,11 +7,11 @@
 [38;2;248;248;242m[-S|--save|--no-save|--save-prod|--save-dev|--save-optional|--save-peer|--save-bundle][0m
 [38;2;248;248;242m[-E|--save-exact] [-g|--global][0m
 [38;2;248;248;242m[--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling][0m
-[38;2;248;248;242m[[0m[38;2;166;226;46m--global-style[0m[38;2;248;248;242m] [[0m[38;2;249;38;114m--omit <dev[0m[38;2;248;248;242m|[0m[38;2;249;38;114moptional[0m[38;2;248;248;242m|[0m[38;2;249;38;114mpeer> [--omit <dev[0m[38;2;248;248;242m|[0m[38;2;249;38;114moptional[0m[38;2;248;248;242m|[0m[38;2;249;38;114mpeer> ...[0m[38;2;248;248;242m]][0m
+[38;2;248;248;242m[--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]][0m
 [38;2;248;248;242m[--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]][0m
-[38;2;248;248;242m[[0m[38;2;166;226;46m--strict-peer-deps[0m[38;2;248;248;242m] [[0m[38;2;249;38;114m--prefer-dedupe[0m[38;2;248;248;242m] [--no-package-lock] [--package-lock-only][0m
-[38;2;248;248;242m[[0m[38;2;166;226;46m--foreground-scripts[0m[38;2;248;248;242m] [[0m[38;2;249;38;114m--ignore-scripts[0m[38;2;248;248;242m] [--no-audit] [--no-bin-links][0m
-[38;2;248;248;242m[[0m[38;2;166;226;46m--no-fund[0m[38;2;248;248;242m] [[0m[38;2;249;38;114m--dry-run[0m[38;2;248;248;242m] [--cpu <cpu>] [--os <os>][0m
+[38;2;248;248;242m[--strict-peer-deps] [--prefer-dedupe] [--no-package-lock] [--package-lock-only][0m
+[38;2;248;248;242m[--foreground-scripts] [--ignore-scripts] [--no-audit] [--no-bin-links][0m
+[38;2;248;248;242m[--no-fund] [--dry-run] [--cpu <cpu>] [--os <os>][0m
 [38;2;248;248;242m[-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]][0m
 [38;2;248;248;242m[-ws|--workspaces] [--include-workspace-root] [--install-links][0m
 
