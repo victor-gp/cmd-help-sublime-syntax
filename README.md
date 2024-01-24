@@ -61,6 +61,8 @@ Make sure to give [CONTRIBUTING.md](./CONTRIBUTING.md) a cursory read to learn h
 
 If you want to hack on the project, look at [the Development doc](./docs/Development.md) to help get you started.
 
+If you like `cmd-help`, please [star it on GitHub](https://github.com/victor-gp/cmd-help-sublime-syntax) and spread the word. :)
+
 ## License
 
 MIT © Víctor González Prieto
