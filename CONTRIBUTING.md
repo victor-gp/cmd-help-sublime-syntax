@@ -1,15 +1,11 @@
-# CONTRIBUTING.md
+# Contributing
 
 Thank you for considering to contribute to `cmd-help`!
 
-Ways you can help:
+Here are some ways you can help:
 
-- [report](https://github.com/victor-gp/cmd-help-sublime-syntax/issues) a help message with a token that's not properly highlighted
-- fix one such instance
-  - [here's](./docs/Development.md#finding-pending-tasks) instructions on finding pending tasks
-- edit the docs (for clarity, to add missing bits, etc.)
-- improve support for contributions (issue templates, CI)
+- [report](https://github.com/victor-gp/cmd-help-sublime-syntax/issues/new?assignees=&labels=bug&projects=&template=bug.yml&title=%22PATTERN%22+in+%60COMMAND%60) a help message with a token that's not properly highlighted
+- [hack](./docs/Development.md) on the code and [make a Pull Request](https://github.com/victor-gp/cmd-help-sublime-syntax/pulls)
+- [explain](https://github.com/victor-gp/cmd-help-sublime-syntax/issues/new) how you use `bat` + `cmd-help`, what makes your setup original?
 
-If you want to hack on the code, take a look at the [Development doc](./docs/Development.md)!
-
-[We take Pull Requests on GitHub.](https://github.com/victor-gp/cmd-help-sublime-syntax/pulls)
+If you like `cmd-help`, please [star it on GitHub](https://github.com/victor-gp/cmd-help-sublime-syntax) and spread the word. :)
