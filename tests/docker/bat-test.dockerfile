@@ -5,7 +5,7 @@
 
 FROM curlimages/curl:latest AS fetch-pkg
 LABEL keep=false
-ARG BAT_VERSION=0.24.0
+ARG BAT_VERSION=0.25.0
 RUN curl -LJ \
     https://github.com/sharkdp/bat/releases/download/v$BAT_VERSION/bat_${BAT_VERSION}_amd64.deb \
     --output /tmp/bat.deb
