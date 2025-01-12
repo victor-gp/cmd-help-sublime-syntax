@@ -8,11 +8,11 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 echo -n "using docker image "
 docker build --quiet -f docker/bat-test.dockerfile -t bat-test ..
 
-vol1="$PWD"/source:/tests/source:ro
-vol2="$PWD"/theme:/tests/theme
+vol_src="$PWD"/source:/tests/source:ro
+vol_dest="$PWD"/theme:/tests/theme
 
 docker run --rm \
-    -v "$vol1" -v "$vol2" \
+    -v "$vol_src" -v "$vol_dest" \
     --entrypoint /tests/inner_theme_regression.sh \
     bat-test
 
