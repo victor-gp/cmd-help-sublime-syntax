@@ -2,6 +2,7 @@
 
 set -euo pipefail
 
+# change dir to tests/
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 echo -n "using docker image "
@@ -15,13 +16,14 @@ docker run --rm \
     --entrypoint /tests/inner_theme_regression.sh \
     bat-test
 
-# if $CI is unset
+# if we're running locally
 if [ -z ${CI+x} ]; then
-    # effective difference between HEAD/staging and working dir
+    # effective difference between staging/HEAD and working dir
     GIT_PAGER='LESS=R less' git diff -- theme/
 
-elif ! git diff --exit-code -- theme > /dev/null; then
+# when we're running on GitHub Actions
+elif ! git diff --exit-code -- theme/ > /dev/null; then
     echo "::error::Generated theme regression tests differ from those checked in." \
-        "Please run \`tests/theme_regression.sh\` and add \`tests/theme/\` to the commit."
+        "Please run \`tests/theme_regression.sh\` and add \`tests/theme/\` changes to the commit."
     exit 1
 fi
