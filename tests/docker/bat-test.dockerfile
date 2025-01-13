@@ -19,5 +19,5 @@ RUN dpkg --install /tmp/bat.deb
 ENV COLORTERM=truecolor
 COPY ./tests/docker/inner*.sh  /tests/
 COPY ./syntaxes/cmd-help.sublime-syntax  /root/.config/bat/syntaxes/
-RUN bat cache --build > /dev/null
+RUN bat cache --build --target=/.cache/bat > /dev/null
 ENTRYPOINT /tests/inner_highlight_regression.sh
