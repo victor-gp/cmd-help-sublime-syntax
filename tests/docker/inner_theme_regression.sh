@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+# call stack: this << bat-test.dockerfile << tests/theme_regression.sh
+
 set -euo pipefail
 
+# change dir to /tests/. src & dest volumes are mapped here.
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 cmd_prefix="bat --no-config -fpl cmd-help"
@@ -11,14 +14,13 @@ synthetic_src="source/theme/synthetic.txt"
 readarray -t themes <<< "$(bat --list-themes --color=never)"
 
 for theme_ in "${themes[@]}"; do
-    # strip " (default)" and " (default light)" from theme name, because bat doesn't recognize that
+    # strip " (default)" and " (default light)" from theme names, because bat doesn't recognize that
     theme="${theme_% \(default*\)}"
-
-    $cmd_prefix --theme="$theme" $brief_src > "theme/brief-${theme}.txt"
 
     synthetic_dest="theme/synthetic-${theme}.txt"
     synthetic_it_dest="theme/synthetic-${theme}-italics.txt"
 
+    $cmd_prefix --theme="$theme" $brief_src > "theme/brief-${theme}.txt"
     $cmd_prefix --theme="$theme" $synthetic_src > "$synthetic_dest"
     $cmd_prefix --theme="$theme" --italic-text=always $synthetic_src > "$synthetic_it_dest"
 

@@ -1,4 +1,4 @@
-# used in
+# dependents:
 #  tests/highlight_regression.sh
 #  tests/theme_regression.sh
 #  scripts/demo_themes.sh
