@@ -14,10 +14,12 @@ RUN curl -LJ \
     --output /tmp/bat.deb
 
 FROM debian:$DEBIAN_IMAGE_VERSION
+ENV COLORTERM=truecolor
+ENV BAT_CACHE_PATH=/bat/cache
+ENV BAT_CONFIG_DIR=/bat/config
 COPY --from=fetch-pkg  /tmp/bat.deb  /tmp
 RUN dpkg --install /tmp/bat.deb
-ENV COLORTERM=truecolor
 COPY ./tests/docker/inner*.sh  /tests/
-COPY ./syntaxes/cmd-help.sublime-syntax  /root/.config/bat/syntaxes/
-RUN bat cache --build --target=/.cache/bat > /dev/null
+COPY ./syntaxes/cmd-help.sublime-syntax  $BAT_CONFIG_DIR/syntaxes/
+RUN bat cache --build > /dev/null
 ENTRYPOINT /tests/inner_highlight_regression.sh
