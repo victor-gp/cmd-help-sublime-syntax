@@ -22,4 +22,4 @@ RUN dpkg --install /tmp/bat.deb
 COPY ./tests/docker/inner*.sh  /tests/
 COPY ./syntaxes/cmd-help.sublime-syntax  $BAT_CONFIG_DIR/syntaxes/
 RUN bat cache --build > /dev/null
-ENTRYPOINT /tests/inner_highlight_regression.sh
+ENTRYPOINT ["/tests/inner_highlight_regression.sh"]
