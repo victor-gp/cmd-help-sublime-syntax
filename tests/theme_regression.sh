@@ -12,6 +12,7 @@ vol_src="$PWD"/source:/tests/source:ro
 vol_dest="$PWD"/theme:/tests/theme
 
 docker run --rm \
+    --user "$(id -u):$(id -g)" \
     -v "$vol_src" -v "$vol_dest" \
     --entrypoint /tests/inner_theme_regression.sh \
     bat-test
