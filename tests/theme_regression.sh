@@ -5,8 +5,11 @@ set -euo pipefail
 # change dir to tests/
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
-echo -n "using docker image "
-docker build --quiet -f docker/bat-test.dockerfile -t bat-test ..
+echo "building docker image ..."
+docker build -f docker/bat-test.dockerfile -t bat-test .. &> /dev/null
+printf '\e[A\e[K' # clear previous line
+image_id=$(docker image inspect --format "{{.Id}}" bat-test)
+echo "using docker image $image_id"
 
 vol_src="$PWD"/source:/tests/source:ro
 vol_dest="$PWD"/theme:/tests/theme
