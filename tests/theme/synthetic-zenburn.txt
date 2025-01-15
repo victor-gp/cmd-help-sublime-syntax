@@ -1,4 +1,4 @@
-[1;38;2;204;148;149msynthetic[0m[38;2;222;222;222m - fake help message for testing theme support[0m
+[1;38;2;213;134;132msynthetic[0m[38;2;222;222;222m - fake help message for testing theme support[0m
 
 [38;2;222;222;222mMost of these lines come from actual help messages in tests/source/.[0m
 
@@ -69,7 +69,7 @@
 [38;2;222;222;222m  [0m[38;2;255;253;135m--display[0m[38;2;222;222;222m [0m[38;2;254;214;175mdisplayname[0m
 [38;2;222;222;222m  [0m[38;2;255;253;135m-t[0m[38;2;222;222;222m [0m[38;2;254;214;175mms[0m[38;2;222;222;222m, [0m[38;2;255;253;135m--selectionTimeout[0m[38;2;222;222;222m [0m[38;2;254;214;175mms[0m
 [38;2;222;222;222m      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files[0m
-[38;2;222;222;222m   [0m[1;38;2;204;148;149m--[0m[38;2;222;222;222m			Only file names after this[0m
+[38;2;222;222;222m   [0m[1;38;2;213;134;132m--[0m[38;2;222;222;222m			Only file names after this[0m
 
 
 [38;2;222;222;222m## ARGUMENT PATTERNS:[0m
@@ -83,27 +83,27 @@
 
 [38;2;222;222;222m## OTHER PATTERNS:[0m
 
-[38;2;222;222;222m   [0m[1;38;2;204;148;149mcommit[0m[38;2;222;222;222m            Record changes to the repository[0m
-[38;2;222;222;222m    [0m[1;38;2;204;148;149mcache[0m[38;2;222;222;222m    Modify the syntax-definition and theme cache[0m
-[38;2;222;222;222m    [0m[1;38;2;204;148;149mbuild[0m[38;2;222;222;222m, [0m[1;38;2;204;148;149mb[0m[38;2;222;222;222m    Compile the current package[0m
-[38;2;222;222;222m  [0m[1;38;2;204;148;149mlist[0m[38;2;222;222;222m - list packages based on package names[0m
-[38;2;222;222;222m  [0m[1;38;2;204;148;149mfull-upgrade[0m[38;2;222;222;222m - upgrade the system by removing/installing/upgrading packages[0m
-[38;2;222;222;222m  [0m[1;38;2;204;148;149mfdatasync[0m[38;2;222;222;222m  physically write output file data before finishing[0m
-[38;2;222;222;222m  [0m[1;38;2;204;148;149mcompose*[0m[38;2;222;222;222m    Docker Compose (Docker Inc., v2.2.3)[0m
-[38;2;222;222;222m  [0m[1;38;2;204;148;149mdid_you_mean[0m[38;2;222;222;222m    did_you_mean (default: enabled)[0m
-[38;2;222;222;222m  [0m[1;38;2;204;148;149mfrozen-string-literal[0m
-[1;38;2;204;148;149mfile[0m[38;2;222;222;222m   : program read from script file[0m
+[38;2;222;222;222m   [0m[1;38;2;213;134;132mcommit[0m[38;2;222;222;222m            Record changes to the repository[0m
+[38;2;222;222;222m    [0m[1;38;2;213;134;132mcache[0m[38;2;222;222;222m    Modify the syntax-definition and theme cache[0m
+[38;2;222;222;222m    [0m[1;38;2;213;134;132mbuild[0m[38;2;222;222;222m, [0m[1;38;2;213;134;132mb[0m[38;2;222;222;222m    Compile the current package[0m
+[38;2;222;222;222m  [0m[1;38;2;213;134;132mlist[0m[38;2;222;222;222m - list packages based on package names[0m
+[38;2;222;222;222m  [0m[1;38;2;213;134;132mfull-upgrade[0m[38;2;222;222;222m - upgrade the system by removing/installing/upgrading packages[0m
+[38;2;222;222;222m  [0m[1;38;2;213;134;132mfdatasync[0m[38;2;222;222;222m  physically write output file data before finishing[0m
+[38;2;222;222;222m  [0m[1;38;2;213;134;132mcompose*[0m[38;2;222;222;222m    Docker Compose (Docker Inc., v2.2.3)[0m
+[38;2;222;222;222m  [0m[1;38;2;213;134;132mdid_you_mean[0m[38;2;222;222;222m    did_you_mean (default: enabled)[0m
+[38;2;222;222;222m  [0m[1;38;2;213;134;132mfrozen-string-literal[0m
+[1;38;2;213;134;132mfile[0m[38;2;222;222;222m   : program read from script file[0m
 
 [38;2;254;214;175mFILE[0m[38;2;222;222;222m                    visit FILE[0m
 [38;2;254;214;175mPYTHONSTARTUP[0m[38;2;222;222;222m: file executed on interactive startup (no default)[0m
 [38;2;222;222;222m  [0m[38;2;254;214;175mJAVA_OPTS[0m[38;2;222;222;222m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
 [38;2;222;222;222m  [0m[38;2;254;214;175m'warn'[0m[38;2;222;222;222m         diagnose errors writing to any output[0m
 
-[38;2;222;222;222m  [0m[1;38;2;204;148;149m.jvmopts[0m[38;2;222;222;222m            if this file exists in the current directory, its contents[0m
-[38;2;222;222;222m  [0m[1;38;2;204;148;149m/etc/sbt/sbtopts[0m[38;2;222;222;222m    if this file exists, it is prepended to the runner args[0m
-[1;38;2;204;148;149mpath/.to/file[0m
-[1;38;2;204;148;149m~/.config/bat[0m
-[1;38;2;204;148;149m~/.config/bat/[0m
+[38;2;222;222;222m  [0m[1;38;2;213;134;132m.jvmopts[0m[38;2;222;222;222m            if this file exists in the current directory, its contents[0m
+[38;2;222;222;222m  [0m[1;38;2;213;134;132m/etc/sbt/sbtopts[0m[38;2;222;222;222m    if this file exists, it is prepended to the runner args[0m
+[1;38;2;213;134;132mpath/.to/file[0m
+[1;38;2;213;134;132m~/.config/bat[0m
+[1;38;2;213;134;132m~/.config/bat/[0m
 
 [38;2;222;222;222m   [0m[38;2;255;253;135m+[0m[38;2;222;222;222m			Start at end of file[0m
 [38;2;222;222;222m   [0m[38;2;255;253;135m+[0m[38;2;254;214;175m<lnum>[0m[38;2;222;222;222m		Start at line <lnum>[0m

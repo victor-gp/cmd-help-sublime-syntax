@@ -3,15 +3,18 @@
 #  tests/theme_regression.sh
 #  scripts/demo_themes.sh
 
+ARG BAT_VERSION=0.25.0
+ARG DEBIAN_IMAGE_VERSION=bookworm-slim
+
 FROM curlimages/curl:latest AS fetch-pkg
 LABEL keep=false
-ARG BAT_VERSION=0.24.0
+ARG BAT_VERSION
 RUN curl -LJ \
     https://github.com/sharkdp/bat/releases/download/v$BAT_VERSION/bat_${BAT_VERSION}_amd64.deb \
     --output /tmp/bat.deb
 
-#fixme: run this without root
-FROM debian:bullseye-slim
+#todo: run this without root
+FROM debian:$DEBIAN_IMAGE_VERSION
 COPY --from=fetch-pkg  /tmp/bat.deb  /tmp
 RUN dpkg --install /tmp/bat.deb
 ENV COLORTERM=truecolor

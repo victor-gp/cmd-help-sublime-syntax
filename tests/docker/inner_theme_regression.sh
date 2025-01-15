@@ -10,7 +10,10 @@ synthetic_src="source/theme/synthetic.txt"
 
 readarray -t themes <<< "$(bat --list-themes --color=never)"
 
-for theme in "${themes[@]}"; do
+for theme_ in "${themes[@]}"; do
+    # strip " (default)" and " (default light)" from theme name, because bat doesn't recognize that
+    theme="${theme_% \(default*\)}"
+
     $cmd_prefix --theme="$theme" $brief_src > "theme/brief-${theme}.txt"
 
     synthetic_dest="theme/synthetic-${theme}.txt"
