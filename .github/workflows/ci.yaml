@@ -28,7 +28,7 @@ jobs:
         # though the cache is evicted after 7 days
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: ./tests/docker
           file: ./tests/docker/syntest.dockerfile
           tags: syntest
           cache-from: type=gha,scope=main

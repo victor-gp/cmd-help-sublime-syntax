@@ -3,7 +3,7 @@
 import argparse
 import subprocess
 from pathlib import Path
-from os import chdir
+from os import chdir, environ
 
 ### config
 
@@ -51,12 +51,14 @@ source_path = Path(__file__).resolve()
 source_dir = source_path.parent # tests/
 chdir(source_dir)
 
-info("Building syntest Docker image ...")
-build_command = f"docker build --quiet --tag {image_tag} - < {dockerfile_path}"
-build_return = subprocess.call(build_command, shell=True)
-if build_return != 0:
-    error(f"Docker image build failed (exit code {build_return}), fix that and try again.")
-    exit(1)
+# in CI, syntest is built in a previous step but we can't reuse its Docker cache
+if not environ.get('CI'):
+    info("Building syntest Docker image ...")
+    build_command = f"docker build --quiet --tag {image_tag} - < {dockerfile_path}"
+    build_return = subprocess.call(build_command, shell=True)
+    if build_return != 0:
+        error(f"Docker image build failed (exit code {build_return}), fix that and try again.")
+        exit(1)
 
 ### arrange arguments
 
