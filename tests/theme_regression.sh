@@ -2,26 +2,32 @@
 
 set -euo pipefail
 
+# change dir to tests/
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
-echo -n "using docker image "
-docker build --quiet -f docker/bat-test.dockerfile -t bat-test ..
+echo "building docker image ..."
+docker build -f docker/bat-test.dockerfile -t bat-test .. &> /dev/null
+printf '\e[A\e[K' # clear previous line
+image_id=$(docker image inspect --format "{{.Id}}" bat-test)
+echo "using docker image $image_id"
 
-vol1="$PWD"/source:/tests/source:ro
-vol2="$PWD"/theme:/tests/theme
+vol_src="$PWD"/source:/tests/source:ro
+vol_dest="$PWD"/theme:/tests/theme
 
 docker run --rm \
-    -v "$vol1" -v "$vol2" \
+    --user "$(id -u):$(id -g)" \
+    -v "$vol_src" -v "$vol_dest" \
     --entrypoint /tests/inner_theme_regression.sh \
     bat-test
 
-# if $CI is unset
+# if we're running locally
 if [ -z ${CI+x} ]; then
-    # effective difference between HEAD/staging and working dir
+    # effective difference between staging/HEAD and working dir
     GIT_PAGER='LESS=R less' git diff -- theme/
 
-elif ! git diff --exit-code -- theme > /dev/null; then
+# when we're running on GitHub Actions
+elif ! git diff --exit-code -- theme/ > /dev/null; then
     echo "::error::Generated theme regression tests differ from those checked in." \
-        "Please run \`tests/theme_regression.sh\` and add \`tests/theme/\` to the commit."
+        "Please run \`tests/theme_regression.sh\` and add \`tests/theme/\` changes to the commit."
     exit 1
 fi
