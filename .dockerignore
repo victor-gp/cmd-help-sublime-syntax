@@ -1,4 +1,6 @@
-# only used for tests/docker/bat-test.dockerfile
+# for tests/docker/bat-test.dockerfile,
+# not tests/docker/syntest.dockerfile
 *
 !/syntaxes/
+/syntaxes/vendor/
 !/tests/docker/inner*.sh

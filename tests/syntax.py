@@ -4,7 +4,6 @@ import argparse
 import subprocess
 from pathlib import Path
 from os import chdir
-import urllib.request
 
 ### config
 
@@ -58,14 +57,6 @@ build_return = subprocess.call(build_command, shell=True)
 if build_return != 0:
     error(f"Docker image build failed (exit code {build_return}), fix that and try again.")
     exit(1)
-
-man_syntax_path = Path('../syntaxes/Manpage.sublime-syntax')
-if not man_syntax_path.is_file():
-    info("Manpage syntax is missing, downloading it...")
-    man_syntax = urllib.request.urlretrieve(
-        'https://raw.githubusercontent.com/sharkdp/bat/master/assets/syntaxes/02_Extra/Manpage.sublime-syntax',
-        '../syntaxes/Manpage.sublime-syntax'
-    )
 
 ### arrange arguments
 
