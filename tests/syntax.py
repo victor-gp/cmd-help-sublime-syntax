@@ -24,8 +24,8 @@ parser.add_argument(
     help='path to a particular syntax test in tests/syntax/, \
           relative from the root directory of the project'
 )
-parser.add_argument('-d', '--debug', action='store_true')
-parser.add_argument('-s', '--summary', action='store_true')
+parser.add_argument('-d', '--debug', action='store_true', help="like syntest's --debug")
+parser.add_argument('-s', '--summary', action='store_true', help="like syntest's --summary")
 
 script_args = parser.parse_args()
 
@@ -77,18 +77,16 @@ if script_args.summary:
 
 ### run
 
-completed_process = subprocess.run(
-    f"docker run --rm {volumes} {image_tag} {args}",
-    shell=True,
-    capture_output=True,
-    text=True,
-)
-output = completed_process.stdout
+info("Running syntax tests ...")
+syntest_command = f"docker run --rm {volumes} {image_tag} {args}"
+syntest_process = subprocess.run(syntest_command, shell=True, capture_output=True, text=True)
+syntest_output = syntest_process.stdout
 
 ### process output
 
 noise_line = "The test file references syntax definition file: cmd-help.sublime-syntax"
-signal_lines = [line for line in output.splitlines() if line != noise_line]
+signal_lines = [line for line in syntest_output.splitlines() if line != noise_line]
+signal_lines = signal_lines[1:] # drop "loading syntax definitions from /syntaxes"
 
 last_line = signal_lines[-1]
 success = last_line == "exiting with code 0"
