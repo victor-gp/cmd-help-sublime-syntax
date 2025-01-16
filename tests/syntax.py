@@ -52,23 +52,12 @@ source_path = Path(__file__).resolve()
 source_dir = source_path.parent # tests/
 chdir(source_dir)
 
-ret = subprocess.call(
-    f"docker inspect {image_tag}",
-    shell=True,
-    stdout=subprocess.DEVNULL,
-    stderr=subprocess.DEVNULL
-)
-if ret != 0: # image doesn't exist
-    info("Docker image not available, building syntest from source...")
-    ret2 = subprocess.call(
-        f"docker build -t {image_tag} - < {dockerfile_path}",
-        shell=True
-    )
-    if ret2 == 0:
-        info(f"Docker image successfully built, tagged '{image_tag}'.")
-    else:
-        error(f"Docker image build failed, fix that and try again.")
-        exit(1)
+info("Building syntest Docker image ...")
+build_command = f"docker build --quiet --tag {image_tag} - < {dockerfile_path}"
+build_return = subprocess.call(build_command, shell=True)
+if build_return != 0:
+    error(f"Docker image build failed (exit code {build_return}), fix that and try again.")
+    exit(1)
 
 man_syntax_path = Path('../syntaxes/Manpage.sublime-syntax')
 if not man_syntax_path.is_file():
