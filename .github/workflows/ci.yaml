@@ -57,7 +57,7 @@ jobs:
         run: tests/theme_regression.sh
 
   bat_ci_compliance:
-    name: Bat CI Compliance
+    name: bat CI compliance
     continue-on-error: true
     runs-on: ubuntu-latest
     timeout-minutes: 10
