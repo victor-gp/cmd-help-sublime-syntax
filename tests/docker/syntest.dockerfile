@@ -7,8 +7,7 @@ ARG DEBIAN_IMAGE_VERSION=bookworm-slim
 FROM rust:$RUST_IMAGE_VERSION AS build
 LABEL keep=false
 ARG SYNTECT_VERSION
-RUN git clone --depth=1 --branch=v${SYNTECT_VERSION} \
-    https://github.com/trishume/syntect.git \
+ADD https://github.com/trishume/syntect.git#v${SYNTECT_VERSION} \
     /usr/src/syntect
 WORKDIR /usr/src/syntect
 RUN cargo build --release --example syntest
