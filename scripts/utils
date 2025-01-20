@@ -3,7 +3,11 @@
 
 # regression tests diff
 function reg {
-    GIT_PAGER="LESS=R less" git diff "$@" -- tests/{highlighted,theme}
+    if [[ "$*" != *"--"* ]]; then
+        GIT_PAGER="LESS=R less" git diff "$@" -- tests/{highlighted,theme}
+    else
+        GIT_PAGER="LESS=R less" git diff "$@"
+    fi
 }
 
 # to exclude e.g. THEME-italics, do:
@@ -19,7 +23,11 @@ function regm {
 
 # regression tests show
 function regshow {
-    GIT_PAGER="LESS=R less" git show "$@" -- tests/{highlighted,theme}
+    if [[ "$*" != *"--"* ]]; then
+        GIT_PAGER="LESS=R less" git show "$@" -- tests/{highlighted,theme}
+    else
+        GIT_PAGER="LESS=R less" git show "$@"
+    fi
 }
 
 alias git0='GIT_CONFIG=/dev/null git'
