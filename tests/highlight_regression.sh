@@ -30,4 +30,7 @@ elif ! git diff --exit-code -- highlighted/ > /dev/null; then
     echo "::error::Generated highlight regression tests differ from those checked in." \
         "Please run \`tests/highlight_regression.sh\` and add \`tests/highlighted/\` changes to the commit."
     exit 1
+
+else
+    echo "ok: highlight regression tests are consistent with the syntax"
 fi

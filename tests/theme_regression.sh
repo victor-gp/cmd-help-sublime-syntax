@@ -30,4 +30,7 @@ elif ! git diff --exit-code -- theme/ > /dev/null; then
     echo "::error::Generated theme regression tests differ from those checked in." \
         "Please run \`tests/theme_regression.sh\` and add \`tests/theme/\` changes to the commit."
     exit 1
+
+else
+    echo "ok: theme regression tests are consistent with the syntax"
 fi
