@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug in the syntax.
+description: Report a bug in the syntax
 title: '"PATTERN" in `COMMAND`'
 labels: ["bug"]
 body:

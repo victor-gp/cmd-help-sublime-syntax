@@ -1,6 +1,6 @@
 ---
 name: Installation Issue
-about: The syntax doesn't work after you tried the installation steps.
+about: The syntax doesn't work after you tried the installation steps
 title: ''
 labels: installation
 assignees: ''
