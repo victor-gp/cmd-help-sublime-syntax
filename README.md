@@ -8,50 +8,23 @@ It provides just enough color to help find your way around a help message.
 
 [See examples from other help messages.](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/examples)
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Configuration](#configuration)
-  * [Streamline it](#streamline-it)
-  * [`bat` theme support](#bat-theme-support)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Installation
 
 This syntax is included with `bat` since version 0.21.0.
 
-If you have an older version of `bat` or you want the latest version of `cmd-help`, you can [add it as a new syntax](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions). You should copy [this file](./syntaxes/cmd-help.sublime-syntax).
+If you have an earlier version of `bat` or you want the latest version of `cmd-help`, you can [add it as a new syntax](https://github.com/sharkdp/bat#adding-new-syntaxes--language-definitions). You have to copy [this file](./syntaxes/cmd-help.sublime-syntax).
 
 To check that everything works, run `git --help | bat -plhelp`
 
 ## Configuration
 
-### Streamline it
+You can find various configuration tips [in the wiki](https://github.com/victor-gp/cmd-help-sublime-syntax/wiki/Configuration-tips). Some of the topics it covers include:
 
-You may want to put an alias plus a function around this in your `.bashrc`/`.zshrc`/`.*rc`:
+- Setting a `bathelp` alias to avoid typing the full `bat` command with options each time (basic configuration).
+- Adding a `help` function you can use like `$ help <CMD>`, or even `$ help <CMD> <SUBCMD>`.
+- Enhancing `--help` so you can simply type `$ <CMD> --help` as usual.
 
-```sh
-alias bathelp='bat --plain --language=cmd-help'
-help() (
-    set -o pipefail
-    "$@" --help 2>&1 | bathelp
-)
-```
-
-Then you can do `help git`. Or `help git commit`.
-
-Depending on the command, `help()` will even handle alternative help options, e.g.: `help bat -h`.
-
-If `help()` doesn't work with a command's alternative help option, you can still do `CMD --help-option | bathelp`.
-
-### `bat` theme support
-
-The syntax works nicely with most `bat` themes. You can find examples of working themes [here](https://github.com/victor-gp/cmd-help-sublime-syntax/tree/demo/examples/theme).
-
-To use a different theme, just append `--theme='<THEME_NAME>'` to your `bat` commands. More info [here](https://github.com/sharkdp/bat#highlighting-theme).
-
-You may also want to experiment with setting `--italic-text=always`. A few themes use italics on some elements, including Monokai.
+`cmd-help` is compatible with most `bat` themes (\~2/3rds). To get the best experience, ensure your configured theme is supported. You can find the full list of compatible themes [here](https://github.com/victor-gp/cmd-help-sublime-syntax/wiki/Bat-theme-support).
 
 ## Contributing
 
