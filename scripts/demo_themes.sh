@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+dest_dir=examples/theme
+
 # change dir to scripts/
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
@@ -12,7 +14,8 @@ image_id=$(docker image inspect --format "{{.Id}}" bat-test)
 echo "using docker image $image_id"
 
 vol_src="$PWD"/../tests/source/:/tests/source:ro
-vol_dest="$PWD"/../examples/themes/txt/:/tests/destination
+vol_dest="$PWD"/../$dest_dir/:/tests/destination
+mkdir -p ../$dest_dir
 
 docker run --rm \
     --user "$(id -u):$(id -g)" \
