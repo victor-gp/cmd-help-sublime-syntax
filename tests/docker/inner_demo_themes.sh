@@ -1,15 +1,21 @@
 #!/usr/bin/env bash
 
+# call stack: this << bat-test.dockerfile << scripts/demo_themes.sh
+
 set -euo pipefail
 
-cd "$(dirname "${BASH_SOURCE[0]}")" # /tests
+# change dir to /tests/ because src & dest volumes are mapped here.
+cd "$(dirname "${BASH_SOURCE[0]}")"
 
 cmd_prefix="bat --no-config -fpl cmd-help"
 src='source/theme/demo.txt'
 
 readarray -t themes <<< "$(bat --list-themes --color=never)"
 
-for theme in "${themes[@]}"; do
+for theme_ in "${themes[@]}"; do
+    # strip " (default)" and " (default light)" from theme names, because bat doesn't recognize that. sharkdp/bat#3188
+    theme="${theme_% \(default*\)}"
+
     dest="destination/${theme}.txt"
     dest_it="${dest/.txt/-italics.txt}"
 

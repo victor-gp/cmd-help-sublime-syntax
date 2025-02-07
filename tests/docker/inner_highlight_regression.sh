@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-# change dir to /tests/. src & dest volumes are mapped here.
+# change dir to /tests/ because src & dest volumes are mapped here.
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 for source_path in source/* ; do

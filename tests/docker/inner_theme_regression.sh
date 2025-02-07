@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-# change dir to /tests/. src & dest volumes are mapped here.
+# change dir to /tests/ because src & dest volumes are mapped here.
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 cmd_prefix="bat --no-config -fpl cmd-help"
@@ -14,7 +14,7 @@ synthetic_src="source/theme/synthetic.txt"
 readarray -t themes <<< "$(bat --list-themes --color=never)"
 
 for theme_ in "${themes[@]}"; do
-    # strip " (default)" and " (default light)" from theme names, because bat doesn't recognize that
+    # strip " (default)" and " (default light)" from theme names, because bat doesn't recognize that. sharkdp/bat#3188
     theme="${theme_% \(default*\)}"
 
     synthetic_dest="theme/synthetic-${theme}.txt"
