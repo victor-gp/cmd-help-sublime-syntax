@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# usage:
+# - execute this to get the bat-highlighted txt files for each theme (w/o italics)
+# - then go over each file and take screenshots. I dunno how to automate this. *sobs*
+
 set -euo pipefail
 
 dest_dir=examples/theme
