@@ -10,5 +10,5 @@
 bat_options=(--no-config --plain --language=cmd-help --force-colorization)
 
 cat |
-    docker run --interactive --entrypoint=bat bat-test "${bat_options[@]}" |
+    docker run --rm --interactive --entrypoint=bat bat-test "${bat_options[@]}" |
     less -R
