@@ -46,3 +46,5 @@ function demo_it {
 }
 
 alias mksyn='scripts/make_syntax_test.sh'
+
+alias try='scripts/try_input.sh'
