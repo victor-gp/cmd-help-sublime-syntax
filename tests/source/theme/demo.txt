@@ -1,5 +1,5 @@
 rat 0.1.0
-A rad cat(1). Or a silly help message to demo theme support.
+A cat(1) clone with gnawing teeth. Or a silly help message to demo theme support.
 
 Usage: rat [OPTIONS] [FILE]...
        rat <SUBCOMMAND>
