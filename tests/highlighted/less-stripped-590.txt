@@ -1,0 +1,258 @@
+
+[38;2;248;248;242m                   SUMMARY OF LESS COMMANDS[0m
+
+[38;2;248;248;242m      Commands marked with * may be preceded by a number, N.[0m
+[38;2;248;248;242m      Notes in parentheses indicate the behavior if N is given.[0m
+[38;2;248;248;242m      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.[0m
+
+[38;2;248;248;242m  [0m[38;2;190;132;255mh[0m[38;2;248;248;242m  H                 Display this help.[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mq[0m[38;2;248;248;242m  :q  Q  :Q  ZZ     Exit.[0m
+[38;2;248;248;242m ---------------------------------------------------------------------------[0m
+
+[38;2;248;248;242m                           MOVING[0m
+
+[38;2;248;248;242m  [0m[38;2;190;132;255me[0m[38;2;248;248;242m  ^E  j  ^N  CR  *  Forward  one line   (or N lines).[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255my[0m[38;2;248;248;242m  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mf[0m[38;2;248;248;242m  ^F  ^V  SPACE  *  Forward  one window (or N lines).[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mb[0m[38;2;248;248;242m  ^B  ESC-v      *  Backward one window (or N lines).[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mz[0m[38;2;248;248;242m                 *  Forward  one window (and set window to N).[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mw[0m[38;2;248;248;242m                 *  Backward one window (and set window to N).[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mESC-SPACE[0m[38;2;248;248;242m         *  Forward  one window, but don't stop at end-of-file.[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255md[0m[38;2;248;248;242m  ^D             *  Forward  one half-window (and set half-window to N).[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mu[0m[38;2;248;248;242m  ^U             *  Backward one half-window (and set half-window to N).[0m
+[38;2;248;248;242m  ESC-)  RightArrow *  Right one half screen width (or N positions).[0m
+[38;2;248;248;242m  ESC-(  LeftArrow  *  Left  one half screen width (or N positions).[0m
+[38;2;248;248;242m  ESC-}  ^RightArrow   Right to last column displayed.[0m
+[38;2;248;248;242m  ESC-{  ^LeftArrow    Left  to first column.[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mF[0m[38;2;248;248;242m                    Forward forever; like "tail -f".[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mESC-F[0m[38;2;248;248;242m                Like F but stop when search pattern is found.[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mr[0m[38;2;248;248;242m  ^R  ^L            Repaint screen.[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mR[0m[38;2;248;248;242m                    Repaint screen, discarding buffered input.[0m
+[38;2;248;248;242m        ---------------------------------------------------[0m
+[38;2;248;248;242m        Default "window" is the screen height.[0m
+[38;2;248;248;242m        Default "half-window" is half of the screen height.[0m
+[38;2;248;248;242m ---------------------------------------------------------------------------[0m
+
+[38;2;248;248;242m                          SEARCHING[0m
+
+[38;2;248;248;242m  [0m[38;2;102;217;239m/pattern[0m[38;2;248;248;242m          *  Search forward for (N-th) matching line.[0m
+[38;2;248;248;242m  ?pattern          *  Search backward for (N-th) matching line.[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mn[0m[38;2;248;248;242m                 *  Repeat previous search (for N-th occurrence).[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mN[0m[38;2;248;248;242m                 *  Repeat previous search in reverse direction.[0m
+[38;2;248;248;242m  ESC-n             *  Repeat previous search, spanning files.[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mESC-N[0m[38;2;248;248;242m             *  Repeat previous search, reverse dir. & spanning files.[0m
+[38;2;248;248;242m  ESC-u                Undo (toggle) search highlighting.[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mESC-U[0m[38;2;248;248;242m                Clear search highlighting.[0m
+[38;2;248;248;242m  &pattern          *  Display only matching lines.[0m
+[38;2;248;248;242m        ---------------------------------------------------[0m
+[38;2;248;248;242m        A search pattern may begin with one or more of:[0m
+[38;2;248;248;242m        ^N or !  Search for NON-matching lines.[0m
+[38;2;248;248;242m        ^E or *  Search multiple files (pass thru END OF FILE).[0m
+[38;2;248;248;242m        ^F or @  Start search at FIRST file (for /) or last file (for ?).[0m
+[38;2;248;248;242m        ^K       Highlight matches, but don't move (KEEP position).[0m
+[38;2;248;248;242m        ^R       Don't use REGULAR EXPRESSIONS.[0m
+[38;2;248;248;242m        ^W       WRAP search if no match found.[0m
+[38;2;248;248;242m ---------------------------------------------------------------------------[0m
+
+[38;2;248;248;242m                           JUMPING[0m
+
+[38;2;248;248;242m  [0m[38;2;190;132;255mg[0m[38;2;248;248;242m  <  ESC-<       *  Go to first line in file (or line N).[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mG[0m[38;2;248;248;242m  >  ESC->       *  Go to last line in file (or line N).[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mp[0m[38;2;248;248;242m  %              *  Go to beginning of file (or N percent into file).[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mt[0m[38;2;248;248;242m                 *  Go to the (N-th) next tag.[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mT[0m[38;2;248;248;242m                 *  Go to the (N-th) previous tag.[0m
+[38;2;248;248;242m  {[0m[38;2;249;38;114m  (  [           *  Find close bracket [0m[38;2;248;248;242m} ) ].[0m
+[38;2;248;248;242m  }  )  ]           *  Find open bracket { ( [.[0m
+[38;2;248;248;242m  ESC-^F <c1> <c2>  *  Find close bracket <c2>.[0m
+[38;2;248;248;242m  ESC-^B <c1> <c2>  *  Find open bracket <c1>.[0m
+[38;2;248;248;242m        ---------------------------------------------------[0m
+[38;2;248;248;242m        Each "find close bracket" command goes forward to the close bracket [0m
+[38;2;248;248;242m          matching the (N-th) open bracket in the top line.[0m
+[38;2;248;248;242m        Each "find open bracket" command goes backward to the open bracket [0m
+[38;2;248;248;242m          matching the (N-th) close bracket in the bottom line.[0m
+
+[38;2;248;248;242m  [0m[38;2;190;132;255mm[0m[38;2;248;248;242m<letter>            Mark the current top line with <letter>.[0m
+[38;2;248;248;242m  M<letter>            Mark the current bottom line with <letter>.[0m
+[38;2;248;248;242m  '<letter>            Go to a previously marked position.[0m
+[38;2;248;248;242m  ''                   Go to the previous position.[0m
+[38;2;248;248;242m  ^X^X                 Same as '.[0m
+[38;2;248;248;242m  ESC-M<letter>        Clear a mark.[0m
+[38;2;248;248;242m        ---------------------------------------------------[0m
+[38;2;248;248;242m        A mark is any upper-case or lower-case letter.[0m
+[38;2;248;248;242m        Certain marks are predefined:[0m
+[38;2;248;248;242m             ^  means  beginning of the file[0m
+[38;2;248;248;242m             $  means  end of the file[0m
+[38;2;248;248;242m ---------------------------------------------------------------------------[0m
+
+[38;2;248;248;242m                        CHANGING FILES[0m
+
+[38;2;248;248;242m  :e [file]            Examine a new file.[0m
+[38;2;248;248;242m  ^X^V                 Same as :e.[0m
+[38;2;248;248;242m  :n                *  Examine the (N-th) next file from the command line.[0m
+[38;2;248;248;242m  :p                *  Examine the (N-th) previous file from the command line.[0m
+[38;2;248;248;242m  :x                *  Examine the first (or N-th) file from the command line.[0m
+[38;2;248;248;242m  :d                   Delete the current file from the command line list.[0m
+[38;2;248;248;242m  =  ^G  :f            Print current file name.[0m
+[38;2;248;248;242m ---------------------------------------------------------------------------[0m
+
+[38;2;248;248;242m                    MISCELLANEOUS COMMANDS[0m
+
+[38;2;248;248;242m  -<flag>              Toggle a command line option [see OPTIONS below].[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--[0m[38;2;249;38;114m<name>[0m[38;2;248;248;242m             Toggle a command line option, by name.[0m
+[38;2;248;248;242m  _<flag>              Display the setting of a command line option.[0m
+[38;2;248;248;242m  __<name>             Display the setting of an option, by name.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m+[0m[38;2;166;226;46mcmd[0m[38;2;248;248;242m                 Execute the less cmd each time a new file is examined.[0m
+
+[38;2;248;248;242m  !command             Execute the shell command with $SHELL.[0m
+[38;2;248;248;242m  |Xcommand            Pipe file between current pos & mark X to shell command.[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255ms[0m[38;2;248;248;242m file               Save input to a file.[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255mv[0m[38;2;248;248;242m                    Edit the current file with $VISUAL or $EDITOR.[0m
+[38;2;248;248;242m  [0m[38;2;249;38;114mV[0m[38;2;248;248;242m                    Print version number of "less".[0m
+[38;2;248;248;242m ---------------------------------------------------------------------------[0m
+
+[38;2;248;248;242m                           OPTIONS[0m
+
+[38;2;248;248;242m        Most options may be changed either on the command line,[0m
+[38;2;248;248;242m        or from within less by using the - or -- command.[0m
+[38;2;248;248;242m        Options may be given in one of two forms: either a single[0m
+[38;2;248;248;242m        character preceded by a -, or a name preceded by --.[0m
+
+[38;2;248;248;242m  [0m[38;2;166;226;46m-?[0m[38;2;248;248;242m  ........  --help[0m
+[38;2;248;248;242m                  Display help (from command line).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m  ........  --search-skip-screen[0m
+[38;2;248;248;242m                  Search skips current screen.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m  ........  --SEARCH-SKIP-SCREEN[0m
+[38;2;248;248;242m                  Search starts just after target line.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m [[0m[38;2;249;38;114mN[0m[38;2;248;248;242m]  ....  --buffers=[N][0m
+[38;2;248;248;242m                  Number of buffers.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m  ........  --auto-buffers[0m
+[38;2;248;248;242m                  Don't automatically allocate buffers for pipes.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-c[0m[38;2;248;248;242m  ........  --clear-screen[0m
+[38;2;248;248;242m                  Repaint by clearing rather than scrolling.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m  ........  --dumb[0m
+[38;2;248;248;242m                  Dumb terminal.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m [0m[38;2;249;38;114mxcolor[0m[38;2;248;248;242m  .  --color=xcolor[0m
+[38;2;248;248;242m                  Set screen colors.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-e[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-E[0m[38;2;248;248;242m  ....  --quit-at-eof  --QUIT-AT-EOF[0m
+[38;2;248;248;242m                  Quit at end of file.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m  ........  --force[0m
+[38;2;248;248;242m                  Force open non-regular files.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m  ........  --quit-if-one-screen[0m
+[38;2;248;248;242m                  Quit if entire file fits on first screen.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m  ........  --hilite-search[0m
+[38;2;248;248;242m                  Highlight only last match for searches.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m  ........  --HILITE-SEARCH[0m
+[38;2;248;248;242m                  Don't highlight any matches for searches.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m [[0m[38;2;249;38;114mN[0m[38;2;248;248;242m]  ....  --max-back-scroll=[N][0m
+[38;2;248;248;242m                  Backward scroll limit.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m  ........  --ignore-case[0m
+[38;2;248;248;242m                  Ignore case in searches that do not contain uppercase.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m  ........  --IGNORE-CASE[0m
+[38;2;248;248;242m                  Ignore case in all searches.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-j[0m[38;2;248;248;242m [[0m[38;2;249;38;114mN[0m[38;2;248;248;242m]  ....  --jump-target=[N][0m
+[38;2;248;248;242m                  Screen position of target lines.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-J[0m[38;2;248;248;242m  ........  --status-column[0m
+[38;2;248;248;242m                  Display a status column at left edge of screen.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-k[0m[38;2;248;248;242m [[0m[38;2;249;38;114mfile[0m[38;2;248;248;242m]  .  --lesskey-file=[file][0m
+[38;2;248;248;242m                  Use a lesskey file.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-K[0m[38;2;248;248;242m  ........  --quit-on-intr[0m
+[38;2;248;248;242m                  Exit less in response to ctrl-C.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m  ........  --no-lessopen[0m
+[38;2;248;248;242m                  Ignore the LESSOPEN environment variable.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m  ....  --long-prompt  --LONG-PROMPT[0m
+[38;2;248;248;242m                  Set prompt style.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-N[0m[38;2;248;248;242m  ....  --line-numbers  --LINE-NUMBERS[0m
+[38;2;248;248;242m                  Don't use line numbers.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m [[0m[38;2;249;38;114mfile[0m[38;2;248;248;242m]  .  --log-file=[file][0m
+[38;2;248;248;242m                  Copy to log file (standard input only).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m [[0m[38;2;249;38;114mfile[0m[38;2;248;248;242m]  .  --LOG-FILE=[file][0m
+[38;2;248;248;242m                  Copy to log file (unconditionally overwrite).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-p[0m[38;2;248;248;242m [[0m[38;2;249;38;114mpattern[0m[38;2;248;248;242m]  [0m[38;2;166;226;46m--pattern[0m[38;2;248;248;242m=[pattern][0m
+[38;2;248;248;242m                  Start at pattern (from command line).[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-P[0m[38;2;248;248;242m [[0m[38;2;249;38;114mprompt[0m[38;2;248;248;242m]   [0m[38;2;166;226;46m--prompt[0m[38;2;248;248;242m=[prompt][0m
+[38;2;248;248;242m                  Define new prompt.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-q[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-Q[0m[38;2;248;248;242m  ....  --quiet  --QUIET  --silent --SILENT[0m
+[38;2;248;248;242m                  Quiet the terminal bell.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m  ....  --raw-control-chars  --RAW-CONTROL-CHARS[0m
+[38;2;248;248;242m                  Output "raw" control characters.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m  ........  --squeeze-blank-lines[0m
+[38;2;248;248;242m                  Squeeze multiple blank lines.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m  ........  --chop-long-lines[0m
+[38;2;248;248;242m                  Chop (truncate) long lines rather than wrapping.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m [[0m[38;2;249;38;114mtag[0m[38;2;248;248;242m]  ..  --tag=[tag][0m
+[38;2;248;248;242m                  Find a tag.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m [[0m[38;2;249;38;114mtagsfile[0m[38;2;248;248;242m] [0m[38;2;166;226;46m--tag-file[0m[38;2;248;248;242m=[tagsfile][0m
+[38;2;248;248;242m                  Use an alternate tags file.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m  ....  --underline-special  --UNDERLINE-SPECIAL[0m
+[38;2;248;248;242m                  Change handling of backspaces.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-V[0m[38;2;248;248;242m  ........  --version[0m
+[38;2;248;248;242m                  Display the version number of "less".[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m  ........  --hilite-unread[0m
+[38;2;248;248;242m                  Highlight first new line after forward-screen.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-W[0m[38;2;248;248;242m  ........  --HILITE-UNREAD[0m
+[38;2;248;248;242m                  Highlight first new line after any forward movement.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m [[0m[38;2;249;38;114mN[,...[0m[38;2;248;248;242m]]  --tabs=[N[,...]][0m
+[38;2;248;248;242m                  Set tab stops.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m  ........  --no-init[0m
+[38;2;248;248;242m                  Don't use termcap init/deinit strings.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-y[0m[38;2;248;248;242m [[0m[38;2;249;38;114mN[0m[38;2;248;248;242m]  ....  --max-forw-scroll=[N][0m
+[38;2;248;248;242m                  Forward scroll limit.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-z[0m[38;2;248;248;242m [[0m[38;2;249;38;114mN[0m[38;2;248;248;242m]  ....  --window=[N][0m
+[38;2;248;248;242m                  Set size of window.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-"[0m[38;2;248;248;242m [[0m[38;2;249;38;114mc[c[0m[38;2;248;248;242m]]  .  --quotes=[c[c]][0m
+[38;2;248;248;242m                  Set shell quote characters.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-~[0m[38;2;248;248;242m  ........  --tilde[0m
+[38;2;248;248;242m                  Don't display tildes after end of file.[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-#[0m[38;2;248;248;242m [[0m[38;2;249;38;114mN[0m[38;2;248;248;242m]  ....  --shift=[N][0m
+[38;2;248;248;242m                  Set horizontal scroll amount (0 = one half screen width).[0m
+[38;2;248;248;242m                --file-size[0m
+[38;2;248;248;242m                  Automatically determine the size of the input file.[0m
+[38;2;248;248;242m                --follow-name[0m
+[38;2;248;248;242m                  The F command changes files if the input file is renamed.[0m
+[38;2;248;248;242m                --incsearch[0m
+[38;2;248;248;242m                  Search file as each pattern character is typed in.[0m
+[38;2;248;248;242m                --line-num-width=N[0m
+[38;2;248;248;242m                  Set the width of the -N line number field to N characters.[0m
+[38;2;248;248;242m                --mouse[0m
+[38;2;248;248;242m                  Enable mouse input.[0m
+[38;2;248;248;242m                --no-keypad[0m
+[38;2;248;248;242m                  Don't send termcap keypad init/deinit strings.[0m
+[38;2;248;248;242m                --no-histdups[0m
+[38;2;248;248;242m                  Remove duplicates from command history.[0m
+[38;2;248;248;242m                --rscroll=C[0m
+[38;2;248;248;242m                  Set the character used to mark truncated lines.[0m
+[38;2;248;248;242m                --save-marks[0m
+[38;2;248;248;242m                  Retain marks across invocations of less.[0m
+[38;2;248;248;242m                --status-col-width=N[0m
+[38;2;248;248;242m                  Set the width of the -J status column to N characters.[0m
+[38;2;248;248;242m                --use-backslash[0m
+[38;2;248;248;242m                  Subsequent options use backslash as escape char.[0m
+[38;2;248;248;242m                --use-color[0m
+[38;2;248;248;242m                  Enables colored text.[0m
+[38;2;248;248;242m                --wheel-lines=N[0m
+[38;2;248;248;242m                  Each click of the mouse wheel moves N lines.[0m
+
+
+[38;2;248;248;242m ---------------------------------------------------------------------------[0m
+
+[38;2;248;248;242m                          LINE EDITING[0m
+
+[38;2;248;248;242m        These keys can be used to edit text being entered [0m
+[38;2;248;248;242m        on the "command line" at the bottom of the screen.[0m
+
+[38;2;248;248;242m [0m[38;2;249;38;114mRightArrow[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m.................. ESC-l ... Move cursor right one character.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mLeftArrow[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m................... ESC-h ... Move cursor left one character.[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mctrl-[0m[38;2;248;248;242mRightArrow  ESC-RightArrow  ESC-w ... Move cursor right one word.[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mctrl-[0m[38;2;248;248;242mLeftArrow   ESC-LeftArrow   ESC-b ... Move cursor left one word.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mHOME[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m........................ ESC-0 ... Move cursor to start of line.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mEND[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m......................... ESC-$ ... Move cursor to end of line.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mBACKSPACE[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m............................. Delete char to left of cursor.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mDELETE[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m...................... ESC-x ... Delete char under cursor.[0m
+[38;2;248;248;242m [0m[38;2;190;132;255mctrl-[0m[38;2;248;248;242mBACKSPACE   ESC-BACKSPACE ........... Delete word to left of cursor.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mctrl-DELETE[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m. ESC-DELETE .... ESC-X ... Delete word under cursor.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mctrl-U[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m...... ESC (MS-DOS only) ....... Delete entire line.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mUpArrow[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m..................... ESC-k ... Retrieve previous command line.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mDownArrow[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m................... ESC-j ... Retrieve next command line.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mTAB[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m................................... Complete filename & cycle.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mSHIFT-TAB[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m................... ESC-TAB   Complete filename & reverse cycle.[0m
+[38;2;248;248;242m [0m[38;2;249;38;114mctrl-L[0m[38;2;248;248;242m [0m[38;2;249;38;114m...[0m[38;2;248;248;242m................................ Complete filename, list all.[0m

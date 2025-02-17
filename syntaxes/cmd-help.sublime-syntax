@@ -88,9 +88,9 @@ scope_variables: # last scope is matched first
 
 contexts:
   prototype:
-    # abort if color escape codes
+    # exit if there are color escape codes
     - include: color-escape-codes-sink
-    # abort if formatted with backspaces
+    # exit if there are backspaces (overstrike formatting)
     - match: (?=.*[\b])
       set: sink
 
