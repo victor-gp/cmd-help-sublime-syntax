@@ -1,6 +1,7 @@
 # dependents:
 #  tests/highlight_regression.sh
 #  tests/theme_regression.sh
+#  scripts/try_input.sh
 #  scripts/demo_themes.sh
 
 ARG BAT_VERSION=0.25.0
@@ -14,7 +15,7 @@ ARG BAT_VERSION
 ADD https://github.com/sharkdp/bat/releases/download/v$BAT_VERSION/bat_${BAT_VERSION}_amd64.deb \
     /tmp/bat.deb
 RUN dpkg --install /tmp/bat.deb
-COPY ./tests/docker/inner*.sh  /tests/
+COPY ./tests/docker/entrypoints  /tests/entrypoints
 COPY ./syntaxes/cmd-help.sublime-syntax  $BAT_CONFIG_DIR/syntaxes/
 RUN bat cache --build > /dev/null
 ENTRYPOINT ["/tests/inner_highlight_regression.sh"]

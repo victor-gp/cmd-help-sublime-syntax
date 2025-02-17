@@ -17,7 +17,7 @@ vol_dest="$PWD"/highlighted:/tests/highlighted
 docker run --rm \
     --user "$(id -u):$(id -g)" \
     -v "$vol_src" -v "$vol_dest" \
-    --entrypoint /tests/inner_highlight_regression.sh \
+    --entrypoint /tests/entrypoints/highlight_regression.sh \
     bat-test
 
 # if we're running locally

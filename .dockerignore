@@ -3,4 +3,4 @@
 *
 !/syntaxes/
 /syntaxes/vendor/
-!/tests/docker/inner*.sh
+!/tests/docker/entrypoints/

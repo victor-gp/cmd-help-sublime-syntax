@@ -24,5 +24,5 @@ mkdir -p ../$dest_dir
 docker run --rm \
     --user "$(id -u):$(id -g)" \
     -v "$vol_src" -v "$vol_dest" \
-    --entrypoint /tests/inner_demo_themes.sh \
+    --entrypoint /tests/entrypoints/demo_themes.sh \
     bat-test

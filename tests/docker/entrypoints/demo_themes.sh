@@ -4,8 +4,9 @@
 
 set -euo pipefail
 
-# change dir to /tests/ because src & dest volumes are mapped here.
-cd "$(dirname "${BASH_SOURCE[0]}")"
+# this file is copied into /tests/entrypoints/ by the Dockerfile.
+# change dir to /tests/ because src & dest volumes are mapped there.
+cd /tests
 
 cmd_prefix="bat --no-config -fpl cmd-help"
 src='source/theme/demo.txt'
