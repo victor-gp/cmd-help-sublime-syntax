@@ -1,0 +1,137 @@
+# SYNTAX TEST "cmd-help.sublime-syntax"
+
+
+fish - the friendly interactive shell
+
+fish [OPTIONS] [FILE [ARG ...]]
+fish [OPTIONS] [-c COMMAND [ARG ...]]
+
+DESCRIPTION
+fish  is  a command-line shell written mainly with interactive use in
+# <- constant.other.keyword.cmd-help
+#^^^ constant.other.keyword.cmd-help
+#todo: tackle all these 'keyword.cmd-help' false positives (nit's)
+mind.  This page briefly describes the  options  for  invoking  fish.
+The  full  manual is available in HTML by using the help command from
+inside fish, and in the fish-doc(1) man page.  The tutorial is avail‐
+able as HTML via help tutorial or in man fish-tutorial.
+
+The following options are available:
+
+-c or --command=COMMAND
+       Evaluate the specified commands instead of  reading  from  the
+       commandline,  passing  additional positional arguments through
+#      ^^^^^^^^^^^ constant.other.keyword.cmd-help
+#nit: false positive
+       $argv.
+
+-C or --init-command=COMMANDS
+       Evaluate specified commands after  reading  the  configuration
+       but before executing command specified by -c or reading inter‐
+       active input.
+
+-d or --debug=DEBUG_CATEGORIES
+       Enables  debug output and specify a pattern for matching debug
+       categories.  See Debugging below for details.
+
+-o or --debug-output=DEBUG_FILE
+       Specifies a file path to receive the debug  output,  including
+       categories and  fish_trace.  The default is stderr.
+
+-i or --interactive
+       The shell is interactive.
+
+-l or --login
+       Act as if invoked as a login shell.
+
+-N or --no-config
+       Do not read configuration files.
+
+-n or --no-execute
+       Do not execute any commands, only perform syntax checking.
+
+-p or --profile=PROFILE_FILE
+       when  fish  exits,  output  timing information on all executed
+#      ^^^^ constant.other.keyword.cmd-help
+#nit: false positive
+       commands to the specified  file.   This  excludes  time  spent
+#      ^^^^ constant.other.keyword.cmd-help
+#nit: false positive
+       starting up and reading the configuration.
+
+--profile-startup=PROFILE_FILE
+       Will write timing for fish startup to specified file.
+
+-P or --private
+       Enables  private  mode:  fish will not access old or store new
+       history.
+
+--print-rusage-self
+       When fish exits, output stats from getrusage.
+
+--print-debug-categories
+       Print all debug categories, and then exit.
+
+-v or --version
+       Print version and exit.
+
+-f or --features=FEATURES
+       Enables one or more comma-separated feature flags.
+
+The fish exit status is generally the exit status of the  last  fore‐
+ground command.
+
+DEBUGGING
+While  fish provides extensive support for debugging fish scripts, it
+is also possible to debug and instrument  its  internals.   Debugging
+# <- constant.other.keyword.cmd-help
+#^ constant.other.keyword.cmd-help
+#nit: false positive
+can  be enabled by passing the --debug option.  For example, the fol‐
+lowing command turns on debugging for background IO thread events, in
+addition to the default categories, i.e. debug, error,  warning,  and
+# <- constant.other.keyword.cmd-help
+#^^^^^^^ constant.other.keyword.cmd-help
+#nit: false positive
+warning-path:
+
+   > fish --debug=iothread
+#    ^^^^ - constant.other.keyword.cmd-help
+#         ^^^^^^^ - entity.name.function.option.cmd-help
+#                 ^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+# nice: handle examples like this? perhaps based on the solution for Usage lines? #24
+
+Available categories are listed by fish --print-debug-categories. The
+--debug option accepts a comma-separated list of categories, and sup‐
+# <- entity.name.function.option.cmd-help
+#^^^^^^ entity.name.function.option.cmd-help
+#todo: fix this option false positive
+ports glob syntax.  The following command turns on debugging for com‐
+plete, history, history-file, and profile-history, as well as the de‐
+fault categories:
+
+   > fish --debug='complete,*history*'
+
+Debug  messages  output to stderr by default. Note that if fish_trace
+is set, execution tracing also outputs to stderr by default. You  can
+# <- constant.other.keyword.cmd-help
+#^ constant.other.keyword.cmd-help
+#nit: false positive
+output to a file using the --debug-output option:
+
+   > fish --debug='complete,*history*' --debug-output=/tmp/fish.log --init-command='set fish_trace on'
+
+These   options   can   also   be  changed  via  the  FISH_DEBUG  and
+FISH_DEBUG_OUTPUT variables.  The categories enabled via --debug  are
+added  to the ones enabled by $FISH_DEBUG, so they can be disabled by
+# <- constant.other.keyword.cmd-help
+#^^^^ constant.other.keyword.cmd-help
+#nit: false positive
+prefixing them with - (reader-*,-ast* enables  reader  debugging  and
+# <- constant.other.keyword.cmd-help
+#^^^^^^^^ constant.other.keyword.cmd-help
+#nit: false positive
+disables ast debugging).
+
+The  file  given  in --debug-output takes precedence over the file in
+FISH_DEBUG_OUTPUT.

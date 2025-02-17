@@ -1,0 +1,104 @@
+
+[38;2;190;132;255mfish[0m[38;2;248;248;242m - the friendly interactive shell[0m
+
+[38;2;190;132;255mfish[0m[38;2;248;248;242m [OPTIONS] [FILE [ARG ...]][0m
+[38;2;190;132;255mfish[0m[38;2;248;248;242m [OPTIONS] [-c COMMAND [ARG ...]][0m
+
+[38;2;246;170;17mDESCRIPTION[0m
+[38;2;190;132;255mfish[0m[38;2;248;248;242m  is  a command-line shell written mainly with interactive use in[0m
+[38;2;248;248;242mmind.  This page briefly describes the  options  for  invoking  fish.[0m
+[38;2;248;248;242mThe  full  manual is available in HTML by using the help command from[0m
+[38;2;248;248;242minside fish, and in the fish-doc(1) man page.  The tutorial is avail‐[0m
+[38;2;248;248;242mable as HTML via help tutorial or in man fish-tutorial.[0m
+
+[38;2;246;170;17mThe following options are available:[0m
+
+[38;2;166;226;46m-c[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--command[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCOMMAND[0m
+[38;2;248;248;242m       Evaluate the specified commands instead of  reading  from  the[0m
+[38;2;248;248;242m       [0m[38;2;190;132;255mcommandline[0m[38;2;248;248;242m,  passing  additional positional arguments through[0m
+[38;2;248;248;242m       $argv.[0m
+
+[38;2;166;226;46m-C[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--init-command[0m[38;2;248;248;242m=[0m[38;2;249;38;114mCOMMANDS[0m
+[38;2;248;248;242m       Evaluate specified commands after  reading  the  configuration[0m
+[38;2;248;248;242m       but before executing command specified by -c or reading inter‐[0m
+[38;2;248;248;242m       active input.[0m
+
+[38;2;166;226;46m-d[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--debug[0m[38;2;248;248;242m=[0m[38;2;249;38;114mDEBUG_CATEGORIES[0m
+[38;2;248;248;242m       Enables  debug output and specify a pattern for matching debug[0m
+[38;2;248;248;242m       categories.  See Debugging below for details.[0m
+
+[38;2;166;226;46m-o[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--debug-output[0m[38;2;248;248;242m=[0m[38;2;249;38;114mDEBUG_FILE[0m
+[38;2;248;248;242m       Specifies a file path to receive the debug  output,  including[0m
+[38;2;248;248;242m       categories and  fish_trace.  The default is stderr.[0m
+
+[38;2;166;226;46m-i[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--interactive[0m
+[38;2;248;248;242m       The shell is interactive.[0m
+
+[38;2;166;226;46m-l[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--login[0m
+[38;2;248;248;242m       Act as if invoked as a login shell.[0m
+
+[38;2;166;226;46m-N[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--no-config[0m
+[38;2;248;248;242m       Do not read configuration files.[0m
+
+[38;2;166;226;46m-n[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--no-execute[0m
+[38;2;248;248;242m       Do not execute any commands, only perform syntax checking.[0m
+
+[38;2;166;226;46m-p[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--profile[0m[38;2;248;248;242m=[0m[38;2;249;38;114mPROFILE_FILE[0m
+[38;2;248;248;242m       [0m[38;2;190;132;255mwhen[0m[38;2;248;248;242m  fish  exits,  output  timing information on all executed[0m
+[38;2;248;248;242m       [0m[38;2;190;132;255mcommands[0m[38;2;248;248;242m to the specified  file.   This  excludes  time  spent[0m
+[38;2;248;248;242m       starting up and reading the configuration.[0m
+
+[38;2;166;226;46m--profile-startup[0m[38;2;248;248;242m=[0m[38;2;249;38;114mPROFILE_FILE[0m
+[38;2;248;248;242m       Will write timing for fish startup to specified file.[0m
+
+[38;2;166;226;46m-P[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--private[0m
+[38;2;248;248;242m       Enables  private  mode:  fish will not access old or store new[0m
+[38;2;248;248;242m       history.[0m
+
+[38;2;166;226;46m--print-rusage-self[0m
+[38;2;248;248;242m       When fish exits, output stats from getrusage.[0m
+
+[38;2;166;226;46m--print-debug-categories[0m
+[38;2;248;248;242m       Print all debug categories, and then exit.[0m
+
+[38;2;166;226;46m-v[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--version[0m
+[38;2;248;248;242m       Print version and exit.[0m
+
+[38;2;166;226;46m-f[0m[38;2;248;248;242m or [0m[38;2;166;226;46m--features[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFEATURES[0m
+[38;2;248;248;242m       Enables one or more comma-separated feature flags.[0m
+
+[38;2;248;248;242mThe fish exit status is generally the exit status of the  last  fore‐[0m
+[38;2;248;248;242mground command.[0m
+
+[38;2;246;170;17mDEBUGGING[0m
+[38;2;248;248;242mWhile  fish provides extensive support for debugging fish scripts, it[0m
+[38;2;190;132;255mis[0m[38;2;248;248;242m also possible to debug and instrument  its  internals.   Debugging[0m
+[38;2;248;248;242mcan  be enabled by passing the --debug option.  For example, the fol‐[0m
+[38;2;248;248;242mlowing command turns on debugging for background IO thread events, in[0m
+[38;2;190;132;255maddition[0m[38;2;248;248;242m to the default categories, i.e. debug, error,  warning,  and[0m
+[38;2;248;248;242mwarning-path:[0m
+
+[38;2;248;248;242m   > fish --debug=iothread[0m
+
+[38;2;248;248;242mAvailable categories are listed by fish --print-debug-categories. The[0m
+[38;2;166;226;46m--debug[0m[38;2;248;248;242m option accepts a comma-separated list of categories, and sup‐[0m
+[38;2;248;248;242mports glob syntax.  The following command turns on debugging for com‐[0m
+[38;2;248;248;242mplete, history, history-file, and profile-history, as well as the de‐[0m
+[38;2;248;248;242mfault categories:[0m
+
+[38;2;248;248;242m   > fish --debug='complete,*history*'[0m
+
+[38;2;248;248;242mDebug  messages  output to stderr by default. Note that if fish_trace[0m
+[38;2;190;132;255mis[0m[38;2;248;248;242m set, execution tracing also outputs to stderr by default. You  can[0m
+[38;2;248;248;242moutput to a file using the --debug-output option:[0m
+
+[38;2;248;248;242m   > fish --debug='complete,*history*' --debug-output=/tmp/fish.log --init-command='set fish_trace on'[0m
+
+[38;2;248;248;242mThese   options   can   also   be  changed  via  the  FISH_DEBUG  and[0m
+[38;2;248;248;242mFISH_DEBUG_OUTPUT variables.  The categories enabled via --debug  are[0m
+[38;2;190;132;255madded[0m[38;2;248;248;242m  to the ones enabled by $FISH_DEBUG, so they can be disabled by[0m
+[38;2;190;132;255mprefixing[0m[38;2;248;248;242m them with - (reader-*,-ast* enables  reader  debugging  and[0m
+[38;2;248;248;242mdisables ast debugging).[0m
+
+[38;2;248;248;242mThe  file  given  in --debug-output takes precedence over the file in[0m
+[38;2;248;248;242mFISH_DEBUG_OUTPUT.[0m
