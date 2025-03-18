@@ -13,8 +13,9 @@ WORKDIR /usr/src/syntect
 RUN cargo build --release --example syntest
 
 FROM debian:$DEBIAN_IMAGE_VERSION
-# RUN apt-get update && apt-get install -y EXTRA_RUNTIME_DEPENDENCIES && rm -rf /var/lib/apt/lists/*
 COPY --from=build /usr/src/syntect/target/release/examples/syntest \
     /usr/local/bin/syntest
+ADD https://raw.githubusercontent.com/sharkdp/bat/refs/tags/v0.25.0/assets/syntaxes/02_Extra/Manpage.sublime-syntax \
+    /syntaxes/vendor/Manpage.sublime-syntax
 ENTRYPOINT [ "syntest" ]
 CMD [ "/tests/syntax", "/syntaxes" ]

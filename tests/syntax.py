@@ -7,11 +7,16 @@ from os import chdir, environ
 
 ### config
 
+# for building the Docker container
 dockerfile_path = 'docker/syntest.dockerfile'
 image_tag = 'syntest'
-tests_dir = '/tests/syntax'
-syntaxes_path = '/syntaxes'
-volumes = f'-v="$PWD/syntax":{tests_dir} -v="$PWD/../syntaxes":{syntaxes_path}'
+# environment outside of the Docker container
+local_tests_path = '"$PWD/syntax"'
+local_syntaxes_path = '"$PWD/../syntaxes"'
+# environment within the Docker container
+mounted_tests_path = '/tests/syntax'
+mounted_syntaxes_path = '/syntaxes/source'
+syntaxes_path = '/syntaxes' # includes source & vendor
 
 ### cli
 
@@ -51,8 +56,11 @@ source_path = Path(__file__).resolve()
 source_dir = source_path.parent # tests/
 chdir(source_dir)
 
-# in CI, syntest is built in a previous step but we can't reuse its Docker cache
-if not environ.get('CI'):
+if environ.get('CI'):
+    # In GitHub Actions, syntest is built in a previous step yet Docker can't reuse its cache.
+    # So we trust that the image will be available, we don't need to build it.
+    pass
+else:
     info("Building syntest Docker image ...")
     build_command = f"docker build --quiet --tag {image_tag} - < {dockerfile_path}"
     build_return = subprocess.call(build_command, shell=True)
@@ -62,7 +70,9 @@ if not environ.get('CI'):
 
 ### arrange arguments
 
-args = f"{script_args.test_path or tests_dir} {syntaxes_path}"
+volumes = f'-v={local_tests_path}:{mounted_tests_path} -v={local_syntaxes_path}:{mounted_syntaxes_path}'
+tests_root_path = script_args.test_path or mounted_tests_path
+args = f"{tests_root_path} {syntaxes_path}"
 if script_args.debug:
     args += " --debug"
 if script_args.summary:
