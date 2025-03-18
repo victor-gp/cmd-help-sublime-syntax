@@ -18,7 +18,7 @@ To check that everything works, run `git --help | bat -plhelp`
 
 ## Configuration
 
-You can find various configuration tips [in the wiki](https://github.com/victor-gp/cmd-help-sublime-syntax/wiki/Configuration-tips). Some of the topics it covers include:
+**You can find various configuration tips [in the wiki](https://github.com/victor-gp/cmd-help-sublime-syntax/wiki/Configuration-tips).** Some of the topics it covers include:
 
 - Setting a `bathelp` alias to avoid typing the full `bat` command with options each time (basic configuration).
 - Adding a `help` function you can use like `$ help <CMD>`, or even `$ help <CMD> <SUBCMD>`.
