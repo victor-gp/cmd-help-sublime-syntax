@@ -4,7 +4,6 @@
 
 set -euo pipefail
 
-# this file is copied into /tests/entrypoints/ by the Dockerfile.
 # change dir to /tests/ because src & dest volumes are mapped there.
 cd /tests
 

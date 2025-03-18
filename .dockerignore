@@ -3,4 +3,4 @@
 *
 !/syntaxes/
 /syntaxes/vendor/
-!/tests/docker/entrypoints/
+!/tests/docker/bat-test-entrypoints/
