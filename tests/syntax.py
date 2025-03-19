@@ -7,7 +7,7 @@ from os import chdir, environ
 
 ### config
 
-# for building the Docker container
+# for building the Docker image
 dockerfile_path = 'docker/syntest.dockerfile'
 image_tag = 'syntest'
 # environment outside of the Docker container
@@ -16,7 +16,8 @@ local_syntaxes_path = '"$PWD/../syntaxes"'
 # environment within the Docker container
 mounted_tests_path = '/tests/syntax'
 mounted_syntaxes_path = '/syntaxes/source'
-syntaxes_path = '/syntaxes' # includes source & vendor
+_vendor_syntaxes_path = '/syntaxes/vendor' # created by the Dockerfile
+syntaxes_path = '/syntaxes'
 
 ### cli
 
@@ -93,12 +94,10 @@ signal_lines = signal_lines[1:] # drop "loading syntax definitions from /syntaxe
 
 last_line = signal_lines[-1]
 success = last_line == "exiting with code 0"
-
 if success:
     signal_lines[-1] = color_green(last_line)
 else:
     signal_lines[-1] = color_red(last_line)
-print("\n".join(signal_lines))
 
-if not success:
-    exit(1)
+print("\n".join(signal_lines))
+exit(0 if success else 1)
