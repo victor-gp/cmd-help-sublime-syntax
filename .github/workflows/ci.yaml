@@ -19,8 +19,8 @@ jobs:
     timeout-minutes: 10
     if: ! startsWith(github.event.pull_request.title, 'Scope names:')
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
       - uses: docker/setup-buildx-action@v2
@@ -43,7 +43,7 @@ jobs:
     timeout-minutes: 10
     if: ! startsWith(github.event.pull_request.title, 'Scope names:')
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Run highlight regression tests
         run: tests/highlight_regression.sh
 
@@ -52,7 +52,7 @@ jobs:
     runs-on: "ubuntu-latest"
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Run theme regression tests
         run: tests/theme_regression.sh
 
@@ -62,6 +62,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Check bat CI compliance
         run: scripts/check_bat_ci_compliance.sh
