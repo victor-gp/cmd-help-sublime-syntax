@@ -17,7 +17,6 @@ jobs:
     name: Syntax tests
     runs-on: "ubuntu-latest"
     timeout-minutes: 10
-    if: ! startsWith(github.event.pull_request.title, 'Scope names:')
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -41,7 +40,6 @@ jobs:
     name: Highlight regression tests
     runs-on: "ubuntu-latest"
     timeout-minutes: 10
-    if: ! startsWith(github.event.pull_request.title, 'Scope names:')
     steps:
       - uses: actions/checkout@v4
       - name: Run highlight regression tests
