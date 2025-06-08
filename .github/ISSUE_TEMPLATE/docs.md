@@ -1,6 +1,6 @@
 ---
 name: Docs Issue
-about: Improvements or additions to documentation
+about: Propose or request improvements to documentation, including the project wiki
 title: ''
 labels: documentation
 assignees: ''
