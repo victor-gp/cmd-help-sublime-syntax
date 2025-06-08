@@ -1,0 +1,59 @@
+# SYNTAX TEST "cmd-help.sublime-syntax"
+
+direnv v2.35.0
+Usage: direnv COMMAND [...ARGS]
+
+Available commands
+------------------
+allow [PATH_TO_RC]:
+permit [PATH_TO_RC]:
+grant [PATH_TO_RC]:
+  Grants direnv permission to load the given .envrc or .env file.
+block [PATH_TO_RC]:
+deny [PATH_TO_RC]:
+disallow [PATH_TO_RC]:
+revoke [PATH_TO_RC]:
+  Revokes the authorization of a given .envrc or .env file.
+edit [PATH_TO_RC]:
+  Opens PATH_TO_RC or the current .envrc or .env into an $EDITOR and allow
+  the file to be loaded afterwards.
+exec DIR COMMAND [...ARGS]:
+# <- - constant.other.keyword.cmd-help
+#^^^ - constant.other.keyword.cmd-help
+#nice: This should be scoped as keyword. As well as the ones below.
+  Executes a command after loading the first .envrc or .env found in DIR
+export SHELL:
+# <- - constant.other.keyword.cmd-help
+#^^^^^ - constant.other.keyword.cmd-help
+  Loads an .envrc or .env and prints the diff in terms of exports.
+  Supported SHELL values are: [zsh, pwsh, elvish, fish, gzenv, murex, systemd, bash, gha, json, tcsh, vim]
+fetchurl <url> [<integrity-hash>]:
+  Fetches a given URL into direnv's CAS
+help [SHOW_PRIVATE]:
+  Shows this help
+# ^^^^^^^^^^^^^^^ constant.section-heading.cmd-help
+#nice: This shouldn't be scoped as section-heading. Nor the ones below.
+hook SHELL:
+# <- - constant.other.keyword.cmd-help
+#^^^ - constant.other.keyword.cmd-help
+  Used to setup the shell hook
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ constant.section-heading.cmd-help
+prune:
+# <- - constant.other.keyword.cmd-help
+#^^^^ - constant.other.keyword.cmd-help
+  Removes old allowed files
+# ^^^^^^^^^^^^^^^^^^^^^^^^^ constant.section-heading.cmd-help
+reload:
+# <- - constant.other.keyword.cmd-help
+#^^^^^ - constant.other.keyword.cmd-help
+  Triggers an env reload
+# ^^^^^^^^^^^^^^^^^^^^^^ constant.section-heading.cmd-help
+status [--json]:
+  Prints some debug status information
+# ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ constant.section-heading.cmd-help
+stdlib:
+# <- - constant.other.keyword.cmd-help
+#^^^^^ - constant.other.keyword.cmd-help
+  Displays the stdlib available in the .envrc execution context
+version [VERSION_AT_LEAST]:
+  prints the version or checks that direnv is older than VERSION_AT_LEAST.

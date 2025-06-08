@@ -1,0 +1,38 @@
+[38;2;248;248;242mdirenv v2.35.0[0m
+[38;2;246;170;17mUsage:[0m[38;2;248;248;242m direnv COMMAND [...ARGS][0m
+
+[38;2;246;170;17mAvailable commands[0m
+[38;2;248;248;242m------------------[0m
+[38;2;190;132;255mallow[0m[38;2;248;248;242m [PATH_TO_RC]:[0m
+[38;2;190;132;255mpermit[0m[38;2;248;248;242m [PATH_TO_RC]:[0m
+[38;2;190;132;255mgrant[0m[38;2;248;248;242m [PATH_TO_RC]:[0m
+[38;2;248;248;242m  Grants direnv permission to load the given .envrc or .env file.[0m
+[38;2;190;132;255mblock[0m[38;2;248;248;242m [PATH_TO_RC]:[0m
+[38;2;190;132;255mdeny[0m[38;2;248;248;242m [PATH_TO_RC]:[0m
+[38;2;190;132;255mdisallow[0m[38;2;248;248;242m [PATH_TO_RC]:[0m
+[38;2;190;132;255mrevoke[0m[38;2;248;248;242m [PATH_TO_RC]:[0m
+[38;2;248;248;242m  Revokes the authorization of a given .envrc or .env file.[0m
+[38;2;190;132;255medit[0m[38;2;248;248;242m [PATH_TO_RC]:[0m
+[38;2;248;248;242m  Opens PATH_TO_RC or the current .envrc or .env into an $EDITOR and allow[0m
+[38;2;248;248;242m  the file to be loaded afterwards.[0m
+[38;2;248;248;242mexec DIR COMMAND [...ARGS]:[0m
+[38;2;248;248;242m  Executes a command after loading the first .envrc or .env found in DIR[0m
+[38;2;248;248;242mexport SHELL:[0m
+[38;2;248;248;242m  Loads an .envrc or .env and prints the diff in terms of exports.[0m
+[38;2;248;248;242m  Supported SHELL values are: [zsh, pwsh, elvish, fish, gzenv, murex, systemd, bash, gha, json, tcsh, vim][0m
+[38;2;190;132;255mfetchurl[0m[38;2;248;248;242m <url> [<integrity-hash>]:[0m
+[38;2;248;248;242m  Fetches a given URL into direnv's CAS[0m
+[38;2;190;132;255mhelp[0m[38;2;248;248;242m [SHOW_PRIVATE]:[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mShows this help[0m
+[38;2;248;248;242mhook SHELL:[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mUsed to setup the shell hook[0m
+[38;2;248;248;242mprune:[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mRemoves old allowed files[0m
+[38;2;248;248;242mreload:[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mTriggers an env reload[0m
+[38;2;190;132;255mstatus[0m[38;2;248;248;242m [--json]:[0m
+[38;2;248;248;242m  [0m[38;2;246;170;17mPrints some debug status information[0m
+[38;2;248;248;242mstdlib:[0m
+[38;2;248;248;242m  Displays the stdlib available in the .envrc execution context[0m
+[38;2;190;132;255mversion[0m[38;2;248;248;242m [VERSION_AT_LEAST]:[0m
+[38;2;248;248;242m  prints the version or checks that direnv is older than VERSION_AT_LEAST.[0m

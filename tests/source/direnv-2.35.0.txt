@@ -1,0 +1,38 @@
+direnv v2.35.0
+Usage: direnv COMMAND [...ARGS]
+
+Available commands
+------------------
+allow [PATH_TO_RC]:
+permit [PATH_TO_RC]:
+grant [PATH_TO_RC]:
+  Grants direnv permission to load the given .envrc or .env file.
+block [PATH_TO_RC]:
+deny [PATH_TO_RC]:
+disallow [PATH_TO_RC]:
+revoke [PATH_TO_RC]:
+  Revokes the authorization of a given .envrc or .env file.
+edit [PATH_TO_RC]:
+  Opens PATH_TO_RC or the current .envrc or .env into an $EDITOR and allow
+  the file to be loaded afterwards.
+exec DIR COMMAND [...ARGS]:
+  Executes a command after loading the first .envrc or .env found in DIR
+export SHELL:
+  Loads an .envrc or .env and prints the diff in terms of exports.
+  Supported SHELL values are: [zsh, pwsh, elvish, fish, gzenv, murex, systemd, bash, gha, json, tcsh, vim]
+fetchurl <url> [<integrity-hash>]:
+  Fetches a given URL into direnv's CAS
+help [SHOW_PRIVATE]:
+  Shows this help
+hook SHELL:
+  Used to setup the shell hook
+prune:
+  Removes old allowed files
+reload:
+  Triggers an env reload
+status [--json]:
+  Prints some debug status information
+stdlib:
+  Displays the stdlib available in the .envrc execution context
+version [VERSION_AT_LEAST]:
+  prints the version or checks that direnv is older than VERSION_AT_LEAST.
