@@ -1,0 +1,77 @@
+[38;2;246;170;17mUsage:[0m
+[38;2;248;248;242m  [0m[38;2;190;132;255meza[0m[38;2;248;248;242m [options] [files...][0m
+
+[38;2;246;170;17mMETA OPTIONS[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--help[0m[38;2;248;248;242m                     show list of command-line options[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-v[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--version[0m[38;2;248;248;242m              show version of eza[0m
+
+[38;2;246;170;17mDISPLAY OPTIONS[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-1[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--oneline[0m[38;2;248;248;242m              display one entry per line[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-l[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--long[0m[38;2;248;248;242m                 display extended file metadata as a table[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-G[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--grid[0m[38;2;248;248;242m                 display entries as a grid (default)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-x[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--across[0m[38;2;248;248;242m               sort the grid across, rather than downwards[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-R[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--recurse[0m[38;2;248;248;242m              recurse into directories[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-T[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--tree[0m[38;2;248;248;242m                 recurse into directories as a tree[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-X[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--dereference[0m[38;2;248;248;242m          dereference symbolic links when displaying information[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-F[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--classify[0m[38;2;248;248;242m=[0m[38;2;249;38;114mWHEN[0m[38;2;248;248;242m        display type indicator by file names (always, auto, never)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--colo[0m[38;2;248;248;242m[[0m[38;2;166;226;46mu[0m[38;2;248;248;242m][0m[38;2;166;226;46mr[0m[38;2;248;248;242m=[0m[38;2;249;38;114mWHEN[0m[38;2;248;248;242m            when to use terminal colours (always, auto, never)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--colo[0m[38;2;248;248;242m[[0m[38;2;166;226;46mu[0m[38;2;248;248;242m][0m[38;2;166;226;46mr-scale[0m[38;2;248;248;242m           highlight levels of 'field' distinctly(all, age, size)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--colo[0m[38;2;248;248;242m[[0m[38;2;166;226;46mu[0m[38;2;248;248;242m][0m[38;2;166;226;46mr-scale-mode[0m[38;2;248;248;242m      use gradient or fixed colors in --color-scale (fixed, gradient)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--icons[0m[38;2;248;248;242m=[0m[38;2;249;38;114mWHEN[0m[38;2;248;248;242m               when to display icons (always, auto, never)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--no-quotes[0m[38;2;248;248;242m                don't quote file names with spaces[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--hyperlink[0m[38;2;248;248;242m                display entries as hyperlinks[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-w[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--width[0m[38;2;248;248;242m [0m[38;2;249;38;114mCOLS[0m[38;2;248;248;242m           set screen width in columns[0m
+
+
+[38;2;246;170;17mFILTERING AND SORTING OPTIONS[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-a[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--all[0m[38;2;248;248;242m                  show hidden and 'dot' files. Use this twice to also[0m
+[38;2;248;248;242m                             show the '.' and '..' directories[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-A[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--almost-all[0m[38;2;248;248;242m           equivalent to --all; included for compatibility with `ls -A`[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-d[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--list-dirs[0m[38;2;248;248;242m            list directories as files; don't list their contents[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-L[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--level[0m[38;2;248;248;242m [0m[38;2;249;38;114mDEPTH[0m[38;2;248;248;242m          limit the depth of recursion[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--reverse[0m[38;2;248;248;242m              reverse the sort order[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-s[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--sort[0m[38;2;248;248;242m [0m[38;2;249;38;114mSORT_FIELD[0m[38;2;248;248;242m      which field to sort by[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--group-directories-first[0m[38;2;248;248;242m  list directories before other files[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-D[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--only-dirs[0m[38;2;248;248;242m            list only directories[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-f[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--only-files[0m[38;2;248;248;242m           list only files[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-I[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--ignore-glob[0m[38;2;248;248;242m [0m[38;2;249;38;114mGLOBS[0m[38;2;248;248;242m    glob patterns (pipe-separated) of files to ignore[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--git-ignore[0m[38;2;248;248;242m               ignore files mentioned in '.gitignore'[0m
+[38;2;248;248;242m  Valid sort fields:         name, Name, extension, Extension, size, type,[0m
+[38;2;248;248;242m                             modified, accessed, created, inode, and none.[0m
+[38;2;248;248;242m                             date, time, old, and new all refer to modified.[0m
+
+[38;2;246;170;17mLONG VIEW OPTIONS[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-b[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--binary[0m[38;2;248;248;242m               list file sizes with binary prefixes[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-B[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--bytes[0m[38;2;248;248;242m                list file sizes in bytes, without any prefixes[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-g[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--group[0m[38;2;248;248;242m                list each file's group[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--smart-group[0m[38;2;248;248;242m              only show group if it has a different name from owner[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--header[0m[38;2;248;248;242m               add a header row to each column[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-H[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--links[0m[38;2;248;248;242m                list each file's number of hard links[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-i[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--inode[0m[38;2;248;248;242m                list each file's inode number[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-m[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--modified[0m[38;2;248;248;242m             use the modified timestamp field[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-M[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--mounts[0m[38;2;248;248;242m               show mount details (Linux and Mac only)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--numeric[0m[38;2;248;248;242m              list numeric user and group IDs[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-O[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--flags[0m[38;2;248;248;242m                list file flags (Mac, BSD, and Windows only)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-S[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--blocksize[0m[38;2;248;248;242m            show size of allocated file system blocks[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-t[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--time[0m[38;2;248;248;242m [0m[38;2;249;38;114mFIELD[0m[38;2;248;248;242m           which timestamp field to list (modified, accessed, created)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-u[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--accessed[0m[38;2;248;248;242m             use the accessed timestamp field[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--created[0m[38;2;248;248;242m              use the created timestamp field[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--changed[0m[38;2;248;248;242m                  use the changed timestamp field[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--time-style[0m[38;2;248;248;242m               how to format timestamps (default, iso, long-iso,[0m
+[38;2;248;248;242m                             full-iso, relative, or a custom style '+<FORMAT>'[0m
+[38;2;248;248;242m                             like '+%Y-%m-%d %H:%M')[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--total-size[0m[38;2;248;248;242m               show the size of a directory as the size of all[0m
+[38;2;248;248;242m                             files and directories inside (unix only)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--no-permissions[0m[38;2;248;248;242m           suppress the permissions field[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-o[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--octal-permissions[0m[38;2;248;248;242m    list each file's permission in octal format[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--no-filesize[0m[38;2;248;248;242m              suppress the filesize field[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--no-user[0m[38;2;248;248;242m                  suppress the user field[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--no-time[0m[38;2;248;248;242m                  suppress the time field[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--stdin[0m[38;2;248;248;242m                    read file names from stdin, one per line or other separator[0m
+[38;2;248;248;242m                             specified in environment[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--git[0m[38;2;248;248;242m                      list each file's Git status, if tracked or ignored[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--no-git[0m[38;2;248;248;242m                   suppress Git status (always overrides --git,[0m
+[38;2;248;248;242m                             --git-repos, --git-repos-no-status)[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m--git-repos[0m[38;2;248;248;242m                list root of git-tree status[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-@[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--extended[0m[38;2;248;248;242m             list each file's extended attributes and sizes[0m
+[38;2;248;248;242m  [0m[38;2;166;226;46m-Z[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--context[0m[38;2;248;248;242m              list each file's security context[0m

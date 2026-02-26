@@ -1,0 +1,15 @@
+# SYNTAX TEST "cmd-help.sublime-syntax"
+
+  --colo[u]r=WHEN            when to use terminal colours (always, auto, never)
+# ^^^^^^          entity.name.function.option.cmd-help
+#       ^         - entity.name.function.option.cmd-help
+#        ^        entity.name.function.option.cmd-help
+#         ^       - entity.name.function.option.cmd-help
+#          ^      entity.name.function.option.cmd-help
+#            ^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+  --colo[u]r-scale           highlight levels of 'field' distinctly(all, age, size)
+# ^^^^^^          entity.name.function.option.cmd-help
+#       ^         - entity.name.function.option.cmd-help
+#        ^        entity.name.function.option.cmd-help
+#         ^       - entity.name.function.option.cmd-help
+#          ^^^^^^^ entity.name.function.option.cmd-help
