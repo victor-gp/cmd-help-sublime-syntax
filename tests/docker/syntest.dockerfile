@@ -1,7 +1,7 @@
 # usage: use tests/syntax.py, don't run this manually
 
 ARG SYNTECT_VERSION=5.2.0
-ARG RUST_IMAGE_VERSION=1.84
+ARG RUST_IMAGE_VERSION=1.88
 ARG DEBIAN_IMAGE_VERSION=bookworm-slim
 
 FROM rust:$RUST_IMAGE_VERSION AS build
