@@ -1,4 +1,4 @@
-# usage: $ source scripts/utils
+# usage: $ source scripts/cli-utils
 # shellcheck shell=bash
 
 # regression tests diff

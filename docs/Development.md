@@ -61,7 +61,7 @@ The project uses two classes of tests:
 - regression tests: catch-all integration tests
 
 There's a number of command-line utils I use to streamline development, including tests.
-You can load them with `$ source scripts/utils`
+You can load them with `$ source scripts/cli-utils`
 
 ### Syntax tests
 
@@ -77,7 +77,7 @@ If you expect the tests to pass, it's better to run them with the *summary* opti
 Syntax tests are also useful to *debug* the workings of the syntax line by line.
 If you can't make heads or tails of why something doesn't work, run `$ tests/syntax.py -d tests/syntax/<TEST_FILE>`
 
-`scripts/utils` also contains an util to run with debug and pipe the output to `less`: `$ debug tests/syntax/<TEST_FILE>`
+`scripts/cli-utils` also contains an util to run with debug and pipe the output to `less`: `$ debug tests/syntax/<TEST_FILE>`
 
 The `syntax -d` output is a bit hard to grasp unless you understand Sublime Syntaxes very well (not my case). So have patience and ask for help if you get stuck.
 
@@ -104,7 +104,7 @@ This script runs the entire suite of highlight regression tests. They usually ta
 
 Because the result files in `tests/highlighted` contain color escape characters (e.g.: `ESC[0m`), they should be opened with `less -R`.
 
-To check highlight regression changes with respect to the git index, load `scripts/utils` and do `$ reg`
+To check highlight regression changes with respect to the git index, load `scripts/cli-utils` and do `$ reg`
 
 There are a few more utils based on `reg`:
 
