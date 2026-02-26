@@ -4,7 +4,8 @@
 #  scripts/try_input.sh
 #  scripts/demo_themes.sh
 
-ARG BAT_VERSION=0.25.0
+# should be the latest bat version
+ARG BAT_VERSION=0.26.1
 ARG DEBIAN_IMAGE_VERSION=bookworm-slim
 
 FROM debian:$DEBIAN_IMAGE_VERSION

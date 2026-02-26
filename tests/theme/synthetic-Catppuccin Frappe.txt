@@ -1,0 +1,121 @@
+[38;2;198;208;245msynthetic[0m[38;2;198;208;245m - fake help message for testing theme support[0m
+
+[38;2;198;208;245mMost of these lines come from actual help messages in tests/source/.[0m
+
+
+[38;2;198;208;245m## HEADING PATTERNS:[0m
+
+[38;2;166;209;137mSelection options[0m
+[38;2;166;209;137mBasic Options:[0m
+[38;2;166;209;137mUSAGE:[0m
+[38;2;198;208;245m [0m[38;2;166;209;137mFinding manual pages:[0m
+[38;2;166;209;137mAuto-correction:[0m
+[38;2;166;209;137mGNU long options:[0m
+[38;2;166;209;137mJIT options (experimental):[0m
+[38;2;166;209;137mUsage:[0m[38;2;198;208;245m cp [OPTION]... [-T] SOURCE DEST[0m
+[38;2;166;209;137musage:[0m[38;2;198;208;245m /home/user/.pyenv/versions/3.10.0/bin/python [option] ... [-c cmd | -m mod | file | -] [arg] ...[0m
+
+[38;2;198;208;245mBut not if the line is longer than forty chars[0m
+[38;2;198;208;245mnor if it begins with lowercase[0m
+[38;2;198;208;245m   Nor after three spaces[0m
+[38;2;198;208;245m	Nor after a tab[0m
+
+
+[38;2;198;208;245m## OPTION PATTERNS:[0m
+
+[38;2;198;208;245m    [0m[38;2;140;170;238m-A[0m[38;2;198;208;245m, [0m[38;2;140;170;238m--show-all[0m
+[38;2;198;208;245m    [0m[38;2;140;170;238m-l[0m[38;2;198;208;245m, [0m[38;2;140;170;238m--language[0m[38;2;198;208;245m [0m[38;2;202;158;230m<language>[0m
+[38;2;198;208;245m    [0m[38;2;140;170;238m-H[0m[38;2;198;208;245m, [0m[38;2;140;170;238m--highlight-line[0m[38;2;198;208;245m [0m[38;2;202;158;230m<N:M>[0m[38;2;202;158;230m...[0m
+[38;2;198;208;245m        [0m[38;2;140;170;238m--file-name[0m[38;2;198;208;245m [0m[38;2;202;158;230m<name>[0m[38;2;202;158;230m...[0m
+[38;2;198;208;245m      [0m[38;2;140;170;238m--backup[0m[38;2;198;208;245m[=[0m[38;2;202;158;230mCONTROL[0m[38;2;198;208;245m]       make a backup of each existing destination file[0m
+[38;2;198;208;245m      [0m[38;2;140;170;238m--no-preserve[0m[38;2;198;208;245m=[0m[38;2;202;158;230mATTR_LIST[0m[38;2;198;208;245m  don't preserve the specified attributes[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-R[0m[38;2;198;208;245m, [0m[38;2;140;170;238m-r[0m[38;2;198;208;245m, [0m[38;2;140;170;238m--recursive[0m[38;2;198;208;245m          copy directories recursively[0m
+[38;2;198;208;245m	[0m[38;2;140;170;238m-ilrsD[0m[38;2;198;208;245m or [0m[38;2;140;170;238m-c[0m[38;2;198;208;245m [0m[38;2;202;158;230mcommand[0m[38;2;198;208;245m or [0m[38;2;140;170;238m-O[0m[38;2;198;208;245m [0m[38;2;202;158;230mshopt_option[0m[38;2;198;208;245m		(invocation only)[0m
+[38;2;198;208;245m     [0m[38;2;140;170;238m--alt-svc[0m[38;2;198;208;245m [0m[38;2;202;158;230m<file name>[0m[38;2;198;208;245m Enable alt-svc with this cache file[0m
+[38;2;198;208;245m [0m[38;2;140;170;238m-b[0m[38;2;198;208;245m, [0m[38;2;140;170;238m--cookie[0m[38;2;198;208;245m [0m[38;2;202;158;230m<data|filename>[0m[38;2;198;208;245m Send cookies from string/file[0m
+[38;2;198;208;245m     [0m[38;2;140;170;238m--tlsv1.0[0m[38;2;198;208;245m       Use TLSv1.0 or greater[0m
+[38;2;198;208;245m      [0m[38;2;140;170;238m--label[0m[38;2;198;208;245m [0m[38;2;202;158;230mLABEL[0m[38;2;198;208;245m             use LABEL instead of file name and timestamp[0m
+[38;2;198;208;245m      [0m[38;2;140;170;238m--from-file[0m[38;2;198;208;245m=[0m[38;2;202;158;230mFILE1[0m[38;2;198;208;245m           compare FILE1 to all operands;[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m--help[0m[38;2;198;208;245m={[0m[38;2;202;158;230mcommon[0m[38;2;198;208;245m|[0m[38;2;202;158;230moptimizers[0m[38;2;198;208;245m|[0m[38;2;202;158;230mparams[0m[38;2;198;208;245m|[0m[38;2;202;158;230mtarget[0m[38;2;198;208;245m|[0m[38;2;202;158;230mwarnings[0m[38;2;198;208;245m|[0m[38;2;202;158;230m[^]{joined[0m[38;2;198;208;245m|[0m[38;2;202;158;230mseparate[0m[38;2;198;208;245m|[0m[38;2;202;158;230mundocumented[0m[38;2;198;208;245m}}[,...].[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-print-search-dirs[0m[38;2;198;208;245m       Display the directories in the compiler's search path.[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-print-file-name[0m[38;2;198;208;245m=[0m[38;2;202;158;230m<lib>[0m[38;2;198;208;245m   Display the full path to library <lib>.[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-Wa[0m[38;2;198;208;245m,[0m[38;2;202;158;230m<options>[0m[38;2;198;208;245m            Pass comma-separated <options> on to the assembler.[0m
+[38;2;140;170;238m-C[0m[38;2;198;208;245m [0m[38;2;140;170;238m--no-color[0m[38;2;198;208;245m               Use a monochrome color scheme[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-r[0m[38;2;198;208;245m [0m[38;2;202;158;230mload-module[0m[38;2;198;208;245m    Same as `ruby -r'[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m--sample-book-mode[0m[38;2;198;208;245m/[0m[38;2;140;170;238m--simple-prompt[0m
+[38;2;198;208;245m    [0m[38;2;140;170;238m-D[0m[38;2;202;158;230m<name>[0m[38;2;198;208;245m=[0m[38;2;202;158;230m<value>[0m
+[38;2;198;208;245m    [0m[38;2;140;170;238m-verbose[0m[38;2;198;208;245m:[[0m[38;2;202;158;230mclass[0m[38;2;198;208;245m|[0m[38;2;202;158;230mgc[0m[38;2;198;208;245m|[0m[38;2;202;158;230mjni[0m[38;2;198;208;245m][0m
+[38;2;198;208;245m    [0m[38;2;140;170;238m-version[0m[38;2;198;208;245m:[0m[38;2;202;158;230m<value>[0m
+[38;2;198;208;245m    [0m[38;2;140;170;238m-ea[0m[38;2;198;208;245m[[0m[38;2;202;158;230m:<packagename>...[0m[38;2;198;208;245m|[0m[38;2;202;158;230m:<classname>[0m[38;2;198;208;245m][0m
+[38;2;198;208;245m    [0m[38;2;140;170;238m-agentlib[0m[38;2;198;208;245m:[0m[38;2;202;158;230m<libname>[0m[38;2;198;208;245m[=[0m[38;2;202;158;230m<options>[0m[38;2;198;208;245m][0m
+[38;2;198;208;245m [0m[38;2;140;170;238m-A[0m[38;2;198;208;245m             [0m[38;2;140;170;238m--smarthome[0m[38;2;198;208;245m             Enable smart home key[0m
+[38;2;140;170;238m-m[0m[38;2;198;208;245m [0m[38;2;202;158;230mmod[0m[38;2;198;208;245m : run library module as a script (terminates option list)[0m
+[38;2;198;208;245m        [0m[38;2;140;170;238m--except[0m[38;2;198;208;245m [[0m[38;2;202;158;230mCOP1,COP2,...[0m[38;2;198;208;245m]     Exclude the given cop(s).[0m
+[38;2;198;208;245m    [0m[38;2;140;170;238m-P[0m[38;2;198;208;245m, [0m[38;2;140;170;238m--[0m[38;2;198;208;245m[[0m[38;2;140;170;238mno-[0m[38;2;198;208;245m][0m[38;2;140;170;238mparallel[0m[38;2;198;208;245m              Use available CPUs to execute inspection in[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-0[0m[38;2;198;208;245m[[0m[38;2;202;158;230moctal[0m[38;2;198;208;245m]       specify record separator (\0, if no argument)[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-Cdirectory[0m[38;2;198;208;245m     cd to directory before executing your script[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-e[0m[38;2;198;208;245m [0m[38;2;202;158;230m'command'[0m[38;2;198;208;245m    one line of script. Several -e's allowed. Omit [programfile][0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-Eex[0m[38;2;198;208;245m[[0m[38;2;202;158;230m:in[0m[38;2;198;208;245m], [0m[38;2;140;170;238m--encoding[0m[38;2;198;208;245m=[0m[38;2;202;158;230mex[0m[38;2;198;208;245m[[0m[38;2;202;158;230m:in[0m[38;2;198;208;245m][0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-rlibrary[0m[38;2;198;208;245m       require the library before executing your script[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-W[0m[38;2;198;208;245m[[0m[38;2;202;158;230mlevel=2[0m[38;2;198;208;245m|[0m[38;2;202;158;230m:category[0m[38;2;198;208;245m][0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m--jit-[0m[38;2;198;208;245m[[0m[38;2;202;158;230moption[0m[38;2;198;208;245m]  enable JIT with an option (experimental)[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m--dump[0m[38;2;198;208;245m={[0m[38;2;202;158;230minsns[0m[38;2;198;208;245m|[0m[38;2;202;158;230mparsetree[0m[38;2;198;208;245m|[0m[38;2;202;158;230m...[0m[38;2;198;208;245m}[[0m[38;2;202;158;230m,...[0m[38;2;198;208;245m][0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m--external-encoding[0m[38;2;198;208;245m=[0m[38;2;202;158;230mencoding[0m[38;2;198;208;245m, [0m[38;2;140;170;238m--internal-encoding[0m[38;2;198;208;245m=[0m[38;2;202;158;230mencoding[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m--backtrace-limit[0m[38;2;198;208;245m=[0m[38;2;202;158;230mnum[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-h[0m[38;2;198;208;245m | [0m[38;2;140;170;238m--help[0m[38;2;198;208;245m         print this message[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m--color[0m[38;2;198;208;245m=[0m[38;2;202;158;230mauto[0m[38;2;198;208;245m|[0m[38;2;202;158;230malways[0m[38;2;198;208;245m|[0m[38;2;202;158;230mtrue[0m[38;2;198;208;245m|[0m[38;2;202;158;230mfalse[0m[38;2;198;208;245m|[0m[38;2;202;158;230mnever[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-w[0m[38;2;198;208;245m {[0m[38;2;202;158;230mshow[0m[38;2;198;208;245m,[0m[38;2;202;158;230mhide[0m[38;2;198;208;245m,[0m[38;2;202;158;230monly[0m[38;2;198;208;245m}, [0m[38;2;140;170;238m--window[0m[38;2;198;208;245m {[0m[38;2;202;158;230mshow[0m[38;2;198;208;245m,[0m[38;2;202;158;230mhide[0m[38;2;198;208;245m,[0m[38;2;202;158;230monly[0m[38;2;198;208;245m}[0m
+[38;2;198;208;245m   [0m[38;2;140;170;238m-h[0m[38;2;198;208;245m  or  [0m[38;2;140;170;238m--help[0m[38;2;198;208;245m	Print Help (this message) and exit[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m--display[0m[38;2;198;208;245m [0m[38;2;202;158;230mdisplayname[0m
+[38;2;198;208;245m  [0m[38;2;140;170;238m-t[0m[38;2;198;208;245m [0m[38;2;202;158;230mms[0m[38;2;198;208;245m, [0m[38;2;140;170;238m--selectionTimeout[0m[38;2;198;208;245m [0m[38;2;202;158;230mms[0m
+[38;2;198;208;245m      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files[0m
+[38;2;198;208;245m   [0m[38;2;198;208;245m--[0m[38;2;198;208;245m			Only file names after this[0m
+
+
+[38;2;198;208;245m## ARGUMENT PATTERNS:[0m
+
+[38;2;198;208;245m(collapse with other patterns?)[0m
+
+[38;2;198;208;245m    [0m[38;2;202;158;230m<FILE>...[0m
+[38;2;202;158;230m-[0m[38;2;198;208;245m      : program read from stdin (default; interactive mode if a tty)[0m
+[38;2;202;158;230marg[0m[38;2;198;208;245m [0m[38;2;202;158;230m...[0m[38;2;198;208;245m: arguments passed to program in sys.argv[1:][0m
+
+
+[38;2;198;208;245m## OTHER PATTERNS:[0m
+
+[38;2;198;208;245m   [0m[38;2;198;208;245mcommit[0m[38;2;198;208;245m            Record changes to the repository[0m
+[38;2;198;208;245m    [0m[38;2;198;208;245mcache[0m[38;2;198;208;245m    Modify the syntax-definition and theme cache[0m
+[38;2;198;208;245m    [0m[38;2;198;208;245mbuild[0m[38;2;198;208;245m, [0m[38;2;198;208;245mb[0m[38;2;198;208;245m    Compile the current package[0m
+[38;2;198;208;245m  [0m[38;2;198;208;245mlist[0m[38;2;198;208;245m - list packages based on package names[0m
+[38;2;198;208;245m  [0m[38;2;198;208;245mfull-upgrade[0m[38;2;198;208;245m - upgrade the system by removing/installing/upgrading packages[0m
+[38;2;198;208;245m  [0m[38;2;198;208;245mfdatasync[0m[38;2;198;208;245m  physically write output file data before finishing[0m
+[38;2;198;208;245m  [0m[38;2;198;208;245mcompose*[0m[38;2;198;208;245m    Docker Compose (Docker Inc., v2.2.3)[0m
+[38;2;198;208;245m  [0m[38;2;198;208;245mdid_you_mean[0m[38;2;198;208;245m    did_you_mean (default: enabled)[0m
+[38;2;198;208;245m  [0m[38;2;198;208;245mfrozen-string-literal[0m
+[38;2;198;208;245mfile[0m[38;2;198;208;245m   : program read from script file[0m
+
+[38;2;202;158;230mFILE[0m[38;2;198;208;245m                    visit FILE[0m
+[38;2;202;158;230mPYTHONSTARTUP[0m[38;2;198;208;245m: file executed on interactive startup (no default)[0m
+[38;2;198;208;245m  [0m[38;2;202;158;230mJAVA_OPTS[0m[38;2;198;208;245m           environment variable, if unset uses "-Dfile.encoding=UTF-8"[0m
+[38;2;198;208;245m  [0m[38;2;202;158;230m'warn'[0m[38;2;198;208;245m         diagnose errors writing to any output[0m
+
+[38;2;198;208;245m  [0m[38;2;234;153;156m.jvmopts[0m[38;2;198;208;245m            if this file exists in the current directory, its contents[0m
+[38;2;198;208;245m  [0m[38;2;234;153;156m/etc/sbt/sbtopts[0m[38;2;198;208;245m    if this file exists, it is prepended to the runner args[0m
+[38;2;234;153;156mpath/.to/file[0m
+[38;2;234;153;156m~/.config/bat[0m
+[38;2;234;153;156m~/.config/bat/[0m
+
+[38;2;198;208;245m   [0m[38;2;140;170;238m+[0m[38;2;198;208;245m			Start at end of file[0m
+[38;2;198;208;245m   [0m[38;2;140;170;238m+[0m[38;2;202;158;230m<lnum>[0m[38;2;198;208;245m		Start at line <lnum>[0m
+[38;2;140;170;238m+[0m[38;2;202;158;230mLINE[0m[38;2;198;208;245m                   go to line LINE in next FILE[0m
+[38;2;140;170;238m+[0m[38;2;202;158;230mLINE:COLUMN[0m[38;2;198;208;245m            go to line LINE, column COLUMN, in next FILE[0m
+
+
+[38;2;198;208;245m## PRE-EXISTING FORMAT:[0m
+
+[1m[38;2;198;208;245m[1mIt skips over bold text[0m[0m
+[38;2;166;209;137mAnd continues normal operation[0m
+[38;2;198;208;245m(as proven by the previous line being scoped as heading)[0m
+[31m[38;2;198;208;245m[31mBut it aborts on color codes (this is red text)[0m[0m
+[38;2;198;208;245mAnd stops operation for what is left[0m
+[38;2;198;208;245m(otherwise the previous line would have been scoped as heading)[0m

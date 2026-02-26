@@ -13,10 +13,7 @@ synthetic_src="source/theme/synthetic.txt"
 
 readarray -t themes <<< "$(bat --list-themes --color=never)"
 
-for theme_ in "${themes[@]}"; do
-    # strip " (default)" and " (default light)" from theme names, because bat doesn't recognize that. sharkdp/bat#3188
-    theme="${theme_% \(default*\)}"
-
+for theme in "${themes[@]}"; do
     synthetic_dest="theme/synthetic-${theme}.txt"
     synthetic_it_dest="theme/synthetic-${theme}-italics.txt"
 
