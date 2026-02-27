@@ -19,7 +19,7 @@ function regs {
     reg --staged "$@"
 }
 
-function regm {
+function regmain {
     reg main "$@"
 }
 

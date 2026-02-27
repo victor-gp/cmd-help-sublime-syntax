@@ -109,7 +109,7 @@ To check highlight regression changes with respect to the git index, load `scrip
 There are a few more utils based on `reg`:
 
 - For the regression diff between the index and the last commit (so staged changes), do `$ regs`
-- For the regression diff between your branch and `main`, do `$ regm`
+- For the regression diff between your branch and `main`, do `$ regmain`
 - To show the regression diff from a commit (HEAD by default), do `$ regshow`
 
 #### Syntax tests > regression tests to illustrate changes
