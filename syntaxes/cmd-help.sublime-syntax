@@ -221,7 +221,7 @@ contexts:
         2: *OPTION_SCOPES
         3: *OPTION_SCOPES
       set: option-term-post
-    # eg, '--colo[u]r-scale'
+    # alternative Brit -our spelling. eg, '--colo[u]r-scale'
     - match: (-{{option_name}})\[(u)\](?=r)({{option_name}})
       captures:
         1: *OPTION_SCOPES
@@ -241,7 +241,6 @@ contexts:
       set: option-term-post
 
   option-term-post:
-    - include: option-term-british-our
     - include: option-term-connectors
     - match: '='
       set: option-term+equals
