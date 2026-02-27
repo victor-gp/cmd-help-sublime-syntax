@@ -2,16 +2,18 @@
 # shellcheck shell=bash
 
 # regression tests diff
+# to focus on a particular test, do e.g.:
+#   reg -- tests/highlighted/bat-short.0.22.1.txt`
+# to exclude e.g. THEME-italics, do:
+#   reg -- ":^*-italics*"
 function reg {
-    if [[ "$*" != *"--"* ]]; then
+    if [[ "$*" != *"-- "* ]]; then
         GIT_PAGER="LESS=R less" git diff "$@" -- tests/{highlighted,theme}
     else
+        # the function args include a path filter
         GIT_PAGER="LESS=R less" git diff "$@"
     fi
 }
-
-# to exclude e.g. THEME-italics, do:
-#   reg -- ":^*-italics*"
 
 function regs {
     reg --staged "$@"
@@ -23,7 +25,7 @@ function regm {
 
 # regression tests show
 function regshow {
-    if [[ "$*" != *"--"* ]]; then
+    if [[ "$*" != *"-- "* ]]; then
         GIT_PAGER="LESS=R less" git show "$@" -- tests/{highlighted,theme}
     else
         GIT_PAGER="LESS=R less" git show "$@"
