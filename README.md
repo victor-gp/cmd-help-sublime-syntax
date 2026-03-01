@@ -32,7 +32,7 @@ Contributions are welcome! :D
 
 Make sure to give [CONTRIBUTING.md](docs/CONTRIBUTING.md) a cursory read to learn how you can help.
 
-If you want to hack on the project, look at [the Development doc](https://github.com/victor-gp/cmd-help-sublime-syntax/wiki/Development) to help get you started.
+If you want to hack on the project, look at [the Development wiki](https://github.com/victor-gp/cmd-help-sublime-syntax/wiki/Development) to help get you started.
 
 If you like `cmd-help`, please [star it on GitHub](https://github.com/victor-gp/cmd-help-sublime-syntax) and spread the word. :)
 
