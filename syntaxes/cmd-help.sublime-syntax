@@ -155,8 +155,11 @@ contexts:
       set: indent-3-8
     - include: else-pop
 
+  # previous line was blank; we're at the beginning of a line; stack is [main-b, this]
   line-begin-after-blank:
     - include: permissive-heading
+    # another blank line, consume it and stay in this context
+    - match: ^\s*$
     - include: else-pop
 
   indent-0:
