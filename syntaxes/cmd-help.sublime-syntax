@@ -109,6 +109,9 @@ contexts:
         - include: Manpage.sublime-syntax
 
   main-b: # stack lv 0
+    # this is a blank line, next one may be a heading
+    - match: ^\s*$
+      push: line-begin-after-blank
     - match: ^
       push: [line, line-begin]
 
@@ -152,6 +155,10 @@ contexts:
       set: indent-3-8
     - include: else-pop
 
+  line-begin-after-blank:
+    - include: permissive-heading
+    - include: else-pop
+
   indent-0:
     - include: heading
     - include: option-def-head
@@ -189,6 +196,11 @@ contexts:
       set: maybe-bat
     - include: python-argparse-headings
 
+  permissive-heading:
+    # lowercase allowed, colon ending required
+    - match: '{{lookahead_lte_40_chars}}{{any_word2}}( {{any_word2}})*:\n'
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
 
   # hack to harmonize usage lines in bat's help message
   #nice: generalize this pattern and remove this hardcoded case
