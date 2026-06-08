@@ -187,7 +187,7 @@ contexts:
   ### section headings #########################################################
 
   heading:
-    - include: heading-specials
+    - include: inline-usage
     - match: '{{lookahead_lte_40_chars}}{{leading_word}}( {{any_word2}})*:?\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
@@ -195,11 +195,10 @@ contexts:
     #   scope: *SECTION_HEADING_SCOPES
     #   set: then-pop
 
-  heading-specials:
+  inline-usage:
     - match: (?i:usage):(?=.+\n)
       scope: *INLINE_USAGE_SCOPES
       set: maybe-bat
-    - include: python-argparse-headings
 
   permissive-heading:
     # lowercase, numbers, underline, dots allowed; colon ending required
@@ -606,8 +605,3 @@ contexts:
       set: main
     - match: ^\n$ # empty line
       set: main
-
-  python-argparse-headings:
-    - match: (positional arguments|optional arguments|required arguments|options):\n
-      scope: *SECTION_HEADING_SCOPES
-      set: then-pop
