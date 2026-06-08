@@ -38,21 +38,24 @@ cinepak AVOptions:
   -skip_empty_cb     <boolean>    E..V...... Avoid wasting bytes, ignore vintage MacOS decoder (default false)
 
 ffv1 encoder AVOptions:
+# <- string.section-heading.cmd-help
 #^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
 jpeg 2000 encoder AVOptions:
+# <- string.section-heading.cmd-help
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
 H.263 encoder AVOptions:
+# <- string.section-heading.cmd-help
 #^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
 h264_omx AVOptions:
-#^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle this heading (underline)
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
 h264_v4l2m2m_encoder AVOptions:
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle this heading (underline, weird alphanumeric string)
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
 Per-file main options:
 -map_metadata outfile[,metadata]:infile[,metadata]  set metadata information of outfile from infile

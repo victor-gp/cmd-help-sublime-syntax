@@ -2030,7 +2030,7 @@
 [38;2;246;170;17mMOV text enoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-height[0m[38;2;248;248;242m            <int>        E....S.... Frame height, usually video height (from 0 to INT_MAX) (default 0)[0m
 
-[38;2;248;248;242mlibfdk_aac AVOptions:[0m
+[38;2;246;170;17mlibfdk_aac AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-afterburner[0m[38;2;248;248;242m       <int>        E...A..... Afterburner (improved quality) (from 0 to 1) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-eld_sbr[0m[38;2;248;248;242m           <int>        E...A..... Enable SBR for ELD (for SBR in other configurations, use the -profile parameter) (from 0 to 1) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-eld_v2[0m[38;2;248;248;242m            <int>        E...A..... Enable ELDv2 (LD-MPS extension for ELD stereo signals) (from 0 to 1) (default 0)[0m
@@ -2048,7 +2048,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-joint_stereo[0m[38;2;248;248;242m      <boolean>    E...A..... use joint stereo (default true)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-abr[0m[38;2;248;248;242m               <boolean>    E...A..... use ABR (default false)[0m
 
-[38;2;248;248;242mlibopencore_amrnb AVOptions:[0m
+[38;2;246;170;17mlibopencore_amrnb AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-dtx[0m[38;2;248;248;242m               <int>        E...A..... Allow DTX (generate comfort noise) (from 0 to 1) (default 0)[0m
 
 [38;2;246;170;17mlibopus AVOptions:[0m
@@ -2370,11 +2370,11 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-me_quality[0m[38;2;248;248;242m        <int>        E..V...... Motion estimation quality (from 0 to 6) (default 4)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-mpeg_quant[0m[38;2;248;248;242m        <int>        E..V...... Use MPEG quantizers instead of H.263 (from 0 to 1) (default 0)[0m
 
-[38;2;248;248;242mh263_v4l2m2m_encoder AVOptions:[0m
+[38;2;246;170;17mh263_v4l2m2m_encoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the capture context (from 4 to INT_MAX) (default 4)[0m
 
-[38;2;248;248;242mh264_nvenc AVOptions:[0m
+[38;2;246;170;17mh264_nvenc AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-preset[0m[38;2;248;248;242m            <int>        E..V...... Set the encoding preset (from 0 to 11) (default medium)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mdefault[0m[38;2;248;248;242m         0            E..V...... [0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mslow[0m[38;2;248;248;242m            1            E..V...... hq 2 passes[0m
@@ -2469,7 +2469,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a53cc[0m[38;2;248;248;242m             <boolean>    E..V...... Use A53 Closed Captions (if available) (default true)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-dpb_size[0m[38;2;248;248;242m          <int>        E..V...... Specifies the DPB size used for encoding (0 means automatic) (from 0 to INT_MAX) (default 0)[0m
 
-[38;2;248;248;242mh264_omx AVOptions:[0m
+[38;2;246;170;17mh264_omx AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-omx_libname[0m[38;2;248;248;242m       <string>     ED.V...... OpenMAX library name[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-omx_libprefix[0m[38;2;248;248;242m     <string>     ED.V...... OpenMAX library prefix[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-zerocopy[0m[38;2;248;248;242m          <int>        E..V...... Try to avoid copying input frames if possible (from 0 to 1) (default 0)[0m
@@ -2478,11 +2478,11 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mmain[0m[38;2;248;248;242m            77           E..V...... [0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mhigh[0m[38;2;248;248;242m            100          E..V...... [0m
 
-[38;2;248;248;242mh264_v4l2m2m_encoder AVOptions:[0m
+[38;2;246;170;17mh264_v4l2m2m_encoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the capture context (from 4 to INT_MAX) (default 4)[0m
 
-[38;2;248;248;242mh264_vaapi AVOptions:[0m
+[38;2;246;170;17mh264_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-low_power[0m[38;2;248;248;242m         <boolean>    E..V...... Use low-power encoding mode (only available on some platforms; may not support all encoding features) (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-idr_interval[0m[38;2;248;248;242m      <int>        E..V...... Distance (in I-frames) between IDR frames (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b_depth[0m[38;2;248;248;242m           <int>        E..V...... Maximum B-frame reference depth (from 1 to INT_MAX) (default 1)[0m
@@ -2626,7 +2626,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a53cc[0m[38;2;248;248;242m             <boolean>    E..V...... Use A53 Closed Captions (if available) (default true)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-dpb_size[0m[38;2;248;248;242m          <int>        E..V...... Specifies the DPB size used for encoding (0 means automatic) (from 0 to INT_MAX) (default 0)[0m
 
-[38;2;248;248;242mnvenc_h264 AVOptions:[0m
+[38;2;246;170;17mnvenc_h264 AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-preset[0m[38;2;248;248;242m            <int>        E..V...... Set the encoding preset (from 0 to 11) (default medium)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mdefault[0m[38;2;248;248;242m         0            E..V...... [0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mslow[0m[38;2;248;248;242m            1            E..V...... hq 2 passes[0m
@@ -2721,7 +2721,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a53cc[0m[38;2;248;248;242m             <boolean>    E..V...... Use A53 Closed Captions (if available) (default true)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-dpb_size[0m[38;2;248;248;242m          <int>        E..V...... Specifies the DPB size used for encoding (0 means automatic) (from 0 to INT_MAX) (default 0)[0m
 
-[38;2;248;248;242mnvenc_hevc AVOptions:[0m
+[38;2;246;170;17mnvenc_hevc AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-preset[0m[38;2;248;248;242m            <int>        E..V...... Set the encoding preset (from 0 to 11) (default medium)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mdefault[0m[38;2;248;248;242m         0            E..V...... [0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mslow[0m[38;2;248;248;242m            1            E..V...... hq 2 passes[0m
@@ -2806,7 +2806,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mmiddle[0m[38;2;248;248;242m          2            E..V...... Only (number of B frames)/2 will be used for reference[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-dpb_size[0m[38;2;248;248;242m          <int>        E..V...... Specifies the DPB size used for encoding (0 means automatic) (from 0 to INT_MAX) (default 0)[0m
 
-[38;2;248;248;242mhevc_nvenc AVOptions:[0m
+[38;2;246;170;17mhevc_nvenc AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-preset[0m[38;2;248;248;242m            <int>        E..V...... Set the encoding preset (from 0 to 11) (default medium)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mdefault[0m[38;2;248;248;242m         0            E..V...... [0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mslow[0m[38;2;248;248;242m            1            E..V...... hq 2 passes[0m
@@ -2891,11 +2891,11 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mmiddle[0m[38;2;248;248;242m          2            E..V...... Only (number of B frames)/2 will be used for reference[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-dpb_size[0m[38;2;248;248;242m          <int>        E..V...... Specifies the DPB size used for encoding (0 means automatic) (from 0 to INT_MAX) (default 0)[0m
 
-[38;2;248;248;242mhevc_v4l2m2m_encoder AVOptions:[0m
+[38;2;246;170;17mhevc_v4l2m2m_encoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the capture context (from 4 to INT_MAX) (default 4)[0m
 
-[38;2;248;248;242mh265_vaapi AVOptions:[0m
+[38;2;246;170;17mh265_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-low_power[0m[38;2;248;248;242m         <boolean>    E..V...... Use low-power encoding mode (only available on some platforms; may not support all encoding features) (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-idr_interval[0m[38;2;248;248;242m      <int>        E..V...... Distance (in I-frames) between IDR frames (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b_depth[0m[38;2;248;248;242m           <int>        E..V...... Maximum B-frame reference depth (from 1 to INT_MAX) (default 1)[0m
@@ -2933,14 +2933,14 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-sei[0m[38;2;248;248;242m               <flags>      E..V...... Set SEI to include (default hdr)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mhdr[0m[38;2;248;248;242m                          E..V...... Include HDR metadata for mastering display colour volume and content light level information[0m
 
-[38;2;248;248;242mmjpeg_vaapi AVOptions:[0m
+[38;2;246;170;17mmjpeg_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-low_power[0m[38;2;248;248;242m         <boolean>    E..V...... Use low-power encoding mode (only available on some platforms; may not support all encoding features) (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-idr_interval[0m[38;2;248;248;242m      <int>        E..V...... Distance (in I-frames) between IDR frames (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b_depth[0m[38;2;248;248;242m           <int>        E..V...... Maximum B-frame reference depth (from 1 to INT_MAX) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-jfif[0m[38;2;248;248;242m              <boolean>    E..V...... Include JFIF header (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-huffman[0m[38;2;248;248;242m           <boolean>    E..V...... Include huffman tables (default true)[0m
 
-[38;2;248;248;242mmpeg2_vaapi AVOptions:[0m
+[38;2;246;170;17mmpeg2_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-low_power[0m[38;2;248;248;242m         <boolean>    E..V...... Use low-power encoding mode (only available on some platforms; may not support all encoding features) (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-idr_interval[0m[38;2;248;248;242m      <int>        E..V...... Distance (in I-frames) between IDR frames (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b_depth[0m[38;2;248;248;242m           <int>        E..V...... Maximum B-frame reference depth (from 1 to INT_MAX) (default 1)[0m
@@ -2961,7 +2961,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mhigh_1440[0m[38;2;248;248;242m       6            E..V......[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mhigh[0m[38;2;248;248;242m            4            E..V......[0m
 
-[38;2;248;248;242mmpeg4_omx AVOptions:[0m
+[38;2;246;170;17mmpeg4_omx AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-omx_libname[0m[38;2;248;248;242m       <string>     ED.V...... OpenMAX library name[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-omx_libprefix[0m[38;2;248;248;242m     <string>     ED.V...... OpenMAX library prefix[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-zerocopy[0m[38;2;248;248;242m          <int>        E..V...... Try to avoid copying input frames if possible (from 0 to 1) (default 0)[0m
@@ -2970,15 +2970,15 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mmain[0m[38;2;248;248;242m            77           E..V...... [0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mhigh[0m[38;2;248;248;242m            100          E..V...... [0m
 
-[38;2;248;248;242mmpeg4_v4l2m2m_encoder AVOptions:[0m
+[38;2;246;170;17mmpeg4_v4l2m2m_encoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the capture context (from 4 to INT_MAX) (default 4)[0m
 
-[38;2;248;248;242mvp8_v4l2m2m_encoder AVOptions:[0m
+[38;2;246;170;17mvp8_v4l2m2m_encoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Number of buffers in the capture context (from 4 to INT_MAX) (default 4)[0m
 
-[38;2;248;248;242mvp8_vaapi AVOptions:[0m
+[38;2;246;170;17mvp8_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-low_power[0m[38;2;248;248;242m         <boolean>    E..V...... Use low-power encoding mode (only available on some platforms; may not support all encoding features) (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-idr_interval[0m[38;2;248;248;242m      <int>        E..V...... Distance (in I-frames) between IDR frames (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b_depth[0m[38;2;248;248;242m           <int>        E..V...... Maximum B-frame reference depth (from 1 to INT_MAX) (default 1)[0m
@@ -2993,7 +2993,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-loop_filter_level[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Loop filter level (from 0 to 63) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-loop_filter_sharpness[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E..V...... Loop filter sharpness (from 0 to 15) (default 4)[0m
 
-[38;2;248;248;242mvp9_vaapi AVOptions:[0m
+[38;2;246;170;17mvp9_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-low_power[0m[38;2;248;248;242m         <boolean>    E..V...... Use low-power encoding mode (only available on some platforms; may not support all encoding features) (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-idr_interval[0m[38;2;248;248;242m      <int>        E..V...... Distance (in I-frames) between IDR frames (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-b_depth[0m[38;2;248;248;242m           <int>        E..V...... Maximum B-frame reference depth (from 1 to INT_MAX) (default 1)[0m
@@ -3041,7 +3041,7 @@
 [38;2;246;170;17mgif decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-trans_color[0m[38;2;248;248;242m       <int>        .D.V...... color value (ARGB) that is used instead of transparent color (from 0 to UINT32_MAX) (default 16777215)[0m
 
-[38;2;248;248;242mh263_v4l2m2m_decoder AVOptions:[0m
+[38;2;246;170;17mh263_v4l2m2m_decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the capture context (from 20 to INT_MAX) (default 20)[0m
 
@@ -3049,10 +3049,10 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-enable_er[0m[38;2;248;248;242m         <boolean>    .D.V...... Enable error resilience on damaged frames (unsafe) (default auto)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-x264_build[0m[38;2;248;248;242m        <int>        .D.V...... Assume this x264 version if no x264 version found in any SEI (from -1 to INT_MAX) (default -1)[0m
 
-[38;2;248;248;242mh264_crystalhd AVOptions:[0m
+[38;2;246;170;17mh264_crystalhd AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crystalhd_downscale_width[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Turn on downscaling to the specified width (from 0 to UINT32_MAX) (default 0)[0m
 
-[38;2;248;248;242mh264_v4l2m2m_decoder AVOptions:[0m
+[38;2;246;170;17mh264_v4l2m2m_decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the capture context (from 20 to INT_MAX) (default 20)[0m
 
@@ -3060,7 +3060,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-apply_defdispwin[0m[38;2;248;248;242m  <boolean>    .D.V...... Apply default display window from VUI (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-strict-displaywin[0m[38;2;248;248;242m [0m[38;2;249;38;114m<boolean>[0m[38;2;248;248;242m    .D.V...... stricly apply default display window size (default false)[0m
 
-[38;2;248;248;242mhevc_v4l2m2m_decoder AVOptions:[0m
+[38;2;246;170;17mhevc_v4l2m2m_decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the capture context (from 20 to INT_MAX) (default 20)[0m
 
@@ -3072,25 +3072,25 @@
 
 [38;2;246;170;17mMPEG4 Video Decoder AVOptions:[0m
 
-[38;2;248;248;242mmpeg4_crystalhd AVOptions:[0m
+[38;2;246;170;17mmpeg4_crystalhd AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crystalhd_downscale_width[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Turn on downscaling to the specified width (from 0 to UINT32_MAX) (default 0)[0m
 
-[38;2;248;248;242mmpeg4_v4l2m2m_decoder AVOptions:[0m
+[38;2;246;170;17mmpeg4_v4l2m2m_decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the capture context (from 20 to INT_MAX) (default 20)[0m
 
-[38;2;248;248;242mmpeg1_v4l2m2m_decoder AVOptions:[0m
+[38;2;246;170;17mmpeg1_v4l2m2m_decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the capture context (from 20 to INT_MAX) (default 20)[0m
 
-[38;2;248;248;242mmpeg2_crystalhd AVOptions:[0m
+[38;2;246;170;17mmpeg2_crystalhd AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crystalhd_downscale_width[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Turn on downscaling to the specified width (from 0 to UINT32_MAX) (default 0)[0m
 
-[38;2;248;248;242mmpeg2_v4l2m2m_decoder AVOptions:[0m
+[38;2;246;170;17mmpeg2_v4l2m2m_decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the capture context (from 20 to INT_MAX) (default 20)[0m
 
-[38;2;248;248;242mmsmpeg4_crystalhd AVOptions:[0m
+[38;2;246;170;17mmsmpeg4_crystalhd AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crystalhd_downscale_width[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Turn on downscaling to the specified width (from 0 to UINT32_MAX) (default 0)[0m
 
 [38;2;246;170;17mrasc decoder AVOptions:[0m
@@ -3114,22 +3114,22 @@
 [38;2;246;170;17mV210 Decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-custom_stride[0m[38;2;248;248;242m     <int>        .D.V...... Custom V210 stride (from INT_MIN to INT_MAX) (default 0)[0m
 
-[38;2;248;248;242mvc1_crystalhd AVOptions:[0m
+[38;2;246;170;17mvc1_crystalhd AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crystalhd_downscale_width[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Turn on downscaling to the specified width (from 0 to UINT32_MAX) (default 0)[0m
 
-[38;2;248;248;242mvc1_v4l2m2m_decoder AVOptions:[0m
+[38;2;246;170;17mvc1_v4l2m2m_decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the capture context (from 20 to INT_MAX) (default 20)[0m
 
-[38;2;248;248;242mvp8_v4l2m2m_decoder AVOptions:[0m
+[38;2;246;170;17mvp8_v4l2m2m_decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the capture context (from 20 to INT_MAX) (default 20)[0m
 
-[38;2;248;248;242mvp9_v4l2m2m_decoder AVOptions:[0m
+[38;2;246;170;17mvp9_v4l2m2m_decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_output_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the output context (from 6 to INT_MAX) (default 16)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_capture_buffers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Number of buffers in the capture context (from 20 to INT_MAX) (default 20)[0m
 
-[38;2;248;248;242mwmv3_crystalhd AVOptions:[0m
+[38;2;246;170;17mwmv3_crystalhd AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crystalhd_downscale_width[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        .D.V...... Turn on downscaling to the specified width (from 0 to UINT32_MAX) (default 0)[0m
 
 [38;2;246;170;17mAAC decoder AVOptions:[0m
@@ -3233,7 +3233,7 @@
 
 [38;2;246;170;17mlibopusdec AVOptions:[0m
 
-[38;2;248;248;242mh264_cuvid AVOptions:[0m
+[38;2;246;170;17mh264_cuvid AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-deint[0m[38;2;248;248;242m             <int>        .D.V...... Set deinterlacing mode (from 0 to 2) (default weave)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mweave[0m[38;2;248;248;242m           0            .D.V...... Weave deinterlacing (do nothing)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            .D.V...... Bob deinterlacing[0m
@@ -3244,7 +3244,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crop[0m[38;2;248;248;242m              <string>     .D.V...... Crop (top)x(bottom)x(left)x(right)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-resize[0m[38;2;248;248;242m            <string>     .D.V...... Resize (width)x(height)[0m
 
-[38;2;248;248;242mhevc_cuvid AVOptions:[0m
+[38;2;246;170;17mhevc_cuvid AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-deint[0m[38;2;248;248;242m             <int>        .D.V...... Set deinterlacing mode (from 0 to 2) (default weave)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mweave[0m[38;2;248;248;242m           0            .D.V...... Weave deinterlacing (do nothing)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            .D.V...... Bob deinterlacing[0m
@@ -3255,7 +3255,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crop[0m[38;2;248;248;242m              <string>     .D.V...... Crop (top)x(bottom)x(left)x(right)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-resize[0m[38;2;248;248;242m            <string>     .D.V...... Resize (width)x(height)[0m
 
-[38;2;248;248;242mmjpeg_cuvid AVOptions:[0m
+[38;2;246;170;17mmjpeg_cuvid AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-deint[0m[38;2;248;248;242m             <int>        .D.V...... Set deinterlacing mode (from 0 to 2) (default weave)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mweave[0m[38;2;248;248;242m           0            .D.V...... Weave deinterlacing (do nothing)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            .D.V...... Bob deinterlacing[0m
@@ -3266,7 +3266,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crop[0m[38;2;248;248;242m              <string>     .D.V...... Crop (top)x(bottom)x(left)x(right)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-resize[0m[38;2;248;248;242m            <string>     .D.V...... Resize (width)x(height)[0m
 
-[38;2;248;248;242mmpeg1_cuvid AVOptions:[0m
+[38;2;246;170;17mmpeg1_cuvid AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-deint[0m[38;2;248;248;242m             <int>        .D.V...... Set deinterlacing mode (from 0 to 2) (default weave)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mweave[0m[38;2;248;248;242m           0            .D.V...... Weave deinterlacing (do nothing)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            .D.V...... Bob deinterlacing[0m
@@ -3277,7 +3277,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crop[0m[38;2;248;248;242m              <string>     .D.V...... Crop (top)x(bottom)x(left)x(right)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-resize[0m[38;2;248;248;242m            <string>     .D.V...... Resize (width)x(height)[0m
 
-[38;2;248;248;242mmpeg2_cuvid AVOptions:[0m
+[38;2;246;170;17mmpeg2_cuvid AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-deint[0m[38;2;248;248;242m             <int>        .D.V...... Set deinterlacing mode (from 0 to 2) (default weave)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mweave[0m[38;2;248;248;242m           0            .D.V...... Weave deinterlacing (do nothing)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            .D.V...... Bob deinterlacing[0m
@@ -3288,7 +3288,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crop[0m[38;2;248;248;242m              <string>     .D.V...... Crop (top)x(bottom)x(left)x(right)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-resize[0m[38;2;248;248;242m            <string>     .D.V...... Resize (width)x(height)[0m
 
-[38;2;248;248;242mmpeg4_cuvid AVOptions:[0m
+[38;2;246;170;17mmpeg4_cuvid AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-deint[0m[38;2;248;248;242m             <int>        .D.V...... Set deinterlacing mode (from 0 to 2) (default weave)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mweave[0m[38;2;248;248;242m           0            .D.V...... Weave deinterlacing (do nothing)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            .D.V...... Bob deinterlacing[0m
@@ -3299,7 +3299,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crop[0m[38;2;248;248;242m              <string>     .D.V...... Crop (top)x(bottom)x(left)x(right)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-resize[0m[38;2;248;248;242m            <string>     .D.V...... Resize (width)x(height)[0m
 
-[38;2;248;248;242mvc1_cuvid AVOptions:[0m
+[38;2;246;170;17mvc1_cuvid AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-deint[0m[38;2;248;248;242m             <int>        .D.V...... Set deinterlacing mode (from 0 to 2) (default weave)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mweave[0m[38;2;248;248;242m           0            .D.V...... Weave deinterlacing (do nothing)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            .D.V...... Bob deinterlacing[0m
@@ -3310,7 +3310,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crop[0m[38;2;248;248;242m              <string>     .D.V...... Crop (top)x(bottom)x(left)x(right)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-resize[0m[38;2;248;248;242m            <string>     .D.V...... Resize (width)x(height)[0m
 
-[38;2;248;248;242mvp8_cuvid AVOptions:[0m
+[38;2;246;170;17mvp8_cuvid AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-deint[0m[38;2;248;248;242m             <int>        .D.V...... Set deinterlacing mode (from 0 to 2) (default weave)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mweave[0m[38;2;248;248;242m           0            .D.V...... Weave deinterlacing (do nothing)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            .D.V...... Bob deinterlacing[0m
@@ -3321,7 +3321,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-crop[0m[38;2;248;248;242m              <string>     .D.V...... Crop (top)x(bottom)x(left)x(right)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-resize[0m[38;2;248;248;242m            <string>     .D.V...... Resize (width)x(height)[0m
 
-[38;2;248;248;242mvp9_cuvid AVOptions:[0m
+[38;2;246;170;17mvp9_cuvid AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-deint[0m[38;2;248;248;242m             <int>        .D.V...... Set deinterlacing mode (from 0 to 2) (default weave)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mweave[0m[38;2;248;248;242m           0            .D.V...... Weave deinterlacing (do nothing)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            .D.V...... Bob deinterlacing[0m
@@ -3795,7 +3795,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-auto_convert[0m[38;2;248;248;242m      <boolean>    .D........ automatically convert bitstream format (default true)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-segment_time_metadata[0m[38;2;248;248;242m [0m[38;2;249;38;114m<boolean>[0m[38;2;248;248;242m    .D........ output file segment start time and duration as packet metadata (default false)[0m
 
-[38;2;248;248;242mraw_data demuxer AVOptions:[0m
+[38;2;246;170;17mraw_data demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-raw_packet_size[0m[38;2;248;248;242m   <int>        .D........  (from 1 to INT_MAX) (default 1024)[0m
 
 [38;2;246;170;17mdirac demuxer AVOptions:[0m
@@ -3830,7 +3830,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-flv_ignore_prevtag[0m[38;2;248;248;242m [0m[38;2;249;38;114m<boolean>[0m[38;2;248;248;242m    .D.V...... Ignore the Size of previous tag (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-missing_streams[0m[38;2;248;248;242m   <int>        .D.V..XR..  (from 0 to 255) (default 0)[0m
 
-[38;2;248;248;242mlive_flvdec AVOptions:[0m
+[38;2;246;170;17mlive_flvdec AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-flv_metadata[0m[38;2;248;248;242m      <boolean>    .D.V...... Allocate streams according to the onMetaData array (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-flv_full_metadata[0m[38;2;248;248;242m [0m[38;2;249;38;114m<boolean>[0m[38;2;248;248;242m    .D.V...... Dump full metadata of the onMetadata (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-flv_ignore_prevtag[0m[38;2;248;248;242m [0m[38;2;249;38;114m<boolean>[0m[38;2;248;248;242m    .D.V...... Ignore the Size of previous tag (default false)[0m
@@ -3914,7 +3914,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-video_size[0m[38;2;248;248;242m        <image_size> .D........ set video size[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-loop[0m[38;2;248;248;242m              <boolean>    .D........ force loop over input file sequence (default false)[0m
 
-[38;2;248;248;242malias_pix demuxer AVOptions:[0m
+[38;2;246;170;17malias_pix demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-pattern_type[0m[38;2;248;248;242m      <int>        .D........ set pattern type (from 0 to INT_MAX) (default 4)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mglob_sequence[0m[38;2;248;248;242m   0            .D........ select glob/sequence pattern type[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mglob[0m[38;2;248;248;242m            1            .D........ select glob pattern type[0m
@@ -3932,7 +3932,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-video_size[0m[38;2;248;248;242m        <image_size> .D........ set video size[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-loop[0m[38;2;248;248;242m              <boolean>    .D........ force loop over input file sequence (default false)[0m
 
-[38;2;248;248;242mbrender_pix demuxer AVOptions:[0m
+[38;2;246;170;17mbrender_pix demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-pattern_type[0m[38;2;248;248;242m      <int>        .D........ set pattern type (from 0 to INT_MAX) (default 4)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mglob_sequence[0m[38;2;248;248;242m   0            .D........ select glob/sequence pattern type[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mglob[0m[38;2;248;248;242m            1            .D........ select glob pattern type[0m
@@ -3974,7 +3974,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-framerate[0m[38;2;248;248;242m         <video_rate> .D........  (default "25")[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-raw_packet_size[0m[38;2;248;248;242m   <int>        .D........  (from 1 to INT_MAX) (default 1024)[0m
 
-[38;2;248;248;242mmjpeg_2000 demuxer AVOptions:[0m
+[38;2;246;170;17mmjpeg_2000 demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-framerate[0m[38;2;248;248;242m         <video_rate> .D........  (default "25")[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-raw_packet_size[0m[38;2;248;248;242m   <int>        .D........  (from 1 to INT_MAX) (default 1024)[0m
 
@@ -4157,7 +4157,7 @@
 [38;2;246;170;17msbc demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-raw_packet_size[0m[38;2;248;248;242m   <int>        .D........  (from 1 to INT_MAX) (default 1024)[0m
 
-[38;2;248;248;242msbg_demuxer AVOptions:[0m
+[38;2;246;170;17msbg_demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-sample_rate[0m[38;2;248;248;242m       <int>        .D........  (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-frame_size[0m[38;2;248;248;242m        <int>        .D........  (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-max_file_size[0m[38;2;248;248;242m     <int>        .D........  (from 0 to INT_MAX) (default 5000000)[0m
@@ -4189,7 +4189,7 @@
 [38;2;246;170;17mtak demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-raw_packet_size[0m[38;2;248;248;242m   <int>        .D........  (from 1 to INT_MAX) (default 1024)[0m
 
-[38;2;248;248;242mtedcaptions_demuxer AVOptions:[0m
+[38;2;246;170;17mtedcaptions_demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-start_time[0m[38;2;248;248;242m        <int64>      .D...S.... set the start time (offset) of the subtitles, in ms (from I64_MIN to I64_MAX) (default 15000)[0m
 
 [38;2;246;170;17mtruehd demuxer AVOptions:[0m
@@ -5054,7 +5054,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-pat_period[0m[38;2;248;248;242m        <duration>   E......... PAT/PMT retransmission time limit in seconds (default 0.1)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-sdt_period[0m[38;2;248;248;242m        <duration>   E......... SDT retransmission time limit in seconds (default 0.5)[0m
 
-[38;2;248;248;242mmpjpeg_muxer AVOptions:[0m
+[38;2;246;170;17mmpjpeg_muxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-boundary_tag[0m[38;2;248;248;242m      <string>     E......... Boundary tag (default "ffmpeg")[0m
 
 [38;2;246;170;17mMXF muxer AVOptions:[0m
@@ -5261,7 +5261,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-initial_offset[0m[38;2;248;248;242m    <duration>   E......... set initial timestamp offset (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-write_empty_segments[0m[38;2;248;248;242m [0m[38;2;249;38;114m<boolean>[0m[38;2;248;248;242m    E......... allow writing empty 'filler' segments (default false)[0m
 
-[38;2;248;248;242mstream_segment muxer AVOptions:[0m
+[38;2;246;170;17mstream_segment muxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-reference_stream[0m[38;2;248;248;242m  <string>     E......... set reference stream (default "auto")[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-segment_format[0m[38;2;248;248;242m    <string>     E......... set container format used for the segments[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-segment_format_options[0m[38;2;248;248;242m [0m[38;2;249;38;114m<dictionary>[0m[38;2;248;248;242m E......... set list of options for the container format used for the segments[0m
@@ -7377,7 +7377,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mplanes[0m[38;2;248;248;242m            <int>        ..FV.....T set planes to filter (from 0 to 15) (default 15)[0m
 [38;2;248;248;242m  sizeY             <int>        ..FV.....T set vertical size (from 0 to 1024) (default 0)[0m
 
-[38;2;248;248;242mavgblur_opencl AVOptions:[0m
+[38;2;246;170;17mavgblur_opencl AVOptions:[0m
 [38;2;248;248;242m  sizeX             <int>        ..FV...... set horizontal size (from 1 to 1024) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mplanes[0m[38;2;248;248;242m            <int>        ..FV...... set planes to filter (from 0 to 15) (default 15)[0m
 [38;2;248;248;242m  sizeY             <int>        ..FV...... set vertical size (from 0 to 1024) (default 0)[0m
@@ -7641,7 +7641,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255malpha_power[0m[38;2;248;248;242m       <int>        ..FV...... How many times should the boxblur be applied to alpha (from -1 to INT_MAX) (default -1)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255map[0m[38;2;248;248;242m                <int>        ..FV...... How many times should the boxblur be applied to alpha (from -1 to INT_MAX) (default -1)[0m
 
-[38;2;248;248;242mboxblur_opencl AVOptions:[0m
+[38;2;246;170;17mboxblur_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mluma_radius[0m[38;2;248;248;242m       <string>     ..FV...... Radius of the luma blurring box (default "2")[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mlr[0m[38;2;248;248;242m                <string>     ..FV...... Radius of the luma blurring box (default "2")[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mluma_power[0m[38;2;248;248;242m        <int>        ..FV...... How many times should the boxblur be applied to luma (from 0 to INT_MAX) (default 2)[0m
@@ -7792,7 +7792,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255msimilarity[0m[38;2;248;248;242m        <float>      ..FV.....T set the colorkey similarity value (from 0.01 to 1) (default 0.01)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mblend[0m[38;2;248;248;242m             <float>      ..FV.....T set the colorkey key blend value (from 0 to 1) (default 0)[0m
 
-[38;2;248;248;242mcolorkey_opencl AVOptions:[0m
+[38;2;246;170;17mcolorkey_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mcolor[0m[38;2;248;248;242m             <color>      ..FV...... set the colorkey key color (default "black")[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255msimilarity[0m[38;2;248;248;242m        <float>      ..FV...... set the colorkey similarity value (from 0.01 to 1) (default 0.01)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mblend[0m[38;2;248;248;242m             <float>      ..FV...... set the colorkey key blend value (from 0 to 1) (default 0)[0m
@@ -7992,7 +7992,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mrow[0m[38;2;248;248;242m             1            ..FV...... single row matrix[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mcolumn[0m[38;2;248;248;242m          2            ..FV...... single column matrix[0m
 
-[38;2;248;248;242mconvolution_opencl AVOptions:[0m
+[38;2;246;170;17mconvolution_opencl AVOptions:[0m
 [38;2;248;248;242m  0m                <string>     ..FV...... set matrix for 2nd plane (default "0 0 0 0 1 0 0 0 0")[0m
 [38;2;248;248;242m  1m                <string>     ..FV...... set matrix for 2nd plane (default "0 0 0 0 1 0 0 0 0")[0m
 [38;2;248;248;242m  2m                <string>     ..FV...... set matrix for 3rd plane (default "0 0 0 0 1 0 0 0 0")[0m
@@ -8021,7 +8021,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mshortest[0m[38;2;248;248;242m          <boolean>    ..FV...... force termination when the shortest input terminates (default false)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mrepeatlast[0m[38;2;248;248;242m        <boolean>    ..FV...... extend last frame of secondary streams beyond EOF (default true)[0m
 
-[38;2;248;248;242mcover_rect AVOptions:[0m
+[38;2;246;170;17mcover_rect AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mcover[0m[38;2;248;248;242m             <string>     ..FV...... cover bitmap filename[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mmode[0m[38;2;248;248;242m              <int>        ..FV...... set removal mode (from 0 to 1) (default blur)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mcover[0m[38;2;248;248;242m           0            ..FV...... cover area with bitmap[0m
@@ -8187,7 +8187,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mmedian[0m[38;2;248;248;242m          6            ..FV...... median[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mbypass[0m[38;2;248;248;242m            <boolean>    ..FV...... leave frames unchanged (default false)[0m
 
-[38;2;248;248;242mdeinterlace_vaapi AVOptions:[0m
+[38;2;246;170;17mdeinterlace_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mmode[0m[38;2;248;248;242m              <int>        ..FV...... Deinterlacing mode (from 0 to 4) (default default)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mdefault[0m[38;2;248;248;242m         0            ..FV...... Use the highest-numbered (and therefore possibly most advanced) deinterlacing algorithm[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbob[0m[38;2;248;248;242m             1            ..FV...... Use the bob deinterlacing algorithm[0m
@@ -8209,7 +8209,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mh[0m[38;2;248;248;242m                 <string>     ..FV...... set logo height (default "-1")[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mshow[0m[38;2;248;248;242m              <boolean>    ..FV...... show delogo area (default false)[0m
 
-[38;2;248;248;242mdenoise_vaapi AVOptions:[0m
+[38;2;246;170;17mdenoise_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdenoise[0m[38;2;248;248;242m           <int>        ..FV...... denoise level (from 0 to 64) (default 0)[0m
 
 [38;2;246;170;17mderain AVOptions:[0m
@@ -8240,7 +8240,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mfilename[0m[38;2;248;248;242m          <string>     ..FV...... set motion search detailed log file name[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mopencl[0m[38;2;248;248;242m            <boolean>    ..FV...... ignored (default false)[0m
 
-[38;2;248;248;242mdeshake_opencl AVOptions:[0m
+[38;2;246;170;17mdeshake_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mtripod[0m[38;2;248;248;242m            <boolean>    ..FV...... simulates a tripod by preventing any camera movement whatsoever from the original frame (default false)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdebug[0m[38;2;248;248;242m             <boolean>    ..FV...... turn on additional debugging information (default false)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255madaptive_crop[0m[38;2;248;248;242m     <boolean>    ..FV...... attempt to subtly crop borders to reduce mirrored content (default true)[0m
@@ -8276,7 +8276,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mthreshold3[0m[38;2;248;248;242m        <int>        ..FV.....T set threshold for 4th plane (from 0 to 65535) (default 65535)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mcoordinates[0m[38;2;248;248;242m       <int>        ..FV.....T set coordinates (from 0 to 255) (default 255)[0m
 
-[38;2;248;248;242mdilation_opencl AVOptions:[0m
+[38;2;246;170;17mdilation_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mthreshold0[0m[38;2;248;248;242m        <float>      ..FV...... set threshold for 1st plane (from 0 to 65535) (default 65535)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mthreshold1[0m[38;2;248;248;242m        <float>      ..FV...... set threshold for 2nd plane (from 0 to 65535) (default 65535)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mthreshold2[0m[38;2;248;248;242m        <float>      ..FV...... set threshold for 3rd plane (from 0 to 65535) (default 65535)[0m
@@ -8290,7 +8290,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mwrap[0m[38;2;248;248;242m            2            ..FV...... [0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mmirror[0m[38;2;248;248;242m          3            ..FV...... [0m
 
-[38;2;248;248;242mdnn_processing AVOptions:[0m
+[38;2;246;170;17mdnn_processing AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdnn_backend[0m[38;2;248;248;242m       <int>        ..FV...... DNN backend (from 0 to 1) (default native)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mnative[0m[38;2;248;248;242m          0            ..FV...... native backend flag[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mmodel[0m[38;2;248;248;242m             <string>     ..FV...... path to model file[0m
@@ -8457,7 +8457,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mthreshold3[0m[38;2;248;248;242m        <int>        ..FV.....T set threshold for 4th plane (from 0 to 65535) (default 65535)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mcoordinates[0m[38;2;248;248;242m       <int>        ..FV.....T set coordinates (from 0 to 255) (default 255)[0m
 
-[38;2;248;248;242merosion_opencl AVOptions:[0m
+[38;2;246;170;17merosion_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mthreshold0[0m[38;2;248;248;242m        <float>      ..FV...... set threshold for 1st plane (from 0 to 65535) (default 65535)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mthreshold1[0m[38;2;248;248;242m        <float>      ..FV...... set threshold for 2nd plane (from 0 to 65535) (default 65535)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mthreshold2[0m[38;2;248;248;242m        <float>      ..FV...... set threshold for 3rd plane (from 0 to 65535) (default 65535)[0m
@@ -8575,7 +8575,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mfixed[0m[38;2;248;248;242m           2            ..FV.....T[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mcolor[0m[38;2;248;248;242m             <color>      ..FV.....T set the color for the fixed mode (default "black")[0m
 
-[38;2;248;248;242mfind_rect AVOptions:[0m
+[38;2;246;170;17mfind_rect AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mobject[0m[38;2;248;248;242m            <string>     ..FV...... object bitmap filename[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mthreshold[0m[38;2;248;248;242m         <float>      ..FV...... set threshold (from 0 to 1) (default 0.5)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mmipmaps[0m[38;2;248;248;242m           <int>        ..FV...... set mipmaps (from 1 to 5) (default 3)[0m
@@ -9133,7 +9133,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mr[0m[38;2;248;248;242m                 <int>        ..FV...... research window (from 0 to 99) (default 15)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mrc[0m[38;2;248;248;242m                <int>        ..FV...... research window for chroma planes (from 0 to 99) (default 0)[0m
 
-[38;2;248;248;242mnlmeans_opencl AVOptions:[0m
+[38;2;246;170;17mnlmeans_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255ms[0m[38;2;248;248;242m                 <double>     ..FV...... denoising strength (from 1 to 30) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mp[0m[38;2;248;248;242m                 <int>        ..FV...... patch size (from 0 to 99) (default 7)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mpc[0m[38;2;248;248;242m                <int>        ..FV...... patch size for chroma planes (from 0 to 99) (default 0)[0m
@@ -9302,11 +9302,11 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mshortest[0m[38;2;248;248;242m          <boolean>    ..FV...... force termination when the shortest input terminates (default false)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mrepeatlast[0m[38;2;248;248;242m        <boolean>    ..FV...... extend last frame of secondary streams beyond EOF (default true)[0m
 
-[38;2;248;248;242moverlay_opencl AVOptions:[0m
+[38;2;246;170;17moverlay_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mx[0m[38;2;248;248;242m                 <int>        ..FV...... Overlay x position (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255my[0m[38;2;248;248;242m                 <int>        ..FV...... Overlay y position (from 0 to INT_MAX) (default 0)[0m
 
-[38;2;248;248;242moverlay_cuda AVOptions:[0m
+[38;2;246;170;17moverlay_cuda AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mx[0m[38;2;248;248;242m                 <int>        ..FV...... Overlay x position (from INT_MIN to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255my[0m[38;2;248;248;242m                 <int>        ..FV...... Overlay y position (from INT_MIN to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255meof_action[0m[38;2;248;248;242m        <int>        ..FV...... Action to take when encountering EOF from secondary input  (from 0 to 2) (default repeat)[0m
@@ -9344,7 +9344,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mframe[0m[38;2;248;248;242m           1            ..FV...... eval expressions during initialization and per-frame[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255maspect[0m[38;2;248;248;242m            <rational>   ..FV...... pad to fit an aspect instead of a resolution (from 0 to DBL_MAX) (default 0/1)[0m
 
-[38;2;248;248;242mpad_opencl AVOptions:[0m
+[38;2;246;170;17mpad_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mwidth[0m[38;2;248;248;242m             <string>     ..FV...... set the pad area width (default "iw")[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mw[0m[38;2;248;248;242m                 <string>     ..FV...... set the pad area width (default "iw")[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mheight[0m[38;2;248;248;242m            <string>     ..FV...... set the pad area height (default "ih")[0m
@@ -9459,12 +9459,12 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mscale[0m[38;2;248;248;242m             <float>      ..FV...... set scale (from 0 to 65535) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdelta[0m[38;2;248;248;242m             <float>      ..FV...... set delta (from -65535 to 65535) (default 0)[0m
 
-[38;2;248;248;242mprewitt_opencl AVOptions:[0m
+[38;2;246;170;17mprewitt_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mplanes[0m[38;2;248;248;242m            <int>        ..FV...... set planes to filter (from 0 to 15) (default 15)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mscale[0m[38;2;248;248;242m             <float>      ..FV...... set scale (from 0 to 65535) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdelta[0m[38;2;248;248;242m             <float>      ..FV...... set delta (from -65535 to 65535) (default 0)[0m
 
-[38;2;248;248;242mprocamp_vaapi AVOptions:[0m
+[38;2;246;170;17mprocamp_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mb[0m[38;2;248;248;242m                 <float>      ..FV...... Output video brightness (from -100 to 100) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mbrightness[0m[38;2;248;248;242m        <float>      ..FV...... Output video brightness (from -100 to 100) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255ms[0m[38;2;248;248;242m                 <float>      ..FV...... Output video saturation (from 0 to 10) (default 1)[0m
@@ -9474,7 +9474,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mh[0m[38;2;248;248;242m                 <float>      ..FV...... Output video hue (from -180 to 180) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mhue[0m[38;2;248;248;242m               <float>      ..FV...... Output video hue (from -180 to 180) (default 0)[0m
 
-[38;2;248;248;242mprogram_opencl AVOptions:[0m
+[38;2;246;170;17mprogram_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255msource[0m[38;2;248;248;242m            <string>     ..FV...... OpenCL program source file[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mkernel[0m[38;2;248;248;242m            <string>     ..FV...... Kernel name in program[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255minputs[0m[38;2;248;248;242m            <int>        ..FV...... Number of inputs (from 1 to INT_MAX) (default 1)[0m
@@ -9578,7 +9578,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mscale[0m[38;2;248;248;242m             <float>      ..FV...... set scale (from 0 to 65535) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdelta[0m[38;2;248;248;242m             <float>      ..FV...... set delta (from -65535 to 65535) (default 0)[0m
 
-[38;2;248;248;242mroberts_opencl AVOptions:[0m
+[38;2;246;170;17mroberts_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mplanes[0m[38;2;248;248;242m            <int>        ..FV...... set planes to filter (from 0 to 15) (default 15)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mscale[0m[38;2;248;248;242m             <float>      ..FV...... set scale (from 0 to 65535) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdelta[0m[38;2;248;248;242m             <float>      ..FV...... set delta (from -65535 to 65535) (default 0)[0m
@@ -9740,7 +9740,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mincrease[0m[38;2;248;248;242m        2            ..FV......[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mforce_divisible_by[0m[38;2;248;248;242m <int>        ..FV...... enforce that the output resolution is divisible by a defined integer when force_original_aspect_ratio is used (from 1 to 256) (default 1)[0m
 
-[38;2;248;248;242mscale_vaapi AVOptions:[0m
+[38;2;246;170;17mscale_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mw[0m[38;2;248;248;242m                 <string>     ..FV...... Output video width (default "iw")[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mh[0m[38;2;248;248;242m                 <string>     ..FV...... Output video height (default "ih")[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mformat[0m[38;2;248;248;242m            <string>     ..FV...... Output video format (software format of hardware frames)[0m
@@ -10016,7 +10016,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mexpr[0m[38;2;248;248;242m              <string>     ..FV...... set expression determining the output timebase (default "intb")[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mtb[0m[38;2;248;248;242m                <string>     ..FV...... set expression determining the output timebase (default "intb")[0m
 
-[38;2;248;248;242msharpness_vaapi AVOptions:[0m
+[38;2;246;170;17msharpness_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255msharpness[0m[38;2;248;248;242m         <int>        ..FV...... sharpness level (from 0 to 64) (default 44)[0m
 
 [38;2;246;170;17mshowinfo AVOptions:[0m
@@ -10108,7 +10108,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mscale[0m[38;2;248;248;242m             <float>      ..FV...... set scale (from 0 to 65535) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdelta[0m[38;2;248;248;242m             <float>      ..FV...... set delta (from -65535 to 65535) (default 0)[0m
 
-[38;2;248;248;242msobel_opencl AVOptions:[0m
+[38;2;246;170;17msobel_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mplanes[0m[38;2;248;248;242m            <int>        ..FV...... set planes to filter (from 0 to 15) (default 15)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mscale[0m[38;2;248;248;242m             <float>      ..FV...... set scale (from 0 to 65535) (default 1)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdelta[0m[38;2;248;248;242m             <float>      ..FV...... set delta (from -65535 to 65535) (default 0)[0m
@@ -10482,7 +10482,7 @@
 [38;2;246;170;17mthumbnail AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mn[0m[38;2;248;248;242m                 <int>        ..FV...... set the frames batch size (from 2 to INT_MAX) (default 100)[0m
 
-[38;2;248;248;242mthumbnail_cuda AVOptions:[0m
+[38;2;246;170;17mthumbnail_cuda AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mn[0m[38;2;248;248;242m                 <int>        ..FV...... set the frames batch size (from 2 to INT_MAX) (default 100)[0m
 
 [38;2;246;170;17mtile AVOptions:[0m
@@ -10534,7 +10534,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mdesat[0m[38;2;248;248;242m             <double>     ..FV...... desaturation strength (from 0 to DBL_MAX) (default 2)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mpeak[0m[38;2;248;248;242m              <double>     ..FV...... signal peak override (from 0 to DBL_MAX) (default 0)[0m
 
-[38;2;248;248;242mtonemap_opencl AVOptions:[0m
+[38;2;246;170;17mtonemap_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mtonemap[0m[38;2;248;248;242m           <int>        ..FV...... tonemap algorithm selection (from 0 to 6) (default none)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mnone[0m[38;2;248;248;242m            0            ..FV......[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mlinear[0m[38;2;248;248;242m          1            ..FV......[0m
@@ -10612,7 +10612,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mlandscape[0m[38;2;248;248;242m       1            ..FV...... preserve landscape geometry[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mportrait[0m[38;2;248;248;242m        2            ..FV...... preserve portrait geometry[0m
 
-[38;2;248;248;242mtranspose_opencl AVOptions:[0m
+[38;2;246;170;17mtranspose_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdir[0m[38;2;248;248;242m               <int>        ..FV...... set transpose direction (from 0 to 3) (default cclock_flip)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mcclock_flip[0m[38;2;248;248;242m     0            ..FV...... rotate counter-clockwise with vertical flip[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mclock[0m[38;2;248;248;242m           1            ..FV...... rotate clockwise[0m
@@ -10623,7 +10623,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mportrait[0m[38;2;248;248;242m        2            ..FV...... preserve portrait geometry[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mlandscape[0m[38;2;248;248;242m       1            ..FV...... preserve landscape geometry[0m
 
-[38;2;248;248;242mtranspose_vaapi AVOptions:[0m
+[38;2;246;170;17mtranspose_vaapi AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mdir[0m[38;2;248;248;242m               <int>        ..FV...... set transpose direction (from 0 to 6) (default cclock_flip)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mcclock_flip[0m[38;2;248;248;242m     0            ..FV...... rotate counter-clockwise with vertical flip[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mclock[0m[38;2;248;248;242m           1            ..FV...... rotate clockwise[0m
@@ -10668,7 +10668,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255mca[0m[38;2;248;248;242m                <float>      ..FV...... set chroma effect strength (from -2 to 5) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mopencl[0m[38;2;248;248;242m            <boolean>    ..FV...... ignored (default false)[0m
 
-[38;2;248;248;242munsharp_opencl AVOptions:[0m
+[38;2;246;170;17munsharp_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mluma_msize_x[0m[38;2;248;248;242m      <float>      ..FV...... Set luma mask horizontal diameter (pixels) (from 1 to 23) (default 5)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mlx[0m[38;2;248;248;242m                <float>      ..FV...... Set luma mask horizontal diameter (pixels) (from 1 to 23) (default 5)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mluma_msize_y[0m[38;2;248;248;242m      <float>      ..FV...... Set luma mask vertical diameter (pixels) (from 1 to 23) (default 5)[0m
@@ -11053,7 +11053,7 @@
 [38;2;248;248;242m  [0m[38;2;190;132;255moffset[0m[38;2;248;248;242m            <duration>   ..FV...... set cross fade start relative to first input stream (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mexpr[0m[38;2;248;248;242m              <string>     ..FV...... set expression for custom transition[0m
 
-[38;2;248;248;242mxfade_opencl AVOptions:[0m
+[38;2;246;170;17mxfade_opencl AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mtransition[0m[38;2;248;248;242m        <int>        ..FV...... set cross fade transition (from 0 to 9) (default fade)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mcustom[0m[38;2;248;248;242m          0            ..FV...... custom transition[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mfade[0m[38;2;248;248;242m            1            ..FV...... fade transition[0m
@@ -11095,7 +11095,7 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255mall[0m[38;2;248;248;242m             0            ..FV...... deinterlace all frames[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255minterlaced[0m[38;2;248;248;242m      1            ..FV...... only deinterlace frames marked as interlaced[0m
 
-[38;2;248;248;242myadif_cuda AVOptions:[0m
+[38;2;246;170;17myadif_cuda AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mmode[0m[38;2;248;248;242m              <int>        ..FV...... specify the interlacing mode (from 0 to 3) (default send_frame)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255msend_frame[0m[38;2;248;248;242m      0            ..FV...... send one frame for each frame[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255msend_field[0m[38;2;248;248;242m      1            ..FV...... send one frame for each field[0m
@@ -11917,7 +11917,7 @@
 [38;2;246;170;17mbuffersink AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;190;132;255mpix_fmts[0m[38;2;248;248;242m          <binary>     ..FV...... set the supported pixel formats[0m
 
-[38;2;248;248;242mav1_metadata_bsf AVOptions:[0m
+[38;2;246;170;17mav1_metadata_bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-td[0m[38;2;248;248;242m                <int>        ...V....B. Temporal Delimiter OBU (from 0 to 2) (default pass)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mpass[0m[38;2;248;248;242m            0            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255minsert[0m[38;2;248;248;242m          1            ...V....B.[0m
@@ -11936,21 +11936,21 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-num_ticks_per_picture[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        ...V....B. Set display ticks per picture for CFR streams (from -1 to INT_MAX) (default -1)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-delete_padding[0m[38;2;248;248;242m    <boolean>    ...V....B. Delete all Padding OBUs (default false)[0m
 
-[38;2;248;248;242mdump_extradata bsf AVOptions:[0m
+[38;2;246;170;17mdump_extradata bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-freq[0m[38;2;248;248;242m              <int>        ...V....B. When to dump extradata (from 0 to 1) (default k)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mk[0m[38;2;248;248;242m               0            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mkeyframe[0m[38;2;248;248;242m        0            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255me[0m[38;2;248;248;242m               1            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mall[0m[38;2;248;248;242m             1            ...V....B.[0m
 
-[38;2;248;248;242mextract_extradata AVOptions:[0m
+[38;2;246;170;17mextract_extradata AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-remove[0m[38;2;248;248;242m            <int>        ...V....B. remove the extradata from the bitstream (from 0 to 1) (default 0)[0m
 
-[38;2;248;248;242mfilter_units AVOptions:[0m
+[38;2;246;170;17mfilter_units AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-pass_types[0m[38;2;248;248;242m        <string>     ...V....B. List of unit types to pass through the filter.[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-remove_types[0m[38;2;248;248;242m      <string>     ...V....B. List of unit types to remove in the filter.[0m
 
-[38;2;248;248;242mh264_metadata_bsf AVOptions:[0m
+[38;2;246;170;17mh264_metadata_bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-aud[0m[38;2;248;248;242m               <int>        ...V....B. Access Unit Delimiter NAL units (from 0 to 2) (default pass)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mpass[0m[38;2;248;248;242m            0            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255minsert[0m[38;2;248;248;242m          1            ...V....B.[0m
@@ -12003,12 +12003,12 @@
 [38;2;248;248;242m     6.1             61           ...V....B.[0m
 [38;2;248;248;242m     6.2             62           ...V....B.[0m
 
-[38;2;248;248;242mhapqa_extract_bsf AVOptions:[0m
+[38;2;246;170;17mhapqa_extract_bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-texture[0m[38;2;248;248;242m           <int>        ...V....B. texture to keep (from 0 to 1) (default color)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mcolor[0m[38;2;248;248;242m           0            ...V....B. keep HapQ texture[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255malpha[0m[38;2;248;248;242m           1            ...V....B. keep HapAlphaOnly texture[0m
 
-[38;2;248;248;242mh265_metadata_bsf AVOptions:[0m
+[38;2;246;170;17mh265_metadata_bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-aud[0m[38;2;248;248;242m               <int>        ...V....B. Access Unit Delimiter NAL units (from 0 to 2) (default pass)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mpass[0m[38;2;248;248;242m            0            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255minsert[0m[38;2;248;248;242m          1            ...V....B.[0m
@@ -12043,7 +12043,7 @@
 [38;2;248;248;242m     6.2             186          ...V....B.[0m
 [38;2;248;248;242m     8.5             255          ...V....B.[0m
 
-[38;2;248;248;242mmpeg2_metadata_bsf AVOptions:[0m
+[38;2;246;170;17mmpeg2_metadata_bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-display_aspect_ratio[0m[38;2;248;248;242m [0m[38;2;249;38;114m<rational>[0m[38;2;248;248;242m   ...V....B. Set display aspect ratio (table 6-3) (from 0 to 65535) (default 0/1)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-frame_rate[0m[38;2;248;248;242m        <rational>   ...V....B. Set frame rate (from 0 to UINT32_MAX) (default 0/1)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-video_format[0m[38;2;248;248;242m      <int>        ...V....B. Set video format (table 6-6) (from -1 to 7) (default -1)[0m
@@ -12055,10 +12055,10 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-amount[0m[38;2;248;248;242m            <int>        ...VA...B. (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-dropamount[0m[38;2;248;248;242m        <int>        ...VA...B. (from 0 to INT_MAX) (default 0)[0m
 
-[38;2;248;248;242mopus_metadata_bsf AVOptions:[0m
+[38;2;246;170;17mopus_metadata_bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-gain[0m[38;2;248;248;242m              <int>        ....A...B. Gain, actual amplification is pow(10, gain/(20.0*256)) (from -32768 to 32767) (default 0)[0m
 
-[38;2;248;248;242mpcm_rechunk_bsf AVOptions:[0m
+[38;2;246;170;17mpcm_rechunk_bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-nb_out_samples[0m[38;2;248;248;242m    <int>        ....A...B. set the number of per-packet output samples (from 1 to INT_MAX) (default 1024)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-n[0m[38;2;248;248;242m                 <int>        ....A...B. set the number of per-packet output samples (from 1 to INT_MAX) (default 1024)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-pad[0m[38;2;248;248;242m               <boolean>    ....A...B. pad last packet with zeros (default true)[0m
@@ -12066,7 +12066,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-frame_rate[0m[38;2;248;248;242m        <rational>   ....A...B. set number of packets per second (from 0 to INT_MAX) (default 0/1)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-r[0m[38;2;248;248;242m                 <rational>   ....A...B. set number of packets per second (from 0 to INT_MAX) (default 0/1)[0m
 
-[38;2;248;248;242mprores_metadata_bsf AVOptions:[0m
+[38;2;246;170;17mprores_metadata_bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-color_primaries[0m[38;2;248;248;242m   <int>        ...V....B. select color primaries (from -1 to 12) (default auto)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mauto[0m[38;2;248;248;242m            -1           ...V....B. keep the same color primaries[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255munknown[0m[38;2;248;248;242m         0            ...V....B.[0m
@@ -12089,14 +12089,14 @@
 [38;2;248;248;242m     [0m[38;2;190;132;255msmpte170m[0m[38;2;248;248;242m       6            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbt2020nc[0m[38;2;248;248;242m        9            ...V....B.[0m
 
-[38;2;248;248;242mremove_extradata AVOptions:[0m
+[38;2;246;170;17mremove_extradata AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-freq[0m[38;2;248;248;242m              <int>        ...V....B. (from 0 to 2) (default keyframe)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mk[0m[38;2;248;248;242m               2            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mkeyframe[0m[38;2;248;248;242m        0            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255me[0m[38;2;248;248;242m               1            ...V....B.[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mall[0m[38;2;248;248;242m             1            ...V....B.[0m
 
-[38;2;248;248;242mvp9_metadata_bsf AVOptions:[0m
+[38;2;246;170;17mvp9_metadata_bsf AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-color_space[0m[38;2;248;248;242m       <int>        ...V....B. Set colour space (section 7.2.2) (from -1 to 7) (default -1)[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255munknown[0m[38;2;248;248;242m         0            ...V....B. Unknown/unspecified[0m
 [38;2;248;248;242m     [0m[38;2;190;132;255mbt601[0m[38;2;248;248;242m           1            ...V....B. ITU-R BT.601-7[0m

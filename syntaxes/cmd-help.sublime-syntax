@@ -14,8 +14,8 @@ variables:
   any_word: '[A-Za-z][A-Za-z-]*\b'
   # allow parentheses on both ends of the word
   any_word2: '\(?{{any_word}}\)?'
-  # allow numbers and dots in a word
-  any_word3: '[A-Za-z0-9][A-Za-z0-9-\.]*\b'
+  # allow numbers, dots and underline in a word
+  any_word3: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
   # words starting with uppercase
   leading_word: '[A-Z][A-Za-z-]*\b'
   # only consider lines <= 40 chars long
@@ -202,7 +202,7 @@ contexts:
     - include: python-argparse-headings
 
   permissive-heading:
-    # lowercase allowed, colon ending required
+    # lowercase, numbers, underline, dots allowed; colon ending required
     - match: '{{lookahead_lte_40_chars}}{{any_word3}}( {{any_word3}})*:\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
