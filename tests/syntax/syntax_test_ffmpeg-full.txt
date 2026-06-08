@@ -130,3 +130,118 @@ h264_vaapi AVOptions:
 #nice: handle these all caps words as keywords, not arguments...
      CBR             2            E..V...... Constant-bitrate
      AVBR            6            E..V...... Average variable-bitrate
+
+###################################################################################
+
+# These come from tables where the 1st column (-option) runs into the 2nd (<type>)
+# and the latter term is scoped as argument. But that makes it inconsistent with
+# the rest of the column, which isn't scoped because there's usually >1 space of separation.
+#nice: don't scope these ffmpeg <types>
+
+AVCodecContext AVOptions:
+  -request_channel_layout <uint64>     .D..A..... (from 0 to 1.84467e+19) (default 0)
+#                         ^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+
+mov,mp4,m4a,3gp,3g2,mj2 AVOptions:
+  -audible_fixed_key <binary>     .D........ Fixed key used for handling Audible AAX files
+#                    ^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+
+MXF-OPAtom muxer AVOptions:
+  -mxf_audio_edit_rate <rational>   E......... Audio edit rate for timecode (from 0 to INT_MAX) (default 25/1)
+#                      ^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+
+stream_segment muxer AVOptions:
+  -segment_format_options <dictionary> E......... set list of options for the container format used for the segments
+#                         ^^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+  -segment_list_flags <flags>      E......... set flags affecting segment list generation (default cache)
+#                     ^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+  -segment_clocktime_offset <duration>   E......... set segment clocktime offset (default 0)
+#                           ^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+
+tgp muxer AVOptions:
+  -encryption_scheme <string>     E......... Configures the encryption scheme, allowed values are none, cenc-aes-ctr
+#                    ^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+
+webm muxer AVOptions:
+  -cluster_time_limit <int64>      E......... Store at most the provided number of milliseconds in a cluster. (from -1 to I64_MAX) (default -1)
+#                     ^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+
+WebM DASH Manifest muxer AVOptions:
+  -time_shift_buffer_depth <double>     E......... Smallest time (in seconds) shifting buffer for which any Representation is guaranteed to be available. (from 1 to DBL_MAX
+#                          ^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+
+sdl2 outdev AVOptions:
+  -window_fullscreen <boolean>    E......... set SDL window fullscreen (default false)
+#                    ^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+
+SWResampler AVOptions:
+  -out_channel_count <int>        ....A..... set output channel count (from 0 to 64) (default 0)
+#                    ^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+  -internal_sample_fmt <sample_fmt> ....A..... set internal sample format (default none)
+#                      ^^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+  -in_channel_layout <channel_layout> ....A..... set input channel layout (default 0x0)
+#                    ^^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+  -surround_mix_level <float>      ....A..... set surround mix Level (from -32 to 32) (default 0.707107)
+#                     ^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+
+###################################################################################
+
+# These include other KEYWORD patterns that we currently don't cover, or do so as Arguments.
+#nice: handle these ffmpeg keyword patterns
+
+ciescope AVOptions:
+  system            <int>        ..FV...... set color system (from 0 to 9) (default hdtv)
+     ntsc            0            ..FV...... NTSC 1953 Y'I'O' (ITU-R BT.470 System M)
+#    ^^^^ constant.other.keyword.cmd-help
+     470m            0            ..FV...... NTSC 1953 Y'I'O' (ITU-R BT.470 System M)
+#    ^^^^ - constant.other.keyword.cmd-help
+
+convolution_opencl AVOptions:
+  0m                <string>     ..FV...... set matrix for 2nd plane (default "0 0 0 0 1 0 0 0 0")
+# ^^ - constant.other.keyword.cmd-help
+  0rdiv             <float>      ..FV...... set rdiv for 1nd plane (from 0 to INT_MAX) (default 1)
+# ^^^^^ - constant.other.keyword.cmd-help
+  0bias             <float>      ..FV...... set bias for 1st plane (from 0 to INT_MAX) (default 0)
+# ^^^^^ - constant.other.keyword.cmd-help
+
+deband AVOptions:
+  1thr              <float>      ..FV...... set 1st plane threshold (from 3e-05 to 0.5) (default 0.02)
+# ^^^^ - constant.other.keyword.cmd-help
+  2thr              <float>      ..FV...... set 2nd plane threshold (from 3e-05 to 0.5) (default 0.02)
+# ^^^^ - constant.other.keyword.cmd-help
+  3thr              <float>      ..FV...... set 3rd plane threshold (from 3e-05 to 0.5) (default 0.02)
+# ^^^^ - constant.other.keyword.cmd-help
+  4thr              <float>      ..FV...... set 4th plane threshold (from 3e-05 to 0.5) (default 0.02)
+# ^^^^ - constant.other.keyword.cmd-help
+
+fftfilt AVOptions:
+  dc_Y              <int>        ..FV...... adjust gain in Y plane (from 0 to 1000) (default 0)
+# ^^^^ - constant.other.keyword.cmd-help
+  weight_Y          <string>     ..FV...... set luminance expression in Y plane (default "1")
+# ^^^^^^^^ - constant.other.keyword.cmd-help
+
+median AVOptions:
+  radiusV           <int>        ..FV.....T set median vertical radius (from 0 to 127) (default 0)
+# ^^^^^^^ - constant.other.keyword.cmd-help
+
+phase AVOptions:
+  mode              <int>        ..FV...... set phase mode (from 0 to 8) (default A)
+     t               1            ..FV...... top first
+#    ^ constant.other.keyword.cmd-help
+     b               2            ..FV...... bottom first
+#    ^ constant.other.keyword.cmd-help
+     T               3            ..FV...... top first analyze
+#    ^ keyword.other.variable.cmd-help
+#    ^ - constant.other.keyword.cmd-help
+     B               4            ..FV...... bottom first analyze
+#    ^ keyword.other.variable.cmd-help
+#    ^ - constant.other.keyword.cmd-help
+
+sidedata AVOptions:
+  type              <int>        ..FV...... set side data type (from -1 to INT_MAX) (default -1)
+     SKIP_SAMPLES    9            ..FV......
+#    ^^^^^^^^^^^^ - constant.other.keyword.cmd-help
+     AUDIO_SERVICE_TYPE 10           ..FV......
+#    ^^^^^^^^^^^^^^^^^^ - constant.other.keyword.cmd-help
+     MASTERING_DISPLAY_METADATA 11           ..FV......
+#    ^^^^^^^^^^^^^^^^^^^^^^^^^^ - constant.other.keyword.cmd-help
