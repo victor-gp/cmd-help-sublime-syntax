@@ -8,6 +8,8 @@ Getting help:
     -h long -- print more options
     -h full -- print all options (including all format and codec specific options, very long)
     -h type=name -- print all options for the named decoder/encoder/demuxer/muxer/filter/bsf/protocol
+#      ^^^^ - constant.other.keyword.cmd-help
+#nice: this should be a keyword, not an argument
     See man ffmpeg for detailed description of the options.
 
 Print help / information / capabilities:
@@ -18,7 +20,7 @@ Print help / information / capabilities:
 
 Global options (affect whole program instead of just one file):
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle this heading (parens, within should be un-scoped?)
+#nice: handle this heading (longer than 40 chars)
 -loglevel loglevel  set logging level
 -v loglevel         set logging level
 
@@ -29,7 +31,10 @@ amv encoder AVOptions:
      skip_rd                      E..V...... RD optimal MB level residual skipping
      strict_gop                   E..V...... Strictly enforce gop size
   -luma_elim_threshold <int>        E..V...... single coefficient elimination threshold for luminance (negative values also consider dc coefficient) (from INT_MIN to INT_MAX) (default 0)
+#                      ^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#nice: this (and the following) shouldn't be an option argument (for consistency with other types in the same column)
   -chroma_elim_threshold <int>        E..V...... single coefficient elimination threshold for chrominance (negative values also consider dc coeff
+#                        ^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 cinepak AVOptions:
 # <- string.section-heading.cmd-help
@@ -57,37 +62,54 @@ h264_v4l2m2m_encoder AVOptions:
 # <- string.section-heading.cmd-help
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
+mov,mp4,m4a,3gp,3g2,mj2 AVOptions:
+# <- - string.section-heading.cmd-help
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
+#nice: handle headings with comma (w/o space separation)
+
 Per-file main options:
 -map_metadata outfile[,metadata]:infile[,metadata]  set metadata information of outfile from infile
+#nice: fix this mess
 -program title=string:st=number...  add program with specified streams
+#nice: handle keyword=arg separated by colon
 
 Advanced per-file options:
 -map [-]input_file_id[:stream_specifier][,sync_file_id[:stream_specifier]]  set input stream mapping
+#nice: fix this mess
 -map_channel file.stream.channel[:syncfile.syncstream]  map an audio channel from one stream to another
+#nice: handle args separated by dot
 -tag fourcc/tag     force codec tag/fourcc
+#    ^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#           ^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#todo: handle this pattern with option params separated by slash. should both be keywords? is it an enum?
 -stream_loop loop count  set number of times input stream shall be looped
+#            ^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                 ^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#nice: handle multiple lowercase args to option
+
 
 Video options:
 -timecode hh:mm:ss[:;.]ff  set initial TimeCode value.
+#nice: handle time args like this
 
 Advanced Video options:
 -hwaccel hwaccel name  use HW accelerated decoding
--hwaccel_device devicename  select a device for HW acceleration
+#nice: handle multiple lowercase args to option (also next one)
 -vbsf video bitstream_filters  deprecated
-
-Advanced Audio options:
--absf audio bitstream_filters  deprecated
 
 ProRes encoder AVOptions:
   -profile           <int>        E..V...... (from -1 to 5) (default auto)
      standard        2            E..V......
      hq              3            E..V......
      4444            4            E..V......
+#nice: (but very tricky?) handle numbers as keywords
      4444xq          5            E..V......
+#nice: handle numbers+chars as keywords
 
 SMPTE VC-2 encoder AVOptions:
   -wavelet_type      <int>        E..V...... Transform type (from 0 to 7) (default 9_7)
      9_7             0            E..V...... Deslauriers-Dubuc (9,7)
+#nice: handle num_num as keyword
      5_3             1            E..V...... LeGall (5,3)
      haar            4            E..V...... Haar (with shift)
      haar_noshift    3            E..V...... Haar (without shift)
@@ -102,6 +124,9 @@ FLAC encoder AVOptions:
 h264_vaapi AVOptions:
   -rc_mode           <int>        E..V...... Set rate control mode (from 0 to 6) (default auto)
      auto            0            E..V...... Choose mode automatically based on other parameters
+# constant.other.keyword.cmd-help
      CQP             1            E..V...... Constant-quality
+# keyword.other.argument.cmd-help
+#nice: handle these all caps words as keywords, not arguments...
      CBR             2            E..V...... Constant-bitrate
      AVBR            6            E..V...... Average variable-bitrate
