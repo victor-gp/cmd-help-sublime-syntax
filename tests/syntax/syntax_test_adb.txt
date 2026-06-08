@@ -5,8 +5,8 @@ Version 31.0.3p2-android-tools
 Installed as /usr/bin/adb
 
 global options:
-#^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: lowercase headings
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^^^^^ string.section-heading.cmd-help
  -a         listen on all network interfaces, not just localhost
  -d         use USB device (error if multiple devices connected)
  -e         use TCP/IP device (error if multiple TCP/IP devices available)

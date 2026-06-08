@@ -14,6 +14,8 @@ variables:
   any_word: '[A-Za-z][A-Za-z-]*\b'
   # allow parentheses on both ends of the word
   any_word2: '\(?{{any_word}}\)?'
+  # allow numbers, dots and underline in a word
+  any_word3: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
   # words starting with uppercase
   leading_word: '[A-Z][A-Za-z-]*\b'
   # only consider lines <= 40 chars long
@@ -109,6 +111,9 @@ contexts:
         - include: Manpage.sublime-syntax
 
   main-b: # stack lv 0
+    # this is a blank line, next one may be a heading
+    - match: ^\s*$
+      push: line-begin-after-blank
     - match: ^
       push: [line, line-begin]
 
@@ -152,6 +157,13 @@ contexts:
       set: indent-3-8
     - include: else-pop
 
+  # previous line was blank; we're at the beginning of a line; stack is [main-b, this]
+  line-begin-after-blank:
+    - include: permissive-heading
+    # another blank line, consume it and stay in this context
+    - match: ^\s*$
+    - include: else-pop
+
   indent-0:
     - include: heading
     - include: option-def-head
@@ -189,6 +201,11 @@ contexts:
       set: maybe-bat
     - include: python-argparse-headings
 
+  permissive-heading:
+    # lowercase, numbers, underline, dots allowed; colon ending required
+    - match: '{{lookahead_lte_40_chars}}{{any_word3}}( {{any_word3}})*:\n'
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
 
   # hack to harmonize usage lines in bat's help message
   #nice: generalize this pattern and remove this hardcoded case

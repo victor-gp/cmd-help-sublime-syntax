@@ -147,6 +147,9 @@ OPTIONS:
 
 
 ARGS:
+# <- string.section-heading.cmd-help
+#^^^^ string.section-heading.cmd-help
+# headings after 2 blank lines are properly handled
     <FILE>...
 #   ^^^^^^^^^ keyword.other.argument.cmd-help
             File(s) to print / concatenate. Use a dash ('-') or no argument at all to read from
