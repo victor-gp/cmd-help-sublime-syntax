@@ -21,6 +21,7 @@ variables:
   leading_word: '[A-Z][A-Za-z-]*\b'
   # only consider lines <= 40 chars long
   lookahead_lte_40_chars: '(?=.{1,40}\n)'
+  uppercase_word: '[A-Z]+\b'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:|]'
@@ -196,6 +197,11 @@ contexts:
     # require: no leading whitespace, line ends in colon, <= 40 chars.
     - match: '{{lookahead_lte_40_chars}}{{freeform_word}}( {{freeform_word}})*:\n'
       scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # centered headings from less. all caps, no character nor leading space limits.
+    - match: \s+({{uppercase_word}}( {{uppercase_word}})*)\n
+      captures:
+        1: *SECTION_HEADING_SCOPES
       set: then-pop
 
   heading-strict:
