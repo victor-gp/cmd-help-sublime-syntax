@@ -38,8 +38,10 @@ cinepak AVOptions:
   -skip_empty_cb     <boolean>    E..V...... Avoid wasting bytes, ignore vintage MacOS decoder (default false)
 
 ffv1 encoder AVOptions:
-#^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle this heading (number)
+#^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
+
+jpeg 2000 encoder AVOptions:
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
 H.263 encoder AVOptions:
 #^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
