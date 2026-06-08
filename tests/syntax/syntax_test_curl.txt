@@ -166,6 +166,8 @@ Usage: curl [options...] <url>
      --proxy-tls13-ciphers <list> TLS 1.3 ciphersuites for proxy (OpenSSL)
      --proxy-tlsauthtype <type> TLS authentication type for HTTPS proxy
      --proxy-tlspassword <string> TLS password for HTTPS proxy
+#                        ^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#todo: re-scope this.
      --proxy-tlsuser <name> TLS username for HTTPS proxy
      --proxy-tlsv1   Use TLSv1 for HTTPS proxy
  -U, --proxy-user <user:password> Proxy user and password

@@ -31,10 +31,9 @@ amv encoder AVOptions:
      skip_rd                      E..V...... RD optimal MB level residual skipping
      strict_gop                   E..V...... Strictly enforce gop size
   -luma_elim_threshold <int>        E..V...... single coefficient elimination threshold for luminance (negative values also consider dc coefficient) (from INT_MIN to INT_MAX) (default 0)
-#                      ^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
-#nice: this (and the following) shouldn't be an option argument (for consistency with other types in the same column)
+#                      ^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
   -chroma_elim_threshold <int>        E..V...... single coefficient elimination threshold for chrominance (negative values also consider dc coeff
-#                        ^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                        ^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 cinepak AVOptions:
 # <- string.section-heading.cmd-help
@@ -134,55 +133,54 @@ h264_vaapi AVOptions:
 ###################################################################################
 
 # These come from tables where the 1st column (-option) runs into the 2nd (<type>)
-# and the latter term is scoped as argument. But that makes it inconsistent with
+# and the latter term was previously scoped as argument. But that makes it inconsistent with
 # the rest of the column, which isn't scoped because there's usually >1 space of separation.
-#nice: don't scope these ffmpeg <types>
 
 AVCodecContext AVOptions:
   -request_channel_layout <uint64>     .D..A..... (from 0 to 1.84467e+19) (default 0)
-#                         ^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                         ^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 mov,mp4,m4a,3gp,3g2,mj2 AVOptions:
   -audible_fixed_key <binary>     .D........ Fixed key used for handling Audible AAX files
-#                    ^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                    ^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 MXF-OPAtom muxer AVOptions:
   -mxf_audio_edit_rate <rational>   E......... Audio edit rate for timecode (from 0 to INT_MAX) (default 25/1)
-#                      ^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                      ^^^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 stream_segment muxer AVOptions:
   -segment_format_options <dictionary> E......... set list of options for the container format used for the segments
-#                         ^^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                         ^^^^^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
   -segment_list_flags <flags>      E......... set flags affecting segment list generation (default cache)
-#                     ^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                     ^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
   -segment_clocktime_offset <duration>   E......... set segment clocktime offset (default 0)
-#                           ^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                           ^^^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 tgp muxer AVOptions:
   -encryption_scheme <string>     E......... Configures the encryption scheme, allowed values are none, cenc-aes-ctr
-#                    ^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                    ^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 webm muxer AVOptions:
   -cluster_time_limit <int64>      E......... Store at most the provided number of milliseconds in a cluster. (from -1 to I64_MAX) (default -1)
-#                     ^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                     ^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 WebM DASH Manifest muxer AVOptions:
   -time_shift_buffer_depth <double>     E......... Smallest time (in seconds) shifting buffer for which any Representation is guaranteed to be available. (from 1 to DBL_MAX
-#                          ^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                          ^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 sdl2 outdev AVOptions:
   -window_fullscreen <boolean>    E......... set SDL window fullscreen (default false)
-#                    ^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                    ^^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 SWResampler AVOptions:
   -out_channel_count <int>        ....A..... set output channel count (from 0 to 64) (default 0)
-#                    ^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                    ^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
   -internal_sample_fmt <sample_fmt> ....A..... set internal sample format (default none)
-#                      ^^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                      ^^^^^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
   -in_channel_layout <channel_layout> ....A..... set input channel layout (default 0x0)
-#                    ^^^^^^^^^^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                    ^^^^^^^^^^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
   -surround_mix_level <float>      ....A..... set surround mix Level (from -32 to 32) (default 0.707107)
-#                     ^^^^^^^ entity.name.function.option.cmd-help keyword.other.argument.cmd-help
+#                     ^^^^^^^ - entity.name.function.option.cmd-help keyword.other.argument.cmd-help
 
 ###################################################################################
 
