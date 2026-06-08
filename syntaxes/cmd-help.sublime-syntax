@@ -48,8 +48,9 @@ variables:
 ### exceptions variables:
   color_code_begin: '(?=.*\e\[.*'
   color_code_end: '.*(?<=[0-9])m)'
+  ffmpeg_flags: '(E|\.)(D|\.)(F|\.)(V|\.)(A|\.)(S|\.)'
 
-scope_variables: # last scope is matched first
+scope_anchors: # last scope is matched first
   - &SECTION_HEADING_SCOPES
     constant.section-heading.cmd-help
     markup.heading.cmd-help
@@ -614,5 +615,5 @@ contexts:
       set: then-pop
 
   unscoped-ffmpeg-types:
-    - match: '(?=<(int|float|string|double|boolean|flags|int64|uint64|binary|rational|dictionary|duration|sample_fmt|channel_layout)>)'
+    - match: '(?=<(int|float|string|double|boolean|flags|int64|uint64|binary|rational|dictionary|duration|sample_fmt|channel_layout)>\s+{{ffmpeg_flags}})'
       set: then-pop

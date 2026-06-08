@@ -151,7 +151,7 @@
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-ssl-allow-beast[0m[38;2;248;248;242m Allow security flaw for interop for HTTPS proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tls13-ciphers[0m[38;2;248;248;242m [0m[38;2;249;38;114m<list>[0m[38;2;248;248;242m TLS 1.3 ciphersuites for proxy (OpenSSL)[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlsauthtype[0m[38;2;248;248;242m [0m[38;2;249;38;114m<type>[0m[38;2;248;248;242m TLS authentication type for HTTPS proxy[0m
-[38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlspassword[0m[38;2;248;248;242m <string> TLS password for HTTPS proxy[0m
+[38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlspassword[0m[38;2;248;248;242m [0m[38;2;249;38;114m<string>[0m[38;2;248;248;242m TLS password for HTTPS proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlsuser[0m[38;2;248;248;242m [0m[38;2;249;38;114m<name>[0m[38;2;248;248;242m TLS username for HTTPS proxy[0m
 [38;2;248;248;242m     [0m[38;2;166;226;46m--proxy-tlsv1[0m[38;2;248;248;242m   Use TLSv1 for HTTPS proxy[0m
 [38;2;248;248;242m [0m[38;2;166;226;46m-U[0m[38;2;248;248;242m, [0m[38;2;166;226;46m--proxy-user[0m[38;2;248;248;242m [0m[38;2;249;38;114m<user:password>[0m[38;2;248;248;242m Proxy user and password[0m
