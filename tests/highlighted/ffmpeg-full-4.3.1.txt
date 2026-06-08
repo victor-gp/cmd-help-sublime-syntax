@@ -912,7 +912,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-intra_penalty[0m[38;2;248;248;242m     <int>        E..V...... Penalty for intra blocks in block decision (from 0 to 1.07374e+09) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a53cc[0m[38;2;248;248;242m             <boolean>    E..V...... Use A53 Closed Captions (if available) (default true)[0m
 
-[38;2;248;248;242mH.263 encoder AVOptions:[0m
+[38;2;246;170;17mH.263 encoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-obmc[0m[38;2;248;248;242m              <boolean>    E..V...... use overlapped block motion compensation. (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-mb_info[0m[38;2;248;248;242m           <int>        E..V...... emit macroblock info for RFC 2190 packetization, the parameter value is the maximum payload size (from 0 to INT_MAX) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-mpv_flags[0m[38;2;248;248;242m         <flags>      E..V...... Flags common for all mpegvideo-based encoders. (default 0)[0m
@@ -976,7 +976,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-intra_penalty[0m[38;2;248;248;242m     <int>        E..V...... Penalty for intra blocks in block decision (from 0 to 1.07374e+09) (default 0)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-a53cc[0m[38;2;248;248;242m             <boolean>    E..V...... Use A53 Closed Captions (if available) (default true)[0m
 
-[38;2;248;248;242mH.263p encoder AVOptions:[0m
+[38;2;246;170;17mH.263p encoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-umv[0m[38;2;248;248;242m               <boolean>    E..V...... Use unlimited motion vectors. (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-aiv[0m[38;2;248;248;242m               <boolean>    E..V...... Use alternative inter VLC. (default false)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-obmc[0m[38;2;248;248;242m              <boolean>    E..V...... use overlapped block motion compensation. (default false)[0m
@@ -3172,7 +3172,7 @@
 [38;2;246;170;17mFLAC decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-use_buggy_lpc[0m[38;2;248;248;242m     <boolean>    .D..A..... emulate old buggy lavc behavior (default false)[0m
 
-[38;2;248;248;242mG.723.1 decoder AVOptions:[0m
+[38;2;246;170;17mG.723.1 decoder AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-postfilter[0m[38;2;248;248;242m        <boolean>    .D..A..... enable postfilter (default true)[0m
 
 [38;2;246;170;17mOpus Decoder AVOptions:[0m
@@ -3839,11 +3839,11 @@
 [38;2;246;170;17mg722 demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-raw_packet_size[0m[38;2;248;248;242m   <int>        .D........  (from 1 to INT_MAX) (default 1024)[0m
 
-[38;2;248;248;242mG.726 big-endian demuxer AVOptions:[0m
+[38;2;246;170;17mG.726 big-endian demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-code_size[0m[38;2;248;248;242m         <int>        .D........ Bits per G.726 code (from 2 to 5) (default 4)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-sample_rate[0m[38;2;248;248;242m       <int>        .D........  (from 0 to INT_MAX) (default 8000)[0m
 
-[38;2;248;248;242mG.726 little-endian demuxer AVOptions:[0m
+[38;2;246;170;17mG.726 little-endian demuxer AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-code_size[0m[38;2;248;248;242m         <int>        .D........ Bits per G.726 code (from 2 to 5) (default 4)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-sample_rate[0m[38;2;248;248;242m       <int>        .D........  (from 0 to INT_MAX) (default 8000)[0m
 

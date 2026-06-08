@@ -44,8 +44,7 @@ jpeg 2000 encoder AVOptions:
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
 H.263 encoder AVOptions:
-#^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle this heading (number, dot)
+#^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
 h264_omx AVOptions:
 #^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help

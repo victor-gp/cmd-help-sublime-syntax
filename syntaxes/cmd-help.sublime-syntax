@@ -14,8 +14,8 @@ variables:
   any_word: '[A-Za-z][A-Za-z-]*\b'
   # allow parentheses on both ends of the word
   any_word2: '\(?{{any_word}}\)?'
-  # allow numbers
-  any_word3: '[A-Za-z0-9][A-Za-z0-9-]*\b'
+  # allow numbers and dots in a word
+  any_word3: '[A-Za-z0-9][A-Za-z0-9-\.]*\b'
   # words starting with uppercase
   leading_word: '[A-Z][A-Za-z-]*\b'
   # only consider lines <= 40 chars long
