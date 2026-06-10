@@ -149,6 +149,14 @@ contexts:
 
   ### stack lv 2 ###############################################################
 
+  # previous line was blank; we're at the beginning of a line; stack is [main-b, this].
+  # matches here should either consume the entire line, or else-pop and let line-begin handle it.
+  line-begin-after-blank:
+    - include: heading-permissive
+    # another blank line, consume it and stay in this context
+    - match: ^\s*$
+    - include: else-pop
+
   line-begin:
     #nice: these predefined indents could be variables...
     - match: ^ {0,2}(?=\S)
@@ -157,14 +165,6 @@ contexts:
       set: indent-3-8
     - match: ^\t{1,2}(?=\S)
       set: indent-3-8
-    - include: else-pop
-
-  # previous line was blank; we're at the beginning of a line; stack is [main-b, this].
-  # matches here should either consume the entire line, or else-pop and let line-begin handle it.
-  line-begin-after-blank:
-    - include: heading-permissive
-    # another blank line, consume it and stay in this context
-    - match: ^\s*$
     - include: else-pop
 
   indent-0-2:
