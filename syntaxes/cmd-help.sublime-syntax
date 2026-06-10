@@ -151,10 +151,8 @@ contexts:
 
   line-begin:
     #nice: these predefined indents could be variables...
-    - match: ^(?=\S)
-      set: indent-0
-    - match: ^ {1,2}(?=\S)
-      set: indent-1-2
+    - match: ^ {0,2}(?=\S)
+      set: indent-0-2
     - match: ^ {3,8}(?=\S)
       set: indent-3-8
     - match: ^\t{1,2}(?=\S)
@@ -169,16 +167,9 @@ contexts:
     - match: ^\s*$
     - include: else-pop
 
-  indent-0:
+  indent-0-2:
     - include: heading-strict
     - include: option-def-head
-    - include: argument-def
-    - include: other-def
-    - include: else-pop
-
-  indent-1-2:
-    - include: option-def-head
-    - include: heading-strict
     - include: argument-def
     - include: other-def
     - include: else-pop
