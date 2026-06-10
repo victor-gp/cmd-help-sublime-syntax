@@ -15,6 +15,7 @@ variables:
   # allow parentheses on both ends of the word
   word_plus_parens: '\(?{{any_word}}\)?'
   # allow numbers, dots and underline in a word
+  #todo: should we allow parens here? maybe for non-leading words?
   freeform_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
   # words starting with uppercase
   leading_word: '[A-Z][A-Za-z-]*\b'
@@ -28,7 +29,7 @@ variables:
   option_name: '{{option_char}}+'
 
 ### command/option argument variables:
-  ellipsis: '\.\.\.'
+  ellipsis: '\.\.\.' #todo: this should lookahead that there are no further dots
   allcaps_argument_name: '[A-Z][0-9A-Z_-]*\b'
   relaxed_argument_name: '[A-Za-z][0-9A-Za-z_-]*\b'
 
@@ -147,6 +148,7 @@ contexts:
   ### stack lv 2 ###############################################################
 
   line-begin:
+    #nice: these predefined indents could be variables...
     - match: ^(?=\S)
       set: indent-0
     - match: ^ {1,2}(?=\S)
