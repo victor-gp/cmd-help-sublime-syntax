@@ -35,7 +35,7 @@ variables:
   allcaps_argument_name: '[A-Z][0-9A-Z_-]*\b'
   relaxed_argument_name: '[A-Za-z][0-9A-Za-z_-]*\b'
 
-### other-def variables:
+### other-defs variables:
   other_lowercase_name: '[a-z][0-9a-z_-]*\b'
   long_space: '   |\t|\n'
   lookahead_long_space: '(?={{long_space}})'
@@ -169,16 +169,17 @@ contexts:
 
   indent-0-2:
     - include: heading-strict
-    - include: option-def-head
-    - include: argument-def
-    - include: other-def
+    - include: definitions
     - include: else-pop
 
   indent-3-8:
+    - include: definitions
+    - include: else-pop
+
+  definitions:
     - include: option-def-head
     - include: argument-def
-    - include: other-def
-    - include: else-pop
+    - include: other-defs
 
   ### section headings #########################################################
 
@@ -514,13 +515,13 @@ contexts:
           set: then-pop
     - include: eol-pop
 
-  other-def:
-    - include: other-def-escapes
+  other-defs:
+    - include: other-defs-escapes
     - include: pathname-def
     - include: keyword-def
     - include: variable-def
 
-  other-def-escapes:
+  other-defs-escapes:
     # pretty common in "usage:" alternatives
     - match: (?=or\s)
       set: then-pop
