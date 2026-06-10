@@ -9,13 +9,13 @@ scope: text.cmd-help
 
 
 variables:
-### section name variables:
+### section heading variables:
   # words regardless of case, including dashes for compound words
   any_word: '[A-Za-z][A-Za-z-]*\b'
   # allow parentheses on both ends of the word
-  any_word2: '\(?{{any_word}}\)?'
+  word_plus_parens: '\(?{{any_word}}\)?'
   # allow numbers, dots and underline in a word
-  any_word3: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
+  freeform_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
   # words starting with uppercase
   leading_word: '[A-Z][A-Za-z-]*\b'
   # only consider lines <= 40 chars long
@@ -49,7 +49,7 @@ variables:
   color_code_begin: '(?=.*\e\[.*'
   color_code_end: '.*(?<=[0-9])m)'
 
-scope_variables: # last scope is matched first
+scope_anchors: # last scope is matched first
   - &SECTION_HEADING_SCOPES
     constant.section-heading.cmd-help
     markup.heading.cmd-help
@@ -157,15 +157,16 @@ contexts:
       set: indent-3-8
     - include: else-pop
 
-  # previous line was blank; we're at the beginning of a line; stack is [main-b, this]
+  # previous line was blank; we're at the beginning of a line; stack is [main-b, this].
+  # matches here should either consume the entire line, or else-pop and let line-begin handle it.
   line-begin-after-blank:
-    - include: permissive-heading
+    - include: heading-permissive
     # another blank line, consume it and stay in this context
     - match: ^\s*$
     - include: else-pop
 
   indent-0:
-    - include: heading
+    - include: heading-strict
     - include: option-def-head
     - include: argument-def
     - include: other-def
@@ -173,7 +174,7 @@ contexts:
 
   indent-1-2:
     - include: option-def-head
-    - include: heading
+    - include: heading-strict
     - include: argument-def
     - include: other-def
     - include: else-pop
@@ -186,25 +187,27 @@ contexts:
 
   ### section headings #########################################################
 
-  heading:
-    - include: inline-usage
-    - match: '{{lookahead_lte_40_chars}}{{leading_word}}( {{any_word2}})*:?\n'
+  # should only be used after a blank line, at pos 0.
+  heading-permissive:
+    # kitchen-sink headings
+    # allow: lowercase, numbers, underline, dots.
+    # require: no leading whitespace, line ends in colon, <= 40 chars.
+    - match: '{{lookahead_lte_40_chars}}{{freeform_word}}( {{freeform_word}})*:\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    # - match: '{{any_word2}}( {{any_word2}})*:\n'
-    #   scope: *SECTION_HEADING_SCOPES
-    #   set: then-pop
+
+  heading-strict:
+    - include: inline-usage
+    - match: '{{lookahead_lte_40_chars}}{{leading_word}}( {{word_plus_parens}})*:?\n'
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+
+  # heading-stricter:
 
   inline-usage:
     - match: (?i:usage):(?=.+\n)
       scope: *INLINE_USAGE_SCOPES
       set: maybe-bat
-
-  permissive-heading:
-    # lowercase, numbers, underline, dots allowed; colon ending required
-    - match: '{{lookahead_lte_40_chars}}{{any_word3}}( {{any_word3}})*:\n'
-      scope: *SECTION_HEADING_SCOPES
-      set: then-pop
 
   # hack to harmonize usage lines in bat's help message
   #nice: generalize this pattern and remove this hardcoded case
