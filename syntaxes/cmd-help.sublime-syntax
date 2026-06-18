@@ -614,6 +614,9 @@ contexts:
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
 
+  #todo: actually these _are_ option or subcommand args variables/ placeholders.
+  #      They should all be scoped. The dissonance was because subcommand args aren't scoped.
+  #      And also because there's padding between option and arg. Gotta target that somehow.
   unscoped-ffmpeg-types:
     - match: '(?=<(int|float|string|double|boolean|flags|int64|uint64|binary|rational|dictionary|duration|sample_fmt|channel_layout)>\s+{{ffmpeg_flags}})'
       set: then-pop
