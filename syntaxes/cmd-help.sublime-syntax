@@ -159,7 +159,9 @@ contexts:
 
   line-begin:
     #nice: these predefined indents could be variables...
-    - match: ^ {0,2}(?=\S)
+    - match: ^(?=\S)
+      set: indent-0-2
+    - match: ^ {1,2}(?=\S)
       set: indent-0-2
     - match: ^ {3,8}(?=\S)
       set: indent-3-8
