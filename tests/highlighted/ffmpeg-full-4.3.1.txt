@@ -1933,7 +1933,7 @@
 [38;2;248;248;242m  [0m[38;2;166;226;46m-min_prediction_order[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E...A..... (from 1 to 30) (default 4)[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-max_prediction_order[0m[38;2;248;248;242m [0m[38;2;249;38;114m<int>[0m[38;2;248;248;242m        E...A..... (from 1 to 30) (default 6)[0m
 
-[38;2;248;248;242mDCA (DTS Coherent Acoustics) AVOptions:[0m
+[38;2;246;170;17mDCA (DTS Coherent Acoustics) AVOptions:[0m
 [38;2;248;248;242m  [0m[38;2;166;226;46m-dca_adpcm[0m[38;2;248;248;242m         <boolean>    E...A..... Use ADPCM encoding (default false)[0m
 
 [38;2;246;170;17mE-AC-3 Encoder AVOptions:[0m

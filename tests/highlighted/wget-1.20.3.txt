@@ -138,7 +138,7 @@
 [38;2;248;248;242m       [0m[38;2;166;226;46m--ciphers[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTR[0m[38;2;248;248;242m           Set the priority string (GnuTLS) or cipher list string (OpenSSL) directly.[0m
 [38;2;248;248;242m                                   Use with care. This option overrides --secure-protocol.[0m
 [38;2;248;248;242m                                   The format and syntax of this string depend on the specific SSL/TLS engine.[0m
-[38;2;248;248;242mHSTS options:[0m
+[38;2;246;170;17mHSTS options:[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--no-hsts[0m[38;2;248;248;242m                   disable HSTS[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--hsts-file[0m[38;2;248;248;242m                 path of HSTS database (will override default)[0m
 
@@ -157,7 +157,7 @@
 [38;2;248;248;242m                                         opening a data connection[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--ftps-clear-data-connection[0m[38;2;248;248;242m    cipher the control channel only; all the data will be in plaintext[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--ftps-fallback-to-ftp[0m[38;2;248;248;242m          fall back to FTP if FTPS is not supported in the target server[0m
-[38;2;248;248;242mWARC options:[0m
+[38;2;246;170;17mWARC options:[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--warc-file[0m[38;2;248;248;242m=[0m[38;2;249;38;114mFILENAME[0m[38;2;248;248;242m        save request/response data to a .warc.gz file[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--warc-header[0m[38;2;248;248;242m=[0m[38;2;249;38;114mSTRING[0m[38;2;248;248;242m        insert STRING into the warcinfo record[0m
 [38;2;248;248;242m       [0m[38;2;166;226;46m--warc-max-size[0m[38;2;248;248;242m=[0m[38;2;249;38;114mNUMBER[0m[38;2;248;248;242m      set maximum size of WARC files to NUMBER[0m

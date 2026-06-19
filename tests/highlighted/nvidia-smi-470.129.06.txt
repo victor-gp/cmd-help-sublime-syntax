@@ -225,7 +225,7 @@
 [38;2;248;248;242m [0m[38;2;246;170;17mFBC SESSIONS:[0m
 [38;2;248;248;242m    [0m[38;2;190;132;255mfbcsessions[0m[38;2;248;248;242m                 Displays device FBC sessions information. "nvidia-smi fbcsessions -h" for more information.[0m
 
-[38;2;248;248;242m GRID vGPU:[0m
+[38;2;248;248;242m [0m[38;2;246;170;17mGRID vGPU:[0m
 [38;2;248;248;242m    [0m[38;2;190;132;255mvgpu[0m[38;2;248;248;242m                        Displays vGPU information. "nvidia-smi vgpu -h" for more information.[0m
 
 [38;2;248;248;242m [0m[38;2;246;170;17mMIG:[0m

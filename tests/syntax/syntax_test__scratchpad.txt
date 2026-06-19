@@ -37,5 +37,5 @@ HELLO world
 #^^^^^^^^^^ - string.section-heading.cmd-help
 ...
 HELLO world:
-# <- - string.section-heading.cmd-help
-#^^^^^^^^^^ - string.section-heading.cmd-help
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help

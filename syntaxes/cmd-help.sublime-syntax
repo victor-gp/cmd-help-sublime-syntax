@@ -214,6 +214,10 @@ contexts:
     - match: '{{lookahead_lte_40_chars}}{{capitalized_sentence}}:?\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
+    # sentences like "UPPER lower:", with a required colon at the end
+    - match: '{{lookahead_lte_40_chars}}{{uppercase_word}}( {{word_plus_parens}})*:\n'
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
 
   # heading-stricter:
 

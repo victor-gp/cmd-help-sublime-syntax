@@ -79,7 +79,7 @@ Warning categories:
   deprecated      deprecated features
   experimental    experimental features
 JIT options (experimental):
-#^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
+#^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
   --jit-warnings  Enable printing JIT warnings
   --jit-debug     Enable JIT debugging (very slow), or add cflags if specified
   --jit-wait      Wait until JIT compilation finishes every time (for testing)
