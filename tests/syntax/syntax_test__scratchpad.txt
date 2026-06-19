@@ -1,30 +1,41 @@
 # SYNTAX TEST "cmd-help.sublime-syntax"
 
 Hello world
-# <-  capitalized-sentence.cmd-help
-#^^^^^^^^^^ capitalized-sentence.cmd-help
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
 
 Hello World
-# <-  capitalized-sentence.cmd-help
-#^^^^^^^^^^ capitalized-sentence.cmd-help
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
 
 HELLO WORLD
-# <-  uppercase-sentence.cmd-help
-#^^^^^^^^^^ uppercase-sentence.cmd-help
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
 
 HELLO World
-# <-  uppercase-word.cmd-help
-#^^^^ uppercase-word.cmd-help
-#     ^^^^^ non-scoped.cmd-help
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
 
 hello world
-# <-  non-scoped.cmd-help
-#^^^^^^^^^^ non-scoped.cmd-help
+# <- - string.section-heading.cmd-help
+#^^^^^^^^^^ - string.section-heading.cmd-help
+
+hello world:
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
 
 hELLO WORLD
-# <-  non-scoped.cmd-help
-#^^^^^^^^^^ non-scoped.cmd-help
+# <- - string.section-heading.cmd-help
+#^^^^^^^^^^ - string.section-heading.cmd-help
 
 HeLLo World
-# <-  non-scoped.cmd-help
-#^^^^^^^^^^ non-scoped.cmd-help
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
+
+HELLO world
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
+
+HELLO world:
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help

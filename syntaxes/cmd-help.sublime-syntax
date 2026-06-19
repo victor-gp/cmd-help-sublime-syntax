@@ -117,8 +117,6 @@ contexts:
         - include: Manpage.sublime-syntax
 
   main-b: # stack lv 0
-    - match: ^
-      push: [line, heading-vars-under-test]
     # this is a blank line, next one may be a heading
     - match: ^\s*$
       push: line-begin-after-blank
@@ -126,8 +124,7 @@ contexts:
       push: [line, line-begin]
 
   line: # stack lv 1
-    - match: .*$
-      scope: non-scoped.cmd-help
+    - match: $
       pop: true
 
   ### helpers ##################################################################
@@ -196,21 +193,6 @@ contexts:
     - include: else-pop
 
   ### section headings #########################################################
-
-  heading-vars-under-test:
-    - match: '{{capitalized_sentence}}\n'
-      scope: capitalized-sentence.cmd-help
-      set: then-pop
-    - match: '{{uppercase_sentence}}\n'
-      scope: uppercase-sentence.cmd-help
-      set: then-pop
-    - match: '{{uppercase_word}}'
-      scope: uppercase-word.cmd-help
-      set: then-pop
-    - match: '{{capitalized_word}}'
-      scope: capitalized.cmd-help
-      set: then-pop
-    - include: else-pop
 
   # should only be used after a blank line, at pos 0.
   heading-permissive:
