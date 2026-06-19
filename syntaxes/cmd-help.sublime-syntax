@@ -24,6 +24,8 @@ variables:
   uppercase_word: '[A-Z]+\b'
   capitalized_word: '[A-Z][a-z-]*\b'
   uppercase_sentence: '{{uppercase_word}}( {{uppercase_word}})*'
+  # non-leading words can be lowercase, uppercase, title case, mixed case, etc.
+  capitalized_sentence: '{{capitalized_word}}( {{word_plus_parens}})*'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:|]'
@@ -124,7 +126,8 @@ contexts:
       push: [line, line-begin]
 
   line: # stack lv 1
-    - match: $
+    - match: .*$
+      scope: non-scoped.cmd-help
       pop: true
 
   ### helpers ##################################################################
@@ -195,6 +198,9 @@ contexts:
   ### section headings #########################################################
 
   heading-vars-under-test:
+    - match: '{{capitalized_sentence}}\n'
+      scope: capitalized-sentence.cmd-help
+      set: then-pop
     - match: '{{uppercase_sentence}}\n'
       scope: uppercase-sentence.cmd-help
       set: then-pop

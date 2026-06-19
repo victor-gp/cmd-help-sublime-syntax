@@ -1,25 +1,30 @@
 # SYNTAX TEST "cmd-help.sublime-syntax"
 
 Hello world
-# <-  capitalized.cmd-help
-#^^^^ capitalized.cmd-help
+# <-  capitalized-sentence.cmd-help
+#^^^^^^^^^^ capitalized-sentence.cmd-help
 
 Hello World
-# <-  capitalized.cmd-help
-#^^^^ capitalized.cmd-help
+# <-  capitalized-sentence.cmd-help
+#^^^^^^^^^^ capitalized-sentence.cmd-help
 
 HELLO WORLD
 # <-  uppercase-sentence.cmd-help
-#^^^^ uppercase-sentence.cmd-help
+#^^^^^^^^^^ uppercase-sentence.cmd-help
 
 HELLO World
 # <-  uppercase-word.cmd-help
 #^^^^ uppercase-word.cmd-help
+#     ^^^^^ non-scoped.cmd-help
 
 hello world
-# <-  text.cmd-help
-#^^^^ text.cmd-help
+# <-  non-scoped.cmd-help
+#^^^^^^^^^^ non-scoped.cmd-help
 
 hELLO WORLD
-# <-  text.cmd-help
-#^^^^ text.cmd-help
+# <-  non-scoped.cmd-help
+#^^^^^^^^^^ non-scoped.cmd-help
+
+HeLLo World
+# <-  non-scoped.cmd-help
+#^^^^^^^^^^ non-scoped.cmd-help
