@@ -9,13 +9,17 @@ Hello World
 #^^^^ capitalized.cmd-help
 
 HELLO WORLD
-# <-  - capitalized.cmd-help
-#^^^^ - capitalized.cmd-help
+# <-  uppercase-sentence.cmd-help
+#^^^^ uppercase-sentence.cmd-help
+
+HELLO World
+# <-  uppercase-word.cmd-help
+#^^^^ uppercase-word.cmd-help
 
 hello world
-# <-  - capitalized.cmd-help
-#^^^^ - capitalized.cmd-help
+# <-  text.cmd-help
+#^^^^ text.cmd-help
 
 hELLO WORLD
-# <-  - capitalized.cmd-help
-#^^^^ - capitalized.cmd-help
+# <-  text.cmd-help
+#^^^^ text.cmd-help

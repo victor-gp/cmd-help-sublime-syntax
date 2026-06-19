@@ -23,6 +23,7 @@ variables:
   lookahead_lte_40_chars: '(?=.{1,40}\n)'
   uppercase_word: '[A-Z]+\b'
   capitalized_word: '[A-Z][a-z-]*\b'
+  uppercase_sentence: '{{uppercase_word}}( {{uppercase_word}})*'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:|]'
@@ -194,6 +195,12 @@ contexts:
   ### section headings #########################################################
 
   heading-vars-under-test:
+    - match: '{{uppercase_sentence}}\n'
+      scope: uppercase-sentence.cmd-help
+      set: then-pop
+    - match: '{{uppercase_word}}'
+      scope: uppercase-word.cmd-help
+      set: then-pop
     - match: '{{capitalized_word}}'
       scope: capitalized.cmd-help
       set: then-pop
