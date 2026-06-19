@@ -1,0 +1,21 @@
+# SYNTAX TEST "cmd-help.sublime-syntax"
+
+Hello world
+# <-  capitalized.cmd-help
+#^^^^ capitalized.cmd-help
+
+Hello World
+# <-  capitalized.cmd-help
+#^^^^ capitalized.cmd-help
+
+HELLO WORLD
+# <-  - capitalized.cmd-help
+#^^^^ - capitalized.cmd-help
+
+hello world
+# <-  - capitalized.cmd-help
+#^^^^ - capitalized.cmd-help
+
+hELLO WORLD
+# <-  - capitalized.cmd-help
+#^^^^ - capitalized.cmd-help

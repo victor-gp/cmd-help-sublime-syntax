@@ -22,6 +22,7 @@ variables:
   # only consider lines <= 40 chars long
   lookahead_lte_40_chars: '(?=.{1,40}\n)'
   uppercase_word: '[A-Z]+\b'
+  capitalized_word: '[A-Z][a-z-]*\b'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:|]'
@@ -113,6 +114,8 @@ contexts:
         - include: Manpage.sublime-syntax
 
   main-b: # stack lv 0
+    - match: ^
+      push: [line, heading-vars-under-test]
     # this is a blank line, next one may be a heading
     - match: ^\s*$
       push: line-begin-after-blank
@@ -189,6 +192,12 @@ contexts:
     - include: else-pop
 
   ### section headings #########################################################
+
+  heading-vars-under-test:
+    - match: '{{capitalized_word}}'
+      scope: capitalized.cmd-help
+      set: then-pop
+    - include: else-pop
 
   # should only be used after a blank line, at pos 0.
   heading-permissive:
