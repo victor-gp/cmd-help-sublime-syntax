@@ -17,11 +17,13 @@ variables:
   # allow numbers, dots and underline in a word
   #todo: should we allow parens here? maybe for non-leading words?
   freeform_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
-  # words starting with uppercase
-  leading_word: '[A-Z][A-Za-z-]*\b'
-  # only consider lines <= 40 chars long
-  lookahead_lte_40_chars: '(?=.{1,40}\n)'
   uppercase_word: '[A-Z]+\b'
+  uppercase_sentence: '{{uppercase_word}}( {{uppercase_word}})*'
+  capitalized_word: '[A-Z][a-z-]*\b'
+  # non-leading words can be lowercase, uppercase, title case, mixed case, etc.
+  capitalized_sentence: '{{capitalized_word}}( {{word_plus_parens}})*'
+  # we'll only consider lines <= 40 chars long
+  lookahead_lte_40_chars: '(?=.{1,40}\n)'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:|]'
@@ -206,7 +208,14 @@ contexts:
 
   heading-strict:
     - include: inline-usage
-    - match: '{{lookahead_lte_40_chars}}{{leading_word}}( {{word_plus_parens}})*:?\n'
+    - match: '{{lookahead_lte_40_chars}}{{uppercase_sentence}}:?\n'
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    - match: '{{lookahead_lte_40_chars}}{{capitalized_sentence}}:?\n'
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # sentences like "UPPER lower:", with a required colon at the end
+    - match: '{{lookahead_lte_40_chars}}{{uppercase_word}}( {{word_plus_parens}})*:\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
 

@@ -1,0 +1,41 @@
+# SYNTAX TEST "cmd-help.sublime-syntax"
+
+Hello world
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
+
+Hello World
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
+
+HELLO WORLD
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
+
+HELLO World
+# <- - string.section-heading.cmd-help
+#^^^^^^^^^^ - string.section-heading.cmd-help
+
+hello world
+# <- - string.section-heading.cmd-help
+#^^^^^^^^^^ - string.section-heading.cmd-help
+
+hello world:
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
+
+hELLO WORLD
+# <- - string.section-heading.cmd-help
+#^^^^^^^^^^ - string.section-heading.cmd-help
+
+HeLLo World
+# <- - string.section-heading.cmd-help
+#^^^^^^^^^^ - string.section-heading.cmd-help
+
+HELLO world
+# <- - string.section-heading.cmd-help
+#^^^^^^^^^^ - string.section-heading.cmd-help
+...
+HELLO world:
+# <- string.section-heading.cmd-help
+#^^^^^^^^^^ string.section-heading.cmd-help
