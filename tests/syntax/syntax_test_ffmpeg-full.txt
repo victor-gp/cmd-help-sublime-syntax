@@ -13,8 +13,7 @@ Getting help:
     See man ffmpeg for detailed description of the options.
 
 Print help / information / capabilities:
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle this heading (slashes)
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 -L                  show license
 -h topic            show help
 

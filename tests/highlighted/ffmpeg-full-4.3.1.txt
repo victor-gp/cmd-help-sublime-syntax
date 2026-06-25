@@ -8,7 +8,7 @@
 [38;2;248;248;242m    [0m[38;2;166;226;46m-h[0m[38;2;248;248;242m [0m[38;2;249;38;114mtype[0m[38;2;248;248;242m=[0m[38;2;249;38;114mname[0m[38;2;248;248;242m [0m[38;2;166;226;46m--[0m[38;2;248;248;242m print all options for the named decoder/encoder/demuxer/muxer/filter/bsf/protocol[0m
 [38;2;248;248;242m    See man ffmpeg for detailed description of the options.[0m
 
-[38;2;248;248;242mPrint help / information / capabilities:[0m
+[38;2;246;170;17mPrint help / information / capabilities:[0m
 [38;2;166;226;46m-L[0m[38;2;248;248;242m                  show license[0m
 [38;2;166;226;46m-h[0m[38;2;248;248;242m [0m[38;2;249;38;114mtopic[0m[38;2;248;248;242m            show help[0m
 [38;2;166;226;46m-?[0m[38;2;248;248;242m [0m[38;2;249;38;114mtopic[0m[38;2;248;248;242m            show help[0m
