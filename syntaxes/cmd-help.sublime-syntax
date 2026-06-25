@@ -14,8 +14,6 @@ variables:
   any_word: '[A-Za-z][A-Za-z-]*\b'
   # allow parentheses on both ends of the word
   word_plus_parens: '\(?{{any_word}}\)?'
-  # allow slashes between words
-  word_plus_slashes: '(/ )?{{any_word}}'
   # allow numbers, dots and underline in a word
   #todo: should we allow parens here? maybe for non-leading words?
   freeform_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
@@ -205,6 +203,7 @@ contexts:
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
     # centered headings from less. all caps, no character nor leading space limits.
+    # eg, "                           MOVING", "                        CHANGING FILES"
     - match: \s+({{uppercase_word}}( {{uppercase_word}})*)\n
       captures:
         1: *SECTION_HEADING_SCOPES
@@ -213,7 +212,16 @@ contexts:
     - match: '{{lookahead_lte_40_chars}}{{upper_then_arbitrary_case_sentence}}:?\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    - match: '{{lookahead_lte_40_chars}}{{capitalized_word}}( {{word_plus_slashes}})*:\n'
+    # eg, "Print help / information / capabilities:"
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{capitalized_word}}
+        (
+          (\ /)?                        # optional " /"
+          \ {{any_word}}                # required " word"
+        )*
+        :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
 
