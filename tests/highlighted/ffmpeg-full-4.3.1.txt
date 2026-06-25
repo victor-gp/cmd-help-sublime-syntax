@@ -34,7 +34,7 @@
 [38;2;166;226;46m-sinks[0m[38;2;248;248;242m [0m[38;2;249;38;114mdevice[0m[38;2;248;248;242m       list sinks of the output device[0m
 [38;2;166;226;46m-hwaccels[0m[38;2;248;248;242m           show available HW acceleration methods[0m
 
-[38;2;248;248;242mGlobal options (affect whole program instead of just one file):[0m
+[38;2;246;170;17mGlobal options (affect whole program instead of just one file):[0m
 [38;2;166;226;46m-loglevel[0m[38;2;248;248;242m [0m[38;2;249;38;114mloglevel[0m[38;2;248;248;242m  set logging level[0m
 [38;2;166;226;46m-v[0m[38;2;248;248;242m [0m[38;2;249;38;114mloglevel[0m[38;2;248;248;242m         set logging level[0m
 [38;2;166;226;46m-report[0m[38;2;248;248;242m             generate a report[0m

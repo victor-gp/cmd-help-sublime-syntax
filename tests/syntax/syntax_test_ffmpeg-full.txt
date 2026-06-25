@@ -19,8 +19,7 @@ Print help / information / capabilities:
 -h topic            show help
 
 Global options (affect whole program instead of just one file):
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle this heading (longer than 40 chars)
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 -loglevel loglevel  set logging level
 -v loglevel         set logging level
 

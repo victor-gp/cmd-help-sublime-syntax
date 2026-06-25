@@ -25,6 +25,7 @@ variables:
   upper_then_arbitrary_case_sentence: '{{uppercase_word}}( {{word_plus_parens}})*'
   # we'll only consider lines <= 40 chars long
   lookahead_lte_40_chars: '(?=.{1,40}\n)'
+  lookahead_lte_40_chars_before_parens: '(?=.{1,40}\(.+\):?\n)'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:|]'
@@ -222,6 +223,10 @@ contexts:
       set: then-pop
     # sentences like "UPPER lower:", with a required colon at the end
     - match: '{{lookahead_lte_40_chars}}{{upper_then_arbitrary_case_sentence}}:\n'
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # sentences with a clarifying parentheses that makes them go over 40 chars, colon required
+    - match: '{{lookahead_lte_40_chars_before_parens}}{{capitalized_then_arbitrary_case_sentence}}:\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
 
