@@ -12,8 +12,10 @@ variables:
 ### section heading variables:
   # words regardless of case, including dashes for compound words
   any_word: '[A-Za-z][A-Za-z-]*\b'
-  # allow parentheses, slashes around the word
-  word_segment: '(/ )?\(?{{any_word}}\)?'
+  # allow parentheses on both ends of the word
+  word_plus_parens: '\(?{{any_word}}\)?'
+  # allow slashes between words
+  word_plus_slashes: '(/ )?{{any_word}}'
   # allow numbers, dots and underline in a word
   #todo: should we allow parens here? maybe for non-leading words?
   freeform_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
@@ -21,8 +23,8 @@ variables:
   uppercase_sentence: '{{uppercase_word}}( {{uppercase_word}})*'
   capitalized_word: '[A-Z][a-z-]*\b'
   # non-leading words can be lowercase, uppercase, title case, mixed case, etc.
-  capitalized_then_arbitrary_case_sentence: '{{capitalized_word}}( {{word_segment}})*'
-  upper_then_arbitrary_case_sentence: '{{uppercase_word}}( {{word_segment}})*'
+  capitalized_then_arbitrary_case_sentence: '{{capitalized_word}}( {{word_plus_parens}})*'
+  upper_then_arbitrary_case_sentence: '{{uppercase_word}}( {{word_plus_parens}})*'
   # we'll only consider lines <= 40 chars long
   lookahead_lte_40_chars: '(?=.{1,40}\n)'
   lookahead_lte_40_chars_before_parens: '(?=.{1,40}\(.+\):?\n)'
@@ -209,6 +211,9 @@ contexts:
       set: then-pop
     # sentences like "UPPER lower:", with an optional colon at the end
     - match: '{{lookahead_lte_40_chars}}{{upper_then_arbitrary_case_sentence}}:?\n'
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    - match: '{{lookahead_lte_40_chars}}{{capitalized_word}}( {{word_plus_slashes}})*:\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
 
