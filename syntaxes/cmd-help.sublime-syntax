@@ -18,11 +18,7 @@ variables:
   #todo: should we allow parens here? maybe for non-leading words?
   freeform_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
   uppercase_word: '[A-Z]+\b'
-  uppercase_sentence: '{{uppercase_word}}( {{uppercase_word}})*'
   capitalized_word: '[A-Z][a-z-]*\b'
-  # non-leading words can be lowercase, uppercase, title case, mixed case, etc.
-  capitalized_then_arbitrary_case_sentence: '{{capitalized_word}}( {{word_plus_parens}})*'
-  upper_then_arbitrary_case_sentence: '{{uppercase_word}}( {{word_plus_parens}})*'
   # we'll only consider lines <= 40 chars long
   lookahead_lte_40_chars: '(?=.{1,40}\n)'
   lookahead_lte_40_chars_before_parens: '(?=.{1,40}\(.+\):?\n)'
@@ -208,10 +204,6 @@ contexts:
       captures:
         1: *SECTION_HEADING_SCOPES
       set: then-pop
-    # sentences like "UPPER lower:", with an optional colon at the end
-    - match: '{{lookahead_lte_40_chars}}{{upper_then_arbitrary_case_sentence}}:?\n'
-      scope: *SECTION_HEADING_SCOPES
-      set: then-pop
     # eg, "Print help / information / capabilities:"
     - match: |
         (?x)
@@ -224,22 +216,56 @@ contexts:
         :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
+    # uppercase + arbitrary case sentences
+    # eg, "FOO bar"
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{uppercase_word}}
+        (\ {{word_plus_parens}})*
+        :?\n                            # optional colon at the end
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
 
   # this is included on all lines, at pos 0-2
   heading-strict:
     - include: inline-usage
-    - match: '{{lookahead_lte_40_chars}}{{uppercase_sentence}}:?\n'
+    # uppercase sentences
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{uppercase_word}}
+        (\ {{uppercase_word}})*
+        :?\n                            # optional colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    - match: '{{lookahead_lte_40_chars}}{{capitalized_then_arbitrary_case_sentence}}:?\n'
+    # capitalized + arbitrary case sentences
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{capitalized_word}}
+        (\ {{word_plus_parens}})*
+        :?\n                            # optional colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    # sentences like "UPPER lower:", with a required colon at the end
-    - match: '{{lookahead_lte_40_chars}}{{upper_then_arbitrary_case_sentence}}:\n'
+    # capitalized sentences with a clarifying parenthesis that makes them go over 40 chars
+    # eg, "Options and arguments (and corresponding environment variables):"
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars_before_parens}}
+        {{capitalized_word}}
+        (\ {{word_plus_parens}})*
+        :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    # sentences with a clarifying parentheses that makes them go over 40 chars, colon required
-    - match: '{{lookahead_lte_40_chars_before_parens}}{{capitalized_then_arbitrary_case_sentence}}:\n'
+    # uppercase + arbitrary case sentences
+    # eg, "JIT options (experimental):"
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{uppercase_word}}
+        (\ {{word_plus_parens}})*
+        :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
 
