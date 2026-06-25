@@ -21,7 +21,8 @@ variables:
   uppercase_sentence: '{{uppercase_word}}( {{uppercase_word}})*'
   capitalized_word: '[A-Z][a-z-]*\b'
   # non-leading words can be lowercase, uppercase, title case, mixed case, etc.
-  capitalized_sentence: '{{capitalized_word}}( {{word_plus_parens}})*'
+  capitalized_then_arbitrary_case_sentence: '{{capitalized_word}}( {{word_plus_parens}})*'
+  upper_then_arbitrary_case_sentence: '{{uppercase_word}}( {{word_plus_parens}})*'
   # we'll only consider lines <= 40 chars long
   lookahead_lte_40_chars: '(?=.{1,40}\n)'
 
@@ -192,7 +193,7 @@ contexts:
 
   ### section headings #########################################################
 
-  # should only be used after a blank line, at pos 0.
+  # this is included after blank lines, at pos 0
   heading-permissive:
     # kitchen-sink headings
     # allow: lowercase, numbers, underline, dots.
@@ -205,17 +206,22 @@ contexts:
       captures:
         1: *SECTION_HEADING_SCOPES
       set: then-pop
+    # sentences like "UPPER lower:", with an optional colon at the end
+    - match: '{{lookahead_lte_40_chars}}{{upper_then_arbitrary_case_sentence}}:?\n'
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
 
+  # this is included on all lines, at pos 0-2
   heading-strict:
     - include: inline-usage
     - match: '{{lookahead_lte_40_chars}}{{uppercase_sentence}}:?\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    - match: '{{lookahead_lte_40_chars}}{{capitalized_sentence}}:?\n'
+    - match: '{{lookahead_lte_40_chars}}{{capitalized_then_arbitrary_case_sentence}}:?\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
     # sentences like "UPPER lower:", with a required colon at the end
-    - match: '{{lookahead_lte_40_chars}}{{uppercase_word}}( {{word_plus_parens}})*:\n'
+    - match: '{{lookahead_lte_40_chars}}{{upper_then_arbitrary_case_sentence}}:\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
 
