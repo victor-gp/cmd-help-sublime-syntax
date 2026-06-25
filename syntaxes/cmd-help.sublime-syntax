@@ -11,12 +11,12 @@ scope: text.cmd-help
 variables:
 ### section heading variables:
   # words regardless of case, including dashes for compound words
-  any_word: '[A-Za-z][A-Za-z-]*\b'
+  arbitrary_word: '[A-Za-z][A-Za-z-]*\b'
   # allow parentheses on both ends of the word
-  word_plus_parens: '\(?{{any_word}}\)?'
+  word_plus_parens: '\(?{{arbitrary_word}}\)?'
   # allow numbers, dots and underline in a word
   #todo: should we allow parens here? maybe for non-leading words?
-  freeform_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
+  programmer_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
   uppercase_word: '[A-Z]+\b'
   capitalized_word: '[A-Z][a-z-]*\b'
   # we'll only consider lines <= 40 chars long
@@ -195,7 +195,9 @@ contexts:
     # kitchen-sink headings
     # allow: lowercase, numbers, underline, dots.
     # require: no leading whitespace, line ends in colon, <= 40 chars.
-    - match: '{{lookahead_lte_40_chars}}{{freeform_word}}( {{freeform_word}})*:\n'
+    # eg, "amv encoder AVOptions:", "H.263 encoder AVOptions:", "h264_omx AVOptions:", "global options:"
+    #nice: maybe we could handle all-lowercase headings (adb, argparse-generated, etc.) in another matcher
+    - match: '{{lookahead_lte_40_chars}}{{programmer_word}}( {{programmer_word}})*:\n'
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
     # centered headings from less. all caps, no character nor leading space limits.
@@ -211,7 +213,7 @@ contexts:
         {{capitalized_word}}
         (
           (\ /)?                        # optional " /"
-          \ {{any_word}}                # required " word"
+          \ {{arbitrary_word}}          # required " word"
         )*
         :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
