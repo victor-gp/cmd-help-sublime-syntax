@@ -4,29 +4,24 @@
  ---------------------------------------------------------------------------
 
                            MOVING
-#                          ^^^^^^
-# string.section-heading.cmd-help
+#                          ^^^^^^ string.section-heading.cmd-help
 
  ---------------------------------------------------------------------------
 
                           SEARCHING
-#                         ^^^^^^^^^
-# string.section-heading.cmd-help
+#                         ^^^^^^^^^ string.section-heading.cmd-help
 
  ---------------------------------------------------------------------------
 
                            JUMPING
-#                          ^^^^^^^
-# string.section-heading.cmd-help
+#                          ^^^^^^^ string.section-heading.cmd-help
 
  ---------------------------------------------------------------------------
 
                         CHANGING FILES
-#                       ^^^^^^^^^^^^^^
-# string.section-heading.cmd-help
+#                       ^^^^^^^^^^^^^^ string.section-heading.cmd-help
 
  ---------------------------------------------------------------------------
 
                           LINE EDITING
-#                         ^^^^^^^^^^^^
-# string.section-heading.cmd-help
+#                         ^^^^^^^^^^^^ string.section-heading.cmd-help
