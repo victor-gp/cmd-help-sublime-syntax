@@ -10,6 +10,11 @@ scope: text.cmd-help
 
 variables:
 ### section heading variables:
+  # we'll only consider lines <= 40 chars long
+  lookahead_lte_40_chars: '(?=.{1,40}\n)'
+  lookahead_lte_40_chars_before_parens: '(?=.{1,40}\(.+\):?\n)'
+  uppercase_word: '[A-Z]+\b'
+  capitalized_word: '[A-Z][a-z-]*\b'
   # words regardless of case, including dashes for compound words
   arbitrary_word: '[A-Za-z][A-Za-z-]*\b'
   # allow parentheses on both ends of the word
@@ -17,11 +22,6 @@ variables:
   # allow numbers, dots and underline in a word
   #todo: should we allow parens here? maybe for non-leading words?
   programmer_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
-  uppercase_word: '[A-Z]+\b'
-  capitalized_word: '[A-Z][a-z-]*\b'
-  # we'll only consider lines <= 40 chars long
-  lookahead_lte_40_chars: '(?=.{1,40}\n)'
-  lookahead_lte_40_chars_before_parens: '(?=.{1,40}\(.+\):?\n)'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:|]'
