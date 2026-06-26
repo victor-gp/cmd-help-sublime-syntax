@@ -191,11 +191,11 @@ contexts:
   ### section headings #########################################################
 
   # this is included after blank lines, at pos 0
+  #NIT: a lot of these matchers don't allow leading whitespace. should they?
   heading-permissive:
-    # kitchen-sink headings
-    # allow: lowercase, numbers, underline, dots.
+    # Kitchen-sink headings. Allow: lowercase, numbers, underline, dots.
     # eg, "amv encoder AVOptions:", "H.263 encoder AVOptions:", "h264_omx AVOptions:"
-    # particularly, all-lowercase: "global options:", "positional arguments:", etc.
+    # Particularly, all-lowercase: "global options:", "positional arguments:", etc.
     - match: |
         (?x)
         {{lookahead_lte_40_chars}}
@@ -204,7 +204,7 @@ contexts:
         :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    # centered headings from less. all caps, no character nor leading space limits.
+    # Centered headings from less. All caps, no character limit.
     # eg, "                           MOVING", "                        CHANGING FILES"
     - match: |
         (?x)
@@ -217,6 +217,8 @@ contexts:
       captures:
         1: *SECTION_HEADING_SCOPES
       set: then-pop
+    #todo: actually, do include a lowercase matcher with some leading whitespace (up to 2)
+    # Capitalized + arbitrary case sentences, including slashes. No parentheses allowed.
     # eg, "Print help / information / capabilities:"
     - match: |
         (?x)
@@ -229,7 +231,7 @@ contexts:
         :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    # uppercase + arbitrary case sentences
+    # Uppercase + arbitrary case sentences
     # eg, "FOO bar"
     - match: |
         (?x)
@@ -243,7 +245,7 @@ contexts:
   # this is included on all lines, at pos 0-2
   heading-strict:
     - include: inline-usage
-    # uppercase sentences
+    # Uppercase sentences
     - match: |
         (?x)
         {{lookahead_lte_40_chars}}
@@ -252,7 +254,7 @@ contexts:
         :?\n                            # optional colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    # capitalized + arbitrary case sentences
+    # Capitalized + arbitrary case sentences
     - match: |
         (?x)
         {{lookahead_lte_40_chars}}
@@ -261,7 +263,7 @@ contexts:
         :?\n                            # optional colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    # capitalized sentences with a clarifying parenthesis that makes them go over 40 chars
+    # Capitalized sentences with a clarifying parenthesis that pushes them over 40 chars
     # eg, "Options and arguments (and corresponding environment variables):"
     - match: |
         (?x)
@@ -271,7 +273,7 @@ contexts:
         :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    # uppercase + arbitrary case sentences
+    # Uppercase + arbitrary case sentences
     # eg, "JIT options (experimental):"
     - match: |
         (?x)
