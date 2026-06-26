@@ -194,15 +194,26 @@ contexts:
   heading-permissive:
     # kitchen-sink headings
     # allow: lowercase, numbers, underline, dots.
-    # require: no leading whitespace, line ends in colon, <= 40 chars.
-    # eg, "amv encoder AVOptions:", "H.263 encoder AVOptions:", "h264_omx AVOptions:", "global options:"
-    #nice: maybe we could handle all-lowercase headings (adb, argparse-generated, etc.) in another matcher
-    - match: '{{lookahead_lte_40_chars}}{{programmer_word}}( {{programmer_word}})*:\n'
+    # eg, "amv encoder AVOptions:", "H.263 encoder AVOptions:", "h264_omx AVOptions:"
+    # particularly, all-lowercase: "global options:", "positional arguments:", etc.
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{programmer_word}}
+        (\ {{programmer_word}})*
+        :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
     # centered headings from less. all caps, no character nor leading space limits.
     # eg, "                           MOVING", "                        CHANGING FILES"
-    - match: \s+({{uppercase_word}}( {{uppercase_word}})*)\n
+    - match: |
+        (?x)
+        \s+                             # arbitrary spaces for alignment
+        (                               # capture group \1
+          {{uppercase_word}}
+          (\ {{uppercase_word}})*
+        )
+        \n                              # no colon at the end
       captures:
         1: *SECTION_HEADING_SCOPES
       set: then-pop
