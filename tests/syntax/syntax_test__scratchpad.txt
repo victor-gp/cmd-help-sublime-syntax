@@ -22,7 +22,7 @@ hello world
 
 hello world:
 # <- string.section-heading.cmd-help
-#^^^^^^^^^^ string.section-heading.cmd-help
+#^^^^^^^^^^^ string.section-heading.cmd-help
 
 hELLO WORLD
 # <- - string.section-heading.cmd-help
@@ -42,8 +42,21 @@ HELLO world
 ...
 HELLO world:
 # <- string.section-heading.cmd-help
-#^^^^^^^^^^ string.section-heading.cmd-help
+#^^^^^^^^^^^ string.section-heading.cmd-help
 
 Run a command from a local or remote npm package
 # <- - string.section-heading.cmd-help
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
+...
+  hello world:
+#^^^^^^^^^^^^^ - string.section-heading.cmd-help
+
+  hello world:
+#^ - string.section-heading.cmd-help
+# ^^^^^^^^^^^^ string.section-heading.cmd-help
+
+  hello world
+#^^^^^^^^^^^^ - string.section-heading.cmd-help
+
+   hello world:
+#^^^^^^^^^^^^^^ - string.section-heading.cmd-help

@@ -13,8 +13,9 @@ variables:
   # we'll only consider lines <= 40 chars long
   lookahead_lte_40_chars: '(?=.{1,40}\n)'
   lookahead_lte_40_chars_before_parens: '(?=.{1,40}\(.+\):?\n)'
-  uppercase_word: '[A-Z]+\b'
+  uppercase_word: '[A-Z][A-Z-]+\b'
   capitalized_word: '[A-Z][a-z-]*\b'
+  lowercase_word: '[a-z][a-z-]+\b'
   # words regardless of case, including dashes for compound words
   arbitrary_word: '[A-Za-z][A-Za-z-]*\b'
   # allow parentheses on both ends of the word
@@ -217,7 +218,20 @@ contexts:
       captures:
         1: *SECTION_HEADING_SCOPES
       set: then-pop
-    #todo: actually, do include a lowercase matcher with some leading whitespace (up to 2)
+    # Lowercase headings, allowing leading whitespace.
+    # eg, "global options:", "positional arguments:", "options:", "  foo bar:", etc.
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        (\ ){0,2}                       # 0-2 spaces at beginning of line
+        (                               # capture group \2
+          {{lowercase_word}}
+          (\ {{lowercase_word}})*
+          :\n                           # required colon at the end
+        )
+      captures:
+        2: *SECTION_HEADING_SCOPES
+      set: then-pop
     # Capitalized + arbitrary case sentences, including slashes. No parentheses allowed.
     # eg, "Print help / information / capabilities:"
     - match: |
@@ -242,7 +256,7 @@ contexts:
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
 
-  # this is included on all lines, at pos 0-2
+  # this is included on all lines, at pos 0-2, with any leading whitespace stripped
   heading-strict:
     - include: inline-usage
     # Uppercase sentences
