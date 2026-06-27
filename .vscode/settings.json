@@ -1,0 +1,6 @@
+{
+    "search.exclude": {
+        "tests/highlighted/**": true,
+        "tests/theme/**": true,
+    }
+}
