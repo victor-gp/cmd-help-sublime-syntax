@@ -232,19 +232,6 @@ contexts:
       captures:
         2: *SECTION_HEADING_SCOPES
       set: then-pop
-    # Capitalized + arbitrary case sentences, including slashes. No parentheses allowed.
-    # eg, "Print help / information / capabilities:"
-    - match: |
-        (?x)
-        {{lookahead_lte_40_chars}}
-        {{capitalized_word}}
-        (
-          (\ /)?                        # optional " /"
-          \ {{arbitrary_word}}          # required " word"
-        )*
-        :\n                             # required colon at the end
-      scope: *SECTION_HEADING_SCOPES
-      set: then-pop
     # Uppercase + arbitrary case sentences
     # eg, "FOO bar"
     - match: |
@@ -294,6 +281,19 @@ contexts:
         {{lookahead_lte_40_chars}}
         {{uppercase_word}}
         (\ {{word_plus_parens}})*
+        :\n                             # required colon at the end
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # Capitalized + arbitrary case sentences, including slashes. No parentheses allowed.
+    # eg, "Print help / information / capabilities:"
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{capitalized_word}}
+        (
+          (\ /)?                        # optional " /"
+          \ {{arbitrary_word}}          # required " word"
+        )*
         :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
