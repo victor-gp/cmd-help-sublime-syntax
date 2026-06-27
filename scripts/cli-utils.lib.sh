@@ -1,4 +1,4 @@
-# usage: $ source scripts/cli-utils
+# usage: $ source scripts/cli-utils.lib.sh
 # shellcheck shell=bash
 
 # regression tests diff
@@ -61,7 +61,7 @@ alias try='scripts/try_input.sh'
 # When the pager is Git's default pager (LESS=R less), the color diffs are shown alright,
 # so we preserve that behavior.
 #
-# The function can run each time on `source cli-utils` because it's idempotent.
+# The function can run each time we source cli-utils because it's idempotent.
 function _sync_delta_gitconfig_include {
     local include_file=".gitconfig_delta"
     # relative to .git/, where .git/config (the includer) lives
