@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # usage: scripts/make_syntax_test.sh tests/source/<FILE>
-# or:    mksyn tests/source/<FILE>   (after you do $ source scripts/cli-utils)
+# or:    mksyn tests/source/<FILE>   (after you do $ source scripts/cli-utils.lib.sh)
 
 set -euo pipefail
 

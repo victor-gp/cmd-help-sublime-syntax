@@ -13,14 +13,12 @@ Getting help:
     See man ffmpeg for detailed description of the options.
 
 Print help / information / capabilities:
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle this heading (slashes)
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 -L                  show license
 -h topic            show help
 
 Global options (affect whole program instead of just one file):
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle this heading (longer than 40 chars)
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ string.section-heading.cmd-help
 -loglevel loglevel  set logging level
 -v loglevel         set logging level
 
@@ -65,7 +63,7 @@ h264_v4l2m2m_encoder AVOptions:
 mov,mp4,m4a,3gp,3g2,mj2 AVOptions:
 # <- - string.section-heading.cmd-help
 #^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ - string.section-heading.cmd-help
-#nice: handle headings with comma (w/o space separation)
+#wontfix: handle headings with comma (w/o space separation) / actually, I can live with this
 
 Per-file main options:
 -map_metadata outfile[,metadata]:infile[,metadata]  set metadata information of outfile from infile

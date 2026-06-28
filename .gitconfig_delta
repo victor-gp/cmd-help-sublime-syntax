@@ -1,0 +1,4 @@
+# workaround for git-delta showing highlighted test diffs without color
+# cf. _sync_delta_gitconfig_include() in cli-utils.lib.sh
+[diff "ansi"]
+    binary = true

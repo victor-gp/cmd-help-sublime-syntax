@@ -1,4 +1,6 @@
-# Linguist overrides
-*.sublime-syntax linguist-detectable
-tests/highlighted/* linguist-generated
-tests/theme/* linguist-generated
+# Linguist override so GitHub stats pick up the .sublime-syntax file as source code
+*.sublime-syntax        linguist-detectable
+# Linguist overrides to hide these on GitHub diffs because they just show ansi color escape codes
+# Git diff driver for a git-delta workaround (cf. _sync_delta_gitconfig_include() in cli-utils)
+tests/highlighted/*     linguist-generated diff=ansi
+tests/theme/*           linguist-generated diff=ansi

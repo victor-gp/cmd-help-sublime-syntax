@@ -9,17 +9,20 @@ scope: text.cmd-help
 
 
 variables:
-### section name variables:
-  # words regardless of case, including dashes for compound words
-  any_word: '[A-Za-z][A-Za-z-]*\b'
-  # allow parentheses on both ends of the word
-  any_word2: '\(?{{any_word}}\)?'
-  # allow numbers, dots and underline in a word
-  any_word3: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
-  # words starting with uppercase
-  leading_word: '[A-Z][A-Za-z-]*\b'
-  # only consider lines <= 40 chars long
+### section heading variables:
+  # we'll only consider lines <= 40 chars long
   lookahead_lte_40_chars: '(?=.{1,40}\n)'
+  lookahead_lte_40_chars_before_parens: '(?=.{1,40}\(.+\):?\n)'
+  uppercase_word: '[A-Z][A-Z-]+\b'
+  capitalized_word: '[A-Z][a-z-]*\b'
+  lowercase_word: '[a-z][a-z-]+\b'
+  # words regardless of case, including dashes for compound words
+  arbitrary_word: '[A-Za-z][A-Za-z-]*\b'
+  # allow parentheses on both ends of the word
+  word_plus_parens: '\(?{{arbitrary_word}}\)?'
+  # allow numbers, dots and underline in a word
+  #todo: should we allow parens here? maybe for non-leading words?
+  programmer_word: '[A-Za-z0-9][A-Za-z0-9\._-]*\b'
 
 ### command option variables:
   option_break: '[ \t\n,=\[</:|]'
@@ -28,7 +31,7 @@ variables:
   option_name: '{{option_char}}+'
 
 ### command/option argument variables:
-  ellipsis: '\.\.\.'
+  ellipsis: '\.\.\.' #todo: this should lookahead that there are no further dots
   allcaps_argument_name: '[A-Z][0-9A-Z_-]*\b'
   relaxed_argument_name: '[A-Za-z][0-9A-Za-z_-]*\b'
 
@@ -49,7 +52,7 @@ variables:
   color_code_begin: '(?=.*\e\[.*'
   color_code_end: '.*(?<=[0-9])m)'
 
-scope_variables: # last scope is matched first
+scope_anchors: # last scope is matched first
   - &SECTION_HEADING_SCOPES
     constant.section-heading.cmd-help
     markup.heading.cmd-help
@@ -147,6 +150,7 @@ contexts:
   ### stack lv 2 ###############################################################
 
   line-begin:
+    #nice: these predefined indents could be variables...
     - match: ^(?=\S)
       set: indent-0
     - match: ^ {1,2}(?=\S)
@@ -157,15 +161,16 @@ contexts:
       set: indent-3-8
     - include: else-pop
 
-  # previous line was blank; we're at the beginning of a line; stack is [main-b, this]
+  # previous line was blank; we're at the beginning of a line; stack is [main-b, this].
+  # matches here should either consume the entire line, or else-pop and let line-begin handle it.
   line-begin-after-blank:
-    - include: permissive-heading
+    - include: heading-permissive
     # another blank line, consume it and stay in this context
     - match: ^\s*$
     - include: else-pop
 
   indent-0:
-    - include: heading
+    - include: heading-strict
     - include: option-def-head
     - include: argument-def
     - include: other-def
@@ -173,7 +178,7 @@ contexts:
 
   indent-1-2:
     - include: option-def-head
-    - include: heading
+    - include: heading-strict
     - include: argument-def
     - include: other-def
     - include: else-pop
@@ -186,26 +191,119 @@ contexts:
 
   ### section headings #########################################################
 
-  heading:
-    - include: heading-specials
-    - match: '{{lookahead_lte_40_chars}}{{leading_word}}( {{any_word2}})*:?\n'
+  # this is included after blank lines, at pos 0
+  #NIT: a lot of these matchers don't allow leading whitespace. should they?
+  heading-permissive:
+    # Kitchen-sink headings. Allow: lowercase, numbers, underline, dots.
+    # eg, "amv encoder AVOptions:", "H.263 encoder AVOptions:", "h264_omx AVOptions:"
+    # Particularly, all-lowercase: "global options:", "positional arguments:", etc.
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{programmer_word}}
+        (\ {{programmer_word}})*
+        :\n                             # required colon at the end
       scope: *SECTION_HEADING_SCOPES
       set: then-pop
-    # - match: '{{any_word2}}( {{any_word2}})*:\n'
-    #   scope: *SECTION_HEADING_SCOPES
-    #   set: then-pop
+    # Centered headings from less. All caps, no character limit.
+    # eg, "                           MOVING", "                        CHANGING FILES"
+    - match: |
+        (?x)
+        \s+                             # arbitrary spaces for alignment
+        (                               # capture group \1
+          {{uppercase_word}}
+          (\ {{uppercase_word}})*
+        )
+        \n                              # no colon at the end
+      captures:
+        1: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # Lowercase headings, allowing leading whitespace.
+    # eg, "global options:", "positional arguments:", "options:", "  foo bar:", etc.
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        (\ ){0,2}                       # 0-2 spaces at beginning of line
+        (                               # capture group \2
+          {{lowercase_word}}
+          (\ {{lowercase_word}})*
+          :\n                           # required colon at the end
+        )
+      captures:
+        2: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # Uppercase + arbitrary case sentences
+    # eg, "FOO bar"
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{uppercase_word}}
+        (\ {{word_plus_parens}})*
+        :?\n                            # optional colon at the end
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
 
-  heading-specials:
+  # this is included on all lines, at pos 0-2, with any leading whitespace stripped
+  heading-strict:
+    - include: inline-usage
+    # Uppercase sentences
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{uppercase_word}}
+        (\ {{uppercase_word}})*
+        :?\n                            # optional colon at the end
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # Capitalized + arbitrary case sentences
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{capitalized_word}}
+        (\ {{word_plus_parens}})*
+        :?\n                            # optional colon at the end
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # Capitalized sentences with a clarifying parenthesis that pushes them over 40 chars
+    # eg, "Options and arguments (and corresponding environment variables):"
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars_before_parens}}
+        {{capitalized_word}}
+        (\ {{word_plus_parens}})*
+        :\n                             # required colon at the end
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # Uppercase + arbitrary case sentences
+    # eg, "JIT options (experimental):"
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{uppercase_word}}
+        (\ {{word_plus_parens}})*
+        :\n                             # required colon at the end
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+    # Capitalized + arbitrary case sentences, including slashes. No parentheses allowed.
+    # eg, "Print help / information / capabilities:"
+    - match: |
+        (?x)
+        {{lookahead_lte_40_chars}}
+        {{capitalized_word}}
+        (
+          (\ /)?                        # optional " /"
+          \ {{arbitrary_word}}          # required " word"
+        )*
+        :\n                             # required colon at the end
+      scope: *SECTION_HEADING_SCOPES
+      set: then-pop
+
+  # heading-stricter:
+
+  inline-usage:
     - match: (?i:usage):(?=.+\n)
       scope: *INLINE_USAGE_SCOPES
       set: maybe-bat
-    - include: python-argparse-headings
-
-  permissive-heading:
-    # lowercase, numbers, underline, dots allowed; colon ending required
-    - match: '{{lookahead_lte_40_chars}}{{any_word3}}( {{any_word3}})*:\n'
-      scope: *SECTION_HEADING_SCOPES
-      set: then-pop
 
   # hack to harmonize usage lines in bat's help message
   #nice: generalize this pattern and remove this hardcoded case
@@ -606,8 +704,3 @@ contexts:
       set: main
     - match: ^\n$ # empty line
       set: main
-
-  python-argparse-headings:
-    - match: (positional arguments|optional arguments|required arguments|options):\n
-      scope: *SECTION_HEADING_SCOPES
-      set: then-pop
