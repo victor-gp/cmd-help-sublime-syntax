@@ -1,6 +1,16 @@
 # usage: $ source scripts/cli-utils.lib.sh
 # shellcheck shell=bash
 
+# prefix for regression tests diff/show commands
+reg_git=(
+    env
+    # force git's default pager, so e.g. delta doesn't strip ANSI colors
+    GIT_PAGER="LESS=R less"
+    git
+    # override the diff.ansi driver in gitconfig_delta
+    -c diff.ansi.binary=false
+)
+
 # regression tests diff
 # to focus on a particular test, do e.g.:
 #   reg -- tests/highlighted/bat-short.0.22.1.txt`
@@ -8,10 +18,10 @@
 #   reg -- ":^*-italics*"
 function reg {
     if [[ "$*" != *"-- "* ]]; then
-        GIT_PAGER="LESS=R less" git diff "$@" -- tests/{highlighted,theme}
+        "${reg_git[@]}" diff "$@" -- tests/{highlighted,theme}
     else
         # the function args include a path filter
-        GIT_PAGER="LESS=R less" git diff "$@"
+        "${reg_git[@]}" diff "$@"
     fi
 }
 
@@ -26,9 +36,9 @@ function regmain {
 # regression tests show
 function regshow {
     if [[ "$*" != *"-- "* ]]; then
-        GIT_PAGER="LESS=R less" git show "$@" -- tests/{highlighted,theme}
+        "${reg_git[@]}" show "$@" -- tests/{highlighted,theme}
     else
-        GIT_PAGER="LESS=R less" git show "$@"
+        "${reg_git[@]}" show "$@"
     fi
 }
 
